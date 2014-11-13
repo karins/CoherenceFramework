@@ -102,7 +102,7 @@ def extract_and_save(sgml_gz, args):
         with gzip.open('{0}/sgml/{1}.gz'.format(args.workspace, stem), 'wb') as fout:
             # returns utf-8 encoded into python string
             fout.write(sgml_docs.toprettyxml(encoding='utf-8'))
-        logging.info(' %d documents', len(ids))
+        logging.info('%s contains %d documents', stem, len(ids))
         return ids
     except:
         raise Exception(''.join(traceback.format_exception(*sys.exc_info())))
