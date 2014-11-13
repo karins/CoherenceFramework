@@ -19,9 +19,10 @@ this will produce an output like this:
     INFO xin_eng_201012 contains 5 documents
     INFO xin_eng_201011 contains 5 documents
     INFO Documents: 2
-    | Corpus   |   Documents |
-    |:---------|------------:|
-    | xin_eng  |          10 |
+    | Corpus         |   Documents |
+    |:---------------|------------:|
+    | xin_eng_201011 |           5 |
+    | xin_eng_201012 |           5 |
 
 
 Now `data/preprocessed/2010/sgml/` contains the files `xin_eng_201011.gz` and `xin_eng_201012.gz` each of which contains 5 documents.

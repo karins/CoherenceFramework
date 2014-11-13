@@ -34,11 +34,14 @@ def parse(input_gz, parse_out, parse_err, args):
     cmd_line = 'java -mx%(mem)dg -cp "%(framework)s:%(corenlp)s:%(models)s" %(converter)s' % (params)
     cmd_args = shlex.split(cmd_line)
     logging.info('running: %s', cmd_line)
+    if args.dry_run:
+        return False
     with gzip.open(input_gz, 'rb') as fin:
         with open(parse_out, 'wb') as fout:
             with open(parse_err, 'wb') as ferr:
                 proc = subprocess.Popen(cmd_args, stdin=subprocess.PIPE, stdout=fout, stderr=ferr)
                 proc.communicate(fin.read())
+    return True
 
 
 def parse_and_save(did, args):
@@ -65,6 +68,8 @@ def parse_command_line():
             help='where output files will be stored')
     parser.add_argument('--jobs', '-j', type=int, default=4,
             help='number of jobs')
+    parser.add_argument('--dry-run', '-n', action='store_true',
+            help='does not parse')
     parser.add_argument('--discourse-framework', '-d', type=str,
             default='/home/waziz/tools/discourse/DiscourseFramework.jar',
             help="Path to Karin's discourse framework (jar)")

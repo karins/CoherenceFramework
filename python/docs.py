@@ -108,12 +108,8 @@ def extract_and_save(sgml_gz, args):
         raise Exception(''.join(traceback.format_exception(*sys.exc_info())))
 
 def make_workspace(workspace):
-    if not os.path.exists(workspace):
-        os.makedirs(workspace)
+    if not os.path.exists(workspace + '/sgml'):
         os.makedirs(workspace + '/sgml')
-        #os.makedirs(workspace + '/parse')
-        #os.makedirs(workspace + '/txt')
-        #os.makedirs(workspace + '/log')
 
 def parse_command_line():
     parser = argparse.ArgumentParser(description='Extracts documents from LDC GigaWord data',
@@ -137,23 +133,18 @@ def main(args):
     results = pool.map(partial(extract_and_save, args=args), files)
     logging.info('Documents: %d', len(results))
 
-    data = defaultdict(list)
-    n_documents = defaultdict(int)
-    
-    for sgml_gz, ids in izip(files, results):
-        ldc_info = parse_ldc_name(sgml_gz)
-        n_documents['{0}_{1}'.format(ldc_info['corpus'], ldc_info['language'])] += len(ids)
+    stems = [get_file_stem(path) for path in files]
+    data = zip(stems, (len(ids) for ids in results))
 
     try:
         # prints a Markdown table if possible
         from tabulate import tabulate
-        print tabulate(sorted(n_documents.iteritems(), key=lambda (c, n): n),
+        print tabulate(data,
                 headers=['Corpus', 'Documents'],
                 tablefmt='pipe')
     except:
         # plain table otherwise
-        for corpus, n_docs in sorted(n_documents.iteritems(), key=lambda (c, n): n):
-            print corpus, ndocs
+        print '\n'.join('{0} {1}'.format(c, n) for c, n in data)
 
 
 if __name__ == '__main__':
