@@ -4,3 +4,6 @@ legacy
 
 # python objects
 *.pyc
+
+# vim files
+.*.swp
