@@ -14,47 +14,36 @@ import subprocess
 import xml.parsers.expat
 from xml.dom.minidom import getDOMImplementation
 
-# some stuff for parsing XML files
-documents = []
-filename = None
-docid = None
-current_doc = None
-current_text = None
-reading_text = False
-
 # regex to decompose LDC file names
 ldc_name_re = re.compile('([a-z]+)_([a-z]+)_([0-9]{4})([0-9]{2})')
 
 # XML parsing methods
 
-def start_element(name, attrs):
+def start_element(name, attrs, data):
     """starts a document"""
-    global current_doc, docid, reading_text
     if name == 'DOC':
-        current_doc = []
-        docid = attrs['id']
+        data['_doc'] = []
+        data['_id'] = attrs['id']
     elif name == 'TEXT':
-        reading_text = True
+        data['_reading'] = True
 
 
-def end_element(name):
+def end_element(name, data):
     """ends a document"""
-    global current_doc, docid
     if name == 'DOC':
-        documents.append((docid, current_doc))
-        current_doc = None
-        docid = None
+        data['documents'].append((data['_id'], data['_doc']))
+        data['_doc'] = None
+        data['_id'] = None
     elif name == 'TEXT':
-        reading_text = False
+        data['_reading'] = False
 
-def char_data(data):
+def char_data(txt_data, data):
     """stores non blank lines in a document"""
-    global reading_text
-    if reading_text:
+    if data['_reading']:
         # encode utf-8 into a python string
-        line = data.encode('utf-8').strip()
+        line = txt_data.encode('utf-8').strip()
         if line:
-            current_doc.append(line)
+            data['_doc'].append(line)
 
 def get_file_stem(sgml_gz):
     """returns the name of the file without the parent directory and without extension"""
@@ -69,15 +58,23 @@ def parse_ldc_name(sgml_gz):
 def iter_docs(sgml_gz):
     """Iterates over documents in a given file sgm file -> {'id':doc_id, 'data':doc_sentences}"""
     parser = xml.parsers.expat.ParserCreate()
+    # parser data
+    parser_data = {}
+    # parsed documents
+    parser_data['documents'] = []
+    # temporary data (e.g. curent document's id, sentences and status)
+    parser_data['_id'] = None
+    parser_data['_doc'] = None
+    parser_data['_reading'] = False
 
-    parser.StartElementHandler = start_element
-    parser.EndElementHandler = end_element
-    parser.CharacterDataHandler = char_data
+    parser.StartElementHandler = partial(start_element, data=parser_data)
+    parser.EndElementHandler = partial(end_element, data=parser_data)
+    parser.CharacterDataHandler = partial(char_data, data=parser_data)
     with gzip.open(sgml_gz, 'rb') as fi:
         content = fi.read()
         # the <sgml> tags are added to make sure the file has a single root
         parser.Parse('<sgml>{0}</sgml>'.format(content), 1)
-        for did, doc in documents:
+        for did, doc in parser_data['documents']:
             yield {'id': did, 'text':'\n'.join(seg for seg in doc)}
 
 
