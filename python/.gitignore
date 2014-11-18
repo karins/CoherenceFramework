@@ -1,0 +1,9 @@
+# my test dirs
+data/preprocessed
+legacy
+
+# python objects
+*.pyc
+
+# vim files
+.*.swp

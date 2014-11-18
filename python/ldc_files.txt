@@ -1,0 +1,2 @@
+data/ldc/xin_eng_201011.gz
+data/ldc/xin_eng_201012.gz
