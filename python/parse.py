@@ -1,3 +1,16 @@
+"""
+This module distributes jobs to Stanford Core NLP.
+The goal is to split sentences from SGML documents (such as produced by docs.py)
+and parse them with a PCFG parser.
+
+This module delegates the actual call to the parser to a Java wrapper.
+Unfortunately, the java wrapper does not actually use a DOM implementation, so even though
+the output file will look like an XML, the text content will not comply with XML formatting.
+This means the best way to get the parse trees out of the sgml-formatted output of the java 
+wrapper is with a SAX parser (sgml.py contains one).
+
+@author waziz
+"""
 import logging
 import argparse
 import sys
@@ -10,10 +23,7 @@ import traceback
 import time
 from multiprocessing import Pool
 from functools import partial
-
-
-def get_file_stem(sgml_gz):
-    return os.path.splitext(os.path.basename(sgml_gz))[0]
+from ldc import get_ldc_name
 
 
 def make_workspace(workspace):
@@ -97,21 +107,21 @@ def parse_command_line():
 def main(args):
 
     files = [path.strip() for path in sys.stdin]
-    stems = [get_file_stem(path) for path in files]
+    ldc_names = [get_ldc_name(path) for path in files]
 
     # sanity checks
-    for stem in stems:
-        if not os.path.exists('{0}/sgml/{1}.gz'.format(args.workspace, stem)):
-            raise Exception('File not found: %s', '{0}/sgml/{1}.gz'.format(args.workspace, stem))
+    for ldc_name in ldc_names:
+        if not os.path.exists('{0}/sgml/{1}.gz'.format(args.workspace, ldc_name)):
+            raise Exception('File not found: %s', '{0}/sgml/{1}.gz'.format(args.workspace, ldc_name))
 
     pool = Pool(args.jobs)
-    logging.info('Distributing %d jobs to %d workers', len(stems), args.jobs)
+    logging.info('Distributing %d jobs to %d workers', len(ldc_names), args.jobs)
     t0 = time.time()
-    result = pool.map(partial(parse_and_save, args=args), stems)
+    result = pool.map(partial(parse_and_save, args=args), ldc_names)
     dt = time.time() - t0
     logging.info('Total time: %f seconds', dt)
 
-    data = zip(stems, result)
+    data = zip(ldc_names, result)
 
     try:
         # prints a Markdown table if possible
