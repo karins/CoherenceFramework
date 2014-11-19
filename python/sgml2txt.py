@@ -33,19 +33,19 @@ import numpy as np
 from time import time
 from functools import partial
 from multiprocessing import Pool
-from sgml import MakeSGMLDocs
+from sgmldoc import MakeSGMLDocs
 from ldc import get_ldc_name 
 from nltk.tree import Tree
-from ldc import writetxtdoc
+from txtdoc import writetxtdoc
 
 
 def make_workspace(workspace):
-    if not os.path.exists(workspace + '/xparse'):
-        os.makedirs(workspace + '/xparse')
+    if not os.path.exists(workspace + '/trees'):
+        os.makedirs(workspace + '/trees')
 
 
-def fix_bad_sgml(ldc_name, args):
-    path = '{0}/parse/{1}'.format(args.workspace, ldc_name)
+def badsgml2goodsgml(ldc_name, args):
+    path = '{0}/bsgml_trees/{1}'.format(args.workspace, ldc_name)
     logging.info('Processing %s', path)
     n_lines = []
     try:
@@ -73,7 +73,7 @@ def fix_bad_sgml(ldc_name, args):
                     doc_lines.append(line)
                     #print >> sys.stderr, ptb_str
                     #print ' '.join(Tree(ptb_str).leaves())
-            sgmler.writegz('{0}/xparse/{1}'.format(args.workspace, ldc_name))
+            sgmler.writegz('{0}/trees/{1}'.format(args.workspace, ldc_name))
     except:
         raise Exception(''.join(traceback.format_exception(*sys.exc_info())))
 
@@ -81,12 +81,12 @@ def fix_bad_sgml(ldc_name, args):
 
 
 def badsgml2text(ldc_name, args):
-    path = '{0}/parse/{1}'.format(args.workspace, ldc_name)
+    path = '{0}/bsgml_trees/{1}'.format(args.workspace, ldc_name)
     logging.info('Processing %s', path)
     n_lines = []
     try:
         with open(path, 'r') as fi:
-            with gzip.open('{0}/xparse/{1}.gz'.format(args.workspace, ldc_name), 'wb') as fo:
+            with gzip.open('{0}/trees/{1}.gz'.format(args.workspace, ldc_name), 'wb') as fo:
                 lines = fi.read().split('\n')
                 doc_re = re.compile('<doc id="(.+)">')
                 doc_id, doc_lines = None, None
@@ -101,7 +101,7 @@ def badsgml2text(ldc_name, args):
                     elif line == '</doc>':
                         # add the doc to an actual SGML file
                         n_lines.append(len(doc_lines))
-                        writetxtdoc(doc_lines, fo, id=doc_id)
+                        writetxtdoc(fo, doc_lines, id=doc_id)
                         doc_lines = None
                         doc_id = None
                     # if there is an open doc, append lines to it
@@ -134,13 +134,13 @@ def parse_command_line():
 
 def main(args):
 
-    files = [path.strip() for path in sys.stdin]
+    files = [path.strip() for path in sys.stdin if not path.startswith('#')]
     ldc_names = [get_ldc_name(path) for path in files]
 
     # sanity checks
     for ldc_name in ldc_names:
-        if not os.path.exists('{0}/parse/{1}'.format(args.workspace, ldc_name)):
-            raise Exception('File not found: %s', '{0}/parse/{1}'.format(args.workspace, ldc_name))
+        if not os.path.exists('{0}/bsgml_trees/{1}'.format(args.workspace, ldc_name)):
+            raise Exception('File not found: %s', '{0}/bsgml_trees/{1}'.format(args.workspace, ldc_name))
 
     # distribute jobs
     pool = Pool(args.jobs)

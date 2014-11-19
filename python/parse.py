@@ -27,8 +27,8 @@ from ldc import get_ldc_name
 
 
 def make_workspace(workspace):
-    if not os.path.exists(workspace + '/parse'):
-        os.makedirs(workspace + '/parse')
+    if not os.path.exists(workspace + '/bsgml_trees'):
+        os.makedirs(workspace + '/bsgml_trees')
     if not os.path.exists(workspace + '/log-parse'):
         os.makedirs(workspace + '/log-parse')
 
@@ -58,8 +58,8 @@ def parse_and_save(did, args):
     try:
         t0 = time.time()
         logging.info('Parsing document %s', did)
-        input_gz = '{0}/sgml/{1}.gz'.format(args.workspace, did)
-        parse_out = '{0}/parse/{1}'.format(args.workspace, did)
+        input_gz = '{0}/raw/{1}.gz'.format(args.workspace, did)
+        parse_out = '{0}/bsgml_trees/{1}'.format(args.workspace, did)
         parse_err = '{0}/log-parse/{1}'.format(args.workspace, did)
         logging.info('parsing: %s', did)
         parse(input_gz, parse_out, parse_err, args)
@@ -106,13 +106,13 @@ def parse_command_line():
 
 def main(args):
 
-    files = [path.strip() for path in sys.stdin]
+    files = [path.strip() for path in sys.stdin if not path.startswith('#')]
     ldc_names = [get_ldc_name(path) for path in files]
 
     # sanity checks
     for ldc_name in ldc_names:
-        if not os.path.exists('{0}/sgml/{1}.gz'.format(args.workspace, ldc_name)):
-            raise Exception('File not found: %s', '{0}/sgml/{1}.gz'.format(args.workspace, ldc_name))
+        if not os.path.exists('{0}/raw/{1}.gz'.format(args.workspace, ldc_name)):
+            raise Exception('File not found: %s', '{0}/raw/{1}.gz'.format(args.workspace, ldc_name))
 
     pool = Pool(args.jobs)
     logging.info('Distributing %d jobs to %d workers', len(ldc_names), args.jobs)

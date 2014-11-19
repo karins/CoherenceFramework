@@ -1,6 +1,6 @@
 """
 This module implements a fast SGML parser using xml.parsers.expat.
-It quickly collect the text content under a certain XML tag in a document.
+It quickly collects the text content under a certain XML tag in a document.
 It deals with multiple documents in a single XML file.
 
 In addition, it implements a wrapper to mini dom that eases the creation of simple 

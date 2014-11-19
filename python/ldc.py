@@ -32,29 +32,3 @@ def parse_ldc_name(ldc_name):
 def parse_ldc_name_from_path(path):
     return parse_ldc_name(get_ldc_name(path))
 
-
-def writetxtdoc(lines, out, **kwargs):
-    attr_str = ' '.join('{0}={1}'.format(k, v) for k, v in kwargs.iteritems())
-    print >> out, '# %s' % attr_str
-    for line in lines:
-        if line:
-            print >> out, line
-    print >> out
-
-def itertxtdocs(istream):
-    attrs = None
-    content = None
-    for line in istream:
-        line = line.strip()
-        if line.startswith('#'):
-            line = line.replace('#', '')
-            attrs = {k:v for k, v in [kv.split('=') for kv in line.split()]}
-            content = []
-        elif line and content is not None:
-            content.append(line)
-        elif content is not None:
-            yield content, attrs
-            content = None
-            attrs = None
-    if content is not None:
-        yield content, attrs

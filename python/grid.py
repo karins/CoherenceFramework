@@ -16,22 +16,23 @@ import subprocess
 from time import time
 from functools import partial
 from multiprocessing import Pool
-from sgml import TextFromSGML, MakeSGMLDocs
-from ldc import parse_ldc_name_from_path, itertxtdocs, writetxtdoc
+from sgmldoc import TextFromSGML, MakeSGMLDocs
+from ldc import parse_ldc_name_from_path
+from txtdoc import itertxtdocs, writetxtdoc
 from nltk.tree import Tree
 
 
 def make_workspace(workspace):
-    if not os.path.exists(workspace + '/grid'):
-        os.makedirs(workspace + '/grid')
+    if not os.path.exists(workspace + '/grids'):
+        os.makedirs(workspace + '/grids')
 
 
-def extract_grid_from_sgml(ldc_desc, args):
+def grids_from_sgml(ldc_desc, args):
     """Extract grids for documents in a corpus (already parsed)"""
     n_docs = 0
     try:
-        input_path = '{0}/xparse/{1}'.format(args.workspace, ldc_desc['name'])
-        output_path = '{0}/grid/{1}'.format(args.workspace, ldc_desc['name'])
+        input_path = '{0}/trees/{1}'.format(args.workspace, ldc_desc['name'])
+        output_path = '{0}/grids/{1}'.format(args.workspace, ldc_desc['name'])
         logging.info('Processing %s', input_path)
         with gzip.open(input_path + '.gz', 'r') as fi:
             parser = TextFromSGML(fi.read(), text_under='doc')
@@ -61,29 +62,23 @@ def extract_grid_from_sgml(ldc_desc, args):
     return n_docs
 
 
-def extract_grid(ldc_desc, args):
+def grids_from_text(ldc_desc, args):
     """Extract grids for documents in a corpus (already parsed)"""
     t0 = time()
     try:
-        input_path = '{0}/xparse/{1}'.format(args.workspace, ldc_desc['name'])
-        output_path = '{0}/grid/{1}'.format(args.workspace, ldc_desc['name'])
+        input_path = '{0}/trees/{1}'.format(args.workspace, ldc_desc['name'])
+        output_path = '{0}/grids/{1}'.format(args.workspace, ldc_desc['name'])
         logging.info('Processing %s', input_path)
         with gzip.open(input_path + '.gz', 'rb') as fi:
             with gzip.open(output_path + '.gz', 'wb') as fo:
-                for lines, attrs in itertxtdocs(fi):
+                for doc in itertxtdocs(fi):
+                    lines, attrs = doc['lines'], doc['attrs']
                     logging.debug('document %s', attrs['id'])
                     cmd_line = args.ExtractGrid
                     cmd_args = shlex.split(cmd_line)
-                    with gzip.open(output_path + '.gz', 'wb') as fout:
-                        #if doc['id'] == 'XIN_ENG_20100101.0127':
-                        #    print >> sys.stderr, doc['text']
-                        #ptbs = doc['text'].split('\n')
-                        #for ptb in ptbs:
-                        #    print ptb
-                        #    print Tree(ptb).leaves()
-                        proc = subprocess.Popen(cmd_args, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-                        (stdoutdata, stderrdata) = proc.communicate('\n'.join(lines))
-                        writetxtdoc(stdoutdata.split('\n'), fo, id=attrs['id']) 
+                    proc = subprocess.Popen(cmd_args, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+                    (stdoutdata, stderrdata) = proc.communicate('\n'.join(lines))
+                    writetxtdoc(fo, stdoutdata.split('\n'), id=attrs['id']) 
     except:
         raise Exception(''.join(traceback.format_exception(*sys.exc_info())))
 
@@ -108,9 +103,6 @@ def parse_command_line():
             help='does not parse')
     parser.add_argument('--verbose', '-v', action='store_true',
             help='more log')
-    
-    parser.add_argument('--consolidate', action='store_true',
-            help='more log')
 
     args = parser.parse_args()
     logging.basicConfig(level= logging.DEBUG if args.verbose else logging.INFO, 
@@ -123,12 +115,12 @@ def parse_command_line():
 
 def main(args):
 
-    files = [path.strip() for path in sys.stdin]
+    files = [path.strip() for path in sys.stdin if not path.startswith('#')]
     ldc_descriptors = [parse_ldc_name_from_path(path) for path in files]
 
     # sanity checks
     for ldc_desc in ldc_descriptors:
-        required = '{0}/xparse/{1}.gz'.format(args.workspace, ldc_desc['name'])
+        required = '{0}/trees/{1}.gz'.format(args.workspace, ldc_desc['name'])
         if not os.path.exists(required):
             raise Exception('File not found: %s', required)
 
@@ -137,7 +129,7 @@ def main(args):
     logging.info('Distributing %d jobs to %d workers', len(ldc_descriptors), args.jobs)
 
     t0 = time()
-    results = pool.map(partial(extract_grid, args=args), ldc_descriptors)
+    results = pool.map(partial(grids_from_text, args=args), ldc_descriptors)
     dt = time() - t0
     logging.info('Total time: %f seconds', dt)
     
