@@ -1,0 +1,45 @@
+<project>
+
+	<!--dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.11</version>
+		<scope>test</scope>
+	</dependency-->
+	<!--dependencies>
+	   <groupId>edu.stanford.nlp</groupId>
+		   <dependency>
+		  <artifactId>stanford-corenlp</artifactId>
+		    <version>3.2.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>stanford-corenlp-3.2.0-models</groupId>
+		    <artifactId>stanford-corenlp</artifactId>
+		    <version>3.2.0</version>
+		    <classifier>models</classifier>
+		</dependency>
+	</dependencies-->
+	
+    <target name="clean">
+      <delete dir="classes"/>
+    </target>
+
+    <target name="compile">
+      <mkdir dir="classes"/>
+      <javac srcdir="." destdir="classes"  includeantruntime="false" target="1.7">
+				<classpath>
+	  			<!--pathelement path="json-simple-1.1.1.jar"/-->
+	 			 <!--pathelement path="junit.jar"/-->
+		</classpath>
+      </javac>
+    </target>
+    
+ 
+    
+    <target name="EntityGridFramework" depends="compile">
+      <java classname="EntityGridFramework" classpath="classes" fork="true">
+      </java>
+    </target>
+ 
+    
+</project>
