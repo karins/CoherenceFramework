@@ -14,7 +14,7 @@ import edu.stanford.nlp.util.CoreMap;
 
 /** 
  * Converts text with document markup into parse trees, using Stanford CoreNLP.
- *  
+ *   
  * @author Karin
  *
  */
@@ -56,7 +56,7 @@ public class ParseTreeConverter {
 		//List<String> docs =  docsAndIds.get("docs");
 		//List<String> ids =  docsAndIds.get("ids");
 		
-		System.out.println(XML_START);
+		//System.out.println(XML_START);
 		//for (int i = 0; i<docs.size(); i++){
 		//for(String docAsString: docs){
 		for(String id : docAndIds.keySet()){
@@ -64,7 +64,7 @@ public class ParseTreeConverter {
 			printParseTree(docAndIds.get(id), id);
 			
 		}
-		System.out.println(XML_END);
+		//System.out.println(XML_END);
 		
 	}
 	
@@ -93,14 +93,15 @@ public class ParseTreeConverter {
 			System.out.println(root);
 			
 		}
-		System.out.println(DOC_TAG_END);
+		//System.out.println(DOC_TAG_END);
 	}
 
 	
 	private void printStartTag(String id) {
 		// TODO Auto-generated method stub
 		//System.out.println(DOC_TAG_START);
-		System.out.println("\n<doc id=\""+id+"\">\n");
+		//System.out.println("\n<doc id=\""+id+"\">\n");
+		System.out.println("\n # id="+id+"\n");
 		
 	}
 
