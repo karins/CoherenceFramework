@@ -30,25 +30,27 @@ Documents will be in a simple text format, unless you use `--sgml` in which case
 
 ### Plain text format
 
-    # id="ldc_doc_1"
-    CONTENT
+``` text
+# id="ldc_doc_1"
+CONTENT
 
-    # id="ldc_doc_2"
-    CONTENT
+# id="ldc_doc_2"
+CONTENT
+```
     
 
 ### SGML format
 
-    ```xml
-        <docs filte="ldc_name">
-            <doc id="ldc_doc_1">
-            CONTENT
-            </doc>
-            <doc id="ldc_doc_2">
-            CONTENT
-            </doc>
-        </docs>
-    ```
+``` xml
+    <docs filte="ldc_name">
+        <doc id="ldc_doc_1">
+        CONTENT
+        </doc>
+        <doc id="ldc_doc_2">
+        CONTENT
+        </doc>
+    </docs>
+```
 
 # parse.py
 
