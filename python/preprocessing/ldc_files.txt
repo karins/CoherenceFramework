@@ -1,4 +1,4 @@
 data/ldc/xin_eng_201011.gz
 data/ldc/xin_eng_201012.gz
 #data/ldc/xon_eng_201001
-data/ldc/zun_eng_201012
+#data/ldc/zun_eng_201012
