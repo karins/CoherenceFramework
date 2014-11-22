@@ -18,7 +18,9 @@ import java.nio.charset.CharsetDecoder;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
@@ -209,9 +211,40 @@ public class CorpusReader {
 	 * @param xmlString
 	 * @return
 	 */
+	public Map<String, String> readXMLfromConsole(){
+		
+		Map<String, String> docIds = new HashMap<String, String>();
+		try {
+			SAXParserFactory spf = SAXParserFactory.newInstance();
+			spf.setNamespaceAware(true);
+			
+			SAXParser saxParser = spf.newSAXParser();
+			
+			CharsetDecoder decoder = StandardCharsets.UTF_8.newDecoder();
+			
+			Reader reader = new BufferedReader(new InputStreamReader(System.in));
+			
+			InputSource inputsource = new InputSource(reader);
+			inputsource.setEncoding("UTF-8");
+			
+			saxParser.parse(inputsource, this.new DocumentSaxParser( docIds));
+			
+		} catch (SAXException | IOException | ParserConfigurationException e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+		return docIds;
+	}
+	
+	/**
+	 * Reads xml and extracts the documents, identified by <doc> tag.
+	 * @param xmlString
+	 * @return
+	 */
 	public List<String> readXML(String filename, boolean isMultipleDocs){
-		//BufferedReader input =  null;
-		//StringBuilder contents = new StringBuilder();
+		
 		List<String> docs = new ArrayList<String>();
 		try {
 			SAXParserFactory spf = SAXParserFactory.newInstance();
@@ -221,8 +254,7 @@ public class CorpusReader {
 			
 			CharsetDecoder decoder = StandardCharsets.UTF_8.newDecoder();
 			Reader reader =  new BufferedReader(new InputStreamReader(new FileInputStream(new File(filename)), decoder));
-			//new InputStreamReader(new FileInputStream(new File(filename)), decoder)			
-			//InputStream is = new FileInputStream(new File(filename)),
+			
 			InputSource inputsource = new InputSource(reader);
 			inputsource.setEncoding("UTF-8");
 			
@@ -249,16 +281,34 @@ public class CorpusReader {
 	private class DocumentSaxParser extends DefaultHandler{
 		
 		private List <String> docs;
+		private Map<String, String> docIds;
 		private StringBuffer content;// = new StringBuffer();
 		private boolean inElement;
+		private String id;
 		
+		/**
+		 * simply tracks doc content, no attributes
+		 * @param docs
+		 */
 		public DocumentSaxParser(List<String> docs) {
 			this.docs = docs;
 		}
+		
+		/** 
+		 * this constructor will track doc ids with relevant doc
+		 * @param docIds
+		 */
+		public DocumentSaxParser(Map<String, String> docIds) {
+			this.docIds = docIds;
+		}
+		
 		public void startElement(String s, String s1, String elementName, Attributes attributes) throws SAXException {
-			if (elementName.equalsIgnoreCase("doc")) {
+			if (elementName.equalsIgnoreCase("doc")) { 
 				content = new StringBuffer();
 				inElement =  true;
+				if(attributes != null){
+					this.id = attributes.getValue(0);
+				}
 			}
 		}
 		public void characters (char characters[], int start, int length){
@@ -267,7 +317,11 @@ public class CorpusReader {
 		
 		public void endElement(String s, String s1, String element) throws SAXException {
 			if (element.equalsIgnoreCase("doc")) {
-				docs.add(content.toString());
+				if(docs != null){
+					docs.add(content.toString());
+				}else if(docIds != null){
+					docIds.put(id, content.toString());
+				}
 				inElement = false;
 			}
 		}		

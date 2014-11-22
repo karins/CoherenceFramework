@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>nlp.framework.discourse</groupId>
+  <artifactId>DiscourseFramework</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0</version>
+  <name>DiscourseFramework</name>
+  <url>https://github.com/karins/EntityFramework</url>
+  
+  
+     
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>2.5.1</version>
+      <configuration>
+        <source>1.6</source>
+        <target>1.6</target>
+      </configuration>
+    </plugin>
+
+    <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+        </configuration>
+      </plugin>    
+    
+  </plugins>
+</build>
+
+<dependencies>
+		<dependency>
+			<groupId>de.abelssoft</groupId>
+			<artifactId>jwordsplitter</artifactId>
+			<version>3.4</version>
+		</dependency>
+ 
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.stanford.nlp</groupId>
+			<artifactId>stanford-parser-3.3.0-models</artifactId>
+			<version>3.3.0</version>
+			</dependency>
+			<dependency>
+				<groupId>stanford-corenlp-3.3.0</groupId>
+				<artifactId>stanford-corenlp</artifactId>
+				<version>3.3.0</version>
+				<classifier>models</classifier>
+			</dependency>
+			<dependency>
+				<groupId>stanford-corenlp-3.3.0-models</groupId>
+				<artifactId>stanford-corenlp</artifactId>
+				<version>3.3.0</version>
+				<classifier>models</classifier>
+			</dependency>
+	</dependencies>
+</project>
