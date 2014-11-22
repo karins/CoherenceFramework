@@ -50,7 +50,7 @@ def grids_from_sgml(ldc_desc, args):
                     #    print ptb
                     #    print Tree(ptb).leaves()
                     proc = subprocess.Popen(cmd_args, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-                    (stdoutdata, stderrdata) = proc.communicate(doc['text'])
+                    (stdoutdata, stderrdata) = proc.communicate('{0}\n'.format(doc['text']))
                     sgmler.add(stdoutdata, id=doc['id'])
             sgmler.writegz(output_path)
     except:
@@ -68,17 +68,19 @@ def grids_from_text(ldc_desc, args):
     try:
         input_path = '{0}/trees/{1}'.format(args.workspace, ldc_desc['name'])
         output_path = '{0}/grids/{1}'.format(args.workspace, ldc_desc['name'])
-        logging.info('Processing %s', input_path)
-        with gzip.open(input_path + '.gz', 'rb') as fi:
-            with gzip.open(output_path + '.gz', 'wb') as fo:
-                for doc in itertxtdocs(fi):
-                    lines, attrs = doc['lines'], doc['attrs']
-                    logging.debug('document %s', attrs['id'])
-                    cmd_line = args.ExtractGrid
-                    cmd_args = shlex.split(cmd_line)
-                    proc = subprocess.Popen(cmd_args, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-                    (stdoutdata, stderrdata) = proc.communicate('\n'.join(lines))
-                    writetxtdoc(fo, stdoutdata.split('\n'), id=attrs['id']) 
+        logging.info('processing: %s', input_path)
+        if not args.dry_run:
+            with gzip.open(input_path + '.gz', 'rb') as fi:
+                with gzip.open(output_path + '.gz', 'wb') as fo:
+                    for doc in itertxtdocs(fi):
+                        lines, attrs = doc['lines'], doc['attrs']
+                        logging.debug('document %s', attrs['id'])
+                        cmd_line = args.ExtractGrid
+                        cmd_args = shlex.split(cmd_line)
+                        proc = subprocess.Popen(cmd_args, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+                        (stdoutdata, stderrdata) = proc.communicate('{0}\n'.format('\n'.join(lines)))
+                        writetxtdoc(fo, stdoutdata.split('\n'), id=attrs['id']) 
+        logging.info('done: %s', output_path)
     except:
         raise Exception(''.join(traceback.format_exception(*sys.exc_info())))
 
