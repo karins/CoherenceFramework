@@ -26,7 +26,29 @@ this will produce an output like this:
 
 
 Now `data/preprocessed/2010/sgml/` contains the files `xin_eng_201011.gz` and `xin_eng_201012.gz` each of which contains 5 documents.
-A very simple sgml markup is used to preserve document boundaries.
+Documents will be in a simple text format, unless you use `--sgml` in which case you will case sgml markup.
+
+### Plain text format
+
+    # id="ldc_doc_1"
+    CONTENT
+
+    # id="ldc_doc_2"
+    CONTENT
+    
+
+### SGML format
+
+    ```xml
+        <docs filte="ldc_name">
+            <doc id="ldc_doc_1">
+            CONTENT
+            </doc>
+            <doc id="ldc_doc_2">
+            CONTENT
+            </doc>
+        </docs>
+    ```
 
 # parse.py
 
