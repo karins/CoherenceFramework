@@ -14,9 +14,9 @@ import traceback
 import os
 from functools import partial
 from multiprocessing import Pool
-from sgmldoc import TextFromSGML, MakeSGMLDocs
+from docsgml import TextFromSGML, MakeSGMLDocs
 from ldc import get_ldc_name
-from txtdoc import writetxtdoc
+from doctext import writedoctext
 
 
 def extract_and_save_sgml(sgml_gz, args):
@@ -52,7 +52,7 @@ def extract_and_save_txt(sgml_gz, args):
                 for doc in parser.iterdocs():
                     if doc['text']:
                         ids.append(doc['id'])
-                        writetxtdoc(fo, doc['text'].split('\n'), id=doc['id'])
+                        writedoctext(fo, doc['text'].split('\n'), id=doc['id'])
                 logging.info('%s contains %d documents', stem, len(ids))
         return ids
     except:

@@ -33,10 +33,10 @@ import numpy as np
 from time import time
 from functools import partial
 from multiprocessing import Pool
-from sgmldoc import MakeSGMLDocs
+from docsgml import MakeSGMLDocs
 from ldc import get_ldc_name 
 from nltk.tree import Tree
-from txtdoc import writetxtdoc
+from doctext import writedoctext
 
 
 def make_workspace(workspace):
@@ -101,7 +101,7 @@ def badsgml2text(ldc_name, args):
                     elif line == '</doc>':
                         # add the doc to an actual SGML file
                         n_lines.append(len(doc_lines))
-                        writetxtdoc(fo, doc_lines, id=doc_id)
+                        writedoctext(fo, doc_lines, id=doc_id)
                         doc_lines = None
                         doc_id = None
                     # if there is an open doc, append lines to it

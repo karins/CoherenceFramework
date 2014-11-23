@@ -23,7 +23,7 @@ This is another, this one has a single sentence.
 """
 from itertools import ifilter
 
-def writetxtdoc(ostream, lines, **kwargs):
+def writedoctext(ostream, lines, **kwargs):
     """
     Dumps a document (this function never writes empty lines within the document)
     :param ostream: where we are printing to
@@ -36,7 +36,7 @@ def writetxtdoc(ostream, lines, **kwargs):
         print >> ostream, line
     print >> ostream
 
-def itertxtdocs(istream):
+def iterdoctext(istream):
     """
     Iterates over documents
     :param istream: where we are reading from

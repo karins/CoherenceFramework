@@ -16,9 +16,9 @@ import subprocess
 from time import time
 from functools import partial
 from multiprocessing import Pool
-from sgmldoc import TextFromSGML, MakeSGMLDocs
+from docsgml import TextFromSGML, MakeSGMLDocs
 from ldc import parse_ldc_name_from_path
-from txtdoc import itertxtdocs, writetxtdoc
+from doctext import iterdoctext, writedoctext
 from nltk.tree import Tree
 
 
@@ -72,14 +72,14 @@ def grids_from_text(ldc_desc, args):
         if not args.dry_run:
             with gzip.open(input_path + '.gz', 'rb') as fi:
                 with gzip.open(output_path + '.gz', 'wb') as fo:
-                    for doc in itertxtdocs(fi):
+                    for doc in iterdoctext(fi):
                         lines, attrs = doc['lines'], doc['attrs']
                         logging.debug('document %s', attrs['id'])
                         cmd_line = args.ExtractGrid
                         cmd_args = shlex.split(cmd_line)
                         proc = subprocess.Popen(cmd_args, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
                         (stdoutdata, stderrdata) = proc.communicate('{0}\n'.format('\n'.join(lines)))
-                        writetxtdoc(fo, stdoutdata.split('\n'), id=attrs['id']) 
+                        writedoctext(fo, stdoutdata.split('\n'), id=attrs['id']) 
         logging.info('done: %s', output_path)
     except:
         raise Exception(''.join(traceback.format_exception(*sys.exc_info())))
