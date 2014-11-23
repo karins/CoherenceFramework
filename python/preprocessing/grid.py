@@ -72,8 +72,7 @@ def grids_from_text(ldc_desc, args):
         if not args.dry_run:
             with gzip.open(input_path + '.gz', 'rb') as fi:
                 with gzip.open(output_path + '.gz', 'wb') as fo:
-                    for doc in iterdoctext(fi):
-                        lines, attrs = doc['lines'], doc['attrs']
+                    for lines, attrs in iterdoctext(fi):
                         logging.debug('document %s', attrs['id'])
                         cmd_line = args.ExtractGrid
                         cmd_args = shlex.split(cmd_line)

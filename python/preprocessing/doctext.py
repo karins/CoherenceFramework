@@ -40,10 +40,8 @@ def iterdoctext(istream):
     """
     Iterates over documents
     :param istream: where we are reading from
-    :yields: a dictionary containing the attributes of the document ('attrs'), as a dictionary itself, and the sentences ('lines') as a list.
+    :yields: a tuple containing the content of the document (as a list of lines) and the attributes of the document (as a dictionary)
     """
-    attrs = None
-    content = None
     doc = None
     for line in istream:
         line = line.strip()
@@ -56,8 +54,8 @@ def iterdoctext(istream):
             if line:
                 doc['lines'].append(line)
             else:
-                yield doc
+                yield doc['lines'], doc['attrs']
                 doc = None
 
     if doc is not None:
-        yield doc
+        yield doc['lines'], doc['attrs']

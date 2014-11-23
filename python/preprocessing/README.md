@@ -1,6 +1,6 @@
 # Preprocessing data
 
-Some useful scripts.
+Some useful scripts to preprocess LDC GigaWord data.
 
 ## File formats
 
@@ -17,7 +17,7 @@ data/ldc/xin_eng_201012.gz
 
 Note you can use `#` to add comments or skip files.
 
-### doctext: documents in plain text format
+### *doctext*: documents in plain text format
 
 The following format will be used to keep several documents (without loosing document boundaries) in a single text file.
 
@@ -32,7 +32,18 @@ CONTENT
 For this to work there is a simple constraint: ***the content cannot contain blank lines***.
 One can also store other key-value pairs in the header if one wishes.
 
-### docsgml: documents in SGML style
+The file `doctext.py` contains helper functions to read and write in this format:
+
+```python
+from doctext import writedoctext, iterdoctext
+import sys
+
+for lines, attributes in iterdoctext(sys.stdin):
+  writedoctext(sys.stdout, lines, **attributes)
+
+```
+
+### *docsgml*: documents in SGML style
 
 The following format is used to keep several documents in a single XML-formatted file. XML can complicate things sometimes, so use with care ;)
 
@@ -56,15 +67,15 @@ I often use tabulate to dump markdown tables with some helpful information, you 
     sudo pip install tabulate
 
 
-## Utilitary tools
+## Utillitary tools
 
 ### docs.py
 
 Extracts raw documents from LDC GigaWord files.
-The input is a list of gzipped LDC files as in `ldc_files.txt`.
+The input is a list of gziped LDC files as in `ldc_files.txt`.
 
 
-    cat ldc_files.txt | python docs.py data/preprocessed/2010 
+    cat ldc_files.txt | python docs.py data/preprocessed/2010
 
 
 this will produce an output like this:
@@ -87,7 +98,7 @@ Documents will be in `doctext` format, unless you use `--sgml` in which case you
 ### parse.py
 
 Parses documents within sgml-formatted files obtained by `docs.py`.
-The input is again a list of gzipped LDC files as in `ldc_files.txt`.
+The input is again a list of gziped LDC files as in `ldc_files.txt`.
 This time we also expect the output of `docs.py` to be available.
 
 
@@ -115,7 +126,3 @@ The following is an example run:
 
 Now `data/preprocessed/2010/bsgml_trees` contains the parsed documents and `data/preprocessed/2010/log-parse` contains additional information from Stanford Parser.
 The folder `bsgml_trees` contains badly sgml-formatted files. By mistake those files weren't true SGML files, they contain SGML-like tags, but the content of documents is not XML compliant. This will be fixed soon.
-
-
-
-
