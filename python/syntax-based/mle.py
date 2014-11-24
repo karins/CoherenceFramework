@@ -1,8 +1,10 @@
 import itertools
 import math
 import sys
+import logging
 from collections import defaultdict
 from scipy.optimize import minimize_scalar
+import argparse
 
 
 def pairwise(iterable):
@@ -47,6 +49,7 @@ def read_data(istream):
 
 
 def minimize(T, unigrams, bigrams):
+    """optimise the likelihood of T"""
     return minimize_scalar(minusloglikelihood, bounds=(0.0, 1.0), args=(T, unigrams, bigrams), method='bounded')
 
 
@@ -68,20 +71,43 @@ def count(T):
     return unigrams, bigrams
                 
 
-def main(n, stem):
+def main(args):
+    """load data and optimise the likelihood"""
     T = []
-    for index in range(n):
-        with open(stem + str(index), 'r') as fi:
+    for index in range(args.n):
+        path = args.prefix + str(index)
+        logging.info('Processing %s', path)
+        with open(path, 'r') as fi:
             T.append(read_data(fi))
     unigrams, bigrams = count(T)
     print minimize(T, unigrams, bigrams)
 
 
+def parse_args():
+    """parse command line arguments"""
+
+    parser = argparse.ArgumentParser(description='Hyperparameter tuning via MLE',
+            formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+
+    parser.add_argument('prefix',
+            type=str,
+            help='prefix of documents (to be completed with numbers)')
+    parser.add_argument('n',
+            type=int,
+            help='number of documents')
+    parser.add_argument('--verbos', '-v',
+            action='store_true',
+            help='increase the verbosity level')
+
+    args = parser.parse_args()
+
+    logging.basicConfig(
+            level=(logging.DEBUG if args.verbose else logging.INFO), 
+            format='%(levelname)s %(message)s')
+
+    return args
+
 if __name__ == '__main__':
 
-    if len(sys.argv) != 3:
-        print >> sys.stderr, 'Usage: %s stem n' % (sys.argv[0])
-        sys.exit(0)
-
-    main(int(sys.argv[2]), sys.argv[1])
+    main(parse_args())
 
