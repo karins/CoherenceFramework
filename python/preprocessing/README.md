@@ -126,3 +126,12 @@ The following is an example run:
 
 Now `data/preprocessed/2010/bsgml_trees` contains the parsed documents and `data/preprocessed/2010/log-parse` contains additional information from Stanford Parser.
 The folder `bsgml_trees` contains badly sgml-formatted files. By mistake those files weren't true SGML files, they contain SGML-like tags, but the content of documents is not XML compliant. This will be fixed soon.
+
+### sgml2txt.py
+
+Converts the badly formatted sgml files produced by the Java wrapper to Stanford parser into *doctext* files.
+
+
+### grid.py
+
+Extracts Entity grids from parsed documents using the [*browncoherence*](http://cs.brown.edu/~melsner/manual.html) toolkit.

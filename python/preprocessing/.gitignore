@@ -1,6 +1,7 @@
 # my test dirs
 data/preprocessed
 legacy
+ignored/
 
 # python objects
 *.pyc
