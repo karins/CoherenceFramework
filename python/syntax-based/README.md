@@ -14,10 +14,11 @@ Add `preprocessing` to your `PYTHONPATH`.
 # Optional
 
 * install `progressbar` from Google code for improved feedback
-        wget https://python-progressbar.googlecode.com/files/progressbar-2.3.tar.gz
-        tar -xzvf progressbar-2.3.tar.gz
-        cd progressbar-2.3
-        sudo python setup.py install --record files.txt
+
+      wget https://python-progressbar.googlecode.com/files/progressbar-2.3.tar.gz
+      tar -xzvf progressbar-2.3.tar.gz
+      cd progressbar-2.3
+      sudo python setup.py install --record files.txt
 
 
 # A. Louis's model for syntax-based coherence
