@@ -20,6 +20,10 @@ except:
     sys.exit(0)
 
 
+def bar(iterable):
+    # if progressbar is installed we use it
+    return ProgressBar()(iterable) if PROGRESSBAR else iterable
+
 def pairwise(iterable):
     "iterate over pairs in the sequence: pairwise((s0, s2, ..., sn)) -> (s0,s1), (s1,s2), (s2, s3), ..."
     a, b = itertools.tee(iterable)
@@ -31,11 +35,6 @@ def minusloglikelihood(c, T, unigrams, bigrams):
     """returns the negative of the log likelihood of the data"""
     logging.info('Computing minus log likelihood with c=%f', c)
     ll = 0.0
-
-    if PROGRESSBAR:  # if progressbar is installed we use it
-        bar = ProgressBar()
-    else:  # otherwise we simply pass the iterator forward
-        bar = lambda iterable: iter(iterable)
 
     # for each document
     for D in bar(T):
@@ -88,7 +87,7 @@ def count(T):
     bigrams = defaultdict(int)
 
     # counting
-    for D in T:
+    for D in bar(T):
         for Sa in D:
             for u in Sa:
                 unigrams[u] += 1
@@ -120,15 +119,13 @@ def parse_args():
 
 def main(args):
     """load data and optimise the likelihood"""
-    T = []
-    for lines, attrs in iterdoctext(sys.stdin):
-        logging.debug("Processing '%s'", attrs.get('id', 'unnamed doc'))
-        T.append(lines)
+    logging.info('Reading documents in ...')
+    T = [lines for lines, attrs in iterdoctext(sys.stdin)]
     logging.info('%d documents, on average %.2f sentences per document', len(T), np.mean([len(D)for D in T]))
     logging.info('Counting...')    
     unigrams, bigrams = count(T)
     logging.info('%d unigrams, %d bigrams', len(unigrams), len(bigrams))
-
+    logging.info('Minimising negative log likelihood')
     print minimize(T, unigrams, bigrams)
 
 
