@@ -43,6 +43,11 @@ for lines, attributes in iterdoctext(sys.stdin):
 
 ```
 
+You can also use it directly to put together a bunch of plain text docouments (1 document per file) into a single `doctext`.
+
+    cat list_of_files.txt | python doctext.py > corpus.doctext
+
+
 ### *docsgml*: documents in SGML style
 
 The following format is used to keep several documents in a single XML-formatted file. XML can complicate things sometimes, so use with care ;)

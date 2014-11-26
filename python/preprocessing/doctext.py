@@ -59,3 +59,19 @@ def iterdoctext(istream):
 
     if doc is not None:
         yield doc['lines'], doc['attrs']
+
+
+def main():
+    """Use this to convert a list of documents (one document per file) into a single doctext"""
+    import sys
+    import os
+    files = [path.strip() for path in sys.stdin if not path.startswith('#')]
+    for path in files:
+        doc_name = os.path.basename(path)
+        with open(path) as fi:
+            lines = [line.strip() for line in fi]
+            writedoctext(sys.stdout, lines, id=doc_name)
+
+if __name__ == '__main__':
+    main()
+
