@@ -2,9 +2,3 @@
 data/preprocessed
 legacy
 ignored/
-
-# python objects
-*.pyc
-
-# vim files
-.*.swp
