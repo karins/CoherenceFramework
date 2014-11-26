@@ -5,6 +5,19 @@ import logging
 from collections import defaultdict
 from scipy.optimize import minimize_scalar
 import argparse
+import numpy as np
+
+try:
+    from progressbar import ProgressBar
+    PROGRESSBAR = True
+except:
+    PROGRESSBAR = False
+
+try:
+    from doctext import iterdoctext
+except:
+    print "You need to add 'preprocessing' to your PYTHONPATH"
+    sys.exit(0)
 
 
 def pairwise(iterable):
@@ -16,9 +29,16 @@ def pairwise(iterable):
 
 def minusloglikelihood(c, T, unigrams, bigrams):
     """returns the negative of the log likelihood of the data"""
+    logging.info('Computing minus log likelihood with c=%f', c)
     ll = 0.0
+
+    if PROGRESSBAR:  # if progressbar is installed we use it
+        bar = ProgressBar()
+    else:  # otherwise we simply pass the iterator forward
+        bar = lambda iterable: iter(iterable)
+
     # for each document
-    for D in T:
+    for D in bar(T):
         # for each sentence pair
         for Sa, Sb in pairwise(D):
             # for each pattern in the second sentence of the pair
@@ -27,15 +47,29 @@ def minusloglikelihood(c, T, unigrams, bigrams):
                 prob_v_given_u = sum((float(bigrams.get((u, v), 0)))/(float(unigrams.get(u, 0)) + c * len(unigrams)) for u in Sa)
                 # compute the contribution of pattern v in Sb to the training likelihood
                 ll += math.log(1.0/len(Sa)) + math.log(prob_v_given_u)
+    logging.info('average likelihood: %f', -ll/len(T))
     return -ll/len(T)
 
 
+def minimize(T, unigrams, bigrams):
+    """optimise the likelihood of T"""
+    return minimize_scalar(minusloglikelihood, bounds=(0.0, 1.0), args=(T, unigrams, bigrams), method='bounded')
+
+
 def read_data(istream):
+    """
+    Read documents (one document per file) in plain text format.
+
+    File format 
+    -----------
+    Each line corresponds to a sentence and it contains the set of syntactic patterns associated with that sentence. Example:
+
+        WHNP*wp SQ*vbz 
+        PP*in NP-TMP*nnp NP*np VP*md 
+
+    """
 
     doc = []
-    #file format:
-    #WHNP*wp SQ*vbz 
-    #PP*in NP-TMP*nnp NP*np VP*md 
     
     for line in istream:
         patterns = line.split()
@@ -44,13 +78,7 @@ def read_data(istream):
             sentence.append(pattern)
         doc.append(sentence)
             
-    #print 'returning '+str(len(doc))+' lines'
     return doc
-
-
-def minimize(T, unigrams, bigrams):
-    """optimise the likelihood of T"""
-    return minimize_scalar(minusloglikelihood, bounds=(0.0, 1.0), args=(T, unigrams, bigrams), method='bounded')
 
 
 def count(T):
@@ -71,31 +99,13 @@ def count(T):
     return unigrams, bigrams
                 
 
-def main(args):
-    """load data and optimise the likelihood"""
-    T = []
-    for index in range(args.n):
-        path = args.prefix + str(index)
-        logging.info('Processing %s', path)
-        with open(path, 'r') as fi:
-            T.append(read_data(fi))
-    unigrams, bigrams = count(T)
-    print minimize(T, unigrams, bigrams)
-
-
 def parse_args():
     """parse command line arguments"""
 
     parser = argparse.ArgumentParser(description='Hyperparameter tuning via MLE',
             formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument('prefix',
-            type=str,
-            help='prefix of documents (to be completed with numbers)')
-    parser.add_argument('n',
-            type=int,
-            help='number of documents')
-    parser.add_argument('--verbos', '-v',
+    parser.add_argument('--verbose', '-v',
             action='store_true',
             help='increase the verbosity level')
 
@@ -106,6 +116,21 @@ def parse_args():
             format='%(levelname)s %(message)s')
 
     return args
+
+
+def main(args):
+    """load data and optimise the likelihood"""
+    T = []
+    for lines, attrs in iterdoctext(sys.stdin):
+        logging.debug("Processing '%s'", attrs.get('id', 'unnamed doc'))
+        T.append(lines)
+    logging.info('%d documents, on average %.2f sentences per document', len(T), np.mean([len(D)for D in T]))
+    logging.info('Counting...')    
+    unigrams, bigrams = count(T)
+    logging.info('%d unigrams, %d bigrams', len(unigrams), len(bigrams))
+
+    print minimize(T, unigrams, bigrams)
+
 
 if __name__ == '__main__':
 
