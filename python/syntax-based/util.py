@@ -3,7 +3,7 @@ Some utilitary functions.
 
 @author waziz
 """
-
+import sys
 import itertools
 import numpy as np
 from collections import defaultdict
@@ -68,7 +68,7 @@ def read_documents(istream, doc_boundaries=False):
         """wraps a doc with document tags if requested"""
         return itertools.chain(['<doc>'], sentences, ['</doc>']) if doc_boundaries else sentences
 
-    return [[frozenset(line.split()) for line in wrap_doc(lines)] for lines, attrs in iterdoctext(istream)]
+    return [[line.split() for line in wrap_doc(lines)] for lines, attrs in iterdoctext(istream)]
 
 
 def register_token(t, vocab):
@@ -117,5 +117,18 @@ def encode_documents(T, null=None):
     # register all tokens
     encoded = np.array([[np.array([register_token(t, vocab) for t in S], int) for S in D] for D in T])
     return encoded, vocab
+
+
+def encode_test_documents(T, vocab):
+    """
+    Encodes test documents into numpy arrays of ids with a fixed (training) vocab.
+    New symbols are assigned id -1.
+
+    >>> vocab = {'<null>':0, 'a':1, 'b':2, 'c':3}
+    >>> T = [[['a'], ['b', 'c', 'd', 'b', 'c'], ['e']]]
+    >>> encode_test_documents(T, vocab)
+    array([[[1], [ 2  3 -1  2  3], [-1]]], dtype=object)
+    """
+    return np.array([[np.array([vocab.get(t, -1) for t in S], int) for S in D] for D in T])
 
 

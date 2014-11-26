@@ -46,17 +46,17 @@ import numpy as np
 from util import bar, ibm_pairwise, read_documents, encode_documents
 
 
-def minusloglikelihood(corpus, T):
+def loglikelihood(corpus, T):
     """computes -log(likelihood(T))"""
-    ll = 0.0
-    for D in corpus:
+    L = np.zeros(len(corpus))
+    for i, D in enumerate(corpus):
         # for each sentence pair
         for E, F in ibm_pairwise(D):
             # for each pattern in the second sentence of the pair
             for f in F:
                 # sum up the contributions of the pattern v conditioned on each pattern u in the first sentence of the pair
-                ll += math.log(T[f,E].sum())
-    return -ll
+                L[i] += math.log(T[f,E].sum())
+    return L
 
 
 def ibm1(corpus, V, max_iterations):
@@ -77,8 +77,8 @@ def ibm1(corpus, V, max_iterations):
 
     T = np.ones((V, V), float) / V   # T[f,e] = t(f|e)
     for i in range(max_iterations):
-        ll = minusloglikelihood(corpus, T)
-        logging.info('Iteration %d Loglikelihood %f', i, ll)
+        ll = loglikelihood(corpus, T).sum()
+        logging.info('Iteration %d Negative log likelihood %f', i, -ll)
         C = np.zeros((V, V), float)  # C[f,e] = c(f,e)
         N = np.zeros(V, float)       # N[e] = c(e)
         # E-step
@@ -97,8 +97,8 @@ def ibm1(corpus, V, max_iterations):
         # M-step
         for f, e in itertools.product(range(V), range(V)):
             T[f,e] = C[f,e] / N[e] 
-    ll = minusloglikelihood(corpus, T)
-    logging.info('Final loglikelihood %f', ll)
+    ll = loglikelihood(corpus, T).sum()
+    logging.info('Final negative log likelihood %f', -ll)
     return T
 
      
