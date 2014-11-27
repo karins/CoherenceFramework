@@ -106,9 +106,12 @@ def main(args):
     L = loglikelihood(test, T)
 
     # dumps scores
-    print >> args.output, '#doc\t#loglikelihood\t#length\t#normalised'
+    print >> args.output, '#doc\t#logprob\t#sentences\t#s_normalised\t#patterns\t#p_normalised'
     for i, ll in enumerate(L):
-        print >> args.output, '{0}\t{1}\t{2}\t{3}'.format(i, ll, len(test[i]), ll/len(test[i]))
+        num_sentences = len(test[i])
+        num_patterns = sum(len(row) for row in test[i])
+        print >> args.output, '{0}\t{1}\t{2}\t{3}\t{4}\t{5}'.format(i, ll, num_sentences, 
+                ll/num_sentences, num_patterns, ll/num_patterns)
     print >> sys.stderr, '#sum\t#mean'
     print >> sys.stderr, '{0}\t{1}'.format(L.sum(), np.mean(L))
   
