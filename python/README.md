@@ -31,7 +31,7 @@ I recommend using `virtualenv`
 
 2. Activate the environment
 
-        ~/workspace/envs/discourse/bin/activate
+        source ~/workspace/envs/discourse/bin/activate
 
 3. Install dependencies
 
