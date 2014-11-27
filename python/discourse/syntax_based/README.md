@@ -21,3 +21,4 @@ A modified version which includes document boundary tokens and insertion counts 
 This estimates a distribution `t(pattern|trigger)` from a collection of documents, where (trigger, pattern) is a pair of syntactic patterns occurring in adjacent sentences:
 
     cat data/potet/patterns.doctext | python ibm1.py -b -m 20 > data/potet/patterns.ibm1.20
+
