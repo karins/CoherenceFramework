@@ -1,3 +1,9 @@
+"""
+This module can be used to score a document using IBM model 1.
+
+@author waziz
+"""
+
 import sys
 import argparse
 import logging

@@ -1,3 +1,18 @@
+"""
+This module can be used to compare alternative document translations under a certain model.
+It produces the rankings and a summary of how often each system ranks first.
+
+The following is an example of ranking
+
+#doc #best-to-worst
+0 A B C
+1 B A C
+2 A C B
+3 A C B
+
+@author waziz
+"""
+
 import sys
 import argparse
 import logging
@@ -65,11 +80,14 @@ def extension(ext):
     return '.' + ext if ext else ''
 
 def main(args):
+
+    # reads in the paths to files containing documents
     files = [path.strip() for path in args.input if not path.startswith('#')]
+    # uses the name of the files as system ids
     names = [os.path.basename(path) for path in files]
     logging.info('Comparing %d files using %s model', len(files), args.model)
 
-
+    # computes the scores for each document by each system
     results = []
     for name, input_path in zip(names, files):
         output_path = '{0}/{1}.{2}{3}'.format(args.output, args.model, name, extension(args.exp))
@@ -81,19 +99,26 @@ def main(args):
                 with open(input_path) as fi:
                     proc = sp.Popen(cmd_args, stdin=fi, stdout=fo, stderr=fe)
                     proc.wait()
+        # loads in the score in column args.column
         results.append(np.loadtxt(output_path + '.stdout')[:,args.column])
         logging.info('%s: %d documents', name, len(results[-1]))
     
+    # checks that every system produced the same name of documents
     n_docs = [len(R) for R in results]
     if len(frozenset(n_docs)) != 1:
         raise Exception('Not all files contain the same number of documents')
 
+    # total number of documents
     n_docs = n_docs[0]
+    # makes the results a numpy array
     results = np.array(results)
 
     with open(args.rankings + extension(args.exp), 'w') as fo:
         first = np.zeros(len(names), float)
         print >> fo, '#doc\t#best-to-worst'
+
+        # computes and stores rankings
+        # and counts how many times each system ranked first
         for i in range(n_docs):
             ranking = sorted(enumerate(results[:,i]), key=lambda (s, r): r, reverse=True)
             first_sys, first_score = ranking[0]
