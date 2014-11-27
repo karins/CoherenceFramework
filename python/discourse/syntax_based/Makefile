@@ -42,4 +42,6 @@ alouis: data/potet/patterns.alouis.bigrams data/potet/patterns.mod_alouis.bigram
 
 .PHONY: clean
 clean:
-	-rm -fr data/potet/patterns.*
+	-rm -fr data/potet/patterns.alouis*
+	-rm -fr data/potet/patterns.mod_alouis*
+	-rm -fr data/potet/patterns.ibm1*
