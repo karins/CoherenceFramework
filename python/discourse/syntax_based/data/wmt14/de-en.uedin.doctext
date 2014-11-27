@@ -1,0 +1,3177 @@
+# id=uedin.de-en.0
+S*np NP*nns VP*md
+ADVP*prp S*np
+NP*np VP*md
+PP*in S*np CC S*np
+NP*dt VP*md
+NP*jj VP*md
+PP*in NP*np VP*vb
+S*np '' NP*prp VP*vbd ''
+NP*nns VP*vbp
+PP*in NP*jj VP*vbp
+SBAR*in NP*np VP*md
+NP*dt VP*md
+
+# id=uedin.de-en.1
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*dt VP*vbd
+NP*nnp VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbn
+NP*np VP*vbd
+NP*nns VP*vbd
+S*np CC S*np
+NP*np VP*vbd
+S*np NP*prp VP*vbd
+S*np S*np-tmp
+NP*dt VP*vbz
+NP*np VP*vb
+
+# id=uedin.de-en.2
+PP*in VP*vbz NP*np
+NP*nnp VP*vbz
+PP*in NP*np VP*vbd
+PP*in NP*ex VP*vbp
+
+# id=uedin.de-en.3
+NP*np VP*vbz
+NP*np VP*vbd
+PP*in NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbz
+PP*in NP*dt VP*vbz
+PP*in NP*ex VP*vbp
+ADVP*rb NP*dt VP*vbd
+PP*in NP*dt VP*vbd
+ADVP*np NP*np VP*vbd
+PP*in NP-TMP*jj ADVP*rb VP*vbd
+S*np NP*np ADVP*rb VP*vbd
+
+# id=uedin.de-en.4
+NP*jj VP*vbz
+S*advp VP*vbd NP*prp$
+S*np S*np
+NP*np NP*np
+NP*prp$ VP*vp
+PP*in NP*prp VP*vbd
+PP*in NP*prp VP*vbd
+NP*prp VP*vp
+NP*prp VP*vbp
+NP*np PP*vbg NP*dt VP*vbp
+NP*dt VP*vbd
+S*np S*pp
+SBAR*in S*adjp NP*prp$ VP*vp
+ADVP*rb NP*dt VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vbp
+NP*nnp VP*vbd
+
+# id=uedin.de-en.5
+NP*np VP*vbz
+NP*np VP*vbd
+SBAR*in NP*prp VP*vbd
+PP*in NP*nnp VP*vbz
+NP*prp VP*vbd
+NP*nnp VP*vbd
+
+# id=uedin.de-en.6
+NP*np VP*vbp
+NP*dt VP*vbd
+S*s NP*dt VP*vbd
+RB NP*prp VP*md
+NP*dt VP*vbd
+PP*in NP*np VP*md
+PP*in PP*in VP*vbd
+NP*dt VP*vbd
+NP*prp VP*vbd
+
+# id=uedin.de-en.7
+NP*nnp VP*vbd
+S*np S*np PP*vbg
+S*np CC S*np
+NP*np VP*vbd
+NP*np VP*vbz
+ADVP*rb NP*dt VP*vp
+S*np S*np ''
+NP*dt VP*vbd
+NP*dt VP*vbd
+
+# id=uedin.de-en.8
+PP*in VP*vbz NP*np ''
+NP*prp VP*md
+NP*dt VP*vbz
+PP*in NP*nns VP*vbd
+NP*nnp VP*vbd
+ADVP*rb NP*prp VP*vp
+S*np '' VP*vbd NP*nnp
+SBAR*in NP*prp VP*md
+VP*advp
+S*np '' NP*nnp VP*vbd
+S*np CC S*np
+NP*ex VP*vbp
+ADVP*rb NP*dt VP*vbp
+NP*dt VP*vbz
+NP*ex VP*vbz
+PP*in NP*np VP*vbz
+CC SBAR*rb NP*jjs VP*md
+PP*advp NP*np VP*vbp
+S*np '' VP*vbz NP*nnp
+CC NP*nn VP*vbz
+NP*np VP*vbp
+NP*np VP*vb
+NP*prp VP*vp
+PP*in NP*prp VP*vbd
+PP*in NP*np VP*vbp
+NP*np VP*nn
+RB ADVP*rb NP*nn VP*vbz
+ADJP*jjr SBAR*in
+CC SBAR*whadvp NP*prp VP*md
+S*np CC S*np
+NP*dt ADVP*np VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbp
+NP*np VP*vbz
+NP*jj VP*vbp
+S*np CC S*np
+PP*in VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbz
+S*np CC S*np
+S*np '' VP*vbz NP*nnp
+PP*in NP*dt ADVP*rb PP*in NP*prp VP*vbz
+NP*np VP*vp
+S*np NP*prp VP*md
+S*np '' NP*dt VP*vbd
+PP*in NP*np VP*vbz
+PP*in PP*in NP*np VP*vbn
+S*np '' NP*nnp VP*vbz
+NP*prp VP*vp
+PP*in NP*dt VP*vbz
+S*np '' NP*nnp VP*vbd
+NP*dt VP*md
+NP*dt VP*vp
+NP*prp VP*vbp
+S*np '' VP*vbz NP*nnp
+S*np VP*vbz NP*dt
+NP*dt VP*vbz
+S*vp VP*vbz
+S*np '' VP*vbz NP*nnp
+CC NP*prp VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vbp
+VP*vp
+
+# id=uedin.de-en.9
+NP*nnp VP*vbz
+S*s NP*nnp VP*vbz
+ADVP*rb NP*ex VP*vbp
+ADVP*rb NP*np VP*md
+PP*in PRN*, NP*ex VP*md
+S*np '' NP*nnp VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*dt NP-TMP*jj VP*vbz
+PP*in NP*ex VP*vbz
+S*np '' NP*prp VP*vbd
+S*np CC S*np
+NP*dt VP*md
+PP*in NP*dt VP*vbd
+S*advp '' NP*nnp VP*vbd
+NP*prp VP*vbd
+S*cc S*np
+NP*nnp VP*vbd ''
+
+# id=uedin.de-en.10
+S*np S*s
+NP*np VP*vbd
+S*sbar CC S*np
+NP*prp VP*vp
+
+# id=uedin.de-en.11
+NP*np VP*vbz
+NP*np VP*vbd
+PP*to NP*prp VP*vbp
+NP*nnp VP*vbd
+NP*np VP*md
+NP*prp VP*vbp
+NP*prp VP*vbp
+S*vp S*np
+S*np S*np
+ADVP*rb S*cc VP*vbd
+NP*np VP*vbz
+S*np S*np
+S*np S*np
+NP*prp ADVP*rb VP*vbz
+NP*np VP*vbz
+NP*dt VP*md
+
+# id=uedin.de-en.12
+NP*np VP*vbz
+SBAR*in NP*dt VP*vbz
+PP*in NP*nns VP*vbp
+NP*dt VP*vbz
+NP*nnp VP*vbd
+
+# id=uedin.de-en.13
+S*vp S*np
+PP*in PP*in PP*to
+S*np '' VP*vbd NP*nnp
+S*np S*np S*np CC S*np
+PP*in NP*np VP*vbp
+
+# id=uedin.de-en.14
+NP*nn PP*advp NP*np VP*vbd
+S*np S*s
+NP*nnp VP*vbd
+
+# id=uedin.de-en.15
+S*np NP*nnp VP*vbp
+NP*ex VP*md
+PP*in NP*prp VP*vbp
+SBAR*whadvp NP*prp VP*vbz
+NP*dt VP*vbd
+NP*np VP*vp
+NP*nnp NP*np
+NP*dt VP*md
+S*np NP*nnp VP*vbd
+PP*in NP*nnp VP*vbd
+NP*nnp VP*vbd
+
+# id=uedin.de-en.16
+NP*np VP*vbd
+S*np CC S*np
+SBAR*in NP*dt VP*vbz
+S*advp RB S*np
+NP*dt VP*md
+IN NP*dt VP*vbd
+S*vp VP*vbd
+NP*nns VP*vbd
+PP*in S*adjp VP*vbd
+S*np CC S*np
+NP*dt VP*vbd
+NP*dt VP*vbd
+
+# id=uedin.de-en.17
+NP*np ''
+VP*vbd
+NP*prp VP*vbd
+NP*ucp NP*np
+VP*vb ''
+
+# id=uedin.de-en.18
+NP*np PP*in NP*ex VP*vbz
+PP*in NP*nnp VP*vb
+NP*prp VP*vp
+NP*np VP*vbz
+S*np CC S*np
+S*np '' VP*vbd NP*nnp
+NP*dt VP*md
+NP*dt VP*md
+NP*np VP*vbz
+PP*in NP*nns VP*md
+NP*nn VP*md
+NP*np VP*vbp
+PP*in NP*rb VP*md
+NP*np VP*md
+S*vp VP*vbd
+CC ADVP*rb NP*jj VP*vbz
+PP*in '' NP*dt VP*vbz
+NP*prp VP*md
+PP*in SBAR*whnp VP*vbz
+PP*in NP*dt VP*vbp
+ADVP*in NP*dt
+NP*dt VP*vbz
+NP*nn PP*in
+NP*dt VP*md
+PP*in NP*prp VP*vbz
+PP*in S*np CC S*np
+NP*np VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbp
+PP*advp NP*ex VP*vbz
+NP*nns VP*vbp ''
+
+# id=uedin.de-en.19
+WHNP*whnp SQ*vp
+S*vp VP*vbd
+S*s '' VP*vbd NP*np
+S*np '' CC S*np
+S*np '' NP*prp VP*vbd
+PP*vbg PRN*np NP*dt VP*vbz ''
+PP*in NP*np VP*vbd ''
+NP*np VP*vbz
+NP*dt VP*vbd
+NP*np VP*vbd
+PP*in NP*nns VP*md
+NP*dt ADVP*rb VP*vbz
+PP*vbg PP*np ''
+PP*in NP*dt VP*vbz
+SBAR*in NP*np VP*md
+S*np '' VP*vbd NP*np
+S*s '' NP*prp VP*vbd
+NP*dt VP*vbd
+S*np S*np
+
+# id=uedin.de-en.20
+PP*in NP*np
+NP*np VP*vbz
+PP*in SBAR*whadvp VP*md
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*ex VP*vp
+PP*in NP*np VP*vbp
+NP*nnp VP*md
+NN NNS
+PP*in
+PP*in NP*nn VP*vbz
+NP*nnp VP*vbz
+PP*in
+S*np NP*dt VP*vbz
+PP*in NP*nn VP*vbz
+S*np '' VP*vbd NP*nnp
+CC SBAR*advp NP*np VP*vbd
+NP*dt VP*md
+CC NP*cd VP*vbz
+S*np NP*dt VP*vp
+NP*dt VP*vp
+NP*dt VP*vbd
+S*np NP*np VP*vbd
+NP*dt VP*vbp
+NP*dt VP*vbz
+
+# id=uedin.de-en.21
+ADVP*rb NP-TMP*dt NP*np VP*vbz
+NP*nnp VP*vp
+NP*np VP*np
+NP*np VP*vbz
+NP*dt VP*md
+
+# id=uedin.de-en.22
+S*np S*np
+PP*in NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt ADVP*rb VP*vp
+NP*np VP*vbd
+NP*dt VP*vbd
+
+# id=uedin.de-en.23
+SBAR*in VP*vbz ''
+PP*in NP-TMP*nn VP*vbd
+NP*dt VP*vbn
+NP*prp VP*vbd
+PP*in NP*np VP*vbd
+PP*in VP*vbd NP*np
+NP*np VP*vbd
+NP*prp VP*vbz
+NP*np VP*vp
+PP*in S*np VP*vbd
+NP*nn ADVP*rb VP*vbd
+NP*prp VP*vbp
+PP*in NP*prp VP*md
+PP*in PP*in
+NP*np VP*vbd
+NP*prp VP*vbd
+SBAR*whadvp NP*prp VP*vbd
+NP*advp NP*np
+NP*prp VP*md
+PP*in NP*prp VP*vbz
+
+# id=uedin.de-en.24
+NP*np VP*vbz
+PP*in VP*vbd NP*np
+NP*dt VP*vbz
+RB S*np CC S*s
+NP*dt VP*vbz
+PP*in NP*np VP*md
+NP*np VP*vp
+S*np CC S*np
+NP*dt VP*vbz
+ADVP*rb S*np CC S*np
+NP*np VP*md
+S*np RB S*np
+NP*np VP*md
+
+# id=uedin.de-en.25
+NP*nnp S*np
+S*pp NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt ADVP*rb VP*vbn
+S*np NP*nnp VP*vbd
+NP*dt VP*vbd
+NP*nns VP*vbd
+NP*dt VP*vbd
+S*np CC S*np
+PP*in NP*jj VP*md
+S*np VP*vbz NP*np ''
+NP*np VP*vbp
+NP*dt VP*vbd ''
+S*np VP*vbd NP*dt
+NP*dt VP*md
+NP*nn VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+SBAR*in NP*dt VP*vbd
+NP*dt VP*vbd
+PP*in NP*prp VP*vbd
+ADVP*rb NP*np VP*vbd
+NP*qp VP*vbz
+NP*np VP*vbz
+
+# id=uedin.de-en.26
+NP*np PP*in VP*vbz
+ADVP*np ADJP*rb NP*np
+NP*dt VP*vbz
+S*np '' VP*vbd NP*nnp NP-TMP*nn
+NP*dt VP*vbp
+NP*np VP*vbz
+NP*prp VP*vbp ''
+VP*vbd
+NP*prp ADVP*rb VP*vbz
+SINV*pp '' VP*vbd NP*nnp
+S*advp SINV*``
+S*sbar CC SINV*vp
+S*np S*pp ''
+S*np '' VP*vbd NP*nnp
+NP*dt VP*vbz
+S*cc S*np
+NP*ex VP*vbp
+S*np S*np
+S*np NP*dt VP*vbz
+S*np NP*prp VP*vbz
+NP*np VP*md
+S*s '' VP*vbd NP*nnp
+PP*in NP*dt ADVP*rb VP*md
+S*np S*np
+
+# id=uedin.de-en.27
+NP*dt VP*vbz
+PP*in NP*np VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbz
+NP*prp VP*vbd
+NP*dt VP*vbd
+S*np NP*prp VP*vbd
+PP*in NP*dt VP*vbd
+NP*dt VP*vbd
+PP*in NP*nnp VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+
+# id=uedin.de-en.28
+PP*in NP*dt ADVP*rb VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd ''
+NP*dt ADVP*rb VP*vbd
+S*np IN S*np ''
+PP*in NP*dt VP*vbd
+
+# id=uedin.de-en.29
+NP*np VP*vbz
+NP*dt VP*vbd
+NP*np VP*np
+PP*in NP*ex VP*vbp
+S*np VP*vbd NP*dt
+NP*np VP*vbd
+NP*np PP*vbg VP*vbp
+NP*prp VP*vbp
+PP*in VP*vbd NP*nnp
+NP*dt VP*vbz
+NP*np VP*vbp
+PP*in NP*nns VP*vbd
+
+# id=uedin.de-en.30
+NP*np VP*md
+NP*dt VP*md
+NP*nn VP*vbd
+S*np '' NP*prp VP*vbd
+NP*nnp PRN*, SBAR*sbar NP*prp VP*md
+NP*dt VP*vbz
+S*np NP*dt VP*vbp
+SBAR*in NP*np VP*md ''
+NP*nns VP*md
+ADVP*rb NP*np VP*vbd
+NP*np VP*md
+NP*jj VP*vbd
+
+# id=uedin.de-en.31
+NP*nnp S*np
+PP*in NP*dt VP*vbz
+PP*in PP*in NP*dt VP*vbp
+INTJ*rb
+'' S*np
+S*np NP*nns VP*vbp
+ADVP*rb NP*nns VP*vbd
+ADVP*np NP*np VP*vbz
+NP*dt ADVP*cc VP*vbz
+PP*in NP*dt ADVP*rb VP*vbd
+NP*dt VP*vbz
+
+# id=uedin.de-en.32
+NP*np VP*vbp
+PP*in NP*dt VP*vbd
+PP*in NP*prp VP*vbz
+PP*in NP*np ADVP*rb VP*vbd
+PP*in NP*prp VP*md
+S*np S*np
+NP*np VP*vbd
+S*np '' VP*vbd NP*np
+NP*prp VP*vbd
+NP*np VP*md
+S*np '' NP*prp VP*vbd
+
+# id=uedin.de-en.33
+NP*jj VP*vbz
+NP*prp VP*vbp
+NP*dt VP*vbz
+PP*in NP*nnp VP*vbz
+NP*jj PP*in PP*in PP*in
+NP*cd NP*vp
+PP*in NP*nn VP*vbz
+S*s '' VP*vbz NP*np
+SBAR*whadvp
+S*np VP*vbz NP*dt
+PP*in NP*prp VP*vbz
+PP*in NP*prp VP*vbd
+PP*in NP*nnp ADVP*rb VP*vbz
+PP*in NP*nnp VP*vp
+NP*np VP*md
+S*np-tmp '' VP*vbz NP*nnp
+PP*in NP*nn VP*vbz
+SBAR*in NP*np VP*vbp
+NP*np VP*md
+
+# id=uedin.de-en.34
+S*np '' VP*vbz NP*nnp
+NP*np VP*vbz
+NP*dt VP*vbd
+NP*np VP*vbd
+S*np '' NP*nnp VP*vbd
+NP*qp VP*vbd
+CC NP*prp VP*vbz
+S*np CC S*advp
+S*np '' NP*nnp VP*vbz
+
+# id=uedin.de-en.35
+NP*nnp S*pp
+NP*np VP*vbd
+NP-TMP*nn NP*prp VP*vbp
+PP*in S*np CC S*np
+CC PP*vbg NP*prp VP*vbp
+NP*np NP*np PP*in
+NP*np VP*vbp
+NP*dt VP*vbp
+NP*dt VP*vbp
+S*np NP*prp VP*md
+PP*in S*np CC S*np
+PP*vbg NP*dt VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vp
+ADVP*rb NP*nnps VP*vbp
+NP*dt VP*vbz ''
+PP*in NP*prp VP*vbp
+NP*nnps VP*md
+NP*ex VP*vbp
+NP*dt VP*vbz
+PP*in NP*prp VP*md
+S*np S*advp
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*nn VP*vbz
+NP*prp VP*vbp ''
+S*np S*np CC S*np ''
+CC NP*prp VP*md
+S*s CC S*np
+ADVP*rb NP*np ADVP*nns VP*vbp
+NP-TMP*dt NP*nnps VP*md
+NP*np ADVP*rb VP*vbz
+SBAR*in ADVP*rb VP*vp
+
+# id=uedin.de-en.36
+NP*nns VP*md PP*in
+NP*np VP*vbn
+IN NP*prp VP*vbz
+NP*nn NP*prp VP*vbd
+NP*np SBAR*whnp NP*prp VP*vbd
+ADVP*in NP*prp VP*vbd
+NP*ex NP*prp VP*vbd
+NP*dt VP*vbd
+SBAR*in NP*dt VP*vbz
+NP*dt VP*vbd
+PP*in VP*vbd NP*np
+NP*dt VP*vbd
+PP*in NP*dt VP*md
+NP*np VP*vbp
+NP*prp VP*vbd
+NP*dt VP*vbd
+S*np '' NP*prp VP*vbd
+
+# id=uedin.de-en.37
+NP*nnp VP*md
+NP*dt VP*vbz
+NP*np VP*vbz
+ADVP*rb VP*md NP*np
+PP*in NP*dt VP*vbd
+NP*dt VP*vp
+PP*in NP*dt VP*vbd
+NP*np VP*vbd
+CC NP*prp VP*vbd
+S*np NP*np VP*vbd
+NP*prp VP*vbd
+'' SINV*vp
+FRAG*intj '' NP*nnp VP*vbd
+S*np CC S*np
+ADJP*adjp
+
+# id=uedin.de-en.38
+S*np VP*vbp NP*np
+PP*in NP*prp VP*md
+PP*vbg S*np CC S*np
+NP*np VP*vbd ''
+CC PP*in NP*np VP*vbp
+NP*np PRN*, VP*vbp
+NP*dt VP*vbd
+SBAR*in ADVP*rb NP*nn VP*vbp
+NP*nnp VP*vbz
+NP*prp VP*vbp
+S*np '' VP*vbd NP*np
+NP*jj VP*vbp
+PP*in NP*ex VP*vbd
+S*np CC S*np
+NP*dt VP*vbp
+PP*in NP*prp VP*vbd
+S*np SINV*``
+SBAR*in VP*md
+NP*np VP*md
+NP*nn PP*in
+ADVP*rb NP*np VP*vbd
+NP*dt VP*md
+PP*vbg NP*np VP*vbz
+NP*np VP*vbz ''
+S*np CC S*np
+NP*prp VP*vbz
+NP*dt VP*vbz
+S*np '' VP*vbz NP*np
+NP*dt PP*in
+NP*dt VP*vbz
+PP*in NP*np VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbz
+ADVP*rb NP*dt VP*vbp
+ADVP*rb NP*ex VP*vbz
+PP*in NP*np VP*vbp
+S*np '' VP*vbz NP*np
+NP*dt VP*vbp
+PP*vbg NP*np VP*vbd
+S*np PRN*, S*np ''
+S*np S*np ''
+
+# id=uedin.de-en.39
+SBAR*whadvp
+CC NP*dt VP*vbd
+NP*np ADVP*np VP*vp
+NP*np VP*vbp
+PP*in NP*prp VP*vp
+NP*nn VP*vbd
+CC NP*nn VP*vbd
+NP*nn VP*vp
+NP*np VP*vbd ''
+NP*prp VP*vp
+S*np CC S*np
+NP*np VP*vbd
+NP*np VP*vbz
+NP*nnp VP*vbd ''
+S*np CC S*sbar
+S*np S*np
+S*sbar CC S*np
+S*np CC S*np ''
+ADVP*rb NP*prp VP*vbp
+NP*dt VP*vbn
+S*np CC S*np
+S*np NP*prp VP*vbd
+
+# id=uedin.de-en.40
+NP*np PP*in NP*np NP*jj VP*vbd
+SBAR*in NP*nnp VP*vbd
+NP*jj VP*vp
+NP*prp VP*vp
+NP*prp VP*vbp
+PP*in NP*nn VP*md
+NP*dt VP*vbd
+NP*np VP*vbz
+NP*np VP*md
+NP*prp VP*vbp
+NP*nnp VP*vbd
+S*vp VP*vbz
+NP*dt ADVP*rb VP*vbp
+PP*in NP*np VP*vbd
+S*np NP*dt VP*vbp
+NP*np VP*md
+NP*dt VP*vbd
+
+# id=uedin.de-en.41
+PP*vbn PP*in NP*dt VP*vbz
+PP*in NP*dt VP*vbd
+ADVP*rb NP*nnp VP*md
+NP*dt VP*vbd
+ADVP*rb NP*ex VP*vbd
+PP*in NP*np VP*vbd
+
+# id=uedin.de-en.42
+NP*nnp S*np
+NP*qp VP*vbd
+NP*np VP*vbd
+NP*ex VP*md
+S*np CC S*np
+NP*cd VP*vbg
+PP*in S*np
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbz
+ADVP*rb NP*ex VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbd
+ADVP*rb NP*cd VP*md
+NP*dt VP*vbd
+NP*nnp ADVP*rbr VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbd
+
+# id=uedin.de-en.43
+S*np CC S*np
+S*s '' NP*nnp VP*vbd
+S*np CC S*np
+
+# id=uedin.de-en.44
+NP*np VP*vbz
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+PP*in NP*ex VP*vbz
+S*np '' VP*vbd NP*nnp
+NP*dt VP*vbd
+NP*dt VP*md
+NP*dt VP*vp
+SBAR*in NP*dt VP*md ''
+ADVP*rb NP*prp VP*vbd
+S*np '' NP*nnp VP*vbd
+PP*vbg NP*dt VP*vbp
+CC NP*np VP*vbz ''
+S*np '' NP*prp VP*vbd
+NP*prp VP*md
+NP*nnp VP*vbd
+
+# id=uedin.de-en.45
+PP*in NP*nn VP*md
+NP*dt VP*vbz
+PP*in NP*np VP*vbp
+NP*nnp VP*vbd
+S*np NP*dt VP*md
+NP*dt ADVP*rb VP*vbd
+NP*np PRN*, VP*vbd
+NP*dt VP*vbn
+
+# id=uedin.de-en.46
+NP*nns VP*vbp
+NP*np VP*vbd ''
+NP*np VP*vbd
+S*np '' NP*prp VP*vbd
+NP*prp VP*vp
+NP*prp VP*vbd
+PP*in NP*dt ADVP*rb VP*vbp
+S*np S*np
+NP*prp VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vp
+PP*in NP*dt VP*vbd
+
+# id=uedin.de-en.47
+NP*prp VP*md
+S*np NP*prp$ VP*vbp
+NP*advp NP*np
+CC ADVP*rb SBAR*in NP*cd VP*vbz
+S*np NP*np VP*vbz
+NP*nnp VP*vbz
+NP*nnp VP*vbd
+ADVP*rb NP*prp VP*vp
+NP*prp VP*vbd
+NP*prp VP*vp
+NP*dt VP*vbz
+DT NN
+NP*dt PP*in
+DT JJ NN
+NP*prp$ VP*vbp
+NP*dt VP*vbz
+NP-TMP*np PP*rb NP*prp VP*vbz
+NP*prp VP*vbz
+PP*in NP*wdt VP*vbz
+S*np '' VP*vbz NP*np
+NP*prp VP*md ''
+NP*cc S*`` ''
+NP*prp VP*vbp
+NP*prp VP*vp
+NP*nnp NP*np
+NP*np CONJP*rb NP*np
+CC NP*nnp VP*vbz
+NP*dt VP*vbd
+RB NP*np VP*md
+NP*dt VP*vbz
+S*np CC S*np
+NP*prp VP*vbz
+VP*vp
+NP*dt VP*vbz
+VP*vb
+
+# id=uedin.de-en.48
+NP*nnp VP*vbz
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbd
+S*np S*np
+NP*dt VP*vbd
+NP*prp VP*vp
+PP*in NP*np VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbd
+NP*jj VP*vp
+NP*cd VP*vbd
+S*np VP*vbp NP*np
+S*np S*np
+NP*dt VP*vbd
+
+# id=uedin.de-en.49
+S*np VP*vbd NP*np
+NP*np VP*vbd
+PP*in NP*prp VP*md
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbz
+S*np-tmp NP*nn VP*md
+S*np NP*prp VP*md
+S*np '' VP*vbd NP*np
+S*np CC S*np
+S*np NP*dt VP*vbd
+NP*nnp VP*vbd
+NP*prp VP*vp
+S*np NP*nn VP*vbp
+ADVP*rb NP*dt VP*md
+S*vp ADVP*dt NP*ex VP*vbz
+S*vp VP*vbz
+NP*nn VP*vbz
+NP*prp VP*vp
+PP*in S*vp VP*vbd
+S*np '' VP*vbd NP*nnp
+PP*in NP*prp VP*vbz
+NP*dt VP*vbd
+S*np '' VP*vbd NP*nnp
+NP*nn VP*md
+
+# id=uedin.de-en.50
+S*np NP*dt VP*md
+S*np VP*vbd NP*dt
+ADVP*rb NP*dt VP*vbd
+
+# id=uedin.de-en.51
+S*np S*np
+NP*np VP*vbz
+NP*prp VP*vbz
+NP*dt VP*vbd
+NP*prp VP*md
+NP*dt VP*vbz
+S*np NP*dt VP*md
+NP*dt VP*md
+NP*cd VP*md
+VP*vbn VP*vbd NP*np
+PP*vbg VP*vbd NP*np
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vp
+NP*dt VP*vp
+NP*np VP*vbz
+PP*in NP*prp VP*vbd
+PP*in NP*dt VP*vbd
+PP*in VP*vbd SBAR*in
+S*vp VP*vp
+NP*dt VP*vbz
+PP*in NP*np VP*vbd
+NP*nnp VP*vbd
+NP*np VP*vbp
+
+# id=uedin.de-en.52
+NP*nnp VP*vp
+NP*np VP*vbp
+NP*nnp VP*vbz
+NP*dt VP*vbz
+NP*prp$ NP*np
+S*np CC S*np
+WHNP*wp SQ*vbp
+VP*vb
+
+# id=uedin.de-en.53
+NP*np VP*vbd
+S*sbar '' VP*vbz NP*np
+PP*in NP*nns ADVP*rb VP*vbd
+S*np S*np ''
+S*np CC S*vp
+PP*in VP*vbz
+NP*prp VP*md
+
+# id=uedin.de-en.54
+NP*np VP*vbz
+S*np CC S*np
+WHNP*wdt SQ*md
+S*s NP*prp VP*md ''
+ADVP*rb NP*dt VP*md
+NP*nnp VP*vbz
+SBAR*in S*vp VP*vbd
+SBAR*whnp S*vp VP*vbz NP*nnp
+S*vp VP*vbd
+NP*dt VP*vp
+S*np FRAG*conjp
+
+# id=uedin.de-en.55
+NP*np VP*vbd
+NP*nnp VP*vp
+PP*in NP*wdt VP*vbz
+NP*dt VP*vp
+NP*np NP-TMP*nnp VP*vbd
+S*sbar '' VP*vbd
+NP*prp VP*vbp
+SBAR*in NP*prp VP*vbp
+NP*nnp VP*vbz
+NP*dt VP*vp
+CC ADVP*rb VP*vbp NP*np
+NP*ex VP*vbp
+NP*nnp VP*vbz
+S*np NP*dt VP*vbz
+S*np '' VP*vp SBAR*in
+NP*dt VP*vbz
+NP*prp VP*vbp
+NP*dt VP*vbz
+NP*np PRN*s VP*vbd
+ADVP*rb NP*nns VP*vbp
+NP*nnp VP*vp
+S*np '' NP*nnp VP*vbd
+PP*in NP*np VP*vbd
+NP*np VP*vbz
+NP*dt VP*vp
+NP*nns VP*vbd
+NP*np VP*vbz
+NP*dt VP*vp
+S*pp '' NP*nnp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vp
+NP*np VP*vbz
+PP*vbg NP*ex VP*md
+PP*in NP*np VP*vp
+NP*np VP*vbd
+
+# id=uedin.de-en.56
+NP*np VP*vbp
+NP*np VP*vbz
+SBAR*in VP*vbp
+NP*jj VP*vp
+NP*np VP*vp
+S*np '' VP*vbd
+NP*dt VP*vbz
+S*np CC S*np
+S*np '' NP*dt VP*vbd
+NP*nnp VP*vbd
+S*s '' VP*vbd NP*dt
+NP*dt VP*vbp
+S*np CC S*np
+NP*dt VP*vbz
+NP*prp VP*md
+S*sbar '' VP*vbd NP*dt
+PP*in NP*dt VP*md
+NP*dt ADVP*rb VP*vbd
+
+# id=uedin.de-en.57
+NP*dt VP*vbz
+NP*nnp PP*in PP*in
+NP-TMP*nn NP*prp VP*md
+ADVP*rb NP*prp VP*vbd
+S*np '' VP*vbd NP*nnp
+NP*dt VP*to
+PP*in VP*vbp NP*np
+
+# id=uedin.de-en.58
+NP*np VP*vbp
+NP*dt VP*vbp
+NP*np CONJP*rb NP*np
+PP*in NP*cd VP*vp
+NP*np VP*vbp
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*nns VP*vbp
+
+# id=uedin.de-en.59
+NP*np VP*vbp
+NP*dt VP*vp
+ADVP*rb SBAR*in NP*wdt VP*md
+S*np CC S*np
+NP*dt VP*vbn
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbd
+
+# id=uedin.de-en.60
+NP*np VP*vp
+S*np '' NP*np VP*vbd
+NP*nn VP*vbz
+SBAR*in NP*prp VP*vp
+S*np '' VP*vbd NP*dt
+NP*prp ADVP*rb VP*vbd
+NP*dt VP*vbd
+NP*nnp VP*vbz
+
+# id=uedin.de-en.61
+NP*np PP*in NP*dt VP*vbp
+PP*in VP*md NP*np
+PP*in NP*np VP*advp
+NP*np VP*vbz
+NP*dt VP*md
+PP*in NP*dt VP*vbn
+
+# id=uedin.de-en.62
+S*np VP*vbz NP*np
+NP*jj VP*vbd
+CC ADVP*rb NP*nns VP*vp
+NP*np VP*vbd ''
+ADVP*rb NP*prp VP*vbp
+NP*prp ADVP*rb VP*vbd
+S*vp PRN*, VP*vbd
+NP*prp VP*vp
+S*advp CC S*np ''
+SBAR*in NP*prp VP*vbd
+CC S*vp CC S*np
+PP*in NP*dt VP*vbp
+NP*prp VP*vbz
+NP*prp VP*vbd ''
+NP*dt VP*vbp
+NP*np VP*vbz
+NP-TMP*jj NP*np VP*vbd
+PP*in VP*vbd NP*dt S*np ''
+S*pp VP*md
+S*np NP*prp VP*vbd
+S*sbar '' VP*vbd NP*nnp
+SBAR*in NP*prp VP*md
+
+# id=uedin.de-en.63
+NP*nnp VP*vp
+PP*in NP*dt VP*vbd
+PP*in S*np CC S*np
+S*pp CC S*np ''
+
+# id=uedin.de-en.64
+NP*np NP*nns
+NP*np VP*vbz
+NP*dt VP*vbp
+NP*nn VP*vbp
+SBAR*in VP*vbd
+ADVP*rb NP-TMP*nnp NP*prp VP*vbd
+SBAR*in NP*dt VP*vbd
+NP*dt VP*vp
+NP*np VP*vbn
+NP*dt VP*vbd
+NP*dt PRN*s VP*vbd
+NP*dt VP*vbz
+NP*np VP*vbd
+
+# id=uedin.de-en.65
+NP*nnp NP*np
+SBAR*in NP*np VP*md
+S*pp VP*vp
+NP*dt VP*vbd
+
+# id=uedin.de-en.66
+NP*nnp VP*vbp
+NP*np VP*md
+PP*in NP*dt VP*md
+NP*np VP*vbd
+PP*in VP*vbd NP*np S*pp ''
+S*np RB S*np ''
+S*np NP*np VP*vbd
+NP*dt VP*vbp
+NP*prp VP*vbp
+SBAR*in VP*vb
+
+# id=uedin.de-en.67
+NP*nnp VP*vbd
+PP*in NP*nnp VP*vbd
+NP*prp VP*vbd
+NP*nnp VP*vbd ''
+S*np '' NP*prp VP*vbd
+NP*dt VP*md
+NP*prp VP*md ''
+
+# id=uedin.de-en.68
+NP*nnp VP*md
+S*np '' VP*vbd NP*np ''
+NP*np VP*vbp
+NP*dt VP*vbz
+NP*np NP*np
+PP*in NP*np VP*vbz
+
+# id=uedin.de-en.69
+PP*np SBAR*in VP*vb
+NP*np VP*vbp
+SBAR*in NP*prp VP*vbd
+ADVP*rb NP*np VP*vbz
+NP*np VP*vbz
+ADVP*rb VP*vb
+NP*np VP*vbp
+PP*in NP*np VP*vbp
+PP*in S*adjp VP*vbp
+NP*dt NP*np PP*in
+NP*nnp NP*nnp PP*vbg PP*in
+NP*nnp VP*vbz
+NP*nns ADVP*rb VP*vbp
+PP*in NP*dt VP*vbd
+S*pp '' VP*vbd NP*np
+NP*np VP*vbp
+PP*in NP*np VP*vbp
+S*np S*np ''
+NP*np VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbn
+SBAR*in NP*wdt VP*vbz
+S*np '' NP*prp VP*vbd
+NP*np VP*vbz
+ADVP*rb NP*np VP*vbp
+NP*jj VP*vbp
+NP*nns VP*vbp
+S*np '' VP*vbz NP*nnp
+ADVP*rb NP*prp VP*vbp
+
+# id=uedin.de-en.70
+ADVP*np NP*np PRN*s VP*vbd
+S*np '' NP*prp VP*vbd
+NP*np VP*vbd
+FRAG*np '' VP*vbd NP*np ''
+S*np S*``
+S*np S*np ''
+NP*nnp VP*vbz
+NP*prp VP*vbp
+SBAR*in '' VP*vbd NP*dt
+PP*in VP*vbd NP*np
+S*np '' NP*prp VP*vbd
+NP*ex VP*vbz
+PP*in NP*np VP*vbz
+NP*dt VP*vbz
+NP*nn NP*ex VP*md
+NP*ex VP*vbz
+SBAR*in '' NP*nn VP*vbz
+
+# id=uedin.de-en.71
+NP*dt VP*vbd
+PP*in NP*nnp VP*vbz
+NP*nn VP*vbd ''
+NP*dt VP*vbd
+NP*nn VP*vbz
+PP*in NP*ex VP*md
+PP*in NP*dt VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbp
+NP*nnp VP*vbd ''
+NP*prp VP*vbp
+PP*in NP*prp VP*vbp
+CC NP*prp VP*vbz
+S*np S*np ''
+PP*in
+NP*nnp VP*vbd ''
+S*np CC S*np
+NP*prp VP*vbp
+
+# id=uedin.de-en.72
+VP*vb
+NP*prp$ VP*vbz
+NP*ex VP*vbp
+ADVP*rb NP*prp VP*vbp
+S*vp VP*vp
+NP*prp VP*vbp
+CC NP*prp VP*vbp
+S*np NP*prp VP*vbz
+ADVP*rb PP*in NP*dt VP*vbz
+ADVP*rb NP*np VP*vbz ''
+S*np '' NP*prp VP*vbz
+SBAR*whadvp NP*prp VP*vbd
+NP-TMP*nn PP*in NP*nnp VP*vbz
+CC NP*prp ADVP*rb VP*vbp
+NP*jjs VP*vbp
+NP*nnp VP*vbp
+RB SBAR*whadvp VP*vbp
+S*advp '' VP*vbz NP*nnp
+PP*in NP*np
+SBAR*whnp NP*prp VP*vbz
+NP*np VP*vbd
+NP*np VP*md
+NP*cc S*``
+NP*prp$ VP*vbp
+NP*nn VP*vbz
+RB PP*pp
+PP*in NP*nn VP*vbz
+SBAR*in NP*dt ADVP*rb VP*md
+NP*prp VP*md
+CC ADVP*rb NP*np
+PP*in NP*prp ADVP*advp VP*vbz
+S*np VP*vbz
+NP*dt VP*vbz ''
+SBAR*whadvp NP*dt VP*vbz
+NP*ex VP*vbp
+NP*nnp VP*vbz
+NP*nn VP*vbz
+SBAR*sbar VP*vbz
+CC S*np CC S*advp
+NP*dt VP*vbz
+SBAR*in VP*md
+NP*prp VP*md
+PP*in
+
+# id=uedin.de-en.73
+NP*nnp VP*vbz
+PP*in NP*nnp VP*vbd
+S*np VP*vbd NP*dt ''
+
+# id=uedin.de-en.74
+NP*nn ADVP*rb VP*vbn
+PP*vbg VP*vbd S*vp
+SBAR*whadvp NP*prp VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vp
+
+# id=uedin.de-en.75
+NP*dt VP*vbz
+ADVP*rb VP*vbz NP*np
+PP*in NP*dt VP*vbz
+S*np '' VP*vbz NP*np
+PP*in NP*prp ADVP*rb VP*vbz
+NP*nnp VP*md
+ADVP*rb NP*prp VP*md
+NP*np PRN*, VP*vbz
+VP*advp
+NP*dt VP*vbd
+CC NP*dt VP*vbz
+CC VP*vbz
+NP*nn VP*vbz
+NP*prp VP*vbz
+WHNP*wp SQ*vp
+
+# id=uedin.de-en.76
+NP*nn PRN*, VP*md
+NP*np VP*vbn
+NP*dt VP*vbd
+NP*nns VP*vbn
+NP*dt VP*vbd
+PP*in NP*prp VP*vbd
+NP*dt VP*vbd
+ADVP*in NP*jj VP*vbd
+NP*np VP*vbd
+NP*np PP*in VP*vp
+NP*prp VP*vbd
+NP*dt VP*vbd
+NP*cd VP*vp
+ADVP*rb SBAR*in VP*vbd
+NP*dt VP*vp
+SBAR*in PP*in NP*nn VP*vbd
+S*vp VP*vbd ''
+PP*in S*s CC S*np
+S*sbar CC S*np
+PP*in NP*prp VP*vbd
+NP*nnp VP*vbd ''
+NP*vbg VP*vbz
+NP*np VP*vbz
+NP*np VP*vbd
+CC NP*dt VP*vbd
+NP*prp VP*vbd
+NP*nnp VP*vbg
+S*np CC S*np
+S*vp S*sbar ''
+CC PP*in VP*vbd ''
+NP*prp$ VP*vp
+NP*nns VP*md
+NP*vbg VP*vp
+NP*np VP*vbd
+NP*dt VP*vp
+NP*prp VP*md
+NP*nnp VP*vbd
+NP*np VP*vbp
+PP*in S*s CC S*np
+
+# id=uedin.de-en.77
+PP*in NP*dt VP*md
+NP*dt VP*vbp
+SBAR*in VP*md
+S*advp CC S*np
+NP*np VP*vbd
+PP*in S*pp CC S*np
+
+# id=uedin.de-en.78
+NP*np NP*prp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+ADVP*rb NP*dt VP*vbz
+PP*in VP*vbd NP*nnp
+S*np '' VP*vbd NP*nnp S*vp
+S*np S*np CC S*np S*np
+NP*nn VP*vbd
+NP*dt NP*np
+NP*dt VP*vbz
+S*np '' VP*vbz S*vp
+
+# id=uedin.de-en.79
+NP*nnp VP*vbd
+FRAG*intj VP*vbp NP*dt
+NP*nnp VP*md
+NP*nnp VP*vbz
+S*np S*np
+S*np S*np S*np
+NP*nnp PRN*s VP*vbp ''
+ADVP*rb NP*dt VP*vbz
+NP*ex VP*md
+NP*nnp VP*vbd
+NP*dt SBAR*s S*np ''
+NP*nnp VP*vbd
+NP*np VP*md
+ADVP*rb S*vp VP*vbd
+SBAR*in NP*dt VP*md
+NP*dt VP*vbd
+ADVP*rb NP*np VP*vbd
+NP*np VP*md
+NP*dt VP*vbd
+NP*dt VP*vbd
+VP*vbg
+IN NP*dt VP*md
+S*sbar VP*vbd NP*nnp
+PP*in PP*in PP*advp
+NP*np VP*vbd
+S*np '' VP*vbz NP*np
+PP*in NP*np VP*vbd
+
+# id=uedin.de-en.80
+NP*np PRN*s VP*vbd
+S*np '' NP*np VP*vbd
+NP*dt VP*vbz
+NP*nnp VP*md
+NP*np VP*vbz
+NP*nnp VP*vbd
+NP*jj VP*vbp
+PP*vbg NP*np VP*md
+NP*dt VP*vbz
+
+# id=uedin.de-en.81
+S*np NP*ex VP*md
+S*np NP*dt VP*md
+NP*np VP*vbz
+S*pp VP*vbz NP*np
+RB VP*vbp NP*np
+PP*in VP*md
+S*s '' VP*vbz NP*np
+
+# id=uedin.de-en.82
+NP*np VP*advp
+NP*nnp VP*vbz
+S*vp NP*np VP*vbz
+S*s '' NP*nnp VP*vbd
+NP*prp VP*vbp
+PP*in NP*ex VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbp
+NP*nnp VP*vp
+NP*nnp VP*vbd ''
+NP*np PRN*-lrb- VP*vbp
+S*np S*np
+NP*nnp VP*vp
+PP*in NP*prp VP*vbd
+NP*dt VP*md
+S*np '' NP*nnp VP*vbd
+S*np PRN*, RB S*advp
+
+# id=uedin.de-en.83
+NP*np VP*vbz
+ADVP*rb VP*vbz NP*np PP*in
+S*np '' VP*vbz NP*nn
+SBAR*in NP*dt VP*vbz
+NP*dt VP*vbp
+PP*in NP*np VP*md
+NP*np VP*md
+NP*np ADVP*rb VP*vbp
+NP*nn VP*vbp
+PP*in NP*np VP*vbz
+PP*in NP*dt VP*vp
+PP*in NP*dt VP*vbp
+VP*np
+PP*in NP*nns VP*md
+NP*jj VP*vbz
+NP*dt VP*vbz
+ADVP*rb NP*np VP*vbp
+PP*in
+PP*in NP*dt VP*vbz
+
+# id=uedin.de-en.84
+NP*np ADVP*jj PP*in NP*nnp VP*vbd
+PP*in NP*prp VP*vbd
+S*np '' VP*vbd NP*jj
+NP*nnp VP*vbd
+PP*in NP*ex VP*vbz
+NP*prp ADVP*rb VP*vbd
+S*s '' VP*vbd NP*nnp
+NP*prp ADVP*rb VP*vbd
+S*pp '' NP*nnp VP*vbd
+CC PRN*s NP*prp VP*vbd
+NP*dt VP*vbz
+S*sbar '' VP*vbd NP*dt
+SBAR*in NP*np VP*md
+PP*in NP*np VP*vbz
+PP*in NP*prp VP*vbd
+S*s '' NP*prp VP*vbd
+
+# id=uedin.de-en.85
+NP*prp VP*vp
+S*np NP*dt VP*vbd
+ADVP*rb ADVP*rb VP*vbd
+NP*np VP*vbd
+PP*in NP*prp VP*vbd
+NP*nnp VP*vbd
+NP*prp VP*vbz
+S*np NP*dt VP*vp
+S*s '' NP*nnp VP*vbd
+NP*nnp VP*vp
+PP*in VP*vbd NP*np
+PP*in NP*nnp VP*vp
+ADVP*rb S*np CC S*np
+
+# id=uedin.de-en.86
+NP*np VP*vbz
+ADVP*rb NP*np VP*vp
+NP*np VP*vbd
+NP*np NP*dt VP*vbd
+PP*in VP*vbd NP*np
+NP*dt PP*in
+NP*np VP*vbp ''
+S*in S*np-tmp
+PP*in VP*vbd NP*np
+S*cc NP*prp VP*vbz
+SBAR*in VP*vbp
+S*np NP*np VP*md
+NP*dt VP*vbp
+NP*dt VP*vbd
+
+# id=uedin.de-en.87
+S*np RB S*s
+PP*advp NP*dt VP*vbd
+NP*np VP*vbd
+NP*np VP*vbz
+NP*np VP*vbz
+NP*nnp VP*vbz
+PP*vbg NP*ex VP*vbp
+NP*dt VP*vbd
+NP*np VP*vbd
+PP*in NP*prp VP*vbd
+PP*in NP*cd VP*vbd
+PP*advp VP*vbd NP*np
+PP*in NP*dt VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbp
+NP*dt VP*vp
+NP*dt VP*vbz
+PP*vbg NP*np VP*vp ''
+NP*rb VP*vbp ''
+PP*in NP*dt VP*vbd
+PP*in NP*dt VP*vbd
+S*pp CC S*np ''
+S*np NP*prp VP*md
+NP*nnp VP*vbz
+S*np '' VP*vbd NP*np
+PP*in NP*wdt VP*vbz
+PP*in NP*ex VP*vbp
+S*np NP*prp VP*vbd
+
+# id=uedin.de-en.88
+S*np S*np
+NP*np VP*vbd
+NP*dt VP*md
+NP*np VP*vbd
+S*s '' NP*dt VP*vbd
+NP*np VP*vbp
+NP*np VP*vp
+S*np CC S*np
+NP*np VP*vbz
+S*np NP*nns ADVP*rb VP*vbd
+NP*nnp VP*vbd
+NP*np SBAR*s
+NP*np VP*vbd
+NP*nns VP*to
+S*np CC S*np
+S*np CC S*np
+NP*np VP*md ''
+NP*dt VP*vbd
+NP*dt ADVP*rb VP*vp
+S*np '' VP*vbd NP*nnp
+
+# id=uedin.de-en.89
+NP*nnp VP*vbd
+S*np VP*vbd NP*nnp
+S*s NP*dt VP*vbd
+S*pp '' VP*vbd NP*nnp
+NP*prp VP*vbd
+NP*dt VP*vbz
+S*advp NP*prp VP*md
+WHNP*wp PP*in
+VBZ NP*prp VP*vb
+S*np CC S*s ''
+NP*np VP*vp ''
+NP*np VP*vbd
+NP*dt ADVP*rb VP*vbd
+S*pp VP*vbd NP*np
+ADVP*rb NP*np VP*vb
+PP*in VP*vbd NP*np S*np ''
+S*np NP*np VP*vbd
+NP*np VP*vbd
+VP*np
+NP*nnp VP*vbp
+
+# id=uedin.de-en.90
+NP*rb S*s
+NP*jj VP*vbp
+NP*dt VP*md
+PP*in NP-TMP*dt NP*dt VP*vbd
+S*s '' NP*nnp VP*vbd
+NP*np VP*vbp
+ADVP*rb NP*ex VP*vbd
+PP*in NP*np
+S*sbar '' VP*vbd NP*np ''
+NP*nnp VP*vbz
+S*np CC S*np
+S*pp NP*np
+NP*jjr VP*md
+NP*ex VP*vbp
+NP*np VP*vbp
+NP*jj VP*vbp
+S*np CC S*np ''
+S*np S*np
+S*np '' NP*nnp VP*vbd
+S*np '' VP*vbz NP*dt
+SBAR*rb NP*prp VP*vbd
+NP*prp VP*vbd
+NP*ex VP*vbp
+CC NP*ex VP*vbz
+NP*nnp VP*vbp
+NP*nnp VP*vbz
+NP*prp VP*vbd
+S*np CC S*np
+PP*in NP*adjp VP*vbp
+NP*ex VP*vbp
+ADVP*rb NP*dt VP*vbz
+NP*dt S*sbar
+NP*np VP*vbd
+NP*np VP*vbz
+S*np '' VP*vbd NP*np
+NP*nns VP*md
+S*np '' VP*vbd NP*nnp
+SBAR*in NP*dt VP*vbz
+NP*np VP*vbp
+
+# id=uedin.de-en.91
+NP*nnp S*pp
+NP*dt VP*s
+PP*in VP*vbd NP*np
+S*np S*np
+NP*dt VP*vbd
+PP*in NP*nnp VP*vp
+PP*in
+PP*in NP*prp VP*vbd
+PP*in NP*nnp VP*vbd
+NP*dt VP*vbz
+RB SBAR*rb VP*vbd
+NP*dt ADVP*rb VP*vbd
+PP*in VP*vbd NP*np
+NP*cd VP*vbd
+PP*vbg
+NP*nn VP*vbz
+NP-TMP*dt NP*prp VP*vbd
+PP*in S*advp VP*vbz
+NP*ex VP*vbd
+NP*nn VP*vbd
+NP*np VP*md
+PP*in NP*rb VP*vbd
+PP*in NP*nnp VP*vbd
+NP*dt VP*vbn
+NP*nns VP*vbd
+
+# id=uedin.de-en.92
+S*np NP*dt VP*vbd
+NP*dt VP*vbd
+PP*vbg NP*nnp VP*vbd
+NP*nnp VP*vbz
+
+# id=uedin.de-en.93
+SBAR*in VP*vbd
+NP*nn VP*vbd
+PP*in NP*nnp VP*vbd
+NP*prp VP*vbd
+S*vp VP*vbd
+S*np S*np
+NP*np VP*vbd
+CC ADVP*rb VP*vbd ''
+PP*rb NP*jj ADVP*rb PP*in NP*dt VP*vbd
+S*sbar FRAG*in
+PP*in NP*np VP*vbd
+RB SBAR*in VP*vbd
+SBAR*np NP*jj VP*vbd
+ADVP*rb NP*np VP*vbd
+CC PP*in SBAR*in NP*nn VP*vbd
+NP*np VP*vbd
+NP*np VP*vp
+NP*dt VP*vbd
+S*np NP*dt VP*vbd
+S*np '' VP*vbd NP*np
+PP*in VP*advp NP*np
+S*np '' NP*prp VP*vbd
+NP*prp VP*md
+PP*in NP*dt VP*vbd
+ADVP*rb PP*in NP*dt VP*md
+S*np '' VP*vbd NP*nnp
+NP*prp VP*md
+
+# id=uedin.de-en.94
+WHNP*wp SQ*vp
+NP*nn VP*vbz
+NP*np VP*vbz
+PP*in NP*nns VP*vbd
+NP*prp VP*vbz
+ADVP*rb NP*dt VP*vbz
+SBAR*in NP*np VP*vbp
+NP*np VP*vbd
+PP*in SBAR*in NP*prp VP*md
+S*np VP*vbz NP*dt
+PP*in NP*dt VP*md
+NP*nnp VP*md
+NP*jj VP*vbp
+NP*jjs VP*md
+NP*np VP*vbz
+PP*in NP*nns VP*md
+S*advp NP*np VP*md
+NP*dt VP*vbp
+PP*in NP*dt ADVP*rb VP*vbz
+SBAR*whadvp NP*nnp VP*md
+ADVP*rb NP*jj VP*md
+NP*np VP*vbz
+PP*in NP*prp VP*vbz
+PP*in VP*vbp NP*np
+NP*dt ADVP*rb VP*vbp
+RB NP*ex VP*vbp
+VBZ NP*prp ADJP*jj S*vp
+PP*in NP*nn VP*md
+PP*in NP*prp VP*vbz
+WHADJP*wrb SQ*vbp
+VP*vbn
+SBAR*in NP*np VP*md
+
+# id=uedin.de-en.95
+NP*np VP*vbz
+S*np S*np
+IN NP*np VP*vp
+NP*prp VP*vbz
+PP*in VP*vbd NP*np
+PP*in NP*adjp VP*vbp
+S*np S*s ''
+NP*dt VP*vbz
+NP*prp VP*vp
+NP*nns VP*md
+NP*prp VP*vp
+S*np CC S*np
+NP*dt VP*md
+PP*vbg ADVP*rb VP*vb
+SBAR*pp
+PP*in PRN*, NP*prp VP*md
+NP*nn VP*vp
+NP*dt VP*vbz
+NP*prp VP*md
+
+# id=uedin.de-en.96
+NP*np NP*np
+CC PP*in NP*prp VP*vbp ''
+NP*vbg VP*vbd
+S*np CC S*np
+NP*prp VP*vbd ''
+NP*np VP*nn
+NP*np VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*nnp VP*vbd
+S*np S*np S*np CC S*np
+S*np S*np-tmp CC S*np ''
+NP*dt VP*vbd
+ADVP*rb NP*prp VP*vp
+S*np CC S*np
+NP*nnp VP*vbd
+NP*prp VP*vp
+S*np VP*vbd NP*np
+NP*prp VP*vbd
+NP*dt VP*vbd
+
+# id=uedin.de-en.97
+NP*nnp S*np
+NP*np VP*vbz
+NP*dt VP*vp
+CC NP*np VP*vbp
+NP*nnp VP*vbz
+VP*vbg
+S*np SINV*``
+PP*in NP*dt VP*vp
+NP*np VP*vbz
+CC SBAR*in
+PP*in VP*vbp NP*np
+S*np '' VP*vbz NP*nnp
+SBAR*in NP*np VP*vbd
+NP*dt VP*vbz
+S*np CC S*advp
+ADVP*rb NP*prp VP*vbp
+SBAR*whnp NP*dt VP*md
+S*np CC S*np ''
+CC NP*dt VP*vbz
+NP*np VP*vbz
+NP*prp VP*md
+NP*nnp ADVP*rb VP*vbz
+SBAR*in NP*prp VP*vbz
+S*np '' NP*prp VP*vbz
+NP*dt VP*vbd
+PP*in VP*vbp NP*np
+NP*dt VP*vbz
+SBAR*in
+
+# id=uedin.de-en.98
+NP*nnp VP*vbd
+NP*dt PP*in PP*in PP*in PP*to PP*in
+NP*np VP*vbd ''
+NP*prp VP*vp
+NP*prp VP*vbp
+S*np S*np
+NP*ex VP*vbz
+
+# id=uedin.de-en.99
+NP*nnp S*np
+NP-TMP*dt NP*prp VP*md
+NP*dt VP*vbz
+PP*in S*pp CC S*np
+NP*dt VP*vbz
+SBAR*in NP*np VP*md
+NP*dt VP*vbz
+CC S*np S*np
+NP*dt VP*vbz
+WHADVP*wrb SQ*md
+SBARQ*whadvp
+S*np S*np
+PP*in NP*dt VP*vbz
+NP*nns VP*vbp
+PP*rb NP*np VP*vp
+NP*ex VP*vbp
+ADVP*rb NP*dt VP*vbz
+PP*in NP*jj VP*vbp
+NP*np VP*vbz
+ADVP*rb NP*dt VP*vbz
+PP*in NP*jj VP*vbz
+S*np S*vp
+PP*in NP*nns VP*vbz
+PP*in VP*vbz NP*np
+NP*dt VP*vbz
+NP*dt VP*vbz
+PP*in
+SBAR*in VP*md
+CC S*np CC S*np
+NP*dt S*np
+S*np S*np
+WHNP*wp SQ*vp
+NP*prp VP*md
+SBAR*in PRN*: ADVP*rb VP*md
+S*np S*pp
+S*np CC S*np
+S*np CC S*np
+NP*prp VP*vbp
+ADVP*rb NP*np VP*vbz
+WHADVP*wrb SQ*vbz
+NP*prp VP*md
+CC NP*prp VP*md
+NP*prp VP*vbp
+NP*np VP*vbz
+ADVP*rb NP*prp VP*md
+NP*np VP*vp
+NP*prp VP*md
+
+# id=uedin.de-en.100
+NP*nnp S*np
+CC NP*dt VP*md
+SBAR*whadvp S*vp NP*nnp VP*vbd
+NP*dt NP*dt VP*md
+NP*dt VP*vbd
+PP*in VP*vbd NP*np
+S*pp '' NP*dt VP*vbd
+ADVP*rb NP*nns VP*md
+NP*prp VP*md
+VP*vb
+PP*in NP*dt VP*vbd
+NP*np VP*md
+NP*np VP*vbd
+S*sbar '' NP*nnp VP*vbd
+S*np NP*prp VP*vbp
+ADVP*rb NP*np VP*vbd
+NP*nns VP*md
+NP*dt VP*vbz
+CC NP*np VP*md
+NP*np VP*md
+NP*np VP*vbz
+S*np NP*jj VP*vbd
+S*np '' VP*vbd NP*nnp
+NP*np NP-TMP*jj VP*vbd
+PP*in VP*vbd
+NP*np VP*vbp
+NP*dt VP*vbp
+PP*in VP*vbz
+NP*dt VP*vbd
+S*np CC S*np
+NP*np ADVP*rb VP*vbp
+NP*dt VP*vbd
+S*np NP*nnp VP*vbd
+NP*np VP*vbp
+NP*np VP*vb
+CC SBAR*whadvp NP*nns VP*vbp
+NP*cd PP*in PP*in
+NP*cd VP*vp
+NP*np VP*vbd
+NP*np VP*vbd
+S*np CC S*np
+NP*dt VP*vbd
+NP*np VP*vp
+S*np '' VP*vbd NP*np
+
+# id=uedin.de-en.101
+S*np S*pp
+S*np S*np
+VP*md
+NP*nnp VP*vbd
+NP*nnp VP*vbz
+RB PP*in NP*prp VP*vbz
+ADVP*rb NP*nnp VP*md
+NP*np VP*vbd
+NP*np VP*vbp
+NP*np S*np
+NP*jjs VP*vbp
+NP*nn PP*in
+NP*np ADVP*rb VP*vbp
+NP*dt NP*np
+NP*prp VP*vbp
+ADVP*rb NP*np VP*vbn
+CC NP*dt VP*vbz
+NP*dt VP*vbz
+NP*jj VP*vbz
+NP*np VP*vbz
+NP*np VP*vbp ''
+NP*dt S*np
+NP*np ADVP*rb VP*vbp
+S*advp '' NP*prp VP*vbz
+S*np '' VP*vbz NP*np
+PP*in NP*dt VP*md
+
+# id=uedin.de-en.102
+NP*nnp S*advp
+NP*dt VP*vbd
+ADVP*rb VP*vbn NP*np
+SBAR*in NP*dt VP*vbz
+VP*vp
+NP*cd ADVP*rb VP*vbd
+PP*in PRN*-lrb- VP*vbd
+S*np NP*dt VP*vbp
+NP*nn NP*np
+NP*dt VP*vbd
+NP*prp VP*vbd
+NP*np VP*vp
+NP*np VP*vbd
+
+# id=uedin.de-en.103
+NP*np VP*vbd
+PP*in NP*nns VP*vbd
+NP*nnp VP*vp ''
+DT NN SBAR*whnp
+NP*dt VP*vbd
+PP*in VP*vbz
+NP*dt VP*vbz
+NP*nn VP*md
+IN NP*np
+NP*np VP*vbd
+NP*prp VP*vbz
+SBAR*in S*vp CC S*np
+NP*nn ADVP*cc VP*vbd
+NP*dt VP*vbz
+NP*np VP*md
+PP*in NP*cd VP*md
+PP*in S*vp VP*vbd
+PP*in NP*dt VP*vbd
+PP*in VP*vbd
+NP*np VP*vbd
+ADVP*rb NP*prp VP*vbz
+NP*nn VP*vbd
+S*np CC S*np
+NP*jjr VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbp
+
+# id=uedin.de-en.104
+NP*dt VP*vbz
+NP*cd PP*to
+NP*np
+VP*vb
+PP*in NP*prp VP*md
+ADVP*rb NP*np VP*vbp
+NP*prp VP*vp
+NP*np VP*vbz
+VP*np
+ADVP*rb NP*np
+NP*ex VP*vbz
+S*np S*pp ''
+NP*np VP*vbp
+NP*jj PP*cc ADVP*jjs
+SBAR*in '' VP*vbd NP*nnp
+ADVP*rb NP*dt VP*md
+NP*jj
+NP*dt NP*np
+NP*dt VP*vbz
+NP*nnp VP*vbz
+FRAG*np '' NP*prp VP*vbz
+NP*cd NP*ex VP*vbz
+ADVP*rb NP*cd
+SBAR*in NP*dt VP*vbd
+CC NP*ex VP*vbd
+NP*`` VP*vbd
+CC RB PP*in
+S*advp S*np ''
+CC PP*in NP*prp ADVP*rb VP*vbp
+PP*in NP*nns VP*md
+NP*prp VP*vbp ''
+S*vp S*np
+PP*in NP*wdt VP*vbp
+NP*dt SBAR*whnp
+PP*to NP*np VP*vbp
+NP*nnp NP*jj
+
+# id=uedin.de-en.105
+S*np NP*prp VP*vbz
+S*np S*np CC S*np
+S*np CC S*np
+NP*dt VP*vbz
+SBAR*in SBAR*in VP*vbz
+NP*nnp VP*vbz
+S*np CC S*np
+NP*nnp VP*vbp
+ADVP*rb NP*np VP*vbz
+NP*dt ADVP*rb VP*vbd ''
+S*np '' VP*vbd NP*nnp
+S*pp CC S*np
+PP*in SBAR*whadvp NP*np VP*vbz
+NP*dt PP*in
+NP*nnp VP*vbz
+NP*prp VP*vbp
+NP*nnp VP*vp
+NP*dt ADVP*rb VP*vbd
+S*np '' VP*vbz NP*np
+NP*prp VP*vbp
+NP*prp VP*vbp
+S*pp CC S*pp
+PP*in VP*vbz NP*np
+SBAR*in NP*dt VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbp
+NP*np VP*vbp
+S*np '' VP*vbz NP*np
+S*pp NP*np VP*vbd
+S*s '' VP*vbd NP*np
+NP*nnp VP*vbp
+NP*dt VP*vbp
+SBAR*rb S*cc
+NP*nnp VP*vp
+PP*in NP*nnp VP*vbz
+PP*in NP*nns VP*vp
+
+# id=uedin.de-en.106
+NP*dt PP*vbg VP*vbz
+SBAR*in NP*dt VP*vbp
+PP*in NP*np VP*vbz
+S*sbar CC S*pp
+S*np '' VP*vbd NP*np
+NP*nnp ADVP*rb VP*md
+PP*in NP*prp VP*vbz
+PP*in NP*prp VP*vp ''
+PP*in NP*np VP*vbd
+NP*np '' VP*vbz NP*np
+NP*prp VP*vbd
+NP*np VP*vbz
+S*np '' VP*vbz NP*np
+PP*rb VP*s NP*np
+S*np '' VP*vbz NP*nnp NP-TMP*nn S*s ''
+DT NN SBAR*in
+CC NP*dt ADVP*rb VP*vbd
+S*np '' NP*nnp VP*vbz
+CC PP*in VP*vbp ''
+ADVP*rb NP*prp VP*vbz
+S*np '' VP*vbz NP*dt
+PP*in VP*vbz NP*np
+NP*prp VP*vp
+PP*in NP*prp VP*md
+S*s '' VP*vbd NP*nnp
+NP*np VP*vbd
+PP*in NP*dt VP*vbd
+NP*prp VP*vp
+NP*ex VP*vbp
+S*s '' NP*nnp VP*vbz
+PP*in NP*jj VP*vbp
+S*sbar '' NP*nnp VP*md
+NP*ex VP*vbz
+S*np '' NP*prp VP*vbz
+NP*np VP*vbz
+S*np CC S*np
+NP*prp VP*vbp
+NP*prp ADVP*rb VP*vbp
+S*np CC S*np ''
+PP*in VP*vbz
+S*np '' NP*nnp VP*vbd
+NP*np PP*in NP*nnp VP*md
+NP*nnp VP*vbz
+NP*dt VP*vbz
+S*np '' NP*nnp VP*vbd
+PP*in NP*prp VP*vbd
+NP*advp NP*np
+S*vp VP*vbp ''
+PP*in NP*prp VP*md
+S*np S*np '' PP*in
+S*vp FRAG*cc
+NP*jj VP*vbz
+NP*nns VP*vbp
+S*np '' NP*nnp VP*vbd
+S*np NP*nn VP*vbz
+NP*dt VP*vbp
+S*sbar '' PRN*s NP*prp VP*vbp ''
+S*sbar '' NP*prp VP*vbz
+NP*nnp VP*vbp
+NP*nnp VP*vbz
+PP*in NP*jj VP*vbp
+S*np IN S*np
+S*np '' NP*nnp VP*vbd
+S*sbar '' NP*nnp VP*vbd
+CC NP*dt VP*md
+S*sbar VP*vbz NP*np
+S*sbar '' VP*vbz NP*np
+S*advp '' NP*prp VP*vbz
+NP*dt PRN*, VP*vbp
+S*advp CC S*advp
+
+# id=uedin.de-en.107
+NP*np VP*md
+NP*dt VP*md
+S*np S*advp
+S*pp VP*vbd NP*rb
+NP*dt VP*vbd
+S*s '' VP*vbd NP*jj
+S*np CC S*np
+S*np NP*jj VP*vbd
+
+# id=uedin.de-en.108
+NP*nnp VP*md
+NP*np VP*md
+S*np CC S*np
+S*np '' VP*vbd NP*nnp
+NP*dt VP*vbz
+NP*np NP*np
+NP*dt VP*vp
+PP*in NP*np VP*vbd
+S*np VP*vbd NP*np
+NP*dt VP*vbp
+NP*jj VP*vbd
+NP*dt VP*vbd
+CC NP*np VP*vbp
+PP*in NP*nnp VP*vp
+ADVP*rbr ADVP*rb VP*vbz
+S*np '' NP*prp VP*vbd
+S*np NP*ex VP*vbz
+
+# id=uedin.de-en.109
+NP*np ADVP*rb VP*vbz
+NP*np VP*vbz
+S*np NP*prp VP*vp
+NP*dt VP*vp
+NP*np VP*vbz
+
+# id=uedin.de-en.110
+S*np CC S*np
+S*np '' PRN*sbar CC S*advp
+PP*in S*np CC S*np
+NP*prp VP*vp
+S*np '' NP*nnp VP*vbd
+S*np-tmp '' VP*vbd NP*np
+NP*np VP*vbd
+NP*qp VP*vbd
+PP*in NP*np VP*vbd
+S*np '' VP*vbd NP*np
+NP*nn ADVP*rb VP*vbd
+S*np VP*vbd NP*np
+NP*dt VP*vbd
+PP*in NP*prp VP*vbd
+NP*np VP*vbz
+NP*nnp VP*vbd
+CC PP*in NP*prp VP*vbz
+NP*np VP*vbd
+
+# id=uedin.de-en.111
+NP*nnp NP*np
+NP*nnp VP*vbd
+PP*rb VP*vbz NP*np
+NP*dt VP*vbd
+S*np S*np
+NP*prp$ VP*vbd
+S*pp S*pp
+NP*np VP*vbn ''
+NP*np VP*vbd ''
+NP*dt VP*vbd ''
+NP*dt VP*vbp
+NP*np VP*vbd
+NP*np PP*in
+PP*in
+S*pp S*``
+
+# id=uedin.de-en.112
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+S*np NP*np VP*vbp
+NP*nnp VP*vbd
+NP*nnp VP*vbd
+S*np '' NP*prp VP*vbd
+NP*nns VP*vbd
+NP*np ADVP*rb VP*vbd
+NP*nns VP*vbp
+NP*nnp VP*vbd
+NP*prp VP*vbp
+NP*np VP*vbp
+S*np CC S*np
+S*np NP*np VP*md
+S*np NP*dt VP*vbz
+NP*nns ADVP*rb VP*vp
+NP*prp VP*vbp
+NP*np VP*vb
+NP*jjs VP*vbp
+NP*nnp VP*vp
+S*np VP*vbd NP*np
+NP*prp VP*vbd
+NP*np VP*vp
+S*np '' NP*prp VP*vbd
+NP*prp VP*vbd
+S*np PRN*, CC S*np ''
+NP*nnp VP*md
+NP*dt VP*vbd
+NP*nn VP*vbz
+NP*nnp VP*vp
+S*np VP*vbz NP*np
+NP*nns VP*vbp
+SBAR*in
+NP*nnp VP*vbz
+PP*in NP*dt VP*vbd
+PP*in NP*dt VP*vbd
+NP*np VP*vbz
+NP*nns VP*md
+S*np CC S*s
+S*np CC S*np
+NP*nnp VP*vbz
+
+# id=uedin.de-en.113
+S*vp VP*vbd
+SBAR*in PP*in VP*vbz
+NP*dt VP*vbd
+S*pp CC S*s
+PP*in NP*nn VP*vp
+RB NP*prp VP*vbd
+PP*in NP*dt VP*vbd
+S*advp NP*np VP*vbd
+PP*in NP*dt VP*vbp
+
+# id=uedin.de-en.114
+PP*in NP*nnp VP*vbz
+S*np CC S*np
+NP*dt VP*vbz
+NP*dt VP*md
+NP*np VP*vbd
+PP*in NP*jj VP*vbd
+PP*in VP*vbn
+PP*in NP*dt VP*vbd
+S*np '' NP*nnp VP*vbd
+NP*np VP*vbz
+
+# id=uedin.de-en.115
+S*np NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+S*np '' VP*vbd NP*np
+NP*prp VP*md
+NP*prp VP*vbp
+ADVP*rb NP*prp VP*vbd
+S*np '' NP*prp VP*vbd
+NP*nnp VP*vbd
+WHNP*wp SQ*vbd
+NP*prp$ VP*vbz
+NP*dt VP*vbd
+NP*prp VP*vbp
+NP*prp$ VP*vbz
+S*np '' NP*prp VP*vbd
+NP*nnp VP*vbd
+ADVP*rb NP*dt VP*vbp
+S*np '' NP*prp VP*vbd
+S*np NP*prp VP*md
+NP*np VP*vbd
+S*np NP*dt VP*vbp
+NP*np VP*vbd
+
+# id=uedin.de-en.116
+NP*dt VP*vbz
+NP*nn VP*vbp
+NP*dt VP*vbz
+NP*nnp VP*vbd
+NP*np VP*vbp
+NP*nns VP*vbp
+PP*rb NP*nns VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbz
+S*np CC S*np
+NP*dt VP*md
+
+# id=uedin.de-en.117
+NP*nnp VP*vbd ''
+NP*dt NP*pp PP*in SBAR*s
+S*np NP*dt VP*vbz
+PP*in NP*nnp VP*vbd ''
+NP*prp ADVP*rb VP*vbd
+NP*prp VP*vbd ''
+S*np IN S*np
+NP*prp VP*vbp
+NP*nnp VP*vbd
+NP*prp VP*vbd ''
+S*np NP*dt VP*vbz
+WHNP*wp SQ*vp
+NP*prp VP*vbp
+ADVP*rb NP*nnp VP*md
+NP*np VP*vbd
+S*np '' VP*vbd NP*np
+NP*prp VP*vbp
+NP*nnp VP*vbz
+NP*jj VP*vp
+NP*np VP*vp
+PP*in NP*nnp VP*vp
+NP*np VP*vbp
+NP*prp VP*vbd
+SBAR*in VP*vbd
+NP*prp VP*vbd
+S*sbar '' VP*vbz NP*nnp
+ADVP*rb VP*vbz NP*rb
+
+# id=uedin.de-en.118
+NP*np VP*md
+NP*dt VP*md
+NP*dt VP*vbz
+NP*np VP*md
+SBAR*in NP*prp VP*md
+VP*vp
+NP*np VP*vbz
+WHNP*wp SQ*vbp
+NP*dt VP*md
+PP*in NP*dt ADVP*prp VP*md
+WHNP*wdt SQ*vp
+PP*in NP*nnp VP*vbz
+NP*prp VP*vp
+NP*nn VP*md
+
+# id=uedin.de-en.119
+NP*nnp VP*vbz
+NP*np VP*vbd
+NP*dt VP*md
+CC NP*nnp VP*vbd
+S*np '' NP*nnp VP*vbd
+NP*cd PP*in ADVP*rb
+NP*nnp VP*vbd
+NP*nnp NP*nnp
+NP*dt VP*md
+S*np '' NP*prp VP*vbd
+WHADVP*wrb SQ*md
+NP*nnp ADVP*rb VP*vbd
+S*vp NP*prp VP*md
+NP*nn VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbd
+PP*in
+S*np '' NP*prp VP*vbd
+
+# id=uedin.de-en.120
+S*np S*np
+S*np NP*cd VP*vbp
+NP*jj
+NP*np VP*vbp
+SBAR*in NP*nn VP*vbz
+S*np SQ*vbp
+CC VP*advp
+CC VP*vp
+NP*dt VP*vbp
+PP*in NP*prp VP*vbp
+NP*np VP*vbz
+NP*dt VP*vbz
+PP*in NP*np VP*vbd
+S*np NP*np VP*vbp
+NP*jj VP*vbp
+PP*in NP*np VP*md
+NP*np VP*vbz
+WHNP*wp SQ*vbp
+NP*np VP*vbp
+NP*np VP*md
+CC SBAR*whadvp
+S*vp VP*vbz
+S*np NP*prp$ VP*vbz
+PP*in VP*md NP*np
+WHADVP*wrb SQ*vbz
+NP*dt ADVP*rb VP*vbz
+NP*np VP*vbn
+PP*in NP*prp VP*md
+PP*in NP*dt VP*vbz
+NP*dt VP*vbz
+PP*advp VP*vbp NP*np
+NP*prp VP*vbp
+PP*in NP*dt VP*vbz
+NP*np VP*vbz
+ADVP*np NP*prp VP*vp
+WHNP*wp SQ*vbp
+NP*dt VP*vbz
+NP*np VP*vbn
+SBARQ*whnp CC SBARQ*whnp
+NP*np NP*np
+PP*in NP*ex VP*vbp
+ADVP*rb NP*dt VP*vbp
+PP*in '' NP*dt VP*vbz
+PP*in
+SBAR*whnp NP*np VP*md
+NP*np NP*np
+PP*vbg VP*vbp SBAR*whnp
+PP*to NP*prp VP*vbp
+NP*nnp VP*md
+NP*dt VP*vbz
+NP*prp VP*md
+NP*cd ADVP*rb VP*vbp
+S*vp VP*vbp
+
+# id=uedin.de-en.121
+NP*nnp VP*vb
+NP*dt VP*vbp
+NP*np ADVP*rb VP*vbz
+PP*vbg NP*np VP*vbz
+NP*dt VP*vbp
+S*np S*np SBAR*in
+NP*np VP*vbp
+NP*dt VP*vbz
+S*s '' NP*prp$ VP*vbz ''
+
+# id=uedin.de-en.122
+NP*np VP*vp
+NP*dt VP*vp
+NP*np VP*vbd
+NP*prp VP*vp
+S*np VP*vbd NP*np
+NP*np VP*vp
+NP*np VP*vbd
+NP*prp VP*vbd
+S*np S*np
+CC ADVP*rb NP*prp VP*vbz
+NP*prp ADVP*rb VP*vbz
+NP*dt VP*vbd
+NP*np VP*vbz
+NP*np VP*vbd ''
+NP*ex VP*vbd
+S*np CC S*np
+NP*np VP*vbd ''
+NP*prp VP*md
+NP*prp VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbp
+NP*prp VP*vbd
+S*np CC S*np
+S*np CC S*np ''
+NP*dt VP*vbd
+NP*prp VP*md
+
+# id=uedin.de-en.123
+NP*np VP*vbd
+SBAR*in NP*np VP*vbd
+NP*cd VP*vp
+NP*dt PP*vbg VP*vbz
+S*np '' VP*vbd NP*np
+VP*vbn NP*nn S*sbar ''
+NP*cc VP*vbp
+PP*in NP*np VP*vbd
+VP*vbn
+NP*dt VP*vbd
+PP*in VP*vbz NP*np
+PP*vbg NP*dt VP*vbz
+NP*dt VP*vbz
+NP*prp VP*md
+NP*np VP*vbp
+NP*np VP*vbd
+NP*qp NP*np
+S*sbar VP*vbd NP*np
+CC NP*prp VP*vbz
+ADVP*rb NP*nn VP*vbd
+NP*dt VP*vbz
+NP*prp VP*md
+S*np S*np S*np
+NP*prp VP*md
+
+# id=uedin.de-en.124
+S*np S*sbar ''
+SBAR*in NP*nnps VP*vbd
+NP-TMP*nn NP*jj VP*vbd
+S*np '' NP*prp VP*vbd
+SBAR*in PRN*, VP*md
+NP*jjs VP*md
+S*np '' NP*prp VP*vbd
+NP*dt VP*vbd
+S*s '' VP*vbd NP*np
+NP*np VP*vbd
+S*np '' NP*prp VP*vbd
+NP*prp VP*vbp
+NP*np VP*vbd
+NP*prp VP*vbd
+PP*in S*vp VP*vbd
+NP*np
+
+# id=uedin.de-en.125
+NP*np VP*md ''
+NP*nnp VP*vbz
+NP*nnp VP*md
+PP*in NP*nns VP*vp
+NP*np VP*vbz
+S*np S*np ''
+NP*prp VP*vbp
+NP*prp VP*vbz
+NP*prp VP*vbp
+NP*nnp VP*vbd
+S*np CC S*np
+NP*np VP*vbd ''
+NP*jj VP*vbp
+S*np '' NP*prp VP*vbd
+S*np CC RB S*vp
+NP*np VP*vbp
+NP*dt VP*vbz
+NP*prp VP*vbz
+PP*in NP*np VP*vp
+NP*dt VP*vbd
+NP*dt ADVP*rb VP*vbz
+RB NP*adjp ADVP*rb VP*vbp
+NP*prp VP*vbz
+PP*in NP*np VP*vbd
+NP*jj VP*vbp
+PP*in NP*nnp VP*vbp
+PP*in NP*np VP*vbd
+NP*dt VP*vbz ''
+S*np NP*prp VP*vbp
+S*np '' NP*prp VP*vbd
+NP*nns VP*vbp
+NP*np VP*vbd
+ADVP*np NP*dt VP*vbd
+CC PP*in VP*md VP*vbn
+SBAR*in NP*nnp VP*vbd
+SBAR*in ADVP*rb VP*vbz
+NP*np VP*vbz
+S*np NP*np VP*vp
+CC PP*in NP*prp$ VP*vbd
+NP*prp VP*vbd
+S*np '' VP*vbz NP*nnp
+SBAR*whadvp NP*prp VP*vp
+PP*in NP*prp VP*vbd
+PP*vbg NP*ex VP*vbp
+CC PP*in PP*in VP*vbp ''
+NP*np NP*np PP*cc
+NP*dt VP*vbd
+RB S*s CC S*np
+PP*in NP*prp VP*vbd
+S*np '' NP*prp VP*vbd
+PP*in NP*prp VP*md
+CC SBAR*in NP*prp VP*vbd
+SBAR*whnp VP*vbd
+S*np CC S*np
+NP*nnp VP*vbd
+SBAR*in NP*prp VP*vp
+PP*in NP*prp VP*vbz
+NP-TMP*nn NP*prp VP*vbz
+CC NP*np VP*vbz
+S*np NP*prp VP*vbd
+NP*prp VP*vbp
+NP*prp VP*vbp
+CC ADVP*rb S*np IN S*np
+NP*nnp VP*vbd ''
+S*np '' NP*prp VP*vbd
+NP*prp VP*vbz
+S*np CC S*np
+SBAR*whadvp NP*prp VP*md
+CC NP*np VP*vbz
+NP*np VP*vp
+DT NN SBAR*in
+NP*prp VP*vbz
+S*np S*np
+SBAR*in S*np
+S*s '' NP*nnp VP*vbd
+NP*prp VP*vp
+S*pp S*np
+NP*prp VP*vp
+CC NP*prp VP*md
+S*np '' NP*prp VP*vbd
+S*vp CC S*np
+NP*dt VP*md
+
+# id=uedin.de-en.126
+S*np '' NP*nnp VP*vbz
+NP*nnp VP*vbz
+NP*dt VP*md
+NP*dt ADJP*rb
+NP*prp VP*vbz
+S*sbar VP*vbz NP*nnp
+ADVP*jj NP*prp VP*vbz
+NP*nnp VP*vp
+NP*nnp VP*vbz
+NP*prp VP*vbz
+NP*prp$ VP*vbp
+NP*nnp VP*md
+PP*in NP*prp VP*vbz
+NP*dt VP*vp
+
+# id=uedin.de-en.127
+NP*np
+NP*dt VP*vbz
+NP*nnp S*s
+S*np CC S*np
+NP*dt VP*vp
+S*np S*np
+S*np CC RB S*np ''
+NP*np VP*vbd
+S*np CC S*np
+NP*prp VP*vbz
+NP*dt VP*vbz
+CC NP*prp VP*vbz
+NP*nnp VP*vbd
+CC NP*prp$ VP*md
+NP*prp VP*vbz ''
+S*np CC S*np
+NP*dt VP*vbz
+
+# id=uedin.de-en.128
+NP*nnp NP*np
+NP*nnp VP*vbz
+NP*dt VP*vbz
+NP*nnp VP*vbz
+SBAR*in S*np '' NP*wdt VP*md
+S*np '' NP*dt VP*vbd
+NP*prp VP*vbp ''
+S*np S*np ''
+VP*vbn VP*vbz NP*np ''
+NP*np VP*vbd
+NP*prp VP*vbz
+NP*np VP*vbd
+PP*in NP*nnp VP*vbz
+
+# id=uedin.de-en.129
+ADVP*rb S*vp '' VP*vbd NP*nnp
+NP*np ADVP*in VP*vbd
+S*vp VP*vbd
+NP*dt S*np
+NP*prp VP*vbz
+S*np CC S*np
+PP*in NP*prp VP*vp
+S*np NP*nnp VP*vbd
+S*np CC S*np
+NP*dt VP*vbz
+S*np NP*dt VP*md
+ADVP*rb NP*dt VP*vbd
+SBAR*in NP*nnp VP*vbz
+S*np '' NP*prp VP*vbz
+NP*nn VP*vbz
+S*np CC S*pp
+NP*np VP*vbd
+NP*nnp NP*nns NP*nn NP*np PP*in NP*np
+CONJP*rb NP*np
+NP*nn PP*in
+
+# id=uedin.de-en.130
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP*nnp VP*vbz
+PP*in NP*nnp VP*vbz
+S*np NP*prp VP*vbz
+NP*np VP*vbd
+NP*nnp VP*vbp
+PP*in NP*np
+NP*nnp VP*vp
+SBAR*in NP*nnp VP*vbd
+S*sbar '' VP*vbz NP*dt
+NP*nnp PP*in
+
+# id=uedin.de-en.131
+NP*nnp VP*md
+NP*np VP*vbz
+ADVP*rb NP*dt VP*md
+CC S*np CC S*np
+PP*in NP*dt VP*md
+NP*np VP*vbz ''
+NP*dt ADVP*rb VP*vbd ''
+NP*np VP*vbz ''
+NP*dt VP*md
+
+# id=uedin.de-en.132
+NP*nn VP*vbp
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*dt NP*np
+NP*np VP*vbd
+PP*in NP*dt VP*vbd
+CC PP*in NP*ex VP*vbd
+NP*dt PP*to
+NP*np VP*vbd
+
+# id=uedin.de-en.133
+S*np CC S*pp
+ADVP*rb NP*dt VP*vbz
+ADVP*rb NP*dt VP*md
+WHNP*wp SQ*vbz
+NP*prp VP*vbp
+FRAG*np FRAG*cc
+CC PP*in NP*nnp VP*vbd
+WHPP*in SQ*md
+PP*advp VP*vbp NP*np
+INTJ*wrb
+'' S*np
+NP*dt VP*vbp
+NP*prp VP*vbz
+NP*nns VP*vbp
+S*s NP*prp ADVP*rb VP*vbp
+S*sbar S*np
+NP*ex VP*vp
+NP*prp VP*md
+
+# id=uedin.de-en.134
+NP*np VP*vbz
+NP*np VP*vbz
+NP*jj PP*in PP*in
+NP*dt VP*vbz
+NP*jj VP*vbz
+PP*rb NP*nn VP*md
+S*vp VP*vbd
+NP*ex VP*vbp
+NP*np VP*md
+S*np CC S*np
+ADVP*rb VP*vb
+CC NP*np VP*md
+PP*vbg VP*vbz NP*np
+
+# id=uedin.de-en.135
+NP*dt PP*in
+NP*jj VP*vbp
+NP*np VP*vbp
+NP*np VP*vbz
+S*np CC S*np
+NP*dt VP*vbz
+NP*np VP*vp
+CC SBAR*in NP*jj VP*vbp
+NP*prp VP*vbp
+NP*np VP*vbp
+NP*dt ADVP*rb VP*vbz
+S*np '' VP*vbd NP*np
+NP*dt NP*prp VP*vbp
+NP*dt VP*vbz
+NP*dt VP*vbz
+CC PP*in VP*vbz PP*in
+NP*nns VP*vbp
+NP*np VP*vbz
+NP*nns VP*vbp
+S*np '' VP*vbd NP*np
+NP*prp$ VP*vbz
+S*np '' NP*prp VP*vbd
+NP*nns VP*vbp
+NP*prp VP*vbz
+NP*dt VP*vbp
+CC NP*dt VP*vbp
+NP*np VP*vbp
+S*np '' VP*vbd NP*np
+NP*nns VP*vbp
+NP-TMP*np PP*in VP*vbd
+NP*dt VP*vbd
+CC NP*np VP*vp
+NP*jj VP*vbp
+NP*np VP*vbz
+NP*dt VP*md
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+CC NP*np VP*vbp
+NP*dt VP*vbz
+PP*in SBAR*whadvp NP*nns VP*vbd
+S*np '' VP*vbd NP*np
+NP*dt VP*vbd
+S*sbar S*np ''
+NP*ex VP*vbz
+NP*nnp VP*vbz
+PP*in NP*nnp VP*md
+NP*np VP*vbz
+NP*dt VP*vbz
+ADVP*rb NP*prp VP*vbd
+CC NP*np VP*vbp
+S*np '' VP*vbd NP*np
+NP*jj VP*vbz
+NP*ex VP*vbp
+PP*in NP*np VP*nn
+NP*prp VP*md
+CC NP*prp VP*vp
+NP*jj VP*vbp
+S*pp S*np CC S*np
+S*np '' VP*vbz NP*np
+ADVP*rb NP*dt VP*vbp
+PP*in NP*nns VP*vbd
+S*np IN S*np
+S*np '' VP*vbd NP*np
+SBAR*in NP*np VP*vbp
+
+# id=uedin.de-en.136
+NP*jj S*s
+S*np CC S*np
+S*np CC S*np
+NP*dt VP*vbd
+NP*nnp ADVP*rb NP*np VP*vbd
+NP*prp$ VP*vbd
+ADVP*rb X*in NP*np
+NP*dt VP*vbn
+NP*dt ADVP*rb VP*vbd
+NP*jj VP*vbd
+NP*nnp VP*vbd
+ADVP*np NP*ex VP*vbd
+NP*dt VP*vbd
+ADVP*np NP*np VP*vbd
+NP*jj VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+PP*in NP*np VP*vbd
+
+# id=uedin.de-en.137
+S*adjp VP*vbp
+NP*dt VP*vbd
+NP*dt VP*vbn
+NP*dt VP*vbd
+NP*nn VP*vbd
+NP*dt VP*vp
+NP*nns VP*vbd
+NP*dt ADVP*rb VP*vbd
+NP*dt VP*vbd
+NP*prp ADVP*rb VP*vbd
+NP*np VP*vbd
+
+# id=uedin.de-en.138
+NP*np VP*vbz
+NP*np VP*vbd
+PP*in SBAR*whnp VP*vbz NP*dt S*sbar ''
+S*vp ADVP*rb VP*vbz
+S*np NP*prp VP*vbd
+NP*dt VP*vbz
+NP*dt SBAR*s S*sbar ''
+NP*np VP*vbp
+NP*np VP*vbd ''
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*nnp VP*vbd
+SBAR*in NP*prp VP*vbz
+NP*nnp VP*vbd
+ADVP*rb NP*prp VP*vbz ''
+NP*np PP*vbg VP*vbp
+PP*in NP*nnp VP*vbz
+
+# id=uedin.de-en.139
+NP*nn PP*in PP*in PP*in PP*in PP*in PP*in PP*in PP*in PP*in PP*in
+S*s '' VP*vbd NP*np
+PP*in NP*prp VP*vp
+PP*in NP*ex VP*vbp
+NP*nnp VP*vbd
+PP*in NP*prp VP*vbz
+S*np CC S*np
+S*np NP*np VP*vbp
+NP*np VP*vbp
+S*np NP*np VP*vbd
+NP*np VP*vbd
+NP*dt VP*vp
+NP*nnp VP*vbz
+PP*in NP*prp VP*vbd ''
+NP*dt VP*nn
+S*cc NP*nnp VP*vbp
+PP*in NP*prp VP*vbd
+S*np '' NP*nnp VP*vbd
+NP*np VP*vbp
+S*np '' VP*vbz NP*np
+S*np CC S*np
+NP*np VP*vbz
+NP*jj VP*vbp
+NP*dt VP*vbp
+NP*nnp VP*vb
+NP*nnp VP*vbd
+S*np '' VP*vbd NP*nnp
+S*np CC S*np
+NP*np VP*vbd
+PP*in NP*np VP*vbz
+NP*nnp VP*vbd
+S*np '' NP*nnp VP*vbd
+S*np VP*vbz NP*np SBAR*in
+S*np '' NP*prp VP*vbz
+NP*np VP*vbd
+S*s '' NP*prp VP*vbd
+
+# id=uedin.de-en.140
+NP*nnp VP*vbz
+NP*dt VP*vbd
+PP*in NP*np VP*vbd
+NP*nnp VP*vp
+PP*in
+CC RB VP*vbd
+NP*nn NP*prp VP*vbd
+RB ADVP*rb VP*vbz NP*prp
+NP*nnp VP*vbd
+PP*in NP*nns VP*vp
+PP*in VP*vbd NP*np
+NP*np VP*vbd
+PP*in NP*prp VP*vbd ''
+NP*np ADVP*rb VP*vbd
+PP*in PP*in NP*prp VP*vbd
+S*np '' VP*vbd NP*nns
+NP*ex VP*vbp
+
+# id=uedin.de-en.141
+S*np VP*vbd NP*dt
+NP*dt VP*vbd
+CC NP*nnp VP*vbd
+S*advp NP*dt VP*vbd
+NP*dt VP*vbd
+NP*jj VP*vbd
+S*np '' VP*vbd NP*np
+NP*prp VP*vbd ''
+NP*prp ADVP*rb VP*vbp ''
+NP*nnp VP*vbd
+SBAR*in NP*dt VP*vp
+CC ADVP*rb NP*nnp VP*vp
+S*pp '' NP*prp VP*vbd
+NP*prp VP*vbp
+NP*prp VP*vbd
+PP*in NP*dt VP*vp
+NP*jj VP*vbp
+NP*nns VP*vbp
+
+# id=uedin.de-en.142
+NP*np SBAR*in VP*vbz
+PP*in NP*nnp VP*vbz
+NP*dt VP*vbz
+
+# id=uedin.de-en.143
+NP*nnp S*np
+PP*in NP*nn VP*md
+NP*jj VP*vbz
+NP*ex VP*vbp
+ADJP*np VP*vbz NP*nnp VP*vbn
+NP*prp VP*vbz
+S*vp VP*vbz
+NP*nns VP*vbp
+NP*np VP*vbz
+
+# id=uedin.de-en.144
+NP*nnp VP*vbd
+S*pp NP*prp VP*vbd
+NP*nnp VP*vbd ''
+NP*prp VP*vbd ''
+PP*in NP*np VP*vbd ''
+NP*dt VP*vbd ''
+NP*nnp VP*vbd
+NP*np VP*vbd
+
+# id=uedin.de-en.145
+NP*nnp VP*vbd
+S*np '' VP*vbd NP*np
+NP*dt VP*md
+NP*np VP*vbz
+S*pp CC S*np
+NP*np VP*vbd
+S*np VP*vbd NP*dt
+ADVP*in NP*cd VP*vbd
+S*pp CC S*np
+S*np CC S*np
+NP*np VP*vp
+NP*np VP*vbz
+
+# id=uedin.de-en.146
+NP*nnp VP*md
+NP*np VP*md
+NP*dt NP*np
+S*np NP*prp VP*vbd
+NP*np VP*vbz
+S*pp '' NP*dt VP*vbd
+IN S*np
+
+# id=uedin.de-en.147
+S*np NP*dt VP*vbz
+NP*np VP*vbd
+S*np CC S*pp
+S*np '' NP*prp VP*vbd
+NP*prp VP*vbp
+NP*prp VP*vbd
+NP*nnp PRN*, VP*vbd ''
+NP*np VP*vbz
+S*np CC S*np
+NP*dt VP*md
+NP*dt VP*vbz
+
+# id=uedin.de-en.148
+NP*prp VP*vbd
+NP*nnp VP*vbz
+NP*dt VP*vp
+NP*dt ADVP*rb VP*vbz
+SBAR*in NP*dt VP*vbz
+PP*in NP*nnp VP*vp
+S*s '' NP*prp VP*vbd
+NP*dt VP*vbp
+PP*in NP*dt VP*vbd
+S*np NP*dt VP*vbd
+S*np IN S*np
+NP-TMP*nn NP*np VP*vbd
+
+# id=uedin.de-en.149
+NP*np VP*vbz
+PP*in NP*nn VP*vbz
+S*np CC S*np
+
+# id=uedin.de-en.150
+WHNP*np SINV*``
+NP*np VP*vbp
+PP*in VP*md NP*np
+SBAR*in NP*np VP*md
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbp ''
+NP*np VP*vbd ''
+PP*in NP*dt VP*vbz
+S*advp '' VP*vbd NP*np
+S*advp NP*adjp VP*vbp
+NP*np VP*vbd
+NP*nnp VP*vbd
+NP*to VP*np
+NP*prp$ VP*vbz
+S*advp '' NP*nnp VP*vbd
+
+# id=uedin.de-en.151
+S*np CC S*np
+PP*in NP*nnp VP*vbd
+NP*nnp VP*vbp
+NP*nn VP*vbz
+PP*in PRN*, NP*nn VP*vbz ''
+NP*nnp PRN*s VP*vbd
+NP*prp VP*md ''
+S*np NP*prp$ VP*vbd
+
+# id=uedin.de-en.152
+NP*nns S*np
+NP*ex VP*vbz
+PP*in
+S*pp CC S*np
+S*pp S*np
+PP*in NP*nn VP*vbd
+NP*nnp VP*vbd
+PP*in NP*np VP*vbz
+NP*ex VP*md
+PP*in VP*md NP*np
+NP*prp$ VP*md
+PP*in NP*rb VP*vbd
+S*vp VP*vbn
+NP*dt VP*vbp
+NP*np NP*ex VP*vbd
+ADVP*rb PP*in VP*vbz
+NP*nnp PP*in NP*np
+S*np NP*cd VP*vp
+NP*np VP*vbd
+NP*dt VP*vp
+PP*in NP*np VP*vbd
+
+# id=uedin.de-en.153
+NP*np PRN*s VP*vbz
+S*vp NP*np VP*vbn
+S*np CC S*np ''
+S*cc '' NP*prp VP*vbd
+NP*np VP*vbp
+S*np NP*np VP*vbd
+
+# id=uedin.de-en.154
+SBAR*rb NP*ex VP*vbz -RRB-
+NP*dt VP*vbz
+NP*dt VP*vbp
+ADVP*rb NP*prp VP*vbp
+SBAR*in '' S*vp VP*vbz
+NP*jj NP*prp VP*vbp
+IN NP*prp VP*md
+S*np '' VP*vbz NP*dt
+PP*in S*vp VP*md
+ADVP*in PP*in NP*prp VP*vbd
+ADVP*rb NP*dt VP*md
+ADVP*rb NP*prp VP*vbp
+
+# id=uedin.de-en.155
+S*np VP*vbz NP*nnp
+NP*prp VP*md
+ADVP*rb PRN*, NP*np VP*vbd
+NP*np VP*md
+ADVP*rb PP*np VP*vbd
+NP*nnp VP*vbd
+
+# id=uedin.de-en.156
+NP*np VP*vbp
+NP*dt VP*vbz ''
+S*np CC S*np
+PP*vbg NP*np VP*vbz
+NP*dt VP*vbd
+NP*np VP*vbd
+PP*in NP*nnp VP*vbp
+PP*in VP*vbd SBAR*in
+S*s '' VP*vbd NP*dt
+S*np IN S*np ''
+SBAR*in VP*vbd
+S*pp '' VP*vbd NP*np
+CC NP*prp VP*vbz
+S*np NP*prp VP*vbd
+SBAR*in NP*dt VP*vbd
+NP*nnp VP*vbd
+NP*nnp VP*vbd
+FRAG*adjp '' NP*nnp VP*vbd
+
+# id=uedin.de-en.157
+S*np NP*nnp VP*vbz
+S*np CC S*np
+PP*in NP*dt VP*md
+NP*dt VP*vbd
+PP*in NP*nn VP*vbd
+NP*np ADVP*rb VP*vbz
+NP*dt VP*vbd
+NP*dt VP*vbd
+PP*rb NP*prp VP*vbd
+S*np '' VP*vbz NP*nnp
+NP*ex VP*vbp
+ADVP*rb NP*dt VP*md
+NP*nnp VP*vbd
+SBAR*in '' VP*vbd NP*np
+NP*np VP*vbd
+S*np CC S*np
+PP*in NP*np VP*md
+NP*dt PP*in VP*vbp
+NP*ex VP*vbp
+PP*in S*vp NP*dt VP*md
+S*np '' VP*vbd NP*np
+
+# id=uedin.de-en.158
+NP*nnp NP*np
+VP*vbn
+PP*in NP*nnp VP*vp
+NP*dt VP*vbz
+PP*in NP*prp VP*vp
+
+# id=uedin.de-en.159
+NP*np VP*vbd
+NP*prp VP*vbp
+NP*prp VP*vbz
+NP*prp VP*vbz
+SBAR*in NP*prp VP*vbz
+NP*dt VP*vbd
+S*np NP*prp VP*md
+S*np CC S*np
+PP*in NP*prp VP*vbd
+CC ADVP*rb S*np
+S*vp VP*vbz
+S*np S*np
+PP*in NP*nn VP*vbz
+CC NP*ex VP*vbz
+NP*prp VP*vbp
+NP*prp ADVP*rb VP*vbp
+CC SBAR*in NP*prp VP*vbp
+NP*prp VP*vbp
+NP*dt VP*md
+NP*prp VP*md
+NP*prp VP*md
+NP*prp VP*vbz ''
+CC NP*nns VP*md
+NP*prp VP*vbp
+SBAR*in
+ADVP*rb NP*dt VP*vbz
+CC SBAR*whadvp NP*prp VP*vbp
+CC NP*dt VP*vbz
+NP*prp VP*vbp
+S*np NP*prp VP*vbd
+NP*prp VP*vbd
+CC PP*in NP*np NP-TMP*dt VP*vbz
+NP*prp VP*vbz
+NP-TMP*dt NP*prp VP*vbp
+PP*in NP*prp VP*vbd
+S*np '' NP*prp VP*vbd
+NP*prp VP*md
+ADVP*np NP*np VP*md
+NP*np VP*vbp
+
+# id=uedin.de-en.160
+NP*nnp NP*np
+PP*rb NP*prp VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+PP*in PP*in VP*vbd
+NP*dt VP*vp
+
+# id=uedin.de-en.161
+NP*np VP*md
+PP*in NP*jj VP*vbd
+NP*np VP*vbz
+NP*dt VP*md
+NP*dt VP*vbd
+NP*dt VP*vb
+PP*in NP*np VP*vbd
+S*advp NP*dt VP*md
+S*np '' NP*np VP*md
+
+# id=uedin.de-en.162
+NP*nnp VP*vbz
+NP*np VP*vbz
+S*np NP*nn VP*vbp
+NP*np VP*vbz
+NP*dt VP*vbz
+S*advp S*np
+PP*in NP*nn VP*vbz
+NP*dt VP*vbd
+ADVP*in NP*dt VP*vbp
+S*np VP*vbd NP*np
+S*s CC S*np
+NP*dt VP*vbz
+NP*np S*np
+PP*in NP*np
+
+# id=uedin.de-en.163
+NP*nn S*np
+SBAR*in ADVP*rb NP*ex VP*vbz
+NP*dt VP*vbn
+S*np '' VP*vbd NP*np
+NP*dt VP*vbd
+S*np '' VP*vbd NP*np
+PP*in NP*np VP*md
+ADVP*rb NP*dt VP*vbd
+NP*dt VP*vbz
+

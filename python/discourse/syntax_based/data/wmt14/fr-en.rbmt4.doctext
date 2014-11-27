@@ -1,0 +1,3023 @@
+# id=rbmt4.fr-en.0
+NP*dt VP*vbz
+PP*vbg NP*ex VP*vbp
+SBAR*in NP*wdt VP*vbz
+NP*prp VP*vbz
+MD NP*prp ADVP*rb VP*vb
+SBAR*in NP*prp VP*vbp
+S*sbar NP*prp VP*vbz
+VBZ NP*nnp VP*vbn
+MD NP*prp VP*vb
+NP*np ADVP*rb VP*vbz
+ADVP*rb S*pp CC S*np
+NP*np VP*vbz
+S*np NP*dt VP*md
+ADVP*rb NP*np VP*vbz
+NP*dt VP*nn
+NP*dt PP*in
+S*np NP*prp VP*vbp
+NP*np VP*md
+NP*dt PRN*, VP*vbp
+NP*prp VP*vbz
+S*np S*np
+NP*jj NP*np
+
+# id=rbmt4.fr-en.1
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+NP*cd VP*vbp
+NP*dt VP*vbz
+NP*dt VP*vp
+NP*np VP*vbz
+PP*advp NP*np VP*vbd
+NP*dt VP*vbp
+S*np CC S*np
+NP*dt PP*in PP*to SBAR*s
+NP-TMP*nnp NP*jj VP*vbz
+NP*np VP*vbz
+NP*nnp VP*vbz
+NP*dt VP*vbz
+PP*in NP*np VP*vbd
+PP*in NP*nnp VP*vbz
+NP-TMP*nnp NP*prp VP*vbz
+NP*np VP*vbz
+CC NP*dt ADVP*rb VP*vbp ''
+NP*prp VP*vbp
+
+# id=rbmt4.fr-en.2
+S*np VP*vbp NP*np
+NP*np VP*md
+S*np VP*vbz
+NP*dt VP*md
+S*sbar VP*advp NP*nnp
+
+# id=rbmt4.fr-en.3
+NP*np VP*vbz
+NP*dt PP*to
+NP*dt VP*vbz
+NP*dt VP*md
+NP*dt VP*vbz
+NP*np VP*vbz
+PP*in NP*nns VP*vbp
+
+# id=rbmt4.fr-en.4
+NP*dt PP*in PP*in PP*in VP*vbn
+NP*nnp VP*vbz
+S*np VP*vbz
+NP*nnp VP*vp
+
+# id=rbmt4.fr-en.5
+NP*dt VP*md
+NP*np VP*vbz
+S*np CC S*np
+S*np VP*vbz NP*nnp
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vp
+PP*in NP*np VP*vbp
+S*cc VP*vbp NP*np
+NP*dt VP*vbp
+NP*np VP*vbp
+NP*dt VP*vbd
+CC NP*np VP*md
+NP*dt VP*vbz
+CC NP*prp VP*vbz
+S*`` NP*prp VP*vbz
+S*np CC S*np
+
+# id=rbmt4.fr-en.6
+NP*np VP*vbz
+SBAR*np NP*prp VP*vbp
+NP*cd PP*in S*vp
+NP*prp VP*vbz
+S*advp CC S*np
+NP*nnp VP*md
+NP*nnp VP*vbz
+S*np S*np S*np
+NP-TMP*nnp NP*qp VP*md
+
+# id=rbmt4.fr-en.7
+NP*np VP*vbn
+S*np CC S*np
+NP*np VP*vbz
+S*np '' VP*vbz NP*np
+NP*np VP*vbp
+PP*in VP*vbz
+NP*dt VP*vbp
+S*np S*np '' PP*vbg
+NP*np VP*vbz
+NP*np VP*vbd
+S*np CC S*np
+
+# id=rbmt4.fr-en.8
+NP*np VP*vbz
+S*np CC S*np
+NP*np VP*vbz
+NP*prp VP*vbz
+
+# id=rbmt4.fr-en.9
+NP*np PP*in NP*np VP*vp
+NP*nnp VP*vbz
+ADVP*rb NP*np VP*vbp
+NP*np VP*vbp
+NP*nnp VP*vbz
+NP*prp VP*vbz
+S*`` VP*vbz NP*nnp
+NP*nnp VP*vp
+PP*in NP*dt VP*vbz
+NP*nnp VP*vbp
+NP*nnp PP*in NP*nnp VP*md
+
+# id=rbmt4.fr-en.10
+NP*nnp VP*vbp
+NP*np VP*vbz
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+NP*dt VP*vbp
+NP*prp VP*vbz
+NP*nnp VP*vbp
+PP*in NP*nnp VP*vbz
+NP*nnp VP*vbz
+PP*in NP*nnp VP*vbz
+S*sbar VP*vbp NP*np
+
+# id=rbmt4.fr-en.11
+NP*nnp VP*vbz
+NP*np VP*vbz
+NP-TMP*nnp NP*np VP*vbz
+NP*prp VP*vbz
+PP*in NP*dt VP*vbz
+NP*dt VP*vp
+PP*in NP*np VP*vbp
+NP*np VP*vbd
+CC NP*prp VP*vbz
+S*np CC S*np ''
+S*vp
+NP*`` VP*vbn
+S*np CC S*pp
+PP*in
+
+# id=rbmt4.fr-en.12
+NP*nnp S*np
+CC NP*dt VP*md
+S*np VP*vbz NP*np
+NP*dt VP*md
+NP*dt VP*vbz
+NP*nnp VP*vbp
+S*pp VP*vbz NP*np
+ADVP*rb NP*dt VP*md
+NP*prp VP*vbp
+NP*dt VP*vbp
+PP*in NP*np VP*vbz
+NP*np VP*md
+NP*np VP*vbz
+S*`` VP*vbz NP*np
+NP*prp VP*vbp
+S*cc NP*prp VP*vbz
+NP*dt VP*md
+ADVP*rb NP*np
+CC NP*np VP*md
+NP*np VP*md
+NP*np VP*vbz
+S*np NP*np VP*vbz
+S*np '' VP*vbz NP*nnp
+NP*np VP*vbz
+PP*in NP*np VP*vbp
+NP*dt VP*vbp
+NP*dt VP*vbp
+NP*dt VP*vbz
+S*np CC S*np
+NP*dt VP*vbp
+S*vp VP*vbp
+S*np VP*vbz NP*nnp
+NP*np VP*vbp
+CC NP*dt VP*vbp
+NP*nnp VP*vbz
+S*pp CC S*np
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*np VP*vbp
+NP-TMP*nnp NP*dt VP*vbz
+NP*np VP*vbz
+S*np VP*vbz NP*np
+
+# id=rbmt4.fr-en.13
+NP*dt ADVP*jj VP*vbp
+S*np CC S*np
+S*np CC S*np
+NP*dt ADVP*rb VP*vbz
+S*s NP*prp VP*vbz
+NP*dt VP*vbz
+NP*np VP*vp
+S*`` VP*vbz NP*dt
+NP*nnp VP*vbz
+S*`` NP*prp VP*vbz
+NP*np VP*vbz
+S*np-tmp CC S*np
+PP*in NP*np VP*vp
+NP*dt VP*md
+ADVP*rb NP*prp VP*md
+PP*in NP*dt VP*md
+NP*dt ADVP*rb VP*vbz
+
+# id=rbmt4.fr-en.14
+S*np NP*np VP*vbz
+NP*prp VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*np VP*vbp
+NP*dt VP*vbz
+NP*dt VP*md
+
+# id=rbmt4.fr-en.15
+NP*np NP*np VP*vbz
+NP*prp VP*vbz
+SBAR*in NP*np VP*md
+SBAR*in NP*np VP*md
+NP*np ADVP*rb VP*vbz
+SBAR*in NP*nnp VP*vbz
+SBAR*whnp NP*prp VP*vbz
+NP*np VP*md
+NP*np VP*vbz
+NP*cd ADVP*rb VP*vbz
+NP*np VP*vbz
+NP*prp VP*vbz
+PP*in NP*np VP*vbz
+
+# id=rbmt4.fr-en.16
+NP*nnp SBAR*x
+NP*np VP*vbd
+NP-TMP*nn NP*prp VP*vbp
+S*np CC S*np
+CC NP*dt VP*vbp
+NP*np NP*np
+SBAR*whnp NP*prp VP*vbz
+NP*dt VP*md
+NP-TMP*dt NP*dt VP*vbp
+S*np S*np
+S*sbar CC S*np
+PP*vbg NP*dt VP*vbp
+NP*prp VP*vbp
+S*np CC S*pp
+ADVP*rb NP*dt VP*vbp
+NP*dt VP*vbz
+SBAR*in NP*cd VP*vbz
+NP*dt VP*vbp
+NP*dt VP*vbz
+NP*prp VP*vbz
+S*advp CC S*np
+S*np CC ADVP*rb S*np
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*nn VP*vbz
+NP*prp VP*vbp
+ADVP*rb S*np CC S*np
+ADVP*rb NP*np
+S*s S*np
+PP*advp NP*np '' VP*vbz
+NP-TMP*dt NP*dt VP*md
+NP*np ADVP*rb VP*vbd
+SBAR*in VP*vp
+
+# id=rbmt4.fr-en.17
+NP*np NP*np
+SBAR*in NP*dt VP*vbd
+S*s VP*vbz NP*nnp
+PP*vbg S*np CC S*np
+S*`` S*np
+NP*np VP*vbz
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.18
+NP*nn S*np
+S*`` PRN*, CC S*pp
+NP*np VP*vbz ''
+PP*vbg NP*dt VP*vbd
+NP*np VP*vbz
+PP*in NP*np VP*md
+PP*vbg NP*dt VP*vbp
+S*pp CC S*np
+PP*in NP*np VP*vbd
+NP*prp VP*vbd
+ADVP*np PP*in VP*vbd
+S*s VP*vbd NP*np
+PP*in NP*np VP*nn
+S*np NP*prp VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbp
+S*np CC S*np
+PP*to NP*np VP*vbz
+S*s VP*vbz NP*dt
+NP*cd VP*vbz
+PP*in NP*np VP*vbd
+
+# id=rbmt4.fr-en.19
+S*np NP*cd VP*vbz
+NP*np VP*vp
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.20
+S*s VP*vbz NP*np
+NP*np PRN*, NP*prp VP*vbp
+PP*in S*np CC S*np
+S*np VP*vbd NP*np
+PP*in NP*prp VP*vbz
+S*np CC S*np
+NP*dt VP*vbz
+NP*np VP*vb
+NP*dt VP*vbz
+NP*dt VP*vp
+NP*dt VP*vp
+NP*dt VP*vbz
+NP*nnp VP*vbz
+NP*np VP*vbp
+CC NP*dt VP*vbz
+NP*prp VP*vbz
+S*np VP*vbz NP*nnp
+NP*np VP*vbp
+S*np VP*vbz NP*np
+S*np CC S*np
+NP*np VP*vbd
+NP*dt VP*vbp
+NP*dt VP*vbp
+NP*np VP*vbz
+NP*nnp VP*vbz
+S*`` VP*vbz NP*nnp
+S*np CC S*np
+NP*np VP*vbp
+PP*in NP*np VP*vbz
+NP*nnp VP*vbd
+S*np VP*vbz NP*nnp
+S*np NP*prp VP*vbz
+NP*np VP*vbz
+S*`` NP*prp VP*vbz
+
+# id=rbmt4.fr-en.21
+NP*nnp NP*np
+S*np S*pp
+NP*np VP*md
+S*vp NP*dt VP*vbp
+
+# id=rbmt4.fr-en.22
+NP*nnp VP*vbd
+NP*np VP*vbz
+NP*np VP*vbz
+PP*in NP*np VP*vbp
+NP*dt VP*vbz
+NP*prp VP*md
+NP*prp VP*md
+
+# id=rbmt4.fr-en.23
+NP*nnp VP*vbz
+NP*dt VP*vbz
+S*np CC S*np
+S*np VP*vbz NP*nnp
+NP*prp VP*vbz
+NP*dt VP*vbz
+S*np NP*prp VP*md
+CC SBAR*whnp
+NP*jj NP*np
+S*np S*cc
+NP*np PRN*s NP*prp VP*vbz ''
+NP*np VP*vbz
+NP*dt VP*vbp
+PP*in NP*np VP*vbp
+ADVP*rb NP*np VP*vbp
+S*pp S*np ''
+NP*nnp VP*vbz
+NP*dt VP*vbz
+NP*nnp VP*vbp
+NP*nnp VP*vbp
+
+# id=rbmt4.fr-en.24
+S*np NP*dt VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*np VP*md
+NP*nns VP*vbp
+S*np VP*vbz NP*nnp
+NP*dt VP*vbz
+NP*dt VP*md
+NP*np VP*md
+NP*nnp VP*vbz
+ADVP*rb NP*prp VP*vbz
+S*np VP*vbz NP*nnp
+PP*vbg NP*dt VP*md
+CC NP*np VP*vbz
+S*np NP*prp VP*vbz
+NP*prp VP*md
+NP*nnp VP*vbz
+
+# id=rbmt4.fr-en.25
+NP*prp VP*vbz
+S*vp CC S*pp
+NP*prp VP*md
+NP*dt VP*md
+PP*in NP*nnp VP*vbz
+NP*nnp VP*vbz
+S*advp CC S*np
+S*`` NP*prp VP*vbz
+S*np NP*nnp VP*vbz
+S*np VP*vbz NP*nnp
+S*np CC S*np
+NP*ex VP*vbp
+NP*nns VP*md
+NP*dt VP*vbz
+PP*in NP*ex VP*vbz
+PP*in NP*np VP*vbz
+CC SBAR*rb NP*jj VP*md
+NP*np VP*vbp
+S*np-tmp VP*vbz NP*nnp
+CC PP*in NP*prp VP*md
+PP*in NP*nnp VP*vbd
+NP*np VP*vbp
+NP*prp VP*vbz
+CC NP*prp VP*vbz
+PP*in NP*np VP*vbp
+NP*np PP*in NP*prp VP*vbp
+NP*dt VP*vbz
+NP*prp VP*vbp
+CC SBAR*in NP*prp VP*vp
+PP*in S*np CC S*np
+NP-TMP*dt PP*in NP*dt VP*vbz
+S*np VP*vbz NP*nnp
+S*np CC S*np
+PP*in NP*np VP*vbz
+NP*jj VP*vbp
+S*np CC S*np
+NP-TMP*dt NP*dt VP*vbz
+S*np S*pp
+S*np CC S*np
+S*np VP*vbz NP*nnp
+PP*in NP*np VP*vbz
+S*np CC S*np
+NP*dt VP*vbz
+NP*dt VP*vbz
+PP*in NP*nnp ADVP*rb VP*vbz
+S*np S*np
+S*`` VP*vbz NP*np
+S*np NP*prp VP*vbz
+S*np VP*vbz NP*nnp
+NP*prp VP*vbz
+NP*dt VP*vp
+CC NP*np VP*vbp
+S*np VP*vbz NP*nnp
+S*np CC S*np
+PP*in NP*dt VP*vbz
+S*vp VP*vbz
+S*np VP*vbz NP*nnp
+CC NP*prp VP*vbp
+NP*prp VP*vbp
+S*vp VP*vbz
+VP*vb
+
+# id=rbmt4.fr-en.26
+NP*nnp VP*vbz
+PP*in S*vp VP*vbd
+S*np S*np ''
+NP*nn VP*vp
+S*np CC S*np
+S*np S*np ''
+ADVP*rb NP*dt VP*md
+
+# id=rbmt4.fr-en.27
+NP*np VP*vbp
+NP*nn PP*in ADJP*jj NP*nn NP*dt
+VP*vb
+ADVP*rb S*np CC S*np
+NP*nn PP*in
+ADVP*rb ADVP*rb S*vp NP*np VP*vbz
+S*advp CC S*vp
+NP*dt VP*vbp
+NP*np VP*vbz
+S*np PRN*s S*advp
+CC NP*cd VP*vbz
+SBARQ*whadvp
+NP*nn S*np
+S*np ADVP*rb S*np
+CC PP*in S*np CC S*np
+NP*np VP*vbz
+S*np S*np S*np
+PP*in WHNP*wp SQ*vbz
+S*np VP*vbz NP*np
+CC NP*dt VP*vbz
+NP*dt VP*vbz
+CC S*np
+S*vp NP*nn VP*vbz
+S*sbar CC S*np
+PP*in NP*np VP*vbd
+ADVP*rb S*np CC S*np
+NP*ex VP*s
+S*np CC S*np
+VP*np
+S*np CC S*vp
+S*s VP*vbz NP*np
+NP*dt VP*vbz
+PP*in PP*in NP*wdt VP*md
+NP*cd VP*vbz
+NP*np VP*vbd
+NP*np VP*vbd
+CC NP*np VP*vbz
+CC NP*prp VP*vbp
+PP*in NP*dt VP*vbz
+
+# id=rbmt4.fr-en.28
+WHADVP*wrb SQ*vbz
+NP*dt VP*vbp
+NP*np VP*vbz
+NP*rb VP*md
+S*np CC S*np
+NP*np VP*vbz
+NP*np PP*in PP*in
+NP*dt VP*vbz
+NP-TMP*nn PP*in NP*dt VP*vbp
+CC NP*np VP*vbz
+PP*in NP*np VP*vbp
+CC NP*np VP*vbp
+S*np S*np
+NP*np VP*vbp
+NP*np NP*dt VP*vbp
+S*np VP*vbz NP*np
+PP*in NP*np VP*vbp
+S*vp VP*vbz
+S*s VP*vbz NP*np
+NP*jj NP*dt
+S*pp VP*vbz NP*np PP*pp PP*in
+CC NP*np VP*vbz
+NP*nnp VP*vbz
+NP*np VP*vbp
+NP*np VP*md
+NP*dt VP*vbz
+NP*np VP*md
+NP*nnp VP*vbz
+S*np VP*vbz NP*np PP*in PP*in
+NP*jj S*vp
+NP*dt VP*vbn
+VP*vbz
+S*np VP*vbz NP*np
+CC ADVP*rbr NP*dt VP*vbz
+PP*in S*s S*np
+S*np S*s
+NP*dt VP*vbz
+SBAR*in NP*dt VP*md
+PP*in NP*ex VP*vbp
+S*np VP*vbz NP*np
+S*np S*pp
+CC SBAR*prn VP*vb
+S*np S*np
+CC SBAR*in NP*dt VP*vbz
+NP*np VP*vbp
+NP*`` VP*vbz
+
+# id=rbmt4.fr-en.29
+NP*nnp VP*vbz
+NP*np VP*md
+S*np NP*nns VP*vbd
+NP*np VP*vbz
+S*np NP*prp VP*vbz
+NP*dt VP*vbp
+S*np RB S*np
+NP*dt VP*vbp
+NP*nnp VP*vbz
+NP*np VP*md
+ADVP*rb NP*np VP*md
+NP*nnp VP*vbz
+NP*np VP*md
+S*np CC S*np
+NP*prp VP*vbp
+NP*np VP*vb
+ADVP*rb NP*np VP*vbp
+S*np CC S*np
+S*np VP*vbz NP*np
+NP*prp VP*vbz
+NP*np ADVP*rb VP*vp
+S*advp NP*prp VP*vbd
+NP*prp VP*vbd
+S*np PRN*, S*np
+NP*nnp VP*vbd
+S*np CC S*np
+NP*prp VP*md
+NP*nnp VP*vp
+NP*np VP*vbz
+NP*dt VP*vbp
+NP*nnp VP*vbz
+PP*in NP*prp VP*vbz
+NP-TMP*nnp NP*prp VP*vbz
+ADVP*rb NP*np VP*vbd
+NP*prp VP*vbz
+S*np CC S*s
+NP*nnp VP*vbz
+
+# id=rbmt4.fr-en.30
+NP*nns VP*vbp
+NP*jj VP*vbd
+CC VP*vbp
+NP*dt SBAR*s S*np ''
+ADVP*rb NP*prp VP*vbp
+NP*prp VP*vbz
+S*vp NP*dt VP*vbp
+NP*prp VP*vp
+NP*prp VP*md
+S*np S*np CC S*np ''
+SBAR*in NP*prp VP*vbp
+CC SBAR*in S*np CC S*np
+NP*dt VP*vbz
+NP*prp VP*vp
+S*np S*sbar ''
+NP*dt VP*vbp
+NP*np PRN*, VP*vbz
+NP-TMP*jj NP*np VP*vbz
+S*cc S*np ''
+NP*prp VP*vbz
+S*np NP*prp VP*vbz
+S*`` NP*prp VP*vbz
+NP*nnp S*vp VP*md
+
+# id=rbmt4.fr-en.31
+NP*np VP*vbd
+NP*prp VP*md
+NP*np VP*vbz
+PP*in S*vp VP*vbz
+SBAR*in NP*np VP*vbz
+
+# id=rbmt4.fr-en.32
+S*vp NP*nnp PP*in VP*vbp
+NP*prp VP*vbz
+NP*dt VP*vbz
+S*np NP*prp$ VP*vbp
+NP*jj PP*in
+WHNP*wp SQ*vbp
+S*advp VP*vbz NP*np
+NP*np VP*vbz
+NP-TMP*np VP*vb
+NP*np VP*md
+NP*dt VP*to
+PP*in NP*prp VP*vbz
+NP*dt VP*md
+
+# id=rbmt4.fr-en.33
+S*s VP*vbz NP*np
+NP*dt VP*vbz
+NP*prp VP*vbz
+S*s S*``
+S*vp NP*np VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+PP*in NP*np VP*vp
+NP*dt VP*vp
+
+# id=rbmt4.fr-en.34
+NP*np VP*vbn
+ADVP*in NP*dt VP*vbp
+ADVP*rb PP*in NP*dt VP*vbz
+PP*to NP*np VP*vbz
+NP*np VP*vbz
+PP*in NP*np VP*vbz
+PP*in NP*np VP*vb
+S*np ADVP*rb S*np
+NP*prp VP*vbp
+PP*in NP*dt VP*vp
+NP*dt VP*vbp
+
+# id=rbmt4.fr-en.35
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.36
+PP*in NP*prp VP*vbz
+PP*in NP*cd VP*vbz
+NP*cd VP*md
+PP*to VP*vbz NP*np
+S*np CC S*np
+PP*in NP*np VP*vbz
+PP*in NP*dt VP*vbz
+NP*prp VP*vbp
+S*s '' VP*vbz NP*dt
+S*np VP*vbz NP*np
+
+# id=rbmt4.fr-en.37
+NP*dt VP*vbz
+NP*dt VP*vbz
+S*np VP*vbz NP*np
+NP*prp VP*md
+NP*dt VP*vbz
+S*np CC S*np
+NP*dt PP*vbg VP*vbp
+NP*nns VP*vbp
+PP*to NP*dt VP*vbp
+NP*np VP*vbz
+PP*in S*np CC S*np
+NP*np VP*vbz
+S*np '' VP*vbd NP*np
+S*np S*np
+CC NP*prp VP*md
+NP*np VP*vbp
+S*np VP*vbz NP*np
+NP-TMP*jj NP*nnp VP*vbd
+NP-TMP*nnp NP*np VP*vbp
+S*s VP*vbz NP*np
+S*np NP*prp VP*vbp
+
+# id=rbmt4.fr-en.38
+NP*nnp VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbz
+S*s S*np ''
+S*np CC S*np
+S*np S*pp ''
+CC NP*dt VP*vbz
+NP*prp VP*vbp
+NP*nnp VP*vbz
+S*np S*np ''
+NP*ex VP*vbz
+CC SBAR*in
+ADVP*advp NP*prp VP*vbp
+S*advp VP*vbz NP*np
+S*np VP*vbz NP*np
+CC NP*prp VP*vbp
+S*np ADVP*rb S*np
+NP*jj VP*vbp
+NP*np VP*vbz
+PP*in NP*nnp VP*vbz
+NP*prp VP*vbz
+NP*nnp VP*vbz
+NP*prp VP*vbz
+S*s VP*vbz NP*nnp
+ADVP*rb NP*nnp VP*vbz
+
+# id=rbmt4.fr-en.39
+NP*np VP*vbd
+S*vp NP*dt VP*vbz
+PP*in NP*prp$ VP*vbz
+
+# id=rbmt4.fr-en.40
+PP*in SBAR*in NP*np VP*vbz
+NP*np VP*vbd
+PP*in NP*prp VP*vbp
+NP*prp VP*vbd
+NP*cd VP*vbz
+NP*prp VP*vbz
+NP*prp VP*vbp
+VP*vbg
+NP*nnp VP*vbz
+SBAR*in NP*prp VP*vbp
+CC NP*nnp VP*vp
+VP*vbz
+VP*vbg
+PP*in PP*pp NP*cd VP*vbz
+CC NP*prp VP*vbp
+SBAR*whnp NP*prp VP*vbz
+WHADVP*wrb SQ*vbz
+NP*nnp VP*vbz
+CC PP*in X*in NP*prp VP*vbz
+WHNP*wdt SQ*vbp
+SBAR*in PRN*, VP*vbp
+ADVP*rb NP*nnp VP*md
+NP*prp VP*vbp
+ADVP*rb NP*prp VP*vbz
+ADVP*rb NP*nnp VP*vbz
+NP*dt VP*vbz
+ADVP*rb NP*nns VP*md
+NP*nnp VP*vbz
+S*vp NP*prp VP*vbz
+NP*prp VP*vbp
+CC SBAR*in NP*dt VP*md
+SBAR*in NP*np VP*vbz
+WHADVP*wrb SQ*md
+SBAR*in NP*prp VP*vbp
+
+# id=rbmt4.fr-en.41
+NP*np VP*vbd
+S*np NP*qp VP*md
+NP*prp VP*md
+NP*dt VP*md
+NP*np VP*vbp
+PP*in S*np CC S*np
+S*np CC S*np
+
+# id=rbmt4.fr-en.42
+S*np S*np
+PP*in NP*dt VP*vp
+NP*np VP*vbz
+NP*dt VP*vp
+NP*np VP*vbz
+NP*np VP*vbp
+
+# id=rbmt4.fr-en.43
+NP*nnp VP*md
+NP*nnp VP*vbz
+PP*in NP*np VP*vbd
+NP*prp VP*vbz
+
+# id=rbmt4.fr-en.44
+S*np NP*prp VP*vbz
+NP*np VP*md
+S*vp NP*nnp VP*vbz
+S*`` NP*prp VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbz
+S*s CC S*np
+CC NP*prp VP*md
+NP*np VP*vbz
+
+# id=rbmt4.fr-en.45
+NP*np S*np VP*vbg PP*in
+NP*dt VP*vbz
+S*np CC S*np
+NP*prp VP*vbp
+NP*np VP*vbp
+S*np NP*prp VP*vbp
+
+# id=rbmt4.fr-en.46
+NP*np VP*vbz
+NP*np VP*vbn
+S*np
+S*s S*np
+S*vp
+NP*np VP*vbz
+PP*in NP*dt VP*vbz
+NP*dt VP*vbp
+NP*dt VP*vbz
+NP*dt VP*vbp
+S*np VP*vbz NP*np
+PP*in NP*np VP*vbd
+
+# id=rbmt4.fr-en.47
+NP*nn S*np
+NP*dt VP*vbd
+NP*dt VP*vbz
+NP-TMP*nn NP*prp VP*vbp
+NP-TMP*nn NP*nnp VP*md
+S*`` VP*vbz NP*np
+NP*nnp VP*vbz
+NP*np VP*vbz
+NP*prp VP*vbz
+PP*in PP*in NP*np VP*vbz
+PP*vbg NP*np VP*vp
+S*np CC S*np
+PP*in NP*dt VP*vbp
+
+# id=rbmt4.fr-en.48
+NP*dt VP*vp
+NP*np VP*vbz
+NP*nnps NP*prp VP*vbd
+S*np VP*vbz NP*np
+NP*np VP*vbz
+S*np CC S*np
+PP*in NP*np VP*vbz
+NP*np VP*md
+NP*np VP*vbp
+S*np CC S*np
+NP*dt VP*vp
+NP*np VP*vbp
+NP*np VP*vbp
+
+# id=rbmt4.fr-en.49
+S*np NP*np VP*vbz
+PP*in NP*np PRN*, VP*vbn
+NP*dt VP*vbp
+NP*np VP*vbz
+CC SBAR*in NP*np VP*vbp
+PP*in NP*np VP*vbp
+NP*dt PP*vbg VP*vbz
+SBAR*in NP*np VP*vbp
+S*np NP*prp VP*vbp
+S*`` VP*vbz NP*np
+NP*dt VP*vbp
+PP*advp NP*nn VP*vbz
+NP*np VP*vbp
+NP*np VP*vbz
+S*s VP*vbz NP*np
+SBAR*in VP*vb
+NP*nn VP*vbz
+NP*dt PP*in PP*in
+ADVP*rb NP*np VP*vbp
+NP*dt VP*vbz
+PP*vbg NP*np VP*vbp
+S*np CC SINV*md ''
+S*np NP*prp VP*vbz
+NP*ex VP*vbz
+S*s VP*vbz NP*np
+NP*dt VP*vbp
+NP*dt VP*vbp
+NP*np VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbp
+NP*np VP*vp
+PP*in NP*np VP*vbz
+S*np VP*vbz NP*np
+NP*np VP*vbn
+NP*np VP*vbn
+S*np S*np ''
+
+# id=rbmt4.fr-en.50
+NP*np ADVP*np VP*vp
+NP*dt VP*vp
+S*np S*pp ''
+S*cc NP*prp VP*vbz
+NP*np VP*vbz
+NP*np VP*vp
+
+# id=rbmt4.fr-en.51
+S*np VP*vbp NP*np
+S*np CC ADVP*rb S*np
+S*np VP*vbz NP*np
+PP*in NP*prp VP*vbz
+NP*nnp ADVP*rb VP*vbz
+NP*np VP*vbp
+NP*np VP*vbz
+PP*in NP*np VP*vbz
+NP*nnp VP*vbp
+PP*in NP*dt VP*vbd
+
+# id=rbmt4.fr-en.52
+NP*nnp VP*vp
+NP*np VP*vbp
+NP*nnp VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+S*np CC S*np
+WHADVP*wrb S*np
+VP*vb
+
+# id=rbmt4.fr-en.53
+NP*np VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+S*np NP*nnp VP*vbz
+NP*np VP*md
+SBAR*in NP*dt VP*md
+PP*in NP*dt VP*vbz
+NP*np VP*vbz
+NP*dt VP*md
+NP*dt VP*vbz ''
+NP*prp VP*vbp
+PP*in NP*prp VP*vbp
+CC NP*prp VP*vbz
+S*np S*np ''
+PP*in NP*nnp VP*vbz
+S*s CC S*np
+ADVP*rb NP*prp VP*vbp
+S*np CC S*np ''
+
+# id=rbmt4.fr-en.54
+NP*dt VP*vbz
+NP*dt VP*vbp
+NP*prp VP*vbd
+NP*np VP*vbz
+S*`` NP*prp VP*vbz
+NP*dt VP*md
+NP*prp VP*md
+
+# id=rbmt4.fr-en.55
+NP*np VP*md
+NP*np VP*md
+PP*in NP*dt VP*vp
+NP*np VP*vbd
+PP*vbg PRN*, NP*prp VP*vbp ''
+NP*prp VP*md
+NP*np VP*vp
+NP*nnp VP*md
+S*np CC S*np
+NP*np VP*vbz
+NP*dt VP*vbd
+S*`` NP*prp VP*vbz
+NP*prp VP*vbz
+NP*np VP*vbz
+NP*nn VP*md
+NP*prp VP*vbz
+NP*np VP*vbd
+NP*dt VP*md
+NP*dt VP*vbd
+NP*np VP*vbp
+NP*nnp VP*vbp
+PP*in NP*np VP*vbz
+NP*dt VP*md
+PP*in NP*np VP*vbp
+PP*in NP*np VP*vbp
+NP*dt VP*vbz ''
+PP*in NP*np ADVP*rb VP*vbz
+S*np NP*prp VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbd
+CC ADVP*np PRN*, NP*prp VP*md
+CC NP*np VP*vbp
+PP*in NP*cd VP*vbd
+S*sbar NP*cd VP*vbd
+NP*np VP*vbz
+NP*prp VP*vp
+CC PP*in NP*prp$ VP*vbp
+S*np VP*vbz NP*nnp
+PP*to NP*prp VP*vp
+CC PP*in NP*prp VP*vbz
+NP*nnp VP*vbz
+CC PP*in NP*np VP*vbp
+NP*pdt VP*vbz
+NP*dt VP*md
+ADVP*rb NP*np VP*vbz
+NP*prp VP*vbd
+S*np CC S*s
+PP*in NP*prp VP*vbz
+CC S*ucp NP*prp VP*vbz
+S*sbar CC S*np
+NP*nnp VP*vbz
+PP*in NP*prp VP*vp
+NP*dt VP*vbz
+NP-TMP*nn NP*prp VP*vbz
+CC NP*np VP*vbd
+S*`` NP*prp VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbp
+CC S*np ADVP*rb S*np
+NP*nnp VP*vbz
+S*`` NP*prp VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbz
+SBAR*in NP*prp VP*md
+CC NP*np VP*vbz
+S*np CC S*np
+PP*in NP*nnp VP*vbz
+NP*prp VP*vbz
+NP-TMP*nn NP*np VP*vbz
+SBAR*in NP*prp VP*vbz
+S*np VP*vbz NP*nnp
+NP*dt VP*vbz
+S*advp S*np
+NP*prp VP*vbp
+S*`` NP*prp VP*vbz
+ADVP*rb NP*dt VP*md
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.56
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+NP*prp$ VP*vbz
+
+# id=rbmt4.fr-en.57
+NP*np S*np VP*vbg PP*in
+NP*prp VP*vbp
+NP*prp VP*vbz
+S*np CC S*np
+SBAR*sbar NP*dt VP*vbz
+S*np CC S*np
+S*np CC S*np
+S*np CC S*np
+PP*in NP*prp VP*vbd
+CC ADVP*rb S*np
+S*np NP*prp VP*vbz
+S*vp NP*prp VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbd
+NP*prp VP*vbp
+ADVP*rb NP*prp VP*vbp
+CC PP*in NP*prp VP*vbp
+NP*prp VP*vbp
+NP*dt VP*md
+NP*prp VP*md
+NP*prp VP*md
+CC NP*np VP*vbz
+NP*prp VP*vbp
+ADVP*rb PP*in NP*prp VP*vbd
+ADVP*rb NP*np VP*vbp
+NP*prp VP*vbz
+ADVP*rb NP*prp VP*vbp
+NP*nnp VP*vbd
+NP*prp VP*vbd
+ADVP*rb SBAR*rb NP*np VP*vbz
+NP*prp VP*vbz
+NP-TMP*dt NP*prp VP*vbp
+PP*in NP*prp VP*vbz
+S*`` NP*prp VP*vbz
+NP*prp VP*md
+S*np CC S*np
+NP*np VP*vbp
+
+# id=rbmt4.fr-en.58
+NP*dt VP*vbz
+CC SQ*vbd
+PP*in VP*vbp NP*np
+PP*in NP*dt VP*vbp
+S*vp NP*dt VP*vbp
+CC WHADVP*wrb SQ*rb
+NP*dt VP*vbz
+PP*in PP*pp
+ADVP*rb S*pp S*advp
+NP*prp VP*vbp
+PP*in NP*np VP*vbp
+NP*nns ADVP*rb VP*vbp
+
+# id=rbmt4.fr-en.59
+NP*nnp VP*vbz
+NP*np VP*vbp
+NP*dt VP*vbp
+NP*np VP*vbz
+S*s VP*vbd NP*np
+NP-TMP*jj NP*nns ADVP*rb VP*vbp
+NP*np VP*vp
+NP*np VP*vbz
+NP*np VP*vbz
+S*np VP*vbp NP*np
+NP*nnp VP*vbz
+PP*in NP*np VP*vbp
+NP*np VP*vbp
+NP*dt VP*vbp
+NP*np VP*vbz
+S*np CC S*np
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*dt ADVP*rb VP*vp
+S*s VP*vbz NP*np
+
+# id=rbmt4.fr-en.60
+S*np VP*vbz NP*np
+NP*np VP*vbz
+S*cc VP*vbz NP*dt
+NP*np NP*np
+NP*dt VP*vbz
+S*np VP*vbz NP*np
+NP*prp VP*vbz
+ADVP*rb NP*prp VP*vp
+NP*nnp VP*vbz
+PP*in NP*prp$ VP*vbz
+S*cc NP*prp VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbp
+PP*in NP*nnp VP*vbz
+NP*jj VP*vbp
+NP*dt VP*vbp
+
+# id=rbmt4.fr-en.61
+S*np NP*dt VP*vbp
+NP-TMP*nn NP*nnp VP*vbz
+NP*np VP*vbz
+S*vp NP*dt VP*vbz
+NP*np VP*md
+S*`` NP*prp VP*vbz
+NP*dt VP*vbz
+S*vp NP*prp VP*vbp
+NP*np VP*vbz
+S*`` NP*prp VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbz
+PP*in NP*nnp VP*vbz
+
+# id=rbmt4.fr-en.62
+NP*dt PP*to
+NP*np VP*vbd
+SBAR*in NP*nnp VP*vbp
+PP*in NP*nnp VP*vbz
+S*pp CC S*np
+PP*in NP*prp VP*vbz
+S*pp '' VP*vbd NP*nnp S*vp
+SBAR*in NP*np VP*vbp
+S*np NP*np VP*vbd
+NP*dt VP*vbz
+VP*vbn
+S*np NP*prp VP*vbd
+PP*in SBAR*in NP*dt ADVP*rb VP*md ''
+PP*in NP*dt VP*vbz
+
+# id=rbmt4.fr-en.63
+NP*np VP*vbz
+S*np VP*vbz NP*np
+NP*np VP*vbn
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*np VP*md
+PP*in NP*dt VP*vp
+NP*np ADVP*rb VP*vbp
+NP*np NP*np
+S*advp NP*nnp VP*vbz
+
+# id=rbmt4.fr-en.64
+NP*dt VP*vbz
+S*np CC S*np
+NP*np VP*vbp
+S*np VP*vbz NP*np
+S*`` NP*prp VP*vbz
+S*np CC S*np
+S*np VP*vbz NP*dt
+NP*dt VP*vbz
+NP*np VP*vbd
+NP*np VP*vbp
+
+# id=rbmt4.fr-en.65
+NP*np VP*vbz
+PP*in PP*pp NP*prp VP*vbz
+S*pp S*np CC S*np
+PP*in PP*in NP*np VBZ VP*vp
+S*vp NP*nnp VP*vbz
+S*pp VP*vbz NP*np
+CC PRN*, NP*prp VP*vbp
+CC NP*prp VP*vbp
+SINV*cc NP*wdt VP*vbd
+NP*prp VP*vbz
+CC NP*np VP*vbz
+PP*vbg NP*dt VP*vbd
+NP*np VP*vbz
+S*s S*vp
+NP*dt VP*md
+CC NP*nnp VP*vbp
+PP*in S*np CC S*np
+PP*in NP*nnp VP*vbz
+PP*in NP*np VP*vbz
+NP*prp VP*vbz
+S*np VP*vbz NP*dt
+CC NP*dt VP*vbd
+NP*nnp VP*vbz
+
+# id=rbmt4.fr-en.66
+NP*jj S*np
+MD NP*np VP*vb
+PP*in NP*np VP*vbz
+S*np VP*vbz NP*nnp
+S*np CC S*np
+PP*in NP*dt VP*vbz
+S*sbar VP*vbz NP*np
+NP*dt VP*vbz
+S*np CC S*np
+PP*in S*np CC S*np
+NP*dt VP*md
+NP*ex VP*vbp
+NP*np VP*vbp
+NP*dt VP*vbp
+S*np CC S*np
+S*np S*np
+S*np VP*vbz NP*nnp
+S*np NP*prp VP*vbd
+NP*prp VP*vbz
+NP*ex VP*vbp
+ADVP*rb PRN*, NP*np VP*vbp
+NP*dt SBAR*in
+NP*nnp VP*vbz
+NP*prp VP*vbz
+S*np CC S*np
+PP*to NP*np VP*vbp
+NP*jj S*sbar
+NP*np VP*vbz
+S*np VP*vbz NP*np
+NP*dt VP*md
+S*np VP*vbz NP*nnp
+SBAR*in NP*prp$ VP*md
+NP*np VP*md
+
+# id=rbmt4.fr-en.67
+NP*np VP*vbz
+NP*np VP*vbz
+SBAR*in NP*prp VP*vbp
+PP*in NP*nnp VP*vbz
+NP*np VP*vbp
+NP*nnp VP*vbz
+
+# id=rbmt4.fr-en.68
+NP*np VP*vbd
+S*vp NP*prp VP*vbz
+NP*prp$ S*s
+PP*in NP*prp VP*vbp
+FRAG*cc FRAG*advp
+NP*dt '' VP*vbz
+PP*in NP*prp VP*vbd
+WHNP*wp SQ*vbp
+PP*in
+SBAR*whadvp NP*prp VP*vbp
+S*np CC S*np
+NP*np ADVP*cc VP*vbd
+NP*prp VP*vbz
+NP*ex VP*vbp
+NP*cd VP*vbz
+NP*jj NP*np PP*in
+S*np S*np
+CC S*vp
+NP*prp VP*vbp
+NP*dt VP*vbz
+S*vp NP*cd VP*vbz
+WHADVP*wrb SQ*vbz
+NP*cd PP*in
+NP*np VP*vbz
+NP*prp VP*vbz
+NP*ex VP*vbz
+CC ADVP*jj
+SBAR*whadvp NP*ex VP*vbd
+S*np CC S*np
+NP*np VP*vbz
+PP*pp NP*jj VP*vbp
+NP*dt ADJP*jj
+NP*dt VP*vbz
+S*np S*np CC S*np
+NP*np VP*vbz
+CC NP*cd VP*vbz
+NP*dt NP*prp VP*vp
+VP*vb
+WHNP*wrb SQ*vp
+S*np NP*dt VP*vp
+NP*prp VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vbd
+NP*dt VP*vbz
+WHADVP*wrb SQ*vbp
+NP*prp VP*vbp
+NP*dt PP*in
+NP*dt VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vbp
+ADVP*rb NP*prp VP*vbp
+NP*ex VP*vbz
+NP*prp VP*vp
+CC NP*dt VP*vbz
+SBAR*whadvp ADVP*jj VP*vbd
+S*np CC FRAG*x
+NP*prp VP*vbz
+
+# id=rbmt4.fr-en.69
+NP*np PP*to NP*np VP*vbz
+NP*np VP*md
+S*np CC S*np
+NP*dt VP*md
+S*np CC S*np
+
+# id=rbmt4.fr-en.70
+NP*np NP*np
+S*vp NP*nnp VP*vbz
+NP*nnp VP*vbz ''
+PP*in NP*nnp VP*vp
+NP*np VP*vbz
+NP*np VP*vbp
+NP*np VP*vbz
+NP*prp VP*md
+PP*in NP*prp VP*md
+
+# id=rbmt4.fr-en.71
+NP*np VP*vbz
+
+# id=rbmt4.fr-en.72
+PP*in NP*np VP*vbz
+PP*in NP*np VP*vbz
+ADVP*rb S*np CC S*np
+NP*dt VP*vbz
+PP*in ADVP*rb NP*ex VP*vbz
+S*np CC S*pp
+NP*prp VP*vbp
+S*np CC S*np
+S*pp CC S*pp
+S*np VP*vbz NP*np
+S*np CC S*np
+
+# id=rbmt4.fr-en.73
+NP*np VP*md NP*np S*vp
+NP*dt VP*vp
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+NP*np VP*vbp
+S*advp VP*vbz NP*np
+
+# id=rbmt4.fr-en.74
+NP*nnp S*np
+NP-TMP*dt NP*cd VP*vbz
+CC NP*dt VP*vbz
+SBAR*in NP*wdt VP*vbd
+NP*nn VP*cc
+SBAR*in NP*np VP*md
+NP*prp VP*vbz
+CC S*np S*np
+ADVP*rb NP*cd VP*vbz
+WHADVP*wrb SQ*md
+SBAR*whadvp
+S*np S*np
+PP*in NP*dt VP*vbz
+PP*in VP*vb
+S*pp CC RB S*vp
+NP*ex VP*vbz
+NP*np VP*vbz
+S*np CC S*np
+S*np S*np
+NP*dt VP*vbz
+PP*in NP*np VP*vbp
+NP*dt VP*vbz
+PP*in NP*ex VP*vbz
+PP*in PRN*: NP*dt VP*vbz
+NP*prp VP*vbz
+NP*np VP*md
+PP*in NP*dt VP*vbz
+PP*in NP*dt VP*vbz
+CC NP*nnp VP*vp
+NP*nn NP*np NP*np
+NP*dt VP*vbz
+NP*prp VP*vbz
+SBAR*in NP*jj VP*md
+NP*np VP*vbp
+S*np CC S*np
+S*np CC S*np
+S*np CC S*np
+NP*nnp NP*np
+CC ADVP*nnp PP*in
+NP*prp VP*md
+CC NP*prp VP*md
+NP*prp VP*vbp
+NP*np VP*md
+ADVP*rb NP*prp VP*md
+NP*np VP*vp
+NP*prp VP*md
+
+# id=rbmt4.fr-en.75
+NP*np ADVP*rb VP*vbz
+NP*qp VP*vbp
+NP*dt VP*vbp
+NP*pdt VP*vbd
+NP*dt VP*vbz
+ADVP*rb NP*prp VP*vbp
+S*advp VP*vbz NP*np
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.76
+NP*np VP*vbz
+S*vp NP*prp VP*vbz
+
+# id=rbmt4.fr-en.77
+S*np NP*dt VP*vbz
+NP*prp VP*vp
+NP*np S*vp NP*np VP*vbz
+NP*prp VP*vbp
+VP*vp
+S*`` NP*prp VP*vbz
+S*np NP*prp VP*vbd
+S*vp VP*vbz NP*nnp
+NP*nnp VP*vbd ''
+CC PP*in NP*dt VP*vbd
+PP*in S*`` CC S*``
+S*np S*np
+NP*np VP*vbz
+NP*dt VP*md
+NP*np VP*vbz
+NP*nnp VP*vbz
+NP*prp VP*vbz
+S*np NP*prp VP*vbz
+NP*dt VP*md
+
+# id=rbmt4.fr-en.78
+NP*np VP*vbz
+S*np CC S*np
+NP*dt VP*vbd
+
+# id=rbmt4.fr-en.79
+NP*np PRN*s VP*vbz
+NP*prp NP*nnp VP*vbz
+NP-TMP*dt NP*dt VP*vbp
+NP*np VP*vbd
+S*np VP*vbp NP*np S*vp
+PP*in NP*dt S*vp VP*md
+NP*prp VP*md
+S*np CC S*np
+
+# id=rbmt4.fr-en.80
+S*np NP*cd VP*vbz
+PP*vbg NP*dt VP*vbd
+
+# id=rbmt4.fr-en.81
+NP*np VP*vbz
+S*np NP*prp VP*vbz
+S*np VP*vbz NP*np
+
+# id=rbmt4.fr-en.82
+S*np NP*np VP*vbz
+ADVP*rb NP*np VP*vp
+NP*np VP*vbp
+S*np CC S*np
+NP*jj PP*in PP*in
+CC NP*jj
+ADVP*rb NP*prp VP*vbz
+S*np CC S*np
+NP*dt VP*vbz
+PP*in
+
+# id=rbmt4.fr-en.83
+NP*np NP*np
+S*np VP*vbz NP*np
+NP*dt VP*vbd
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*dt VP*vp
+NP*np VP*vp
+S*np CC S*pp
+S*vp NP*dt VP*vbd
+NP*np ADVP*rb VP*vbd
+NP*np VP*vbp
+NP*np VP*vbp
+NP*np VP*vbz
+
+# id=rbmt4.fr-en.84
+NP*dt PP*in
+SBAR*rb NP*np VP*vbp
+NP*np VP*vbd
+NP*np ADVP*rb VP*vbz
+NP*dt VP*vbp
+NP*dt VP*vbz
+NP*dt VP*vp
+CC SBAR*in NP*jj VP*vbp
+NP*prp VP*vbp
+NP*np VP*vbp
+NP*dt VP*vbz
+S*np VP*vbz NP*np
+NP*ex VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbp
+NP*dt VP*md
+NP*np VP*vbz
+NP*dt VP*vbp
+S*np VP*vbz NP*np
+NP*prp$ VP*vbz
+S*`` NP*prp VP*vbz
+NP*jj PP*advp PP*to
+NP*prp VP*vbz
+NP*np VP*vbp
+CC S*vp
+NP*prn VP*vbz
+NP*np VP*vbp
+S*np VP*vbz NP*np
+NP*dt VP*vbp
+NP*dt ADVP*rb VP*vbz
+NP*dt VP*vbz
+CC NP*np VP*vbz
+ADVP*rb NP*np VP*vbp
+NP*dt VP*vbz
+NP*dt VP*md
+NP*np VP*vbz
+NP*nnp VP*vbz
+CC NP*np VP*vbz
+NP*dt VP*vbz
+PP*in S*sbar CC S*np
+NP*prp VP*vbz
+S*pp S*s ''
+NP*prp VP*vbz
+NP*nnp VP*vbz
+SBAR*in NP*dt VP*md
+NP*np VP*vbz
+ADVP*rb NP*dt VP*vbd
+NP*prp VP*vbd
+CC NP*np VP*vbp
+S*np VP*vbz NP*np
+NP*jj VP*vbp
+NP*ex VP*vbp
+PP*in NP*dt VP*vbp
+NP*prp VP*md
+ADVP*rb NP*prp VP*md
+NP*jj VP*vbp
+PP*in NP*np VP*vbp
+S*np VP*vbz NP*np
+NP*np VP*vbp
+PP*in NP*np VP*vbp
+
+# id=rbmt4.fr-en.85
+S*vp NP*dt VP*vp
+NP*nnp VP*vbz
+NP*nnp VP*md
+S*vp NP*prp VP*vbz
+S*np '' VP*vbz NP*dt
+NP*prp VP*vbz
+NP*dt VP*vbz
+NP*nnp VP*vbz
+
+# id=rbmt4.fr-en.86
+NP*np NP*np
+PP*in NP*np VP*vbz
+NP*np VP*md
+NP*nnp VP*vbz
+S*cc VP*advp NP*dt
+
+# id=rbmt4.fr-en.87
+PP*in ADVP*rb NP*prp VP*vbp
+PP*in NP*np
+NP*np VP*md
+NP*np VP*vp
+PP*in PP*in NP*cd VP*vbz
+SBAR*in VP*vbp
+RB S*vp VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbz
+PP*in NP*dt VP*md
+PP*in S*vp VP*vbz
+NP*prp VP*md
+PP*in NP*dt VP*vbz
+S*np CC S*np
+
+# id=rbmt4.fr-en.88
+NP*dt VP*vbz
+NP*dt VP*vbz
+PP*vbg S*vp VP*vbd
+NP*dt VP*vbz
+S*s VP*vbz NP*np
+S*np CC S*np
+S*advp NP*prp VP*vbz
+PP*vbg NP*dt VP*vbz
+NP*np VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbz
+
+# id=rbmt4.fr-en.89
+NP*np VP*vbz
+S*np VP*vbz
+NP*dt VP*md
+NP*dt PP*vbg NP*vbn VP*vbp
+S*np-tmp CC S*np
+ADVP*rbr NP*np VP*vbz
+S*np VP*vbz NP*dt
+NP*np VP*vbz
+NP*np VP*vbn
+S*np CC S*np
+NP*dt PP*in PP*in PP*in PP*in PP*to PP*in PP*in PP*in PP*in PP*in VP*vp
+NP*np VP*vbz
+
+# id=rbmt4.fr-en.90
+NP*dt NP*nnp VP*vbz
+NP*np VP*vbz
+NP*np VP*vbd
+PP*in NP*np VP*vbz
+S*np NP*cd VP*vbz
+S*np VP*vbz NP*np
+NP*np VP*vbz
+NP*np VP*vbd
+S*s NP*ex VP*vbp
+S*cc VP*vbz NP*np
+NP*np VP*md
+ADVP*rb NP*np VP*md
+
+# id=rbmt4.fr-en.91
+VP*vb
+NP*dt VP*vbz
+NP*nnp VP*vbz
+NP*prp VP*vp
+NP*dt VP*vbz
+NP*nnp VP*vbz
+S*np S*s ''
+NP*np VP*vbz
+S*np CC S*np
+NP*prp VP*vbz
+NP*dt VP*vbz
+CC NP*prp VP*vbz
+NP*np VP*vbz
+CC NP*prp$ VP*vbz
+S*np S*np ''
+S*np CC S*np
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.92
+S*np NP*np VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.93
+NP*dt ADVP*rb VP*vbd
+S*np CC S*np
+PP*in NP*dt VP*vbd
+NP*prp VP*vbz
+
+# id=rbmt4.fr-en.94
+NP*nnp VP*vbz
+NP*dt VP*vbz
+PP*in NP*nnp VP*vbd ''
+S*vp ADVP*rb NP*dt VP*vbz
+PP*in NP*nnp VP*vbz
+S*np S*sbar ''
+NP*np VP*vbp
+NP*np VP*vbz
+NP*np VP*vbz
+PP*in NP*prp VP*vbd
+NP*nnp VP*vbz
+SBAR*in NP*np VP*vbz
+NP*nnp VP*vbz
+NP-TMP*nnp NP*prp VP*vbz
+NP*np VP*vbp
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.95
+NP*np VP*vbz
+NP*np VP*vp
+VP*vbz
+NP*prp VP*vbz
+SBAR*in NP-TMP*nn NP*np VP*vbp
+ADVP*rb NP*prp VP*vbz
+PP*in NP*dt VP*vbp
+NP-TMP*nn NP*np VP*vbp
+PP*in NP*np VP*vbp
+NP*prp VP*vbz
+ADVP*np NP*dt VP*vbd
+NP*dt VP*vbp
+WHADVP*wrb SQ*vbz
+PP*in NP*prp VP*vbz
+SBAR*in NP*prp VP*vbd
+ADVP*rb SBAR*in NP*prp VP*md
+NP*dt VP*vbz
+PP*in NP*prp$ ADVP*rb VP*vbz
+WHADVP*wrb SQ*vbz
+NP*dt VP*vbp
+NP*prp VP*vbp
+NP*np VP*vbz
+ADVP*rb NP*dt VP*vbp
+NP*prp VP*vbz
+NP*cd VP*vbz
+S*np CC S*np
+
+# id=rbmt4.fr-en.96
+VP*vbz
+S*np CC S*vp
+NP*np VP*vbz
+NP*dt VP*md
+S*cc VP*vbz NP*nnp
+PP*np NP*dt ADVP*rb VP*vbz
+NP*nnp VP*vbz
+NP*dt PP*in
+MD NP*dt VP*vb
+S*`` NP*prp VP*vbz
+WHADVP*wrb S*np
+NP*nnp VP*vbz
+NP*prp VP*vbz
+S*vp ADVP*rb NP*np VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz ''
+NP*np VP*vbz
+S*np VP*vbd S*np
+
+# id=rbmt4.fr-en.97
+SBAR*in NP*prp VP*vbd
+CC NP*nn VP*vbd
+PP*advp NP*np VP*vp
+NP*np VP*vbp
+S*vp NP*prp VP*vbd
+NP*nn VP*vbz
+CC NP*nnp VP*vbz
+NP*nn VP*vp
+NP*prp$ SBAR*s S*np ''
+S*np CC S*np
+S*np CC S*np
+PP*in VP*vbz NP*np
+S*np S*s ''
+S*np CC S*sbar
+S*np S*np
+PP*in S*np CC S*np
+S*np S*s ''
+NP*prp VP*vbp
+NP*dt VP*vbp
+S*np S*np
+S*np NP*prp VP*vbd
+
+# id=rbmt4.fr-en.98
+NP*np VP*vp
+S*vp NP*nnp VP*vbz
+S*s NP*prp VP*vbz
+S*np S*sbar
+NP*np VP*vbz
+NP*prp$ VP*vbz
+NP*nnp VP*vbz
+S*`` NP*prp VP*vbz
+S*np CC S*np
+PP*in NP*dt VP*vbz
+PP*in NP*dt VP*vbp
+SBAR*in NP*prp VP*md
+S*np VP*vbz NP*np
+
+# id=rbmt4.fr-en.99
+S*np CC S*np
+NP*np VP*md
+NP*np VP*vbz
+S*np S*pp
+NP*np VP*vbd
+
+# id=rbmt4.fr-en.100
+NP*np VP*vbz
+S*vp PRN*, VP*vbp
+PP*in NP*np VP*vbz
+NP*np VP*vbz
+SBAR*in
+NP*dt VP*vbz
+CC NP*dt VP*vbz
+
+# id=rbmt4.fr-en.101
+NP*np SBAR*rb NP*nnp VP*vbz
+PP*in S*np CC S*np
+S*np CC S*np
+NP*np VP*vbz
+S*sbar VP*vbz NP*np
+NP*prp VP*vbp
+NP*nnp SBAR*in NP*prp VP*vbp
+NP*nnp VP*vbz
+NP*np VP*vp
+CC NP*np VP*vbz
+NP*prp VP*vbz
+PP*in NP*dt VP*vbz
+NP*np VP*vbz
+NP*dt ADVP*rb VP*vbp
+S*np '' VP*vbz NP*np S*vp
+NP*dt VP*vbz
+S*np CC S*np
+S*np NP*dt VP*md
+S*np VP*vbz NP*nnp
+PP*in NP*np VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbp
+NP*dt VP*vbd
+NP*np VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbd
+S*s VP*vbz NP*nnp
+NP*np VP*vbp
+NP*np VP*vbz
+NP*np VP*vbd
+NP*np VP*vbp
+NP*dt VP*vbp
+NP*np VP*vbz
+NP*np VP*vbz
+
+# id=rbmt4.fr-en.102
+S*np CC S*np ''
+VP*vp
+S*np CC S*np
+NP*prp VP*vbz
+S*`` NP*prp VP*vbz
+PP*vbg NP*dt VP*md
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbz
+PP*in NP*dt VP*md
+NP*dt VP*vbz
+PP*vbg NP*np VP*vbz ''
+NP*prp VP*vbz
+S*vp NP*dt VP*vbp
+S*np VP*vbz NP*np S*vp
+S*vp NP*dt VP*vp ''
+NP*dt VP*vbp
+PP*in NP*prp VP*vbp
+
+# id=rbmt4.fr-en.103
+S*np NP*cd VP*vbz
+NP*prp VP*vbp
+NP*np VP*vbd
+NP*cd VP*vbd
+S*np VP*vbz NP*nnp S*vp
+PP*in NP*np VP*vbd
+PP*in NP-TMP*dt NP*dt VP*vbp
+S*np '' VP*vbz NP*nnp
+NP*np VP*vbp
+NP*prp VP*vp
+NP*nnp NP*prp VP*md
+
+# id=rbmt4.fr-en.104
+NP*np VP*vbz
+PP*in NP*np VP*vbz
+S*np NP*prp VP*vbp
+S*np NP*np VP*vbz
+NP*np PRN*, VP*vbz
+S*vp ADVP*rb NP*prp VP*vbz
+S*s NP*prp VP*vbz
+NP*ex VP*vbp
+PP*in NP*nnp VP*vbz
+VP*vb
+S*np CC S*pp
+NP*nnp VP*vbz
+S*cc '' NP*prp VP*vbz
+
+# id=rbmt4.fr-en.105
+S*vp NP*np VP*vbp
+NP*nns VP*vbp
+
+# id=rbmt4.fr-en.106
+NP*np VP*md NP*np
+NP*np VP*md
+NP*np VP*vbz
+SBAR*s NP*prp VP*vbz
+NP*np VP*vbp
+NP*np VP*vbz
+NP*np VP*vbz
+SBAR*in NP*np VP*md
+ADVP*rb NP*np VP*md
+NP*np VP*vp
+NP*dt VP*vp
+
+# id=rbmt4.fr-en.107
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+NP*np VP*vb
+ADVP*rb NP*prp VP*md
+NP-TMP*nnp NP*np VP*vbd
+CC NP*np VP*vbz
+NP*np VP*vbz
+
+# id=rbmt4.fr-en.108
+NP*np VP*vbp
+NP*dt VP*vp
+NP*dt VP*vbz
+S*np NP*nnp VP*vbd
+S*np CC S*np
+NP*prp$ VP*vbz
+PP*in VP*vbd NP*np
+
+# id=rbmt4.fr-en.109
+S*np VP*vbz NP*np
+NP*prp VP*vbz
+NP*nnp NP*np VP*vbd
+
+# id=rbmt4.fr-en.110
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*dt PP*in NP*np VP*vbd
+NP*np NP*np
+PP*in NP*np VP*vbz
+NP*np VP*vbz
+S*sbar S*pp
+PP*in NP*nnp VP*vbz
+NP*nnp VP*vbz
+
+# id=rbmt4.fr-en.111
+ADVP*np ADVP*rb NP*np VP*vbz
+S*advp S*np S*np CC S*sbar
+NP-TMP*dt NP*prp VP*vbd
+NP*np VP*vbn
+NP*prp VP*vbz
+NP*prp$ VP*vbz
+NP*prp VP*vbz
+ADVP*rb NP*prp$ VP*vbd
+NP*prp VP*vbd
+ADVP*rb PP*in ADJP*dt NP*np VP*vbd
+CC ADVP*rb NP*prp VP*vbd
+S*s CC S*np
+NP*np VP*vbz
+NP*prp VP*vbz
+NP*prp VP*vbp
+NP*cd VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbp
+S*s NP*prp VP*vbz
+S*pp S*sbar
+S*np NP*prp VP*vbd
+CC NP*prp VP*vbd
+NP*prp VP*vbp
+NP*prp VP*vbd
+S*np NP*prp VP*vbz
+ADVP*rb NP*prp VP*vbd
+S*np CC S*np
+NP*dt NP*np VP*vbz
+WHNP*wp SQ*md
+WHNP*wp SQ*md
+S*np CC S*np
+S*np NP*ex VP*vbz
+S*np CC S*np
+ADVP*rb S*np CC S*advp
+S*np S*np S*np CC S*np
+PP*np NP*prp VP*vbd
+CC PP*in NP*prp VP*vbd
+S*np CC S*np
+ADVP*rb NP-TMP*cd NP*prp$ VP*vbd
+ADVP*np NP*prp VP*vbd
+NP*prp VP*vbz
+NP*prp VP*vbp
+CC NP*prp VP*vbz
+S*s VP*vbp NP*nns
+ADVP*rb NP*prp VP*vbd
+NP*np VP*vbp
+S*np S*np
+NP*nnp PRN*s NP*prp VP*vbp
+NP*prp$ VP*vbd
+VP*vbn
+NP*prp VP*vbp
+ADVP*rb PRN*, NP*np VP*vbz
+ADVP*rb PRN*, NP*prp VP*vp
+S*np-tmp NP*prp VP*vbp
+S*np CC S*np
+CC NP-TMP*dt NP*prp VP*vbp
+NP*np VP*vbz
+S*np NP*nn VP*md
+S*np RB S*advp
+ADVP*advp PRN*, NP*prp VP*vbz
+S*np S*np CC S*np
+SBAR*in NP*dt VP*md
+PP*in NP*np VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbd
+S*np NP*prp VP*vbd
+SBAR*in NP*prp VP*vbp
+ADVP*rb NP*prp VP*vbp
+PP*in S*np CC S*np
+NP*prp VP*vbp
+PP*in NP*prp VP*md
+S*np NP*ex VP*vbd
+PP*in NP*prp VP*vbz
+NP*prp VP*vbp
+VP*vbn
+NP*prp VP*vbd
+S*np CC S*np
+S*adjp NP*prp VP*vbp
+S*np-tmp RB S*np
+S*s CC S*np S*np CC S*np
+S*pp CC S*cc
+S*s NP*prp VP*vp
+S*np S*np S*np S*s CC S*s
+
+# id=rbmt4.fr-en.112
+S*pp VP*vbz NP*np
+NP*np VP*vbp
+SBAR*in PRN*, VP*vbz
+S*np NP*np VP*vbd
+PP*vbg NP*nnp VP*vbz
+
+# id=rbmt4.fr-en.113
+NP*nnp S*np
+S*np S*np
+NP*dt VP*vbz
+NP*nnp VP*vbz
+S*np VP*vbz NP*np
+CC SBAR*sbar VP*vbz
+CC WHNP*wp SQ*vbz
+NP*prp VP*vbz
+NP*nnp VP*vbd
+PP*in NP*nns VP*vbn
+NP*prp VP*vbd
+
+# id=rbmt4.fr-en.114
+NP*dt VP*md
+NP*np VP*vbz
+NP*dt ADVP*rb VP*vbz
+ADVP*rb NP*prp VP*vbd
+
+# id=rbmt4.fr-en.115
+NP*nnp VP*vbz
+PP*in NP-TMP*dt NP*dt VP*vbz
+NP*nnp VP*vp
+S*np S*`` CC S*np ''
+PP*in NP-TMP*nnp NP*np VP*vbz
+NP*dt VP*vbz ''
+NP*nnp VP*vbd
+NP*np VP*vbz
+
+# id=rbmt4.fr-en.116
+S*np CC S*np
+NP*np VP*vbz
+NP*np VP*vbp
+NP*np VP*vbp
+NP*prp$ VP*vbp
+PP*vbg NP*dt VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbz
+PP*in NP*np VP*vp
+NP*dt VP*vbz
+NP*jj VP*vbp
+S*np VP*vbz
+PP*in NP*dt VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+PP*in NP*dt VP*vp
+NP*np PRN*s VP*vbz
+S*advp VP*vbz NP*np
+S*np CC S*np
+S*pp NP*prp VP*vbz
+NP*np VP*vbp
+S*vp NP*np VP*vbz
+ADVP*rbr NP*np VP*vbd
+
+# id=rbmt4.fr-en.117
+S*np CC S*pp
+NP*np VP*md
+NP*np VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbz
+S*s VP*vbz NP*np
+S*np NP*prp VP*vbz
+S*np S*np
+
+# id=rbmt4.fr-en.118
+NP-TMP*nnp PP*in NP*np VP*vbz
+NP*np VP*vbd
+PP*in NP*prp VP*vbz
+
+# id=rbmt4.fr-en.119
+NP*np PP*in NP*dt VP*vbz
+PP*in NP-TMP*nn NP*prp VP*vbz
+NP-TMP*jj NP*np VP*vbz
+NP-TMP*dt NP*dt VP*vbp
+PP*in NP*np VP*vbp
+S*np VP*vbz NP*np
+NP*prp ADVP*rb NP*prp VP*vbp
+S*np VP*vbz NP*nnp
+NP*dt VP*vbp
+S*np NP*prp VP*vbz
+NP*cd VP*vbz
+NP*nnp VP*vbz
+
+# id=rbmt4.fr-en.120
+S*np VP*vbz NP*np S*vp
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*np PP*in NP*np VP*vbp
+NP*np VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+NP*dt VP*md
+NP*np VP*md
+S*np CC S*np
+PP*in NP*prp VP*md
+
+# id=rbmt4.fr-en.121
+NP*nnp NP*np
+NP*dt VP*vbd
+NP*dt VP*vbp
+NP*np VP*vbz
+NP*np VP*vbp
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.122
+NP*np VP*vbp
+NP*np VP*vbz
+NP*np VP*vbp
+S*np VP*vbz NP*np
+NP*prp VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vbp
+S*s NP*prp VP*vbz
+NP*np VP*vbz
+WHNP*wp SQ*vbz
+VBZ NP*prp$ NP*np
+NP*nnp VP*vbz
+NP*prp VP*vbp
+NP*prp$ VP*vbz
+S*np NP*prp VP*vbz
+NP*nnp VP*vbz
+NP-TMP*nnp NP*dt VP*vbz
+S*np NP*prp VP*vbz
+NP*nnp VP*vbz
+NP*np VP*vbz
+NP*np VP*vbp
+
+# id=rbmt4.fr-en.123
+S*np VP*vbz NP*np
+NP*nnp VP*vbz
+S*`` NP*prp VP*vbz
+NP*np VP*md
+NP*np VP*vbn
+NP*dt ADVP*rb VP*vbd
+PP*in NP*np VP*vbz
+NP*prp VP*vbd
+SBAR*in NP*prp VP*vbz
+NP*nnp VP*vbz
+NP*np VP*vbz
+SBAR*whnp NP*prp VP*vbz
+S*np NP*prp VP*vbz
+NP*nnp VP*vbz
+NP*prp VP*vp
+
+# id=rbmt4.fr-en.124
+S*np CC S*np
+NP*dt VP*vbz
+PP*in NP*nnp ADVP*rb VP*vbd
+NP*prp VP*vbz
+S*`` VP*vbz NP*np
+S*np-tmp VP*vbz NP*np
+NP*np VP*vbd
+S*advp CC S*s
+S*vp VP*vbd
+S*np '' VP*vbz NP*np S*vp
+ADVP*rb NP*nnp VP*vbz
+NP*prp VP*vbz
+NP*dt VP*vbz
+PP*to S*np '' S*s
+PP*vbn NP*np VP*vbz
+NP*nnp VP*vbz
+CC S*vp NP*prp VP*vbz
+NP*np VP*vbz
+
+# id=rbmt4.fr-en.125
+S*np NP*dt VP*vbz
+NP*dt VP*vbz
+S*np-tmp CC S*np
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*nnp VP*vp
+NP*nnp VP*vbz
+NP*np VP*advp
+NP-TMP*nn NP*nnp VP*vbz ''
+S*np VP*vbz NP*np
+S*sbar CC S*np
+PP*in NP*np VP*vbz
+NP*np VP*vbz
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+NP*nnp VP*np
+S*np VP*vbz NP*nnp S*vp
+NP*prp VP*vbp
+NP*prp VP*vbp
+S*pp CC S*pp
+PP*in VP*vbz NP*np
+SBAR*in NP*np VP*vbz
+NP*np VP*vbp
+NP*np VP*vbp
+S*np '' VP*vbz NP*np
+PP*in NP*dt VP*vbp
+S*s VP*vbz NP*np
+NP*nnp VP*vp
+NP*np VP*vb
+S*s NP*nnp VP*vbd
+PP*in NP*dt VP*vbp
+
+# id=rbmt4.fr-en.126
+S*s NP*prp VP*vbz
+SBAR*in NP*prp VP*vp
+S*np CC S*np
+NP*np VP*md
+
+# id=rbmt4.fr-en.127
+NP*np VP*vbp
+ADVP*rb PP*in NP*nnp VP*vbz
+NP*nnp PP*pp NP*np VP*vbd
+CC NP*np VP*vbd
+S*np NP*dt VP*vbp
+S*np CC S*vp
+PP*to NP*`` ADVP*rb VP*md
+PP*in NP*`` VP*vbd
+NP*np VP*vbz
+WHADVP*wrb SQ*vbp
+S*np NP*ex VP*vbp
+NP*nns VP*vbp
+PP*in NP*cd VP*vbz
+NP*nn VP*vbz
+NP*dt VP*vbp
+CC S*np S*``
+NP*prp VP*vbp
+PP*in SBAR*whadvp NP*prp VP*vbz
+NP*prp VP*vbp
+PP*in NP*prp VP*vbz
+NP*dt VP*vbp
+S*np S*np
+WHADVP*wrb SQ*vp
+PP*in NP*dt VP*vbz
+S*np CC S*np
+NP*dt VP*vbp
+S*np S*s
+NP*np VP*vbp
+NP*dt VP*vbp
+NP*dt VP*vp
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.128
+NP*np VP*vbz
+NP*dt VP*vbz
+S*np CC S*np
+NP*nnp VP*vbz
+
+# id=rbmt4.fr-en.129
+NP*np VP*vbd
+NP*np VP*vbz
+S*vp NP*dt VP*vbz
+S*np '' VP*vbz NP*nnp
+NP*prp VP*vbp
+NP*np VP*md
+NP*dt VP*vbz
+NP*np VP*vbp
+NP*nnp VP*vp
+S*np CC S*advp
+NP*np VP*vbp
+NP*np VP*md
+S*np CC S*np
+PP*in NP*prp VP*vbz
+NP*dt VP*vbz
+S*np VP*vbz NP*nnp
+NP*prp VP*vbd
+
+# id=rbmt4.fr-en.130
+S*vp CC S*np
+NP*dt VP*vbp
+NP*np VP*vbz
+NP*dt VP*vbz
+S*np VP*vbp NP*dt
+NP*dt VP*vbp
+NP*np VP*vbp
+NP*prp VP*vbp
+PP*in PP*in NP*dt VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbp
+PP*in NP*dt VP*vbp
+
+# id=rbmt4.fr-en.131
+NP*nnp VP*vp
+NP*np ADVP*rb VP*vbd
+NP*np VP*vbz
+NP*np ADVP*rb VP*vbz
+NP*np VP*md
+ADVP*rb NP*nnp VP*md
+NP*cd VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+PP*in NP*cd VP*vbz
+PP*in NP*cd VP*vbz
+PP*in VP*vbz NP*np
+PP*in NP*dt VP*vbz
+NP*prp VP*vbz
+NP*dt PP*in
+S*np CC S*np
+NP*dt VP*vbp
+S*np S*np
+NP*prp VP*vbz
+PP*advp NP*dt VP*vbp
+NP*prp VP*vbp
+NP-TMP*nnp NP*dt VP*vbz
+S*vp VP*vbd
+NP*nnp VP*vbz
+S*np '' VP*vbz NP*np
+PP*advp VP*advp NP*np
+PP*in NP*np VP*vbz
+S*np NP*prp VP*vbz
+
+# id=rbmt4.fr-en.132
+NP*np ADJP*jj VP*vbn PP*in
+CC PP*in NP*dt VP*vbz
+NP*dt PRN*s VP*vbz
+NP*nnp VP*vbz
+ADVP*rb PRN*s NP*np VP*vp ''
+S*np CC S*np
+NP*np VP*vbz
+PP*advp NP*nnp VP*vbz
+NP*prp VP*vbz
+CC NP*nnp VP*vbz
+S*np S*np S*np CC S*np
+NP*np VP*vbz
+PP*rb NP*prp VP*vbz
+S*s NP*nnp VP*vbz
+NP*prp VP*vbz
+S*np VP*vbz NP*np
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.133
+NP*np VP*vbz
+S*np CC SINV*vp
+VP*to
+PP*in NP*adjp VP*vbd
+S*pp S*np
+SBAR*in NP*prp VP*vbp
+PP*in PP*in
+NP*prp VP*vbz
+NP*ex VP*vbz
+WHADVP*wrb SQ*vbz
+SBAR*in VP*vbz
+S*np NP*prp VP*vbz
+NP*np VP*vbz
+NP*np VP*vbp
+NP*nnp NP*np
+S*np '' VP*vbz NP*nnp
+NP*np VP*vbp
+NP*prp VP*vbz
+NP*np VP*vbp
+NP*ex VP*vbp
+NP*prp VP*vbz
+PP*in NP*np VP*vbz
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.134
+S*np VP*vbz NP*np
+CC NP*dt VP*vbp
+PP*in NP*dt VP*md
+NP*np VP*vbz
+NP*np VP*vbz
+NP*prp VP*vbz
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.135
+NP*np VP*vp
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+PP*in NP*dt VP*vbp
+CC NP*np VP*vbd
+NP*dt VP*vbz
+NP*np VP*vbz
+
+# id=rbmt4.fr-en.136
+NP*nn PP*in PP*in PP*in VP*vbn
+NP-TMP*dt NP*wdt VP*vbz
+NP*dt VP*vbz
+PP*in NP*wdt VP*vp
+PP*in NP*np VP*vbz
+S*np CC S*np
+NP*np VP*vb
+NP*np VP*vbz
+NP*np VP*vbd
+NP*prp VP*vbz
+ADVP*rb NP*dt VP*vbz
+S*np VP*vbz NP*np
+S*vp VP*vp
+S*np CC S*np
+NP*np ADVP*rb SBAR*in NP*prp VP*vbz
+PP*in VP*vbz NP*np
+S*np S*np
+CC NP*dt VP*vbz
+NP*cd VP*vbz
+NP*nn S*np
+NP*np VP*vb
+NP*np VP*vbn
+S*np NP*dt VP*vbd
+NP*dt PP*in VP*vbz
+S*np NP*np VP*vbp
+PP*in NP*nns VP*vbp
+NP*np S*vp VP*vbz
+PP*in NP*dt VP*vbp
+NP*np NP*np S*np
+NP*nns VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbp
+CC NP*dt VP*vbz
+NP*dt VP*vbz
+ADVP*rb PRN*, NP*np PRN*, VP*vbp
+NP*np VP*vbz
+
+# id=rbmt4.fr-en.137
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbp
+S*np VP*vbz NP*np
+S*np CC S*s
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.138
+NP*nn ADVP*np VP*vbn
+NP*dt VP*vbz
+NP*dt VP*vp
+PP*vbg NP*dt VP*vbz
+S*np CC S*pp
+NP*`` VP*vbp
+PP*in NP*nnp VP*vbz
+S*s VP*vbz NP*np
+S*np CC S*advp ''
+SBAR*in NP*nnp VP*vbz
+S*np VP*vbz NP*np
+ADVP*rb NP*cd VP*vbz
+NP*nnp VP*vbz
+SBAR*in NP*dt VP*vbz
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+NP*`` VP*vbn
+
+# id=rbmt4.fr-en.139
+NP*nnp NP*np
+PP*in NP*prp VP*vbz
+NP*cd VP*vbp
+PP*in NP*prp VP*vbd
+PP*in NP*dt VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbz
+PP*in NP*prp VP*vbz
+NP*np VP*md
+S*np S*np
+ADVP*rb NP*nnp VP*vbz
+S*np S*cc
+PP*in NP*nnp VP*vbz
+NP*dt PP*in NP*nnp PP*in VP*vbz
+PP*in PP*in VP*vbz
+PP*in S*np FRAG*sbar
+PP*in SBAR*in NP*nnp VP*vbz
+NP*np S*vp VP*vbz NP*np
+NP*nn PP*in
+S*np S*np
+
+# id=rbmt4.fr-en.140
+NP*dt VP*vp
+NP*cd VP*vbz
+S*np S*np ''
+NP*prp VP*vbz
+S*np S*s ''
+NP*np VP*vbd
+
+# id=rbmt4.fr-en.141
+S*np VP*advp NP*np
+NP*np VP*vbz
+S*np VP*vbz NP*np
+NP*nnp VP*vbz
+S*np VP*vbz NP*nnp
+NP*dt PP*in
+NP*np VP*vbz
+PP*in NP*np VP*vbd
+NP*dt PP*in
+NP*np ADVP*rb VP*vbz
+NP*nnp VP*vbz
+NP*dt PRN*s VP*vbz
+NP*prp VP*vbz
+S*np VP*vbz NP*np
+S*np CC S*np
+PP*in NP*nnp VP*vbz
+NP*np VP*vbz
+NP*nnp VP*vbz
+NP*prp VP*vbd
+PP*in NP*dt VP*vbz
+PP*in NP*prp VP*vbp
+NP*prp VP*vbp
+NP*np VP*vbz
+NP*np ADVP*rb VP*vbp
+NP*dt VP*vbz
+NP*nnp PP*in NP*np VP*vbz
+NP*nnp VP*vbz
+PP*in PRN*, NP*prp VP*vbz
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.142
+NP*np VP*vbz
+S*s VP*vbz NP*np PP*in NP-TMP*nnp
+NP*dt VP*vbz
+NP*nnp VP*md
+NP*np VP*vbz
+NP*nn VP*vbz
+NP*dt VP*md
+S*np VP*vbd NP*np
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.143
+S*np NP*np VP*vbp
+S*vp VP*vbz
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.144
+NP*dt VP*vbp
+NP*dt VP*md
+NP*np VP*md
+PP*in NP*dt VP*vp
+NP*np VP*md
+NP*prp VP*np
+S*advp NP*np VP*vbz ''
+NP*nns VP*vbp
+PP*in S*np CC S*np
+SBAR*in NP*dt VP*md
+
+# id=rbmt4.fr-en.145
+VBZ NP*dt ADJP*jj S*vp
+NP*np VP*vbz
+PP*in NP*prp VP*vp
+NP*nnp VP*vbz
+NP*np VP*md
+NP*prp VP*vbp
+S*np S*np
+NP*dt VP*vbz
+ADVP*rb PRN*, NP*np VP*vbz
+S*np S*s
+S*np S*np
+NP*prp VP*vbz
+NP*prp VP*vbz
+NP*dt VP*md
+
+# id=rbmt4.fr-en.146
+NP*np VP*vbz NP*np
+NP*np VP*vbd
+NP*prp VP*vbz
+PP*vbg VP*vbz NP*np
+NP*np VP*vbp
+NP*np VP*vbz
+S*np CC S*np
+
+# id=rbmt4.fr-en.147
+NP*dt VP*vbp
+NP*np VP*vp
+NP*np VP*vp
+NP*prp VP*vp
+S*vp NP*np VP*vbd
+NP*np VP*vp
+S*np S*np ''
+NP*prp VP*vbd
+S*np S*np
+CC NP*prp VP*vbz
+NP*prp VP*vbz
+NP*prp VP*vbd
+NP*prp VP*vbz
+S*np S*np ''
+NP*prp VP*md
+S*np S*np
+S*np S*np ''
+NP*prp VP*vbp
+S*vp VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbp
+SBAR*whnp VP*vbd
+S*np NP*np VP*vbz
+S*np S*np ''
+NP*dt VP*vbp
+NP*prp VP*vbp
+
+# id=rbmt4.fr-en.148
+NP*nnp VP*vbz NP*np S*vp
+NP*dt PP*in
+NP*prp VP*vbz
+S*np VP*vbz NP*dt
+NP*np VP*vp
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*nnp VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbz
+S*np CC S*np
+NP*np VP*vp
+CC NP*dt VP*vbz
+PP*in NP*dt VP*vbz
+ADVP*rb PP*in
+S*`` NP*np VP*vbd
+NP*dt NP*prp VP*vbz
+ADVP*rb NP*nnp VP*vbz
+S*s VP*vbz NP*np
+NP*np VP*vbz
+
+# id=rbmt4.fr-en.149
+S*s VP*vbz NP*nnp
+SBAR*in NP*prp VP*vbz
+ADVP*rb NP*dt VP*vbz
+S*s CC S*np
+PP*in NP*np VP*vb
+ADVP*rb NP*np VP*vp
+ADVP*rb NP*np VP*vb
+NP*in PP*in ADJP*jj NP*np
+NP-TMP*dt NP*np VP*vbz
+NP*prp VP*vbz
+NP*nnp VP*vbz
+NP*dt VP*vbp
+NP-TMP*nnp NP*nns VP*vbp
+S*`` VP*vbz NP*np
+NP*dt ADVP*rb VP*vbd
+PP*in NP*np VP*vbp
+NP*dt VP*vbp
+PP*in NP*np VP*vbz
+S*np VP*vbz NP*np
+NP*dt VP*md
+SBAR*in VP*vbz
+NP*dt PRN*sbar NP*prp VP*vbz
+NP*dt VP*vbz
+NP*cc VP*vbp
+NP*np VP*vb
+S*np NP*prp VP*vbz
+ADVP*rb NP*prp ADVP*rb VP*vbp
+
+# id=rbmt4.fr-en.150
+S*np NP*np VP*vbz
+NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbp
+NP*dt VP*vbp
+PP*in NP*prp VP*vbz
+NP*dt VP*vbd
+PP*in ADVP*rb NP*prp VP*vbp
+NP*np VP*vbn
+NP-TMP*nn PP*to NP*np VP*vbz
+NP*prp VP*vbd
+NP*np VP*vbz
+NP*cd VP*vbp
+NP-TMP*jj PP*in NP*nnp VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+S*np CC S*np
+NP*prp VP*vp
+S*s NP*prp VP*vbz
+CC NP*dt VP*vbz
+NP*dt SBAR*s S*sbar
+S*np CC S*s
+NP*prp VP*vbz
+S*np CC S*s
+S*np S*sbar ''
+CC PP*in S*np S*np ''
+NP*np VP*vp
+NP*dt VP*md
+NP*nnp VP*vp
+NP*np VP*vbz
+NP*prp VP*vp
+NP*nnp VP*vbz
+NP*np VP*vbp
+PP*in S*np S*np CC S*np
+
+# id=rbmt4.fr-en.151
+S*np VP*vbz NP*np S*vp
+NP*np VP*vbz
+S*np VP*vbd NP*np
+PP*in NP*nnp VP*vbz
+
+# id=rbmt4.fr-en.152
+NP*np VP*vbz
+NP*np VP*vp
+NP*dt VP*vbz
+ADVP*advp NP-TMP*dt NP*nnp VP*vbz
+
+# id=rbmt4.fr-en.153
+NP*nn PP*in PP*in VP*vbn
+NP*np VP*vbz
+S*np CC S*np
+NP*np VP*vbz
+S*np CC S*np
+NP*np VP*vbp
+S*np CC S*np
+
+# id=rbmt4.fr-en.154
+S*np CC S*np
+SBAR*in NP*np VP*vbz
+NP*prp VP*vbd
+NP-TMP*nnp NP*dt VP*vbz
+S*np VP*vbz NP*nnp
+NP*cd VP*vbz
+NP*prp VP*vbz
+NP*ex VP*vbz
+S*vp NP*np VP*vbz
+ADVP*rb NP*cd VP*vbp
+ADVP*rb NP*dt VP*vbn
+NP*np VP*vbz
+PP*in NP*prp VP*md
+NP*dt VP*md
+NP*nns ADVP*rb NP*np VP*vbz
+NP*np VP*vb
+SBAR*in PRN*, NP*prp VP*vbz
+S*np-tmp ADVP*rb S*np
+
+# id=rbmt4.fr-en.155
+S*np S*cc
+NP*np VP*vbz
+ADVP*rb NP*prp VP*md
+NP*np VP*vbz
+NP*np VP*vbp
+NP*nns VP*vbp
+PP*rb NP*dt VP*vbp
+NP*np VP*vb
+NP*dt VP*vb
+NP*rb VP*vp
+NP*dt VP*vbz
+
+# id=rbmt4.fr-en.156
+NP*np VP*vbd
+NP*np VP*vbz
+NP*prp VP*md
+NP*np VP*vp
+NP*prp VP*vbz
+S*np ADVP*rb S*np
+NP*dt VP*vbz
+PP*in NP*prp VP*vbz
+NP*prp ADVP*rb VP*vbp
+S*np VP*vbz NP*np
+S*np VP*vbz NP*np
+NP*nnp VP*vbd
+S*np CC S*np
+NP*nnp VP*vbz
+PP*in NP*dt VP*md
+VP*to
+S*vp NP*prp VP*vbz
+NP*nn VP*vbz
+NP*prp VP*vp
+PP*in NP*np VP*vbz
+S*np VP*vbz NP*nnp
+PP*in NP*prp VP*vbd
+NP*dt VP*vbz
+S*`` NP*prp VP*vbd
+
+# id=rbmt4.fr-en.157
+S*np CC S*np
+S*pp NP*nnp VP*vbz
+S*sbar S*intj ''
+
+# id=rbmt4.fr-en.158
+NP*np VP*vbz
+NP*np VP*vbz
+CC NP*np VP*vbp
+S*np VP*vbz NP*np
+ADVP*np NP*np VP*vbd
+
+# id=rbmt4.fr-en.159
+NP*np VP*vbd
+NP*dt ADVP*rb VP*vbd
+PP*in NP*dt VP*md
+ADVP*rb SBAR*in
+PP*in NP*dt VP*np
+NP*np VP*vbz
+PP*in NP*np VP*md
+PP*in NP*prp VP*vbz
+S*s VP*vbz NP*np
+S*cc NP*prp VP*vbz
+S*np NP*prp VP*vbz
+CC NP*prp VP*vbz
+S*`` PRN*, S*pp ''
+S*s VP*vbz NP*nnp
+S*vp NP*prp VP*vbd
+S*np NP*prp VP*vbz
+PP*in NP*np '' VP*md
+CC NP*prp VP*vbp
+NP*ex VP*vbp
+PP*to NP*np VP*vbp
+PP*in NP*cd VP*vbz
+PP*in NP*jj ADVP*rb VP*md ''
+SBAR*whadvp NP*np VP*vp
+NP*dt VP*vbz
+S*np NP*prp VP*vbp
+S*sbar VP*vbz NP*np
+S*np CC S*np
+PP*in NP*nnp S*vp VP*vbz
+NP*np VP*vbz
+S*sbar VP*vbz NP*np
+SBAR*rb NP*prp VP*md
+
+# id=rbmt4.fr-en.160
+NP*prp VP*vbd
+NP*nnp VP*vbz
+NP*dt VP*vp
+S*np VP*vbd NP*np
+SBAR*in NP*wdt VP*md
+NP*np VP*vbz
+S*`` NP*prp VP*vbz
+VP*np
+PP*in NP*np VP*vbz
+PP*advp NP*np VP*vbz
+NP*np VP*vp
+NP*np VP*vbp
+
+# id=rbmt4.fr-en.161
+S*np NP*nnp VP*vbz
+PP*in NP*np VP*md
+PP*in NP*dt VP*vbp
+S*`` VP*vbd NP*np
+S*np CC S*np
+NP*np VP*vp
+NP*nnp VP*vbz
+NP*dt VP*vbz
+S*np VP*vbz NP*nnp
+PP*in NP*nnp VP*vbz
+NP*np VP*vbz
+
+# id=rbmt4.fr-en.162
+NP*nnp VP*vbz
+NP*np VP*vbd
+ADVP*rb NP*prp$ VP*vbz
+NP*dt VP*vbz
+S*pp S*pp ''
+NP*nnp VP*vp ''
+NP*np VP*vp
+NP*pdt VP*vbp
+NP*prp VP*vbp
+NP*nn PP*in
+
+# id=rbmt4.fr-en.163
+NP*np ADVP*rb VP*vbp
+NP*np VP*vbz
+NP*np VP*vbz
+NP-TMP*dt NP*prp VP*vbz
+
+# id=rbmt4.fr-en.164
+S*np VP*vbz NP*dt
+S*np CC S*np
+NP*ex VP*vbp
+NP*nnp ADVP*rb NP*prp VP*md
+PP*in NP*np VP*md
+S*np VP*vbz NP*nnp
+NP*np VP*vbz
+NP*prp VP*vbz
+S*np VP*vbz NP*nnp
+PP*in NP*ex VP*vbz
+S*`` NP*prp VP*vbz
+S*np-tmp CC S*np
+NP*dt VP*md
+ADVP*rb NP*dt VP*vbd
+NP*nn NP*nnp VP*vbz
+S*np CC S*np S*np
+S*np S*advp
+
+# id=rbmt4.fr-en.165
+NP*dt VP*md
+SBAR*whadvp NP*prp VP*vbz
+NP*prp VP*vbp
+S*vp NP*prp VP*vbp
+NP*prp VP*vbp
+NP*pdt VP*vbp
+S*np NP*prp VP*vbz
+
+# id=rbmt4.fr-en.166
+NP*nnp VP*vbz
+NP*np VP*vbz
+NP*nnp VP*vbz
+NP*prp VP*vp
+NP*nnp VP*vbd
+NP*prp VP*vbz
+
+# id=rbmt4.fr-en.167
+S*np VP*vbz NP*np
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*nnp VP*vbd
+NP*np VP*vbz
+NP*nnp VP*vbp
+CC SBAR*rb NP*prp VP*vbz
+S*`` NP*prp VP*vbz
+NP*nnp VP*vbd
+
+# id=rbmt4.fr-en.168
+S*np NP*dt VP*vbz
+NP*prp VP*vbz
+NP*dt VP*vbd
+NP*dt VP*vbz
+NP*np VP*vbz
+S*np VP*vbz NP*np
+S*np NP*prp VP*vbz
+PP*in NP*np VP*vbp
+PP*in NP*np VP*vbp
+
+# id=rbmt4.fr-en.169
+NP*np VP*vbz
+NP*prp VP*md
+NP*np VP*vbd
+PP*in NP*dt VP*vbd
+NP*prp VP*vbd
+S*vp NP*prp VP*vbd
+CC PP*in NP*prp VP*vbd
+PP*in NP*prp VP*vbz
+NP*np NP*prp VP*vbd
+NP*prp$ PP*in
+PP*in VP*vbd
+PP*in NP*dt VP*vbz
+S*s VP*vbz NP*np
+PP*in NP*np
+S*advp VP*vbd NP*np
+NP*prp VP*vbp
+NP*prp VP*vbd ''
+NP*np VP*vbd
+S*np VP*vbd NP*np
+PP*in NP*prp VP*vbp
+NP*dt PP*in VP*vbp
+PP*in NP*prp VP*vbd
+PP*in NP*prp VP*vbd
+PP*in NP*prp VP*vbd
+S*np NP*prp VP*vbp
+PP*in NP*prp VP*vbd
+ADVP*np ADVP*rb NP*prp VP*vp
+PP*to VP*vbp NP*np
+S*vp NP*np VP*vbd
+S*np CC S*np
+NP*prp VP*vbp
+S*np S*``
+NP*prp VP*vp
+
+# id=rbmt4.fr-en.170
+NP*adjp VP*vbp
+NP*np VP*vbd
+NP*np ADVP*rb VP*vbz
+
+# id=rbmt4.fr-en.171
+S*np S*np
+NP*np VP*vbz
+S*vp NP*dt VP*vbz
+CC ADVP*rb NP*dt VP*vbd
+
+# id=rbmt4.fr-en.172
+NP*nnp VP*vbz
+S*np NP*np VP*vp
+NP*np VP*vbz
+NP*np VP*vb
+PP*in NP*dt VP*vbz
+S*np VP*vbz NP*nnp
+S*np NP*prp VP*vbz
+NP*dt VP*vbp
+NP*dt VP*vbn
+NP*dt VP*vbz
+NP*np VP*vbz
+
+# id=rbmt4.fr-en.173
+S*vp VP*vbz
+PP*in NP*np VP*vbz
+NP*dt VP*vbg
+NP*np PP*in PP*in PP*in
+CC NP*np VP*vbz
+S*adjp NP*nnp VP*vbz
+PP*in NP*prp VP*vbz
+PP*vbg NP*ex VP*vbz
+NP*dt VP*vb
+NP*prp VP*vbz
+PP*in NP*nnp VP*vbz
+S*vp
+
+# id=rbmt4.fr-en.174
+NP*np PP*in NP*dt VP*vbz
+NP*np VP*vp
+S*np NP*np VP*vbz
+PP*in NP*np VP*vbz
+NP*prp VP*vbz
+S*np VP*vbz NP*nn
+CC NP*np
+VP*vb
+NP*prp VP*vbd
+NP*prp ADVP*rb PP*in
+NP*np VP*vbd
+PP*vbg NP*dt VP*vbd
+
+# id=rbmt4.fr-en.175
+NP*prp VP*vbz
+S*`` VP*vbz NP*nnp
+S*s NP*prp VP*vbz
+NP*prp VP*vbd
+NP*dt VP*vbd
+S*np VP*vbz NP*nnp
+S*np CC S*np
+NP*np VP*vbz
+S*np VP*vbz NP*nnp S*vp
+

@@ -67,3 +67,20 @@ This is what I get running `yolk -l`
     wsgiref         - 0.1.2        - active development (/usr/lib/python2.7)
     yolk            - 0.4.3        - active 
 
+# Usage
+
+## Syntax-based coherence
+
+### IBM model 1
+
+
+```bash
+
+# get a help message
+python -m discourse.syntax_based.ibm1 -h
+
+# running with Potet data
+python -m discourse.syntax_based.ibm1 -m 30 -b < discourse/syntax_based/data/potet/patterns.doctext > discourse/syntax_based/data/potet/patterns.ibm1
+
+```
+

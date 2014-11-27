@@ -1,0 +1,3198 @@
+# id=stanford.fr-en.0
+NP*dt VP*vbz
+PP*vbg NP*ex VP*vbp
+SBAR*whadvp NP*prp VP*vbp
+NP*prp VP*vbz
+VBZ NP*ex NP*advp
+S*np CC S*np
+SBAR*whadvp NP*prp VP*vbp
+SBAR*whadvp NP*prp VP*vbz
+NP*nnp VP*vbz
+MD NP*prp VP*vb
+NP*np VP*vbd
+ADVP*rb PP*in NP*np VP*vp
+PP*in NP*np VP*vbd
+S*np CC S*sbar
+IN S*np CC S*pp
+NP*dt VP*vbz
+NP*dt PP*in
+S*np NP*prp VP*vbp
+NP*np VP*md
+NP*dt VP*vbz
+S*np NP*np VP*vbp
+NP*dt VP*md
+NP*np VP*md
+
+# id=stanford.fr-en.1
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+NP*cd VP*vbp
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+PP*in NP*np VP*vbd
+NP*dt VP*vbd
+S*np CC S*np
+NP*dt PP*in PP*in SBAR*s
+PP*in NP*jj VP*vbd
+S*np CC S*np
+NP*nnp VP*vbz
+NP*dt VP*vbz
+PP*in NP*np VP*vbd
+PP*in NP*nnp VP*vbz
+PP*in NP*prp VP*vbd
+NP*np VP*vbz
+CC NP*prp ADVP*rb VP*vbd ''
+NP*prp ADVP*rb VP*vbd ''
+
+# id=stanford.fr-en.2
+NP*jj VP*vbp
+NP*np VP*md
+NP*np VP*md
+NP*dt VP*md
+S*sbar '' VP*vbd NP*nnp
+
+# id=stanford.fr-en.3
+NP*dt PP*in
+NP*dt VP*vbz
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt VP*md
+NP*dt VP*vbd
+NP*np VP*vbd
+PP*in NP*dt VP*vbn
+
+# id=stanford.fr-en.4
+NP*np VP*vbd
+NP*nnp VP*vbd
+S*np '' VP*vbd NP*nnp
+NP*nnp VP*vp
+
+# id=stanford.fr-en.5
+NP*dt VP*md
+NP*np VP*md
+S*np CC S*np
+S*np '' VP*vbd NP*nnp
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vp
+PP*in NP*np VP*vbd
+S*cc VP*vbd NP*np
+NP*dt VP*vbp
+NP*np VP*vbd
+NP*dt VP*vbd
+CC NP*np VP*md
+NP*nnp VP*vbd
+CC NP*prp VP*vbz
+S*s '' NP*prp VP*vbd
+NP*jj VP*vp
+
+# id=stanford.fr-en.6
+NP*np VP*vbz
+PP*np NP*prp VP*vbd
+NP*dt PP*in S*vp
+S*np VP*vbz NP*nnp
+ADVP*rb S*np CC S*np
+S*np NP*dt VP*vbz
+S*np NP*prp VP*vbz
+NP*nnp VP*md
+NP*nnp VP*vbz
+S*np NP*cd VP*vbd
+PP*in NP*cd VP*md
+
+# id=stanford.fr-en.7
+NP*np VP*vbd
+NP*dt VP*vp
+NP*np VP*vbd
+S*np '' VP*vbd NP*np
+NP*np VP*vbd
+S*pp '' VP*vbd NP*dt
+NP*dt VP*vbp
+S*np S*np '' PP*vbg
+NP*np VP*vbd ''
+NP*np VP*vbd
+S*np '' VP*vbd NP*np
+
+# id=stanford.fr-en.8
+NP*np VP*vbd
+S*np CC S*np
+NP*np VP*vbd
+NP*prp VP*vbz
+
+# id=stanford.fr-en.9
+NP*np VP*vp
+NP*nnp VP*vbd
+ADVP*rb NP*dt ADVP*rb VP*vbd
+NP*dt VP*vbd
+NP*prp VP*vbd
+NP*nnp VP*vbd
+NP*dt VP*vbz
+NP*nnp VP*vp
+S*s '' NP*nnp VP*vbd
+NP*nnp VP*vp
+PP*in NP*dt VP*vbd
+NP*nnp VP*vp
+ADVP*rb PP*in NP*nnp VP*md
+
+# id=stanford.fr-en.10
+NP*nnp VP*vbp
+NP*np VP*vbd
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*nnp VP*vbg
+PP*in NP*nnp VP*vbd
+NP*nnp VP*vbz
+PP*in NP*nnp VP*vbz
+S*pp '' VP*vbd NP*np
+NP*nnp VP*vbz
+
+# id=stanford.fr-en.11
+S*np NP*dt VP*md
+NP*dt VP*vbd
+PP*in NP*np VP*vbz
+ADVP*rb NP*prp VP*vbz
+PP*in NP*dt VP*vbz
+NP*dt VP*vp
+PP*in NP*dt VP*vbz
+NP*np VP*vbd
+CC NP*prp VP*vbd
+NP*np VP*vbd
+S*np NP*prp VP*vbd ''
+VP*vbd
+FRAG*intj '' VP*vbd NP*nnp
+S*np CC S*pp
+RB PP*rb
+
+# id=stanford.fr-en.12
+NP*nnp S*np
+CC NP*nns VP*md
+S*np VP*vbd NP*np
+NP*dt VP*md
+NP*dt VP*vbd
+NP*nnp VP*vbp
+S*pp '' NP*dt VP*vbd
+ADVP*rb NP*nns VP*md
+NP*prp VP*vbp
+NP*dt VP*vbp
+S*pp NP*dt VP*vbd
+NP*np VP*md
+NP*np VP*vbd
+S*sbar '' NP*nnp VP*vbd
+NP*prp VP*vbp
+S*cc NP*dt VP*vbd
+NP*nns VP*md
+NP*np VP*vbp
+CC NP*np VP*md
+NP*np VP*md
+NP*np VP*vbz
+S*np NP*np VP*vbd
+S*np '' NP*nnp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbz
+NP*nns PP*jj -RRB-
+S*vp
+NP*dt VP*vbp
+NP*dt VP*vbp
+NP*dt VP*vbz
+NP*dt S*advp ADVP*cc NP*prp VP*vbp
+NP*dt VP*vbp
+NP*dt VP*vbn
+S*np VP*vbd NP*nnp
+NP*np ADVP*rb VP*vbp
+NP*np VP*vb
+CC NP*dt VP*vbp
+NP*nnp VP*vbz
+S*pp CC S*np
+NP*prp VP*vbz
+NP*np VP*vbd
+NP*np VP*vbd
+ADVP*rb NP*dt VP*vbd
+NP*dt VP*vbd
+S*np '' VP*vbd NP*np
+
+# id=stanford.fr-en.13
+S*np NP*dt VP*md
+NP*dt VP*vbd ''
+S*np CC S*np
+NP*jj VP*vbp
+NP*dt ADVP*rb VP*vbd
+S*np '' NP*prp VP*vbd
+NP*dt VP*vbz
+NP*np VP*vp
+S*np '' VP*vbd NP*dt
+NP*nnp VP*vbd
+S*s '' NP*prp VP*vbd
+NP*np VP*vbz
+ADVP*rb S*np CC S*np
+PP*in NP*np VP*md
+NP*dt VP*md
+S*advp '' NP*dt VP*vbd
+PP*in NP*dt VP*md
+NP*dt ADVP*rb VP*vbd
+
+# id=stanford.fr-en.14
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*np ADVP*rb VP*vbz
+NP*dt VP*vbd
+NP*dt VP*vbz
+NP*prp ADVP*rb VP*vbz
+NP*dt VP*vbp
+NP*dt ADVP*rb VP*vbz
+S*np '' NP*prp VP*vbp ''
+
+# id=stanford.fr-en.15
+NP*np VP*vbz
+NP*dt VP*vbz
+SBAR*in NP*np VP*md
+NP*np VP*md
+NP*np ADVP*rb VP*vbz
+SBAR*in NP*nnp VP*vbz
+S*np '' NP*prp VP*vbd
+NP*np VP*md
+NP*np VP*vbz
+S*np S*np ''
+NP*np VP*vbz
+NP*prp VP*vbz
+PP*in NP*np VP*vbz
+
+# id=stanford.fr-en.16
+NP*nnp S*pp
+S*np CC S*np
+NP-TMP*nn NP*prp VP*vbp
+NP*dt S*s
+CC NP*dt VP*vbp
+NP*np NP*np
+SBAR*whnp NP*wp VP*vbp
+NP*dt VP*md
+NP-TMP*dt NP*dt VP*vbp
+S*np S*np
+PP*in S*np CC S*np
+PP*vbg NP*dt VP*vbp
+NP*prp VP*vbp
+S*np CC S*pp
+PP*in NP*nnps VP*md
+NP*np VP*vbn
+SBAR*whadvp NP*prp VP*vbp
+NP*dt VP*md
+NP*dt VP*vbz
+NP*prp VP*vbz
+PP*in NP*prp VP*vp
+NP*dt VP*vbp
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*nn VP*vbz
+NP*prp VP*vbp ''
+S*pp CC S*np ''
+ADJP*rb VP*vbg
+S*np CC S*s
+PP*advp S*np RB S*np
+NP-TMP*dt NP*nnps VP*md
+NP*np PP*in
+SBAR*in VP*vp
+
+# id=stanford.fr-en.17
+NP*nnp NP*np
+PP*in NP*dt VP*vbd
+S*s '' VP*vbz NP*nnp
+PP*vbg NP*dt VP*vp
+S*np '' NP*nnp VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbz
+
+# id=stanford.fr-en.18
+NP*nnp NP*np
+S*np VP*vbd NP*np
+S*np '' PRN*s NP*prp VP*vbz ''
+PP*vbg NP*dt VP*vbd
+NP*prp VP*vbd
+S*pp NP*dt VP*md
+S*pp '' NP*dt VP*vbd ''
+PP*in S*pp CC S*np
+PP*in NP*np VP*vbd
+NP*prp VP*vbd
+ADVP*rbr PP*in NP*dt VP*vbd
+NP*np S*vp NP*np VP*vbp
+PP*in S*np
+SINV*`` CC S*np
+NP*dt VP*vbz
+NP*dt ADVP*rb VP*vbd
+NP*dt VP*vbz
+PP*in PP*in VP*vbd
+S*s '' VP*vbd NP*nnp S*vp
+NP*cd VP*vbz
+PP*in S*np
+
+# id=stanford.fr-en.19
+S*np NP*prp VP*vbd
+NP*dt ADVP*rb VP*vbd
+NP*dt VP*vbz
+
+# id=stanford.fr-en.20
+NP*np VP*vbz
+S*s '' VP*vbd NP*np
+NP*np PRN*, NP*prp VP*vbp
+PP*in NP*ex VP*vbp
+NP*dt VP*vbd
+PP*in NP*prp VP*vbz
+S*np CC S*np
+S*np CC S*np
+NP*np VP*vbp
+NP*nnp VP*vp
+NP*np ADVP*rb VP*vbd
+NP*dt VP*vp
+NP*nnp VP*vbz
+NP*nnp VP*vbd ''
+NP*nnp VP*vbp
+CC NP*dt VP*vbd
+NP*prp VP*vbd
+S*np '' NP*nnp VP*vbd
+NP*np VP*vbp
+S*np '' VP*vbd NP*np
+S*np CC S*np
+NP*np VP*vbd
+NP*dt VP*vbp
+NP*dt VP*vbp
+NP*np VP*vbn
+NP*nnp VP*vbd
+S*s '' NP*nnp VP*vbd
+S*np CC S*np
+NP*np VP*vbd
+PP*in NP*nnp VP*md
+NP*nnp VP*vbd
+S*np '' NP*nnp VP*vbd
+S*np VP*vbd NP*np
+S*s '' NP*prp VP*vbd
+NP*np VP*vbd
+S*s '' NP*prp VP*vbd
+
+# id=stanford.fr-en.21
+NP*nnp NP*np
+S*np S*pp
+NP*np VP*md
+S*vp NP*dt VP*vbd
+
+# id=stanford.fr-en.22
+NP*nn VP*vbd
+NP*np VP*vbd
+NP*np VP*vbz
+PP*in NP*dt VP*vbp
+NP*dt VP*vbd
+NP*prp VP*vp
+NP*prp VP*vbz
+
+# id=stanford.fr-en.23
+S*np NP*nnp VP*vbd
+NP*nnp VP*vbd ''
+S*np CC S*np
+S*s '' NP*nnp VP*vbd
+NP*prp VP*vbd
+NP*dt VP*vbz
+S*np NP*prp VP*md
+CC SBAR*whnp
+NP*prp VP*vbz
+S*np CC S*np ''
+S*np S*s ''
+NP*np VP*vbd
+NP*np VP*vbd ''
+PP*in PRN*, VP*vbd
+ADVP*rb NP*np VP*vb
+S*pp NP*nnp VP*vbd ''
+NP*nnp VP*vbd
+NP*dt VP*vbn
+NP*nnp VP*vbp
+NP*nnp VP*vbd
+
+# id=stanford.fr-en.24
+NP*np VP*vbz
+NP*nnp VP*vbd
+NP*np VP*vbd
+S*np '' VP*vbz NP*np
+NP*dt VP*vbz
+NP*np VP*md
+NP*nns VP*vbp
+S*np '' VP*vbz NP*np
+NP*dt VP*vbd
+NP*dt VP*md
+NP*np VP*md
+NP*nnp VP*vbd ''
+ADVP*rb NP*prp VP*vbd
+S*np '' VP*vbd NP*nnp
+PP*vbg S*np
+CC NP*np VP*vbz ''
+S*np '' NP*prp VP*vbd
+NP*prp VP*md
+NP*nnp VP*vbd
+
+# id=stanford.fr-en.25
+NP*prp VP*vp
+S*vp CC S*pp
+NP*prp VP*md ''
+NP*dt VP*md
+PP*in NP*nnp VP*vp
+NP*nnp VP*vbd
+S*pp CC S*np
+S*np '' VP*vbd NP*nnp
+NP*prp VP*md
+ADVP*rb NP*nnp VP*vbd
+S*np '' VP*vbz NP*nnp
+S*np PRN*, CC S*np
+NP*ex VP*vbp
+NP*nns VP*md
+NP*dt VP*vbz
+PP*in NP*ex VP*vbz
+PP*in NP*dt VP*vbz
+CC SBAR*rb NP*jj VP*md
+NP*cd PP*advp PP*in PP*in
+S*np '' VP*vbd NP*nnp
+CC PP*in NP*prp VP*md
+PP*in NP*nnp VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbd
+CC NP*prp VP*vbd
+PP*in NP*np VP*vbd
+NP*np PP*in NP*prp VP*vbp
+NP*dt VP*vbz
+NP*prp VP*vbp
+CC SBAR*whadvp NP*prp VP*vp
+PP*in S*np CC S*np
+NP-TMP*dt NP*dt VP*vbz
+S*np '' NP*nnp VP*vbd
+S*np CC S*np
+PP*in NP*jj VP*vbz
+NP*jj VP*vbp
+S*np CC S*np
+PP*in NP*np
+S*np S*pp
+NP*np NP*np VP*vbp
+S*np CC S*np
+S*np '' VP*vbd NP*nnp
+PP*in NP*dt VP*md
+S*np CC S*np
+NP*dt VP*vbd
+S*np '' VP*vbd NP*dt
+PP*in NP*nnp ADVP*rb VP*vbz
+S*np NP*prp VP*vbz
+S*np '' VP*vbd NP*np
+NP*prp VP*vbz
+PP*in NP*prp VP*vbz
+S*np '' VP*vbd NP*nnp
+NP*prp VP*vbz
+NP*nn ADVP*rb VP*vp
+CC PP*advp NP*np VP*vbp
+S*s '' VP*vbd NP*nnp
+S*np CC S*np
+PP*in NP*np VP*vbz
+S*vp VP*vbz
+S*np '' VP*vbd NP*nnp
+CC NP*prp VP*vbp
+NP*prp VP*vbp
+S*vp VP*vbp
+NP*nn VP*to
+
+# id=stanford.fr-en.26
+NP*nnp VP*vbz
+PP*in NP*np VP*vp
+NP*np VP*vbd ''
+NP*prp VP*vbp
+S*np CC S*np
+S*np S*np
+PP*in NP*dt VP*md
+
+# id=stanford.fr-en.27
+S*np NP*nns VP*vbp
+NP*nnp PP*in
+PP*in
+NP*nn PP*in PP*in
+PP*in
+NP*np VP*vbd
+ADVP*rb VP*cc VP*md
+NP*prp ADVP*rb VP*vp
+VP*vbz
+NP*dt VP*vbd
+NP*np ADVP*np VP*vbp
+NP*dt ADVP*rb VP*md
+S*np NP*np VP*np
+CC S*np S*np
+SBARQ*whadvp
+NP*nn S*np
+ADVP*rb NP*prp VP*vbp
+CC PP*in NP*dt VP*vbd
+S*np CC S*np
+NP*np VP*vbz
+S*np NP*prp VP*vbz
+NP*nn VP*vbd
+VBG NP*np
+S*np VP*vbz NP*nnp S*vp
+NP*np ADVP*rb VP*vbp
+CC NP*np VP*vbz
+PP*in NP*np VP*vbp
+NP*dt VP*vbd
+CC PP*in S*np
+S*vp NP*nn VP*vbz
+SBAR*in S*vp VP*vbd
+CC NP*dt VP*vbz
+NP*rb NP*np
+ADVP*rb NP*nns VP*vbd
+NP*dt SBAR*whadvp
+S*np CC S*np
+S*ucp CC S*np
+S*np CC S*np
+S*np NP*nnp VP*vbz
+CC NP*dt VP*vbd
+ADVP*rb NP*prp VP*vbz
+NP*dt ADVP*rb VP*vbz
+PP*in
+NP*prp VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd
+CC NP*np VP*vbz
+RB PP*in
+CC VP*vb
+SBAR*in NP*dt VP*vbd
+
+# id=stanford.fr-en.28
+WHADVP*wrb S*np
+NP*nnp ADJP*jj NP*prp VP*vbp
+NP*np VP*vbz ''
+NP*rb VP*md
+NP*np VP*vp
+NP*np VP*vbz
+NP*np PP*in PP*in
+NP*nns VP*md
+NP-TMP*nn PP*in NP*dt VP*vbp
+CC NP*np VP*vbz
+PP*in NP*np VP*vbp
+CC NP*np VP*vbz
+S*np S*s
+ADVP*rb NP*nn VP*vbz
+NP*np NP*dt VP*vbp
+S*np VP*vbz NP*np
+PP*in NP*np VP*vbp
+NP*prp VP*vbz
+S*s '' VP*vbz NP*np
+NP*np ADVP*rb VP*vbz
+S*pp '' VP*vbz NP*np
+CC NP*nn VP*vbz
+NP*nnp VP*vbz
+NP*np VP*vbp
+S*np S*np
+NP*dt VP*vbz
+NP*np VP*md
+NP*nnp VP*vbz
+S*np '' VP*vbz NP*np
+NP*dt S*vp
+NP*nn ADVP*rb VP*vbd
+NP*ex VP*vbz
+S*np '' VP*vbz NP*np
+CC ADVP*rb NP*nn VP*md
+S*pp S*np
+S*np S*sbar
+NP*dt VP*vbz
+SBAR*in NP*dt VP*md
+S*vp NP*ex VP*vbp
+NP*dt VP*vbz
+S*sbar '' VP*vbz NP*np
+S*np S*s
+CC S*np
+S*s '' VP*vbz NP*np
+CC PP*in NP*prp VP*vbz
+S*np NP*prp VP*vbp
+S*np VP*vbz NP*np
+
+# id=stanford.fr-en.29
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+S*np IN S*np
+NP*nnp VP*vbd
+NP*np VP*vbd
+S*np '' NP*prp VP*vbd
+NP*dt VP*vbd
+S*np CC S*np
+NP*dt VP*vbp
+NP*nnp VP*vbd
+NP*dt VP*vbz
+NP*np VP*md
+PP*in NP*np VP*md
+FRAG*np '' NP*nnp VP*vbd
+NP*np VP*md
+S*np CC S*np
+NP*prp VP*vbp
+NP*np VP*vb
+CC NP*np VP*vbp
+S*np CC S*np
+S*np VP*vbd NP*np
+S*np NP*np VP*vbd
+NP*np VP*vp
+S*np '' NP*prp VP*vbd
+NP*prp VP*vbd
+S*np NP*prp VP*vbd ''
+NP*nnp VP*vp
+S*np CC S*np
+NP*prp VP*md
+NP*nnp VP*vp
+NP*np VP*vbz
+NP*dt VP*vbp
+NP*dt VP*vbd
+ADVP*rb NP*nnp VP*vbz
+PP*in NP*prp VP*vbd
+PP*in NP*prp VP*vbd
+ADVP*rb NP*np VP*md
+NP*prp ADVP*rb VP*vbz
+S*np CC S*s
+S*np CC S*np
+NP*nnp VP*vbd
+
+# id=stanford.fr-en.30
+NP*nns VP*vbp
+NP*jj VP*vbd
+CC ADVP*rb NP*nns VP*vbp
+NP*np VP*vbd ''
+ADVP*rb NP*prp VP*vbd
+NP*prp VP*vbd
+PP*in NP*dt VP*vbd
+NP*prp VP*vp
+NP*prp VP*md
+S*np S*np CC S*np ''
+SBAR*whadvp NP*prp VP*vbd
+S*cc CC S*np
+NP*nnp VP*vbd
+ADVP*rb NP*prp VP*vbz
+NP*prp VP*vbd ''
+NP*dt VP*vbp
+NP*np VP*vbd
+NP-TMP*jj NP*np VP*vbd
+CC PP*in NP*prp VP*vbd ''
+S*np CC S*np
+S*np NP*prp VP*vbd
+S*s '' NP*prp VP*vbd
+ADVP*rb PP*vbn NP*prp VP*md
+
+# id=stanford.fr-en.31
+S*vp S*vp VP*vbz
+NP*prp VP*md
+NP*dt ADVP*rb VP*vbd
+PP*in NP*prp VP*vbz
+SBAR*in NP*dt VP*vbz
+
+# id=stanford.fr-en.32
+S*vp NP*np VP*vbp
+NP*dt VP*vbz
+NP*dt VP*vbz ''
+NP*dt PP*in S*vp
+NP*np VP*vbp
+NP*dt PP*in
+WHNP*wp SQ*vbp
+S*advp '' VP*vbz NP*np
+NP*np VP*vbd
+S*np '' NP*prp VP*vbz
+NP*np VP*vbz
+NP*np VP*md
+VP*vbg
+S*np '' NP*prp VP*vbd
+NP*dt VP*md
+
+# id=stanford.fr-en.33
+S*s VP*vbd NP*np
+NP*dt VP*vbz
+NP*prp VP*vbz
+S*vp NP*np VP*vbd ''
+S*vp NP*dt VP*vbd
+NP*dt NP*prp VP*vbd
+NP*dt VP*vbd
+PP*in NP*dt VP*vp
+NP*dt VP*vp
+
+# id=stanford.fr-en.34
+S*np S*pp SBAR*in
+ADVP*rb NP*nns VP*vbp
+PP*in PP*in NP*dt VP*vbz
+NP*np VP*vbz
+NP*np VP*vbd
+NP*np VP*vp
+PP*in NP*np VP*vbz
+PP*in NP*np VP*vbn
+S*np RB S*np
+NP*prp VP*vbp
+PP*in NP*dt VP*vp
+NP*dt VP*vbp
+
+# id=stanford.fr-en.35
+NP*dt VP*vbz
+
+# id=stanford.fr-en.36
+NP*dt PP*in NP-TMP*dt NP*prp VP*vbz
+PP*in PRN*, VP*vbz
+PP*in NP*np VP*md
+NP*cd VP*md
+PP*in VP*vbz NP*np
+S*np CC S*np
+PP*in NP*np VP*vbd
+PP*in NP*dt VP*vbz
+NP*prp VP*vbp
+S*s '' VP*vbd NP*dt
+S*np '' VP*vbd NP*np S*vp
+
+# id=stanford.fr-en.37
+NP*dt VP*vbz
+NP*dt VP*vbz
+S*np '' VP*vbd NP*np
+NP*prp VP*md
+NP*dt VP*vbz
+S*np CC S*np
+NP*np VP*vbn
+NP*nns VP*vbp
+PP*in NP*dt VP*vbp
+NP*np VP*vbz
+PP*in S*np CC S*np
+NP*np NP-TMP*nn VP*vbz
+S*np '' VP*vbz NP*dt
+NP*prp VP*md
+CC NP*prp VP*md
+NP*nnp VP*vbp
+S*np VP*vbd NP*dt
+NP-TMP*jj NP*nnp VP*vbd
+PP*in NP*dt VP*vbd
+S*np CC S*np
+S*np '' VP*vbd NP*dt
+
+# id=stanford.fr-en.38
+NP*nnp VP*vp ''
+NP*nnp VP*vbz ''
+NP*np ADVP*rb VP*vbd
+NP*dt VP*vbp
+S*vp NP*nnp VP*vbd ''
+NP*prp ADVP*rb VP*vp
+S*np S*pp ''
+CC NP*dt VP*vbz
+NP*prp VP*vbp
+NP*nnp VP*vbd
+NP*prp VP*vbd ''
+NP*ex VP*vbz
+CC SBAR*in
+NP*prp VP*vbp
+S*advp VP*vbd NP*np
+NP*np VP*vbd
+S*np '' VP*vbd NP*np
+CC NP*prp VP*vbp
+S*np NP*np VP*vbd
+NP*jj VP*vbd
+NP*np VP*vbd
+PP*in NP*nnp VP*vbd
+NP*np VP*vbz
+NP*prp VP*vbd
+NP*nnp VP*vbd ''
+NP*prp VP*vbd
+S*s '' NP*nnp VP*vbd
+ADVP*rb NP*nnp VP*vbz
+
+# id=stanford.fr-en.39
+S*np NP*nnps VP*vbz
+S*vp NP*dt VP*vbd
+PP*in NP*prp$ VP*vbd
+
+# id=stanford.fr-en.40
+PP*in NP*np VP*vbz ''
+PP*in NP*np VP*vbz
+NP*np VP*vbd
+S*vp NP*prp VP*md
+NP*prp VP*vbd
+NP*dt VP*vbz
+VP*vbz
+NP*prp VP*vbd
+PP*in
+NP*nnp S*vp VP*vbp
+SBAR*in NP*prp VP*vbp
+CC NP*nnp VP*vbz
+NP*dt VP*vbz
+VP*vbg
+PP*in NP*np VP*vbz
+CC NP*prp VP*vbp
+SBAR*whnp VP*vbz
+WHADVP*wrb SQ*vp
+NP*nnp VP*vbz
+CC PP*in NP*prp VP*vbz
+WHNP*whnp SQ*np
+SBAR*in NP*prp VP*vbp
+ADVP*rb VP*vbp
+ADVP*rb NP*nnp VP*md
+NP*prp VP*vbp
+ADVP*rb NP*prp VP*vbz
+NP*nnp VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbz
+ADVP*rb NP*ex VP*md
+NP*nnp VP*vbd
+MD NP*prp VP*vb
+NP*np VP*vbz
+NP*prp VP*vbp
+CC SBAR*in NP*dt VP*md
+SBAR*in NP*dt VP*vbz
+WHADVP*wrb SQ*md
+SBAR*in NP*prp VP*vbp
+
+# id=stanford.fr-en.41
+NP*dt VP*vbd
+NP*prp VP*vbd
+PP*vbg NP*ex VP*md
+NP*prp VP*md
+NP*dt VP*vbd
+NP*nns VP*vbd
+ADVP*rb ADVP*rb NP*dt VP*vbd
+S*np CC S*np
+
+# id=stanford.fr-en.42
+S*np S*np
+PP*in NP*dt VP*vp
+NP*np VP*vbd
+NP*dt ADVP*rb VP*vp
+NP*dt VP*vbd
+NP*np VP*vbp
+
+# id=stanford.fr-en.43
+S*np NP*dt VP*vbz
+NP*nnp VP*vbz
+PP*in NP*np VP*vbd ''
+NP*prp VP*vbz ''
+
+# id=stanford.fr-en.44
+S*np '' VP*vbz NP*dt
+NP*np VP*md
+S*vp '' NP*nn VP*vbd
+S*np '' NP*prp VP*vbd
+NP*prp VP*md
+NP*prp VP*vbd
+NP*np VP*vbd ''
+NP*np VP*vbz
+SBAR*rb S*cc CC ADVP*jj
+CC PRN*s VP*vbd
+VP*vp
+
+# id=stanford.fr-en.45
+NP*np PRN*s VP*vbz
+NP*dt VP*vbz
+NP*np NP-TMP*nn VP*vbd
+NP*prp ADVP*rb VP*vbd
+NP*np VP*vbd
+S*np '' NP*prp VP*vbd
+
+# id=stanford.fr-en.46
+NP*nnp PP*in NP*np VP*vbd
+S*np VP*vbd NP*np
+S*s SQ*md
+'' S*np
+NP*np VP*vbz
+PP*in NP*dt VP*vbz
+NP*dt VP*vbp
+NP*dt ADVP*rb VP*vbd ''
+NP*dt VP*vbp
+NP*dt VP*md
+ADVP*rb VP*vbn NP*np
+PP*in NP*np VP*vbd
+
+# id=stanford.fr-en.47
+NP*nnp S*np
+NP*dt VP*vbd
+NP*dt VP*vbz
+NP-TMP*nn NP*prp VP*vbd
+NP-TMP*nn NP*nnp VP*md
+NP*ex VP*md
+S*np '' VP*vbd NP*np
+NP*nnp VP*vbz
+NP*np VP*vbz
+NP*prp VP*vbd
+SBAR*in NP*np VP*vbd ''
+PP*vbg NP*np VP*vp
+S*np CC S*np
+PP*in NP*dt VP*vbd
+
+# id=stanford.fr-en.48
+S*np NP*dt VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbz
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*prp VP*vp
+PP*in NP*nnp VP*vbz
+NP*np VP*md
+NP*np VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbd
+NP*np VP*vbp
+NP*nns VP*vbp
+NP*dt VP*vbd
+
+# id=stanford.fr-en.49
+S*np NP*dt VP*vbd
+PP*in NP*prp$ VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+CC SBAR*in NP*jj ADVP*rb VP*vb
+NP*np VP*vbp
+NP*np VP*vbd
+SBAR*in
+NP*nnp VP*vbz
+NP*prp VP*vbp
+S*np '' VP*vbd NP*np
+NP*jj VP*vbp
+ADVP*rb PP*in NP*ex VP*vbz
+NP*nns VP*vbp
+NP*nn VP*vbp
+NP*np VP*vbd
+S*np SINV*``
+SBAR*in ADVP*rb NP*prp VP*md
+NP*nn VP*vbz
+NP*nn PP*cc
+ADVP*rb NP*np VP*vbd
+NP*dt VP*vbz
+PP*vbg NP*np VP*vbp
+S*np CC SINV*md ''
+NP*jj VP*vbp
+NP*prp VP*vbz
+NP*ex VP*vbp
+S*s '' VP*vbz NP*np
+NP*dt VP*vbp
+NP*nn VP*vbp
+NP*jj VP*vbp
+NP*np VP*vbd
+NP*dt VP*vbz
+NP*jj VP*vbp
+ADVP*rb NP*ex VP*vbz
+PP*in NP*jj VP*vbp
+S*np '' NP*dt VP*vbz
+NP*dt VP*vb
+NP*np VP*vp
+NP*np VP*vbd ''
+NP*np VP*vbd ''
+
+# id=stanford.fr-en.50
+NP*np VP*vp
+NP*dt ADVP*rb VP*vp
+S*np S*pp ''
+S*cc '' NP*prp VP*vbd
+NP*np VP*vbn
+NP*np VP*vp
+
+# id=stanford.fr-en.51
+NP*np VP*vbz
+S*np CC S*advp
+S*np CC S*np
+PP*in NP*prp VP*vbz ''
+NP*nnp ADVP*rb VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+PP*in NP*np VP*vbd
+NP*nnp VP*vp
+PP*in NP*nnp VP*vbd
+
+# id=stanford.fr-en.52
+NP*nnp VP*vp
+NP*np VP*vbd ''
+NP*nnp VP*vbz
+NP*np VP*vbd
+NP*dt VP*vp
+S*np CC S*np
+WHNP*wp SQ*vbp
+VP*vb
+
+# id=stanford.fr-en.53
+NP*np VP*vbd
+NP*np VP*vbz
+NP*dt PRN*s VP*md ''
+NP*np VP*vbd
+NP*nn VP*md
+PP*in NP*dt VP*md
+PP*in NP*dt VP*vbd
+NP*np VP*vp
+NP*dt VP*md
+NP*nnp VP*vbd ''
+NP*prp VP*vbp
+PP*in NP*prp VP*vbp
+CC NP*prp VP*vbz
+NP*np VP*vbd ''
+PP*in NP*nnp VP*vbd
+S*np CC S*np
+NP*prp VP*vbp
+S*np CC S*np ''
+
+# id=stanford.fr-en.54
+NP*nnp VP*vbz
+NP*jj VP*vbp
+NP*prp VP*vbd
+NP*nnp VP*vbd ''
+S*np '' NP*prp VP*vbd
+NP*dt VP*vp
+NP*prp VP*md
+
+# id=stanford.fr-en.55
+NP*np VP*md ''
+NP*nnp VP*vbd
+NP*np VP*vbn
+PP*in NP*nns VP*md
+NP*np VP*vbd
+PP*vbg PRN*, NP*prp VP*vbp ''
+NP*prp VP*md
+NP*prp VP*vp
+S*np NP*np VP*vp
+NP*nnp VP*md
+S*np CC S*np
+NP*np VP*vbd ''
+NP*dt VP*vbd
+S*s '' NP*prp VP*vbd
+NP*prp VP*vbz
+NP*np VP*vbz
+NP*nn VP*md
+NP*prp VP*vbz
+NP*np VP*vbn
+NP*dt VP*md
+NP*dt ADVP*rb VP*vbd
+NP*nnp VP*vbp
+NP*nnp ADVP*rb VP*vbp
+PP*in NP*np VP*vbd
+NP*dt VP*md
+PP*in NP*nn VP*vbp
+PP*in NP*np VP*vbp
+NP*dt ADVP*rb VP*vbd ''
+PP*in NP*np VP*vbz
+S*np '' NP*prp VP*vbd
+NP*nns VP*vbp
+NP*np VP*vbd
+CC S*np PRN*, S*np
+CC ADVP*rb NP*np VP*md
+S*pp '' NP*nnp VP*vbd
+SBAR*whadvp NP*prp VP*vbd
+NP*np VP*vbd
+NP*prp VP*vp
+CC PP*in '' NP*prp$ VP*vbp
+NP*prp VP*vp
+S*s '' NP*nnp VP*vbd
+PP*in NP*prp VP*vp
+CC PP*in NP*prp VP*vbd
+NP*nnp VP*vbd ''
+CC PP*in PP*in -LRB- NP*wdt VP*-rrb- ''
+NP*jj VP*vbz
+NP*nns VP*vp
+RB PP*rb NP*nnp VP*vp
+NP*prp VP*vbd
+S*np '' NP*prp VP*vbd
+S*np CC S*np
+PP*in NP*prp VP*vbd
+CC S*ucp NP*prp VP*vbd
+SBAR*whnp VP*vbd
+S*np CC S*np
+NP*nnp VP*vbd
+PP*in NP*prp VP*vp
+NP*dt VP*vbd
+NP-TMP*nn NP*prp VP*vbz
+CC NP*np VP*vbz ''
+S*np '' NP*prp VP*vbd
+NP*prp VP*vbp
+NP*prp VP*vbp
+CC S*np IN S*np
+NP*nn VP*vbd ''
+S*np '' NP*prp VP*vbd
+NP*dt PP*vbg
+NP*dt VP*vbz
+SBAR*whadvp NP*prp VP*md
+CC NP*np VP*vbd
+NP*np VP*vp
+PP*jj NP*nnp VP*vbz
+NP*prp VP*vbz
+S*advp NP*nnp VP*vbz
+SBAR*in NP*prp VP*vbz
+S*np '' NP*nnp VP*vbd
+NP*dt VP*vbz ''
+S*advp S*np
+NP*prp VP*vp
+NP*prp VP*vbp
+S*np '' NP*prp VP*vbd
+ADVP*rb S*np CC S*np
+NP*dt VP*vbz
+
+# id=stanford.fr-en.56
+NP*dt VP*vbz
+NP*np VP*vbd
+NP*np VP*vbd
+NP*prp$ VP*vbd
+
+# id=stanford.fr-en.57
+S*np CC S*np
+NP*prp VP*vbp
+NP*prp VP*vbz
+NP*prp VP*vbz
+SBAR*sbar
+NP*np VP*vbd
+S*np CC S*np
+S*np CC S*np
+PP*in NP*prp VP*vbd
+CC ADVP*rb NP*prp VP*vbd
+S*s NP*prp VP*vbz
+NP*prp VP*vbz
+NP*dt ADVP*rb VP*vbd
+NP*prp VP*vbd
+NP*prp VP*vbd
+PP*in NP*prp VP*vbp
+CC SBAR*in NP*prp VP*md
+NP*prp VP*vbp
+NP*dt VP*md
+NP*prp VP*md
+S*np CC S*vp
+NP*prp VP*md ''
+CC ADVP*rbr NP*prp VP*vbz
+NP*prp VP*vbp
+SBAR*in VP*md
+PP*in NP*dt VP*vbz
+ADVP*rb NP*np VP*vbp
+NP*dt VP*vbz
+NP*prp VP*vbp
+NP*nnp VP*vp
+NP*prp VP*vbd
+RB SBAR*in NP*prp VP*vbz
+NP*prp VP*vbz
+NP-TMP*dt NP*prp VP*vbp
+PP*in NP*prp VP*vp
+S*np '' NP*prp VP*vbd
+NP*prp VP*vbp
+S*advp CC S*np
+NP*np VP*vbp
+
+# id=stanford.fr-en.58
+NP*dt VP*vbz
+CC NP*dt VP*vbd
+NP*dt VP*vbd
+PP*in NP*nns VP*vbd
+PP*in NP*jj VP*vbd
+CC WHADVP*wrb SQ*rb
+NP*dt VP*vbz
+PP*in NP*dt VP*vbz
+CC PP*in NP*prp VP*vbp
+NP*prp VP*vbp
+PP*in NP*dt VP*vbp
+NP*nns ADVP*rb VP*vbp
+
+# id=stanford.fr-en.59
+NP*nn VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbp
+NP*np VP*vbd
+S*s '' VP*vbd NP*np
+NP-TMP*jj NP*nns VP*advp
+NP*np VP*vp
+NP*np VP*vbd
+NP*np VP*vbp
+S*np NP*nns ADVP*rb VP*vbd
+NP*nnp VP*vbd
+NP*np NP*np
+NP*nnp PRN*, VP*vbd
+NP*nns VP*vbd
+S*np CC S*np
+S*np CC S*np
+NP*dt VP*vbd ''
+NP*dt VP*vbd
+NP*dt ADVP*rb VP*vp
+S*np '' VP*vbd NP*np
+
+# id=stanford.fr-en.60
+NP*np VP*vbd
+NP*np VP*vbd
+CC NP*nnp ADVP*rb VP*vbd
+ADVP*rb PRN*, VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbd
+S*np '' VP*vbd NP*np
+NP*prp VP*vbd ''
+NP*np VP*vp ''
+NP*nnp VP*vbd
+PP*in NP*prp$ VP*vbn
+CC NP*nnp ADVP*rb VP*vbd
+S*pp '' NP*prp VP*vbd
+NP*prp VP*vbd
+NP*prp VP*vbd
+PP*vbg NP*nnp VP*vbd
+NP*jj VP*vbp
+NP*nns VP*vbp
+
+# id=stanford.fr-en.61
+NP*nnp VP*vbd ''
+SBAR*in NP*nnps VP*vbd
+NP-TMP*nn NP*nnp VP*vbz
+FRAG*np '' NP*prp VP*vbd
+S*vp NP*nnp VP*vbd
+S*np CC S*adjp
+S*np '' NP*prp VP*vbd
+NP*dt VP*vbd
+S*s '' VP*vbd NP*nnp S*vp
+NP*np VP*vbd ''
+S*np '' NP*prp VP*vbd
+NP*prp VP*vbp
+NP*prp VP*vbz
+PP*in NP*nnp VP*vbd
+NP*nn NP*prp ADVP*rb VP*vbz
+
+# id=stanford.fr-en.62
+NP*np VP*vbz
+NP*np VP*vbd
+S*vp NP*nnp VP*vbd
+PP*in NP*np SBAR*whadvp NP*nnp VP*vbz
+S*pp CC S*np
+FRAG*pp '' VP*vbz NP*np
+NP*prp ADVP*rb VP*vbz
+S*adjp NP*prp VP*vbd
+NP*np VP*vbd
+SBAR*in NP*dt VP*vbp
+S*np '' VP*vbz NP*np
+NP*dt ADVP*rb VP*vbp
+NP*np VP*vbz
+S*vp NP*np VP*vbd ''
+S*np '' NP*prp VP*vbd
+PP*in SBAR*in NP*nn VP*md ''
+PP*in NP*nn VP*vbz ''
+
+# id=stanford.fr-en.63
+NP*np VP*vbn
+NP*np VP*vbd
+NP*np VP*vbp
+NP*dt VP*vbd
+NP*dt VP*vbz
+NP*np VP*md
+PP*in NP*dt VP*vp
+NP*np VP*vbd
+NP*np VP*vbz
+NP*np VP*vbd
+
+# id=stanford.fr-en.64
+NP*dt VP*vbz
+NP*np VP*vbd ''
+S*np '' NP*dt VP*vbd
+S*np '' VP*vbd NP*np
+NP*np VP*vbd
+NP*dt VP*vp
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+
+# id=stanford.fr-en.65
+NP*np PRN*, VP*vbz
+PP*in NP*prp VP*vbz
+S*s '' VP*vbd NP*np
+PP*in PP*in NP*np VP*vbz
+S*vp NP*nnp VP*vbd
+S*np '' VP*vbd NP*np
+CC PRN*, NP*prp VP*vbp ''
+CC NP*prp VP*vbp
+SINV*cc NP*wp VP*vbd
+NP*prp VP*vbd ''
+CC NP*np VP*vbd
+PP*vbg NP*dt VP*vbd
+NP*dt S*vp VP*vbz
+PP*vbg NP*qp VP*vbd
+NP*dt VP*md
+CC NP*nnp VP*vbp
+PP*in NP*np VP*vbd
+PP*to NP*nnp VP*vbd
+ADVP*rb NP*np VP*vbz
+NP*prp ADVP*rb VP*vbd
+S*s VP*vbd NP*nnp
+CC NP*dt VP*vbd
+NP*nnp VP*vbd
+
+# id=stanford.fr-en.66
+NP*rb NP*np
+NP*dt VP*vbp
+NP*dt VP*md
+PP*in NP*np VP*vbd
+S*s '' NP*nnp VP*vbd
+NP*np VP*vbp
+CC NP*ex VP*vbd
+PP*in NP*dt VP*vbz
+S*sbar '' VP*vbd NP*np ''
+NP*dt VP*vbz
+S*np CC S*np
+PP*in S*np CC S*np
+NP*dt VP*md
+NP*ex VP*vbp
+VP*vp
+NP*dt VP*vbp
+NP*nnp VP*vp ''
+S*np S*np
+S*np '' NP*nnp VP*vbd
+S*np '' VP*vbz NP*dt
+SBAR*rb NP*prp VP*vbd
+NP*prp VP*vbd
+NP*ex VP*vbp
+ADVP*rb NP*ex VP*vbz
+NP*np VP*vbp
+NP*nnp VP*vbz
+NP*prp VP*vbd
+S*np CC S*np
+PP*in NP*jj VP*vbp
+NP*ex VP*vbp
+PP*in NP*np VP*vbp
+NP*dt S*sbar
+NP*np VP*vbd
+NP*np VP*vbz
+S*np '' VP*vbd NP*np
+NP*nns VP*md
+S*np '' NP*nnp VP*vbd
+SBAR*in NP*prp$ VP*md
+NP*np VP*md
+
+# id=stanford.fr-en.67
+NP*np VP*vbd
+NP*np VP*vbd
+SBAR*whadvp NP*prp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+NP*nnp VP*vbd
+
+# id=stanford.fr-en.68
+PP*np S*np ''
+NP*np VP*vbd
+S*vp NP*prp VP*vbd
+NP*prp$ NP*vp
+S*vp NP*nac VP*vbd
+PP*in NP-TMP*nn NP*prp VP*vbd
+CC VP*vb
+FRAG*np '' VP*vbd NP*np ''
+PP*in NP*prp VP*vbd ''
+WHNP*wp SQ*vbp
+PP*in
+SBAR*whadvp NP*prp VP*vbp
+NP*prp VP*vp
+NP*cd VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbp
+NP*ex VP*vbp
+RB NP*prp VP*vbp
+NP*dt NP*np
+S*np S*np
+CC VP*to
+NP*prp ADVP*rb VP*vbp
+NP*dt VP*vbz
+VP*vp
+WHADVP*wrb SQ*vbd
+NP*prp VP*np
+NP*np VP*vbz
+NP*prp VP*vbz
+NP*ex VP*vbz
+CC ADVP*rb PP*in
+SBAR*whadvp NP*ex VP*vbd
+S*np CC S*np
+S*vp NP*dt VP*vbz
+PP*in NP*jj VP*vbp
+NP*dt NP*np
+NP*dt VP*vbz
+S*np S*np CC S*np
+NP*np VP*vbz
+NP*prp VP*vbz
+CC NP*prp VP*vbd
+PP*in NP*prp VP*vbp
+ADVP*rb VP*vbd SBAR*whnp
+SBAR*whadvp
+NP*prp VP*vbd
+NP*dt VP*vbd
+S*np CC S*np
+NP*prp VP*vbz
+NP*prp ADVP*rb VP*vbd
+NP*prp VP*vbd
+NP*prp VP*vbd
+NP*prp VP*vbd
+NP-TMP*nn SBAR*whadvp X*in NP*nnp
+NP*prp VP*vbp
+NP*dt PP*in
+S*np S*np
+NP*prp VP*vbp
+NP*prp VP*vbp
+ADVP*in NP*prp VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vp
+NP-TMP*nn ADVP*rb NP*nn VP*vp
+CC WHNP*wp SQ*vp
+NP*np VP*vbz
+WHADVP*wrb SQ*vbp ''
+NP*prp VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+
+# id=stanford.fr-en.69
+NP*np VP*vbz
+NP*np VP*md
+S*np CC S*np
+NP*dt VP*md
+S*s S*np CC S*np
+
+# id=stanford.fr-en.70
+NP*np NP*np
+NP*nnp VP*vbz
+VP*vp
+NP*nnp VP*vbz
+NP*nnp VP*vbz ''
+PP*in NP*nnp VP*vbz
+NP*dt VP*to
+PP*in NP*dt VP*vbd
+NP*np VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*prp VP*vbz
+PP*in NP-TMP*nnp NP*prp VP*md
+
+# id=stanford.fr-en.71
+NP*dt VP*vbd
+
+# id=stanford.fr-en.72
+S*-lrb- NP*dt VP*vbd
+PP*vbn S*s CC S*np
+ADVP*rb S*np '' CC S*np
+S*np VP*vbd NP*np
+NP*nns NP*ex VP*vbp
+S*np CC ADVP*rb S*np
+NP*prp VP*vbp
+S*np CC S*np
+S*pp CC S*pp
+NP*prp VP*vbp
+S*advp CC S*np
+
+# id=stanford.fr-en.73
+NP*np VP*md
+NP*dt VP*vp
+NP*nnp ADVP*rb VP*vbd
+NP*nnp ADVP*rb VP*vbd
+S*np NP*dt VP*vbz
+S*np '' VP*vbd NP*np
+
+# id=stanford.fr-en.74
+NP*nnp S*np
+NP-TMP*dt NP*prp VP*vbp
+CC ADVP*rb NP*prp VP*vbp
+SBAR*in NP*prp VP*vbd
+CC VBZ NP*nn VP*vbd
+SBAR*in NP*np VP*md
+NP*prp VP*vbz
+CC S*np S*np
+ADVP*rb NP*prp VP*vbd
+WHADVP*wrb S*np
+SBAR*whadvp ADVP*rb
+S*np S*np
+PP*in NP*dt VP*vbz
+PP*in NP*np VP*vbp
+PP*rb NP*dt VP*vp
+NP*ex VP*vbz
+ADVP*rb NP*dt VP*vbd
+S*np CC S*np
+S*np S*np
+NP*dt VP*vbz
+PP*in NP*np VP*vbz
+NP*dt VP*vbz
+PP*in NP*ex VP*vbz
+S*vp VP*vbz
+NP*dt VP*vbz
+NP*pdt VP*vbz
+PP*in NP*dt VP*vbz
+PP*in NP*dt VP*vbz
+CC NP*nnp VP*vp
+NP*dt S*np
+NP*dt VP*vbz
+NP*nnp VP*vbz
+NP*prp VP*vbz
+SBAR*in NP*jj VP*md
+NP*dt VP*vbz
+S*np CC S*np
+S*np CC S*np
+S*np CC S*np
+ADVP*rb NP*np VP*vbz
+CC ADVP*nnp PP*in
+NP*prp VP*md
+CC NP*prp VP*md
+NP*prp VP*vbp
+NP*np VP*md
+ADVP*rb NP*prp VP*md
+NP*np VP*vp
+ADVP*rb NP*prp VP*md
+
+# id=stanford.fr-en.75
+NP*np VP*vbd
+NP*qp VP*vbd
+NP*dt VP*vbp
+NP*pdt VP*vbd
+NP*dt VP*vbd
+ADVP*rb NP*prp ADVP*rb VP*vbd
+S*np '' VP*vbd NP*np
+NP*dt VP*vbz
+
+# id=stanford.fr-en.76
+NP*np VP*vbd
+S*vp NP*prp VP*vbz
+
+# id=stanford.fr-en.77
+NP*np VP*vbz
+S*np CC S*s
+NP*np VP*vbz
+NP*prp$ VP*vbd
+NP*prp VP*vbp ''
+NP*np CONJP*cc NP*np
+S*np '' NP*prp VP*vbz
+S*np NP*prp VP*vbd
+S*sbar '' VP*vbz NP*nn
+NP*nnp ADVP*rb VP*vbd ''
+CC PP*in NP*dt VP*vbd
+SBAR*in NP*prp VP*vbz ''
+NP*np VP*vbd ''
+NP*nnp ADVP*rb VP*vbz ''
+NP*np VP*vbz
+NP*dt VP*md
+NP*dt PP*in
+NP*nnp VP*vbd ''
+NP*prp VP*vbd
+S*np '' NP*prp VP*vbd
+NP*dt VP*md
+
+# id=stanford.fr-en.78
+NP*np VP*vbd
+PP*rb NP*np VP*vp
+S*np CC S*np
+NP*nn VP*vbd
+
+# id=stanford.fr-en.79
+S*np VP*vbz NP*np ''
+NP*nnp VP*vbd
+PP*in NP*dt VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*nnp VP*vbz
+PP*in NP*dt S*vp VP*md
+NP*prp VP*md
+S*np CC S*np
+PP*in NP*nnp VP*vbd
+
+# id=stanford.fr-en.80
+S*np CC S*np
+PP*vbg NP*dt VP*vbd
+
+# id=stanford.fr-en.81
+NP*np VP*vbd
+S*np '' NP*prp VP*vbd
+NP*prp VP*vbz
+S*np '' VP*vbd NP*np
+
+# id=stanford.fr-en.82
+NP*np VP*vbn
+ADVP*rb NP*np VP*vp
+NP*qp VP*vbd
+S*np CC S*np
+NP*jj PP*in
+CC NP*jj
+ADVP*rb NP*dt VP*vbd
+S*np CC S*np
+S*np CC S*np
+PP*in
+
+# id=stanford.fr-en.83
+NP*np NP*np
+S*np VP*vbd NP*np
+NP*dt VP*vbn
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*dt VP*vp
+NP*np VP*vp
+S*np '' VP*vbd NP*nnp S*vp
+S*vp NP*dt VP*vbd
+NP*nn PRN*, VP*vbz
+NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+
+# id=stanford.fr-en.84
+NP*dt PP*in
+SBAR*in NP*jj VP*vbp
+NP*np VP*vbp
+NP*np ADVP*rb VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vp
+CC SBAR*in NP*jj VP*vbd
+NP*prp VP*vbp
+NP*np VP*vbp
+NP*dt VP*vbz
+S*np '' VP*vbd NP*np
+NP*ex VP*md
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbp
+NP*nns VP*md
+NP*np VP*vbz
+NP*nns VP*vbp
+S*np '' VP*vbd NP*np
+NP*prp$ VP*vbz
+S*np '' NP*prp VP*vbd
+NP*nns VP*vbp
+NP*prp VP*vbz
+NP*np VP*vbz
+NP*np NP*np
+NP*prn VP*vbd
+NP*np ADVP*rb VP*vbp
+S*np '' VP*vbd NP*np
+NP*nns VP*vbp
+NP*dt VP*vbz
+NP*dt VP*vbd
+CC NP*dt VP*vbd
+NP*np VP*vbp
+NP*dt VP*vbz
+NP*dt VP*md
+NP*nnp VP*vbz
+NP*np VP*vbz
+NP*nnp VP*vbz
+CC NP*np VP*vbz
+NP*dt VP*vbz
+PP*in SBAR*whadvp NP*dt VP*vbd
+S*np '' VP*vbd NP*np
+NP*prp VP*vbz
+S*pp S*np ''
+NP*prp VP*vbz
+NP*nnp VP*vbz
+S*sbar NP*nns VP*md
+NP*np VP*vbz
+ADVP*rb NP*dt VP*vbd
+NP*prp VP*vbd
+CC NP*np VP*vbd
+S*np '' VP*vbd NP*np
+NP*jj VP*vbd
+NP*ex VP*vbp
+PP*in S*np
+NP*prp VP*md
+NP*prp VP*md
+NP*jj VP*vbp
+PP*in NP*nn VP*vbp
+S*np '' VP*vbd NP*np
+ADVP*rb NP*dt VP*vbp
+NP*np VP*vbp
+NP*np VP*md
+S*np '' VP*vbd NP*np
+SBAR*in NP*np VP*md
+
+# id=stanford.fr-en.85
+S*np NP*dt VP*vp
+NP*nnp VP*vbd
+NP*nnp VP*md
+S*vp NP*prp VP*vbd
+S*np '' VP*vbd NP*dt
+NP*prp VP*vbz
+NP*dt VP*vbd
+NP*nnp VP*vbz
+
+# id=stanford.fr-en.86
+NP*nnp VP*vbz
+PP*in NP*dt VP*vbd
+NP*np VP*md
+NP*nnp VP*vbz
+CC NP*np VP*vbz
+
+# id=stanford.fr-en.87
+PP*in ADVP*rb NP*prp VP*vbp
+PP*in
+NP*np VP*md
+NP*dt ADVP*rb NP*np VP*vp
+PP*in PP*in VP*vbz
+SBAR*in S*vp CC S*vp
+NP*prp VP*vbz
+NP*prp VP*md
+S*np CC S*np
+NP*dt VP*vbd
+PP*vbg NP*nn VP*vbz
+PP*in S*np CC S*np
+PP*in NP*prp VP*vbz
+NP*prp VP*md
+PP*in NP*dt VP*vbz
+S*np CC S*np
+
+# id=stanford.fr-en.88
+NP*dt VP*vbz
+NP*dt VP*vbd
+PP*in NP*np VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbd
+S*s VP*vbd NP*np
+S*np CC S*np
+S*np NP*prp VP*vbz
+PP*vbg NP*dt VP*vbd
+NP*nn VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbz
+
+# id=stanford.fr-en.89
+NP*dt VP*vbz
+S*np '' VP*vbd NP*np
+NP*dt VP*md
+NP*np VP*vbp
+S*np-tmp CC S*np
+ADVP*rbr NP*np VP*vbd
+S*np VP*vbd NP*dt
+NP*np VP*vbd
+NP*dt VP*vbn
+S*np CC S*np
+NP*dt VP*vbd
+NP*np VP*vbz
+
+# id=stanford.fr-en.90
+NP*dt ADVP*rb VP*vbd
+NP*np VP*vbz
+NP*np VP*vbd
+PP*in NP*cd VP*vbp
+NP*nnp VP*vbz
+S*np NP*prp VP*vbd
+S*np '' VP*vbz NP*np
+NP*np VP*vbz
+NP*np VP*vbd
+S*cc NP*ex VP*vbp
+S*cc '' VP*vbz NP*np
+NP*np VP*md
+ADVP*rb NP*np VP*md
+
+# id=stanford.fr-en.91
+NP*prp VP*vbp
+NP*dt VP*vbz
+NP*nnp VP*vbz
+NP*prp VP*vp
+NP*nn VP*vbz
+NP*nnp VP*vbz
+NP*np VP*vbz ''
+NP*np VP*vbz
+RB SBAR*whadvp NP*np VP*vbz
+S*np CC S*np
+NP*prp VP*vbz
+NP*dt VP*vbz
+CC NP*prp VP*vbz
+NP*np VP*vbz
+CC NP*prp$ VP*vbz
+NP*prp VP*vbd ''
+S*np CC S*np
+NP*nn VP*vbz
+
+# id=stanford.fr-en.92
+S*vp NP*dt VP*vbz
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+NP*nn VP*vbd
+
+# id=stanford.fr-en.93
+NP*np VP*vbd
+S*np CC S*np
+PP*in NP*dt VP*vbd ''
+NP*prp VP*vbd
+
+# id=stanford.fr-en.94
+NP*nnp VP*vbz
+NP*adjp VP*vbd
+PP*in NP*nnp VP*vbd ''
+ADVP*rb NP*dt VP*vbz
+PP*in NP*nnp VP*vbd
+PP*in NP*prp VP*vbz
+NP*np VP*vbd ''
+NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+PP*in NP*prp VP*vbd
+NP*nnp VP*vbd
+SBAR*in NP*prp VP*md
+NP*nnp VP*vbd
+ADVP*rb NP*prp VP*vbd ''
+NP*np VP*vb
+NP*dt VP*vbz ''
+
+# id=stanford.fr-en.95
+NP*np VP*vbz
+NP*np VP*vp
+NP*dt PP*in PP*in
+S*np CC S*np
+PP*in NP*np VP*md
+NP*prp VP*vbz
+PP*in NP*nns VP*vbd
+NP-TMP*nn NP*np VP*vbp
+ADVP*rb NP*np VP*vbd
+NP*dt VP*vbz
+S*np NP*dt VP*vbd
+NP*jj PP*in
+WHADVP*wrb SQ*vbz
+PP*in NP*prp VP*vbz
+SBAR*in NP*prp VP*vbd
+ADVP*rb SBAR*in NP*prp VP*md
+NP*np VP*md
+NP*dt VP*vbz
+PP*in NP*prp$ VP*vbz
+WHADVP*wrb SQ*vbz
+NP*nnp VP*vbp
+NP*prp VP*vbp
+NP*dt VP*vbg
+ADVP*rb NP*dt VP*vbp
+NP*prp VP*md
+NP*cd VP*vbz
+S*np CC S*np
+
+# id=stanford.fr-en.96
+NP*nnp VP*vbz
+NP*nn VP*vbz
+NP*np VP*vbz
+NP*dt VP*md
+CC NP*nnp VP*vp
+S*np '' NP*nnp VP*vbd
+PP*np NP*dt ADVP*rb VP*vbd
+NP*nnp VP*vbz
+NP*nnp NP*np
+NP*dt VP*md
+S*np '' NP*prp VP*vbd
+WHADVP*wrb SQ*md
+NP*nnp ADVP*rb VP*vbd
+VP*vbz
+NP*nn S*vp VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbd ''
+NP*np VP*vbz
+S*np '' NP*prp VP*vbd
+
+# id=stanford.fr-en.97
+SBAR*whadvp NP*prp VP*vbd
+CC NP*np VP*vb
+PP*advp NP*np VP*vp
+NP*np VP*vbd
+S*vp NP*prp VP*vbd
+NP*nn VP*vbd
+CC NP*nnp VP*vbz
+NP*nn VP*vp
+NP*np VP*vbd ''
+S*np CC S*np
+S*np CC S*np
+PP*in NP*np VP*vbd
+NP*np VP*vbz
+NP*nnp VP*vbd ''
+S*np CC S*sbar
+S*np S*np
+S*sbar CC S*np
+S*np CC S*np ''
+NP*prp VP*vbp
+NP*dt VP*vbd
+S*np CC S*np
+S*np NP*prp VP*vbd
+
+# id=stanford.fr-en.98
+NP*nnp VP*vbd
+S*vp NP*nnp VP*vbd
+S*np NP*prp VP*vbd
+NP*nns VP*vbp
+PP*in NP*prp VP*vbd
+NP*nn PRN*, VP*vbd
+NP*prp$ VP*vbd
+S*np CC S*np
+S*np '' NP*prp VP*vbd
+S*np CC S*np
+PP*in NP*dt VP*vbz
+PP*in NP*np VP*vbp
+SBAR*in NP*prp VP*md
+NP*np VP*vbp
+NP*np VP*vbn ''
+
+# id=stanford.fr-en.99
+S*np CC S*np
+NP*np VP*vbp
+NP*np VP*vbz
+S*np S*pp
+NP*jj VP*vbd
+
+# id=stanford.fr-en.100
+NP*np VP*vbd
+S*vp NP*jj VP*vbd
+PP*in NP*np VP*vbd
+NP*np VP*vbz
+SBAR*in NP*np VP*vbp
+NP*dt VP*vbd NP*np NP*nnp VP*vbn PP*in
+CC NP*dt VP*vbz
+
+# id=stanford.fr-en.101
+NP*np VP*vbd
+NP*np VP*vbd
+PP*in S*np CC S*np
+NP*dt VP*vbd
+NP*np VP*vbd
+S*sbar '' NP*nnp VP*vbd
+NP*prp VP*vbp
+ADVP*rb SBAR*in NP*prp VP*vbp
+NP*nnp VP*vbz
+NP*dt VP*vp
+CC NP*np VP*vbz
+NP*prp VP*vbz
+ADVP*rb NP*dt VP*vbz
+NP*np VP*vbz
+NP*dt ADVP*rb VP*vbd
+S*np '' NP*nnp VP*vbd
+NP*dt VP*vbz
+S*np CC S*np
+NP*prp VP*md
+S*np NP*dt VP*md
+ADVP*rb NP*nns VP*vbp
+NP*nnp VP*vp
+S*np-tmp '' NP*nnp VP*vbd
+PP*in NP*np VP*vbd
+S*vp VP*vbd
+NP*nns VP*vbd
+NP*nns VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd
+S*np S*np
+S*s '' NP*nnp VP*vbd
+NP*dt VP*vbn
+NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+NP*dt NP*np
+
+# id=stanford.fr-en.102
+NP*dt VP*vbz
+'' S*s
+S*s '' VP*vbd NP*np
+NP*prp VP*vbd
+S*s '' NP*prp VP*vbd
+PP*vbg NP*dt VP*md ''
+NP*dt VP*vbd
+NP*np VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbd
+PP*in NP*dt VP*md
+NP*dt ADVP*rb VP*vbz
+VBG PP*to
+NP*prp ADVP*rb VP*vbd
+S*vp NP*nns VP*vbp
+S*np '' VP*vbd NP*np S*vp
+S*vp NP*dt VP*md ''
+NP*jj VP*vbd
+PP*in NP*prp VP*vbd
+
+# id=stanford.fr-en.103
+S*np NP*prp VP*vbd
+NP*prp VP*vbd
+NP*np VP*vbd
+S*np VP*vbd NP*dt
+S*np '' VP*vbd NP*np
+NP*np VP*vbd
+PP*in NP*dt VP*vbd
+S*np '' VP*vbz NP*dt
+NP*np VP*vbd ''
+NP*prp VP*vp
+S*adjp NP*prp VP*md
+
+# id=stanford.fr-en.104
+S*np VP*vbp NP*nn
+PP*in NP*np '' VP*vbz
+S*np VP*vbz NP*nn
+SBAR*whadvp NP*prp VP*vbp
+ADVP*rb NP*np VP*vbd
+NP*prp$ NP*dt
+NP*nn VP*vbz
+NP*np VP*vbd
+S*np NP*prp VP*advp
+S*np CC S*sbar
+NP*ex VP*vbz
+PP*in NP*nn VP*vbz
+S*pp '' NP*prp VP*vbz ''
+NP*prp VP*vbz
+S*np CC S*np
+NP*nn VP*vbz
+S*cc '' NP*prp VP*vbz
+
+# id=stanford.fr-en.105
+NP*nn VP*vbd
+NP*nns VP*vbd
+
+# id=stanford.fr-en.106
+NP*np VP*md ''
+NP*dt VP*vbz
+NP*np VP*md
+NP*dt VP*vbd
+S*np '' NP*prp VP*vbd
+S*np S*np CC S*np
+NP*dt VP*vbd
+NP*np VP*vbz
+SBAR*in NP*dt VP*md ''
+NP*nns VP*md
+ADVP*rb NP*np VP*vbd
+NP*np VP*vp
+NP*dt VP*vbd
+
+# id=stanford.fr-en.107
+S*vp VP*vbn
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+NP*nn VP*vbp
+PP*in NP*prp VP*md
+PP*in NP*dt VP*vbd
+CC NP*np VP*vbd
+NP*np VP*vbz
+
+# id=stanford.fr-en.108
+S*np VP*vbd NP*nnp S*vp
+S*np CC S*advp
+NP*dt ADVP*rb VP*vbz
+NP-TMP*jj NP*nnp VP*vbd
+S*np CC S*np
+NP*prp$ VP*vbz
+PP*in NP-TMP*dt NP*np VP*vbd
+
+# id=stanford.fr-en.109
+S*np VP*vbd NP*np
+NP*prp VP*vbd ''
+PP*in NP*dt VP*vbd
+
+# id=stanford.fr-en.110
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbg
+NP*np VP*vbz
+S*rb S*np
+S*np S*np
+SBAR*in NP*prp VP*vbd
+NP*np VP*vbz
+NP*nnp VP*vbd
+
+# id=stanford.fr-en.111
+ADVP*np NP*prp$ VP*vbd
+S*pp S*np S*np CC S*advp
+NP*ex VP*vbz
+RB NP*nns VP*vbp
+NP-TMP*dt NP*prp VP*vbz
+NP*np VP*vbn
+NP*prp VP*vbz
+NP*prp$ VP*vbd
+ADVP*in NP*wdt VP*vbz
+ADVP*rb NP*prp$ VP*vbd
+NP*prp VP*vbd
+NP*np ADJP*np VP*np S*np
+CC ADVP*rb NP*prp VP*vbz
+IN NP*prp VP*vp
+PP*in NP*dt VP*vp
+NP*np VP*vbz
+NP*prp VP*vbz
+NP*prp VP*vbp ''
+NP*prp ADVP*rb VP*vbd
+NP*prp ADVP*rb VP*vbd
+NP*prp VP*vbd
+ADVP*rb S*np CC S*np
+NP-TMP*cd NP*prp VP*vbd
+S*pp S*sbar
+S*np NP*prp VP*vbd
+CC NP*prp VP*vbd
+NP*prp VP*vbd
+NP*prp VP*vbd
+S*np CC S*advp
+ADVP*rb NP*prp VP*vp
+NP*prp VP*vbp
+S*np CC S*np
+NP*np
+WHNP*wdt SQ*md
+S*np
+NP*prp VP*np
+NP*prp ADVP*rb SBAR*np ADVP*rb NP*ex VP*vbz
+S*np CC S*np
+S*advp CC S*advp
+PP*in S*sbar S*np S*np CC S*np
+NP-TMP*dt NP*prp VP*vbd
+CC PP*in NP*prp VP*vbd
+S*np CC S*np
+ADVP*np NP*prp$ VP*vbd
+ADVP*np NP*prp VP*vbd
+NP*dt VP*vbz
+PP*in NP*prp VP*vbd
+CC NP*prp VP*vbz
+S*vp CC S*adjp
+PP*in NP*prp ADVP*rb VP*vbd
+NP*dt NP*prp VP*vbd
+S*np S*np
+ADVP*rb NP*prp VP*vbp
+NP*prp VP*vbp
+NP*prp$ VP*vbd
+ADJP*jj
+NP*prp VP*vbd
+ADVP*rb NP*nn VP*vbz
+NP*rb ADJP*rb NP*prp VP*vbz
+ADVP*rb PRN*, NP*prp VP*vbz
+S*np-tmp NP*prp VP*vbp
+S*np CC S*np
+CC NP-TMP*dt NP*prp VP*vbp
+NP*np VP*vbd
+S*np NP*nn VP*md
+S*np RB S*np
+PP*in PRN*, NP*prp VP*vbz
+S*np S*np CC S*np
+SBAR*in NP*dt VP*md
+PP*in NP*np VP*vbz
+NP*prp VP*vbd
+S*np NP*prp ADVP*rb VP*vbd
+S*np CC S*pp
+SBAR*in NP*prp ADVP*rb VP*vbp
+NP*prp ADVP*rb VP*vbd
+PP*in PRN*, S*np CC S*np
+NP*prp VP*vbp
+PP*in NP*prp VP*md
+S*np NP*ex VP*vbd
+PP*in NP*prp VP*vbz
+NP*prp VP*vbp
+ADVP*advp SBAR*whnp
+NP*prp VP*vbd
+S*np CC S*np
+S*advp NP*prp VP*vbp
+NP-TMP*dt NP*prp VP*vbd
+S*np CC S*s
+PP*in NP*prp VP*vbp
+S*pp CC S*cc
+S*np S*np S*np
+S*np CC S*np S*np S*np S*s CC S*s
+
+# id=stanford.fr-en.112
+NP*np NP-TMP*nn VP*vbd
+S*np VP*vbd NP*np
+S*sbar '' VP*vbd NP*dt
+NP*np VP*vbd
+PP*vbg NP*nnp VP*vbd
+
+# id=stanford.fr-en.113
+NP*nnp S*np
+S*np S*np
+NP*dt VP*vbz
+NP*nnp VP*vbz
+S*np NP*prp VP*vbp
+CC SBAR*sbar VP*md
+CC WHNP*wp SQ*vp
+NP*prp VP*vbz
+NP*nnp VP*vbd
+PP*in S*np
+NP*prp VP*vbd
+
+# id=stanford.fr-en.114
+S*np NP*dt VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbz
+ADVP*rb NP*prp VP*vbz
+
+# id=stanford.fr-en.115
+NP*nnp VP*vbd
+PP*in NP*dt VP*vbd
+NP*nnp VP*vp ''
+S*np CC S*np ''
+PP*in NP*np VP*vbd ''
+NP*prp VP*vbd ''
+NP*nnp VP*vbd
+NP*np VP*vbd
+
+# id=stanford.fr-en.116
+S*np-tmp CC S*np
+NP*dt PP*in VP*vbz
+NP*np VP*vbd
+NP*np VP*vbd
+NP*prp$ VP*vbd
+PP*vbg NP*dt VP*vbd
+S*np NP*np VP*vbd
+NP*dt VP*vbd
+PP*in NP*np VP*vp
+NP*nnp VP*vbz
+NP*jj VP*vbd
+FRAG*np '' NP*dt VP*vbd
+PP*in NP*dt VP*vbd ''
+NP*nnp VP*vbd
+S*np VP*vbd NP*dt
+PP*in NP*nnp VP*vbd
+S*np '' VP*vbd NP*nnp
+ADVP*rb PRN*, NP*np VP*vbd
+NP*dt VP*vp
+S*pp '' NP*prp VP*vbd
+NP*jj VP*vbp
+S*vp NP*np VP*vbd
+ADVP*rbr NP*np VP*vbd
+S*np CC S*np
+
+# id=stanford.fr-en.117
+S*np NP*nnp VP*vbz
+NP*np VP*md
+NP*np VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbz
+S*s '' VP*vbd NP*np S*vp
+S*np '' NP*prp VP*vbd
+S*np S*np
+
+# id=stanford.fr-en.118
+PP*in PP*in NP*np VP*vbd
+NP*np VP*vbd
+PP*in NP*prp VP*vbd
+
+# id=stanford.fr-en.119
+NP*np PP*in NP*nnp VP*vbz
+PP*in NP-TMP*nn NP*prp VP*vbd
+NP-TMP*jj NP*np VP*vbd
+NP-TMP*dt NP*dt VP*vbp
+PP*in NP*np VP*vbd
+S*np VP*vbz NP*np
+NP*prp NP*prp VP*vbd
+NP*prp VP*vp
+NP*nns VP*vbp
+S*np NP*prp VP*vbz
+NP*prp ADVP*rb VP*vbp
+NP*nnp VP*vbz
+
+# id=stanford.fr-en.120
+S*np VP*vbd NP*nnp S*vp
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbz
+S*np CC S*np
+NP*dt VP*vbd
+NP*np VP*vbd
+NP*np VP*vbz
+NP*dt VP*md
+S*np CC S*sbar
+S*np CC S*np
+PP*in NP*prp VP*md
+
+# id=stanford.fr-en.121
+NP*nnp NP*np
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbz
+
+# id=stanford.fr-en.122
+NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+S*np '' VP*vbd NP*np
+NP*prp ADVP*rb VP*vbd
+S*np '' VP*vbd NP*nnp
+NP*prp VP*vbp
+S*np '' NP*prp VP*vbd
+NP*nnp VP*vbd
+WHNP*wp SQ*vbz
+NP*prp$ VP*vbz
+NP*nnp VP*vbd
+NP*prp VP*md
+NP*prp$ VP*vbz
+S*np NP*prp VP*vbd
+NP*nnp VP*vbd ''
+ADVP*rb NP*dt VP*vbz
+S*np '' NP*prp VP*vbd
+S*np NP*prp VP*md
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+
+# id=stanford.fr-en.123
+S*np VP*vbz NP*np
+NP*nnp VP*vbd
+S*np '' NP*prp VP*vbd
+NP*np VP*md
+NP*np VP*vbn
+NP*dt VP*vbz
+PP*in NP*np VP*vbd
+NP*prp VP*vbd ''
+S*pp '' NP*prp VP*vbz
+NP*nnp ADVP*rb VP*vbd
+NP*np VP*vbd
+NP*np VP*vbz
+NP*np '' NP*prp VP*vbd
+NP*nnp VP*vbz
+NP*prp VP*vbd
+
+# id=stanford.fr-en.124
+S*np CC S*np
+NP*dt VP*vbd
+PP*in NP*nnp ADVP*rb VP*vbd
+NP*prp VP*vbd
+S*np '' VP*vbd S*vp
+S*np-tmp '' VP*vbd NP*np
+NP*np VP*vbg
+S*np NP*nn VP*vbd
+S*vp NP*prp$ VP*vbz
+S*np '' VP*vbd NP*np S*vp
+ADVP*rb NP*nnp VP*vbd
+NP*prp VP*vbd
+NP*np VP*vbd
+PP*in NP*prp VP*vbd
+S*vp NP*np ADVP*rb VP*vbd
+NP*nnp VP*vbd
+CC PP*in NP*prp VP*vbz
+NP*np VP*vbz
+
+# id=stanford.fr-en.125
+NP*nnp VP*vbp
+S*np CC S*np
+S*np-tmp CC S*np
+NP*dt VP*vbd
+SBAR*whadvp VP*vbz ''
+NP*nnp VP*vp
+NP*nnp VP*vbd
+NP*dt VP*advp
+NP-TMP*nn NP*nnp VP*vbz
+NP*prp VP*vbd ''
+S*np '' VP*vbd NP*np
+S*sbar CC S*np
+PP*in SBAR*whadvp NP*np VP*vbz
+NP*np VP*vbz
+NP*nnp VP*vbd
+NP*nnp VP*vbz
+NP*nnp VP*vp
+NP*prp ADVP*rb VP*vbd
+S*np '' VP*vbd NP*np
+NP*prp VP*vbp
+NP*prp VP*vbp
+PP*in NP*prp VP*vbz
+PP*in VP*vbz NP*np
+SBAR*in NP*dt VP*vbz
+NP*nnp ADVP*cc VP*vbp
+NP*np VP*md
+NP*np VP*vbz
+S*np '' VP*vbd NP*np
+PP*in NP*nns VP*vbp
+S*s '' VP*vbd NP*np
+NP*nnp VP*vp
+NP*nns PP*in
+SBAR*in NP*dt ADVP*rb VP*vbp
+NP*nnp VP*vp
+PP*in NP*nnp VP*vbd
+PP*in NP*nns VP*vbp
+
+# id=stanford.fr-en.126
+S*np CC S*np
+PP*in NP*prp VP*vbz
+SBAR*whadvp NP*prp VP*vp
+S*np CC S*np
+NP*np VP*md
+
+# id=stanford.fr-en.127
+NP*np PP*in NP*dt VP*vbp
+PP*in NP*nnp ADVP*rb VP*vbd
+S*np S*np
+ADVP*rb NP*adjp VP*vbz
+CC NP*np VP*vbd
+NP*dt PP*in PP*to
+NP-TMP*nn NP*dt VP*vbp
+NP*dt VP*vp ''
+PP*in '' NP*`` VP*md
+PP*in NP*`` VP*vb
+NP*np VP*vbz
+WHNP*wrb S*vp
+NP*dt VP*vbz
+ADVP*rb NP*ex VP*vbz
+NP*nns VP*vbp
+ADVP*rb NP*prp VP*vbd
+NP*nnp VP*vbz
+NP*dt VP*vbp
+CC NP*np VP*vb
+VP*vb
+PP*in NP*prp VP*vbz
+NP*prp VP*vbp
+PP*in NP*np VP*vbz
+NP*jj VP*vbp
+S*np S*np
+WHADVP*wrb SQ*vp
+PP*in NP*dt VP*vbz
+NP*jj S*vp VP*vbz
+NP*dt VP*vbp
+S*np S*s
+NP*np VP*vbp
+NP*dt VP*vbp
+NP*nn VP*vbz
+NP*dt VP*vbz
+
+# id=stanford.fr-en.128
+S*np NP*nnp VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbd
+NP*nnp VP*vbd
+
+# id=stanford.fr-en.129
+NP*np VP*vbd
+NP*np VP*vbz
+S*vp NP*dt VP*vbz
+S*np '' NP*nnp VP*vbd
+NP*prp VP*vbd
+NP*np VP*md
+NP*dt VP*vbz
+NP*np PP*in VP*vbz
+NP*nnp VP*vp
+S*np '' CC S*np ''
+NP*np VP*vbp
+NP*np VP*md
+S*np CC S*np
+PP*in NP*prp VP*vbd ''
+NP*dt VP*vbz
+S*np '' NP*nnp VP*vbd
+NP*prp VP*vbd
+
+# id=stanford.fr-en.130
+NP*np PP*in NP*np VP*vbd
+NP*nnp VP*vbp
+NP*np VP*vbz
+NP*dt VP*vbz
+S*np NP*nns VP*vbd
+NP*nns VP*vbd
+NP*np PP*in PP*in
+NP*prp VP*vbp
+PP*in NP*nns VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbd
+PP*in NP*dt VP*vbd
+
+# id=stanford.fr-en.131
+NP*nnp VP*vp
+NP*np ADVP*rb VP*vbd
+NP*np VP*vbd
+NP*np NP*np
+NP*np VP*vbz
+NP*np VP*md
+ADVP*rb NP*nnp VP*vbz
+NP*prp VP*vbp
+NP*dt VP*vbd
+NP*np VP*vbd
+PP*in NP*prp VP*vbz
+PP*in NP*prp VP*vbz
+PP*in NP*prp VP*vbz
+PP*in NP*dt VP*vbd
+NP*prp VP*vbz
+NP*qp VP*vbp
+NP*np VP*vbp
+NP*dt VP*vp
+NP*dt VP*vbd
+NP*np VP*vbd ''
+NP*prp VP*vbd ''
+PP*advp NP*dt VP*vbd
+NP*prp VP*vbp
+PP*in NP*dt VP*vbd ''
+NP*prp VP*vbd
+NP*nnp VP*vbz
+S*np '' VP*vbd NP*np
+PP*advp NP*np VP*np
+PP*in NP*np VP*vbd
+S*np NP*prp VP*vbd
+
+# id=stanford.fr-en.132
+NP*np VP*vbd
+NP*np VP*vbd
+CC PP*in NP*dt VP*vbd ''
+S*np S*s
+NP*nnp VP*vbd
+NP*prp ADVP*rb VP*vbd ''
+NP*prp VP*vbd
+NP*np VP*vbd
+PP*advp NP*nnp VP*vbd
+NP*prp VP*vbd
+CC NP*prp VP*vbd
+NP*nnp VP*vbp
+NP*np VP*vbd ''
+NP*dt VP*vbd
+ADVP*rb NP*prp VP*vbd
+S*np CC S*np
+NP*nnp VP*vbz
+NP*prp VP*vbd
+S*np VP*vbd NP*np
+NP*prp VP*vbd
+NP*dt VP*vbd
+
+# id=stanford.fr-en.133
+NP*dt PP*in PP*in
+S*np CC S*np
+SBAR*in VP*vb
+PP*in NP*adjp VP*vp
+S*pp S*np
+SBAR*in NP*prp VP*vbp
+PP*in NP*np VP*vbz
+ADVP*rb PP*in NP*wdt VP*md ''
+NP*ex VP*vbz
+SBAR*whadvp SQ*vbz
+S*pp '' VP*vbd NP*np
+NP*prp VP*vbz
+NP*np VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbp
+ADVP*rb NP*np VP*vbp
+NP*np VP*vbp
+NP*nns VP*vbp
+S*pp '' NP*nnp VP*vbd
+S*np NP*np VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbp
+NP*ex VP*vbp
+NP*prp VP*vbz
+PP*in NP*np VP*vbz
+NP*dt VP*vbz
+
+# id=stanford.fr-en.134
+S*np '' VP*vbd NP*np
+S*cc NP*prp VP*vbd
+PP*in NP*dt VP*md
+NP*dt VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*dt VP*vbz
+
+# id=stanford.fr-en.135
+NP*np VP*vp
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbz
+NP*np VP*vbd
+PP*in NP*nns VP*vbp
+CC NP*np VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbd
+
+# id=stanford.fr-en.136
+NP*adjp NP*np
+PP*in NP*wdt VP*vbz
+NP*dt VP*vbz
+PP*in ADVP*rb VP*vp
+PP*in NP*np VP*vbz
+NP*np VP*vbz
+CC NP*dt VP*md
+NP*np VP*vbp
+NP*np VP*vbz
+VP*vb
+NP*prp VP*vbz
+ADVP*rb NP*dt VP*vbz
+NP*nnp VP*vbz
+NP*ex VP*vp
+CC NP*dt VP*vp
+NP*dt ADJP*adjp
+RB VP*vbz NP*np
+S*np S*np
+CC NP*np
+NP*cd VP*vbz
+NP*dt S*np
+NP*np VP*vb
+NP*np VP*vbn
+S*np NP*dt VP*vbd
+NP*dt PP*in VP*vbz
+S*np NP*np VP*vbp
+PP*in NP*dt VP*vbp
+NP*np VP*vb
+PP*in S*np VP*vbp
+NP*np VP*vbz
+NP*nns VP*vbp
+NP*nn VP*vbp
+NP*np VP*vbz
+CC NP*dt VP*vbz
+NP*dt NP*np
+ADVP*rb S*np S*np S*np S*np SBAR*s
+NP*np VP*vbz
+
+# id=stanford.fr-en.137
+NP*np ADVP*rb VP*vbd
+NP*nnp VP*vbd
+NP*qp VP*vbd
+S*np '' VP*vbd NP*np
+S*np CC S*np
+S*np CC S*np
+S*np NP*nnp VP*vbd
+
+# id=stanford.fr-en.138
+NP*nnp NP*np
+NP*dt VP*vbz ''
+NP*dt VP*vp
+PP*vbg NP*dt VP*vbz
+NP*np VP*vbz
+NP*qp PP*in
+NP*`` VP*vbz ''
+PP*in NP*nnp VP*vbd
+S*s '' NP*nnp VP*vbd
+S*vp WHNP*wp SQ*md
+SBAR*in '' NP*nnp VP*vbd
+S*np '' VP*vbd NP*np
+ADVP*rb NP*prp VP*vbz
+NP*nnp VP*vbd
+SBAR*in NP*dt VP*vbz
+NP*nnp VP*vbd
+NP*nnp VP*vbd
+FRAG*advp '' VP*vbd NP*nnp
+
+# id=stanford.fr-en.139
+NP*nnp NP*np
+PP*in NP*prp VP*vbz
+NP*cd VP*vbp
+NP*np VP*vbd
+PP*in NP*prp VP*vbd
+PP*in NP*dt VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd
+PP*in NP*prp VP*vbz
+NP*np VP*md
+NP*dt VP*md
+NP*nnp VP*vbz
+S*np CC S*advp CC S*np
+ADVP*rb S*np CC S*np
+NP*np VP*vbz
+NP*dt SQ*vbz
+PP*in NP*nnp VP*vbd
+PP*in NP*dt VP*vbz
+NP*nn ADVP*rb VP*vbd
+S*pp S*np
+NP*np VP*vbp
+S*s VP*vbz NP*np
+NP*dt NP*prp VP*vbd
+NP*prp VP*md
+
+# id=stanford.fr-en.140
+NP*dt VP*vbd
+NP*prp VP*vbz
+NP*np VP*vbd ''
+NP*prp VP*vbz
+S*np IN S*np ''
+NP*dt VP*vbd
+
+# id=stanford.fr-en.141
+NP*nnp VP*md
+NP*np VP*vbd
+S*np '' VP*vbd NP*np
+NP*nnp VP*vbz
+S*np '' NP*nnp VP*vbd
+NP*dt VP*vbz
+NP*np VP*md
+PP*in NP*dt VP*vbd
+NP*np ADVP*rb VP*vbd
+NP*nnp VP*vbz
+S*s '' NP*nnp VP*vbd
+ADVP*rb NP*prp VP*vbz
+S*np '' VP*vbd NP*np
+S*np CC S*np
+NP*dt NP*nnp VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbn
+NP*nnp VP*vbd
+NP*prp VP*vbd
+NP-TMP*jj NP*dt ADVP*rb VP*vbd
+NP*nnp NP*prp VP*vbp
+NP*prp VP*vbp
+NP*np VP*vbd
+NP*np VP*vbn
+NP*dt VP*vbd
+ADVP*rb PP*in NP*np VP*vbz
+NP*nnp VP*vbz
+PP*in PRN*, NP*prp VP*vbd
+NP*prp VP*vbz
+
+# id=stanford.fr-en.142
+NP*nnp PRN*, VP*vbd
+S*s '' VP*vbd NP*np
+NP*dt VP*vbz
+NP*nnp VP*vbz
+NP*np VP*vp
+NP*nnp VP*vbd ''
+NP*dt VP*md
+NP*nnp VP*vbd
+NP*dt VP*vbd
+
+# id=stanford.fr-en.143
+S*np NP*np VP*vbp
+S*np VP*vbd NP*np
+NP*dt VP*vbz
+
+# id=stanford.fr-en.144
+NP*nns VP*vbp
+NP*dt VP*md
+NP*np VP*md
+PP*in NP*nns VP*vp
+NP*np VP*md
+NP*ex VP*md
+ADVP*rb NP*np VP*md
+S*vp NP*np VP*vbd ''
+NP*nns VP*vbp
+PP*in S*np CC S*np
+SBAR*in NP*nns VP*advp
+NP*dt VP*md
+
+# id=stanford.fr-en.145
+NP*dt VP*vbz
+NP*np VP*vbd
+S*vp NP*prp VP*vp
+NP*nnp VP*vbd
+NP*np VP*md
+NP*prp VP*vbd
+NP*prp VP*vbp
+SBAR*whadvp NP*np VP*vbp
+S*np S*np
+ADVP*rb CC ADVP*rbr NP*np VP*vbd
+NP*np VP*vbz
+NP*dt VP*vbp
+S*np S*np
+NP*prp ADVP*rb VP*vbz
+NP*prp VP*vbz
+S*np NP*dt VP*vbz
+
+# id=stanford.fr-en.146
+NP*nnp VP*vbz
+NP*np VP*vbd
+NP*prp VP*vbz
+PP*vbg NP*np VP*vbp
+NP*np VP*vbd
+NP*np VP*vbd
+S*np CC S*np
+
+# id=stanford.fr-en.147
+S*np NP*prp VP*vbd
+NP*np VP*vp
+NP*np VP*vp
+NP*prp VP*vp
+PP*in NP*np VP*vp
+NP*np VP*vp
+NP*dt SBAR*s S*np ''
+NP*prp VP*vbd
+S*np S*np
+CC NP*prp VP*vbz
+NP*prp VP*vbd
+NP*prp VP*vbd
+NP*prp VP*vbz
+NP*dt SBAR*s S*np ''
+NP*prp VP*md
+S*np NP*prp$ VP*vbd
+NP*np VP*vbd ''
+NP*prp VP*vbd
+NP*prp VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbd
+SBAR*whnp VP*vbd
+S*np NP*np VP*vbd
+S*np CC S*np ''
+NP*dt VP*vbd
+NP*prp VP*md
+
+# id=stanford.fr-en.148
+NP*nnp VP*vbz
+NP*np VP*vbz
+S*np NP*nnp VP*vbz
+S*np '' VP*vbz NP*dt
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*dt SBAR*whnp NP*dt VP*vbz
+NP*nnp VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbd
+S*np CC S*np
+NP*np VP*vp
+CC NP*dt VP*vbz
+PP*in NP*dt VP*vbd ''
+ADVP*rb PRN*, NP*prp VP*md ''
+S*np '' NP*dt VP*vbp
+NP*dt VP*vbz
+NP*nnp ADVP*rb VP*vbd
+S*s '' VP*vbd NP*np
+NP*np VP*vbd
+
+# id=stanford.fr-en.149
+NP*nnp VP*vbp
+S*np '' VP*vbz NP*nnp
+SBAR*in PRN*, NP*prp VP*vbd
+PP*in NP*dt VP*vbz
+S*np NP*prp VP*vbz
+PP*in NP*np VP*vb
+ADVP*rb VP*vp
+PP*in NP*np VP*vbp
+PP*in NP*nns VP*vbp
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*nnp VP*vbz
+NP*nns ADVP*rb VP*vbp
+PP*in NP*nns VP*vbd
+S*np '' VP*vbd NP*np
+S*np NP*dt VP*vbp
+PP*in NP*np VP*vbp
+S*np CC S*np ''
+PP*in NP*np VP*vbd
+NP*np VP*vbd NP*np
+NP*dt VP*md
+S*sbar CC S*np
+S*np '' NP*prp VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbp
+NP*np VP*vbp
+NP*prp VP*vbp
+S*np '' VP*vbz NP*nnp
+ADVP*rb NP*prp ADVP*rb VP*vbp
+
+# id=stanford.fr-en.150
+NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+NP*nnp VP*vbd
+NP*dt VP*vbd
+PP*in NP*prp VP*vbd
+NP*dt VP*vbd
+PP*in NP*prp VP*vbd
+NP*np VP*vbn
+NP-TMP*nn NP*np VP*vbd
+NP*prp VP*vbd
+NP*np VP*vbd
+NP*cd VP*vp
+PP*rb NP*nnp VP*vbz
+S*np CC S*np
+NP*dt VP*vbd
+NP*nnp VP*vp
+NP*prp VP*vp ''
+S*pp CC S*np
+PP*in NP*prp VP*vbd
+CC NP*dt VP*vbd
+NP*dt VP*vbd ''
+NP*nnp VP*vbz
+S*np CC S*np
+NP*np VP*md
+CC NP*prp VP*vbd
+NP*prp VP*vbd
+NP*nnp VP*vbd
+S*np CC S*np
+S*np S*sbar ''
+CC PP*in NP*np VP*vbd ''
+NP*np VP*vbd
+NP*dt VP*md
+NP*nnp VP*vbz
+NP*np VP*vbd
+NP*dt VP*md
+NP*prp VP*md
+NP*nnp VP*vbd
+NP*np VP*vbd
+PP*in S*np S*np CC S*np
+
+# id=stanford.fr-en.151
+NP*np VP*vbd
+NP*np ADVP*rb VP*vbd
+NP*jj VP*vbd
+S*np '' VP*vbd NP*np
+PP*in NP*nnp VP*vbz
+
+# id=stanford.fr-en.152
+S*np NP*dt VP*vbd
+NP*dt VP*vp
+NP*dt VP*vbz
+ADVP*in NP-TMP*rb NP*nnp VP*vbd
+
+# id=stanford.fr-en.153
+NP*np VP*vbd
+NP*np VP*vbd
+NP*dt VP*vp
+NP*np VP*vbd
+S*np CC S*np
+NP*dt VP*vbd
+S*np CC S*np
+
+# id=stanford.fr-en.154
+NP*np VP*vbd
+PP*in NP*dt VP*vbd
+VP*vbg
+ADVP*rb NP*dt VP*vbd
+S*np VP*vbd NP*nnp
+VP*vp
+PP*in NP*prp VP*vbd
+NP*ex VP*vbz
+NP*nn VP*vbd
+ADVP*rb NP*cd VP*vbp
+PP*in NP*np VP*vb
+S*np VP*vbd NP*dt
+PP*in NP*prp VP*md
+NP*dt VP*md
+S*np NP*dt VP*vbz
+NP*np VP*vbp
+PP*in PRN*-lrb- NP*prp VP*vbd
+S*s IN S*np
+
+# id=stanford.fr-en.155
+S*np NP*prp VP*md
+S*np VP*vbd NP*dt
+NP*dt VP*vbz
+NP*dt VP*to
+NP*np VP*vbd
+NP*nns VP*vbp
+PP*rb NP*nns VP*vbd
+NP*nnp VP*vb
+NP*dt VP*vbd
+NP*rb VP*vp
+NP*dt VP*vbz
+
+# id=stanford.fr-en.156
+NP*np VP*vbp
+NP*np VP*vbd
+NP*prp VP*md
+NP*dt VP*vbd
+NP*prp VP*vbd
+S*np CC S*np
+NP*dt VP*vbz
+PP*in NP*prp VP*vbd
+NP*prp ADVP*rb VP*vbp
+S*np '' VP*vbd NP*dt
+NP*prp VP*vbp
+NP*dt VP*vbd
+NP*nnp VP*vbd
+S*np CC S*np
+NP*nnp VP*vbd
+PP*in NP*dt VP*md
+VP*vbn
+S*vp NP*prp VP*vbz
+NP*nn VP*vbz
+NP*prp VP*vp
+PP*in NP*dt VP*vbd
+S*np '' VP*vbd NP*nnp
+PP*in NP*prp VP*vbd
+NP*dt VP*vbd
+S*np '' VP*vbd NP*nnp
+NP*nn ADVP*rb VP*md
+
+# id=stanford.fr-en.157
+NP*nnp VP*vp
+PP*in NP*dt VP*vbd
+PP*in NP*nnp VP*vbz
+S*sbar CC S*np ''
+
+# id=stanford.fr-en.158
+S*np NP*prp VP*vbd
+NP*np VP*vbz
+CC NP*np VP*vbd
+S*np '' VP*vbd NP*dt
+S*advp VP*vbd NP*np
+
+# id=stanford.fr-en.159
+NP*np PP*vbg NP*np VP*vbd ''
+NP*np
+PP*in NP*dt VP*md
+IN S*np
+PP*in NP*np VP*md
+NP*np VP*vbz
+NP*dt S*vp VP*md
+PP*in VP*vbz
+S*s '' VP*vbz NP*np
+S*pp '' VP*vbz NP*np
+S*cc '' NP*prp VP*vbz
+S*np NP*prp ADVP*rb VP*vbz
+CC NP*prp VP*vbz
+S*np '' VP*vbd NP*np ''
+NP*dt VP*vp
+S*vp NP*prp VP*vbz ''
+S*np '' NP*prp VP*vbd
+PP*in SBAR*in NP*prp VP*md ''
+CC NP*prp VP*vbp
+NP*ex VP*vbz
+NP*dt S*vp VP*vbz
+S*np CC S*np
+PP*in NP*nnp VP*md ''
+WHADVP*wrb SQ*vbp ''
+NP*dt VP*md
+S*np NP*prp VP*vbp
+S*sbar VP*vbz NP*np
+S*np CC S*np
+PP*in NP*np VP*vbz ''
+NP*np VP*vbd
+S*sbar VP*vbd NP*np
+SBAR*rb NP*prp VP*md
+
+# id=stanford.fr-en.160
+NP*prp VP*vbp
+NP*nnp VP*vbz
+NP*dt VP*vp
+NP*dt ADVP*rb VP*vbz
+SBAR*in NP*ex VP*md
+S*np CC S*np
+S*s '' NP*prp VP*vbd
+NP*dt VP*vbz
+PP*in NP*dt VP*vbd
+ADVP*rb PP*in NP*np VP*vbz
+NP*np VP*vbz
+NP*np VP*vbd
+
+# id=stanford.fr-en.161
+NP*nnp VP*vbz
+PP*in NP*dt VP*md
+PP*in NP*dt VP*vbp
+S*`` VP*vbd NP*np
+NP*dt VP*vbd
+NP*np VP*vp
+NP*nnp VP*vbz
+NP*dt VP*vbd
+S*np NP*nnp VP*vbd
+PP*in NP*nnp VP*vbz
+NP*np VP*vbd
+
+# id=stanford.fr-en.162
+NP*nnp VP*vbd
+NP*dt VP*md
+ADVP*rb NP*prp$ VP*vbd
+NP*dt VP*vbd
+PP*in NP*dt VP*vbd ''
+NP*nnp VP*vp ''
+S*np CC S*np
+NP*dt VP*vbp
+NP*prp VP*vbp
+INTJ*vb VP*vb
+
+# id=stanford.fr-en.163
+NP*np VP*vbd
+NP*np VP*vbz
+NP*np VP*vbz
+PP*in NP*prp VP*vbd
+NP*prp ADVP*rb VP*vbp
+
+# id=stanford.fr-en.164
+S*np NP*dt VP*vbd
+S*np NP*nnp VP*md
+NP*ex VP*vbp
+ADVP*rb ADVP*advp NP*prp VP*md ''
+PP*in NP*np VP*vbd
+S*np '' NP*nnp VP*vbd
+NP*np VP*vbd
+S*np NP*prp VP*vbd
+S*np VP*vbd NP*nnp
+PP*in NP*ex VP*vbz
+S*np '' NP*prp VP*vbd
+NP*np VP*vb
+NP*dt VP*md
+ADVP*rbr NP*dt VP*vb
+S*advp '' VP*vbd NP*nnp
+NP*prp VP*vbd
+CC NP*prp VP*vbp
+S*s S*in ''
+
+# id=stanford.fr-en.165
+NP*nns VP*md
+SBAR*whadvp NP*prp VP*vbz
+NP*prp VP*vbp
+NP*nnp NP*prp VP*vbp
+NP*prp VP*vbp
+NP*pdt VP*vbp
+NP*prp ADVP*rb VP*vbp
+S*vp VP*vbz
+
+# id=stanford.fr-en.166
+S*np NP*np VP*vbd
+NP*adjp NP*np
+NP*nnp VP*vbd
+NP*prp VP*vp
+NP*nnp VP*vbd
+NP*prp VP*vbz
+
+# id=stanford.fr-en.167
+NP*nnp VP*vbd
+NP*dt VP*vbd
+S*np '' VP*vbz NP*nnp
+NP*nnp VP*vbd
+NP*np ADVP*rb VP*vbz
+NP*nnp VP*vbp
+CC SBAR*rb NP*dt VP*vbz
+S*s '' NP*prp VP*vbz
+NP*nnp VP*vbd
+
+# id=stanford.fr-en.168
+S*np NP*dt VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbd
+S*np VP*vbd NP*np
+NP*np VP*vbd
+S*np VP*vbd NP*np
+SBAR*whnp NP*prp VP*vbz
+PP*in NP*np VP*vbn
+PP*in NP*np VP*vbd
+
+# id=stanford.fr-en.169
+NP*np VP*vbz
+NP*prp VP*vbz
+NP*np VP*vbd ''
+PP*in NP*np
+NP*prp VP*vbd
+S*advp NP*prp VP*vbd
+CC PP*in NP*prp VP*vbd
+SBAR*in NP*np VP*vbd
+ADVP*rb S*np
+S*np S*ucp
+S*`` CC S*np
+PP*in NP*dt VP*vbz
+PP*in NP*np VP*vbz
+NP*dt NP*dt NP*np NP*np NP*np
+S*np '' VP*vbd NP*np
+NP*prp VP*vbp
+NP*prp VP*vbd ''
+NP*np VP*vbd ''
+NP*prp VP*vbp SBAR*prn
+PP*in NP*prp VP*vbp
+S*np S*advp ''
+PP*in '' NP*prp VP*vbd
+PP*in NP*prp VP*vbd
+PP*in PP*in '' NP*prp VP*vbd
+S*np VP*vbd NP*np
+PP*in NP*prp VP*md ''
+ADVP*np NP*prp VP*vp
+PP*in VP*vbp NP*np
+ADVP*rb VP*vbn VP*vbd NP*np
+S*np CC S*np
+NP*prp VP*vbp
+NP*nnp VP*vbd ''
+NP*prp VP*vp
+RB ADJP*jjr
+
+# id=stanford.fr-en.170
+NP*np VP*vbg
+NP*np VP*vbp
+NP*dt ADVP*rb VP*vbz
+
+# id=stanford.fr-en.171
+S*np S*np
+NP*np VP*vbn
+SBAR*in NP*dt VP*vbz
+CC NP*rb VP*vbn
+
+# id=stanford.fr-en.172
+NP*nnp VP*vbz
+NP*np VP*vbn
+NP*np VP*vbd
+NP*jj NP*np NP*np
+PP*in NP*dt VP*vbz
+S*np '' VP*vbd NP*cd
+S*np '' PRN*s NP*prp$ VP*vbd
+NP*dt VP*vp
+NP*dt ADVP*rb VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbz
+
+# id=stanford.fr-en.173
+NP*nn S*np
+PP*in NP*np VP*vbd
+NP*dt VP*vbz ''
+NP*dt VP*vbz
+CC NP*np VP*vbz
+NP*np NP*nnp VP*vbz
+PP*in NP*prp ADVP*rb VP*vbd
+PP*vbg NP*ex VP*vbz ''
+NP*dt VP*vb
+NP*prp VP*vbz
+PP*in NP*nnp VP*vbd ''
+VP*vbz
+
+# id=stanford.fr-en.174
+PP*np NP*dt VP*vbz
+NP*np VP*vp
+NP*dt VP*vbz
+PP*in NP*np VP*vbz ''
+NP*dt VP*vbz
+S*np '' VP*vbz NP*nn
+CC NP*np
+VP*vb
+NP*prp VP*vbd
+NP*dt PP*in
+NP*np VP*vbd
+PP*vbg NP*dt VP*vbd
+
+# id=stanford.fr-en.175
+S*np NP*nns VP*vbd
+S*s '' VP*vbd NP*nnp
+S*np CC S*``
+NP*prp VP*vbd
+NP*nns VP*vbd
+S*np '' VP*vbd NP*np
+S*np CC S*np
+NP*dt VP*vbz
+S*np '' VP*vbd NP*np ''
+

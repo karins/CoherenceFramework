@@ -1,0 +1,3174 @@
+# id=onlineB.ru-en.0
+NP*nnp VP*vbd
+NP*np VP*md
+PP*rb NP*nns VP*md
+NP*dt VP*vbz
+PP*vbg NP*np VP*vbp
+
+# id=onlineB.ru-en.1
+NP*nn PP*in PP*to PP*in PP*in PP*in PP*in PP*in
+NP*np VP*vbd
+NP*prp VP*md
+NP*jj VP*vbd
+NP*prp VP*vbd
+NP*nns VP*vbd
+NP*dt VP*vbd
+NP-TMP*np NP*prp VP*vbd
+NP*prp ADVP*rb VP*vbp
+S*np SINV*vp
+S*np
+NP*nnp VP*vbd
+NP*nnp VP*vbd
+PP*in NP*np VP*``
+NP*nnp VP*vbd
+ADVP*rb NP*dt VP*vbz
+S*vp ADVP*rb NP*ex VP*vbz
+S*vp S*np
+NP*nn VP*vbz
+NP*prp VP*vp
+S*pp S*np ''
+S*`` SINV*vp
+PP*in NP*prp VP*vbd
+NP*dt VP*vbd
+S*`` SINV*vp
+NP*nn VP*md
+
+# id=onlineB.ru-en.2
+NP*nnp VP*vbz
+S*np VP*vbz
+NP*dt VP*vbd
+S*np-tmp CC S*np
+S*`` SINV*vp
+NP*nn NP*np PP*in
+NP*dt VP*vp
+
+# id=onlineB.ru-en.3
+NP*np VP*vbd
+PP*vbg NP*prp VP*md
+PP*in NP*nnps '' NP*np VP*vbd
+S*s SINV*vp
+NP*prp VP*vbp
+NP*prp VP*vbp
+S*np CC S*pp
+CC PP*in NP*dt VP*vbz
+ADVP*rb NP*prp VP*vbp
+NP*np ADVP*rb VP*vbp
+SBAR*in NP*prp VP*vbp
+DT NN SBAR*whnp
+NP*prp VP*vbp
+S*s S*np
+NP*cd S*s
+CC NP*prp VP*vbd
+NP*prp VP*vbp
+NP*prp VP*md
+
+# id=onlineB.ru-en.4
+S*np S*pp
+NP*np VP*vbz
+NP*nnp PP*in
+S*np CC S*np
+PP*in NP*prp VP*vbp
+ADVP*rb NP*nn VP*vbd
+CC VP*vbp
+S*sbar SINV*vp
+PP*in S*vp VP*vbd
+PP*in NP*dt VP*md
+CC NP*dt VP*vbd
+ADVP*rb NP*nn VP*vbd
+VP*vbn
+NP*prp ADVP*rb VP*vbd
+NP*nnp VP*jj
+S*vp VP*vbp ''
+IN NP*prp$ VP*vbd
+NP*np VP*vbn
+PP*vbg NP*prp VP*vbz
+ADVP*rb VP*vbz NP*prp$
+PP*advp NP*nnp VP*vbd
+PP*in VP*vp NP*jj
+NP*dt VP*vbd
+ADVP*np NP*dt VP*vbd
+ADVP*rb NP*np VP*vbd
+NP*nns VP*vbp
+PP*in NP*dt VP*vbz
+PP*in SBAR*in NP*np VP*vbn
+S*vp FRAG*pp
+S*np S*np
+SBAR*whadvp NP*cd VP*vbd
+ADVP*rb NP*np
+
+# id=onlineB.ru-en.5
+S*vp VP*vbp
+NP*dt VP*vbd
+SBAR*in NP*dt VP*md
+PP*vbg NP*prp VP*md
+PP*in NP*nn VP*vbd
+PP*in NP*jj VP*vbd
+PP*in NP*prp VP*vbd
+PP*vbg PP*in NP*prp VP*md
+NP*dt VP*vp
+NP*nn VP*vbp
+NP*np NP*np
+
+# id=onlineB.ru-en.6
+NP*nnp NP*nnp
+NP*prp VP*vbp
+NP*nnp VP*vbd ''
+NP*prp VP*vbp
+CC NP*prp VP*vbp
+NP*prp VP*vbp
+S*np CC FRAG*rb
+S*vp NP*nns VP*md
+NP*prp ADVP*rb VP*vbp
+SBAR*in NP*prp VP*vbp
+CC NP*prp ADVP*rb VP*vbp
+NP*prp VP*vbp
+NP*dt PRN*, VP*vbp
+NP*np VP*vp
+CC NP*np
+PP*in NP*dt VP*vbz
+CC NP*np
+S*`` SINV*vp
+
+# id=onlineB.ru-en.7
+NP*np VP*vbd
+NP*np VP*vbd
+NP*jj VP*vbd
+NP*nnp VP*vp
+NP*dt VP*vbd
+NP*dt VP*vbd
+PP*in NP*prp VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+NP*jj VP*vbd
+NP-TMP*nn PP*in SBAR*whnp NP*np VP*vbd
+NP*prp VP*vbd
+NP*vbg VP*vbd
+NP*cd VP*vbd
+ADVP*rb VP*pp NP*np
+NP*nnp VP*vbd
+NP*dt VP*vbd
+NP*nnp VP*vp ''
+S*s NP*prp ADVP*rb VP*vbd
+S*vp NP*prp VP*vbd
+ADVP*rb NP*dt VP*vbd
+PP*in NP*nnp VP*vbd ''
+NP*nnp VP*vbz
+S*s S*np
+NP*np VP*md
+ADVP*rb NP*prp VP*vbz
+NP*prp VP*vbd
+NP*nnp VP*rb
+NP*prp VP*vbd
+S*np NP*prp VP*md ''
+CC ADVP*rb NP*np VP*vbd ''
+NP*np VP*vbd
+NP*nns VP*md
+NP*nnp VP*vp
+NP*np VP*vbd
+VP*vb
+NP*prp VP*md
+NP*nnp VP*vbd
+NP*np VP*vbd
+PP*in NP*np VP*vbz
+
+# id=onlineB.ru-en.8
+S*np NP*jj VP*vbd
+NP*dt VP*vbz
+S*np CC S*np
+NP*dt VP*vbz
+NP*np VP*vbz ''
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+NP*nnp ADVP*rb VP*vbp
+ADVP*rb NP*nnp VP*vbz
+NP*prp VP*advp
+S*`` S*vp
+PP*in S*np CC S*np
+PP*in VP*vbz NP*np
+NP*np VP*vbz
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+NP*nnp VP*vp
+PP*vbg NP*nns VP*vbp
+S*np VP*vbd
+NP*prp VP*vbp
+NP*prp VP*vbp
+PP*in NP*nn VP*vbz
+PP*in VP*vbz NP*np
+SBAR*in NP*dt VP*vbz
+PP*in NP*nnp ADVP*cc VP*vbp
+S*np VP*vbp NP*cd
+NP*np VP*vbz
+S*`` SINV*vp
+PP*in NP*nns VP*vbp
+S*`` SINV*vp
+NP*nnp VP*vp
+S*vp VP*vbp
+S*vp NP*dt ADVP*rb VP*vbp
+NP*nnp VP*vp
+PP*in NP*nnp VP*vbd
+PP*in PRN*, NP*np VP*vp
+
+# id=onlineB.ru-en.9
+NP*nnp ADVP*jj NP*np VP*vbd
+PP*in NP*np VP*vbp
+S*np CC S*np
+PP*in VP*vbd
+NP*np NP*np NP*np
+S*np NP*dt VP*vbz ''
+S*np '' VP*vbd NP*nnp
+ADVP*rb NP*prp VP*vbd
+NP*dt VP*md
+PP*rb NP*np VP*vbd
+ADVP*rb NP*np VP*vbp
+NP*np VP*md
+NP*nnp ADVP*rb VP*vbd
+NP*dt VP*vbz
+
+# id=onlineB.ru-en.10
+NP*np VP*vbz
+S*`` SINV*vp
+S*vp NP*prp VP*vp
+S*pp S*np
+NP*nnp VP*vbd
+PP*in NP*prp VP*vbd
+S*np CC S*np
+NP*dt VP*vbp
+NP*np VP*vbz
+NP*nnp VP*vbz
+S*np VP*vbd NP*nnp
+NP*dt VP*vbz
+NP*nnp VP*vbd
+NP*nnp VP*vbd ''
+SBAR*whadvp
+ADVP*rb NP*nns VP*vbd
+NP*prp VP*vbd
+NP*prp$ PRN*: VP*vbd
+NP*np VP*vbp
+S*`` SINV*vp
+S*np CC S*np
+NP*np VP*vbz
+NP*jj VP*vbp
+NP*dt VP*vbp
+NP*np VP*vbd
+NP*nnp VP*vbd
+S*`` SINV*vp
+S*np CC S*np
+S*np S*np
+PP*in NP*nnp VP*vbz
+NP*nnp VP*vbd
+NP*np VP*vbd
+S*s VP*vbz NP*np
+S*`` S*np
+NP*np VP*vbd
+S*`` S*np
+
+# id=onlineB.ru-en.11
+NP*np ADVP*rb VP*vbp
+NP*nnp VP*vbd
+NP*nns VP*md
+NP*jj VP*vp
+NP*np ADVP*rb VP*vp
+S*`` SINV*vp
+NP*dt VP*vbz
+NP*np VP*vp
+S*`` SINV*vp
+NP*nnp VP*vbd
+S*`` S*np
+NP*np VP*vbz
+ADVP*rb S*np CC S*np
+NP*nnp VP*vp
+NP*nns VP*md
+S*pp VP*vbd
+PP*in NP*nn VP*md
+ADVP*rb PP*vbg NP*jjr VP*md
+
+# id=onlineB.ru-en.12
+S*np NP*nn VP*vbp ''
+S*vp NP*np VP*vbp
+NP*np VP*vbn
+S*`` S*np
+S*vp NP*nnp VP*vbd
+S*np NP*jj VP*vbz
+S*`` S*np
+NP*dt VP*vbd
+S*vp VP*vbd
+NP*np VP*vbd
+S*`` S*np
+NP*prp ADVP*rb VP*vbp ''
+NP*jj VP*vbd
+PP*in NP*jj ADVP*rb VP*advp
+
+# id=onlineB.ru-en.13
+NP*nnp S*np
+S*np NP*prp VP*vbp
+S*`` S*vp
+PP*in NP*nnp VP*vbz
+NP*np VP*vbn
+S*np SINV*vp
+S*s VP*vbd
+PP*vbg NP*np VP*vbz
+NP*prp VP*vp
+
+# id=onlineB.ru-en.14
+NP*np VP*vbd
+S*`` S*vp
+VP*vb
+PP*vbg NP*np PRN*: VP*vbd
+NP*nnp VP*vp
+NP*prp VP*vbd
+NP*dt VP*vp
+NP*prp ADVP*rb VP*vbz
+
+# id=onlineB.ru-en.15
+NP*nnp VP*vbz
+VP*vbn
+PP*vbg NP*dt VP*vbz
+ADVP*rb NP*dt VP*vbp
+PP*in
+SBAR*in NP*np VP*vbz
+NP*np ADVP*rb VP*vbd
+NP*np VP*advp
+NP*prp$ VP*vbd
+NP*adjp VP*vbd
+NP*np VP*vbz
+ADVP*np NP*prp VP*vbd
+NP*jj VP*vbd
+PP*rb NP*prp VP*vbd
+VP*vbn
+
+# id=onlineB.ru-en.16
+NP*nnp VP*vbd
+NP*nnp VP*vbd
+S*s S*np
+NP*dt VP*vbz
+NP*prp VP*vbd
+NP*nnp ADVP*rb VP*vbd
+ADVP*rb PRN*, NP*prp ADVP*rb VP*vbz
+WHNP*wp PP*in
+SBAR*in
+NP*prp VP*vbz ''
+NP*np VP*advp ''
+NP*np VP*vbd
+NP*nns ADVP*rb VP*vbd
+S*pp VP*vbd NP*nnp
+PP*in NP*np VP*vbd
+S*vp NP-TMP*dt NP*nnp VP*vbd ''
+NP*nnp VP*vbd
+NP*nnp VP*vbd
+NP*nnp VP*vbp
+NP*nnp VP*vbd
+
+# id=onlineB.ru-en.17
+NP*nnps SBAR*s
+S*sbar CC S*np
+NP*np VP*vbz
+PP*rb PRN*, NP*np VP*vbp
+S*`` SINV*vp
+NP*dt VP*vbd
+NP*nns VP*vp
+PP*vbg NP*nnp VP*vbz ''
+PP*in NP*np VP*vbd ''
+PP*in NP*nnp VP*vp ''
+NP*vbg ADJP*jj
+
+# id=onlineB.ru-en.18
+NP*nns VP*vbd
+NP*jjr VP*vbp
+CC ADVP*rb NP*nns VP*vp
+NP*np VP*vbd ''
+ADVP*rb NP*prp VP*vbd
+S*np CC S*np
+S*vp NP*dt VP*vbd
+NP*prp VP*vp
+ADVP*rb S*advp S*s ''
+SBAR*whadvp NP*prp VP*vbd
+CC SBAR*whadvp S*np CC S*np
+NP*nnp VP*vbd
+PP*in NP*prp VP*vbz
+NP*prp VP*vbz ''
+NP*dt VP*vbp
+NP*np VP*vbd
+NP-TMP*jj NP*np VP*vbd
+CC PP*in NP*prp VP*vbd ''
+NP*prp VP*vbd
+S*np NP*prp VP*vbd
+S*`` S*np
+ADVP*rb PP*vbn ADVP*rb ADVP*rb NP*prp VP*md
+
+# id=onlineB.ru-en.19
+VBZ NP*dt NP*np
+NP*np VP*vbd
+PP*to NP*prp VP*vbd
+NP*nn VP*vbn
+NP*nn VP*md
+NP*prp VP*vbd
+NP*prp VP*vbp
+SBAR*whadvp NP*np VP*vbd
+NP*np VP*vbp
+FRAG*ucp S*np
+NP*np VP*vbz
+NP*dt VP*vbp
+S*pp S*np
+NP*prp ADVP*rb VP*vbz
+NP*np VP*vbp
+S*np NP*prp VP*vbz
+
+# id=onlineB.ru-en.20
+NP*np PP*in NP*dt VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+NP*nnp ADVP*rb VP*vbd
+S*np NP*rb VP*vbd
+NP*np VP*vbd
+S*np NP*dt VP*vbd
+NP*np NP*np
+PP*vbg NP*np VP*vbd
+
+# id=onlineB.ru-en.21
+NP-TMP*dt NP*np VP*vp
+NP*dt VP*vbd
+PP*in NP*np VP*vbd
+S*vp VP*vbn
+S*np NP*prp VP*vbd
+ADVP*rb NP*np VP*vbd
+S*np CC S*np
+
+# id=onlineB.ru-en.22
+S*pp S*np
+NP*nns ADVP*rb VP*vbp
+S*advp CC S*np PP*vbg
+VP*vb
+ADVP*rb NP*nns VP*vbp
+NP*np VP*vbz
+PP*in VP*vbz NP*np
+NP*prp VP*vbz
+NP*prp VP*vbz
+NP*np NP*nn
+S*vp NP*prp VP*vbp ''
+VP*vbz
+NP*nns VP*vbp
+PP*in NP*rb VP*vbd
+PP*in
+S*vp NP*prp VP*vbp
+S*sbar VP*vbz
+VP*vb
+NP*prp VP*vbz
+NP*nn VP*vb
+NP*dt VP*vbz
+CC S*pp VP*vbz
+PP*vbg NP*np VP*vbp NP*np S*vp
+CC NP*dt ADVP*rb VP*vbz
+PP*vbg PP*advp PP*to
+NP*jj PP*to
+NP*np VP*vbz
+NP*nns VP*vbp
+S*np S*np PP*vbg
+CC ADJP*jj NP*prp VP*vbp
+NP*jj ADVP*rb VP*vbp
+NP*fw VP*np
+NP*nnp VP*vbz ''
+NP*prp VP*vbz
+CC NP*dt ADVP*rb VP*vbp
+SBAR*in NP*prp VP*vbz
+S*`` S*np
+NP*pdt VP*vbp
+SBAR*whnp VP*vbz
+S*np VP*vbz
+NP*nnp ADVP*rb VP*vbz
+NP*advp SBAR*s
+S*np CC S*np
+CC VP*vbp
+VP*vb
+NP*prp VP*vbz
+SBAR*in
+S*pp S*np
+
+# id=onlineB.ru-en.23
+NP*nnp VP*vbz
+PP*in NP*prp VP*vp
+S*vp S*np CC ADVP*nn S*vp
+NP*prp$ VP*md
+NP*np VP*vbp
+PP*in PP*in VP*vbd
+NP*np VP*vbn
+SBAR*in NP*np VP*vbz
+PP*in S*vp
+PP*in PRN*, PP*vbg NP*np VP*md
+PP*vbg
+PP*in PP*in NP*np VP*vbz
+PP*in
+S*np NP*prp VP*md
+S*pp VP*vbd NP*np
+NP*np VP*vbp
+PP*in VP*vbd NP*np
+
+# id=onlineB.ru-en.24
+NP*prp VP*md
+PP*vbg NP*dt VP*md
+
+# id=onlineB.ru-en.25
+S*np CC S*np PP*in
+S*np RB S*np
+NP*dt VP*md
+PP*in NP*nnp VP*vp
+NP*nnp VP*vbd
+PP*in NP*prp VP*vp
+S*`` SINV*vp
+SBAR*in NP*prp VP*md
+ADVP*rb NP*np VP*md
+S*np S*np
+S*np CC S*np
+NP*nns ADVP*rb
+NP*dt VP*md
+NP*dt VP*vbz
+PP*vbg NP*np VP*vbz
+PP*in NP*np
+CC SBAR*rb NP*prp VP*md
+PP*advp NP*np VP*vbp
+S*np VP*vbd
+S*np ''
+S*vp NP*nnp VP*vbd
+PP*in NP*np VP*vbd
+S*np CC S*vp
+NP*prp ADVP*rb VP*vbd
+PP*in NP*np VP*vbp
+NP*np VP*vbp
+NP*prp VP*vbp
+ADJP*jjr SBAR*in
+CC SBAR*whadvp NP*prp VP*vbp
+NP*np VP*vbz
+NP-TMP*dt NP*dt VP*vbz
+S*`` SINV*vp
+S*np CC S*np
+NP*np VP*vbz
+NP*jj VP*vbg
+NP*nns VP*md
+PP*in NP*dt VP*vbz
+S*np NP*nns VP*vp
+S*vp CC S*np
+NP*dt CC S*np
+S*np VP*vbd
+PP*in NP*np VP*vbp
+S*np CC S*np
+NP*cd VP*vbd
+S*`` SINV*vp
+PP*in NP*nnp ADVP*rb VP*vbz
+S*np NP*dt VP*md
+S*`` SINV*vp
+NP*prp VP*vbd
+S*pp NP*prp VP*md
+S*np VP*vbd
+PP*in NP*prp VP*md
+NP*np ADVP*rb VP*vbp
+CC PP*in NP*prp$ VP*md
+S*`` SINV*vp
+NP*prp VP*vbz
+PP*in NP*rb VP*vbz
+NP*vbg VP*vbp
+S*np VP*vbd
+CC NP*prp VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vbp
+VP*vp
+
+# id=onlineB.ru-en.26
+SBAR*in NP*np VP*vbz
+NP*dt VP*vbd
+NP*np VP*vbd
+ADVP*rb NP*dt VP*vbd
+ADVP*rb NP*jj VP*vbp
+S*`` SINV*vp
+PP*vbg NP*jj '' VP*vbz ''
+NP*prp ADVP*rb VP*vbd
+PP*in NP*nnp VP*vp
+SBAR*in NP*prp VP*vbz
+PP*in VP*vbd NP*adjp S*vp
+NP*nn VP*vbd
+ADVP*rb NP*np VP*vbd
+ADVP*rb NP*nnp VP*vbz
+PP*vbg PP*jj PP*in
+ADVP*rb NP*np VP*vbd
+S*advp PRN*, SINV*vp
+PP*in NP*prp VP*vbz
+ADVP*advp NP*prp$ VP*md
+
+# id=onlineB.ru-en.27
+NP*nnp VP*vp
+NP*np VP*vbd
+PP*in PP*in NP*nnp ADVP*rb VP*vbd
+S*s S*intj ''
+
+# id=onlineB.ru-en.28
+VP*vb
+NP*dt ADVP*rb VP*vbd
+S*np SINV*vp
+NP*jj VP*vbd
+PP*in NP*prp VP*vbd
+S*np CC S*advp
+NP*prp VP*vbd
+NP-TMP*jj NP*prp VP*vbd
+S*advp CC S*np
+NNP CC NNP
+NP*dt VP*vbz
+ADVP*rb NP*np
+VP*vb
+
+# id=onlineB.ru-en.29
+NP*np NP-TMP*jj VP*vp
+SBAR*in NP*prp VP*md
+S*np NP*dt VP*vbd
+S*vp NP*prp VP*vbd
+NP*nnp VP*vbd
+NP*prp VP*vbz
+NP*nnp VP*vbd
+NP*nnp VP*vbz
+
+# id=onlineB.ru-en.30
+ADVP*rb NP*nnp VP*vbz
+S*vp NP*dt VP*vbz
+CC NP-TMP*jj NP*np VP*vbd
+NP*jj NP*np
+NP*np VP*vbz
+NP*prp VP*md
+FRAG*pp S*np CC FRAG*advp
+ADVP*rb NP*np VP*vbz
+NP*nnp CC S*vp
+
+# id=onlineB.ru-en.31
+NP*nnp VP*md
+PP*vbg NP*np VP*md
+S*vp VP*vbz
+S*`` S*np
+ADVP*rb PP*in NP*np VP*md
+ADVP*rbr NP*dt VP*vbd
+NP*nnp ADJP*jj
+NP*jj VP*vbd
+PP*in S*np
+ADVP*rb PP*in NP*prp VP*vbz
+NP*np VP*md
+NP*np VP*vbd
+S*np PRN*, CC S*np
+PP*in NP*nnp VP*vbd
+NP-TMP*nn NP*dt VP*vbd ''
+PP*in NP*np VP*vbd
+PP*vbg NP*nnp VP*vbd
+S*vp VP*vbd
+NP*np VP*vbd
+
+# id=onlineB.ru-en.32
+NP*adjp VP*vbp
+ADVP*rb NP*prp VP*md
+NP*np VP*vbd ''
+S*np CC S*np
+S*np CC S*np
+S*np S*np
+PP*in NP*nn VP*vbz
+
+# id=onlineB.ru-en.33
+S*np '' VP*vbz NP*dt
+S*np CC S*np
+S*s CC S*pp
+S*`` S*np
+NP*prp VP*vbd
+NP*prp VP*vbd
+NP*np VP*vbd ''
+S*np CC S*np
+RB IN S*s
+CC NP*prp VP*md
+NP*np VP*rb
+
+# id=onlineB.ru-en.34
+NP*nnp VP*vbd
+NP*dt VP*vbz
+NP*np CONJP*cc NP*np
+S*advp SINV*vp
+X*x PP*in
+PP*in NP*prp VP*md
+CC NP*np S*advp ADVP*rbs NP*prp VP*md
+NP-TMP*nn PRN*, NP*np VP*vbd
+NP*nn VP*vbd
+SBAR*in NP*prp VP*md
+RB VP*to
+NP*nn NP*np
+S*vp NP*nns VP*vbp
+NP*nn PP*in
+PP*vbg NP*np VP*vbz
+S*s VP*vbd
+CC NP*dt VP*vbz
+NP*prp VP*vbp
+NP*np VP*vbp
+S*pp SINV*vp
+ADVP*rb NP*np
+NP*np ADVP*rb VP*vbz
+NP*np VP*vbd
+PP*in VP*vbz
+S*np ADVP*rb S*np
+S*sbar VP*vbz NP*nnp
+NP*np VP*vbz
+S*s VP*vbz
+CC S*np CC S*pp
+S*vp VP*vbz
+CC ADVP*rb S*sbar
+NP*np VP*vbz
+NP*`` S*np
+PP*vbg NP*np VP*md
+NN
+PP*in NP*nnp ADVP*rb VP*vbd
+S*np S*s
+S*np SINV*vp
+S*np VP*vbz NP*dt
+S*`` SINV*vp
+S*np CC S*s
+S*s VP*vp
+CC SBAR*sinv NP*prp VP*vbd
+PP*vbg NP*dt VP*vbz
+S*np S*np
+CC SBAR*in NP*prp VP*md
+
+# id=onlineB.ru-en.35
+NP*nnp VP*vbd
+PP*in VP*vbd NP*nnp
+NP*nnp VP*vbd
+S*vp VP*md
+S*np S*vp
+CC PP*in S*np
+CC ADVP*rb NP*prp VP*vbp
+ADVP*rb NP*nnp VP*vbp
+NP*nnp NP-TMP*nn VP*vbd
+
+# id=onlineB.ru-en.36
+NP*nnp S*np
+CC NP*nns VP*md
+S*sbar VP*vbd NP*np
+NP*nns VP*md
+NP*nnp VP*vbd
+NP*nnp VP*vbd
+S*pp VP*vbd
+ADVP*rb NP*nns VP*vbp
+S*np CC S*np
+NP*nns VP*vbp
+S*pp NP*dt VP*vbd
+NP*np VP*vbp
+NP*np VP*vbd
+S*sbar VP*vbd
+NP*prp ADVP*rb VP*vbp
+S*cc NP*dt VP*vbd
+NP*nns VP*md
+ADVP*rb ADVP*rb NP*np VP*vbd
+NP*np VP*vb
+NP*np VP*md
+NP*np VP*vbp
+S*np NP*np VP*vbd
+NP*nn PRN*: VP*vbd
+S*np VP*vbd NP*np
+PP*in NP*np VP*vb
+NP*np VP*vbd
+NP*np VP*vbz
+NP*dt VP*vbp
+NP*np NP*np
+S*np CC S*np
+NP*nns VP*vbp
+NP*np VP*vbp
+S*np VP*vbd NP*nnp
+NP*np VP*vbp
+NP*np VP*vb
+CC NP*dt VP*vbp
+PP*in PP*in VP*vbd
+PP*in NP*np VP*vp
+NP*np PRN*, VP*vbz
+NP*np VP*vbn
+S*np CC S*np
+ADVP*rb NP*dt VP*vbd
+NP*np VP*vbd
+S*`` SINV*vp
+
+# id=onlineB.ru-en.37
+S*np S*np
+NP*nn VP*vbn
+PP*vbg NP*nnp VP*vbz
+PP*vbg NP*np VP*vbz
+NP*nn VP*vp
+ADVP*rb NP*np VP*vbz
+PP*vbg NP*np VP*vbd
+NP*nnp ADVP*rb VP*vbn
+NP*np VP*vbd
+PP*in NP*dt VP*vbz
+IN NP*prp VP*vbd ''
+ADVP*rb NP*nnp VP*vbd ''
+VP*vb
+VP*vbn
+ADVP*rb NP*np VP*vbd
+
+# id=onlineB.ru-en.38
+S*np VP*vbp NP*np
+NP*np VP*vbd
+S*np CC S*np
+S*np VP*md NP*nnp
+NP*dt VP*vbz
+NP*nn ADVP*rb VP*vbz
+NP*nns VP*nn
+PP*in NP*np VP*vbd
+CC S*np CC S*np
+NP*nn NP*jj
+NP*jj VP*vbd
+S*vp NP*nns VP*md
+CC NP*np VP*vbz
+NP*nnp VP*vbd
+CC ADVP*rbr NP*prp VP*md
+S*`` S*np
+NP*jj VP*vp
+
+# id=onlineB.ru-en.39
+NP*jj
+NP*wp VP*md
+
+# id=onlineB.ru-en.40
+S*np NP*prp VP*vbp
+NP*nnp VP*vbz
+NP*dt VP*vbz
+NP*nnp VP*vbd
+NP*nnp VP*vbd
+S*`` S*np
+NP*nns VP*vbd
+NP*np VP*vbn
+NP*nns NP*np
+NP*nnp VP*vbd
+NP*np VP*vbz
+NP*np VP*md
+NP*dt VP*vbz
+NP*nnp VP*vbd
+NP*np VP*md
+S*np CC S*np
+NP*prp VP*vbp
+NP*np VP*vb
+CC NP*np VP*vbp
+S*np CC S*np
+S*np VP*vbd NP*np
+PP*vbg NP*np VP*vbz
+S*np CC S*np
+S*`` S*np
+NP*prp VP*vbd
+S*np PRN*, CC S*np ''
+NP*nnp ADVP*rb VP*vbz
+NP*nnp VP*vbd
+NP*prp VP*md
+S*np CC S*np
+NP*np S*np
+NP*nns VP*vbp
+NP*dt VP*vbd
+ADVP*rb NP*nnp VP*vbz
+PP*in NP*prp VP*vbd
+PP*in NP*prp VP*vbd
+ADVP*rb NP*np VP*md
+PP*in NP*nns VP*md
+S*advp CC S*np
+S*np CC S*np
+NP*nnp VP*vbz
+
+# id=onlineB.ru-en.41
+NP*nnp VP*vbd
+NP-TMP*nn NP*nnp VP*vbz
+S*np CC RB S*vp
+NP*np VP*vb
+NP*nnp VP*vbd
+NP*np VP*vbd
+CC NP*prp VP*vbz
+CC PP*rb S*cc
+NP*nnp VP*vb
+CC NP*np
+NP*np VP*vbd
+NP*adjp SQ*vbz
+SBAR*in VP*vbz
+ADVP*rb NP*nnp VP*vbd
+NP*prp VP*vbp
+NP*dt VP*vbz
+NP*prp VP*vp
+CC NP*nnp VP*vbz
+CC VP*vbz
+NP*prp$ VP*vbp
+NP*prp$ VP*vbd
+S*np NP*jj VP*vbp
+NP*dt VP*vbp
+NP*jj VP*vbp
+S*np PRN*, CC S*np
+NP-TMP*nn PP*in NP*np VP*vbd
+SBAR*whadvp S*np
+NP*nnp VP*vbz
+CC VP*vb
+
+# id=onlineB.ru-en.42
+NP*np VP*vbd
+PP*vbg NP*wdt VP*vbd
+PP*in NP*prp VP*vbd ''
+NP*nnp VP*vp
+NP*prp VP*vbd
+
+# id=onlineB.ru-en.43
+NP*np VP*md
+NP*nns VP*md
+NP*dt VP*vbz
+NP*np VP*vbd
+S*np S*np ''
+NP*prp VP*md
+NP*np VP*vbz NP*cc
+NP*prp VP*vbp
+NP*nnp VP*vbd
+S*np CC S*np
+NP*np VP*vbd ''
+NP*nnp VP*vbp
+S*`` S*np
+NP*prp VP*md
+NP*dt PP*in
+NP*nn VP*md
+NP*prp VP*vbz
+NP*nnp VP*vp
+NP*dt ADVP*rb VP*vbz
+NP*np ADVP*rb VP*vbp
+NP*nnp VP*vbp
+PP*in S*vp VP*vbd
+PP*vbg NP*wdt VP*vbz
+PP*in NP*nnp VP*advp
+PP*in NP*np VP*vbd
+NP*jj ADVP*rb VP*vbd ''
+NP*np ADVP*rb VP*vbd
+S*`` S*np
+NP*nns VP*vbp
+NP*np VP*vbn
+CC S*advp CC S*advp
+CC S*np CC S*np
+S*`` SINV*vp
+S*sbar S*np
+NP*np VP*vbd
+NP*prp VP*vp
+CC PP*in NP*prp$ VP*vbp
+NP*prp VP*vp
+S*`` SINV*vp
+SBAR*whadvp NP*prp ADVP*rb VP*vbd
+CC PP*in NP*prp VP*vbd
+NP*nnp VP*vbd ''
+CC PP*in PP*in VP*vbd ''
+NP*jj VP*vbd
+NP*dt VP*vp
+ADVP*rb S*pp CC S*np
+NP*prp VP*vbd
+S*`` S*np
+S*np CC S*np
+PP*in NP*prp VP*vbd
+CC S*vp NP*prp VP*vbd
+SBAR*whnp VP*vbd
+S*np CC S*np
+NP*nnp VP*vbd
+PP*in NP*prp ADVP*rb VP*vbd
+NP*nn VP*vbd
+NP-TMP*nn NP*prp VP*vbz
+CC NP*np VP*vbn ''
+S*`` S*np
+NP*prp VP*vbp
+NP*prp VP*vbp
+CC S*s VP*vbz
+NP*nnp VP*vbd ''
+S*`` S*np
+NP*jj VP*vbz
+NP*dt SBAR*whpp
+SBAR*whadvp NP*prp VP*md
+CC NP*np VP*vbd
+S*np CC S*np ''
+SBAR*in NP*nnp VP*vbd
+NP*prp VP*vbz
+ADVP*rb PP*in VP*vp
+PP*in NP*prp VP*vbz
+S*`` SINV*vp
+NP*prp VP*vbz
+PP*in NP*prp VP*vbp
+S*np CC S*np
+NP*prp VP*vbp
+S*`` S*np
+ADVP*rb S*np CC S*np CC S*np
+NP*prp VP*vbz
+
+# id=onlineB.ru-en.44
+S*np ADVP*rb S*np
+S*np CC SQ*vbd
+FRAG*intj NP*prp VP*vbz
+S*np CC S*np
+
+# id=onlineB.ru-en.45
+NP*np VP*vbp
+CC NP*dt VP*vbd
+RB SBAR*rb NP*np VP*vbd
+NP*np VP*vbz
+S*vp NP*prp VP*vp
+NP*nnps VP*vbd
+NP*dt VP*vbz
+S*np CC S*pp
+NP*prp$ PRN*, NP*nn VP*vbp ''
+S*np CC S*np
+S*np CC S*np
+NP*np VP*vbd
+NP*np VP*vbg
+NP*nnp VP*vbd ''
+NP*prp VP*vbd
+NP*np S*s
+S*vp S*advp CC S*np
+S*np CC S*np ''
+ADVP*rb NP*prp VP*vbp
+S*np NP*prp VP*vbd
+S*np S*np
+S*np NP*prp VP*vbd
+
+# id=onlineB.ru-en.46
+PP*in VP*vbd NP*nn
+PP*in NP*nnp VP*vbd
+PP*in PP*vbg VP*vbd
+ADVP*rb NP*np VP*vbd
+PP*vbg NP*dt VP*vbd
+NP*np VP*vp
+S*np NP*cd VP*vbd
+
+# id=onlineB.ru-en.47
+S*np S*np CC S*np
+NP*np VP*vbd
+PP*in NP*dt VP*vbd
+NP*nnp VP*vbd
+PP*in NP*np VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd ''
+NP*prp VP*vbd
+PP*in NP*nnp VP*vbd
+NP*np VP*md
+NP*np VP*vbd
+NP*jj '' VP*vbz NP*np
+PP*in NP*np VP*vbd
+NP*np VP*vp
+S*np CC RB S*np
+S*np VP*vbz NP*dt
+
+# id=onlineB.ru-en.48
+NP*nnp VP*vbd
+NP*prp VP*vbd ''
+NP*prp VP*md
+ADVP*rb PP*in NP*np VP*md
+CC NP*prp VP*md
+S*`` SINV*vp
+SBAR*in NP*prp VP*vbz
+CC ADVP*rb NP*ex VP*vbz
+ADVP*rb NP*np VP*vbd
+
+# id=onlineB.ru-en.49
+NP*np VP*vbz
+NP*nnp VP*vbd
+NP*np VP*vbd
+S*`` SINV*vp
+NP*np VP*vbz
+NP*np VP*md
+NP*ex VP*vbz
+S*`` SINV*vp
+NP*dt VP*vbd
+NP*nnp VP*md
+VP*md
+NP*nnp VP*vbd ''
+ADVP*rb NP*prp VP*vbd
+S*`` SINV*vp
+PP*vbg NP*dt ADVP*rb VP*vbp
+CC NP*np VP*vbz ''
+S*`` S*np
+SBAR*whadvp NP*prp VP*md
+NP*nnp VP*vbd
+
+# id=onlineB.ru-en.50
+NP*np VP*vbp
+S*np VP*vbd NP*np
+NP*prp VP*vbp
+NP*prp VP*vbd
+NP*prp VP*vbz
+NP-TMP*np S*np CC S*np
+S*np CC S*np
+S*np CC S*np
+S*pp CC S*np
+PP*in NP*prp$ VP*vbd
+RB VP*advp
+ADVP*rb PP*in VP*vbz
+S*adjp S*np
+PP*in SBAR*in NP*dt ADVP*rb VP*vbd
+NP*prp VP*vbd
+S*np NP*np VP*vp
+ADVP*rb NP*prp VP*vbp
+CC PP*in NP*prp VP*vbd
+NP*prp VP*vbd
+NP*jj VP*md
+NP*prp VP*md
+NP*prp VP*md
+NP*prp VP*md ''
+CC ADVP*rb NP*prp VP*md
+NP*prp VP*vbp
+MD NP*prp VP*vbd
+ADVP*rb NP*np VP*vbz
+ADVP*rb NP*np VP*vbz
+CC NP*dt VP*vbz
+ADVP*rb NP*prp VP*vp
+S*np NP*prp VP*vbd
+NP*prp VP*vbd
+ADVP*rb SBAR*whadvp ADVP*rb VP*vbz
+NP*prp VP*vbz
+NP-TMP*dt NP*prp VP*vbp
+PP*in NP*prp VP*vbd
+S*`` S*np
+S*np
+S*np CC S*np
+S*vp VP*vbp
+
+# id=onlineB.ru-en.51
+PP*in PRN*, S*np CC S*np
+NP*nnps VP*vbd
+PP*in NP*nnp ADVP*rb VP*vbd
+NP*prp VP*vbd
+S*`` S*vp
+S*np-tmp VP*vbd
+S*np CC S*,
+SBAR*in NP*prp$ VP*vbz
+S*np-tmp VP*vbd
+NP*nn ADVP*rb VP*vbd
+NP*prp VP*vbd ''
+VP*vbn
+NP*prp$ VP*vbd
+S*vp NP*np VP*vbd
+NP*nnp VP*vbd
+CC PP*in SBAR*rb S*np CC S*np
+NP*np VP*vbd
+
+# id=onlineB.ru-en.52
+S*np VP*md NP*np
+ADVP*in NP*dt VP*md
+NP*np VP*md
+PP*in NP*nns VP*md
+NP*np VP*md
+NP*prp VP*md
+NP*np S*np PP*in
+S*vp NP*nnp VP*vbd ''
+NP*nns VP*vbp
+PP*in S*s
+SBAR*in NP*nn VP*vbd
+NP*dt VP*md
+
+# id=onlineB.ru-en.53
+NP*nn NP*np
+PP*in NP*nn VP*vbd
+PP*in VP*vbd NP*np
+NP*nnp VP*vp
+S*advp S*np
+NP*nnp VP*vbd
+NP*np VP*vp
+NP*nn VP*vbd
+S*`` S*np
+S*np S*sbar ''
+NP*nnp VP*vbd ''
+PP*in S*pp S*pp ''
+NP*np ADVP*rb VP*vbd
+S*np VP*vbd NP*nnp
+PP*in NP*prp VP*vbd
+S*cc S*np
+ADVP*rb NP*dt VP*md
+PP*in PRN*, S*sbar S*np
+CC NP*np VP*vbd
+ADJP*nnp
+S*np S*np CC S*np
+NP*np PP*vbg NP*prp VP*md
+S*advp S*`` S*np
+NP*`` NP*np
+S*np S*np S*np ''
+NP*nn ADVP*rb VP*vbz
+NP*np VP*md
+VP*advp
+NP*prp VP*advp
+S*s S*pp
+NP*nn VP*md
+
+# id=onlineB.ru-en.54
+S*np NP*dt VP*vbd
+PP*vbg NP*prp$ VP*vbd
+S*np CC S*np
+NP*np ADVP*rb VP*vbd ''
+CC SBAR*in NP*jj VP*vbp
+NP*np PP*vbg NP*nns VP*vbd
+NP*dt VP*vbd
+SBAR*in PP*in VP*vbp
+NP*nnp VP*vbd
+NP*prp VP*vbp
+S*`` SINV*vp
+NP*jj VP*vbp
+S*np ADVP*rb S*np
+NP*nns VP*vbd
+NP*nns VP*vbp
+NP*np VP*vbz
+S*s SINV*vp
+SBAR*in VP*md
+NP*dt VP*vbn
+NP*dt VP*in
+ADVP*rb NP*np PRN*s VP*vbd
+NP*jj VP*vbz
+S*pp VP*vbn
+NP*np VP*vbd ''
+S*np S*s
+SBAR*whnp VP*vbz
+NP*prp ADVP*rb VP*vbd
+S*`` SINV*vp
+S*np CC S*np
+NP*jj ADVP*rb VP*vbp
+S*np S*np
+NP*nnp PRN*, VP*vbd
+NP*np VP*vbz
+NP*jj VP*vbp
+ADVP*rb NP*ex VP*vbp
+PP*in NP*np VP*vbp
+S*np VP*vbz
+NP*nnp VP*vbz
+VP*vbn VP*vbd NP*np PP*vbg
+NP*np VP*vbd ''
+NP*np ADVP*rb VP*vbd ''
+
+# id=onlineB.ru-en.55
+NP*nnp VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+PP*vbg NP*dt VP*vbd
+NP*np VP*vbd
+NP*nns VP*vp
+NP*prp VP*vbd
+
+# id=onlineB.ru-en.56
+NP*nnp VP*vbz
+NP*np VP*vbz
+NP*np VP*vbd
+NP*prp VP*vbz
+PP*in NP*dt VP*vbd
+NP*nns VP*vp
+PP*in VP*vbz
+NP*np ADVP*rb VP*vbd
+CC NP*prp VP*vbd
+PP*in NP*vbg VP*vbd
+S*vp ''
+VP*vbd
+FRAG*intj '' VP*vbd NP*nnp
+S*np CC S*np
+ADJP*adjp
+
+# id=onlineB.ru-en.57
+NP*nnp VP*vbz
+NP*jj VP*vbp
+NP*prp VP*vbd
+NP*nnp VP*vbd ''
+S*`` S*np
+S*np NP*prp VP*md
+NP*prp VP*md
+
+# id=onlineB.ru-en.58
+PP*in NP*np
+PP*vbg NP*np VP*md
+NP*np VP*md
+CC SBAR*whadvp NP*prp VP*md
+NP*pdt VP*vbn
+NP*np VP*vbd
+NP*nn VP*vbd
+NP*dt VP*vbd
+PP*in
+VP*vb
+PP*in NP*dt VP*vbz
+NP*np VP*vbd ''
+NP*nns VP*vbd
+PP*in VP*vbd NP*np
+NP*nnp VP*vbd
+NP*nns VP*vbn
+PP*in NP-TMP*jj NP*dt VP*vbd
+CC NP*np VP*vbz
+S*vp CC PP*in
+NP*np VP*vbd ''
+S*np S*np
+NP*jj VP*vbn
+PP*in VP*vbz NP*np
+INTJ*rb ADVP*rb NP*dt VP*vbd
+ADVP*rb NP*np
+S*np CC S*np
+ADVP*rb CC ADVP*rbs NP*np VP*md
+PP*in NP*dt VP*vbz
+NP*np NP*np
+PP*in PP*vbg NP*dt VP*vbz
+FRAG*pp FRAG*np
+ADVP*rb PP*in NP*prp VP*md
+
+# id=onlineB.ru-en.59
+NP*np VP*vbd
+NP*dt VP*vbz
+ADVP*rb NP*np VP*vbp
+NP*np VP*vbd
+NP*nnp VP*vbz
+NP*prp ADVP*rb VP*vbz
+NP*nnp VP*vbp
+NP*nnp ADVP*rb VP*vbz
+NP*nns VP*md ''
+
+# id=onlineB.ru-en.60
+WHNP*whnp SQ*vbd ''
+VP*vp
+S*`` SINV*vp
+S*np CC S*np
+S*`` S*np
+S*pp CC S*np ''
+NP*np VP*vbz
+NP*jj VP*vbd
+NP*np VP*vbd
+PP*in NP*nns VP*md
+NP*dt ADVP*rb VP*vbz
+VBG PP*to
+NP*prp ADVP*rb VP*vbd
+NP*nns VP*vbp
+S*`` SINV*vp
+S*`` S*np
+NP*jj VP*vbp
+PP*in NP*prp VP*vbd
+
+# id=onlineB.ru-en.61
+NP*nns VP*vbp
+ADVP*rb NP*nns VP*vbd
+
+# id=onlineB.ru-en.62
+PP*in NP*nnp VP*vbd
+ADVP*rb PP*in NP*np VP*vbd
+S*pp S*advp ''
+S*vp CC S*np
+PP*to NP*dt VP*vbd
+SBAR*in VP*md
+PP*in NP*prp VP*vbp
+PP*in NP*prp VP*md
+ADVP*rb VP*vbz NP*nnp SBAR*in
+PP*in VP*vbz SBAR*whnp
+SBAR*whadvp VP*vbd
+S*np S*advp
+WHNP*wp SQ*vbz
+S*pp SINV*vp
+PP*in S*np NP*prp VP*vbz
+VP*vb
+ADVP*rb NP*ex VP*vbz
+S*advp NP*dt VP*vbz
+PP*in PP*in NP*dt VP*vbd ''
+WHNP*wp SQ*vbd
+ADVP*rb PP*in NP*prp VP*vp
+CC NP*np VP*vbd
+S*vp VP*vbd ''
+S*vp S*np ''
+NP*np VP*vbd
+
+# id=onlineB.ru-en.63
+NP*np RB VP*vb
+PP*vbg NP*dt VP*vbd
+ADVP*rb VP*vbp
+S*np CC S*adjp
+
+# id=onlineB.ru-en.64
+NP*dt VP*vbd
+NP*dt VP*vbz ''
+NP*jj VP*vbd
+NP*dt VP*md
+SBAR*whadvp NP*dt VP*md
+PP*in NP*dt VP*vbd
+NP*dt VP*md
+NP*nnp VP*vbd ''
+NP*prp VP*vbp
+PP*in NP*prp VP*vbp
+CC NP*prp VP*vbz
+NP*nnp VP*vp ''
+NP*np VP*vbn
+NP*nnp VP*vbd ''
+ADVP*rb NP*prp VP*vp
+NP*prp VP*vbp
+
+# id=onlineB.ru-en.65
+NP*np VP*vb
+S*pp NP*nns VP*vbd
+NP*dt VP*md
+PP*vbg NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbp
+SBAR*whadvp NP*dt VP*vbd
+ADVP*rb NP*np VP*vbp
+NP*np VP*vbp
+NP*nnp VP*vbp
+
+# id=onlineB.ru-en.66
+PP*jj NP*np VP*vbp
+NP-TMP*nn NP*nnp VP*vbd
+NP*dt VP*vbz
+NP*jj VP*vbp
+PP*in NP*np VP*vbd
+NP*np VP*vbz
+NP*nns VP*vbp
+NP*np VP*vp
+NP*np VP*vb
+NP*nnps VP*vbp
+NP*np S*np
+ADVP*rb NP*nns VP*vbp
+PP*in VP*vbz
+PP*in S*vp NP*prp VP*vbp
+NP*nn VP*vbz
+NP*nnp NP*np
+NP*np VP*vp
+NP*dt VP*vbp
+S*vp NP*prp VP*vbd
+NP*np VP*vbd
+S*pp CC S*np
+NP*np NP*np NP*np
+NP*dt NP*dt
+CC NP*dt
+PP*in NP*ex VP*vbz
+S*ucp S*s
+NP*nn FRAG*vp
+ADVP*rb SBAR*in
+WHADJP*wrb SQ*vbp
+S*vp
+NP*ex VP*vbp
+WHNP*wdt PP*np
+NP*prp VP*vbp
+VP*vb
+SBAR*rb NP*np VP*vbd
+S*np SINV*vp
+ADVP*rb NP*nns VP*vbd
+ADVP*rb PP*in VP*md
+PP*vbg NP*np VP*md
+PP*in
+NP*nns '' VP*md
+
+# id=onlineB.ru-en.67
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+NP*np VP*vbd
+NP*np VP*vbz
+CC SBAR*in NP*nnp VP*vbz
+PP*in NP*np VP*vbp
+PP*in NP*nnp VP*vbz
+PP*in PP*vbg NP*nns VP*vbd
+PP*in NP*nnp VP*vbz
+PP*in VP*vbd NP*np
+SBAR*in NP*np VP*vbd
+
+# id=onlineB.ru-en.68
+SBAR*whadvp NP*wdt VP*vbd
+CC NP*prp VP*vbd
+NP*np
+PP*advp VP*vbd NP*np
+ADVP*rb PP*in VP*vbd NP*np
+NP*dt ADVP*rb VP*vbd
+
+# id=onlineB.ru-en.69
+NP*nnp VP*vbz
+PP*vbg NP*np VP*vbp
+PP*in VP*vbz NP*np
+SBAR*in VP*vbp
+PP*in PP*vbg NP*np VP*vbz
+PP*in NP*prp VP*vbz
+PP*in NP*nn VP*vbz
+S*vp NP*dt VP*vbp
+NP*prp VP*vbp
+PP*in PP*vbg NP*np ADVP*rb NP*dt VP*vbz
+PP*vbg NP*prp VP*vbz
+NP*dt VP*vbz
+
+# id=onlineB.ru-en.70
+PP*in NP-TMP*nn NP*np VP*md
+SBAR*in NP*nns VP*vbp
+X*sym NP*np
+S*frag VP*vbp NP*np
+PP*in VP*vbz NP*np
+PP*in NP*prp VP*vbd
+S*`` SINV*vp
+NP*nnp NP*np
+SBAR*in NP*prp VP*vbd
+NP*nnp VP*md
+S*np CC S*pp
+NP*nnp VP*vbz
+NP*nnp NP*np
+PP*vbg NP*dt VP*vbd
+PP*in NP*nn VP*vbd
+CC PP*in NP*nn VP*md
+NP*prp VP*vp
+S*np RB S*np
+PP*vbg S*np
+S*`` SINV*vp
+NP*prp VP*vp
+PP*vbg NP*prp VP*vbd
+NP*nnp NP*prp VP*vbz
+NP*np NP*np
+NP*prp$ VP*vbp
+PP*in NP*nnp VP*vbd
+CC NP*nnp VP*md
+S*np CC S*np
+NP*np VP*vbz ''
+S*np S*s
+NP*np VP*vbd
+NP*prp$ NP*prp VP*vbd
+NP*np VP*vbd
+VP*vbn
+NP*nn VP*vbd
+NP*dt VP*vbz
+SBAR*in VP*md
+
+# id=onlineB.ru-en.71
+NP*nnp VP*vbz
+NP*nn VP*vbz
+NP*np VP*vbn
+NP*nnp VP*md
+CC NP*nnp VP*vp
+S*`` SINV*vp
+PP*np NP*nnp ADVP*rb VP*vbd
+NP*nnp VP*vbd
+NP*np NP*np
+MD NP*np VP*vb
+S*`` S*np
+WHADVP*wrb SQ*vbz
+NP*nnp ADVP*rb VP*vbd
+NP*dt VP*vbz
+S*vp VP*vbz
+NP*dt VP*vp
+S*np CC S*np
+NP*dt VP*vbz
+S*`` S*np
+
+# id=onlineB.ru-en.72
+PP*in NP*np VP*vbd
+NP*nnp NP*np NP*np
+NP*nnp VP*vbz
+NP*nnp VP*vbd
+NP*dt VP*vbp
+NP*np VP*vp
+NP*nnp VP*vbd
+S*pp VP*vbd NP*nnp
+S*pp VP*vbd
+NP*nnp VP*vbz
+
+# id=onlineB.ru-en.73
+S*np VP*vbd NP*np
+NP*nns VP*vbd
+PP*in NP*np VP*vbd
+NP*np ADVP*rb PP*in NP*prp VP*vbd
+NP*dt VP*vbp
+
+# id=onlineB.ru-en.74
+NP*np VP*vbd
+PP*in VP*vbd NP*np
+NP*nnp VP*vbd ''
+NP*prp VP*vbz
+S*np IN S*np ''
+NP*nn VP*vbd
+
+# id=onlineB.ru-en.75
+S*np NP*np VP*md
+NP*jjs VP*vbp
+NP*dt VP*vbz
+ADVP*rb NP*np VP*md
+
+# id=onlineB.ru-en.76
+PP*in NP*np VP*vbd
+SBAR*in VP*vbd
+CC ADJP*adjp VP*vbz
+NP*np VP*vbd
+PP*vbg NP*prp VP*vbd
+NP*np VP*vbd
+PP*in NP*np VP*vbp
+ADVP*rb PP*vbg NP*prp VP*vbz
+NP*prp VP*vbp
+ADVP*rb S*np S*np
+PP*in
+S*np CC S*sbar
+NP*np VP*vb
+PP*in NP*dt VP*vbz
+ADVP*rb NP*dt VP*vbd
+PP*in
+VBG NP*np
+NP*np VP*vbn
+
+# id=onlineB.ru-en.77
+NP*nnp S*np
+NP*prp VP*vbd
+NP*prp ADVP*rb VP*vbz
+S*np CC S*pp
+S*np NP*jj VP*vbd
+
+# id=onlineB.ru-en.78
+NP*nac VP*vbd
+NP*dt VP*vbd
+S*np NP*prp VP*vbp
+RB NP-TMP*nn
+RB NP-TMP*dt
+NP*prp VP*vbp
+NP*nn VP*md
+NP*prp VP*vp
+
+# id=onlineB.ru-en.79
+NP*np ADVP*rb VP*vbd
+NP*nn NP*cd
+CC NP*dt VP*vbz
+PP*in NP*prp VP*vbd
+PP*in NP*np
+NP*dt VP*vbz
+ADVP*rb NP*prp VP*vbz
+NP*nnp VP*vbn
+PP*in VP*vbz NP*dt
+NP*nn NP*np
+S*pp NP*np
+S*pp CC S*vp
+CC NP*in VP*advp
+NP*dt VP*vbd
+NP*np VP*vp
+S*np S*np
+NP*prp ADVP*rb VP*vbd
+PP*vbg
+NP*np NP*np NP*np
+S*vp NP*np VP*vbp
+S*np S*np
+NP*nnp VP*vbz
+
+# id=onlineB.ru-en.80
+NP*nnp PP*in
+NP*prp$ VP*vbz
+PP*in NP*prp VP*vbd
+NP*np VP*vbd
+NP*nnp VP*vbz
+PP*in NP*prp VP*vbd ''
+NP*jj NP*advp
+NP*prp VP*vbz
+NP*np ADJP*jj VP*vbg PP*in
+PP*in S*vp VP*vbd
+S*np CC S*np
+
+# id=onlineB.ru-en.81
+NP*np VP*vbd
+NP*np VP*vbd
+SBAR*whadvp NP*prp VP*vbd
+PP*in NP*nnp VP*vbd
+S*vp NP*nn VP*vbd
+NP*nnp ADVP*rb VP*vbd
+
+# id=onlineB.ru-en.82
+PP*in VP*vbd NP*np
+PP*in NP*np VP*md
+PP*in NP*nnp VP*md
+NP*dt VP*md
+NP*np VP*md
+ADVP*rb PP*in NP*dt VP*md
+NP*np VP*vbn
+ADVP*rb PP*in PP*in VP*md
+IN NP*np
+
+# id=onlineB.ru-en.83
+S*np CC RB S*np
+S*`` S*vp
+NP*nnp VP*md
+NP*np VP*vbp
+NP-TMP*jjr S*np CC S*np
+ADVP*rbr NP*dt VP*vbd
+NP*dt VP*vbz
+NP*np VP*vbd
+S*np CC S*np
+NP*np VP*vbp
+ADVP*rb NP*np VP*vbd
+
+# id=onlineB.ru-en.84
+NP*nnp VP*vbd
+NP*nn VP*vbz
+NP*dt VP*vbz
+NP*nnp '' VP*vbz
+S*np NP*nns VP*vbp
+NP*nnp VP*vbd ''
+S*np NP*dt VP*md
+NP*nnp VP*vbd
+NP*np VP*vbz
+
+# id=onlineB.ru-en.85
+NP*np VP*vbd
+NP*np VP*vbd
+S*pp NP*dt
+WHNP*wp SQ*vbz
+PP*in NP*dt VP*vbd
+ADVP*rb NP*dt VP*vbz
+PP*in NP*nnp '' VP*vbd
+PP*in NP*dt VP*vbd
+ADVP*rb NP*nnp '' VP*advp
+NP*np VP*vbd
+PP*in VP*vbz NP*dt
+S*np S*advp
+NP*np VP*vbz
+ADVP*rb NP*nnp '' VP*vbd
+PP*in NP*dt VP*vbd
+PP*vbg NP*jj VP*vbz
+PP*in NP*np
+NP*np VP*vbd
+NP*nnp VP*vbz
+NP*jj VP*vbp
+NP*nnp VP*vp
+SBAR*in CC ADVP*rb VP*vbp
+NP*np VP*vbd
+ADVP*rb NP*np VP*vbd
+ADVP*rb NP*prp VP*vbp
+NP-TMP*nnp NP*dt VP*vbd
+VP*md
+NP*nnp VP*vbn
+PP*in NP*nn VP*vbd
+ADVP*rb PP*vbg NP*nn ADVP*rb VP*vbd
+S*np S*pp
+
+# id=onlineB.ru-en.86
+S*np CC S*np
+NP*dt VP*vbz
+NP*nn VP*vbz
+VP*vb
+NP*nns VP*vbp
+NP*dt VP*vbd
+NP*prp VP*vbz
+NP*dt VP*vbd
+NP*nn VP*vbd
+SBAR*whnp NP*nns VP*vbd
+SBAR*whadvp NP*prp VP*vbp
+SBAR*in
+ADVP*rbr NP*nns VP*vbz
+NP*np
+S*pp CC S*advp
+
+# id=onlineB.ru-en.87
+S*np NP*np VP*vbd
+PP*vbg NP*prp VP*vbd
+PP*vbg NP*prp ADVP*rb VP*vbz ''
+S*np PRN*s CC S*np
+NP*nnp VP*vbd
+ADVP*rb NP*np VP*vb
+NP*prp VP*vbd
+S*vp PRN*np NP*nnp '' VP*vbd
+S*np CC S*np
+
+# id=onlineB.ru-en.88
+WHNP*np SQ*vp
+NP*jj VP*vbz
+NP*nnp VP*vbd
+S*np CC S*np
+NP*nn VP*vbz
+NP*nnp VP*vbd
+S*np RB S*pp ''
+S*np S*sbar CC S*np
+S*np CC S*np
+NP*dt VP*vbz
+NP*ucp NP*np
+CC NP*prp VP*vbz
+NP*np ADJP*jj
+CC NP*prp$ VP*md
+S*np S*np ''
+S*np CC S*np
+NP*nn VP*vbz
+
+# id=onlineB.ru-en.89
+NP*nnp VP*vbz
+PP*in NP*jj VP*md
+PP*in NP*dt VP*vbp
+SBAR*whadvp VP*md
+NP*nnp VP*vbd
+NP*np VP*vp
+NP*nnp VP*vbd
+NP*dt VP*md
+NP*np VP*vbd
+PP*in VP*vbd NP*np
+NP*np VP*vbd
+
+# id=onlineB.ru-en.90
+PP*in NP*nnp VP*vbd
+NP*prp VP*vp
+PP*in NP*np VP*vbd
+PP*in VP*vbd NP*np
+NP*np ADJP*rb
+PP*in NP*np VP*vbz
+PP*in VP*vbd NP*np
+NP*jjr PP*rb
+NP-TMP*np NP*prp VP*vbd
+
+# id=onlineB.ru-en.91
+NP*np VP*vbd
+PP*in VP*vbd NP*np
+PP*in NP*cd VP*vbz
+S*np VP*vbp NP*np
+PP*in NP*nn
+PP*in NP*np VP*vbz
+VP*vb
+
+# id=onlineB.ru-en.92
+S*np VP*sbar NP*np
+NP*nns NP*np PP*in ''
+NP*dt VP*vbz
+PP*in NP*nnp VP*md
+NP*np VP*md
+NP*np VP*vbn
+
+# id=onlineB.ru-en.93
+NP*np VP*vbd
+NP*np VP*vbd
+PP*in NP*np VP*vbd
+CC VP*to
+PP*in NP*nnp VP*vbd
+NP*np VP*vbp
+NP*np VP*vbd ''
+NP*np VP*vbd
+NP*np VP*vbd
+NP*nnp NP*nn VP*vbp
+PP*in VP*vbn
+NP*nnp VP*vbd
+S*sbar '' NP*dt VP*vbd
+NP*nnp VP*vbd
+ADVP*rb NP*prp VP*vbd ''
+NP*np VP*vbn
+NP*dt VP*vbz ''
+
+# id=onlineB.ru-en.94
+NP*np VP*vbp
+NP*np VP*md
+NP*np VP*vbd
+SBAR*whnp NP*cc '' SBAR*advp NP*prn VP*vbd
+S*np CC S*sbar
+PP*in VP*vbz NP*jj
+S*np CC S*np
+SBAR*in NP*np VP*md ''
+PP*in VP*md NP*np
+ADVP*rb NP*np VP*vbd
+NP*np VP*vbd
+NP*jj ADVP*rb VP*vbd
+
+# id=onlineB.ru-en.95
+S*vp VP*vbz NP*np
+CC WHNP*wp SQ*md
+S*pp CC S*np
+VP*vp
+INTJ*dt S*np
+NP*np ADVP*cc VP*vb
+NP*np VP*vbp
+ADVP*rb NP*np VP*vbz
+
+# id=onlineB.ru-en.96
+NP*nnp VP*vbd
+NP*nn VP*vbd
+NP*dt VP*vbd
+ADVP*rb NP*nnp VP*vbz
+PP*in NP*prp VP*vbd
+ADVP*rb NP*np VP*vbd ''
+
+# id=onlineB.ru-en.97
+NP*nnp VP*vbz
+PP*in NP*np VP*vbd
+ADVP*rb PP*in NP*nnp VP*md
+NP*nns VP*vbn
+S*vp VP*vbd
+ADVP*rb NP*nnp VP*vbp
+ADVP*rb NP*np VP*vbp
+ADVP*rb NP*prp VP*md
+NP*dt PP*vbg VP*vbz
+NP*nns VP*vp
+S*pp VP*vbd
+
+# id=onlineB.ru-en.98
+NP*nnp '' VP*md
+PP*vbg NP*nnp VP*vbz
+NP*prp VP*md
+S*pp S*np
+NP*dt NP*np
+NP*nnp VP*md
+
+# id=onlineB.ru-en.99
+PP*in NP*prp VP*md
+S*sbar NP*dt VP*md
+ADVP*rb NP*dt VP*md
+PP*in NP*jj VP*md
+ADVP*rb NP*np VP*vbn
+SBAR*in NP*nns VP*md
+PP*in NP*nns VP*md
+S*pp CC S*advp
+
+# id=onlineB.ru-en.100
+NP*np VP*vbd
+PP*in NP*dt VP*vbz
+NP*prp VP*vbz
+PP*in NP*prp VP*vbd
+S*np S*np
+CC ADVP*rb NP*prp VP*vp
+NP*prp VP*vbd
+NP*prp VP*vbd
+NP*nns VP*vbp
+S*s S*np
+S*np VP*vbd S*vp
+CC S*pp VP*vbd
+NP*np NP*np
+
+# id=onlineB.ru-en.101
+NP*np NP*np
+NP*np NP*np
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*nnp VP*vbd
+PP*in NP*nnp VP*vbd
+VP*vp
+ADVP*rb NP*prp VP*vbd
+NP*np VP*vbd
+
+# id=onlineB.ru-en.102
+S*np CC S*np
+NP*dt VP*vp
+NP*np VP*vbd
+NP*nnp S*np
+S*s VP*vbd NP*np
+PP*in S*np VP*vbd
+
+# id=onlineB.ru-en.103
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*prp VP*vbd
+PP*vbg NP*prp VP*vbd
+CC NP*np VP*vbd
+ADVP*rb NP*np VP*vbz
+S*vp VP*vbd
+PP*vbg NP*dt VP*md
+NP*nnp PP*vbg VP*vbd
+NP*prp VP*vbd
+ADVP*rb NP*nnp VP*vbd
+NP*jj ADVP*rb VP*vbd
+
+# id=onlineB.ru-en.104
+NP*jj VP*vbd
+NP*nns VP*vbd
+NP*prp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+S*np CC S*np
+PP*vbg NP*nnp VP*vbd
+ADVP*rb NP*np VP*vbz
+NP*np VP*vbz
+NP*prp ADVP*rb VP*vbz
+NP*nnp VP*vbd
+NP*nn ADVP*rb VP*vbd
+NP*nnp VP*vbp
+NP*np VP*vbd
+
+# id=onlineB.ru-en.105
+NP*nnp VP*vbd
+PP*in NP*prp VP*vp
+PP*in NP*nnp ADVP*rb VP*vbd
+NP*nnp VP*vbd
+CC NP-TMP*nn NP*nn VP*vbz
+PP*to
+NP*prp$ NP*np
+NP*np PP*in PP*in VP*vbp
+
+# id=onlineB.ru-en.106
+S*np VP*vbz NP*nnp
+S*np NP*prp VP*vbz
+NP*nns VP*vbd
+NP*np VP*vbn
+S*s RB S*np
+NP*np VP*vbd
+RB NP*np VP*vp
+S*pp S*pp
+PP*in NP*wdt VP*vbd
+
+# id=onlineB.ru-en.107
+NP*nnp VP*vbd
+NP*np VP*vbp
+PP*vbg NP*np VP*md
+NP*dt VP*md
+PP*in
+NP*nn NP*prp VP*vbz
+PP*vbg VP*md NP*np
+PP*in VP*vbd NP*np
+NP*nnp VP*vbz
+S*np NP*dt VP*vp
+NP*np VP*md
+NP*np VP*vbz
+
+# id=onlineB.ru-en.108
+NP*np VP*vbp
+VP*vbn VP*vbd NP*np
+RB NP*jj VP*vbd
+PP*in NP*np
+NP*np VP*vbp
+PP*in NP*np
+S*np CC S*s
+ADVP*rb PP*in NP*nnp VP*vbz
+CC NP*nns VP*vbp
+
+# id=onlineB.ru-en.109
+S*np VP*vbd NP*np
+NP*np VP*vbd
+PP*in NP*nnp VP*vbd
+NP*nnp PP*in S*vp
+PP*vbg NP*rb VP*vbp
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP*dt VP*md
+NP*dt NP*np
+NP*ex VP*vbp
+WHADVP*wrb SQ*md
+WHNP*wp SQ*vp
+NP*dt VP*md
+NP*prp ADVP*rb VP*vbp
+NP*dt VP*vbz
+NP*nnp VP*vbp
+NP*dt VP*vbd
+ADVP*rb SBAR*whadvp NP*dt VP*md
+NP*prp VP*vbz
+S*s S*np
+NP*np VP*vbd ''
+S*advp S*np
+PP*in NP*dt VP*vbd
+S*np VP*vbz CC S*np
+PP*vbg NP*np VP*vbd
+PP*in PRN*, S*cc S*np
+
+# id=onlineB.ru-en.110
+NP*nnp S*np
+PP*in NP*prp VP*vbp
+VP*vbz
+S*advp SBAR*in
+CC NP*dt VP*vbz
+SBAR*in VP*md
+IN NP*prp VP*vbz
+CC S*adjp S*np-tmp
+CC NP*ex VP*vbz
+WHADVP*wrb SQ*vbz
+WHADVP*wrb SINV*vp
+NP*dt VP*vbz
+PP*in NP*nnp '' VP*vbz
+PP*in NP*nns VP*vbd
+ADVP*rb PP*in NP*np VP*vp
+NP*ex VP*vbz
+ADVP*rb NP*dt VP*vbd
+S*np CC S*np
+S*np S*np
+PP*in NP*dt VP*vp
+PP*in VP*vbz NP*np
+NP*dt S*vp
+PP*in
+PP*in NP*np VP*jj
+NP*dt VP*vbg
+NP*np VP*md
+PP*in
+PP*in NP*dt VP*vbz
+CC NP*nnp VP*vp
+X*np NP*np VP*vbz
+NP*`` VP*vbz
+WHNP*wp SQ*vp
+NP*prp VP*vbz
+SBAR*in NP*np VP*md
+NP*np VP*md
+S*np CC S*np
+S*np CC S*np
+NP*prp VP*vbp
+ADVP*rb NP*np VP*vbz
+WHPP*in SQ*vp
+NP*prp VP*md
+CC NP*prp VP*md
+NP*prp VP*vbp
+NP*np VP*md
+ADVP*rb NP*prp VP*md
+S*np S*s
+
+# id=onlineB.ru-en.111
+NP*jj VP*vp
+NP*nnp VP*vbd
+ADVP*rb NP*nnp ADVP*rb VP*vbd
+NP*nnp VP*vbd
+PP*in NP*prp VP*vbd
+NP*nnp VP*vbd
+NP*prp VP*vbz
+NP*nnp VP*vp
+S*`` SINV*vp
+NP*nnp VP*vp
+PP*vbg NP*prp VP*vbz
+S*vp VP*vbd
+ADVP*rb PP*in NP*np VP*md
+
+# id=onlineB.ru-en.112
+PP*in PRN*, NP*nnp VP*vbd
+NP*nn VP*vbn
+S*cc S*np
+NP*prp VP*vbp
+IN NP*prp VP*vbp
+NP*dt VP*vbz
+S*np S*np
+
+# id=onlineB.ru-en.113
+NP*nnp VP*vbp
+S*np NP*nnp VP*vbz
+NP*prp VP*vbp
+S*np SINV*vp
+S*np CC S*vp
+NP*dt ADVP*rb VP*vbd
+S*s S*np
+S*np NP*np VP*vbp
+S*np S*np S*sbar
+S*pp CC S*np
+CC ADVP*rb VP*md CC S*np
+
+# id=onlineB.ru-en.114
+NP*np VP*vbd
+S*pp NP*np VP*vbn
+FRAG*pp VP*vbd NP*nns
+SBAR*in S*vp S*advp
+NP*nac VP*vbd
+S*pp CC S*pp
+PP*in VP*vbd NP*np
+PP*in NP*dt VP*vbd
+
+# id=onlineB.ru-en.115
+NP*np VP*vbp
+NP*dt VP*vbd
+ADVP*rb NP*np VP*vbz
+NP*dt VP*vbz
+S*pp CC S*pp ''
+NP*np VP*vbd ''
+NP*nac VP*vbd
+NP*np VP*md
+NP*prp VP*vbp
+PP*in VP*vb
+
+# id=onlineB.ru-en.116
+NP-TMP*nnp NP*nnp VP*vbd
+NP*nnp VP*vbd
+NP*dt PP*in
+NP*dt VP*vbd
+NP*dt VP*vbn
+NP*prp VP*vbd
+NP*nnp PP*in ''
+NP*nnps VP*vbd
+PP*in NP*np VP*md
+
+# id=onlineB.ru-en.117
+NP*nns VP*md
+NP*dt VP*vbz ''
+PP*vbg ADVP*rb PP*in PP*rb
+NP*prp VP*vbz
+SBAR*in
+SBAR*in NP*dt VP*md
+NP*np VP*md
+PP*in NP*np VP*md
+PP*in NP*np VP*md
+NP*jj VP*md
+
+# id=onlineB.ru-en.118
+NP*rb S*s
+S*np VP*vbz NP*np
+MD NP*np VP*vb
+PP*in NP-TMP*dt PP*in NP*nnp VP*vbd
+S*`` SINV*vp
+NP*np VP*vbp
+CC NP*ex VP*vbd
+PP*in NP*dt VP*vp
+SBAR*rb VP*vp ''
+NP*nnp NP*np
+S*np CC S*np
+S*pp S*np
+NP*adjp VP*md
+NP*ex VP*vbp
+NP*np VP*vbn
+NP*jj VP*vbp
+NP*np VP*vbz ''
+S*np S*np
+S*`` SINV*vp
+S*`` SINV*vp
+SBAR*in NP*prp VP*vbd
+NP*prp VP*vbd
+NP*ex VP*vbp
+ADVP*rb NP*ex VP*vbz
+X*np NP*np
+NP*nns VP*vbz
+PP*in NP*prp VP*vbd
+S*np CC S*np
+PP*in NP*adjp VP*vbp
+NP*ex VP*vbp
+NP*np VP*vbp
+NP*dt S*sbar
+NP*np VP*vbd
+NP*np VP*vbd
+S*`` SINV*vp
+NP*nns VP*md
+NP*dt VP*md
+SBAR*in NP*prp$ VP*md
+NP*np VP*vbz
+
+# id=onlineB.ru-en.119
+NP*np VP*vbd
+NP*np VP*vbd ''
+S*vp VP*vbd
+S*np CC S*np
+PP*in NP*prp VP*vbp
+
+# id=onlineB.ru-en.120
+NP*nnp VP*vbz
+S*np NP*dt VP*vbz
+NP*dt VP*vbp
+S*vp NP*dt VP*vbd
+S*s S*np
+NP-TMP*jj NP*dt VP*vbd
+S*np CC S*advp
+NP*np VP*vbd
+NP*np VP*vbd
+NP*nn VP*vbd
+NP*nnp VP*vbd
+NP*np VP*vb
+NP*np VP*vb
+NP*nns VP*vbd
+NP*np VP*vbd
+S*np CC S*np
+PP*vbg NP*np VP*vbz ''
+NP*dt VP*vbd
+NP*dt VP*vp
+S*`` SINV*vp
+
+# id=onlineB.ru-en.121
+NP*dt VP*vbd
+S*np NP*dt VP*vbd
+NP*nnp VP*vbd
+NP*dt ADVP*rb VP*vp
+NP*nn VP*vbp
+VP*advp
+
+# id=onlineB.ru-en.122
+NP*nns VP*md
+PP*in NP*dt VP*vbz
+SBAR*in NP*jj VP*md
+NP*np VP*md
+PP*in NP*dt VP*md
+
+# id=onlineB.ru-en.123
+NP*np VP*md
+NP*np VP*vbd
+NP*dt VP*vbz
+NP*nnp VP*vbz
+NP*np VP*vbd
+NP*nns VP*vbp
+PP*rb NP*nns VP*vbp
+NP*np VP*md
+NP*nns VP*vbp ''
+NP*np VP*vbz
+NP*nnp VP*vbz
+
+# id=onlineB.ru-en.124
+S*np NP*np VP*md
+PP*vbg NP*`` VP*vbp
+PP*vbg NP*np VP*vbp ''
+NP*np ADVP*rb VP*vbz
+ADVP*rb NP*adjp VP*vbp
+NP*dt VP*vbd
+NP-TMP*dt NP*dt VP*vbd
+NP*dt VP*vbz
+PP*in NP*np VP*vbd ''
+NP*np VP*vbd
+WHNP*wp SQ*vp
+NP*prp VP*vbz
+VP*vb
+NP*np ADVP*rb VP*vbd
+PP*in NP*np VP*vbp
+ADVP*rb PP*vbg
+PP*in VP*vbp NP*nnp
+NP*np VP*vbp
+SBAR*in NP*jj VP*vbd
+NP*dt VP*vbd
+ADVP*rb NP*np VP*vbd
+SBARQ*whadvp VP*vbd NP*np
+NP*nns VP*vbd
+
+# id=onlineB.ru-en.125
+S*np NP*nn VP*vbd
+NP*np VP*advp
+NP*nnp VP*vbd
+
+# id=onlineB.ru-en.126
+NP-TMP*nn NP*dt VP*vbz
+NP*nn PP*in ''
+NP*np VP*md
+RB PRN*, VP*vb
+PP*in NP*ex VP*md
+PP*in S*vp VP*vbd
+VP*vbn
+PP*in NP*np VP*vbz
+NP*nnp VP*vbz
+PP*in VP*vbz NP*np
+NP*np VP*np
+
+# id=onlineB.ru-en.127
+NP*nnps VP*vp
+NP*dt VP*vbd
+NP*dt VP*vbd
+S*sbar CC RB S*vp
+NP*nn VP*vbd
+
+# id=onlineB.ru-en.128
+NP*nnp VP*md
+PP*in NP*nnp VP*vbd
+NP*jj VP*vbp
+NP*nnp ADVP*rb VP*vbp
+NP*np VP*md
+PP*in NP*nnp VP*vbd
+ADVP*rb PP*in NP*cd VP*vbz
+PP*in NP*nnp VP*vbd
+PP*in NP*np VP*vbd
+NP*np VP*vbd
+PP*vbg NP*nnp VP*md
+NP*np VP*vbz
+NP-TMP*dt NP*dt VP*vbd
+
+# id=onlineB.ru-en.129
+NP*nnp VP*vbd ''
+NP*dt ADVP*rb VP*vbd
+NP*dt VP*vbp
+S*vp NP*nnp VP*vbd
+NP*prp VP*vbd
+CC NP*dt VP*vp
+NP*prp VP*vp ''
+NP*nnp VP*vbd
+NP*prp VP*vbd
+PP*in NP*ex VP*vbz
+CC SBAR*in
+NP*prp ADVP*rb VP*vbp ''
+S*advp VP*vbd NP*np
+NP*nnp VP*vbd
+PP*in S*np S*np
+CC NP*prp VP*vbp ''
+S*np CC S*np
+PP*in VP*vbd NP*np
+NP*np VP*vp
+PP*in NP*nnp VP*vbd
+NP*np VP*md
+PP*vbg NP*dt VP*vbz
+SBAR*in NP*prp VP*vbd
+NP*prp VP*vbd
+S*sbar VP*vbd
+ADVP*rb NP*nnp VP*vbz
+
+# id=onlineB.ru-en.130
+PP*in NP*dt VP*vbd
+NP*np VP*advp
+NP*nn PP*vbg VP*vbd
+NP*dt VP*vbd
+PP*vbg NP*jj VP*vbd
+PP*in NP*dt VP*vbd
+SBAR*in NP*prp VP*vbd
+NP*np VP*vbz
+PP*in VP*vbd NP*np
+PP*in NP*dt VP*vp
+ADVP*rbr PP*in VP*vbd
+PP*in PRN*, NP*prp VP*vbd
+NP*np VP*vbn PP*in
+VP*vbn
+
+# id=onlineB.ru-en.131
+NP*jj VP*vbd
+S*vp VP*vbd
+CC NP*nnp ADVP*rb VP*vbd
+ADVP*rb NP*dt VP*md
+NP*np VP*vbd
+NP*jj VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbd ''
+NP*prp VP*advp
+NP*nnp VP*vbz
+SBAR*in NP*prp$ VP*vbd
+CC NP*nnp ADVP*rb VP*vbd
+S*`` S*np
+NP*prp VP*vbd
+NP*prp VP*vbd
+PP*in NP*`` VP*vbd
+ADVP*rb NP*jj VP*vbd
+NP*nns VP*vbp
+
+# id=onlineB.ru-en.132
+SBAR*in NP*np VP*vbd
+PP*in NP*np VP*vbd
+S*np CC S*pp
+NP*nns ADVP*rb VP*vbp
+NP*np VP*vbd
+
+# id=onlineB.ru-en.133
+S*np NP*nnp VP*vbd
+NP*np ADVP*rb VP*vbd
+S*np CC SINV*vp
+NP*prp ADVP*rb VP*vp
+PP*in NP*jj VP*vbd
+NP*np VP*vp
+NP*nnp VP*vbd ''
+NP*prp VP*vbd
+S*np NP*prp VP*vbz
+CC ADVP*rb NP*prp VP*vbz
+RB NP*prp VP*vbd
+NP*prp VP*vbd
+DT NN SBAR*in
+NP*nnp VP*vbd ''
+NP*ex VP*vbd
+NP*nnp VP*vp
+NP*np VP*vbd ''
+NP*prp VP*md
+NP*prp VP*vbd
+NP*dt VP*vbd
+NP*nns VP*vbd
+NP*prp VP*vp
+S*np CC S*np
+S*np CC S*np ''
+NP*nns VP*vbd
+NP*prp ADVP*rb VP*md
+
+# id=onlineB.ru-en.134
+VP*vb
+NP*dt PRN*, VP*vbz
+NP*dt VP*vp
+NP*dt ADVP*rb VP*vbz
+NP*vbg VP*vbd
+S*pp S*np
+S*np
+PP*in NP*np VP*vbd
+ADVP*rb PP*in PP*in VP*vbd
+NP*np VP*vp
+NP*nnp NP*np
+
+# id=onlineB.ru-en.135
+NP*np VP*vbd
+PP*vbg NP*prp VP*vbd
+S*np-tmp ADVP*rb S*np
+S*`` SINV*vp
+PP*vbg NP*np VP*vbd
+S*`` S*np
+S*np S*np-tmp
+S*np VP*vbd NP*np
+NP*prp VP*md
+NP*nnps VP*vbp
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+NP*nnp VP*vbp
+NP*nnp VP*md
+NP*prp VP*vbp
+NP*np VP*vbd
+ADVP*rbr NP*dt VP*vbd
+
+# id=onlineB.ru-en.136
+NP*np VP*vbd
+S*`` SINV*vp
+NP*jj VP*vbd
+S*np NP*nn VP*vbd
+NP*np VP*vbz
+PP*in PP*in NP-TMP*nn VP*vbd
+PP*vbg
+S*np PRN*, RB S*vp
+
+# id=onlineB.ru-en.137
+S*np NP*nnp VP*vbd
+NP*prp PRN*s VP*vbp
+ADVP*rb NP*prp VP*vbp
+NP*prp VP*vbd
+ADVP*rb NP*nns VP*vbp
+PP*vbg NP*np VP*vp
+NP*dt NP*prp VP*vbp
+NP*dt VP*vbz
+S*np NP*prp VP*md
+PP*in NP*prp VP*vbp
+PP*vbg NP*prp VP*vbz
+ADVP*rb NP*ex VP*vbz
+S*np NP*prp VP*vbd
+ADVP*rb PP*vbg NP*nnp VP*md
+NP*dt VP*vbz
+SBAR*whadvp NP*prp VP*vbp
+NP*nnps VP*vbp
+NP*prp VP*vbz
+PP*vbg NP*dt VP*vbz
+ADVP*rb NP*prp VP*vp
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*ex VP*vbz
+NP*prp VP*vbp ''
+ADVP*rb S*pp S*pp CC S*np ''
+CC NP*rb VP*vb
+S*np S*np
+PP*advp NP*np VP*vbd
+PP*vbg NP*np VP*md
+NP*np VP*vbd
+SBAR*in
+
+# id=onlineB.ru-en.138
+NP*np VP*vbd
+PP*in NP*prp VP*vbd
+NP*jj VP*vbd
+NP-TMP*jj NP*dt VP*vbd
+
+# id=onlineB.ru-en.139
+S*pp NP*np VP*vbn
+NP*np VP*vbn
+NP*prp VP*vbz
+SBAR*whnp VP*vbz
+NP*np VP*vp
+NP*np VP*vbd ''
+
+# id=onlineB.ru-en.140
+S*np NP*dt VP*vbd
+S*np S*np ''
+S*np CC S*np ''
+PP*in NP-TMP*nnp NP*np VP*vbd ''
+NP*dt VP*vbd ''
+NP*nnp VP*vbd
+NP*prp$ VP*vbd
+
+# id=onlineB.ru-en.141
+NP*nn VP*vbd
+NP*nnp VP*vbp
+NP*np VP*np
+NP*dt VP*vbz
+NP*dt VP*vbd
+PP*vbg NP*nn VP*vbd
+NP*np VP*vbd
+SBAR*in NP*prp VP*vbp
+PP*in NP*nns VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbd
+PP*in NP*nns VP*vbd
+
+# id=onlineB.ru-en.142
+S*np NP*np VP*vbd
+NP*np VP*vbd
+NP*np S*np PP*cc
+S*`` SINV*vp
+NP*prp ADVP*rb VP*vbd
+S*np VP*vbd
+NP*prp VP*vbp
+S*`` S*np
+NP*nnp VP*vbd
+WHNP*wp SQ*vbd
+VBD NP*prp$ PP*np
+NP*nnp VP*vbd
+NP*prp VP*md
+NP*prp$ S*vp
+S*np NP*prp VP*vbd
+NP*nnp VP*vbd ''
+ADVP*rb NP*np VP*vbd
+S*`` S*np
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+NP*nnp VP*vbd
+
+# id=onlineB.ru-en.143
+NP*jj VP*vbd
+NP*nnp PP*in
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*prp VP*vbd
+NP*np VP*vp
+NP*dt VP*vbp
+ADVP*rbr NP*np VP*vp
+NP*prp VP*vbd
+NP*nnp VP*vbz
+NP-TMP*nnp NP*np VP*vbd
+
+# id=onlineB.ru-en.144
+NP*np VP*vbd
+NP*dt VP*vbz
+VP*vb
+S*vp NP*prp VP*md
+S*np S*np
+NP*nnp PRN*, NP*np VP*vbz
+
+# id=onlineB.ru-en.145
+NP*np VP*vbz
+S*`` SINV*vp
+S*sbar NP*prp VP*vbz
+ADVP*rb NP*np VP*vbz
+NP*np S*np
+ADVP*rb NP*np VP*vbp
+ADVP*rb NP*nn VP*vp
+SBAR*whadvp VP*vbp
+SBAR*in NP*np VP*vbp
+NP-TMP*dt NP*np VP*vbz
+NP*prp VP*vbd
+NP*nnp VP*vbd
+NP*nns VP*vbp
+PP*in NP*nns VP*vbd
+S*`` SINV*vp
+S*vp VP*vbp
+PP*in NP*np VP*vbd
+NP*nns VP*vbp ''
+PP*in NP*np VP*vbn
+S*np VP*vbz NP*np
+NP*dt VP*md
+S*sbar NP*prp ADVP*rb VP*vbz
+S*`` S*np
+NP*nn VP*vbg
+CC SBAR*in
+NP*np VP*advp
+NP*prp VP*vbp
+NP*prp VP*vbp
+ADVP*rb NP*prp VP*advp
+
+# id=onlineB.ru-en.146
+S*np VP*vbd NP*np
+PP*to NP*dt VP*vbp
+SBAR*in
+S*`` S*np
+NP*dt VP*vbd
+PP*in VP*vbd NP*np
+NP*np VP*vbd
+
+# id=onlineB.ru-en.147
+PP*in VP*vp NP*np
+S*vp NP*np VP*vbd
+NP*jj VP*vbd
+NP*ex NP*nns VP*vbd
+NP*nns VP*vbp
+NP*jj VP*vbd
+S*pp S*np CC S*np
+PP*in VP*vbd NP*np
+NP*prp VP*vbd
+NP*np VP*vbz
+NP*np VP*vbd
+
+# id=onlineB.ru-en.148
+NP*jj VP*vbp
+S*`` SINV*vp
+PP*vbg
+PP*in VP*advp NP*np ''
+S*pp CC S*np
+NP*prp VP*vbz
+PP*in NP*prp VP*vbp
+S*vp NP*np
+PP*in NP*ex VP*vbp
+NP*cd NP*np
+PP*in VP*vbp NP*np
+S*pp CC S*vp
+ADVP*rb NP*nnp ADVP*rb VP*advp
+NP*dt VP*vbd
+NP*vbg ADJP*jj
+S*np VP*vbz NP*np ''
+NP*np NP*np
+ADVP*rb PP*pp NP*ex VP*vbd
+S*cc S*np
+PP*vbg S*pp CC S*pp
+NP*prp VP*vbd
+
+# id=onlineB.ru-en.149
+NP*jj PP*in
+SBAR*in NP*jj VP*vbp
+NP*np NP*np
+ADVP*rb NP*jj VP*advp
+NP*nns VP*vbd
+NP*nnp PP*in
+NP*np VP*vp
+CC SBAR*in NP*jj VP*vbp
+NP*prp VP*vbp
+NP*np VP*vbp
+VBZ NP*prp ADJP*rb
+S*`` SINV*vp
+NP*ex VP*md
+NP*nn PP*in ADVP*rb
+NP*np VP*vbz
+NP*nns VP*vbp
+NP*nns VP*vbp
+NP*np VP*vbp
+NP*nns VP*vbp
+S*`` SINV*vp
+PP*in VP*vbd NP*np
+S*`` S*np
+NP*nns VP*vbp
+ADVP*rb NP*dt VP*vbz
+NP*np VP*vbp
+ADVP*rb NP*np VP*vbd
+NP*np ADJP*jj
+S*`` SINV*vp
+NP*nns ADVP*rb VP*vbp
+NP*dt VP*vbz
+NP*dt VP*vbd
+CC NP*np VP*vbd
+NP*np VP*vb
+NP*np VP*vbd
+NP*dt VP*md
+PP*in NP*dt VP*vbz
+PP*in NP*prp VP*vbz
+NP*nnp VP*md
+NP*np VP*vbz
+NP*dt VP*vbz
+PP*in SBAR*whadvp NP*nns VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbd
+SBAR*whadvp NP*prp VP*vbz ''
+NP*dt VP*to
+NP*nnp NP*np
+S*sbar NP*nn VP*md
+S*vp VP*vbz
+ADVP*rb NP*dt VP*vbd
+NP*prp VP*vbd
+CC S*np CC S*s
+S*`` SINV*vp
+NP*ex VP*vbd
+NP*ex VP*vbp
+PP*in NP*nns VP*vbp
+NP*prp VP*md
+CC NP*prp VP*md
+PP*in S*s S*adjp
+PP*in NP*nn VP*vbp
+S*`` S*np
+NP*dt PRN*s VP*vbp
+PP*in NP*nns VP*vbp
+NP*jj VP*md
+NP*np VP*vbd
+SBAR*in NP*np VP*md
+
+# id=onlineB.ru-en.150
+NP*nnp VP*vb
+S*np CC S*np
+ADVP*rb NP*ex VP*vbp
+ADVP*rb PP*in NP*prp VP*md
+S*vp NP*dt VP*vbd
+S*`` SINV*vp
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*nnp NP-TMP*jj VP*md
+PP*in NP*ex VP*vbz
+S*`` S*np
+PP*in S*cc
+NP*prp ADVP*rb VP*md
+PP*in NP*dt VP*vbd
+S*`` SINV*vp
+NP*prp VP*vbd
+CC NP*prp VP*vbp
+S*np S*in ''
+
+# id=onlineB.ru-en.151
+PP*in VP*vbd NP*np
+NP*dt VP*vbd
+NP*dt VP*vbz
+NP*dt VP*md
+PP*in VP*vbn
+NP*nn VP*md
+PP*in X*in NP*dt VP*vbz
+NP*np NP*np
+NP*dt VP*vbz
+NP*np VP*vbp
+
+# id=onlineB.ru-en.152
+NP*np VP*md
+ADVP*rb NP*np ADVP*rb VP*vbz
+S*np S*pp ''
+S*`` S*np
+NP*np VP*vbd
+S*pp CC S*np
+
+# id=onlineB.ru-en.153
+NP*np VP*vbd
+NP*dt VP*vbd
+PP*in
+NP*prp VP*vbd
+RB NP*prp VP*vbd
+ADVP*rb NP*dt VP*vbd
+S*np SINV*vp
+PP*in VP*vbd NP*np
+NP*dt VP*vbz
+NP*nn PP*in PP*in
+S*pp S*advp
+NP*dt VP*vbz
+PP*in NP*prp VP*vbz
+PP*in NP*wdt VP*vbp
+NP*np VP*vbz
+NP*np S*vp VP*vbd
+NP*dt VP*vbz
+PP*in NP*np VP*vbz
+NP*np VP*vbz
+PP*in NP*dt VP*md
+NP*jj VP*vbn
+S*np FRAG*np
+NP*np VP*vbn
+PP*vbg NP*np VP*md
+PP*in NP*prp VP*vbp
+PP*in NP*dt VP*vbz
+NP*nn VP*md
+NP*jj VP*vbp
+S*np CC S*np
+PP*in NP*wdt VP*vbz
+S*np CC S*np
+ADVP*rb NP*np VP*md
+S*np CC S*np
+
+# id=onlineB.ru-en.154
+PP*in VP*vbd NP*np
+NP*nnp VP*vbn
+NP*dt VP*vbd
+NP*nnp VP*vbn
+NP*prp ADVP*rb VP*md
+NP*prp VP*vbp
+NP*prp VP*vbp
+NP*dt VP*vbd
+S*pp VP*vbd
+NP*np VP*vbn
+NP*prp VP*vbd
+
+# id=onlineB.ru-en.155
+NP*nnp VP*vbd
+ADVP*rb NP-TMP*nnp NP*dt VP*vbd
+NP*np VP*vbd
+NP*nn PP*in
+NP*np VP*vbz
+RB NP*nnp VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbd
+NP*np VP*vbd
+PP*in SBAR*in NP*cd VP*vbd
+PP*in NP*dt VP*vbd
+PP*advp SBAR*in VP*vbd
+PP*vbg NP*cd VP*vbd
+PP*in NP*dt VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbn
+NP*nnp VP*vp
+NP*dt VP*vbd
+PP*in NP*np VP*vbd ''
+NP*prp VP*vbd ''
+NP-TMP*rbr NP*dt VP*vbd
+S*np VP*vbd NP*dt
+S*pp CC S*np ''
+ADJP*jj S*vp
+NP*nnp VP*vbd
+S*`` SQ*vp
+PP*in NP*jj VP*vbz
+PP*in NP*np VP*vbd
+S*np NP*prp VP*vbd
+
+# id=onlineB.ru-en.156
+S*frag VP*advp NP*np
+NP*dt NP*np NP*np ''
+NP*np VP*vp
+PP*vbg NP*dt VP*vbz
+NP*jj VP*vbd
+NP*np VP*vbd
+NP*np VP*vbz ''
+PP*in NP*nnp VP*vbd
+S*s VP*vbd
+NP*prp VP*md ''
+SBAR*in '' NP*nnp VP*vbd
+S*`` SINV*vp
+NP*prp VP*vbz
+S*np NP*prp VP*vbd
+SBAR*in NP*np VP*vbd
+NP*nnp VP*vbd
+S*np NP*nnp VP*vbp
+SBAR*``
+
+# id=onlineB.ru-en.157
+NP*np VP*vbd
+NP*np VP*vbd
+PP*in VP*vbd NP*np
+NP*prp VP*vbd
+PP*in NP*np VP*vbd
+
+# id=onlineB.ru-en.158
+NP*jj VP*vbd
+PP*vbg S*np CC S*np
+SBAR*in
+SBAR*in NP*nns VP*vbd
+NP*pdt VP*vbz
+NP*prp VP*vbd
+S*pp VP*vbd NP*nnp
+PP*in NP*ex VP*vbz
+NP*nnp VP*vbd
+NP*np VP*vbd
+S*`` SINV*vp
+NP*dt PP*in
+NP*jj S*s
+NP*jj FRAG*vp
+S*s CC S*np
+ADVP*rb NP*np VP*vbz
+S*pp VP*vbd
+ADVP*rb VP*vbd
+
+# id=onlineB.ru-en.159
+SBAR*whnp NP*dt VP*vbp
+NP*cd VP*vbz
+SBAR*whnp
+NP*np VP*vbd
+NP*dt VP*vbz
+NP*prp VP*vbd
+S*vp NP*cd VP*md
+ADVP*rb NP*`` ADVP*dt VP*vbd
+VP*vbn VP*vbp NP*np
+NP*dt VP*vbz
+S*np S*vp
+NP*nn ADJP*jj
+NP*dt VP*vbp
+ADVP*rb NP*nn VP*rb
+NP*np VP*vbz
+ADVP*rb NP*prp VP*vbz
+PP*in PP*in ADVP*rb VP*vbd
+S*vp CC S*vp
+CC PP*in
+ADVP*rb NP*np VP*vbd
+ADVP*rb VP*vbz NP*cd
+NP*np VP*vbp
+SBAR*in VP*vbz ''
+NP*np ADVP*rb VP*vbz
+NP*np NP*np
+NP*nnp PP*in
+PP*in NP*dt ADVP*rb VP*vbz
+NP*dt PP*in
+NP*np VP*vbd
+ADVP*rb NP*prp VP*vbp
+ADJP*adjp
+NP*nnps SBAR*whnp
+PP*in NP*np VP*vbz
+NP*np VP*vbd
+NP*dt VP*vbd
+CC VP*advp
+NP-TMP*dt NP*ex VP*vbz
+ADVP*rb NP*nnp ADVP*np VP*vbn
+NP*nns VP*vbd
+CC ADVP*rbr NP*np VP*vbz
+NP*np VP*vbp
+ADVP*rb PP*in
+NP*prp SBAR*whadvp
+ADVP*rb NP*dt VP*vbz
+ADVP*rb PP*in NP*`` VP*vbz
+NP*nns NP*nns NP*jj NP*np VP*vbg
+NP*nnp ADVP*rb VP*vbd
+S*np CC S*np
+CC PP*in VP*vbd
+ADVP*rb PP*in NP*ex VP*vbz
+NP*dt VP*vbz
+NP*jj VP*vbz
+PP*in NP*np VP*vbz
+PP*in ADVP*rb NP*nn VP*vbd
+S*vp NP*prp VP*md
+PP*in SBAR*whadvp NP*prp VP*vbp
+ADVP*rb NP*np ADVP*rb VP*vbp
+PP*in NP*nn VP*vbd
+NP*np VP*md
+S*np NP*prp VP*md
+NP*jj
+NP*np VP*vbz
+SBAR*in NP*nn VP*md
+VP*vb
+S*vp NP*np VP*vbz
+NNS
+ADVP*rb NP*np VP*md
+ADJP*adjp SBAR*in
+VP*vb
+NP*nns PP*in
+NP*nns PP*in
+CC NP*np
+SBAR*in NP*np VP*md
+NP*prp ADVP*rb VP*vbd
+PP*in PP*in ADVP*rb VP*vbd
+PP*in
+PP*in NP*prp VP*vbp
+NP*np VP*vbd
+NP*ex NP*nns VP*vbp
+PP*in
+CC NP*nnp VP*vbp
+CC NP*nn VP*md
+
+# id=onlineB.ru-en.160
+NP*nnp VP*vbd
+NP*np VP*vbd
+S*np CC S*np
+PP*in NP*dt VP*vbd
+NP*jj VP*vbd
+NP*np VP*vbd
+PP*in NP*nns VP*vbd
+CC PP*in PP*vbg VP*vbd
+NP*dt VP*vbz
+NP*np VP*vbd
+
+# id=onlineB.ru-en.161
+PP*in NP*nn VP*vp
+NP*np VP*vbn
+SBAR*in S*adjp VP*vbd
+ADVP*rb NP*np VP*vbd
+NP*prp VP*vbd
+NP*prp VP*vbd
+NP*prp$ VP*vbd
+S*np NP*dt VP*vbd
+ADVP*rb NP*prp VP*vbp
+
+# id=onlineB.ru-en.162
+NP*nnp VP*vbz
+NP*np VP*vbd
+NP*nnp NP*np X*advp
+NP*np VP*vbd
+NP*dt VP*vp
+S*np CC S*np
+WHNP*wp SQ*vbp
+NP*nn PP*in ADVP*np
+
+# id=onlineB.ru-en.163
+VP*vb
+NP*dt VP*vbd
+S*np SINV*vp
+S*vp
+VP*vbn
+NP*prp VP*vbd
+S*pp S*np
+ADVP*rb NP*jj
+NP*dt VP*vbd
+NP*dt VP*advp
+NP*dt PP*to
+NP*nn VP*vbz
+S*vp VP*vbd
+VP*vbn
+S*pp VP*vbd
+NP*prp VP*md
+ADVP*rb NP*np VP*vbz
+NP*dt VP*vbp
+NP*np S*vp
+NP*nn S*s
+
+# id=onlineB.ru-en.164
+S*np VP*vbd NP*np
+S*vp NP*nnp ADVP*rb VP*vbz
+PP*in NP*prp VP*vbd
+NP*dt VP*vp
+NP*nnp NP*nnp NP*np NP*np
+S*sbar VP*vbd
+NP*prp VP*vbp
+ADVP*rb SBAR*in NP*prp VP*vbp
+NP*nnp VP*vbz
+NP*dt VP*vbd
+ADVP*rb NP*np VP*vbz
+NP*jj NP*ex VP*vbp
+NP*nnp VP*vbd
+PP*in NP*dt ADVP*rb VP*vbd
+S*`` S*s
+NP*dt VP*vbp
+S*np IN S*np
+NP*dt VP*md
+S*np CC S*np
+RB NP*nns VP*vbp
+NP*nnp VP*vp
+NP*np PRN*: VP*vbd
+PP*in NP*jj VP*vbd
+S*vp VP*vbd
+S*np S*np
+NP*np VP*vbd
+NP*np VP*vbd
+NP*nn VP*vbd
+S*`` SINV*vp
+S*np S*np S*np
+NP*np VP*vbp
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+
+# id=onlineB.ru-en.165
+PP*in
+PP*in NP*jj VP*vbd
+SBAR*whadvp NP*prp VP*vbd
+NP*np VP*vbd
+S*np CC S*np
+NP*nn PP*in PP*in
+
+# id=onlineB.ru-en.166
+PP*vbg NP*np VP*vbd
+NP*dt VP*vp
+NP*nnp '' VP*vbd
+ADVP*in NP-TMP*rbr NP*nnp VP*vbd
+
+# id=onlineB.ru-en.167
+NP*nnp NP*np
+NP*np VP*vbp
+NP*np ADVP*rb VP*vbz
+NP*jj VP*vbp
+NP*jj VP*vp
+ADVP*rb NP*nns VP*vbp
+S*np CC S*pp
+
+# id=onlineB.ru-en.168
+PP*in NP*nn VP*md
+CC S*vp VP*md
+NP*np VP*vbd
+S*np NP*nn VP*vbd
+NP*dt VP*md
+PP*in VP*md NP*np
+
+# id=onlineB.ru-en.169
+NP*`` VP*vbd
+PP*in NP*nnp VP*``
+NP*nn PP*to
+S*`` S*vp
+S*vp VP*vbd
+ADVP*rb PP*in NP*np VP*vbd
+PP*in NP*nnp '' VP*md
+PP*in
+SBAR*in VP*vb
+
+# id=onlineB.ru-en.170
+NP*np PRN*, VP*vbd
+CC PP*in NP*dt VP*vbd ''
+NP*nnp VP*vbd
+NP*nnp VP*vbd
+NP*prp VP*vbd ''
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP-TMP*rbr NP*dt VP*vbd
+NP*prp VP*vbd
+CC NP*nnp VP*vbd
+NP*nns VP*vbd
+NP*np VP*vbd ''
+NP*dt VP*vbd
+ADVP*rb PRN*, NP*np VP*vbz
+NP*nnp VP*vbd
+NP*nnp VP*vbd
+NP*prp VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*nn VP*vbz
+
+# id=onlineB.ru-en.171
+S*np CC S*np
+NP*np VP*vbz
+SBAR*whadvp NP*prp VP*vp
+S*np CC S*np
+PP*in
+
+# id=onlineB.ru-en.172
+NP*nnp VP*vbp
+NP*np VP*vbp
+NP*prp$ VP*vbd
+VP*vbd
+WHNP*wp SQ*np
+NP*jj VP*vbn
+NP*np
+NP*jj VP*vbd
+NP*np VP*vbz
+NP*prp VP*vbz
+NP*nnp ADVP*rb VP*vbz
+NP*jj VP*vbz
+PP*in NP*jj VP*vbd
+NP*np VP*vbp
+
+# id=onlineB.ru-en.173
+NP*nnp NP*np
+S*np NP*nnp
+S*vp NP*dt VP*vbz
+NP*np VP*vp
+NP*prp VP*vbd
+NP*np VP*vbz
+PP*in
+NP*np VP*vbp
+NP*nnp VP*vp
+S*np '' CC S*pp ''
+CC NP*np VP*vbz
+NP*np VP*md
+NP*nnp VP*vp
+PP*in NP*prp VP*vbd
+NP*dt VP*md
+NP*np VP*vbd
+S*np ADVP*rb S*np ''
+
+# id=onlineB.ru-en.174
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP*nns VP*vbd
+NP*dt VP*vbd
+NP*nns VP*vbg
+ADVP*rb PP*in
+NP*nns SBAR*whnp
+
