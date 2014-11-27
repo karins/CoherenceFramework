@@ -14,11 +14,7 @@ try:
 except:
     _PROGRESSBAR_ = False
 
-try:
-    from doctext import iterdoctext
-except:
-    print "You need to add 'preprocessing' to your PYTHONPATH"
-    sys.exit(0)
+from doctext import iterdoctext
 
 
 def bar(iterable):
@@ -97,14 +93,14 @@ def encode_documents(T, null=None):
     >>> corpus = [doc]
     >>> T1, V1 = encode_documents(corpus)
     >>> T1 
-    array([[[0], [1 2 3 1 2], [4]]], dtype=object)
+    array([[array([0]), array([1, 2, 3, 1, 2]), array([4])]], dtype=object)
     >>> V1['a'] # note how 'a' gets assigned id 0
     0
     >>> len(V1) # and there will be 5 unique words in the vocabulary
     5
     >>> T2, V2 = encode_documents(corpus, '<null>')
     >>> T2  # note how the first token won't be 0, because that's reserved for the null token
-    array([[[1], [2 3 4 2 3], [5]]], dtype=object)
+    array([[array([1]), array([2, 3, 4, 2, 3]), array([5])]], dtype=object)
     >>> len(V2) # note how the vocabulary is bigger now (due to the null symbol)
     6
     >>> V2['<null>'] # and finally, the null symbol is assigned id 0
@@ -127,7 +123,7 @@ def encode_test_documents(T, vocab):
     >>> vocab = {'<null>':0, 'a':1, 'b':2, 'c':3}
     >>> T = [[['a'], ['b', 'c', 'd', 'b', 'c'], ['e']]]
     >>> encode_test_documents(T, vocab)
-    array([[[1], [ 2  3 -1  2  3], [-1]]], dtype=object)
+    array([[array([1]), array([ 2,  3, -1,  2,  3]), array([-1])]], dtype=object)
     """
     return np.array([[np.array([vocab.get(t, -1) for t in S], int) for S in D] for D in T])
 

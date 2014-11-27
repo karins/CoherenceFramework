@@ -4,8 +4,7 @@ import logging
 import math
 import numpy as np
 from collections import defaultdict
-from util import register_token, read_documents, encode_documents, encode_test_documents, ibm_pairwise
-#from ibm1 import loglikelihood
+from discourse.util import register_token, read_documents, encode_documents, encode_test_documents, ibm_pairwise
 
 
 def parse_args():
@@ -13,10 +12,16 @@ def parse_args():
 
     parser = argparse.ArgumentParser(description='IBM model 1 decoder for syntax-based coherence',
             formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-
+    
     parser.add_argument('model',
             type=str,
             help='path to model estimated by ibm1.py')
+    parser.add_argument('input', nargs='?', 
+            type=argparse.FileType('r'), default=sys.stdin,
+            help='test corpus in doctext format')
+    parser.add_argument('output', nargs='?', 
+            type=argparse.FileType('w'), default=sys.stdout,
+            help='document log probabilities')
     parser.add_argument('--verbose', '-v',
             action='store_true',
             help='increase the verbosity level')
@@ -91,7 +96,7 @@ def main(args):
     boundaries = '<doc>' in vocab
     # reads in the test documents
     logging.info('Reading test documents in (boundaries=%s) ...', boundaries)
-    documents = read_documents(sys.stdin, boundaries)  
+    documents = read_documents(args.input, boundaries)  
     logging.info('%d test documents read', len(documents))
    
     # encode test documents using the model's vocabulary
@@ -101,9 +106,9 @@ def main(args):
     L = loglikelihood(test, T)
 
     # dumps scores
-    print '#doc\t#loglikelihood'
+    print >> args.output, '#doc\t#loglikelihood'
     for i, l in enumerate(L):
-        print '{0}\t{1}'.format(i, l)
+        print >> args.output, '{0}\t{1}'.format(i, l)
     print >> sys.stderr, '#sum\t#mean'
     print >> sys.stderr, '{0}\t{1}'.format(L.sum(), np.mean(L))
   

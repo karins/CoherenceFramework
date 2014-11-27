@@ -65,6 +65,11 @@ def main():
     """Use this to convert a list of documents (one document per file) into a single doctext"""
     import sys
     import os
+    
+    if len(sys.argv) > 1:
+        print >> sys.stderr, 'python -m discourse.doctext < corpus.files > corpus.doctext'
+        sys.exit(0)
+
     files = [path.strip() for path in sys.stdin if not path.startswith('#')]
     for path in files:
         doc_name = os.path.basename(path)

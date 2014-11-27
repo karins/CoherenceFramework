@@ -14,9 +14,9 @@ import traceback
 import os
 from functools import partial
 from multiprocessing import Pool
-from docsgml import TextFromSGML, MakeSGMLDocs
+from discourse.docsgml import TextFromSGML, MakeSGMLDocs
 from ldc import get_ldc_name
-from doctext import writedoctext
+from discourse.doctext import writedoctext
 
 
 def extract_and_save_sgml(sgml_gz, args):

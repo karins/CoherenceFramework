@@ -43,7 +43,7 @@ import itertools
 import argparse
 import math
 import numpy as np
-from util import bar, ibm_pairwise, read_documents, encode_documents
+from discourse.util import bar, ibm_pairwise, read_documents, encode_documents
 
 
 def loglikelihood(corpus, T):
@@ -108,6 +108,12 @@ def parse_args():
     parser = argparse.ArgumentParser(description='IBM model 1 for syntax-based coherence',
             formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
+    parser.add_argument('input', nargs='?', 
+            type=argparse.FileType('r'), default=sys.stdin,
+            help='input corpus in doctext format')
+    parser.add_argument('output', nargs='?', 
+            type=argparse.FileType('w'), default=sys.stdout,
+            help='output IBM1 estimats')
     parser.add_argument('--max-iterations', '-m',
             type=int, default=50,
             help='maximum number of iterations')
@@ -130,7 +136,7 @@ def parse_args():
 def main(args):
     # read documents 
     logging.info('Reading documents in...')
-    documents = read_documents(sys.stdin, args.boundary)
+    documents = read_documents(args.input, args.boundary)
     logging.info('%d documents read', len(documents))
 
     # maps tokens to integer ids (0 is reserved for a special <null> symbol)
@@ -147,12 +153,12 @@ def main(args):
     tokens = [t for t, i in sorted(vocab.iteritems(), key=lambda (t, i): i)]
     V = len(tokens)
     # we print a header so that the meaning of each column is clear
-    print '#trigger\t#pattern\t#p(pattern|trigger)'  # note that e=trigger and f=pattern 
+    print >> args.output, '#trigger\t#pattern\t#p(pattern|trigger)'  # note that e=trigger and f=pattern 
     # we iterate over f in no particular order (simply that of the vocabulary ids)
     for f in xrange(V):
         # we iterate over triggers so that the most likely ones come first
         for e in sorted(itertools.ifilter(lambda e: T[f,e], xrange(V)), key=lambda e: T[f,e], reverse=True):
-            print '{0}\t{1}\t{2}'.format(tokens[e], tokens[f], T[f,e])
+            print >> args.output, '{0}\t{1}\t{2}'.format(tokens[e], tokens[f], T[f,e])
 
 
 if __name__ == '__main__':

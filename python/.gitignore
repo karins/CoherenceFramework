@@ -3,3 +3,9 @@
 
 # vim files
 .*.swp
+
+# python build files
+build  
+discourse.egg-info  
+dist  
+installed_files.txt

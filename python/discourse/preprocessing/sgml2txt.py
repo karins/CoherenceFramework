@@ -33,10 +33,10 @@ import numpy as np
 from time import time
 from functools import partial
 from multiprocessing import Pool
-from docsgml import MakeSGMLDocs
+from discourse.docsgml import MakeSGMLDocs
 from ldc import get_ldc_name 
 from nltk.tree import Tree
-from doctext import writedoctext
+from discourse.doctext import writedoctext
 
 
 def make_workspace(workspace):

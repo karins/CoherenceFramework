@@ -31,7 +31,7 @@ from collections import defaultdict
 from scipy.optimize import minimize_scalar
 import argparse
 import numpy as np
-from util import bar, pairwise, ibm_pairwise, read_documents, encode_documents
+from discourse.util import bar, pairwise, ibm_pairwise, read_documents, encode_documents
 
 
 def count(T, V, insertion=False):

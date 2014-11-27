@@ -16,9 +16,9 @@ import subprocess
 from time import time
 from functools import partial
 from multiprocessing import Pool
-from docsgml import TextFromSGML, MakeSGMLDocs
+from discourse.docsgml import TextFromSGML, MakeSGMLDocs
 from ldc import parse_ldc_name_from_path
-from doctext import iterdoctext, writedoctext
+from discourse.doctext import iterdoctext, writedoctext
 from nltk.tree import Tree
 
 

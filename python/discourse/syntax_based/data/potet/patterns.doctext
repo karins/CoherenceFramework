@@ -1,0 +1,11086 @@
+# id=part1_nopunctuation.0
+S*np NP*nnp VP*vbz
+S*np S*np
+NP*np VP*vbp
+NP*np VP*md
+NP*np VP*vbd
+S*np CC S*,
+NP*dt VP*md
+ADVP*rb NP*np VP*vbz
+NP*prp VP*vbz
+NP*np VP*vbz
+NP*np VP*vbp
+PP*in NP*prp ADVP*rb VP*vbd
+NP*np VP*vbz
+NP-TMP*np NP*np VP*vp
+PP*in NP*dt VP*vbp CC ADVP*rb S*np
+S*np CC S*np
+SBAR*in VP*vbz
+NP*np VP*vbz
+S*np CC S*np
+NP*np VP*md
+PP*in NP*dt VP*md
+S*sbar S*s
+SBAR*in NP*prp VP*vbz
+PP*in NP*nnp VP*md
+PP*in NP*np VP*vbz
+NP*prp VP*vp
+ADVP*rb NP*dt VP*vbz
+CC NP*prp VP*vbp
+NP*np VP*vbz
+S*np CC S*np
+NP*dt VP*md
+NP*jj VP*vbp
+PP*vbn NP*prp VP*vbp
+CC NP*nn ADVP*rb VP*vbz
+NP*dt VP*md
+S*np CC S*np
+ADVP*rb NP*ex VP*md
+CC NP*nn VP*md
+NP*dt VP*vbz
+SBAR*in NP*prp VP*md
+
+# id=part1_nopunctuation.1
+NP*np NP*np
+S*np CC S*np
+NP*np VP*vbz
+ADVP*rb NP*jj VP*vbd
+PP*vbg NP*np VP*vbd
+NP*np VP*md
+CC S*np PRN*: CC S*np
+NP*np VP*vbd
+NP*prp$ VP*vbd
+NP*np VP*vbn
+PP*in NP*dt ADVP*rb VP*vbd
+NP*nn VP*vbn
+PP*in NP*prp VP*vbd
+ADVP*rb NP*nnp VP*vbd
+NP*dt ADVP*in VP*md
+SBAR*in VP*vbz
+NP*np VP*vbz
+NP*np ADVP*rb VP*vbd
+NP*np VP*vbd
+SBAR*in NP*nns VP*vbp
+NP*jj VP*vbp
+NP*np VP*vp
+ADVP*rb NP*jj ADVP*rb VP*vbp
+PP*vbg NP*np ADVP*rb VP*vbp
+NP*dt VP*md
+PP*in NP*np VP*vbz
+PP*in NP*np VP*md
+MD NP*prp VP*vb
+S*vp IN S*np
+NP*nn ADVP*rb NP*np VP*md
+
+# id=part1_nopunctuation.2
+NP*np NP*np
+NP*np VP*vbz
+ADVP*rb PP*vbg NP*ex VP*vbz
+ADVP*rb PP*in NP*dt VP*vbz
+NP*dt VP*vbz ''
+NP*prp VP*vbz
+PP*in NP*np VP*vbz
+S*np S*np
+NP*np VP*vbp
+NP*dt VP*vbz
+NP*np VP*md
+PP*in NP*nnp VP*vbz
+S*np PRN*, CC S*np
+ADVP*rb PP*in VP*vbd
+NP*np VP*vbz
+NP-TMP*np PRN*: `` NP*dt VP*vbz ''
+PP*in PP*rb NP*cd VP*vbz
+NP*dt VP*vbz
+SBAR*in NP*np VP*vbz
+NP*jj VP*md
+PP*in NP*np VP*vbz
+S*vp VP*vp
+S*np CC S*np
+RB WHNP*wp SQ*md
+ADVP*rb NP*np VP*md
+PP*in S*vp VP*vp
+PP*in NP*np VP*md
+S*np CC S*np
+NP*dt VP*md
+PP*in NP*nns VP*vbp
+CC PP*in PRN*: NP*np VP*md
+PP*in NP*cd VP*vbz
+
+# id=part1_nopunctuation.3
+NP*dt NP*nnp
+NP*nnp S*pp
+S*advp S*np
+ADVP*rb NP*dt VP*vp
+ADVP*rb NP*nn VP*vbz
+SBAR*rb NP*prp VP*md
+RB NP*nns VP*vbp
+NP*adjp VP*vbp
+WHNP*wdt SQ*vp
+RB NP*np
+PP*in NP*np VP*vbz
+NP*np VP*md
+PP*in NP*cd VP*vbd
+SBAR*in NP*prp VP*md
+NP*nn VP*md
+NP*nns VP*vbp
+S*sbar S*np S*np S*np
+S*sbar S*np
+NP*nn VP*vbz
+S*vp VP*vbz
+ADVP*rb NP*np VP*md
+CC NP*np VP*vbz
+S*sbar NP*nn VP*vbp
+PP*in NP*wdt VP*md
+NP*dt VP*vbz
+CC NP*nn VP*vbz
+PP*in NP*dt VP*vbz
+NP*prp$ VP*md
+NP*nnp VP*vbz
+SBAR*in PRN*-lrb- NP*prp VP*vbz
+NP*dt VP*vbz
+NP*jj VP*vbp
+NP*np VP*vbp
+PP*in NP*dt VP*md
+NP*dt PP*in PP*in
+NP*jj VP*vbp
+NP*np VP*vbz
+VP*np
+NP*np VP*md
+CC WP IN NP*nnp
+PP*in NP*nnp VP*vbz
+ADVP*rb NP*nn VP*md
+ADVP*rb NP*ex VP*vbp
+NP*pdt VP*vbz
+SBAR*in NP*prp VP*vbp
+NP*nnp VP*vbz
+PP*in NP*dt VP*vbz
+
+# id=part1_nopunctuation.4
+NP*np VP*vbp
+NP*prp VP*vbp
+CC NP*np VP*vbd
+MD NP*dt VP*vb
+PP*in NP*nns ADVP*rb VP*vbp
+S*np S*np
+PP*in NP*dt VP*vbz
+NP*jj VP*vbp
+NP*prp$ VP*vbp
+S*np CC S*np
+CC ADVP*rb NP*nns VP*md
+ADVP*rb PP*rb NP*jj VP*vbp
+NP*jj VP*vbp
+CC PP*in NP*np VP*vbp
+NP*dt VP*vbp
+VP*vbz
+SBAR*whadvp NP*rbr VP*vbp
+WHADVP*wrb SQ*vp
+S*vp NP*nns VP*vbp
+NP*nns VP*md
+NP*prp VP*vbp
+RB S*np CC S*np
+NP*np VP*vbp
+NP*qp PP*in PP*in
+SBAR*in NP*prp VP*vbp
+NP*jj ADVP*rb VP*vbp
+NP*dt VP*vbp
+PP*in ADVP*rb NP*nns VP*md
+ADVP*rb PP*in PP*in NP*np VP*vbp
+ADVP*rb NP*nns VP*md
+S*np CC S*np
+S*vp NP*jj VP*md
+PP*in NP*np VP*vp
+ADVP*rb NP*np VP*vbd
+NP*np VP*vp
+NP*nns VP*md
+NP*jj VP*md
+PP*in NP*jj VP*vbz
+S*vp NP*prp VP*vp
+NP*nns VP*md
+
+# id=part1_nopunctuation.5
+NP*np VP*vbz
+NP*dt VP*md
+ADVP*rb NP*np VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbp
+NP*dt VP*vbp
+CC PP*in NP*jj VP*vbp
+NP*prp VP*vbp
+S*vp VP*md
+S*cc S*np
+S*advp S*np
+NP*np VP*vbz
+SBAR*whnp VP*vbz
+SBAR*in NP*np VP*md
+ADVP*rb NP*np VP*vbz
+CC NP*np VP*vbz
+ADVP*rb NP*np VP*vbz
+ADVP*rb NP*jj VP*md
+ADVP*rb NP*np VP*vbp
+NP*dt VP*vbz
+NP*prp VP*vbz
+S*np S*np
+S*np CC S*np
+SBAR*in ADVP*rb NP*prp VP*vbz
+NP*prp VP*vbd
+RB NP*jj VP*md
+SBAR*in NP*np VP*vbp
+NP*prp VP*vbz
+NP*prp VP*md
+
+# id=part1_nopunctuation.6
+NP*np SBAR*whadvp NP*dt VP*vbd
+NP*np VP*vbz
+NP*prp ADVP*rb VP*vbd
+NP*dt VP*vbp
+NP*jj VP*vbd
+CC NP*jj VP*vbp
+PP*in NP*nns VP*vbd
+NP*np VP*vbd
+S*cc S*np
+CC ADVP*rb NP*dt VP*md
+PP*in NP*dt VP*vbz
+PP*in NP*prp VP*vbd
+ADVP*rb NP*np VP*vbz
+PP*in NP*dt VP*vbz
+PP*in NP*dt VP*vbn
+PP*in NP*np VP*vbd
+S*np CC S*pp
+NP-TMP*nn NP*dt VP*vbz
+S*np CC S*np S*np CC S*np
+SBAR*whadvp NP*prp VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd
+ADVP*rb NP*prp VP*vbd
+SBAR*in NP*cd VP*md
+PP*in NP*dt VP*vbd
+PP*in NP*prp VP*vbd
+S*np NP*prp VP*vbz
+RB SBAR*whadvp NP*prp VP*vbd
+S*np VP*vbd ''
+ADVP*rb NP*np VP*vbz
+S*np FRAG*conjp
+NP*prp VP*vp
+S*np S*sbar
+NP*prp VP*md
+VBZ NP*nnp NP*np
+NP*nns NP*dt
+NP*prp VP*vbz
+RB WHADVP*wrb SQ*vbz
+SBAR*in
+
+# id=part1_nopunctuation.7
+PP*np PP*in NP*prp VP*vbp
+PP*in NP*nns VP*vbp
+PP*in NP*dt VP*vbd
+PP*in NP*prp VP*vbd
+PP*in NP*nn VP*vbd
+CC SBAR*in NP*nn VP*vbd
+SBAR*in NP*prp VP*vbd
+NP*np VP*vbp
+ADVP*rb PP*in NP*prp VP*vbz
+NP*jj VP*vbp
+NP*np VP*vbp
+PP*in NP*prp VP*vbp
+NP*np VP*vbp
+NP*prp VP*vbp
+PP*in NP*prp VP*vbp
+PP*in NP*dt VP*vbp
+CC NP*dt VP*vbz
+S*pp S*np
+NP*jj VP*vbp
+ADVP*rb ADVP*rb NP*prp VP*vbz
+S*s VP*md NP*np
+NP*prp VP*vbz
+NP*prp VP*vbz
+PP*in NP*dt VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbp
+CC S*np CC S*np
+PP*vbn VP*vbz NP*np
+S*np S*np
+NP*dt VP*vbz
+NP*np VP*vbp
+NP*nn VP*md
+CC NP*dt VP*md
+NP*nnp VP*vbz
+S*np S*s
+NP*dt VP*md
+
+# id=part1_nopunctuation.8
+VP*vbn
+WHNP*wdt SQ*vbp
+NP*np VP*vbz
+ADVP*rb NP*rb VP*vbz
+PP*in NP*np VP*md
+ADVP*rb NP*rb VP*vbz
+ADVP*rb NP*np VP*md
+PP*in NP*prp VP*md
+S*np-tmp CC S*np
+RB ADVP*rb VP*vbz NP*dt
+CC MD NP*prp VP*vb
+NP*nns PP*in PP*in PP*in PP*in
+CC SBAR*whadvp NP*prp VP*vbp
+NP*nnp VP*vbz
+S*vp VP*vbp
+CC NP*prp VP*vbz
+NP*dt VP*vp
+MD NP*np VP*vb
+NP*prp$ VP*md
+S*np S*np
+NP*prp VP*vbp
+IN NP*dt VP*vbp
+CC SBAR*whnp VP*vbz
+NP*np VP*vbp
+NP*np VP*vbp
+PP*in SBAR*sbar NP*prp VP*md
+ADVP*rb SBAR*in NP*prp VP*md
+ADVP*in PRN*, SBAR*in NP*prp VP*vbp
+
+# id=part1_nopunctuation.9
+S*s RB S*np
+CC NP*dt VP*vbz
+ADVP*rb SBAR*in NP*nn VP*vbz
+NP*np VP*vbz
+PP*in ADVP*rb NP*prp VP*vbz
+SBAR*in NP*jj VP*md
+ADVP*rb NP*np VP*vbz
+NP*np VP*md
+SBAR*in VP*md
+CC NP*dt VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbp
+NP*jj VP*vbz
+NP*dt ADVP*rb VP*vbz
+NP*np VP*vbp
+PP*in SBAR*whadvp NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbz
+S*np CC S*np
+NP*ex VP*vbz
+S*np S*np CC S*np
+NP*prp VP*vbz
+SBAR*in NP*prp VP*vbd
+NP*np VP*vbd
+S*np S*np
+NP*cd VP*vbz
+S*np S*np S*np S*np S*np
+NP*prp VP*vbz
+S*s CC S*np
+S*np S*np S*np
+S*np S*np
+NP*dt VP*vbz
+ADVP*in NP*np VP*vp
+NP*pdt VP*vbz
+NP*jj VP*md
+
+# id=part1_nopunctuation.10
+S*np CC S*np
+NP*dt ADVP*rb VP*vp
+RB PP*in NP*np VP*vbp
+NP*prp VP*vbz
+SBAR*in NP*dt VP*vbz
+PP*in NP*ex VP*vbz
+NP*np VP*vbd
+ADVP*rb VP*vbn VP*vp NP*np
+NP*dt ADVP*rb VP*vbd
+NP*jj VP*vbp
+NP*nns VP*md
+ADVP*rb NP*ex VP*vbp
+NP*jj VP*vbp
+NP*np VP*vbp
+NP*nnp VP*vbz ''
+NP*dt VP*vbz
+S*np CC PRN*, S*np
+NP*dt ADVP*rb VP*vbz
+PP*in NP*prp VP*vbp
+NP*np VP*vbp
+PP*in NP*np VP*vbz
+NP*np VP*vp
+NP*dt VP*vbz
+SBAR*whadvp NP*np VP*vbz
+NP*dt ADVP*rb VP*vp
+ADVP*rb NP*np VP*vbd
+NP*dt VP*vp
+ADVP*rb NP*dt VP*vbd
+NP*prp VP*vbz
+CC NP*np VP*vbz
+SBAR*in NP*dt VP*vbd
+NP*nns VP*vbp
+NP*np VP*vbp
+NP*np VP*vp
+NP*np VP*vbp
+NP*prp$ ADVP*rb VP*vbz
+ADVP*rb NP*np VP*vbz
+NP*np VP*md
+NP*dt VP*vbz
+NP*np ADVP*rb VP*vbz
+NP*prp$ VP*vbz
+PP*in NP*dt VP*md
+NP*prp VP*vbz
+ADVP*rb SBAR*in NP*prp VP*vbp
+
+# id=part1_nopunctuation.11
+NP*nn VP*vbz
+SBAR*in NP*prp VP*vbz
+NP*np VP*vbp
+NP*prp VP*vbz
+CC NP*np VP*vbp
+S*np CC S*np
+NP*np VP*vbz
+NP*prp VP*vbd
+PP*rb NP*nnp VP*vbp
+ADVP*rb PP*in NP*dt VP*vbd
+CC PP*in NP*ex VP*vbz
+NP*dt SBAR*s `` S*np ''
+NP*np ADVP*rb ADVP*rb VP*vbz
+NP*dt VP*vbp
+NP*np VP*md
+PP*in NP*np VP*md
+ADVP*rb NP*np VP*vbz
+NP*np VP*vbz
+CC NP*ex VP*vbp
+MD NP*prp VP*vb
+MD NP*nnp VP*sbar
+MD NP*prp VP*vb
+S*np S*advp
+VBZ NP*jj NP*np
+VBZ NP*prp ADJP*in S*vp
+NP*dt VP*vbp
+NP*prp VP*vbp
+NP*dt ADVP*rb VP*vbn
+SBAR*in PP*advp VP*vbz
+VP*vb
+VP*vb
+CC NP*nnps VP*md
+NP*np VP*vbp
+NP*np VP*vbz
+NP*dt VP*vp
+NP*prp ADVP*rb VP*md ''
+NP*jj VP*vp
+
+# id=part1_nopunctuation.12
+PP*in NP*dt VP*vbz
+NP*rb VP*vbz
+NP*dt VP*vbz
+SBAR*in NP*jj VP*md
+CC ADVP*rb NP*dt VP*md
+PP*in NP*prp VP*md
+PP*in NP*dt VP*vbz
+ADVP*rb NP*np VP*md
+S*vp VP*md
+VP*vbg VP*vbz NP*dt
+NP*nns VP*md
+NP*dt VP*md
+PP*in PP*in NP*jj VP*vbp
+ADVP*rb NP*prp VP*vbz
+NP*prp VP*vbz
+S*vp NP*dt VP*vbz
+PP*to PP*in VP*vbp
+SBAR*in NP*jj VP*vbp
+PP*in NP*np VP*md
+PP*vbn NP*nn VP*vbp
+NP*jj VP*vbz
+ADVP*rb NP*nns VP*vbp
+NP*dt VP*vbz
+NP*dt VP*vbz
+S*cc CC S*np
+PP*vbg NP*np VP*vbd
+ADVP*rb VP*vbz NP*np
+
+# id=part1_nopunctuation.13
+NP*nn PP*in PP*in
+NP*nnp VP*vbz
+NP*dt VP*vbz
+NP*jj VP*vbz
+SBAR*in NP*nnps VP*vbp
+ADVP*rb SBAR*in PRN*: NP*nnp VP*vbz
+ADVP*rb NP*np VP*vbz
+NP*np VP*md
+NP*np VP*vbz
+ADVP*rb NP*np VP*vbp
+ADVP*rb NP*dt VP*md
+S*vp NP*np VP*vbp
+NP*dt PRN*, VP*md
+NP*np VP*vbp
+NP*nnp VP*vbz
+CC NP*nnp VP*vbz
+NP*np VP*vbz
+NP*prp ADVP*rb VP*md
+SBAR*in NP*np VP*vbp
+NP*dt VP*vbz
+S*np S*np
+ADVP*rb NP*dt VP*md SBAR*x
+PP*in S*pp CC S*np
+NP*dt VP*vbp
+CC NP*np VP*vbp
+ADVP*rb NP*nn VP*md
+ADVP*rb SBAR*rb NP*prp VP*md
+WHNP*wdt SQ*vp
+SBAR*in NP*dt VP*md
+NP*np VP*vbz
+SBAR*in NP*dt VP*vbp
+PP*in PP*in NP*dt VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+RB VP*vbz NP*np
+SBAR*in NP*prp VP*md
+
+# id=part1_nopunctuation.14
+NP*nn PP*np NP*nns VP*vbp
+ADVP*rb NP*advp VP*vbp
+NP*nnps VP*vbp
+PP*in NP*jjs VP*vbp
+NP*jj VP*vbz
+NP*dt VP*vbz
+NP*prp$ VP*vbz
+NP*np VP*vbp
+PP*in PP*in NP*prp VP*vbd
+NP*np ADVP*rb VP*vbd
+NP*prp$ VP*vbd
+ADVP*rb NP*prp$ VP*vbd
+S*np CC S*pp
+PP*in NP*nnp VP*vbz
+NP*prp$ VP*vbz
+S*advp CC S*np
+NP*dt VP*vbz
+NP*dt VP*vbp
+PP*in NP*prp$ VP*md
+NP*np VP*vbp
+SBAR*in NP*prp VP*md
+RB NP*rb VP*md
+NP*jj ADVP*rb VP*vbp
+S*np S*s
+PP*in NP*dt VP*vbz
+NP*np VP*vbp
+PP*in NP*dt VP*vbz
+NP*nnp VP*md
+NP*jj VP*vbp
+NP*np VP*vbp
+NP*np VP*vbz
+ADVP*rb NP*rbs ADVP*rb VP*vbp
+S*cc NP*prp VP*vbz
+SBAR*in NP*np VP*vbz
+NP*prp$ VP*vbz
+NP*dt VP*md
+ADVP*rb NP*prp VP*vbp
+NP*np VP*md ''
+
+# id=part1_nopunctuation.15
+S*np NP*np VP*vbd
+S*np NP*nns VP*vbd
+ADVP*rb S*vp VP*vbd ''
+CC PP*rb NP*prp VP*vbd
+NP*np ADVP*rb VP*vp
+S*np NP*dt VP*vbd
+PP*in NP*nnps ADVP*rb VP*vbd
+PP*in '' NP*dt VP*advp
+ADVP*rb PP*in NP*dt VP*vbd ''
+PP*in NP*prp VP*vbd
+S*np S*np
+NP*dt VP*vbp
+PP*in NP*np VP*md
+ADVP*rb NP*np VP*vbd
+VP*s NP*np `` SBARQ*whnp
+NP*nnp VP*vbd
+ADVP*rb PP*in PP*in NP*dt VP*vbp ''
+NP*dt VP*vbz
+S*vp NP*dt VP*vp
+NP*prp VP*vbd
+PP*in NP*dt VP*vbd
+PP*in ADVP*rb NP*np VP*vbz
+WHNP*wp SQ*vbz
+NP*nnp ADVP*rb VP*vbz
+NP*np VP*vbz
+NP*prp VP*vbz
+NP*dt PP*in VP*vbz
+NP*prp VP*vbz
+RB S*np CC S*np
+PP*in NP*dt VP*vbz
+NP*prp VP*vbp
+NP*jj VP*vbd
+CC S*np CC S*np
+PP*in S*advp S*np
+NP*dt VP*vbz
+NP*np VP*vbd
+CC S*np S*np CC S*np
+ADVP*rb PP*in NP*dt VP*vbz
+PP*in NP*nnp VP*vp
+NP*prp VP*vbz
+PP*in NP*prp VP*vbz
+SBAR*np NP*prp VP*vbp
+NP*prp VP*vbz
+NP*np VP*vbz
+
+# id=part1_nopunctuation.16
+NP*dt VP*vbz
+CC SBAR*in NP*nns ADVP*rb VP*vbp
+PP*in VP*vbz NP*np ''
+PP*in NP*prp VP*vbp
+NP*nnp VP*vbz
+NP*nn VP*vbz
+ADVP*rb NP*nnp VP*vbz
+S*vp NP*prp VP*vbp
+ADVP*rb S*np CC S*np
+ADVP*rb ADVP*rb NP*prp VP*vbz
+NP*dt VP*vbz
+NP*np VP*md
+NP*nnp VP*vbd
+PP*in NP*dt VP*vbz
+PP*rb NP*jj VP*vbz
+SBAR*in NP*np VP*vbn
+ADJP*rb VP*vbz NP*np SBAR*in
+ADVP*rb PP*in NP*dt VP*vbz
+PP*in S*vp VP*vbz
+S*np S*np
+SBAR*in NP*np VP*md
+ADVP*rb PP*np NP*nnp VP*vbz
+PP*in NP*nnp VP*vbp ''
+S*np S*np
+SBAR*in NP*np VP*vbp
+NP*rb VP*md
+S*pp S*pp
+S*np S*s
+NP*dt VP*md ''
+
+# id=part1_nopunctuation.17
+NP*np VP*vbz
+PP*in NP*nns VP*vp
+VP*vbz NP*np
+NP*dt VP*vbz
+ADVP*rb NP*np VP*vbz
+NP*np VP*vbp
+PP*in NP*nnp VP*vbp
+PP*in NP*np VP*vbd
+NP*np VP*vbp
+PP*in NP*dt VP*vbz
+NP*np ADVP*rb VP*vbp
+NP*jj VP*vbp
+NP*np VP*vbz
+SBAR*in PP*in NP*np VP*vbp
+S*pp '' CC S*np
+NP*dt VP*vp
+PP*in NP*nns VP*vbd
+PP*in NP*jj ADVP*rb VP*advp
+NP*np VP*vbz
+NP*np VP*vbz
+SBAR*in '' NP*np VP*vbp
+NP*np VP*vbz
+NP*np VP*vbd
+SBAR*in NP*np VP*vbd
+SBAR*whadvp NP*np VP*vbd
+NP*np VP*md
+PP*in NP*nnp VP*vp
+ADVP*rb NP*np VP*vbd
+PP*in SBAR*whadvp NP*dt VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbd
+ADVP*rb PP*in NP*dt VP*vbz
+NP*np VP*vbz
+NP*jj VP*vbd
+SBAR*in NP*np VP*md
+NP*np VP*vbz
+NP*prp$ VP*vb
+PP*in NP*np VP*vbp
+NP*np VP*vbp
+NP*dt VP*vbz
+PP*in NP*np VP*vbz
+
+# id=part1_nopunctuation.18
+NNP NNP
+VBP NP*prp VP*vb
+PP*in NP*dt VP*vbz
+PP*vbg NP*nnp SBAR*whadvp NP*jj VP*vbp
+ADVP*rb NP*dt VP*vbz
+PP*rb PRN*: NP*nns VP*vbp
+SBAR*rb NP*jj VP*vbp
+NP*np VP*vbz
+NP*nns VP*vbp
+PP*in NP*nns VP*vbp
+NP*np VP*vbz
+VP*vb
+NP*cd
+NP*np VP*vbp
+NP*np VP*vbz
+NP*np VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vbp
+CC NP*prp VP*vbp
+PP*in NP*prp VP*vbp
+S*np S*np
+CC NP*prp VP*vbp
+ADVP*rb NP*ex VP*vbz
+SBAR*in NP*nns VP*vbp
+CC NP*np VP*vbz
+FRAG*intj NP*jj VP*vbz
+CC NP*np VP*vbz
+S*np FRAG*advp
+SBAR*in SQ*vp
+ADVP*rb NP*np VP*md
+S*np CC S*np
+NP*np VP*vbz
+PP*in NP*ex VP*vbz
+SBAR*in WHNP*wp SQ*vp
+S*np CC S*np
+NP*prp VP*vbz
+NP*np VP*vbp
+S*np CC S*np
+NP*np VP*md
+NP*nnps PP*in VP*md
+
+# id=part1_nopunctuation.19
+S*vp NP*jj VP*vbz
+NP*dt VP*vbd ''
+NP*np VP*vbd
+ADVP*rb SBAR*whadvp NP*prp ADVP*rb VP*vbp
+VP*vb
+NP*dt VP*vbz
+CC NP*np VP*vbz
+NP*np VP*vbp
+NP*nn VP*vbz
+NP*jj VP*vbp
+S*vp CC S*np
+IN NP*np VP*vbp
+RB NP*jj VP*vbp
+NP*np ADVP*rb VP*vbd
+NP*nn VP*md
+S*np CC S*np
+NP*np VP*md
+NP*nn ADVP*rb VP*vbp
+S*np CC S*np
+S*np CC S*np
+NP*np VP*vbp
+NP*dt VP*md
+ADVP*rb NP*jj VP*vbp
+PP*in NP*nnp ADVP*rb VP*md
+RB NP*np VP*vbz
+NP*nnp VP*md
+ADVP*rb NP*np VP*md
+ADVP*rb NP*nns VP*vbp
+NP*np VP*md
+NP*dt VP*vbp
+VP*vb
+S*np CC S*advp
+S*vp NP*prp VP*vbz
+PP*in NP*dt VP*vbd
+NP*nns VP*vbp
+NP*nn VP*vbz
+NP*prp VP*vbz
+PP*in NP*jj ADVP*rb VP*vbz
+NP*nns VP*md
+ADVP*rb NP*prp VP*vbz
+NP*rb VP*vbz
+
+# id=part1_nopunctuation.20
+S*vp VP*vbz
+PP*in NP*nnp VP*vbz
+NP*jj VP*vbp
+RB NP*nn VP*vbz
+NP*np VP*vbz
+NP*jj VP*vbp
+S*np CC S*np
+ADVP*rb NP*nn VP*vbp
+S*np CC S*np
+S*np CC S*np
+NP*nnp VP*vbz
+S*np CC S*np
+ADVP*rb NP*dt VP*vp
+WHNP*whnp PP*np
+NP*prp VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbd
+NP*nnps VP*vp
+S*np CC S*np
+NP-TMP*rb NP*np VP*vbz
+NP*nnp VP*vbz
+NP*dt VP*vbp
+NP*dt NP-TMP*nn VP*vbz
+PP*in PRN*: NP*jj VP*vp
+PP*in NP*np VP*vbz
+PP*in NP*jj VP*vbz
+NP*jj ADVP*rb VP*vbp
+PP*in S*np CC S*np
+NP*dt VP*vbz
+NP*jj VP*vbp
+PP*in NP*np VP*vbz
+NP*dt VP*vp
+NP*dt VP*vbz
+NP*nnp VP*vbz
+NP*prp VP*vbz
+NP*nnp ADVP*rb VP*vbz
+NP*np VP*md
+ADVP*rb NP*jj VP*vbp
+NP*pdt VP*md
+NP*pdt VP*md
+NP*jj VP*md
+NP*prp VP*md
+NP*prp VP*md
+NP*np VP*md
+NP*np VP*vbp
+NP*dt PP*in S*vp
+SBAR*in NP*np VP*md
+
+# id=part1_nopunctuation.21
+VBP NP*nn PP*np
+NP*np VP*vbd
+NP*nn PP*pp PP*in
+S*np S*np
+NP*dt VP*vp
+ADVP*rb NP*np VP*vbz
+NP*np VP*vbd
+PP*in NP*nn ADVP*rb VP*vbd
+VBZ NP*dt VP*vbn
+VP*md
+ADVP*jjr ADVP*rb VP*md
+NP*dt VP*vbd
+NP*nn VP*vbp
+NP*np VP*vbz
+ADVP*rb NP*ex VP*vbz
+NP*nns VP*md
+S*pp CC S*np
+NP*cd VP*vp
+NP*dt VP*vp
+ADVP*rb NP*dt VP*vbz
+NP*np VP*vbz
+ADVP*rb NP*nn VP*vbz
+S*np CC S*np
+NP*np VP*vbp
+ADVP*rb NP*np VP*vbz
+NP*qp NP*np
+SBAR*in X*dt NP*prp VP*vbp
+NP*np VP*vbz
+NP*dt VP*vbz
+S*np CC S*s
+PP*in NP*jj VP*vbz
+NP*np VP*md
+SBAR*rb WHADVP*wrb SQ*vbz
+NP*np VP*vbp
+NP*prp VP*vbp
+S*np CC S*np
+PP*vbn NP*prp VP*vbz
+NP*dt VP*vbp
+PP*in NP*ex VP*vbz
+NP*np VP*vbp
+ADVP*rb NP*np VP*md
+
+# id=part1_nopunctuation.22
+NP*np ADVP*rb VP*vbz
+S*np S*sbar
+NP*np VP*vbp
+CC NP*np VP*vbz
+NP*np VP*vbp
+PP*in NP*prp VP*vbp
+NP*dt VP*vbz
+S*np CC S*np
+PP*in S*np CC S*np
+NP*dt VP*vbp
+NP*dt VP*vbz
+ADVP*rb NP*np VP*vbp
+PP*in NP*np VP*vbp
+NP*nnp VP*vbp
+S*np S*np
+S*s S*np
+ADVP*rb NP*prp VP*vbp
+CC NP*np VP*vbz
+NP*np VP*vp
+NP*np VP*vbz
+NP*nnp VP*vbp
+S*np NP*adjp PRN*, VP*vbz
+NP*dt VP*md
+S*np S*np
+S*vp NP*vbg VP*vbp
+S*np CC S*np
+PP*in NP*jj VP*md
+ADVP*rb NP*nns VP*md
+NP*dt VP*md
+NP*np VP*vbz
+S*np RB S*np
+NP*nn VP*md
+NP*np VP*md
+NP*np VP*md
+SBAR*in NP*np VP*md
+
+# id=part1_nopunctuation.23
+NP*np PP*in NP*nnp VP*vbz
+PP*in NP*nnp VP*md
+WHADVP*wrb SQ*vbz
+NP*np VP*vbz
+NP*jj PRN*, VP*vbz
+CC NP*dt VP*vbz
+NP*nnp VP*vp
+NP*np VP*vbz
+NP*np VP*vp
+NP*dt VP*vbz
+NP*dt VP*vbd
+SBAR*in NP*prp VP*vbd
+S*np CC S*np
+NP*np PP*in VP*vbd
+NP*dt VP*vbd
+NP*np VP*vp
+CC S*np CC S*np
+VP*vb
+PP*jj NP*nnp VP*vbd
+NP*dt VP*vbd
+NP*np VP*vp
+NP*dt VP*vp
+CC NP*prp VP*vbz
+NP*dt VP*vbd
+PP*in NP*np VP*vbp
+NP*jj VP*vbz
+SBAR*in NP*dt VP*vbd
+NP*dt VP*vbd
+S*np CC S*np
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbp
+PP*in NP*prp VP*md
+ADVP*rb NP*jj VP*vbp
+NP*np VP*md
+ADVP*rb ADVP*rb VP*md NP*prp S*vp
+
+# id=part1_nopunctuation.24
+NP*np NP*ex VP*vbp
+NP*prp VP*vbd
+ADVP*rb NP*prp VP*vbz
+PP*in NP*prp VP*vbd
+CC PP*in NP*prp VP*vbd
+NP*np ADVP*rb VP*vbd
+S*np PRN*, CC S*np
+NP*dt VP*vbd
+S*np IN S*np
+ADVP*rb PP*in NP*dt VP*vbd
+SBAR*wdt NP*np VP*vbn
+NP*np VP*vbd
+NP*np VP*vbd
+S*np S*np
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*prp VP*vbd
+NP*np VP*vbz
+PP*in NP*dt VP*vbd
+NP*dt VP*vbz
+PP*rb NP*dt VP*md
+ADVP*rb NP*ex VP*vbz
+NP*nnp VP*vp
+ADVP*rb NP*np VP*vbd
+NP*dt VP*vbz
+ADVP*rb NP*prp VP*vbp
+NP*ex VP*vbp
+CC PP*in NP*prp VP*vbp
+NP*jjs VP*vbp
+ADVP*rb NP*jj VP*md
+NP*np VP*md
+NP*prp VP*vbp
+PP*in NP*np VP*vbz
+NP*dt VP*vbz
+NP*nns VP*vbp
+NP*nns VP*vbp
+NP*np VP*vbz
+SBAR*in NP*prp VP*md
+
+# id=part1_nopunctuation.25
+WHADVP*wrb SQ*vbp
+NP-TMP*dt NP*nns VP*vbp
+CC WHNP*whadjp SQ*md
+NP*dt VP*vbz
+S*np S*advp
+NP*nns ADVP*rb VP*vbp
+PP*in NP*nn VP*md
+PP*in NP*dt VP*vbd
+CC NP*np ADVP*rb VP*vbp
+NP*prp VP*vbp
+WHADVP*wrb SQ*md
+S*np CC S*np
+NP*prp VP*vbp
+NP*dt VP*vbz
+ADVP*rb SBAR*in NP*jj VP*vbp
+NP*nn VP*vbp
+PP*in NP*nns VP*vbd
+NP*prp VP*vbd
+PP*in NP*nns VP*vbn
+NP*prp VP*vbd
+ADVP*rb SBAR*advp NP*nns ADVP*rb VP*vbp
+ADVP*rb S*np
+NP*prp VP*md ''
+NP*nns VP*vbp
+NP*prp$ VP*md
+S*np CC S*np
+NP*dt VP*vbz
+CC NP*prp VP*vbp
+NP*prp VP*vbp
+NP*dt S*s
+NP*jj VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vbp ''
+SBAR*in NP*nns VP*vbp
+S*np `` S*intj ''
+VP*vb
+WHNP*wp SQ*md
+PP*in NP*np ADVP*rb VP*vbp
+PP*in NP*jj VP*vbp
+CC NP*dt VP*vbz
+NP*dt VP*vbz
+ADVP*rb NP*np
+S*advp S*np
+MD RB NP*prp VP*vb
+S*sbar CC S*np
+S*vp NP*prp VP*vbz
+CC PP*in SBAR*in SBAR*in '' NP*prp VP*vbz
+
+# id=part1_nopunctuation.26
+WHNP*wdt ADVP*jj PP*in
+PP*in NP*cd VP*vbz
+S*np CC S*np
+S*np CC ADVP*rb S*np
+NP*nns ADVP*rb VP*vbn
+PP*in NP*prp VP*vbd
+NP*jj VP*vbd
+ADVP*rb NP*nns VP*vbp
+CC PP*in NP*nnp VP*vbz
+PP*in NP*prp VP*vbz
+S*np CC S*,
+SBAR*rb NP*ex VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+ADVP*rbr NP*prp VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+PP*in ADVP*rb S*vp VP*vbp
+SBAR*whadvp NP*prp ADVP*rb VP*vbd
+NP*np VP*md
+ADVP*rb NP*np VP*vbd
+VP*vb
+NP*np VP*vbd
+NP*np VP*vbz
+NP*np VP*vbz
+VP*vb
+SBAR*in NP*np VP*vbz
+CC S*vp VP*vbz
+NP*dt VP*vbd
+ADVP*rb NP*dt VP*vbd
+ADVP*rb PP*in NP*dt VP*md
+PP*in NP*nnp VP*vbz
+NP*jj VP*vbp
+NP*nnp VP*vbz
+SBAR*whadvp NP*ex VP*md
+NP*ex VP*vbz
+CC SBAR*whnp
+S*np CC S*np
+NP*np VP*md
+SBAR*in PRN*: NP*dt VP*vbz
+NP*prp VP*vp
+VP*vb
+
+# id=part1_nopunctuation.27
+VBZ NP*nnp VP*vbn
+NP*np VP*vbz
+CC SBAR*in NP*ex VP*md
+S*pp CC S*np
+PP*in NP*np VP*vbz
+S*np CC S*np
+ADVP*rb NP*nnp VP*md
+NP*np VP*md
+ADVP*rb NP*nnp VP*vbz
+PP*in NP*prp VP*md
+S*vp S*pp CC S*np
+S*cc S*np
+NP*dt VP*vbz
+NP*dt VP*vbz
+CC NP*dt
+NP*nnp VP*md
+CC NP*np VP*md
+SBAR*whadvp NP*prp VP*md
+NP*dt VP*vbd
+RB NP*jj VP*vbz
+NP*np VP*md
+WHADVP*wrb RB VP*prn
+NP*dt VP*md
+ADVP*rb PP*in NP*prp VP*vbz
+RB WHADVP*wrb SQ*vbp
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*dt VP*vbz
+NP*np NP*np
+PP*in SBAR*in NP*prp VP*md
+NP*dt VP*vbz
+PP*in NP*jj ADVP*rb VP*vbz
+VP*vb
+ADVP*rb NP*jj VP*vbz
+S*np CC S*advp
+NP*dt VP*md
+NP*prp VP*vbz
+S*np CC S*pp
+IN NP*dt VP*md
+ADVP*rb NP*np VP*vbz
+S*vp VP*vbz
+CC ADVP*in NP*np VP*md
+NP*rb VP*md
+NP*np VP*vbz
+NP*np VP*md
+NP*nns VP*vbp
+NP*np VP*vbz
+
+# id=part1_nopunctuation.28
+MD NP*dt VP*vb
+ADVP*np NP*nnp VP*vbd
+PP*in NP*dt VP*vbd
+PP*in NP-TMP*dt NP*jj ADVP*rb VP*vbd
+NP*np VP*vbd
+SINV*md NP*prp VP*md
+RB S*vp VP*md
+PP*in ADVP*rb NP*np VP*vbz
+NP*prp VP*md
+ADVP*rb NP*prp VP*vbp
+S*np CC S*np
+NP*np VP*md
+PP*in NP*nnp VP*md
+CC NP*np VP*vbz
+ADVP*rb S*pp CC S*np
+PP*in NP*nnp VP*md
+NP*np ADVP*rb VP*md
+PP*in NP*np VP*md
+NP*nnp VP*md
+S*np CC S*np
+PP*vbn NP*nns VP*vbp
+ADVP*rb VP*vbg VP*md
+PP*in NP*nnp VP*vbz
+NP*prp VP*vbz
+NP*jj VP*vbp
+NP*prp VP*vbz
+S*adjp NP*pdt VP*md
+CC NP*dt VP*vbz
+ADVP*rb NP*np VP*vbz
+PP*in NP*prp VP*md
+NP*np VP*md
+NP*dt VP*vbz
+PP*in NP*np VP*md
+NP*jj VP*vbz
+PP*in ADVP*rb NP*dt ADVP*rb VP*vbp
+
+# id=part1_nopunctuation.29
+S*vp S*vp VP*vbz
+ADVP*rb NP*np VP*vbp
+NP*np ADVP*rb VP*vbz
+NP*prp VP*vbz
+IN NP*dt VP*vbz
+S*np CC S*sbar
+ADVP*rb NP*np VP*vbz
+VP*vb
+NP*nns VP*vbd
+S*advp S*np
+CC NP*np VP*vbp
+NP*np VP*vbz
+S*vp NP*prp VP*vbp
+NP*prp VP*vbp
+S*np-tmp NP*np VP*md
+NP*dt VP*md
+S*pp NP*nn VP*md
+S*s CC S*np
+PP*in S*vp VP*vbz
+ADVP*rb NP*np
+SBAR*in NP*ex VP*vbz
+SBAR*rb NP*jj ADVP*rb VP*vbp
+NP*prp VP*vbz
+NP*prp VP*md
+S*in S*np
+
+# id=part1_nopunctuation.30
+NP*np VP*vbz
+NP*jj VP*vbz
+NP*nn VP*vbz
+PP*in NP*np VP*vbp
+NP*np VP*vbz
+NP*np VP*vbd
+ADVP*rb NP*dt VP*md
+NP*dt VP*vbz
+NP*np VP*vb
+PP*in NP*np VP*vbp
+NP*jj VP*vbz
+PP*in S*np
+NP*np VP*vbz
+NP*np VP*vbp
+ADVP*rb NP*np VP*vbp
+PP*in NP*jj VP*vbp
+NP*np PP*in
+NP*jj VP*vbp
+NP*np VP*vbd
+PP*in NP*np VP*vbp
+NP*np VP*vbz
+NP*np VP*vbz
+NP*jjs VP*vbz
+SBAR*in NP*`` VP*vbz
+S*vp VP*vbz
+NP*np VP*vbp
+CC S*np CC S*np
+NP*jj VP*vbp
+PP*vbg NP*dt VP*vbd
+CC NP*nns VP*vbp
+S*np CC S*np
+S*np CC S*np
+S*np S*sbar
+NP*np VP*vbz
+NP*dt VP*vbz
+ADVP*rb NP*nns VP*vbp
+NP*nnp VP*vbz
+NP*jj VP*md
+PP*in S*advp S*vp
+NP*np ADVP*rb VP*vbz
+PP*in NP*np VP*md
+NP*np VP*vbz
+NP*np VP*vbp
+SBAR*whadvp VP*md
+
+# id=part1_nopunctuation.31
+NP*np VP*md
+NP*np VP*md
+VP*vbn
+NP*jj VP*vbp
+PP*in NP*dt VP*vbz
+NP*nnp PRN*, VP*vbz
+WHADVP*rb SQ*md
+ADVP*rb RB
+S*np S*np
+CC NP*nns VP*md
+ADVP*rb NP*prp VP*vbp
+NP*nn VP*vbz
+NP*np VP*vbz
+CC ADVP*rb NP*dt VP*vbz
+S*advp S*s
+PP*in NP*dt VP*md
+S*np CC S*np
+NP*nn VP*vbp
+NP*np VP*md
+PP*in NP*nn VP*vb
+SBAR*in NP*dt VP*md
+IN NP*np VP*vbz
+NP*nn VP*vbz
+S*advp CC S*pp
+NP*nnp VP*nn
+VP*vb
+ADVP*rb S*np CC S*np
+CC WHNP*wp SQ*vp
+PP*in S*np CC S*np
+NP*nn VP*vbz
+NP*nns ADVP*prp VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*np VP*vbp
+RB S*np CC S*np
+S*np CC S*advp
+S*np CC S*np
+S*vp NP*nn VP*vbz
+NP*dt VP*md
+S*np CC S*np
+NP*nn VP*vbz
+
+# id=part1_nopunctuation.32
+NP*np PP*in NP*np VP*vbd
+NP*prp VP*vbd
+ADVP*rb PP*pp NP*prp VP*advp
+NP*prp VP*vbd
+S*np CC S*np
+CC NP*np VP*vbz
+NP*dt ADVP*rb VP*vbp
+NP*nns PP*in ''
+ADVP*rb NP*nns VP*vbp ''
+PP*in NP*np VP*vbp
+NP*np VP*vbd
+PP*in NP*np VP*vbz
+NP*nns VP*vbp ''
+SBAR*whadvp ADVP*rb VP*vb
+NP*np VP*md
+CC ADVP*rbr SBAR*whadvp NP*nn VP*vbp
+NP*np VP*vp
+PP*in NP*np VP*vbz
+PP*in SBAR*whadvp NP*jj VP*vbz
+S*np NP*nns VP*vbp
+NP*prp VP*vbp
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+CC SBAR*in NP*np VP*vbz
+PP*in NP*nns ADVP*rb VP*vbp
+NP*np VP*vbp
+S*pp S*np
+CC NP*prp VP*vbz
+NP*ex VP*vbz
+SBAR*in SBAR*whadvp NP*prp VP*vbp
+
+# id=part1_nopunctuation.33
+NP*np PP*in '' NP*dt VP*vbz
+NP-TMP*nn NP*nns VP*vbp
+PP*in NP*nns ADVP*dt VP*vbp
+NP*prp$ VP*vbp
+ADVP*rb NP*np VP*vbd
+NP*np VP*vbd
+NP*prp VP*vp
+S*np CC S*np
+NP*advp S*vp
+CC SBAR*in VP*vbd
+WHADVP*wrb SQ*vbz
+PP*in NP*dt VP*vbd
+NP*dt VP*vbd
+VP*advp
+NP*np VP*vp
+S*np CC S*np
+CC SBAR*in
+NP*dt VP*vbz
+PP*in NP*dt VP*vp
+PP*in NP*dt VP*vbz
+PP*in NP*np VP*vbp
+NP*np ADVP*rb VP*vbd
+NP*rb S*advp VP*vbd
+NP*np VP*vbp
+NP*nns VP*vbp ''
+CC SBAR*whnp ADVP*rb VP*vbz
+NP*np VP*vbd
+VP*vb
+
+# id=part1_nopunctuation.34
+S*vp NP*prp VP*vbd
+NP*prp$ VP*vbd
+NP*dt VP*vbd
+CC NP*jj VP*vbd
+PP*in NP*prp VP*vp
+PP*in NP*dt ADVP*rb VP*vbd
+CC NP*rb VP*vbd
+S*np S*np
+NP*prp VP*vbd
+PP*in NP*prp VP*vbd
+NP*dt ADVP*rb VP*vbd ''
+S*np RB S*np
+ADVP*rb NP*prp VP*vbd
+S*np S*np
+PP*in `` NP*jj '' VP*vbp
+NP*np VP*vbn
+NP*np VP*vbz ''
+NP*prp VP*vbd
+NP*nns PP*in VP*vbd
+NP*np VP*vbz
+CC ADVP*rb NP*np VP*md
+NP*np VP*vbd
+NP*np VP*vbd
+RB NP*dt VP*vbz
+NP*np VP*vbz
+ADVP*rb NP*np NP*prp VP*vbz
+SBAR*whnp VP*vbz
+NP*np VP*vbp
+NP*nnp VP*vbd
+SBAR*in S*vp VP*vbz
+NP*dt VP*vbz
+NP*dt VP*md
+S*np CC S*np
+NP*np VP*vbz
+CC NP-TMP*nn NP*prp VP*vbz
+PP*in NP*dt VP*vbz
+
+# id=part1_nopunctuation.35
+WHNP*wdt SQ*vbz
+SBAR*whadvp NP*cd VP*md
+IN NP*prp VP*md
+ADVP*rb NP*nn VP*vbz
+ADVP*rb PP*in NP*nn VP*vbz
+NP*prp VP*vbp
+NP*dt VP*vbz
+SBAR*whnp VP*md
+PP*in NP*dt VP*vbd
+NP*np VP*vb
+NP*np VP*vbp
+CC NP*nn VP*vbz
+NP*np VP*md
+SBAR*in NP*dt VP*vbz
+NP*np SBAR*in VP*vbz
+NP*nnp VP*vbz
+PP*in NP*ex VP*vbz
+NP*nnp VP*vbz
+S*np S*np S*np S*np
+PP*in NP*jj VP*vbp
+NP*jj VP*vp
+ADVP*rb NP*prp VP*md
+NP*dt VP*vbz
+NP*prp VP*vbz
+CC NP*dt VP*md
+NP*np VP*vbz
+NP*nn VP*vbz
+NP*np VP*md
+S*sbar NP*dt VP*vbz
+NP*prp VP*vbp
+NP*np NP-TMP*nn VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*dt VP*md
+NP*np ADVP*rb VP*vbz
+PP*in NP*prp$ VP*vbp
+NP*np VP*vbz
+NP*np VP*vbz
+NP*np VP*vbp
+S*np S*np S*np S*np S*np CC S*np
+S*s CC S*np
+
+# id=part1_nopunctuation.36
+NP*np VP*vbd
+PP*in NP*np VP*vbz
+NP*np VP*vbd
+RB WHADVP*wrb SQ*vbd
+NP*dt VP*vbd
+SBAR*in NP*prp VP*vbd
+NP*np VP*vbd
+NP*nnp VP*vp
+PP*in NP*prp VP*vbd
+NP*prp VP*vbd
+PP*in VP*vbd NP*np
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP*nnp ADVP*rb VP*vbd
+S*vp NP*prp VP*vbd
+NP*np VP*vbn
+NP*np VP*vbn
+CC SBAR*whadvp NP*prp VP*vbd
+NP*prp VP*vbd
+NP*np VP*vbd
+NP-TMP*dt NP*prp VP*vp
+CC NP*np VP*vbz
+PP*in NP*prp VP*vbz
+S*sbar CC S*np
+CC NP*np VP*vbd
+RB PP*in NP*dt VP*vbd
+CC NP*dt VP*vbd
+NP*prp VP*vbd
+
+# id=part1_nopunctuation.37
+NP*nns ADVP*rb NP*np VP*vbp
+ADVP*rb NP*np VP*vbz
+SBAR*in NP*np VP*vbp
+PP*in NP*ex VP*vbz
+CC NP*np VP*vbp
+S*vp VP*md
+CC VP*vbz
+ADVP*rb S*advp CC S*np
+NP*prp VP*vbz
+S*vp NP*dt VP*vbz
+S*np CC S*np
+PP*in NP*nn VP*vbz
+ADVP*rb ADVP*rb NP*dt VP*vbp
+NP*np NP-TMP*nn VP*vbz
+ADVP*rb S*s CC S*np
+CC VBP NP*np
+NP*np VP*vbz
+NP*jj VP*vbp
+CC NP*np VP*vbp
+ADVP*rb PP*in NP*jj VP*vbp
+NP*dt VP*vbp
+S*cc S*np
+NP*np VP*vbz
+PP*in ADJP*jj NP*np VP*vbz
+ADVP*rb NP*jj VP*vbp
+S*np S*s
+PP*in NP*np VP*vbz
+CC SBAR*in NP*dt VP*md
+NP*np VP*md
+NP*np VP*vbz
+S*np CC S*np
+SBAR*in NP*np VP*md
+
+# id=part1_nopunctuation.38
+S*vp NP*dt VP*vbz
+NP*np ADVP*rb VP*vbz
+S*np CC S*np
+NP*dt VP*md
+NP*np VP*vbp
+NP*jj VP*vbz
+NP*np ADVP*rb VP*vbz
+`` S*np '' VP*vbz NP*np S*vp
+PP*in NP*ex VP*vbz
+SBAR*x X*dt NP*np
+NP*np VP*md
+NP*dt VP*md
+NP*dt VP*vbz
+NP*np S*vp
+NP*np VP*vbz
+VP*vbg
+S*advp S*np
+NP*dt VP*vbz
+NP*np VP*vbd
+NP*nnp VP*vbd ''
+PP*in NP*dt VP*vbd
+ADVP*rb NP*jj VP*vbd
+S*vp NP*np VP*md
+CC SBAR*whnp VP*vbz
+NP*dt VP*vbz
+NP*rb VP*vbz
+NP*np VP*vbp
+CC NP*prp VP*vbz
+S*np CC SQ*vp
+PP*in NP*nns VP*vbd
+NP*nnp VP*vbz
+PP*in NP*dt VP*vbz
+PP*in NP*np VP*md
+S*np CC S*,
+NP*dt VP*vbz
+
+# id=part1_nopunctuation.39
+NP*np
+NP*dt VP*vbp
+NP*nnp VP*vbz
+RB S*np S*np
+VP*vbz NP*dt SBAR*in
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbd
+S*vp NP*nnp ADVP*rb VP*vbz
+NP*dt VP*vbz
+S*np S*np
+NP*np VP*vbz
+ADVP*rb PP*in NP*nnps VP*vbp
+NP*np VP*vbz
+PP*in NP*prp VP*vbz
+PP*in NP*np VP*vbp
+CC PP*in NP*nnps VP*vbp
+NP*np VP*vbz
+CC NP-TMP*nn NP*prp VP*vp
+PP*in NP*ex VP*vbz
+PP*in NP*np VP*md
+NP*nnp VP*vbp
+ADVP*rb NP*dt VP*vbp
+NP*np VP*vbz
+ADVP*rb NP*nnp VP*vbp
+NP*np NP*np
+S*in CC S*np
+NP*jjs ADVP*rb VP*vb
+NP*jjs VP*vbp
+S*np S*np
+NP*dt VP*vbz
+NP*prp VP*md
+CC NP*prp VP*md
+NP*prp ADVP*jj VP*vbp
+CC NP*prp VP*vbp
+NP*np VP*md
+IN NP*prp VP*vbz
+NP*dt VP*vbz
+PP*in NP*np VP*vbz
+NP*np VP*md ''
+NP*np VP*vbp
+NP*prp$ VP*vbz
+
+# id=part1_nopunctuation.40
+VBZ NP*nnp NP*np
+NP*np VP*md
+ADVP*rb NP*nnp VP*vbz
+SBAR*whadvp VP*vbz
+PP*in NP*nnp VP*vbz
+NP*np VP*md
+S*np CC S*np
+S*np CC S*np
+VBZ NP*nnp ADJP*jj
+NP*dt VP*vbz
+NP*np VP*vbp
+CC NP*nn VP*md
+ADVP*rb NP*prp VP*md
+NP*nnp VP*vbz
+NP*ex VP*vbz
+PP*in NP*np VP*md
+SBAR*in NP*ex VP*md
+SBAR*in NP*dt VP*vbz
+ADVP*rb PP*in PP*in NP*nn VP*vbd
+NP*np VP*vbp
+ADVP*rb NP*np VP*vbz
+PP*in NP*jj VP*vp
+PP*vbg NP*np VP*vbd
+NP*nns VP*md
+S*np S*np
+S*np CC S*np
+NP*np VP*vbd
+NP*dt ADVP*rb VP*vbd
+PP*in NP*np VP*vbd
+RB NP*dt VP*vp
+NP*np VP*vbd
+S*np CC S*np
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*np VP*md
+IN NP*prp VP*vbz
+PP*in NP*prp VP*vbz
+CC VBZ NP*jj NP*np
+NP*nnp VP*vbd
+NP*nnp VP*vbz
+NP*dt VP*vbz
+CC PP*in NP*jj VP*vbz
+
+# id=part1_nopunctuation.41
+PP*np NP*jj VP*vbp
+NP*np S*np
+CC NP*jjs VP*vbp
+ADVP*rb NP*np ADVP*rb VP*vb
+PP*in NP*np VP*md
+NP*np VP*vbz
+NP*dt NP*np
+NP*dt ADVP*rb VP*vbz
+CC NP*dt VP*vbz
+S*vp NP*cd VP*vbz
+PP*in NP*np VP*vbp
+PP*in NP*nn VP*vbz
+NP*np ADVP*rb VP*vbz
+PP*in NP*np ADVP*np VP*advp
+NP*np VP*vbz
+SBAR*x X*dt NP*prp VP*vbp
+PP*in NP*np VP*vbz
+NP*np VP*nn
+NP*prp VP*vbp
+NP*np VP*vbz
+PP*in NP*np VP*vbz
+S*np CC S*np
+NP*np VP*vbz
+SQ*vbd CC SQ*vbd
+PP*in NP*nnp VP*md
+NP*np VP*md
+NP*dt VP*vbd
+NP*prp ADVP*rb VP*vbd
+PP*in NP*cd VP*md
+VBD NP*dt PP*cc
+NP*prp VP*md
+SBAR*whnp VP*vbz
+CC VP*md
+S*np CC S*np
+S*np '' CC S*np
+NP*np VP*vbp
+
+# id=part1_nopunctuation.42
+NP*np VP*vbz
+NP*prp$ ADVP*rb VP*md
+PP*in NP*dt VP*vbz
+ADVP*rb NP*dt VP*md
+NP*np VP*md
+NP*np VP*md
+SBAR*whnp VP*vbd
+SBAR*in NP*prp VP*md
+SBAR*in NP*prp VP*md
+PP*in NP*prp VP*md
+NP*jj ADJP*jj NP*np VP*vbd
+NP*np VP*vbz
+NP*prp VP*vbz
+SBAR*in NP*np VP*md
+CC SBAR*in
+CC NP*dt VP*vbz
+SBAR*in WHADVP*wrb SQ*md
+NP*np ADVP*rb VP*vbp
+CC SQ*vbz
+VBZ NP*dt NP*nnp NP*np
+NP*nn VP*vbz
+NP*dt VP*vbd
+NP*dt VP*vbd
+PP*in NP*np VP*vbd
+PP*in NP*dt VP*vbd
+ADVP*rb NP*dt VP*vbd
+NP*prp VP*vbd
+PP*in PP*in NP*dt VP*vbd
+S*np CC S*np
+S*vp NP*dt VP*md
+VP*vb
+VP*vb
+NP*prp VP*vbd
+SBAR*whadvp NP*nn VP*vbd
+S*np S*np
+NP*dt ADVP*rb VP*vbz
+NP*prp VP*vp
+NP*dt VP*md
+NP*np VP*vbp
+S*np CC S*np
+SBAR*whnp VP*vbz
+S*np S*np
+IN NP*prp VP*vbp
+ADVP*rb NP*prp VP*md
+
+# id=part1_nopunctuation.43
+SBARQ*whnp
+NP*np VP*vbp
+NP*np VP*vbz
+PP*in NP*jj VP*vbp
+PP*in NP*jjs VP*vbd
+S*np CC S*np
+NP*nnp S*np
+NP*prp VP*vbz
+CC NP*dt VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+S*vp VP*vbz
+NP*dt VP*md
+PP*in NP*nns VP*md
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*np VP*md
+ADVP*rb NP*np VP*md
+PP*in NP*dt VP*vbz
+VP*vbg VP*md NP*np
+S*np CC S*np
+NP*dt VP*md
+NP*np VP*vp
+S*np CC S*np
+NP*prp ADVP*rb VP*vbz
+S*ucp ADVP*rb VP*vbz
+S*vp VP*md
+NP*dt ADVP*rb VP*vbz
+VP*vbg
+PP*in NP*nns VP*vbp
+NP*np VP*md
+NP*jj VP*vbz
+NP*prp ADVP*rb VP*vbz
+SBAR*in NP*ex VP*vbz
+PP*in NP*prp VP*md
+NP*np VP*vbz
+NP*prp VP*vbz
+CC NP*prp VP*vbz
+S*vp VP*vbz
+NP*nn VP*vbz
+PP*in NP*prp VP*vbz
+NP*np VP*md
+
+# id=part1_nopunctuation.44
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+CC NP*nnp VP*vbz
+NP*nnp VP*vbd
+S*np NP*np VP*vbd
+PP*in NP*np VP*vbz
+NP*np VP*vbz
+PP*in NP*np VP*vbp
+SBAR*whadvp NP*jj VP*vbd
+NP*nnp ADVP*rb VP*vbd
+NP*prp VP*vp
+NP*np VP*vbd
+S*vp NP*nnp VP*vbd
+NP*dt VP*vbd
+RB NP*nnp VP*vbd
+NP*np VP*vb
+NP*np VP*vbz
+PP*in NP*np VP*vbd ''
+NP-TMP*nn NP*prp VP*vbz
+NP*dt ADVP*rb VP*vbz
+S*np CC S*np
+S*vp NP*np VP*md
+PP*in NP*dt VP*vbz
+NP-TMP*nn NP*dt VP*vbp
+NP*cd VP*vbp
+NP*dt VP*md
+NP*ex VP*vbz
+NP*dt VP*vbz
+S*np CC S*np
+WHNP*wdt SQ*md
+PP*in S*np CC S*np
+NP*np VP*vbd
+S*in CC S*np
+SBAR*in NP*np VP*md
+
+# id=part1_nopunctuation.45
+S*vp CC S*np
+CC NP*np VP*vbd
+`` S*np '' NP*prp VP*vbd
+`` NP*prp VP*vbp ''
+PP*in NP*prp VP*vbd
+SBAR*whadvp NP*np VP*vbd
+PP*in NP*nnp ADVP*rb VP*vbp
+NP*jj NP*np
+SBAR*in NP*nnp VP*vbd ''
+S*vp NP*np VP*vbd
+ADVP*rb NP*nnp VP*vbd
+NP*nnp VP*vp
+NP*prp VP*vbd
+NP*nnp VP*vbp
+PP*in SBAR*whadvp NP*np ADVP*rb VP*vbd
+NP*prp VP*vbd
+SBAR*in VP*vbz
+S*np CC S*np
+PP*in NP*nnp VP*vbz
+NP*prp VP*vbz ''
+NP*np VP*vbp
+PP*in NP*nnp VP*vbd
+PP*in NP*prp VP*vbd
+NP*prp VP*vbd
+SBAR*in S*frag CC S*np
+NP*prp VP*vbd
+RB S*vp VP*vbd
+ADVP*rb PP*in S*np
+NP*np VP*vbz
+PP*in NP*nnp VP*md
+
+# id=part1_nopunctuation.46
+NP*np VP*vbp
+NP*np ADVP*rb VP*vbz
+ADVP*np NP*dt VP*vbd
+SBAR*in NP*jj VP*vbp
+NP*dt VP*vbz
+PP*in NP*dt VP*vp
+NP*nns ADVP*rb VP*vbp
+NP*prp$ VP*vbz
+NP*np VP*vbp
+CC SBAR*whnp VP*vbz
+NP*nns VP*vbp
+NP*dt VP*md
+SBAR*in VP*vbz
+NP*np ADVP*rb VP*vbp
+PP*vbg NP*prp VP*vbp
+NP*prp VP*vbz
+CC NP*jj SBAR*in VP*vbp
+NP*np VP*vbd
+ADVP*rb NP*np VP*vbp
+ADVP*rb NP*np VP*md
+NP*dt VP*vbp
+PP*in NP*np `` VP*vbd ''
+NP*prp ADVP*rb VP*vbd
+NP*nns VP*md
+NP*np VP*vp
+NP*np VP*vbz
+NP*dt VP*md
+CC PP*in NP*ex VP*vbp
+NP*np VP*vbz
+PP*in NP*np VP*vbp
+NP*np NP*np
+NP*np VP*vbz
+ADVP*rb PP*in NP*jj VP*vbp
+ADVP*rb NP*prp VP*vbp
+NP*dt VP*md ''
+CC NP*dt VP*vbz
+SBAR*whnp VP*vbz
+S*np CC S*np
+ADVP*rb NP*prp VP*vbp
+NP*np VP*md
+SBAR*whnp VP*vbz
+PP*in SBAR*whadvp NP*np VP*md
+NP*jj VP*md
+SBAR*whnp VP*vbz
+MD NP*dt VP*vb
+NP*np VP*vbp
+PP*in NP*np VP*md
+
+# id=part1_nopunctuation.47
+ADVP*rb VP*vb
+VP*vb
+ADVP*rb NP*nnp VP*vbz
+S*ucp NP*prp VP*vbz
+-LRB- PP*in NP*np VP*vbd -RRB-
+S*np S*np
+ADVP*rb SBAR*whadvp NP*np VP*vbd
+CC S*np CC S*np
+X*advp PP*in
+PP*in NP*nnp ADVP*rb VP*vbd
+PP*rb NP*ex VP*vbd
+NP*nn VP*vbd
+NP*prp VP*vbz
+NP*prp VP*vbz
+SBAR*wdt NP*jj VP*vbd
+PP*in NP*nnp VP*vbz
+CC NP*prp VP*vbz
+S*np CC S*np
+ADVP*rb NP*np VP*vbz
+S*s S*advp
+S*np CC S*np
+S*np RB S*np
+WHNP*wdt SQ*vbz
+NP*prp VP*vbd
+NP*np VP*vbz
+S*np S*pp
+NN
+NP*np VP*vbp
+CC PP*in NP*ex VP*vbz
+S*np S*np
+S*pp S*np
+PP*in NP*dt VP*vbd
+PP*in NP*nnp VP*vbd
+NP*nnp VP*vbz
+CC NP*nnp VP*md
+ADVP*rb NP*nnp VP*vbz
+S*vp S*pp
+SBAR*in NP*jj VP*md
+NP*np VP*vbp
+NP*np VP*md
+ADVP*rb NP*dt VP*vbz
+
+# id=part1_nopunctuation.48
+NP*np VP*vbp
+CC NP*dt VP*vbz
+PP*rb NP*jj ADVP*rb VP*vbd
+PP*in NP*np VP*vbd
+NP*prp ADVP*rb VP*vbz
+S*adjp NP*prp VP*vbd
+ADVP*rb NP*prp PP*in VP*vbd
+NP*prp$ VP*vbz
+NP*prp$ VP*vbz
+CC NP*dt VP*vp
+PP*in NP*dt VP*vbz
+IN NP*prp VP*vbz
+CC VBZ NP*np
+S*np VP*vbd NP*np
+ADVP*rb NP*dt VP*vbz
+NP*np NP*np
+ADVP*rb S*sbar CC S*np
+PP*in NP*np VP*vbz
+CC NP*dt VP*vbz
+ADVP*rb NP*np VP*advp
+CC NP*dt VP*vbp
+NP*dt ADVP*rb VP*vbd
+S*pp S*np
+S*vp NP*prp VP*vbp
+PP*in NP*np VP*md
+S*np CC S*np
+S*np S*np SBAR*in
+PP*in NP*nnps VP*vbp
+NP*dt VP*vbp
+CC NP*ex VP*vbz
+PP*in VP*md NP*np
+CC NP*prp$ VP*vbz
+NP*prp VP*vbp
+CC VBP NP*prp VP*vb
+NP*np VP*vbd
+ADVP*rb SBAR*whadvp NP*jj VP*vbz
+CC NP*jj VP*vbp
+S*vp VP*vbp
+S*np '' CC S*np
+S*np SQ*vp
+
+# id=part1_nopunctuation.49
+VBZ NP*nnp NP*nnp
+VP*vb
+NP*dt VP*vbz
+CC NP*dt VP*vbz
+NP*prp VP*vbd
+S*np CC S*np
+PP*in NP*np VP*vbz ''
+CC VBP NP*np ADJP*rb
+VP*vbp
+NP*jj VP*vbd
+S*np S*s
+S*np CC S*np
+CC PP*in NP*np VP*vbz
+NP*jj VP*vbp
+NP*dt ADVP*rb VP*vbd
+PP*in NP*dt SBAR*in VP*vbd
+PP*in NP*prp ADVP*rb VP*vbd
+WHNP*wp SQ*vbz
+NP*dt VP*vbp
+PP*in SQ*vbp
+S*np S*np
+NP*prp$ PP*in NP*np VP*md
+NP*dt VP*vbz
+CC SBAR*in
+S*vp NP*prp VP*vbp
+NP*cd VP*md
+NP*np VP*vbz
+NP*dt VP*vbz
+PP*in SBAR*whadvp NP*prp VP*md
+CC SBAR*whadvp NP*prp VP*vbz
+S*vp NP*ex VP*md
+CC VP*md
+S*np CC S*np
+ADVP*rb NP*prp VP*md
+NP*np VP*vbz
+NP*pdt VP*md
+PP*in ADVP*rb NP*jj VP*vbp
+NP*np NP*np
+S*np CC S*np
+S*np S*np
+PP*in NP*dt VP*vbz
+SBAR*whnp NP*np VP*vbz
+NP*dt ADVP*rb VP*vbz
+NP*np VP*md
+NP*np VP*md
+NP*prp VP*md
+
+# id=part1_nopunctuation.50
+NP*nns VP*vbp
+NP*nnp VP*vbz
+NP*np ADVP*rb VP*vbz
+NP*dt VP*vbp
+NP*prp$ VP*vbp
+NP*prp$ VP*vbp
+NP*dt VP*vbp
+NP*dt VP*vbz
+PP*in NP*np VP*vbn
+ADVP*rb NP*nnp VP*vbz
+NP*dt VP*vbz
+RB NP*np VP*vbz
+NP*np VP*vbz
+PP*rb NP*nnp ADVP*rb VP*vbz
+SBAR*in S*np RB S*cc
+ADVP*np NP*nnp VP*vbd
+ADVP*rb NP*prp VP*vbz
+NP*dt ADVP*rb VP*vbz
+SBAR*in NP*wdt VP*vbz
+PP*in NP*np VP*md
+PP*in NP*np VP*vbp
+SBAR*whadvp NP*prp VP*md
+NP*jj ADVP*rb VP*vb
+CC PP*in NP*jj VP*vbp
+S*np S*np S*pp
+SBAR*in NP*prp ADVP*rb VP*vbd
+ADVP*rb NP*prp VP*md
+NP*nnp VP*md
+NP*prp VP*vbz
+S*vp NP*pdt VP*md
+NP*dt VP*vbz
+S*np S*s
+CC NP*vbg VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*dt VP*md
+NP*dt VP*md
+NP*nnp VP*md ''
+SBAR*in NP*prp VP*md
+NP*np VP*md
+NP*nns VP*md
+SBAR*in NP*prp VP*md
+NP*np VP*md
+
+# id=part1_nopunctuation.51
+S*np NP*dt VP*vbd
+NP*np ADVP*rb VP*vbd
+NP*np ADVP*rb VP*vp
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbp
+SBAR*in NP*dt VP*vbp
+PP*in NP*dt VP*vbp
+NP-TMP*jj NP*np VP*vbd
+NP*dt VP*vbd
+RB PP*to NP*jj ADVP*rb VP*vbp
+NP*np ADVP*rb VP*vbp
+NP*jj VP*vbd ''
+ADVP*rb NP*dt VP*vbz
+RB PP*rb NP*nnp VP*vbz
+S*np CC S*np
+PP*in PP*in NP*nnp VP*vbz
+SBAR*in NP*ex VP*vp
+PP*in NP*np VP*vbd
+NP*np VP*vbz
+NP*nnp VP*vbz
+SBAR*in NP*dt VP*md
+NP*np VP*vbz
+ADVP*rb NP*ex VP*vbz
+NP*dt VP*vbz
+NP*ex VP*vbp
+PP*in NP*np ADVP*rb VP*vbz
+NP*jj VP*vbp
+NP*prp VP*vbp
+PP*in NP*np VP*advp
+NP*np VP*vbz
+NP*np VP*vbz
+S*np CC S*np
+NP*nnp VP*vbz
+ADVP*rb NP*np VP*vbd
+NP*np VP*vbd
+PP*in NP*np VP*md
+NP*nn ADVP*rb VP*vbz
+NP*nnp VP*md
+PP*in NP*dt VP*vbz
+SBAR*in NP*jj VP*vbp
+NP*nnp VP*md
+
+# id=part1_nopunctuation.52
+NP*np VP*vbz
+NP*np VP*vbp
+SBAR*in NP*dt VP*md
+NP*np VP*vbp
+S*np CC S*np
+NP*prp VP*md
+NP*np VP*vbp
+NP*dt VP*vbz
+NP*dt VP*vbz
+S*np S*np
+S*np CC S*np
+PP*in NP*nnps VP*vbp
+NP*dt VP*vbp
+NP*dt VP*vbp
+NP*nns VP*vp
+NP*dt VP*vbz
+ADVP*rb NP*dt VP*vbz
+PP*in NP*nns VP*vbp
+SBAR*in NP-TMP*nn NP*np VP*vbp
+S*vp NP*jj VP*vbp
+VP*vb
+NP*prp ADVP*rb VP*vbd ''
+CC PP*in NP*ex VP*vbp
+NP*np VP*vbp
+ADVP*in NP*dt VP*vbz
+PP*in NP*dt VP*vbz
+S*cc S*np
+S*np S*np
+NP*dt VP*vbz
+NP*nnps ADVP*rb VP*vbp
+S*s S*np S*np
+SBAR*whnp PP*pp VP*vbz
+SBAR*in NP*np VP*vbp
+NP*np VP*vbz
+CC NP*np VP*md
+NP*nnp VP*vbz
+NP-TMP*np S*np CC S*np
+NP*nnp VP*vbd
+S*np CC S*np
+NP*np VP*md
+S*np VP*vbz NP*np
+PP*in
+SBAR*in NP*dt VP*vbz
+NP*nnp VP*vbz
+S*np S*np
+ADVP*rb NP*dt VP*vbz
+NP*dt S*vp
+NP*dt VP*vbz
+PP*in SBAR*in NP*dt VP*vbz
+S*vp VP*vbz
+S*np S*np S*np S*np
+S*np S*np
+NP*np VP*vbz
+NP*prp VP*vbz
+NP*dt VP*md
+NP*dt VP*vbz
+NP*np VP*vp
+SBAR*in NP*dt VP*md
+NP*nnp VP*vbz
+PP*in NP*nnp VP*vbz
+MD NP*dt VP*vp
+NP*np VP*md
+
+# id=part1_nopunctuation.53
+NP*np PP*in PRN*, NP*nnp VP*vp
+PP*in NP*np VP*vbz
+NP*jj VP*vbp
+NP*np VP*md
+NP*dt PP*in VP*md
+NP*dt ADVP*rb VP*vbz
+SBAR*in NP*prp VP*md
+CC NP*np VP*vbd
+NP*dt VP*vbd
+WHNP*wp SQ*vp
+NP*np VP*vbd
+NP*prp VP*vbd
+S*vp NP*nnp VP*vbd
+NP*np VP*vbz
+SBAR*in NP*nns VP*vbd
+S*np CC S*vp
+NP*np VP*vbz
+RB NP*np VP*vbp
+NP*dt VP*vbz
+NP*dt VP*md
+NP*dt VP*vbz
+SBAR*in NP*nnp VP*md
+PP*in NP*np VP*vbd
+NP*nnp VP*md
+NP*np VP*vbz
+RB ADVP*rb NP*dt VP*vbz
+ADVP*rb NP*jj VP*vbz
+NP*np VP*vbz
+NP*nnp VP*vbz
+NP*prp ADVP*rb VP*vbz
+RB ADVP*rb NP*dt VP*vbz
+S*adjp NP*dt VP*md
+NP*nns VP*md
+NP*dt VP*md
+NP*nn VP*vbz
+SBAR*in NP*dt VP*md
+WHADVP*wrb SINV*vp
+WHNP*wp SQ*vp
+MD NP*dt VP*vb
+S*np CC S*np
+
+# id=part1_nopunctuation.54
+S*vp S*np
+SBAR*whadvp NP*dt ADVP*in VP*vbd
+S*np S*np
+S*np-tmp CC S*np
+RB NP*dt VP*vbd
+PP*to NP*jj VP*vbd
+NP*prp VP*vbz
+S*np S*advp
+S*vp NP*np VP*advp
+VP*vb
+NP*prp VP*vbz
+PP*in NP*nnp VP*vbz
+NP*prp VP*vbz
+PP*in NP*np VP*vbz
+S*np CC S*pp
+NP*np ADVP*rb VP*vbd
+PP*in SBAR*rb NP*np VP*vbd
+NP*np VP*vbz
+NP*prp VP*vbz
+CC PP*in S*vp VP*md
+S*np CC ADVP*rb S*np
+CC NP*prp VP*md
+NP*np VP*vbz
+
+# id=part1_nopunctuation.55
+NP*nns PP*in NP-TMP*jj NP*np VP*vbd
+PP*in NP*prp VP*vbp
+VP*vbz
+S*np VP*vp NP*cd
+S*vp NP*prp VP*vp
+NP*prp VP*vbd
+ADVP*rb NP*jj VP*vbd
+NP*prp$ VP*vbd
+S*np CC S*pp
+CC NP*nnp VP*vbd
+NP*prp ADVP*rb VP*vbd
+NP*dt VP*vbd
+ADVP*rb NP*np VP*vbd
+CC NP*dt VP*vbd
+NP*np VP*vbz
+PP*in NP*np VP*vbz
+NP*dt VP*vbz
+ADVP*rb PP*in NP*np VP*vbd
+NP*np VP*vbd
+PP*in PP*in NP*dt VP*vbd
+NP*np VP*vbd
+ADVP*rb SBAR*whadvp NP*prp VP*vbd
+S*np S*np S*np CC S*np
+CC NP*dt VP*vbd
+NP*dt ADVP*rb VP*vbd
+PP*vbn NP*prp$ VP*vbn
+CC NP*prp VP*vbp
+S*np CC S*np
+NP*np VP*md
+PP*in NP*dt VP*vbz
+NP*dt VP*vbz
+NP*nnp VP*vbd
+SBAR*in NP*nnp VP*vbd ''
+PP*in NP*np VP*vbd
+CC NP*np VP*vbd
+PP*in S*np CC S*np
+PP*in NP*nnp VP*vbz
+NP*np PRN*: VP*vbp
+NP*np
+NP*nnp VP*vbp
+CC NP*nnp VP*vbz
+S*vp NP*nnp VP*vbp
+S*vp NP*np VP*vbp
+NP*dt VP*vbz
+S*vp VP*md
+
+# id=part1_nopunctuation.56
+NP*np NP*dt VP*vbz
+NP*jj ADVP*rb VP*vbp
+NP*nnp VP*vbz
+S*np PRN*: CC S*np
+ADVP*rb NP*jj VP*vbp
+CC PRN*, NP*prp VP*vbp
+PP*in NP*jj VP*vbp
+NP*dt VP*vbz
+S*np S*np
+SBAR*in VP*md
+NP*np VP*vbd
+NP*dt VP*vbp
+S*np NP*rb VP*md
+PP*in NP*np VP*md
+CC PP*rb NP*ex VP*vbp
+NP*np VP*vbp
+SBAR*in `` NP*dt ADVP*rb VP*vbd
+S*in '' S*advp
+CC NP*dt ADVP*rb VP*vbp
+RB NP*dt VP*vbz
+S*vp VP*vbp
+NP*dt VP*vbz
+PP*in NP*dt VP*md
+S*s CC S*np
+ADVP*rb ADVP*rb NP*np VP*vbz
+CC SBAR*rb NP*dt VP*md
+NP*jj VP*vbp
+CC NP*prp VP*vbp
+VP*vb
+VP*vb
+PP*to NP*prp VP*vbz
+S*advp CC S*np
+NP*dt VP*vbz
+SBAR*whadvp NP*np VP*vbz
+SBAR*in NP*prp VP*vbp
+NP*np VP*vbz ''
+SBAR*in NP*nns VP*md
+NP*cd VP*vbz
+CC SBAR*in VP*vbz
+PP*in NP*prp VP*vbp
+NP*np VP*md
+ADVP*rb NP*prp VP*vbp
+CC NP*dt VP*vbz
+ADVP*rb NP*np VP*vbz
+NP*prp VP*md
+NP*prp VP*vbz
+
+# id=part1_nopunctuation.57
+NP*np SBAR*s
+SBAR*in NP*prp VP*vbz
+CC NP*np VP*vbd
+ADVP*rb NP*nnp VP*vp
+ADVP*rb SBAR*in
+NP*prp VP*vbp
+S*np CC S*s
+NP*nn VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+PP*in S*np CC S*np
+S*np CC S*np
+SBAR*whadvp NP*prp VP*vbd
+NP*nnp PP*in VP*vp
+NP*np VP*vbd
+NP*nnp VP*md
+NP*np VP*md
+NP*np VP*vb
+ADVP*rb NP*np VP*md
+SBAR*in NP*dt VP*md
+VP*vbg VP*vbd NP*np
+NP*np VP*vbz
+NP*prp VP*vbz ''
+NP*np VP*vbd
+PP*in NP*wdt VP*vbp
+PP*in NP*np VP*vbz
+S*cc S*np
+S*np CC S*np
+NP*nnp ADVP*rb VP*vbz
+PP*rb NP*nnp VP*vbz
+NP*nns VP*vbp
+NP*prp VP*vbp
+NP*nnp ADVP*rb VP*advp
+NP*dt VP*vbz
+PP*in NP*dt VP*vbz
+PP*vbn NP*nn VP*vbz
+NP*ex VP*vbz
+NP*np VP*md
+NP-TMP*nn NP*np VP*md
+PP*in NP*prp VP*md
+
+# id=part1_nopunctuation.58
+NP*nn VP*cc
+CC NP*rb VP*md
+NP*np VP*md
+ADVP*jjr ADVP*rb NP*np ADVP*rb VP*vbp
+NP*nnp VP*vbz
+PP*in NP*jj VP*vbp
+PP*in ADVP*rb VP*vbp
+SBAR*in
+PP*in NP*np VP*vp
+NP*dt VP*md
+S*np ADVP*rb S*np
+CC NP*dt VP*vbz
+NP*np VP*vbz
+ADVP*rb NP*np VP*vbp
+NP*np VP*vbp
+ADVP*rb NP*np VP*vbz
+NP*np VP*vbp
+NP*np VP*vbp
+PP*in NP*nn VP*vbz
+NP*nn VP*vbz
+ADJP*rbr NP*np VP*vbd
+NP*jj VP*vbp
+NP*dt VP*vbz
+RB NP*ex VP*vbp
+PP*in NP*np VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz ''
+NP*np VP*vbp
+ADVP*rb NP*dt VP*vbp
+NP*nns VP*vbp
+PP*in NP*np VP*md
+NP*np VP*vbp
+NP*np VP*vbz
+SBAR*in NP*prp$ ADVP*rb VP*vbp
+PP*in NP*nns VP*vbp
+NP*np ADVP*rb VP*vbp
+NP*np VP*vbp
+PP*in NP*nns VP*vbp
+CC SBAR*in NP*np VP*md
+NP*prp VP*vbz
+MD NP*nnp VP*vb
+CC VP*vbp
+NP-TMP*jj NP*np VP*vbd
+NP*prp ADVP*rb VP*vbd
+NP-TMP*dt NP*dt VP*vbd
+NP*np ADVP*rb VP*vbz
+SBAR*in NP*prp VP*md
+
+# id=part1_nopunctuation.59
+WHNP*wp SQ*vbz
+PP*in NP*np VP*md
+NP*nnp VP*vbz
+NP*np VP*vbz
+PP*in NP*dt VP*vbd
+NP*dt ADVP*rb VP*vbd
+NP*dt VP*vbd
+PP*in NP*cd VP*vbd
+NP*prp VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd
+PP*in NP*np VP*vbd
+ADVP*rb NP*dt VP*vbd
+RB NP*dt VP*advp
+RB NP*rb VP*vbz
+PP*in NP*adjp VP*vbz
+PP*in NP*dt ADVP*rb VP*vbd
+PP*in NP*dt VP*vbd
+ADVP*rb NP*nn VP*vbz
+NP*nnp ADVP*rb VP*vbd
+NP*jj ADVP*rb VP*vb
+CC SBAR*rb NP*nnp VP*md
+S*np CC S*np
+IN NP*prp VP*vbp
+ADVP*rb NP*prp VP*vbp
+ADVP*rb NP*np VP*md
+NP*np VP*vbp
+S*vp NP*dt VP*md
+SBAR*whnp WHNP*wdt SQ*vp
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*dt PP*in VP*md
+NP*np VP*vbp
+CC NP*prp VP*vbd
+S*pp NP*prp VP*vbd
+PP*in NP*nnp VP*vbz
+NP*dt VP*md
+NP*dt VP*md ''
+NP*dt VP*md
+S*np CC S*np ''
+S*cc S*np
+
+# id=part1_nopunctuation.60
+NP*np VP*vbz
+CC PP*in S*np CC S*np
+PP*in NP*nnp VP*vbz
+NP*np VP*vbp
+CC PP*in NP*prp VP*vbz
+IN NP*prp VP*md
+S*np S*np S*np CC S*np
+ADVP*rb NP*np VP*vbz
+SBAR*in NP*np VP*vbp
+RB NP*nnp VP*vp
+RB NP*np VP*vbz
+S*vp NP*nns VP*vbp
+S*np CC S*np
+S*np S*np
+NP*dt VP*vbz
+PP*in NP*dt VP*vp
+NP*dt VP*vbd
+NP*prp VP*vbd
+NP*np VP*jj
+S*np CC S*np
+PP*in NP*np ADVP*rb VP*vbd
+S*np CC S*np
+PP*in NP*np VP*vbz
+S*np-tmp CC S*advp
+S*np CC SQ*vbp
+S*np CC SQ*vbp
+S*np CC SINV*md
+SBAR*in NP*prp VP*md
+NP*dt VP*vbz
+
+# id=part1_nopunctuation.61
+NP*dt PP*in
+NP*dt VP*vbp
+S*np RB S*np
+NP*dt ADVP*rb SBAR*in NP*np VP*vbd
+CC NP*dt VP*md
+NP*np VP*vbd
+NP*np VP*vbz
+NP*np VP*vbz
+PP*vbg NP*np VP*vbd
+NP*prp VP*vbz ''
+NP*np VP*vbz ''
+CC SBAR*in
+NP*np VP*vbz
+PP*in NP*prp VP*vbz
+CC NP*nn VP*vbz
+ADVP*rb NP*nnp VP*vp
+ADVP*rb PP*vbg NP*nnp VP*vbz
+PP*vbg NP*np VP*vbd
+NP*jj ADVP*rb VP*vbd
+CC NP*np VP*vbz
+S*np CC S*np
+NP*np VP*vbz
+PP*in
+S*np S*np
+NP*dt VP*vbz
+NP*np VP*vbz
+S*np CC S*np
+ADVP*rb NP*nnp VP*md ''
+S*np CC S*np
+PP*in NP*nnp VP*vp
+PP*in NP*cc VP*vbd
+NP*np ADVP*np VP*md
+CC NP*np VP*vbd
+NP*dt VP*vbz
+NP*np ADVP*rb VP*vbz
+NP*nnp VP*vbz
+
+# id=part1_nopunctuation.62
+NP*np VP*vbp
+NP*jj VP*vbp
+NP*sbar VP*vbz
+NP*cd VP*vbp
+NP*dt VP*vbp
+PP*in NP*prp VP*vbp
+NP*prp VP*vbp
+CC WHNP*wp SQ*vbp
+VP*vb
+PP*in NP*jj VP*vbd
+S*np S*np
+NP*dt VP*vp
+NP*prp VP*vbd
+NP*nnp PP*in NP*np VP*vbp
+ADVP*rb SBAR*in NP*jj VP*vbz
+SBAR*whnp VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+PP*in NP*dt VP*md
+NP*nn VP*vbz
+NP*jj VP*vbz
+NP*np VP*vbz
+PP*in NP*prp VP*vbp
+CC VBZ NP*dt ADJP*jj
+NP*jj VP*vbz
+NP*prp VP*vbz
+CC NP*np VP*vbp
+IN NP*dt VP*vbz
+NP*np VP*vbz
+NP*jj VP*vbz
+NP*prp ADVP*rb VP*vbz
+NP*dt ADVP*rb VP*md
+CC NP*dt VP*vbz
+PP*in NP*nn VP*vbz
+NP-TMP*nn NP*advp VP*vbp
+ADVP*rb VP*vbg VP*vbz
+CC NP*dt VP*vp
+NP*dt VP*md
+S*np PRN*, CC S*np
+PP*in NP*nnp VP*md
+NP*dt VP*vbz
+
+# id=part1_nopunctuation.63
+NP*np VP*vbz
+WHADVP*wrb SQ*vbd
+S*np CC S*np
+NP*cd VP*vbz
+S*pp NP*prp VP*vbd
+NP*dt VP*vbz
+NP*nns VP*vbd
+ADVP*rb NP*np VP*vp
+ADVP*rb NP*dt VP*vbz
+NP*np VP*vbz
+NP*np VP*vbp
+NP*np VP*vbz
+NP*nns ADVP*rb VP*vbp
+SBAR*whnp
+S*np CC IN S*np ''
+NP*nnp VP*vbz
+S*np CC S*s
+NP*np VP*vbp
+SBAR*in `` NP*dt VP*vbd ''
+SQ*vbz CC SQ*vbp
+S*np CC S*np
+NP*np VP*vbp
+NP*np VP*md
+CC NP*np VP*vbp
+PP*in S*np CC S*np
+S*ucp '' NP*prp VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbp
+NP*dt VP*vbz
+NP*dt VP*vbz
+SBAR*whadvp NP*dt VP*vbz
+RB PP*pp NP*nn VP*vbp
+S*np '' CC S*np
+S*np S*np
+S*np S*np
+NP*np VP*vbz
+CC NP*np VP*vbz
+ADVP*rbs NP*dt VP*advp
+NP*prp VP*vbz
+S*np CC S*pp
+NP*dt NP*prp VP*vp
+NP*dt PP*in VP*vbz
+NP*prp VP*vbz
+S*vp VP*md
+S*vp VP*vbz
+
+# id=part1_nopunctuation.64
+S*np CC S*np
+CC NP*dt VP*md
+NP*np PP*in PP*in
+NP*jj VP*vp
+NP*jj VP*vbz
+S*np S*np SBAR*whadvp
+S*np CC S*sbar
+RB WHNP*wp SQ*vp
+PP*in NP*vbg VP*vp
+ADVP*rb NP*np VP*vbd
+ADVP*rb NP*np VP*vbz
+PP*in NP*pos VP*vbz
+NP*jj ADVP*rb VP*vbp
+S*np '' CC S*np
+NP*dt VP*vbz
+NP*dt PP*in PP*in
+NP*np VP*vbz
+NP*dt VP*vbz
+ADVP*rb S*np CC S*np
+PP*in SBAR*rb NP*nn VP*md
+NP*np VP*vbz
+ADVP*rb S*vp VP*vbz
+CC NP*dt VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*prp VP*vbz
+NP*dt VP*vbz
+PP*in NP*dt VP*vbz
+S*vp NP*np VP*md
+NP*np VP*vbp
+CC SBAR*in VP*vbz
+
+# id=part1_nopunctuation.65
+NP*np NP*np
+NP*nnp VP*vbp
+NP*np VP*vb
+S*np S*pp
+SBAR*whadvp S*np CC S*np
+S*cc CC S*np
+NP*prp VP*md
+NP*nnp VP*vbp
+NP*prp VP*vbp
+S*s CC S*np
+NP*np VP*md
+S*advp S*np
+NP*dt VP*md
+SBAR*whadvp
+WHADVP*wrb SQ*md
+MD RB NP*dt ADVP*in VP*advp
+PP*to NP*jj VP*vbp
+SBAR*whadvp NP*dt VP*vbp
+ADVP*rb SBAR*in NP*dt VP*md
+NP*np VP*vb
+S*np CC S*np
+
+# id=part1_nopunctuation.66
+NP*np PP*in NP*np VP*vbp
+NP*prp$ VP*vbp
+NP*np VP*vbz
+S*pp S*np
+ADVP*rb NP*dt VP*vbd
+VP*vb
+PP*in NP*ex VP*vbd
+CC PP*in NP*np VP*vbz
+ADVP*rb SBAR*rb NP*dt VP*vbz
+S*s S*np
+NP-TMP*jj NP*np VP*vp
+S*np S*np
+ADVP*rb NP*nnp VP*md
+CC NP*nnp ADVP*rb VP*vbd
+NP*np VP*vp
+WHNP*wp PP*in
+VBZ NP*dt NP*np
+PP*in NP*dt
+NP*np VP*vbp
+IN NP*dt VP*vp
+NP*np VP*vbp
+ADVP*rb NP*prp$ VP*vbz
+NP*np ADVP*rb VP*vbz
+PP*in NP*dt VP*vbz
+NP*np VP*vbp
+VP*vb
+SBAR*in NP*np VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbp
+CC ADVP*rb PRN*, NP*dt VP*vbz
+S*np CC S*np
+CC NP*np VP*md
+
+# id=part1_nopunctuation.67
+NP*nnp S*np
+VP*vb
+NP*dt VP*vbd
+ADVP*rb NP*np VP*vbp
+NP*np VP*vbz
+S*np CC S*np
+NP*prp VP*vbz
+ADVP*rb NP*np VP*vbd
+PP*in NP*np VP*vbp
+S*np S*np
+WHNP*wp SQ*md
+NP*np ADVP*rb VP*vbp
+NP-TMP*nn NP*ex VP*vbp
+NP*dt VP*md
+PP*in NP*dt VP*vbz
+NP*ex VP*vbd
+NP*np VP*vbd
+PP*in NP*np VP*md
+S*np CC S*np
+PP*rb NP*dt VP*vbd
+NP*jj VP*vbz
+PP*in NP*np VP*vbd
+NP*dt VP*vbd
+CC ADVP*rb NP*dt VP*vbd
+NP*prp VP*vbz
+NP*dt VP*md
+PP*in NP*dt VP*vbd
+S*np NP*prp VP*vbd
+ADVP*rb NP*nnp VP*vbd
+NP*ex VP*vbd
+NP*prp VP*md
+S*np NP*dt VP*vbd
+PP*in NP*dt VP*vbd
+S*np CC S*np
+PP*in NP*jj VP*md
+S*vp CC S*advp
+NP*np VP*vbz
+NP*prp VP*md
+NP*nns VP*md
+ADVP*rb NP*prp VP*vbd
+NP*prp VP*vbd
+S*s VP*vbd NP*np
+NP*np VP*vbz
+NP*np VP*vbd
+PP*in X*in NP*nn VP*md
+
+# id=part1_nopunctuation.68
+NP*np VP*vb
+CC NP*np VP*vbz
+SBAR*whadvp NP*np VP*vbd
+S*vp NP*prp VP*vbd
+ADVP*rb NP*nnp VP*vbd
+PP*in NP*nn VP*vp
+NP*prp VP*vbd
+PP*in ADVP*rb VP*vbz
+PP*in NP*np VP*vbp
+NP*prp VP*vbp
+S*vp NP*prp VP*vbp
+PP*in NP*dt VP*vbd
+NP*prp VP*vp
+NP-TMP*np NP*prp VP*vbp
+S*vp VP*vbz
+SBAR*whadvp NP*prp VP*vbd
+MD NP*nn VP*vb
+MD NP*prp VP*vb
+MD NP*prp VP*vb
+NP*np VP*vbd ''
+S*intj CC S*np
+CC NP*prp VP*vbp
+NP*prp VP*vbd
+WHNP*wdt SQ*md ''
+PP*in SBAR*whadvp NP*nns VP*vbp
+NP*jj VP*vbp
+NP*prp VP*vbp
+NP*nn VP*vbz
+NP*nn VP*vbz
+SBAR*in NP*prp VP*vbp
+NP*nnp PP*in VP*md
+NP*prp VP*md
+NP*prp VP*md
+PP*in NP*dt VP*vbz
+CC NP*np VP*jj
+NP*vbg VP*md
+NP*jj VP*vbp
+NP*prp VP*md
+NP*np VP*md
+ADVP*in NP*dt VP*md
+NP*dt VP*md
+CC NP*prp VP*vbp
+SBAR*in NP*jj VP*md
+
+# id=part1_nopunctuation.69
+NP*dt ADVP*rb PRN*s NP*nnp VP*vbz
+S*np S*np
+PP*in NP*prp VP*vbp
+NP*np VP*vbz
+NP*prp VP*vbz
+NP*np VP*vbz
+ADVP*rb NP*np VP*vbz
+NP*np VP*vbz
+PP*in NP*nnp VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbz
+WHNP*wp SQ*vp
+WHNP*wp SQ*vp
+WHNP*wp SQ*md
+ADVP*rb NP*nn VP*vp
+RB NP*jj VP*vbp
+ADVP*rb NP*nnp NP-TMP*nn VP*vbz
+NP*dt VP*vbz
+ADVP*rb NP*nnp VP*vp
+PP*in NP*nnp VP*vbz
+NP*jj VP*vbp
+CC NP*jj VP*vbz
+PP*in PP*in NP*nnps VP*vbp
+IN NP*prp$ VP*vbz
+NP*jj ADVP*rb VP*vbz
+NP*prp VP*vp
+ADVP*rb NP*jjs VP*vbz
+S*vp NP*nnp VP*vbz
+CC PP*in NP*nnp VP*md
+PP*in NP*nnps VP*vbp
+NP*prp VP*vbp
+PP*in NP*jj ADVP*rb VP*vbp
+PP*in ADVP*rb NP*prp VP*vbz
+NP*np VP*vbp
+NP*np VP*vbp
+PP*in NP*dt VP*vbp
+NP*dt VP*vbz
+NP*dt VP*vbp
+S*np CC S*np
+SBAR*in NP*prp VP*md
+S*vp CC S*s
+SBAR*whnp VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+
+# id=part1_nopunctuation.70
+NP*dt PP*in
+PP*in SBAR*whadvp NP*np VP*vbd
+S*np PRN*, CC S*np
+ADVP*rb NP*dt VP*vbd
+PP*in NP*nns VP*vbd
+NP*nn VP*vp
+NP*np VP*vbd
+NP*dt VP*vbd
+S*np CC S*np
+ADVP*rb PP*in NP*np VP*vbp
+PP*in NP*dt VP*vbz
+PP*in NP*dt VP*vbd
+PP*in NP*np VP*vbd
+S*np CC S*np
+ADVP*rb NP*jj VP*vp
+PP*rb NP*nnp VP*vbd
+ADVP*rb NP*np VP*vbz
+CC SBAR*in NP*np VP*vbz
+ADJP*rbr VP*vbz NP*dt
+VP*vb
+VP*md NP*dt SBAR*in
+NP*dt VP*vbz
+CC NP*dt VP*vbz
+NP*dt VP*vbz
+`` NP*np '' VP*vbp
+NP*jj VP*vbp
+S*vp NP*nn VP*vbp ''
+PP*in NP*nn VP*vbp
+NP*jj VP*vbp
+PP*in NP*nn VP*vbp
+S*np S*np
+SBAR*rb NP*prp ADVP*rb VP*vbz
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbz
+S*vp VP*vbz
+PP*in NP*np VP*vbd
+SBAR*in PP*in VP*vbz
+RB NP*nnp VP*vbd
+NP*nn SBAR*whnp
+S*np S*np
+NP*np VP*vbp
+SBAR*in NP*nnp VP*vbz
+NP*ex VP*vbz
+ADVP*rb ADVP*rb NP*dt VP*md
+
+# id=part1_nopunctuation.71
+NP*np PP*in VP*vbz
+NP*np VP*vbp
+PP*vbn NP*nnp VP*vbz
+S*np CC S*s
+NP*cd VP*vbp
+NP*jj VP*vbp
+PP*in NP*nnp VP*md
+NP*np VP*vbp
+NP*dt VP*vbp
+PP*in NP*np VP*md
+PP*in NP*dt VP*md
+ADVP*in NP*np VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbp
+ADVP*rb PRN*, NP*np VP*md
+NP*jj VP*md
+ADVP*rbs NP*nnp VP*md
+PP*in NP*np VP*nn
+NP*dt VP*vbz
+ADVP*rb PP*in NP*np VP*vbz
+NP*prp VP*vbp
+PP*in NP*dt VP*md
+ADVP*in PRN*, NP*nnp VP*md
+NP*prp VP*vp
+NP*dt VP*vbp
+PP*in NP*prp VP*vbp
+NP*np VP*vbp
+S*vp VP*vbd
+S*np S*vp
+PP*in NP*np VP*vp
+NP*nnp VP*vbz
+S*sbar CC S*np
+NP*np VP*vbg
+SBAR*in NP*prp VP*md
+
+# id=part1_nopunctuation.72
+NP*np PP*in VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbz
+ADVP*rb NP*nn VP*vbz
+CC SBAR*in NP*prp VP*md
+IN NP*dt VP*vbz
+NP*jj VP*md
+PP*in NP*dt VP*md
+PP*in S*np CC S*np
+PP*in NP*nn VP*vbz
+RB WHADVP*wrb SQ*md
+NP*dt VP*vbz ''
+CC NP*ex VP*vbz
+NP*jj VP*vbp
+PP*in NP*nnp VP*vbz
+S*np CC S*sbar
+SBAR*in NP*np VP*vp
+S*np NP*ex VP*vbp
+NP*np VP*vbz
+PP*in PP*in NP*np VP*vbz
+NP*nnp VP*vbd
+NP*dt VP*vbz
+NP*dt ADVP*rb VP*vbp
+SBAR*in NP*np VP*vp
+NP*dt VP*vbp
+PP*in NP*dt VP*vp
+PP*in NP*prp VP*vp
+NP*prp ADVP*rb VP*vbz
+PP*in NP*np VP*vbp
+CC ADVP*rb SBAR*rb NP*prp VP*vbz
+NP*np VP*vbz
+NP*prp VP*vbp
+CC S*vp VP*vbz
+S*np CC S*advp
+ADVP*rb VP*vbg VP*vbz
+NP*dt VP*vbz
+PP*in NP*jj VP*md
+NP*dt VP*vbz
+ADVP*rb NP*dt VP*vbp
+
+# id=part1_nopunctuation.73
+NP*nn PP*in
+NP*np VP*md
+NP*nnps VP*vbd
+PP*in S*np CC S*advp
+NP*dt VP*vbz
+NP*jj VP*vbp
+NP*jj VP*vbp
+NP*nnp VP*md
+NP*nnp PP*in VP*vbz
+IN NP*np VP*vbz
+S*np CC S*np
+NP*dt VP*vbz
+PP*in NP*nnp VP*vbz
+NP*np VP*vbp
+NP*dt NP-TMP*dt VP*vbz
+NP*np VP*vbp
+NP*jj ADVP*rb VP*vbp
+NP*np VP*vbd
+NP*np VP*vbd
+ADVP*rb NP*np VP*vbd
+NP*np VP*vbz
+NP*np VP*vbz
+ADVP*np NP*nnp VP*vbd ''
+CC SBAR*whnp NP*nn VP*md
+NP*prp VP*vbz
+NP*nnp VP*vbp ''
+PP*in S*np S*np
+VP*vb
+PP*in NP*prp VP*vbz
+NP*nnp VP*md
+ADJP*rb VP*vbp NP*np
+NP*prp VP*vbp
+CC NP*prp VP*md
+SBAR*in NP*dt VP*md
+PP*in NP*prp VP*md
+
+# id=part1_nopunctuation.74
+NP*jj PP*in
+NP*nnp VP*vb
+SBAR*in NP*jj VP*vbp
+NP*dt VP*vbp
+SBAR*in NP*np VP*vbp
+PP*in NP*dt VP*vbz
+NP*nnp ADVP*rb VP*vbz
+NP-TMP*cd PP*in NP*dt VP*vbp
+S*np CC S*np
+PP*in NP*np VP*md
+NP*dt VP*vbd
+IN NP*dt VP*vbz
+NP*cd VP*vbd
+NP*np PP*in NP*dt VP*md
+ADVP*rb PP*in NP*np VP*vbd
+PP*in SBAR*in X*in NP*nn VP*advp
+NP*dt VP*vbz
+PP*in NP*dt VP*vp
+S*pp S*s
+ADVP*rb NP*dt VP*vbz
+NP*np VP*vbp
+NP*jj VP*vbp
+PP*in NP*np VP*vbp ''
+NP*dt VP*vbz
+NP*dt VP*vbp
+NP*dt VP*vbp
+NP*dt VP*vbz
+NP*dt VP*vbd
+SBAR*in NP*dt VP*vbp
+ADVP*rb NP*np VP*vbp
+
+# id=part1_nopunctuation.75
+NP*np VP*md
+SBAR*whadvp NP*jj VP*vbp
+NP*np VP*vbd
+CC NP*ex VP*vbp
+PP*in S*np NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt PRN*: VP*vbd
+NP*np VP*vbd
+NP*nnp VP*vp
+NP*nnps VP*vbd
+CC PP*in NP*np VP*vbd
+NP*jj VP*vp
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbp
+S*np CC S*np
+PP*in NP*np VP*vbz
+PP*in NP*nnp VP*vbz
+ADVP*rb NP*prp VP*vbz
+NP*np VP*vbp
+ADVP*rb NP*np VP*vbz
+S*np NP*dt VP*vbp
+NP*dt VP*vbn
+S*np CC S*np
+NP*dt ADVP*rb VP*vbz
+S*np CC S*np
+NP*jjs VP*vbp
+S*np CC S*np
+NP*prp VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbp
+NP*nnps VP*md
+S*vp VP*md
+NP*dt VP*vbz
+CC PP*to NP*prp VP*vbz
+PP*in NP*np VP*vbz
+NP*nnp ADVP*rb VP*vbz
+ADVP*rb NP*nnp VP*md
+NP*np VP*vbp
+S*vp VP*vbz
+NP*np VP*md
+S*np CC S*np
+CC NP*np VP*md
+S*vp VP*md
+RB S*np CC S*np
+
+# id=part1_nopunctuation.76
+NP*np PP*in VP*vbp
+NP*np VP*vbp
+CC S*np CC S*advp
+NP*nnp VP*md
+ADVP*rb NP*prp VP*vbz
+CC NP*prp VP*vbz
+ADVP*rb NP*np VP*vbp
+ADVP*rb NP*np VP*vbp
+PP*in NP*dt VP*vbd
+NP*cd VP*vbd
+NP*jj VP*vbd
+NP*np VP*vbz
+PP*np NP*dt VP*vb ''
+S*intj CC ADVP*in S*np
+PP*in SBAR*whnp VP*vbz ''
+NP*dt VP*vbz
+ADVP*rb NP*np VP*vbd
+NP*nnp VP*md
+PP*in NP*prp VP*vbp
+CC NP*np
+PP*in NP*nnp VP*vbd
+S*np CC S*np
+S*np CC S*sbar
+NP*prp VP*vbd
+NP*np VP*vbd
+PP*in NP*prp VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd ''
+PP*vbg NP*np VP*vbd
+NP*cd `` S*np ''
+RB NP*dt VP*vbd
+NP*dt VP*vbd ''
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*nn VP*vbz
+NP*dt VP*vbz
+S*pp CC `` RB S*vp ''
+NP*np VP*md
+NP*prp VP*md
+
+# id=part1_nopunctuation.77
+NP*np VP*nnp
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+CC NP*nn VP*vbz
+S*np S*pp
+NP*nnp VP*vbz
+NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbz
+PP*in NP*np VP*vbz
+NP*np VP*vbz
+PP*in '' NP*nnp VP*vbd
+SBAR*in NP*cd VP*vbp
+NP*prp VP*vbp
+PP*in S*pp RB S*np
+CC SBAR*rb NP*np VP*vbd
+PP*in NP*dt VP*vbd
+PP*vbn NP*dt VP*md
+NP*np VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+PP*in NP*dt VP*vbz
+PP*in NP*dt VP*vbz
+S*np NP*nns VP*vbp
+NP*np VP*vbz
+S*advp S*np
+NP*np VP*vbz
+PP*in NP*np VP*vbz
+S*vp VP*vbn
+VP*vb
+VP*vb
+NP*dt VP*vbz
+NP*prp VP*vbz
+IN NP*dt VP*md
+
+# id=part1_nopunctuation.78
+NP*np VP*vbz
+PP*in NP*nnp VP*md
+NP*prp$ VP*vbz
+S*np S*s
+SBAR*in NP*dt VP*vbz
+NP*np VP*md
+MD NP*nnp ADVP*rb VP*vb
+FRAG*adjp VP*md NP*nnp S*vp
+SBAR*in VP*vbz
+ADVP*rb NP*np VP*vbp
+S*advp S*sbar
+NP*nnp VP*vbz ''
+SBAR*whnp VP*vbz
+NP*rb ADVP*rb VP*vbp
+S*pp CC S*sbar
+SBAR*in NP*np VP*md
+NP*np VP*vbz
+ADVP*rb NP*np VP*vbz
+NP*dt VP*vp
+S*s VP*vbz NP*np
+S*advp S*np
+PP*in NP*prp ADVP*rb VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbz
+S*np '' CC S*np
+CC VP*vb
+SBAR*in NP*prp VP*md
+NP*dt VP*vbz
+VBZ NP*prp NP*np
+NP*prp VP*vbz
+PP*in NP*np VP*vbd
+IN NP*prp VP*md
+NP*np VP*vbp
+NP*np VP*md
+NP*np VP*md
+
+# id=part1_nopunctuation.79
+S*np PRN*sbar NP*dt VP*vbd
+NP*dt VP*vbd
+PP*in NP*ex VP*vbz
+NP*np VP*vp
+NP*np VP*vp
+PP*in NP*np VP*md
+S*np CC S*adjp
+ADVP*rbr NP*dt VP*md
+S*np CC S*np
+NP*dt VP*vbz
+PP*in NP*dt VP*md
+CC PP*in S*np CC S*np
+NP*dt VP*md
+NP*prp VP*vbp
+NP*nnps VP*vbp
+NP*dt VP*vbz
+PP*in S*adjp ADVP*rb VP*vbp
+CC NP*nn VP*vbz
+S*np S*np
+ADVP*rb NP*prp VP*vbp
+PP*in NP*dt VP*vbp
+NP*np ADVP*rb VP*advp
+NP*prp$ VP*vbp
+PP*in NP*nnp VP*vbz
+S*np RB S*np
+ADVP*rb NP*prp VP*vbz ''
+NP*nnp VP*vbz
+S*vp NP*nnp VP*vbd
+S*np S*np
+S*vp NP*nns VP*vbp
+NP*dt VP*vbp
+PP*in NP*nnp VP*vbz
+NP-TMP*jj NP*prp VP*vbd
+ADVP*rb NP*prp VP*vbz
+S*np CC S*advp
+CC NP*np VP*vp
+
+# id=part1_nopunctuation.80
+NP*np PP*in VP*vbd
+PP*in NP*jj VP*vbz
+SBAR*in VP*vbd
+CC NP*ex VP*vbz
+PP*rb
+NP*nnp VP*vbp
+NP*nns VP*vbp
+PP*in NP*jj VP*vbp
+S*np CC PRN*, S*np
+NP*np VP*vbz
+ADVP*rb S*np S*np
+ADVP*rb NP*np VP*vbd
+NP*np VP*vb
+CC S*vp VP*vbz
+ADVP*rb NP*prp VP*vbd
+PP*in SBAR*rb NP*dt ADVP*rb VP*vbd
+S*np CC S*np
+CC NP*prp VP*vbd
+PP*in NP*nnp VP*vbd
+ADVP*rb PP*in NP*prp VP*vbp
+CC SBAR*whadvp NP*ex VP*vbz
+NP*prp VP*md
+ADVP*rb NP*dt VP*vbz
+SBAR*whadvp NP*prp VP*vbd
+NP-TMP*nn NP*qp VP*vbp
+PP*in NP*np VP*vbp
+PP*in NP*np VP*vbd
+NP*np VP*vbd
+ADVP*rb NP*dt VP*vbd
+NP*dt VP*vbd
+NP*jj VP*vbz
+S*np CC S*np
+CC PP*in NP*np VP*vbp
+PP*in NP*np VP*vbz
+
+# id=part1_nopunctuation.81
+S*vp VP*md
+PP*to NP*dt VP*vb
+NP*nns VP*vbp
+NP*prp ADVP*rb VP*vbp
+NP*np VP*vb
+CC NP*nn VP*vbz
+NP-TMP*dt NP*prp VP*vbp
+NP*np VP*vp
+SBAR*rb NP*np ADVP*rb VP*vbp
+NP*np VP*vbz
+NP*nn VP*vbp
+NP*prp VP*vbz
+SBAR*whadvp NP*np VP*md
+ADVP*rb NP*np VP*vbz
+NP*jj VP*vbp
+S*vp NP*np VP*vbz
+NP*np VP*vbp
+NP*dt VP*vp
+NP*np VP*vbz
+CC NP*np VP*vbz
+NP*np VP*vbp
+PP*in NP*np VP*vbp
+NP*dt ADVP*rb VP*vbd
+ADVP*rb NP*np VP*vbd
+NP*np VP*vbd
+SBAR*in NP*np VP*vbp
+ADVP*rb PP*vbn NP*np VP*md
+NP*dt ADVP*rb VP*vbd
+NP*nn VP*vbp
+NP*np VP*md
+
+# id=part1_nopunctuation.82
+VP*vbp
+NP*np VP*vbp
+ADVP*rb PRN*, NP*jj VP*vbz
+NP*np VP*vbd
+S*pp CC S*np
+PP*in NP*prp VP*md
+PP*in NP*prp VP*vbd
+NP*prp$ VP*vbp
+PP*vbn NP*nnps VP*vp
+S*vp NP*nn VP*vbz
+CC NP*dt VP*vbp
+NP*np VP*vbn
+NP*nns ADVP*rb VP*vbp
+NP*np VP*md
+PP*in NP*nnps VP*md
+NP*dt VP*md
+CC NP*np VP*vbz
+S*advp S*np
+NP*np VP*vbp
+NP*np VP*vbp
+NP*prp VP*vbz
+NP*jj NP*np
+PP*rb NP*jj VP*vbd
+NP*nns VP*vbd
+PP*vbn NP*dt VP*vbz
+ADVP*rb NP*dt VP*vb
+PP*in NP*np VP*vbd
+NP*np VP*vbz
+PP*in NP*np VP*vbz
+NP*np VP*vbp
+PP*in NP*nn VP*vbz
+NP*np VP*vbd
+PP*in NP*np VP*vbd
+PP*in NP*prp VP*md
+ADVP*rb NP*nn ADVP*rb VP*vbp
+
+# id=part1_nopunctuation.83
+PP*np NP*nnp VP*vbd
+NP*np VP*vbn
+ADVP*np NP*dt VP*vbd
+ADVP*rb PP*in NP*np VP*vbz
+NP*np VP*vbp
+NP*np VP*vbd
+PP*in PRN*, `` S*np S*np CC S*np ''
+NP*np VP*vp
+PP*in PP*in NP*np VP*vbd
+NP*prp$ VP*vbd
+NP-TMP*nn PP*in NP*prp$ VP*vbp
+S*np-tmp S*np-tmp
+S*np S*np
+NP*jj VP*vbp
+NP*prp VP*vbp
+NP*nnp VP*vbp
+NP*np VP*vbp
+S*np CC S*np
+ADVP*rb SBAR*in NP*prp VP*vbp
+PP*in NP*prp VP*md
+NP*np VP*vbp
+PP*in PP*in NP*dt VP*vbz
+CC SBAR*in MD NP*dt VP*vb
+ADVP*rb NP*nnps VP*md
+
+# id=part1_nopunctuation.84
+NP*np VP*vbz
+CC S*vp VP*vbz
+NP*np VP*vbz
+ADVP*jj SBAR*whadvp NP*nnp VP*vbd
+SBAR*in NP*ex VP*vbz
+NP*nnp VP*vbz
+SBAR*in NP*nnp VP*md
+S*np CC S*np
+S*adjp NP*ex VP*vbz
+IN NP*prp VP*vbz
+NP*dt ADVP*rb VP*vbp
+CC NP*dt VP*md
+PP*in S*np CC S*np
+PP*in PRN*: S*np CC S*np
+PP*in PP*in NP*dt VP*vp
+PP*in NP*np VP*vbz
+PP*in NP*np VP*vbd
+PP*in NP*dt VP*vbd
+S*np CC S*np
+NP*nnp VP*vbd
+PP*in NP*np VP*vbd
+NP*np VP*vbz
+NP*np VP*vbn
+NP*nnp VP*vbd
+CC NP*dt VP*vbn
+PP*in NP*nns VP*vbp
+ADVP*rb PP*in NP*dt VP*vbd
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbp ''
+CC NP*dt VP*vbz
+S*np CC S*frag
+NP*np VP*vbz
+ADVP*rb NP*jj VP*vbp
+CC NP*np VP*vbp
+PP*in NP*dt VP*vbz
+CC S*np CC S*np
+NP*dt VP*vbz
+S*np CC S*np
+NP*np VP*vbz
+S*s CC S*np
+
+# id=part1_nopunctuation.85
+S*vp NP*nnp VP*vbz
+S*np CC S*adjp
+NP*pdt VP*md
+NP*np VP*vp
+NP*jj VP*md
+ADVP*rb NP*dt VP*vbp
+NP*nnp VP*vbz
+S*np CC S*np
+NP*dt VP*vbp
+NP*np VP*vbz
+S*vp VP*vbp
+ADVP*rb PP*in NP*nn VP*vbp
+NP*np VP*vbp
+NP*np VP*vbz
+NP*np VP*vbp
+RB NP*np VP*md
+NP*nnp VP*md
+NP*dt VP*md
+NP*dt VP*md
+NP*jj VP*md
+ADVP*rb NP*prp VP*md
+NP*np ADVP*rb VP*md
+NP*np VP*md
+S*cc S*s
+ADVP*rb NP*dt VP*md
+NP*dt VP*vp
+PP*in NP*nnp VP*vbz
+NP*np VP*md
+NP*rb VP*vbz
+
+# id=part1_nopunctuation.86
+NP*np VP*vbp
+NP*np ADVP*rb VP*vbz
+S*advp CC FRAG*whadvp
+S*vp VP*vbp
+NP*np VP*vbz
+NP*np VP*vbp
+NP*nn VP*vbp
+VP*vb
+VP*vb
+ADVP*rb NP*np VP*vbz
+NP*nn VP*vbz
+ADVP*rb VP*vb
+NP*dt VP*vp
+SBAR*in NP*dt ADVP*rb VP*vbz
+SBAR*in NP*dt VP*vbp
+NP*nnp VP*vbz
+PP*in NP*nnp VP*vp
+NP*nnp ADVP*rb VP*vbz
+ADVP*rb VP*vb
+SBAR*in NP*np VP*vbz
+S*np S*np
+NP*nnp ADVP*rb VP*vp
+NP*nnp VP*vbd
+S*np CC S*np
+SBAR*whnp VP*vbz
+NP*np VP*md
+SBAR*whnp
+PP*in NP*nnp VP*vbd
+NP*np VP*nn
+NP*nnp VP*vbd
+NP*nnp VP*vbd
+NP*np VP*vbp
+NP*prp VP*vbz
+ADVP*rb NP*dt VP*md
+CC ADVP*in NP*prp VP*vp
+VP*vb
+NP*dt ADVP*rb VP*vbz
+ADVP*rb NP*np VP*vbp
+NP*np VP*vbz
+NP*prp VP*md
+ADVP*rb S*vp VP*md
+NP*prp VP*vbz
+NP*nnp VP*md
+
+# id=part1_nopunctuation.87
+WHNP*wp SQ*vbz
+SBAR*in NP*prp ADVP*dt VP*md
+NP*prp$ SBAR*s
+ADVP*rb NP*prp VP*md
+NP*np VP*vbd
+CC NP*dt VP*vbz
+NP*np VP*vbd
+PP*in NP*np VP*vbn
+NP-TMP*nn ADVP*rb PP*in NP*nnp S*vp NP*np VP*vbp
+SBAR*in S*np S*np
+SBAR*whnp SBAR*in VP*vbz
+ADVP*rb NP*np VP*md
+NP*dt VP*vbp
+S*vp VP*vbp
+VBP NP*prp VP*vbn
+WHADVP*wrb SQ*vp
+NP*dt VP*vbp
+ADVP*rb S*np PRN*, CC S*np
+ADVP*rb PP*in NP*np VP*vbp
+NP-TMP*dt NP*np VP*vbd
+PP*in NP*nn VP*vbn
+NP-TMP*nn NP*dt VP*vbz
+NP*ex VP*vbp
+NP-TMP*dt NP*dt VP*vbz
+ADVP*rb SBAR*whnp VP*vbz
+ADVP*rb PP*pp NP*np VP*vbp
+MD NP*np VP*vb
+NP*np VP*vbd
+ADVP*rb PP*in NP*nnp VP*vbd
+S*vp NP*jj VP*vbp
+ADVP*rb NP*dt VP*vbz
+NP*dt VP*vbp
+NP*prp VP*vbp
+RB NP*ex VP*vbp
+CC NP*dt VP*vbz
+NP*np ADVP*rb VP*vbz
+SBAR*in NP*prp VP*md
+ADVP*rb NP*dt VP*vbz
+NP*dt VP*vbz
+
+# id=part1_nopunctuation.88
+NP*np VP*vbz
+RB PP*in NP*dt VP*vbz
+ADVP*rb NP*nnp VP*vbz
+S*cc S*s
+NP*dt VP*vbd
+NP*prp VP*vbd
+NP*dt ADVP*rb VP*vbn
+PP*vbn NP*dt VP*vbd
+NP*nnp VP*vbz
+NP*prp VP*vbd
+S*np NP*prp VP*vbz
+S*np S*np
+ADVP*rb NP*np VP*vbz
+ADVP*rb NP*nnp VP*vbz
+ADVP*rb NP*np VP*md
+NP*dt VP*vbz
+ADVP*rb NP*np ADVP*rb VP*vbz
+NP-TMP*np NP*prp VP*vbz
+NP*prp VP*vbp
+S*advp CC S*,
+S*advp S*np
+ADVP*rb NP*nnp VP*advp
+NP*np VP*vp
+NP*np VP*vbd
+SBAR*in NP*prp VP*vbz
+NP*dt VP*vbz
+SBAR*in PRN*-lrb- NP*np VP*vbz
+ADVP*rb S*np CC S*np
+NP*nnp VP*vbz
+NP*np ADVP*rb VP*vbp
+NP*dt VP*vbz
+PP*in NP*np VP*vbz
+ADVP*rb VP*vbg VP*md
+MD NP*jj VP*vbp
+PP*in NP*cc VP*md
+CC PP*in NP*np VP*md
+NP*np VP*vbd
+CC NP*prp VP*md
+SBAR*wdt PP*in NP*np VP*vbz
+
+# id=part1_nopunctuation.89
+S*vp VP*vbz
+SBAR*whadvp NP*dt VP*vbd
+NP-TMP*nn PP*in NP*jj VP*vbp
+NP*advp VP*vbz
+NP*np VP*md
+ADVP*rb NP*np VP*vbd
+NP*dt VP*vbd
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbz
+RB NP*nnp VP*advp
+SBAR*whadvp NP*dt VP*vbd
+RB VP*advp NP*np
+NP*dt VP*vbd
+PP*in NP*np VP*vbd
+PP*in NP*dt VP*vbd
+PP*in NP*prp VP*md
+CC NP-TMP*dt NP*prp$ VP*vbz
+PP*in NP*dt VP*vbz
+PP*in NP*prp VP*md
+RB NP*jj VP*vbp
+SBAR*in NP*np VP*md
+CC NP*dt VP*md
+WHADVP*wrb SQ*vbp
+NP*dt ADVP*rbr VP*vbp
+NP*nns VP*vbp
+NP*np VP*vp
+NP*dt VP*vbz
+NP*cd VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbd
+PP*in NP*dt VP*md
+NP*np VP*md
+S*vp NP*nn VP*md
+CC NP*prp VP*vbp
+NP*jj VP*md
+S*np CC S*np
+NP*np VP*md
+NP*np VP*md
+SBAR*in NP*dt VP*md
+
+# id=part1_nopunctuation.90
+NP*np VP*vbz
+PP*in S*np CC S*np
+PP*in NP*nnp VP*vbz
+SBAR*in NP*np VP*vbp
+NP*np VP*vbz
+NP*dt VP*md
+RB NP*dt VP*md
+NP*cd VP*md
+RB NP*nnp VP*vbz
+NP*dt VP*vbz
+SBAR*whnp VP*vbz
+S*np RB S*np
+NP*jj VP*vbp
+PP*in NP*ex VP*md
+RB WHADVP*wrb SQ*vp
+SBAR*in
+NP*dt VP*vbp
+ADVP*rb S*np CC S*np
+ADVP*rb NP*nnp VP*vbz
+SBAR*in NP*prp VP*md
+NP*nnp ADVP*rb VP*vbd
+NP*dt VP*vbd
+NP*nn VP*vp
+NP*prp ADVP*rb VP*vbd
+PP*in NP*dt VP*vbd
+NP*nn VP*md
+NP*np VP*vbp
+NP*prp VP*vbp
+CC NP*np ADVP*rb VP*vbz
+S*advp CC S*advp
+NP*np VP*vbp
+NP*dt VP*vbz
+NP*np VP*md
+PP*in NP*prp VP*vbz
+NP*ex VP*vbp
+NP*dt VP*vbz
+NP*nnps VP*vbd
+SBAR*whadvp NP*prp VP*md
+ADVP*rb NP*dt VP*md
+NP*dt VP*vbz
+NP*jj VP*vbp
+NP*nns VP*md
+NP*dt VP*md
+NP*dt VP*md ''
+
+# id=part1_nopunctuation.91
+NP*np VP*vp
+NP*dt VP*vbz
+NP*np VP*vbz
+ADVP*rb NP*dt VP*vbp
+VP*vb
+NP*dt VP*vbz
+NP*dt VP*vbz
+CC NP*np VP*vbp
+PP*in NP*np VP*vbp
+PP*in PP*in S*np CC S*np
+SBAR*whadvp VP*vbd
+PP*in PP*in SBAR*whadvp NP*nnp VP*vbd
+NP*prp VP*vbd
+NP*np VP*vbz
+NP*np VP*md
+NP*prp VP*vbz
+ADVP*rb NP*np VP*vbz
+PP*in NP*np VP*vbz
+PP*in NP*dt VP*vbd
+S*np CC S*advp
+ADVP*rb NP*np VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbz
+PP*in NP*dt VP*vbd
+CC NP*prp VP*vbz
+ADVP*rb NP*np VP*vbd
+NP*np VP*vbp
+NP*np VP*vbz
+ADVP*rb PP*in NP*np VP*vbd
+ADVP*rb NP*dt VP*vbd
+CC NP*prp VP*vbz
+NP*nn VP*vp
+NP*np VP*md
+CC NP*cd VP*md
+ADVP*rb NP*cd VP*vbz
+
+# id=part1_nopunctuation.92
+NP*dt VP*vbp
+NP*np VP*vbz
+ADVP*rb ADVP*rb NP*dt VP*md
+PP*in NP*np VP*md
+NP*dt VP*md
+S*pp CC S*np
+NP*np VP*md
+NP*np VP*md
+NP*np VP*vbz
+S*np IN S*np
+NP*np VP*md
+S*np CC S*advp
+NP*np VP*vbz
+NP*dt ADVP*rb VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbp
+MD NP*prp VP*vb
+S*s S*np S*sbar
+ADVP*rb PP*in NP*rb VP*md
+S*sbar CC S*np
+NP*jj VP*vbp
+PP*in NP*np VP*vbd
+CC ADVP*rb NP*dt VP*md
+NP*prp VP*vbp
+S*np S*np
+S*advp CC S*np
+NP*prp VP*md
+NP*nn VP*vbz
+NP*jj VP*vbp
+CC SBAR*in NP*np VP*md
+ADVP*rb NP*prp VP*md
+NP*prp VP*md
+PP*in NP*np VP*md
+PP*in NP*np VP*vbz
+SBAR*whadvp NP*prp VP*md
+
+# id=part1_nopunctuation.93
+WHNP*wdt SQ*vbz
+NP*np VP*vbp
+S*vp VP*vbp
+VP*vb
+PP*in NP*dt VP*vbd
+S*np CC S*np S*pp S*np CC S*pp
+NP*jj ADVP*rb VP*vbd
+S*pp S*pp
+ADVP*rb PP*in NP*nn VP*vbd
+NP*jj VP*vbp
+CC NP*nnp VP*vbd
+CC VBZ NP*nnp VP*vb
+NP*np VP*vbz
+PP*in S*np
+CC ADVP*rb PP*vbg NP*vbg VP*vbp
+NP*ex VP*vbz
+S*np CC S*np
+NP*jj VP*vbd
+NP*nns PP*in
+CC PP*in NP*prp ADVP*rb VP*vbp
+ADVP*rb NP*dt VP*vbd
+NP*dt VP*vbd
+ADVP*rb NP*dt VP*vbd
+NP*nn VP*vbp
+ADVP*rb NP*dt VP*vbp
+S*vp VP*vbz
+CC S*np CC S*np
+PP*in NP*dt VP*vbz
+SBAR*whadvp NP*nns VP*vbp
+S*np CC S*np
+NP*np VP*vbd
+PP*in NP*jj S*vp VP*vbd ''
+ADVP*rb PP*in NP*nnp VP*vbd
+NP*dt VP*md
+NP*dt VP*md
+CC NP*np VP*md
+S*np CC S*np
+RB SBAR*in NP*rb VP*md
+NP*nns VP*md
+PP*in S*vp VP*vbz
+CC NP*pdt VP*vbz
+WHNP*wp SQ*vp
+S*np S*np
+S*np S*np
+CC ADVP*rb S*s
+ADVP*rb SBAR*wdt NP*np VP*vbp
+NP*prp VP*vbz
+NP*nnp VP*vbz
+
+# id=part1_nopunctuation.94
+WHADVP*wrb SQ*vp
+NP*np ADVP*rb VP*vbd ''
+NP*dt ADVP*rb VP*vbz
+NP*prp VP*vbz
+NP*dt VP*vbd
+S*np CC S*np
+PP*in NP*dt VP*vbz
+S*np CC S*np
+NP*np VP*md
+PP*in NP*np VP*vbz
+SBAR*in NP*dt VP*md
+NP*np VP*vbp
+NP*nns VP*md
+RB NP*dt VP*vbz
+NP*np VP*vbz ''
+PP*in NP*prp VP*vbz
+PP*in SBAR*in NP*prp VP*md
+SBAR*whnp ADVP*rb VP*vbz
+NP*jj VP*vbp
+SBAR*in NP*nns VP*vbp
+RB WHADVP*wrb SQ*vp
+NP*nns VP*md
+S*np CC S*np
+S*np NP*prp VP*vbz
+SBAR*in NP*prp VP*md
+PP*in S*vp VP*vbz
+S*s CC S*np
+NP*nnp VP*vbz
+NP*prp$ VP*vbz
+ADVP*rb PP*in NP*dt VP*vbz
+NP*cd VP*vbz
+
+# id=part1_nopunctuation.95
+S*np NP*cd VP*vbd
+SBAR*in NP*prp ADVP*rb VP*vbd
+PP*in PRN*, PP*in VP*vbd
+S*np-tmp CC S*np
+NP*np VP*md
+PP*in NP*dt VP*vbp
+NP*np VP*vbp
+NP*prp VP*vbp
+NP*np VP*vbp
+NP*nn VP*vbp
+NP*dt VP*vbp
+NP*prp ADVP*rb VP*vbp
+ADVP*np PP*vbg NP*dt VP*vbd
+NP*dt VP*vbd
+NP*jj VP*md
+PP*vbg NP*dt VP*vbd
+PP*in NP*nnp VP*vbz
+NP*np VP*md
+NP*np VP*vbp
+PP*in NP*dt VP*vbp
+PP*in SBAR*whadvp NP*prp VP*vbp
+SBAR*whadvp NP*prp VP*vbd
+ADVP*rb PP*in NP*nn VP*vbd
+PP*to NP*prp VP*vbd
+NP-TMP*jj S*pp CC S*np
+S*np S*np
+IN NP*dt VP*advp
+NP*nnps VP*vbp
+ADVP*rb S*vp NP*prp VP*md
+PP*in NP*np VP*vbp
+PP*in PP*in NP*jj VP*vbp
+NP*ex VP*vbz
+NP*dt PRN*, VP*vbz
+NP*dt PP*in VP*vbz
+PP*in NP*np
+S*np CC S*np
+PP*in SBAR*whadvp NP*nn VP*vbz
+PP*in NP*np VP*vbp
+
+# id=part1_nopunctuation.96
+WHNP*wp SQ*vbz
+NP*np VP*vbz
+NP*np VP*md
+NP*np VP*vbz
+NP*np VP*vbz
+PP*in NP*prp$ VP*vbp
+NP*nnp VP*vbz
+NP*nnps VP*vbp
+PP*in NP*cd VP*vbp
+SBAR*in NP*prp VP*md
+S*np CC S*np
+NP*np VP*vbz
+NP*np VP*vbp
+S*vp NP*np VP*vbd
+ADVP*rb NP*adjp VP*md
+CC NP*dt VP*vbz
+NP*np VP*vbn
+NP*prp VP*vbd
+S*vp VP*vbp
+NP*np VP*vbp
+NP*jjs NP-TMP*nn VP*vbp
+ADVP*jj NP*np VP*vp
+CC PP*in NP*cd VP*vp
+NP*np VP*vbd
+VP*vb
+PP*in NP*nn VP*vbz
+NP*np VP*md
+NP*np VP*md
+ADVP*rb NP*np VP*vbp
+NP*dt VP*vbd
+PP*in NP*np VP*vp
+WHNP*wp SQ*vp
+NP*prp VP*vbp
+NP*prp VP*vbz
+VBZ NP*dt ADJP*np S*vp
+VBZ NP*np ADJP*jj S*vp
+CC VBZ NP*dt NP*np
+NP*np VP*md
+
+# id=part1_nopunctuation.97
+VP*vbg
+PP*in NP*dt VP*vbp
+NP*np VP*vbz
+S*np CC S*pp
+PP*to NP*dt VP*vbz
+NP*np VP*vbn
+NP*np VP*vbd
+PP*in NP*dt VP*vbz
+NP*nnp ADVP*rb VP*vbd
+NP*np VP*vbz
+S*np VP*vbp NP*dt
+PP*in NP*np VP*vbd
+NP*np VP*vbz
+NP*dt ADVP*rb VP*vbz
+PP*in NP*nns VP*vbd
+NP*dt VP*vbd
+ADVP*rb NP*np ADVP*rb VP*vp
+VP*vb
+S*np CC S*np
+NP*nnp VP*vbz
+NP*np VP*vbz
+S*np CC S*pp
+PP*in PP*in NP*prp VP*md
+NP*np VP*vbp
+ADVP*rb NP*jj VP*vbp
+ADVP*rbs NP*np VP*vbz
+PP*in VP*vbp NP*np
+NP*prp VP*vbz
+VBZ SBAR*np ADJP*rbr
+NP*dt ADVP*rb VP*vbz
+ADVP*rb NP*jj VP*md
+NP*dt VP*vbz
+ADVP*rb NP*jj VP*md
+
+# id=part1_nopunctuation.98
+NP*np VP*vbd
+ADVP*rb NP*dt VP*vbp
+S*cc S*np
+NP*nnp VP*vbz
+PP*in NP*prp VP*vbz
+S*vp NP*np `` VP*vbd ''
+SBAR*in NP*nnp VP*vbz
+S*np CC S*np
+NP*np VP*vbz
+S*np S*np
+CC PP*rb NP*nnp VP*vbz
+ADVP*rb VP*vb
+ADVP*rb S*np S*pp
+CC ADVP*rb NP*np VP*md
+S*np CC S*np
+SBAR*whnp
+S*pp S*vp
+CC PP*in NP*np VP*vbz
+SBAR*in NP*np VP*vbz
+SBAR*in NP*dt VP*vbz
+S*vp NP*cd VP*md
+CC PP*in S*advp VP*vbz
+PP*rb NP*np VP*vbz
+PP*in NP*prp$ VP*md
+CC ADVP*rb PRN*, NP*dt VP*md
+SBAR*rb NP*np VP*md
+SBAR*in NP*ex VP*vbz
+VBZ NP*nnp VP*vbg
+CC VBZ NP*dt NP*np
+PP*in NP*dt ADVP*rb VP*vbz
+
+# id=part1_nopunctuation.99
+NP*np VP*vbz
+ADVP*rb PP*in VBZ NP*dt VP*vbn
+NP*np VP*vbz
+SBAR*in NP*nnp VP*vbz
+NP*nnp VP*vbz
+SBAR*in NP*vbg VP*md
+NP*dt VP*vbz
+NP*np VP*vbp
+SBAR*in NP*nn VP*vbz
+NP*np VP*vbz
+S*np CC S*np
+NP*nnp VP*vbz
+IN NP*prp VP*vbz
+S*np CC S*np
+NP*prp$ VP*md
+ADVP*rb NP*nnp VP*vbz
+S*np S*np
+S*pp S*np
+SBAR*in NP*prp VP*vbz
+S*np CC S*np
+PP*in NP*dt VP*md
+S*np CC S*np
+CC NP*nn VP*vbz
+NP*np VP*vbp
+SBAR*in NP*np VP*vbp
+S*pp S*np
+CC NP*np VP*md
+NP*prp VP*md
+S*vp NP*dt VP*md
+SBAR*in NP*prp VP*vbz
+S*np S*s
+CC NP*dt VP*md
+S*np S*np
+S*np S*np
+NP*ex VP*vp
+NP*nnp VP*vbz
+NP*np VP*vbp
+NP*nn VP*vbp
+NP*prp VP*md
+CC S*vp VP*vbz
+NP*prp VP*vbz
+NP*np VP*vbz
+NP*dt VP*vp
+
+# id=part1_nopunctuation.100
+NP*np NP*prp VP*vbz
+NP*nnp VP*vbz
+S*vp NP*prp VP*advp
+NP*nnp VP*vbd
+NP*jj PRN*, VP*vb
+SBAR*rb NP*`` VP*vbz
+PP*in NP*np VP*md
+S*np S*pp
+ADVP*rb SBAR*whnp VP*vbz
+NP*nnp VP*vbd
+NP*np VP*md
+NP*nns VP*vbp
+ADVP*rb SBAR*in VP*md
+PP*in NP*np VP*vbp
+ADVP*rb NP*dt VP*vbd
+NP*np PRN*, VP*vbz
+CC SBAR*in NP*np VP*vbz
+NP*np VP*vbz
+ADVP*rb NP*dt VP*vbz
+NP*np VP*vbz
+VP*vb
+NP*prp VP*vbp
+NP*ex VP*vbp ''
+NP*dt VP*vbz
+SBAR*in NP*prp$ VP*md
+NP*np VP*vbp
+NP*jj ADVP*rb VP*vbp
+NP*np VP*vbz
+CC NP*prp VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+ADVP*rb PP*in NP*np VP*vbz
+NP*prp VP*vbz
+VBZ NP*prp NP*np
+NP*nnp VP*vbd
+S*vp ADVP*rb VP*vbp
+
+# id=part1_nopunctuation.101
+S*np CC S*np
+S*vp VP*vbz
+S*advp S*sbar
+NP*prp VP*vbp
+NP*np SBAR*in VP*vbz
+NP*wdt VP*vbz
+ADVP*rb ADVP*rb VP*md NP*prp S*vp
+NP*np VP*vp
+NP*np VP*vb
+PP*in NP*dt VP*vbp
+VP*vb
+VBP NP*prp VP*rb
+VBP NP*prp ADJP*rb
+VBP NP*prp ADJP*rb
+S*np CC S*np
+S*pp S*vp
+VP*vb
+S*np S*np
+NP*prp VP*vbp
+NP*nn VP*advp
+NP*nnp VP*md
+S*np CC S*s
+PP*in NP*prp VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbp
+S*vp VP*md
+CC PP*in S*np CC S*np
+S*np CC S*s
+NP*np VP*vbz
+ADVP*np PP*in NP*np VP*vbn
+ADVP*np NP*np VP*vbd
+CC NP*prp$ VP*vbz
+ADVP*rb PP*in NP*prp VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vbp
+SBAR*whadvp NP*prp VP*md
+NP*prp VP*md
+ADVP*rb NP*prp VP*vp ''
+
+# id=part1_nopunctuation.102
+WHNP*whnp SQ*vbz
+NP*prp VP*md
+SBAR*rb NP*np ADVP*rb VP*vbd
+ADVP*rb NP*jj VP*vbd
+ADVP*rb NP*np VP*vbz
+NP*nnp VP*vbp
+WHNP*wp SQ*vbz
+VBP NP*prp VP*vbg
+VBZ NP*nnp VP*np
+NP*np VP*vbp
+NP*np VP*vbd
+ADVP*rb NP*prp VP*vbz
+NP*np VP*md ''
+S*np CC S*np
+NP*dt ADVP*rb VP*vbd
+SBAR*in
+NP*np VP*vbd
+SBAR*whadvp NP*dt VP*vbd
+NP*dt VP*vbz
+S*np S*pp
+PP*in S*np CC S*vp
+NP*prp VP*vbz
+ADVP*rb NP*prp VP*vbz
+S*np S*sbar
+NP*np ADVP*rb VP*vbz
+CC NP*pdt VP*vbz
+NP-TMP*nn NP*jj VP*vbp
+NP*prp VP*vbp
+PP*in NP*nnp VP*vbz
+NP*dt VP*vbz
+PP*vbg NP*dt VP*vbn
+NP*jj VP*md
+SBAR*in SQ*md
+SBAR*in NP*prp VP*vbp
+
+# id=part1_nopunctuation.103
+NP*np VP*vbz
+PP*pp NP*nn VP*vbd
+ADVP*rb PP*in NP*nnp VP*vbz
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbz
+PP*in PRN*: NP*nnp VP*md
+IN NP*prp VP*vbz
+NP*nn VP*vbd
+NP*np VP*vbd
+CC NP*dt VP*vbz
+PP*in NP*np ADVP*rb VP*vbz
+NP*np VP*vp
+NP*dt VP*vbz
+NP*dt VP*vbz
+ADVP*rb CC ADVP*rbr NP*dt VP*vbz
+S*np S*np
+CC NP*np VP*vbz
+NP*rb VP*vbz
+NP*dt VP*vbz
+S*vp NP*nn VP*vbd
+CC NP*nnps VP*vbd
+SBAR*in NP*prp ADVP*rb VP*vp
+CC S*vp NP*nnp ADVP*rb VP*vbz
+NP*np VP*md
+NP*np VP*md
+ADVP*rb NP*nn VP*md
+NP*dt ADVP*rb VP*vbz
+NP*np VP*vbd
+CC NP*np VP*vbz
+NP*dt VP*vbz
+PP*rb NP*np VP*md
+NP*prp VP*vbz
+NP*nnp VP*md
+S*vp NP*nnp VP*md
+ADVP*in NP*nnp VP*vbz
+SBAR*in WHNP*wp SQ*vp
+
+# id=part1_nopunctuation.104
+S*np CC S*np
+PP*in NP*prp VP*vbd
+ADVP*rb NP*prp VP*vbd
+ADVP*np NP*nnp VP*vp
+CC NP*prp VP*vbp
+PP*in NP*nnp VP*vbd
+NP*np VP*vbd
+PP*in NP*jj VP*vbp
+ADVP*rb NP*np VP*vbd
+PP*in NP*nn VP*vbd
+ADVP*rb NP*np VP*vbd
+NP*np VP*vbd
+IN NP*prp VP*vbd
+SBAR*in NP*np VP*vbd
+NP*np VP*vbn
+NP*np VP*md
+CC NP*nnp VP*vp
+PP*in NP*prp$ VP*vbd
+ADVP*rb S*np S*pp
+NP*np VP*vbd
+ADVP*rb SBAR*in NP*np VP*vbp
+NP*np VP*vbz
+PP*in PP*in NP*prp VP*vbd
+CC NP*cd VP*vbd
+ADVP*rbr NP*prp ADVP*rb VP*vbd
+CC ADVP*rb NP*prp VP*vp
+PP*in NP*prp VP*vbd
+S*pp CC S*np
+CC SBAR*in NP*prp VP*vbz
+NP*dt VP*vbd
+S*adjp VP*md
+S*np CC S*np
+S*np S*np
+NP*np VP*vbp
+NP*nnp VP*vbz ''
+NP*nnps VP*vbp
+WHADVP*wrb SQ*vbz
+NP*np VP*vbz
+NP*ex NP*prp VP*vbd
+
+# id=part1_nopunctuation.105
+NP*np PP*in VP*vbd
+ADVP*rb SBAR*in NP*prp VP*md
+NP*np VP*vp
+S*np S*np
+S*vp NP*np VP*vbz
+PP*in NP*dt VP*jj
+ADVP*rb S*np CC S*sbar CC S*np
+NP*nnp PP*in VP*vbd
+ADVP*rb NP*dt VP*vbd
+CC NP*dt VP*vbp
+WRB
+SBAR*in
+NP*nns VP*md
+VP*vb
+S*np NP*prp VP*vbz
+CC NP*nn VP*vbz
+NP*np VP*vbz
+NP*prp VP*vbp
+NP*prp VP*md
+NP*np VP*vbz
+S*np NP*prp VP*vp
+PP*in S*np ADVP*rb
+S*advp S*np
+CC NP*prp VP*vbz
+CC NP*prp VP*vbz
+NP*np VP*vp
+S*np CC S*pp
+NP*np VP*vbz
+S*np S*np S*pp
+S*pp S*np
+SBAR*in NP*dt VP*vbp
+PP*rb NP*prp VP*vbp
+NP*dt VP*vbz
+S*np S*sbar
+S*cc S*s
+PP*in NP*nnp VP*md
+S*np CC S*np
+NP*dt VP*vbz
+PP*in NP*np
+
+# id=part1_nopunctuation.106
+NP*np PP*in VP*vbz
+PP*in NP*nnp VP*vbz
+CC S*np CC S*sbar
+PP*in SBAR*whadvp NP*np VP*vbd
+NP*dt VP*vbd
+NP*nnp VP*md
+ADVP*rb NP*np VP*md
+S*vp CC S*np
+S*np S*np
+SBAR*in NP*np VP*vbd
+PP*rb NP*dt VP*vbd
+CC SBAR*in NP*nnp ADVP*rb VP*vbz
+PP*in NP*ex VP*vbp
+NP*cd VP*vbz
+CC NP*dt VP*vbz
+S*np CC S*np
+NP*dt VP*vbz
+NP*np VP*md
+NP*dt VP*vbz
+NP*dt VP*md
+S*pp CC S*np
+RB WHNP*wp SQ*md
+NP*cd VP*vbz
+NP*nnps VP*vbd
+NP-TMP*nn NP*nnps VP*vbp
+S*s S*np
+CC NP*np VP*vbz
+S*np CC S*np
+S*np CC S*np
+SBAR*in NP*prp VP*vbz
+NP*dt VP*vp
+PP*in NP*np VP*vbz
+CC ADVP*rb NP*dt VP*md
+ADVP*rb NP*nnp VP*md
+CC VP*vbp
+NP*prp VP*vbz
+
+# id=part1_nopunctuation.107
+NP*nnp NP*np NP*np
+SBAR*in NP*jj VP*md
+PP*in NP*np VP*vbd
+PP*in NP*prp VP*vbd
+S*np CC S*np
+NP*np VP*vbd
+NP*np VP*vbn
+SINV*advp ADVP*rb S*np
+S*np CC S*advp
+PP*in NP*prp VP*vbd
+NP*prp VP*vbd
+PP*in NP*prp VP*md
+RB NP*wp VP*vbd
+ADVP*rb NP*nnp VP*vbd
+ADVP*rb NP*prp VP*vbd
+S*np CC S*np
+S*np CC S*sbar
+PP*in S*np CC S*np
+NP*prp VP*vbd
+S*np RB S*np
+S*np CC S*np
+NP*prp ADVP*rb VP*vbd
+NP*np VP*vbd
+PP*in NP*np VP*md
+CC S*np CC S*np
+PP*in S*np CC S*np
+RB PP*in NP*prp VP*md
+PP*in NP*prp ADVP*rb VP*vbd
+NP*dt VP*vbd
+SBAR*in VP*md
+S*pp NP*prp VP*vbd
+S*sbar S*np
+NP*prp VP*vbd
+NP*prp$ VP*vbd
+PP*in NP*nnp VP*vbd
+
+# id=part1_nopunctuation.108
+NP*np VP*vbz
+NP*jj VP*vbd
+CC NP*dt VP*vbd
+PP*in NP*np VP*vbp
+PP*in NP*dt VP*vbz
+S*advp S*vp
+NP*jj VP*vbp
+PP*in NP*dt VP*vbp
+NP*rb VP*vbp
+CC S*np CC S*np
+NP*jj VP*vbd
+NP*jj ADVP*rb VP*vbp
+NP*prp VP*vbp
+RB NP*ex VP*vbp
+PP*in NP*nnp VP*vp
+PP*in NP*np VP*vbp
+S*np CC S*np
+NP*np VP*vbz
+PP*in NP*nns VP*vbp
+NP*nnp ADVP*rb VP*vbp
+NP*prp VP*vbz
+NP*prp VP*vbd
+NP*prp VP*vbz
+PP*in NP*np VP*vbz
+S*ucp VP*vbz
+SBAR*in NP*dt VP*vbz
+ADVP*rb NP*prp VP*vbd
+ADVP*np NP*prp VP*vbd
+NP-TMP*jj NP*prp ADVP*rb VP*vbd
+SBAR*in NP*prp VP*vbd
+S*np S*np
+NP*np VP*vbz
+S*np S*np S*np
+S*np CC S*np
+NP*np VP*md
+CC NP*np VP*md
+IN NP*prp$ VP*md
+
+# id=part1_nopunctuation.109
+S*np CC S*np
+PP*in NP*np VP*vbz
+PP*to NP*np VP*vbz
+ADVP*rb NP*prp$ VP*vbz
+PP*to NP*nnp VP*md
+NP*np VP*advp
+NP*np S*vp VP*vbd
+CC S*adjp NP*prp$ VP*md
+NP*np VP*vbz ''
+ADVP*rb NP*np VP*vbz
+PP*in NP*dt VP*vbz
+ADVP*rb SBAR*whnp S*sbar
+NP*np VP*vbz
+NP*ex VP*vbz
+NP*np VP*vbz
+PP*in NP*np VP*vbz
+NP*np VP*md
+NP*np VP*vbp
+CC PP*in NP*np VP*vbz
+S*np NP*jj VP*vbz
+RB NP*dt VP*vbz
+S*advp S*np
+NP*dt VP*vbz
+NP*np VP*vbp
+CC NP*np VP*md
+NP*nns ADVP*rb VP*vbp
+PP*in ADVP*rb VP*vbz
+
+# id=part1_nopunctuation.110
+NP*np NP*prp VP*vbd
+NP*np VP*vbp
+NP*np VP*md
+PP*in NP*dt VP*md
+NP*jjs VP*vbp
+NP*np VP*md
+ADVP*rb NP*np VP*vbp
+S*advp NP*dt VP*vbz
+PP*in NP*prp VP*md
+SBAR*in NP*prp ADVP*rb VP*vbd
+CC NP*nnp VP*vbz
+NP*np VP*vbp
+NP*np VP*vbz
+NP*dt VP*vbz
+S*pp S*s
+ADVP*rb PP*in NP*prp VP*md
+PP*in NP*dt VP*md
+CC NP*prp VP*vbz
+S*np CC S*np
+ADVP*rb PP*vbg
+ADVP*rb PP*in NP*dt VP*md
+NP*dt VP*vbp
+NP*dt VP*vbz
+NP*prp VP*md
+NP*dt NP*np VP*md
+PP*rb S*sbar S*np
+ADVP*rb NP*np VP*md
+S*pp CC S*np
+S*np CC S*np
+NP*np VP*md
+NP*nn VP*md
+NP*nns VP*md
+VP*vb
+
+# id=part1_nopunctuation.111
+S*np IN S*np
+ADVP*rb NP*dt VP*vbz
+WHADVP*advp SQ*vbz
+NP*nn S*s
+ADVP*rb NP*dt VP*vbz
+SBAR*in NP*dt VP*vbz
+NP*np VP*vbp
+NP*nnp ADVP*rb S*s
+NP*nnp VP*md
+NP*nnp ADVP*rb VP*vp
+NP*dt ADVP*rb VP*vbd
+S*np S*np
+ADVP*rb NP*np VP*md ''
+NP*pdt VP*vbz
+NP*np VP*vbd
+CC NP*np VP*vbz
+PP*in S*vp VP*vp
+PP*in NP*nns VP*md
+PP*in NP*prp VP*vbp
+PP*in NP*adjp VP*md
+ADVP*rb S*s S*np
+NP*np VP*md
+NP*nn VP*md
+NP*nns VP*md
+SBAR*in NP*nns VP*md
+NP*np VP*vbz
+PP*in NP*jj VP*vbz
+ADVP*rb NP*np VP*md
+ADVP*rb NP*dt VP*vbz
+NP*np VP*md
+NP*np VP*md
+
+# id=part1_nopunctuation.112
+NP*np PP*in NP*nnp VP*vbz
+NP*nnp VP*vbz
+S*np `` S*np ''
+NP*np VP*vbd
+S*np RB S*np
+NP*jjs VP*vbp
+NP*nnp VP*vbz
+SBAR*in NP*prp VP*md
+CC NP*dt VP*vbz
+NP*np VP*vbd
+PP*rb NP*pos VP*vbd
+S*pp S*s
+ADVP*rb SBAR*in NP*prp ADVP*rb VP*vbd
+ADVP*rb NP*prp VP*vp
+CC VBZ NP*nnp VP*vp
+SBAR*whnp NP*dt VP*vbz
+ADVP*rb NP*np VP*vbd
+NP*np VP*md
+NP*nnp VP*vbd
+CC NP*np VP*vbn
+NP*np VP*vbz
+NP*np VP*vbp
+FRAG*np S*np CC FRAG*rb
+S*np CC S*np
+NP*dt VP*vbz
+NP*prp VP*vbp
+S*np S*np CC S*np
+NP*np VP*vbz
+S*pp S*s
+NP*dt VP*vbp
+S*np S*np
+RB NP*np VP*vbp
+S*np CC S*np
+NP*nnp VP*md
+S*vp VP*vbz
+S*vp NP*nns VP*md
+S*pp CC S*pp
+NP*nn VP*md
+
+# id=part1_nopunctuation.113
+NP*np VP*vbd
+NP*nnp VP*vbd
+S*advp CC S*np
+S*vp NP*np VP*vp
+CC ADVP*rb X*in NP*rb VP*vbz
+ADVP*rb NP*np VP*vbp
+NP*nn VP*vbz
+PP*in NP*nnp VP*md
+S*s CC PRN*, S*np
+NP*jj VP*vbp
+NP*nnp VP*md
+NP*prp VP*md
+PP*in S*np CC S*np
+ADVP*rb SBAR*in ADVP*rb RB VP*vb
+NP*prp VP*vbz
+S*vp NP*nnp VP*md
+PP*in NP*prp VP*vbz
+NP*prp VP*md
+NP*nnp VP*vbz
+PP*in NP-TMP*jj NP*prp ADVP*rb VP*vbd
+ADVP*rb NP*nnp VP*vbz
+NP*np VP*vbd
+NP*ex VP*vbz
+NP*np VP*vbz
+NP*dt ADVP*rb VP*vbz
+ADVP*rb NP*np VP*vbz
+NP*np VP*vp
+SBAR*in NP*np VP*vbz
+S*s CC S*np
+CC NP*np VP*md
+NP*np VP*vbd
+NP*np VP*md
+
+# id=part1_nopunctuation.117
+S*np PRN*: NP*dt VP*vbz
+NP*nn ADVP*rb VP*vbz
+PP*in NP*prp VP*vbp
+NP*prp ADVP*rb VP*vbp
+NP*prp VP*vbp
+CC NP*dt VP*vbz
+ADVP*rb NP*np VP*md
+PP*in S*pp
+CC PP*in NP*np VP*vbp
+NP*np VP*vbp
+NP*np VP*vbp
+NP*np VP*vbz
+ADVP*rbs NP*np VP*vbp
+NP*np ADVP*np VP*vbd
+NP*np VP*vbz
+ADVP*rb NP*np VP*md
+NP*prp VP*md
+CC PP*in NP*ex VP*vbz
+ADVP*rb NP*dt VP*md
+PP*in ADVP*rb NP*dt VP*vbp
+ADVP*rb PP*in NP*ex VP*vbz
+
+# id=part1_nopunctuation.118
+NP*np PP*in VP*vbd
+S*np S*np
+NP*prp VP*vbd
+NP*prp VP*vbd
+NP*dt VP*vbz
+S*np FRAG*intj
+NP*dt VP*vbd
+PP*vbg NP*dt VP*vbn
+PP*in PP*in NP*np VP*vbp
+PP*in NP*np VP*vbd
+S*np CC S*np
+NP*np VP*vbz
+NP*prp VP*vbp
+NP*jj VP*vbd
+NP*jj VP*vbd
+RB PP*in NP*jj VP*vbd
+SBAR*whadvp NP*np VP*vbd
+NP*np VP*vbd
+S*np CC S*advp
+S*np CC S*np
+NP*ex VP*vbz
+NP*prp VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vbp
+S*vp NP*dt VP*vbp
+NP*nnp VP*vbz
+S*vp CC S*np
+NP*np VP*vbz
+NP*np VP*vbz
+RB PP*in NP*jj VP*vbp
+ADVP*rb NP*jj VP*md
+S*np CC S*np
+SBAR*in NP*dt VP*md
+NP*np VP*vbd
+PRN*sinv NP*np VP*md
+PP*in NP*np VP*vbd
+RB NP*jj VP*vbd
+NP*prp VP*vbp
+S*intj
+CC VBD NP*np VP*vb
+
+# id=part2_nopunctuation.0
+NP*np VP*vbz
+S*np PRN*, CC S*np
+NP*np VP*vbp
+SBAR*rb NP*rb NP-TMP*nn VP*md
+NP*np VP*md
+NP*dt VP*vbz
+SBAR*whadvp NP*ex VP*vbp
+PP*in PP*in NP*np VP*md
+NP*np VP*vp
+NP*prp ADVP*rb VP*vbp
+CC NP*ex VP*vbp
+NP*cd VP*vbz
+NP*np VP*vbz
+NP*np VP*vbn
+ADVP*rb NP*np VP*vbd
+ADVP*rb NP*np VP*vbd
+S*np-tmp CC S*np
+PP*in NP*np VP*vbp
+NP*np ADVP*dt VP*vbz
+NP*np VP*vbz
+PP*to SBAR*in NP*dt VP*md
+PP*in NP*dt VP*vbz
+NP*np VP*vbp
+CC PP*in NP*rb VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vbp
+SBAR*in NP*nn VP*vbz
+CC NP*np VP*vbz
+PP*in NP*prp VP*vbz
+
+# id=part2_nopunctuation.1
+NP*np VP*vbz NP*np
+CC NP*dt VP*md
+ADVP*rb NP*prp VP*vbp
+NP*np VP*vbz
+PP*in PP*in NP*dt VP*vbd
+S*np CC RB S*vp
+CC NP*np VP*vbd
+ADVP*rb NP*jj VP*md
+NP*np VP*vbz
+NP*ex VP*vbp
+NP*prp VP*vbz
+PP*in NP*dt VP*vbz
+PP*in NP*jj VP*vbp
+PP*in NP*np VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbz
+ADVP*rb NP*np VP*vbd
+PP*in S*np '' CC S*np
+S*np CC S*np
+ADVP*rb NP*np VP*md
+NP*prp VP*vbz
+NP*dt VP*vbz
+CC NP*prp ADVP*rb VP*vbz
+NP*vbg VP*vbz
+CC NP*prp ADVP*rb VP*vbz
+NP*dt VP*md
+ADVP*rb VP*vbg VP*vbz
+S*vp VP*vbz
+NP*np VP*md
+NP*dt VP*vbz
+S*np CC S*np
+
+# id=part2_nopunctuation.2
+NP*np VP*vbp
+NP*dt VP*vbp
+PP*in NP*nnp VP*vbd
+NP*np VP*vbn
+S*np S*np
+S*np CC S*np
+PP*in NP*nnp VP*vbp
+CC NP*prp VP*md
+PP*in NP*dt VP*vbz
+S*vp VP*vbz
+NP*np VP*vbp
+NP*nns VP*vbp
+NP*prp VP*advp
+NP*nnp VP*vbz
+NP*np VP*md
+NP*np VP*vbz
+PP*in NP*ex VP*vbz
+ADVP*rb SBAR*whadvp NP*dt VP*vbz
+NP*np VP*vbd
+ADVP*rb NP*dt VP*vbz
+NP*np VP*vbz
+NP*nnps VP*md
+SBAR*whnp VP*vbz
+S*np NP*prp VP*md
+NP*dt VP*md
+NP*dt VP*md
+PP*in NP*np VP*vbz
+
+# id=part2_nopunctuation.3
+NP*np VP*vbz
+ADVP*rb NP*dt VP*vbp
+CC NP*rb VP*vbz
+NP*np VP*vbz ''
+NP*np VP*vbd
+NP*dt VP*vbz
+S*np CC S*np
+PP*in NP*np VP*vbz
+NP*np VP*vbz
+ADVP*rb NP*ex VP*vbp
+WHPP*in SQ*md
+PP*in NP*np VP*vbz
+NP*prp VP*md
+S*np S*np
+NP*dt VP*vbz
+CC PP*advp NP*prp$ VP*vbz
+S*advp S*np
+RB NP*np VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbz
+CC SBAR*in VP*md
+
+# id=part2_nopunctuation.4
+S*np CC S*np
+NP*np VP*vbp
+NP*dt VP*vbz
+S*advp CC S*np
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbz
+NP*dt VP*vbz
+SBAR*in NP*np VP*vbp
+SBAR*in NP*dt ADVP*rb VP*vbp
+NP*prp VP*vbp
+NP*jj VP*md
+NP*jjs VP*vbz
+PP*in NP*nn VP*md
+NP*dt VP*md
+NP*ex VP*md
+S*np S*np
+SBAR*whadvp NP*prp VP*vp
+ADVP*rb PP*vbn NP*np VP*vbp
+NP*dt VP*vbz
+SBAR*in NP*jj VP*vbp
+NP*dt VP*md
+SBAR*whnp VP*md
+CC SBAR*in NP*np VP*vbz
+S*np CC S*,
+NP*nnp VP*vb
+VP*vbn VP*vbp NP*np
+PP*in NP*np VP*vbd
+NP*prp VP*vbd
+NP*dt VP*vbd ''
+S*advp S*np
+NP*prp ADVP*rb VP*vbd
+NP*prp ADVP*rb VP*vbp
+NP*np VP*vbz
+NP*dt VP*vbz
+WHADVP*wrb PRN*, SQ*vbd
+NP*jj VP*vbz
+ADVP*rb NP*dt VP*vbp
+PP*in NP*jj VP*vbp
+SBAR*in NP*prp VP*md
+
+# id=part2_nopunctuation.5
+NP*np SBAR*whadvp NP*np VP*vbd
+SBAR*whadvp NP*np VP*vbd
+NP*np VP*vbz
+NP*prp ADVP*rb VP*vbz
+SBAR*whadvp NP*jj ADVP*rb VP*vbd
+NP*dt VP*vbd
+PP*in NP*jj VP*vbd
+PP*in NP*jj VP*vbd
+PP*in X*in NP*nn VP*vbz
+NP*np ADVP*rb VP*vbp
+NP*pdt VP*vbz
+PP*in NP*np VP*vbz
+SBAR*whadvp NP*np VP*vbz
+NP*nnp VP*vbz
+ADVP*rb NP*prp VP*vbz
+NP*nnp VP*vbz
+NP*np VP*vbz
+NP*dt VP*to
+ADVP*rb PP*in NP*nnp VP*vbd
+ADVP*rb NP*nns VP*vbp
+NP*jj ADVP*rb VP*vbz
+S*np NP*jj VP*vbp
+NP*dt VP*vbd
+PP*in NP*prp VP*vbd
+NP*np VP*vbn
+NP*np NP*np
+PP*in NP*jj ADVP*rb VP*vbd
+PP*in NP*jj VP*vbd
+PP*in NP*np VP*vbd
+NP*jj ADVP*rb VP*vbz
+NP*np ADVP*dt VP*vbd
+RB S*np CC S*np
+NP*np VP*vbz
+CC NP*np VP*vbz
+ADVP*rb NP*nnp VP*vbz
+
+# id=part2_nopunctuation.6
+NP*nn NP*jj
+NP*np NP*np
+WHADVP*wrb SINV*vp
+PP*in NP*prp VP*vbp
+NP*prp$ VP*vbz
+WHNP*wp SQ*vbz
+NP*np VP*vbz
+PP*in NP*prp VP*md
+NP*nn PP*in
+WHNP*wp SQ*vbp
+NP*dt VP*vbz
+NP*np S*pp
+NP*prp VP*vbp
+S*advp NP*prp VP*md
+PP*in NP*nn VP*vbz
+S*pp S*np
+S*sbar CC S*np
+S*vp NP*nns VP*vp
+ADVP*rb NP*np VP*vbp
+ADVP*rb NP*prp VP*vbp
+PP*in PP*in NP*np VP*vbz
+PP*in NP*qp VP*vbz
+NP*nns VP*vbp
+NP*dt VP*vbz
+NP*prp VP*md
+NP*prp VP*vbz ''
+S*np CC S*advp
+PP*in NP*dt VP*vbz
+PP*in NP*np VP*md
+NP*dt S*vp
+NP*prp VP*vbz
+NP*prp VP*vbz
+CC NP*dt VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbp
+NP*np VP*md
+PP*in NP*nn VP*vbp
+NP*np VP*vp
+NP*dt VP*vbp
+NP*np NP*np
+PP*in NP*prp VP*vbp
+INTJ*uh NP*nns VP*vbp
+NP*prp VP*vbp
+SBAR*in NP*prp VP*vbp
+NP*prp VP*vbp
+NP*np VP*vbz
+NP*np VP*vbp
+NP*dt VP*vbp
+WHADVP*wrb SQ*vp
+NP*nns ADVP*rb VP*vbp
+SBAR*in NP*prp VP*vp
+S*np CC S*np
+NP*np VP*vbz
+NP*jj VP*vbp
+NP*prp VP*vbz
+
+# id=part2_nopunctuation.7
+NP-TMP*np NP*rb VP*vbz
+NP*dt VP*vbz
+NP*jj VP*vbp
+CC NP*np VP*vbp
+SBAR*whnp NP*dt VP*vbp
+PP*in NP*np VP*vbz
+NP*np VP*vbd
+SBAR*in NP*nnp VP*vbd
+SBAR*in NP*nnp VP*vbd
+ADVP*rb NP*np VP*vbp
+NP*np VP*vbd
+PP*vbg
+NP*ex VP*vbp
+ADVP*np NP*jj VP*vbn
+NP*dt VP*vbd
+NP*np VP*vbp
+S*np CC S*np
+NP*np PP*to
+S*np CC S*np
+NP*dt VP*vp
+NP*dt VP*vbz ''
+NP*np VP*vbz
+NP*dt ADJP*rb
+NP*dt VP*vp
+NP*prp ADVP*rb VP*vp
+NP*prp VP*md
+NP*ex VP*vbp
+NP*dt VP*vbz ''
+S*np CC S*np
+CC NP*nnp VP*vp
+S*np VP*vbd NP*np
+NP*np VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+PP*in NP*jj VP*vbp
+NP*np VP*vbp
+NP*prp VP*vbz
+SINV*md ADVP*rb S*np
+
+# id=part2_nopunctuation.8
+NP*np VP*vbz
+CC S*vp VP*vbz ''
+S*np CC S*np
+S*np S*np S*np CC S*np
+S*vp NP*np VP*vbd
+PP*in NP*ex VP*vbd
+PP*in NP*jj VP*vp
+NP*np VP*vbz
+S*vp NP*dt ADVP*rb VP*vbd
+NP*nnp VP*vbd
+S*np CC S*np
+NP*prp$ VP*vbd
+S*np CC S*np ''
+PP*in NP*np VP*vbd
+S*np CC S*np
+NP*np VP*vbd
+NP*jj VP*vbd ''
+S*vp '' NP*np VP*vbd
+NP*dt VP*vbd
+SBAR*in NP*np VP*md
+PP*in NP*np VP*vbd
+PP*in NP*np VP*vbd
+PP*in NP*np VP*vbd
+CC NP*np VP*vbz
+PP*in NP*dt ADVP*rb VP*vbz
+SBAR*rb NP*dt VP*vbd
+S*sbar CC S*np
+ADVP*rb NP*np VP*vbd
+PP*in NP*dt VP*vbd
+NP*nnp VP*vbz
+NP*np S*vp VP*md
+S*np CC S*np
+S*np CC S*np
+NP*prp VP*vbp
+
+# id=part2_nopunctuation.9
+NP*np VP*vbz
+NP*np VP*vbz
+S*np CC S*np
+SBAR*whadvp NP*np VP*md
+NP*nnp S*np
+S*sbar CC S*np
+VP*vb
+PP*in S*np FRAG*advp
+PP*in NP*nnp VP*vbd
+NP*jj S*vp S*advp VP*md
+ADVP*rb S*pp CC S*advp
+S*np CC S*pp
+NP*np VP*vbd
+PP*in NP*prp$ VP*vbd
+VP*vbg
+NP*np NP*np
+NP*np VP*vbd
+NP*nnp ADVP*rb VP*vp
+S*np CC S*np
+CC NP*dt VP*vbp
+NP*nnp ADVP*rb VP*vbd
+S*advp NP*nnp VP*vbd
+NP*jj VP*vbd
+NP*prp VP*vbd
+NP*dt NP*nn
+NP*jj VP*md
+S*np CC S*np
+NP*jjr VP*vbp
+NP*jj VP*vbz
+NP*dt VP*md
+NP*np ADVP*rb VP*vbp
+RB WHNP*wp SQ*vp
+NP*jj VP*vbp ''
+SBAR*whadvp NP*prp VP*vbd
+ADVP*rb NP*dt VP*vbz
+RB NP*np VP*vbz
+ADVP*rb PP*in VP*md
+PP*in NP*nn VP*md
+CC NP*nnp VP*vbz
+CC PP*in NP*np VP*vbp ''
+SBAR*in NP*nnp VP*md
+
+# id=part2_nopunctuation.10
+NP*nnp VP*vbz
+PP*np NP*np VP*vbd
+RB NP*dt VP*vbd
+PP*in NP*dt VP*vbz
+NP*nnp VP*vbz
+NP*np VP*md
+NP*np VP*vbz
+PP*rb NP*np VP*vbp
+NP*np VP*vbp
+S*sbar CC S*np
+PP*vbg ADVP*rb NP*np ADVP*rb VP*vbp
+NP*dt ADVP*rb VP*vbz
+NP*jj VP*vbz
+NP*dt VP*vbz
+S*vp CC S*np
+S*s CC S*np
+`` S*np '' VP*vbz NP*np
+S*vp VP*vbz ''
+S*np CC S*np
+ADVP*rb NP*nn VP*vbz
+S*s S*np
+S*cc NP*prp ADVP*rb VP*vbz
+VP*vbp
+NP*dt VP*vp
+NP*dt VP*vbz
+NP*nn VP*vbz
+NP*nnps VP*md
+ADVP*rb NP*np VP*md
+SBAR*in NP*nnp ADVP*rb VP*md
+
+# id=part2_nopunctuation.11
+NP*np VP*vbp
+NP*nnp VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*np VP*md
+NP*np VP*md
+NP*nnps VP*md
+NP*dt VP*md
+NP*np ADVP*rb VP*vbz
+CC NP*dt VP*vbp
+NP*np VP*vbz
+NP*np VP*vbp
+NP*np VP*vbp
+NP*nnp VP*vp
+PP*in NP*prp VP*vbd
+SBAR*whadvp NP*prp VP*vbd
+SBAR*whnp VP*md
+ADVP*rb NP*np VP*md
+NP*dt VP*vbz
+S*np CC S*vp
+NP*np VP*vbp
+SBAR*in NP*cd VP*md
+SBAR*in NP*prp VP*md
+PP*in NP*dt VP*md
+PP*pp NP*dt VP*md
+ADVP*rbs SBAR*in NP*dt VP*vp
+NP*np VP*vbz
+PP*in NP*np VP*md
+NP*dt VP*vbz
+NP*prp VP*vbp
+
+# id=part2_nopunctuation.12
+NP*np ADVP*rb PP*in NP*nns VP*vbp
+CC SBAR*in
+ADVP*rb NP*prp VP*md
+CC SBAR*sbar
+S*vp VP*vbp
+CC MD NP*prp VP*vb
+SBAR*in NP*ex VP*vbz
+PP*in NP*np VP*md
+ADVP*rb VP*vbg VP*vbz
+PP*in NP*dt VP*vbz
+NP*np VP*vbp
+NP*rb VP*vb
+NP*dt NP*prp VP*vbz
+NP*np ADVP*rb VP*md
+PP*in NP*np VP*vbp
+PP*in NP*jj VP*vbp
+S*vp NP*jj VP*vp
+NP*prp VP*vbd
+NP*np VP*vp
+CC NP-TMP*dt NP*dt VP*vbz
+NP*nns PP*to S*np
+ADVP*rb NP*prp VP*md
+PP*in NP*nns VP*vbp
+S*s CC S*np
+NP*np ADVP*rb VP*vbp
+SBAR*in NP*jj VP*md
+PP*in NP*np ADVP*rb VP*vbz
+PP*in NP*jj VP*vbz
+SBAR*in NP*prp VP*vbp
+ADVP*rb NP*dt VP*advp
+NP*np ADVP*rb VP*vbd ''
+NP*dt VP*vbz
+S*np CC S*np
+PP*in NP*prp VP*vbp
+PP*in NP*nn VP*vbz
+ADVP*rb SBAR*in NP*prp VP*md
+NP*nns VP*vbp
+CC WHNP*wp SQ*vp
+SBAR*in NP*np VP*md
+
+# id=part2_nopunctuation.13
+NP*np VP*vbp
+PP*in NP*np VP*vbp
+NP*prp VP*vbp
+NP-TMP*nn NP*dt VP*vbp
+NP*np VP*vbp
+ADVP*rb NP*np VP*vbd
+VP*vb
+NP*np VP*vbz
+S*pp S*np
+NP*np VP*vbp
+NP*jj VP*vp
+ADVP*rb NP*np VP*vbz
+NP*jj VP*vbp
+NP*prp VP*vbp
+S*s S*pp
+ADVP*rb PP*in NP*np VP*vbp
+PP*in
+NP*nnp VP*vbp
+NP*np VP*vbp
+NP*np VP*vbz
+S*vp NP*np VP*vbd
+ADVP*rb NP*dt VP*vbd
+NP*dt VP*vbz
+ADVP*rb NP*np VP*vbp
+NP*np VP*vbp
+ADVP*rb NP*prp$ ADVP*rb VP*vbd
+NP*np VP*vbp
+NP*nnp VP*vbd
+PP*in NP*dt ADVP*rb VP*vbz
+VBP NP*prp ADJP*rb
+NP*prp VP*vbz
+PP*in NP*dt VP*vbp
+PP*in NP*nns VP*md
+S*s S*np S*np S*np
+S*vp VP*vp
+
+# id=part2_nopunctuation.14
+S*vp NP*np VP*md
+NP*np VP*vbz
+NP*np VP*vp
+S*np CC S*np
+ADVP*rb PP*in NP*dt VP*vbz
+CC NP*np VP*vbd
+VP*vp
+ADVP*rb NP*jj VP*vbz
+ADVP*rb NP*np VP*vbz
+NP*np ADVP*rb VP*vbz
+RB NP*dt VP*md
+NP*dt VP*vbz
+NP*dt VP*vbd
+NP*nnp VP*vbd
+NP*nnp VP*vbd
+ADVP*rb NP*np VP*vbd ''
+ADVP*rb NP*dt VP*vbn
+NP*np VP*vbd
+NP*dt VP*vbz
+PP*in NP*np VP*vbz
+NP*pdt ADVP*rb VP*vbz
+CC NP*dt VP*vbz
+S*np S*np
+ADVP*rb NP*dt VP*md
+NP*np VP*md
+NP*np VP*md
+ADVP*rb NP*jj VP*md
+NP*np VP*vbz
+NP*dt VP*vbz
+S*np CC S*np
+ADVP*rb NP*rbs PP*in VP*vbp
+NP*jj VP*vbz
+PP*in NP*dt VP*vbz
+ADVP*dt NP*dt VP*vbz
+S*rb CC S*vp
+VP*vb
+
+# id=part2_nopunctuation.15
+NP*np PP*in VP*vbz
+ADVP*rb NP*dt VP*vbz
+S*np NP*nn
+SBAR*in S*s CC S*np
+NP*dt VP*vbd
+NP*np VP*vbd
+NP-TMP*nn NP*nnp VP*md
+NP*np VP*vbz
+S*np CC S*np
+NP*np VP*vbp
+PP*rb '' NP*prp VP*md
+ADVP*rb NP*prp VP*vbz
+NP*ex VP*vbz
+NP*ex VP*vbz
+PP*in NP*ex VP*vbz
+NP*prp VP*md
+PP*in NP*prp VP*vbp
+NP*dt VP*vbz
+PP*in S*advp CC S*np
+PP*in PRN*, `` NP*prp '' VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vbp
+SBAR*in WHADVP*wrb RB VP*vb
+S*np CC S*np
+PP*in NP*prp VP*vbp
+NP*prp ADVP*dt VP*vbp
+NP*nn VP*vbz
+NP*np VP*vbz
+PP*in PP*in NP*nnp VP*vbz
+PP*in NP*dt VP*vbz
+NP*prp VP*vbz
+NP*prp VP*vbz
+PP*in NP*dt VP*vbd
+PP*in PP*in NP*dt VP*vbz
+PP*in NP*np VP*vbz
+S*np CC S*np
+ADVP*rb NP*ex VP*vbz
+ADVP*rb ADVP*rb VP*vbz NP*np
+S*np CC S*s
+CC NP*dt VP*md
+
+# id=part2_nopunctuation.16
+NP*np VP*vbp
+NP*jj VP*vbp
+NP*nnps VP*vbp
+NP*nnp PRN*, VP*md
+NP*prp VP*vbp
+ADVP*jj NP*nn VP*vbz
+SBAR*in NP*nn VP*vbz
+VP*to
+NP*prp VP*md
+PP*in S*sbar CC S*np
+NP*np VP*md
+PP*in NP*nnp VP*vbd
+PP*in NP*nnp VP*vbd
+NP*prp VP*vbd
+NP*prp$ VP*vbd
+PP*in NP*jj VP*vp
+NP*np VP*vbz
+S*adjp NP*np VP*vbz
+NP*nns ADVP*rb VP*vbp
+SBAR*in VP*vb
+VBP NP*prp VP*vb
+S*vp NP*jj VP*vbd
+NP*jj VP*vbp
+PP*in NP*jj VP*vbd
+NP*nn VP*vbz
+PP*in NP*ex VP*vbz
+S*np CC S*np
+NP*np VP*vbp
+ADJP*rbr NP*np VP*vbz
+ADVP*rb NP*np VP*md
+NP*dt VP*vbp
+CC PP*in NP*dt VP*vbz
+NP*dt ADVP*rb VP*vbz
+NP*np VP*vbz
+NP*nnp PP*in VP*vbp
+NP*dt VP*md
+S*np CC S*np
+S*np CC S*np
+PP*in NP*np VP*vbp
+SBAR*in NP*adjp VP*md
+NP*adjp VP*md
+S*np CC S*np
+
+# id=part2_nopunctuation.17
+SBAR*whadvp ADVP*rb VP*vbd NP*dt S*vp
+NP*np VP*vbz
+NP*jjs VP*vp
+SQ*vbz CC SQ*md
+S*np CC S*np
+PP*in PRN*, `` SBAR*in S*np CC S*sbar ''
+S*np CC S*advp
+NP*np VP*vbd
+NP*nnp ADVP*rb VP*vbd
+S*np CC S*np
+CC NP*np VP*vbz
+NP*dt VP*vp
+NP*dt VP*vbp
+ADVP*jj NP*np VP*vbz
+CC NP*np VP*md
+NP*np VP*vbd
+NP*nnp VP*vbz
+PP*rb NP*np VP*vbz
+ADVP*rb NP*prp VP*vbd
+NP*np NP*dt VP*vbz
+PP*in NP*jj VP*vbz
+ADVP*rb NP*prp$ VP*md
+NP*nnp VP*md
+NP*np VP*vbz
+NP*dt VP*vbz ''
+S*np CC S*np
+NP*jj VP*vbz
+NP*jj VP*vbz
+S*np CC S*np
+S*s CC S*advp
+CC PP*in NP*nnp VP*vp
+ADVP*rb SBAR*in NP*prp VP*vbz
+S*s CC S*np
+PP*in NP*nnp VP*md
+NP*adjp VP*vbp
+S*vp CC S*vp
+NP*np VP*vbz
+NP*nnp VP*vbz
+NP*dt VP*vbz
+
+# id=part2_nopunctuation.18
+NP*np
+PP*in NP*prp VP*vbp
+NP*prp VP*vbp ''
+CC SBAR*in NP*prp VP*vbp
+PP*in NP*np VP*vbd
+RB NP*dt VP*vbz
+SBAR*in NP*prp$ VP*md
+S*vp NP*prp$ VP*md
+PP*in NP*dt VP*md
+NP*prp$ VP*vbz
+NP*prp VP*md
+WHADVP*wrb SQ*md
+NP*ex VP*md
+NP*vbg VP*md
+CC NP*prp VP*md
+NP*dt VP*vbz
+S*vp NP*prp VP*vbp
+CC NP*prp VP*vbp
+NP-TMP*nn NP*np VP*vbz
+SBAR*in NP*prp VP*vbz
+SBAR*sbar NP*nns VP*vbp
+NP*dt VP*vbz
+NP*np VP*advp
+PP*in S*cc
+S*s CC S*np
+NP*np VP*vbz
+NP*np VP*vbz
+ADVP*rb NP*jj VP*vbz
+NP*jj VP*vbp ''
+NP*dt VP*vbz
+S*vp NP*prp VP*md
+SBAR*in NP*rb VP*md
+S*vp VP*md
+NP*prp VP*md
+NP*prp VP*md
+NP*dt VP*vbz
+NP*vbg VP*vbz
+PP*in NP*prp VP*vbp
+ADVP*rb NP*np VP*vbz
+
+# id=part2_nopunctuation.19
+NP*np SBAR*s
+PP*in NP*ex VP*vbz
+SBAR*in NP*dt VP*vbd ''
+NP*dt VP*vbd
+PP*in NP*np VP*vbd
+PP*in NP*np VP*vbd
+CC WHNP*wp SQ*vbz
+PP*in NP*nnp VP*vbz
+ADVP*np PP*in NP*np VP*vbd
+ADVP*rb PP*in NP*nnp VP*vbz
+CC NP*dt VP*vbz
+PP*in NP*dt VP*vbp
+NP*np VP*vbz
+RB IN S*np
+NP*prp VP*vbz
+NP*np VP*vbz
+CC NP*np VP*vbz
+ADVP*rb NP*np VP*vbp
+PP*in NP*ex VP*vbp
+SBAR*in NP*nnp VP*vbz
+NP*prp VP*vbz
+WHNP*wdt SQ*md
+NP*prp$ VP*vbz
+SBAR*in NP*prp VP*md
+PP*in NP*nnp VP*vbz
+NP*np VP*vbp
+S*np S*np
+NP*dt VP*vbz
+NP*np PP*in VP*vbz
+ADVP*rb PP*in NP*np VP*vbp
+S*np S*np
+PP*in NP*np VP*md
+ADVP*rb VP*vbz
+ADVP*rb SBAR*in S*advp VP*vbp
+ADVP*rb NP*np VP*md
+NP*jj VP*vbp
+NP*jj VP*vbp
+NP*nnp ADVP*rb VP*vbz
+S*np S*np
+NP*np ADVP*cc ADVP*rb PP*in VP*vbz
+SBAR*in NP*prp VP*md
+S*advp S*np ''
+
+# id=part2_nopunctuation.20
+NP*np NP*np
+NP*prp VP*vbz
+NP*np VP*vbz
+NP*prp VP*vbz ''
+CC WHNP*wp SQ*vbz
+RB NP-TMP*rb
+NP*np ADVP*rb VP*vbd
+NP*nnp VP*vbd
+NP*nn VP*vbz
+NP*np VP*vbp
+NP*prp VP*vbp
+PP*in NP*np VP*md
+WHADVP*wrb SQ*vbd
+PP*in NP*np VP*vbz
+SBAR*whnp VP*vbz
+NP*prp VP*md
+NP*prp VP*md
+NP*np VP*md
+PP*in NP*np VP*vbz
+ADVP*rb NP*nn VP*vbz
+NP*nn VP*md
+INTJ*uh NP*prp VP*vbz
+NP*jj VP*vbz
+CC S*vp NP*nn VP*vbz
+NP*jjs VP*vbp
+S*np CC S*np
+PP*in NP*dt VP*md
+NP*jjs VP*vbp
+NP*nnp PP*in VP*vbz
+ADVP*rb NP*np VP*vbp
+INTJ*dt S*s
+NP*ex VP*vbz
+MD NP*nnp VP*vb
+RB ADVP*rb NP*nnp VP*vbd
+ADVP*rb NP*dt VP*vbz
+PP*in SBAR*whadvp '' NP*prp VP*md
+NP*np VP*vbz
+S*vp NP*nns VP*vbp
+CC VP*vbp
+NP*np VP*vbz
+S*np CC S*pp
+S*np CC S*np
+ADVP*rb NP*nnp VP*vbz
+NP*jj VP*vbp
+WHADVP*wrb SQ*vp
+ADVP*rb NP*dt VP*vbz
+ADVP*rb NP*np ADVP*rb VP*vbz
+CC NP*dt SBAR*rb NP*np VP*vbp
+ADVP*rb NP*nnp VP*vbz
+NP*np VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbz
+CC ADVP*rb NP*nnps VP*md
+S*cc CC SINV*md
+ADVP*rb NP*dt VP*vbz
+ADVP*rb NP*nns VP*vbp
+NP*prp VP*vbp
+PP*in NP*prp VP*vbp
+NP*jj VP*vbp
+S*vp IN S*np
+NP*np VP*vbz ''
+NP*nn VP*vbz
+S*advp S*np
+VP*vb
+-LRB- PP*vbg NP*dt VP*vbp -RRB-
+VP*vb
+PP*in NP*prp VP*vbz
+S*advp CC S*np
+SBAR*in
+SBAR*whnp VP*vbz
+NP*jj ADVP*rb VP*vbd
+ADVP*rb NP*np VP*vbd
+ADVP*rb S*np CC S*np
+CC SBAR*in ADVP*rb NP*nn VP*md
+NP*np VP*vbz
+S*sbar CC S*np
+
+# id=part2_nopunctuation.21
+S*np NP*jj VP*vbz
+NP*np VP*vbz
+IN NP*prp VP*vbz
+NP*np VP*vbz
+PP*in PP*in NP*dt VP*vbd
+PP*in NP*dt VP*vbp
+PP*in NP*nn VP*vbz ''
+NP*np VP*vbz
+NP*np VP*vbp
+ADVP*rb NP*dt VP*md ''
+S*np S*np
+PP*in NP*dt VP*vbd
+PP*in SBAR*whadvp NP*ex VP*vbp
+NP*np VP*vbz
+NP*prp VP*vbz
+CC NP*prp VP*vbz
+PP*in NP*nnp VP*vp
+NP*dt VP*vbz
+ADVP*rb NP*nnp VP*vbd
+PP*in ADJP*adjp
+NP*nnp ADVP*rb VP*vbz
+ADVP*rb NP*dt VP*vbz
+PP*in PRN*: NP*np VP*vbd
+PP*in NP*nnp VP*md
+S*np CC S*np
+ADVP*rb NP*np VP*md
+PP*in NP*nnp VP*md
+ADVP*rb PP*vbn
+NP*np VP*vbz
+NP*dt VP*md
+NP*nnp VP*md
+CC NP*prp VP*vbz
+S*vp VP*vbz
+ADVP*rb NP*nnp VP*md
+NP*np VP*vbz
+NP*dt ADVP*rb VP*md
+NP*nn VP*vbz
+S*np CC S*np
+ADVP*rb NP*dt VP*vbz
+NP*dt VP*md
+
+# id=part2_nopunctuation.22
+S*vp VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vp
+NP*nnp VP*vbz
+NP*np VP*vbz
+PP*in NP*nn VP*vbz
+PP*in PP*vbg NP*jj VP*vbz
+NP*jj VP*vbp
+CC PP*in NP*nn VP*vbz
+PP*in NP*jj VP*vbz
+NP*nns VP*vbp
+NP*prp$ VP*vbz
+NP*dt VP*md
+NP*prp VP*vbp
+NP*prp VP*vbp
+CC NP*prp VP*md
+NP*dt VP*vbp
+NP*np VP*vbp
+CC NP*np VP*vbp
+NP*dt VP*vbp
+NP*dt ADVP*in VP*vbz
+NP*dt VP*vbz
+CC NP*dt VP*vbz
+NP*nnp VP*vbz
+NP*prp VP*vbz
+NP*prp VP*vbz
+NP*prp VP*vbz
+PP*rb NP*prp VP*vbz
+NP*dt ADVP*rb VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+PP*in NP*np VP*vbp
+CC ADVP*rb NP*nn VP*vbp
+NP*dt VP*vbd
+ADVP*rb NP*dt VP*vbz
+ADVP*rb NP*dt VP*md
+NP*np ADVP*rb VP*md
+S*pp CC S*np SBAR*in
+NP*dt VP*md
+
+# id=part2_nopunctuation.23
+NP*np VP*vbp
+NP*cd VP*vbz
+S*np CC S*np
+NP*np VP*vbz
+NP*np VP*vbp
+NP*np VP*vbp
+ADVP*rb NP*np VP*vbp
+PP*in SBAR*in NP*np VP*md
+NP*nns VP*md
+NP*np VP*vbz
+NP*dt VP*vbz
+S*np VP*vbp NP*np
+NP*nnp VP*vbp
+NP*nnp VP*vbp
+ADVP*rb NP*jj VP*vbp
+PP*in NP*dt VP*vbz
+NP*adjp VP*vbp
+PP*in NP*dt VP*vp
+PP*in NP*dt VP*vbp
+NP*dt NP*np
+PP*in NP*np VP*vbz
+PP*in NP*nn VP*vbz
+NP*np VP*md
+S*vp VP*md
+NP*jj VP*vbz
+NP*np VP*vbz
+ADVP*rb NP*np VP*vbp
+NP*np VP*vbz
+NP*nnp VP*md
+NP*np S*vp VP*vbz
+NP*dt VP*md
+NP*np VP*vbp
+CC NP*dt VP*md
+NP*dt VP*md
+S*np NP*prp VP*md
+NP*prp VP*md
+NP*prp VP*md
+NP*jj VP*md
+NP*np PP*in VP*md
+NP*ex VP*vbz
+PP*in NP*dt VP*vbd
+RB PP*in VP*vp
+NP*dt VP*vbd
+CC NP*dt VP*vbz
+S*np CC S*np
+
+# id=part2_nopunctuation.24
+VBP NP*nnp ADJP*rb
+NP*nnp VP*vbz
+S*np S*np
+PP*in NP*np VP*vbz
+CC SQ*vbp
+S*np CC S*np
+PP*in NP*jj VP*vbd
+S*vp NP*dt VP*vbd
+SBAR*rb NP*nn VP*vbd
+NP*nn VP*vbz
+PP*in NP*cd VP*vbd
+CC NP*ex VP*vbz
+NP*np ADVP*rb VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+PP*in NP*np VP*vbz
+PP*in NP*dt ADVP*rb VP*vbd
+ADVP*rb NP*nns VP*vbp
+NP*dt VP*vbz ''
+S*vp NP*np VP*md
+SBAR*in NP*np VP*vbz
+NP*np VP*md
+S*np CC S*np
+SBAR*in NP*np VP*md
+NP*np VP*vbz
+CC NP*ex VP*vbp
+PP*in S*np CC S*np
+PP*in NP*dt VP*vbd
+S*np CC S*np
+NP*dt VP*vbz
+NP*np VP*vbz NP*np
+S*np CC S*np
+NP*prp VP*md
+VP*vb
+
+# id=part2_nopunctuation.25
+PP*np NP*dt VP*vbp
+S*vp VP*vbz
+NP*nnp VP*vp
+PP*in NP*nns VP*vbp
+ADVP*rb PP*rb NP*prp$ VP*vbz
+S*pp CC S*np
+NP*np VP*vbp
+NP*jj VP*vbz
+NP*jj VP*vbz
+NP*np VP*vbz
+NP*np VP*vbp
+ADVP*rb NP*np PRN*: VP*vbz
+S*advp NP*dt VP*vbz
+NP*nnp ADVP*rb VP*vbz
+NP*np VP*vbz
+NP*np VP*vbp
+PP*in PP*in NP*np VP*vbd
+RB NP*dt VP*vbz
+NP*np VP*vb
+PP*in NP*dt VP*vbz
+S*np RB S*np
+S*vp VP*md
+ADVP*rb NP*np VP*vbz
+S*vp NP*nn VP*md
+ADVP*rb `` NP*nn '' VP*md
+NP*np VP*md
+PP*in NP*np VP*md
+ADVP*rb PP*in NP*np VP*md
+NP*jj VP*np
+ADVP*rb NP*np VP*md
+CC SBAR*in NP*prp VP*md
+ADVP*rb SBAR*in NP*prp VP*md
+S*np NP*dt VP*md
+CC SBAR*in NP*jj VP*md
+NP*np VP*vbd
+NP*nnp VP*vbz
+ADVP*rb SBAR*whadvp NP*prp VP*md
+
+# id=part2_nopunctuation.26
+NP*np VP*vbp
+S*sbar CC S*np
+PP*in NP*nn VP*vbz
+PP*in NP*jj VP*vbz
+CC NP*ex VP*vbp
+NP*np VP*vbp
+NP*np VP*vbp
+PP*in NP*np VP*vbp
+NP*prp VP*vp
+WHNP*wdt SQ*md
+NP*np VP*md
+PP*in S*s CC S*np
+S*np CC S*np
+WRB
+S*np S*np
+NP*nns VP*vbd
+S*pp S*np
+SBAR*rb NP*prp ADVP*rb VP*vbz
+ADVP*rb NP*nnp VP*vbd
+ADVP*rb NP*np VP*vbp
+SBAR*whnp VP*vbz
+NP*dt VP*vbz
+PP*in S*np S*sbar CC S*np
+NP*np VP*vbz
+PP*in NP*np VP*vbd
+NP*prp VP*vp ''
+PP*in NP*prp VP*vbd
+NP*np VP*vbd
+ADVP*rb NP*np VP*vbz
+CC SBAR*in NP*np VP*vbd
+NP*prp VP*vbd
+NP*np VP*vbp
+NP*nnp VP*vbd ''
+CC NP*np ''
+NP*prp VP*vbd ''
+NP*prp$ VP*vbz
+NP*rb VP*vbz
+NP*np ADVP*rb VP*vb
+NP*nns VP*vp
+CC PP*in NP*np VP*vbz
+NP*nn VP*md
+
+# id=part2_nopunctuation.27
+NP*np VP*vbz
+PP*in NP*dt VP*vbz
+S*cc NP*dt VP*vbd
+S*np CC S*np
+NP*prp VP*vbz
+S*pp CC S*np
+PP*in NP*dt VP*vp
+WHADVP*wrb SQ*vbd
+WHADVP*wrb SQ*vbd
+NP*np RB NP*np
+PP*in NP*jj ADVP*rb VP*vbp
+NP*np VP*md
+NP*nns VP*vbp
+PP*in NP*np VP*vbd
+S*np CC S*np
+NP*prp VP*vbz
+CC NP*rb VP*vbz
+MD NP*prp$ ADVP*rb VP*vb
+NP*nnp NP*np NP*np NP*np NP*dt
+PP*vbg S*np RB S*np
+PP*in NP*np VP*vbd
+VBZ NP*prp NP*np
+S*np CC S*np
+S*advp S*np
+CC NP*nnp VP*vbz
+NP*prp VP*vbz
+ADVP*rb NP*np VP*vbz
+NP*ex VP*vbz
+NP*np VP*vbp
+NP*dt PP*in VP*vbd
+PP*in NP*nnp VP*vbd
+NP*nnp VP*vbz
+NP*prp VP*vbd
+CC NP*np VP*vbp
+NP*cd VP*vbz
+NP*nnp VP*vp
+ADVP*rb NP*dt VP*vbz
+CC PP*in NP*prp VP*vbz
+NP*np VP*vbz
+NP*prp ADVP*rb VP*vbz
+NP*dt VP*vp
+PP*in NP*nnp VP*vbz
+CC NP*prp ADVP*rb VP*vbp
+NP*dt VP*vbz
+SBAR*whadvp NP*prp VP*md
+S*vp NP*prp VP*md
+NP*prp VP*vp
+CC NP*prp VP*vbz
+
+# id=part2_nopunctuation.28
+NP*np VP*vbz
+RB S*pp CC S*np
+S*np NP*jj VP*vp
+PP*in NP*jj VP*vbd
+NP*np VP*vbd
+NP*np NP*np
+PP*in NP*prp VP*vbz
+ADJP*rbr VP*vbz SBAR*in
+NP*np VP*vbz
+NP*np ADVP*rb VP*vbp
+NP*prp VP*vbp
+NP*np VP*vp
+S*vp NP*prp$ VP*md
+S*np S*np
+NP*nns VP*vbp
+CC S*np CC ADVP*rb
+PP*in X*dt NP*jj VP*vbp
+S*vp NP*nns VP*vbp
+S*np PRN*: CC S*np
+NP*nns VP*md
+SBAR*whadvp NP*prp VP*md
+ADVP*in NP*prp VP*vp
+CC PP*in NP*np VP*vbp
+NP*prp VP*vbp
+S*np CC S*np
+NP*np VP*vbp
+PP*in SBAR*whadvp NP*prp VP*vbp
+S*np IN S*np
+PP*in NP*np VP*vbp
+NP*prp VP*vbz
+SBAR*in NP*dt VP*md
+NP*prp VP*md
+PP*in NP*prp VP*vbp
+
+# id=part2_nopunctuation.29
+NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbz
+ADVP*rb NP*np VP*vbz
+ADVP*rb NP-TMP*jj NP*prp VP*vbd
+S*np CC S*np ''
+PP*in NP*nnp VP*vbz
+S*np CC S*np
+NP*np VP*vbz ''
+CC NP*dt VP*vbp
+S*np CC S*np
+CC VBP NP*np
+NP*np VP*vbz
+SBAR*in ADVP*rb NP*prp VP*vbz
+NP*dt VP*vbz
+NP*advp
+S*np CC S*np
+S*vp NP*dt VP*md
+NP*np VP*vbz
+PP*vbg NP*nnp VP*md
+CC WHADVP*wrb SQ*vbp
+PP*in PP*in NP*nnp VP*vbd
+IN NP*dt VP*vbz
+SBAR*in NP*np VP*vbz
+NP*np VP*vbp
+CC VP*vbz
+NP*prp VP*md
+-LRB- S*pp ADVP*dt S*frag -RRB-
+NP*np VP*vbz
+NP*prp VP*vbz
+NP*np VP*vb
+NP*np VP*vp
+ADVP*rb NP*np VP*md
+PP*in NP*np VP*vp
+SBAR*in NP*prp VP*md
+
+# id=part2_nopunctuation.30
+NP*np VP*vbz
+SBAR*in NP*prp VP*md
+CC NP*np VP*vbz
+RB NP*wp VP*vbz
+NP*np VP*vbz
+NP*prp$ VP*vbd
+NP*np VP*vbz
+S*np S*np
+SBAR*whadvp NP*prp VP*vbd
+NP*prp VP*vbd ''
+PP*in NP*nn VP*vbp
+PP*in NP*nn VP*md
+NP*np VP*md
+CC NP*np VP*vbp
+PP*in NP*ex VP*vbz
+NP*nnp ADVP*rb VP*vbd
+NP*np VP*vbz
+CC SBAR*rb NP*prp VP*vbz
+S*np CC SQ*sbar
+NP*np ADVP*rb VP*vbz
+PP*in NP*dt VP*vbd
+S*np CC S*np
+CC PP*in NP*rb S*adjp VP*md
+S*np S*advp
+ADVP*rb NP*np VP*vbz
+NP*prp VP*md
+S*np CC S*sbar
+PP*in NP*dt VP*md
+SBAR*whadvp NP*dt VP*md
+NP*dt PP*in PP*in PP*in PP*in
+SBAR*in NP*rb VP*vbz
+CC WHADVP*wrb SQ*vbp
+MD NP*prp VP*advp
+S*sbar S*np
+NP*np VP*vbd
+NP*prp ADVP*rb VP*vbd
+NP*prp VP*vbz
+NP*nnp VP*md
+ADVP*rb NP*prp VP*md
+PP*in NP*prp VP*vbp
+NP*dt VP*vbz
+
+# id=part2_nopunctuation.31
+VBZ NP*nnp NP*nnp
+NP*nn
+WHNP*wrb PRN*, S*vp
+S*pp RB S*np
+NP*prp VP*vbd
+ADVP*rb NP*nnp VP*vbz
+RB NP*np VP*vbz
+NP*np VP*vbz
+PP*in NP*np VP*vbz
+NP*nnp VP*vbd
+SBAR*in NP*vbn VP*vbd
+NP*dt VP*vp
+SBAR*in NP*prp VP*md
+S*np S*vp
+S*np S*np
+S*np CC S*np
+NP*dt VP*vbd
+S*np S*np
+S*np S*np
+S*vp NP*dt VP*vbp
+ADVP*rb NP*jj VP*vbz
+ADVP*in NP*nnp ADVP*rb VP*vbz
+NP*nnp VP*md
+ADVP*rb S*sbar CC S*np
+NP*np NP*nn VP*vbz
+S*np S*pp
+NP*np VP*vbz
+PP*in NP*np NP-TMP*nn VP*vbz
+S*pp CC S*np
+NP*dt VP*vbz
+ADVP*rb NP*nnp VP*vbd
+NP*dt VP*vbz
+NP*prp VP*vbp
+NP*dt VP*vbd
+S*np S*s
+NP*dt VP*vbd
+SBAR*in NP*prp VP*md
+WHADVP*wrb SQ*vbz
+WHADVP*wrb SQ*md
+NP*dt VP*vbz
+NP*dt VP*vbz
+CC S*vp NP*prp VP*vbp
+NP*nnp VP*vbz
+S*vp VP*md
+NP*dt VP*vp
+NP*nnp VP*vbz
+NP*np VP*vbp
+PP*in NP*dt VP*md
+ADVP*rb NP*nnp VP*vbz
+NP*np ADVP*rb VP*vbp
+
+# id=part2_nopunctuation.32
+MD NP*nnp VP*vb
+SBAR*in NP*prp VP*md
+NP*np VP*vbd
+PP*vbn NP*prp VP*vbz
+RB S*np CC S*np
+PP*vbn NP*cd VP*md
+PP*in S*np CC S*pp
+ADVP*rb NP*np VP*vbz
+PP*in NP*dt VP*vbz
+RB NP*ex VP*vbz
+PP*in NP*prp$ VP*vbp
+SBAR*in NP*nnp VP*vbd
+NP*np VP*vbp
+NP*cd VP*vbd
+NP*np VP*vbd
+NP*np VP*vbz
+CC PP*in NP*nn VP*vbp
+RB WHNP*wp SQ*vp
+ADVP*in NP*np VP*vbz
+PP*in NP*prp VP*vbz
+NP*prp$ VP*vbz
+NP*dt ADVP*rb VP*vbz
+NP*np VP*vbd
+RB NP*nnp VP*vbz
+S*vp NP*np VP*vbz
+PP*in ADVP*rb NP*np VP*vbz
+ADVP*rb NP*np VP*vbz
+PP*in NP*nnp VP*vbz
+PP*in NP*nnp VP*vbn
+CC PP*in NP*dt VP*vbd
+NP*dt VP*vbz
+S*np CC PRN*, S*np
+SBAR*in NP*prp VP*md
+CC NP*dt VP*vbz
+ADVP*rb NP*np VP*vbz
+NP*nnp VP*vbp
+PP*in S*vp VP*md
+NP*np VP*vbz
+NP*np VP*vbp
+IN NP*prp VP*vbz
+S*np NP*prp VP*vbp
+
+# id=part2_nopunctuation.33
+NP*dt SBAR*in
+ADVP*rb NP*np VP*vbp
+PP*in NP*np VP*vbz
+NP*np VP*vbz
+ADVP*rb NP*dt VP*vbp
+CC NP*np VP*vbp
+SBAR*whadvp NP*np VP*vbd
+ADVP*rb NP*np VP*vbd
+CC NP*np VP*vbd
+NP*prp VP*vbd
+NP*nnp VP*md
+S*np CC S*advp
+NP*np VP*vbd
+SBAR*in ADVP*rb VBD NP*np
+NP*jj ADVP*rb VP*vbd
+ADVP*rb NP*dt VP*vbd
+S*advp S*np
+S*np CC S*np
+PP*in NP*dt VP*vbz
+CC S*np S*np
+PP*in NP*np PRN*: VP*vbp
+PP*rb NP*nnp VP*vbp
+NP*dt VP*md
+NP*dt VP*md
+SBAR*in NP*np VP*md
+SBAR*in NP*nn VP*md
+SQ*md CC SQ*md
+ADVP*rb RB
+NP*np VP*vbz
+IN NP*dt VP*vbz
+PP*in NP*np VP*vbz
+NP*np VP*vbp PP*vbn
+CC NP*np VP*vbp
+NP*nnp VP*vbz
+S*np CC S*np
+NP*np VP*md
+NP*np VP*md
+CC NP*dt VP*vbz
+SBAR*in NP*np VP*md
+NP*nnp VP*md
+NP*dt VP*md
+NP*prp VP*vbz
+
+# id=part2_nopunctuation.34
+S*np S*np
+NP*np PP*vbg VP*vbp
+NP*nnp VP*vbz
+NP*dt VP*vbz
+PP*in NP*np VP*vbz
+NP-TMP*nn ADVP*rb NP*prp VP*vbz
+NP*nnp VP*vbp
+NP*dt VP*vbz
+PP*in NP*np VP*vbd
+NP*nn VP*vbz
+NP*np VP*vbz
+RB SBAR*whadvp NP*prp VP*vbd
+S*np CC S*np
+S*s S*advp
+S*pp S*np
+NP*np VP*vp
+S*advp NP*nn VP*vbp
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP*nnp ADVP*rb S*advp VP*vbz
+S*pp S*np
+CC PP*in NP*dt VP*vbd
+NP*np ADVP*rb VP*vbp
+NP*jj VP*md
+NP*np VP*vbp
+NP*np VP*vbz
+S*np VP*vbd NP*np
+ADVP*rb NP*np VP*vbz
+NP*prp VP*vbz
+NP*np ADVP*rb VP*md
+NP*rb VP*vbz
+ADVP*rb NP*nn VP*md
+NP*prp VP*vbz
+NP*prp VP*vbp
+PP*in NP*np VP*vbz
+NP*dt VP*vbz
+S*np CC S*np S*np
+NP*dt VP*md
+NP*prp VP*vbz
+NP*np VP*md
+S*sbar S*np
+NP*np VP*md
+NP*np VP*vbz
+NP*prp VP*vbp
+
+# id=part2_nopunctuation.35
+PP*np NP*np VP*vbp ''
+NP*prp$ VP*vbz
+CC SBAR*whnp VP*vbz
+NP*np VP*vbz
+S*sbar CC S*np
+NP*np VP*vbz
+SBAR*in NP*dt VP*vbz
+PP*in NP*dt VP*vbp
+PP*in NP*nnp VP*vbp
+S*advp CC S*advp
+S*np CC S*np
+ADVP*rb NP*dt VP*vbz
+ADVP*rb NP*dt VP*vbp
+NP*np VP*vbz
+S*np CC S*np
+NP*nnp VP*vbd
+PP*in NP*dt VP*vbz
+NP*dt VP*vbp
+NP*dt VP*vbz
+S*np NP*np VP*vbp
+VP*vbn VP*vbz NP*np
+NP*dt VP*vbp
+PP*in NP*nnp VP*vbz
+NP*nnp VP*vbz
+S*advp PRN*: CC S*np
+ADVP*rb SBAR*in NP*dt VP*md
+SBAR*whnp NP*ex VP*vbz
+NP*np VP*md
+WHNP*whnp SQ*vp
+NP*pdt VP*md
+CC NP*np VP*vbp
+ADVP*rb S*np CC S*np
+
+# id=part2_nopunctuation.36
+S*np NP*dt VP*vbd
+NP*np VP*vbd
+NP*dt ADVP*rb VP*vbd
+NP*np VP*vbz
+NP*np VP*vbz
+
+# id=part2_nopunctuation.37
+NP*nns VP*vbp
+S*np CC S*advp
+NP*np VP*vbd
+NP*np VP*vp
+NP*np VP*vbd
+`` S*s '' VP*vbd NP*np
+PP*in S*np S*np PP*in
+NP*nnp VP*vbz
+NP*jj VP*md
+ADVP*rb NP*ex VP*advp
+
+# id=part2_nopunctuation.38
+NP*jj PP*in NP*np VP*vbd
+NP*dt ADVP*rb VP*vbd
+PP*vbg NP*dt VP*md
+S*np CC S*np
+NP*dt VP*vbd
+S*np CC S*advp
+NP*nnp S*s
+NP*np VP*md
+NP*jj VP*vbd
+CC NP*dt VP*vbz
+INTJ*dt S*np
+NP*dt VP*md
+NP*np VP*vbd
+NP*nns VP*vbp
+NP*nns VP*vbp
+ADVP*rb ADVP*rb NP*np '' VP*md
+NP*nnp S*np
+S*np '' NP*nnp VP*vbd
+PP*vbg NP*dt VP*md
+NP*np VP*vbd
+NP*dt VP*vp
+`` NP*prp VP*vbp
+S*s '' NP*nnp VP*vbd
+
+# id=part2_nopunctuation.39
+NP*np VP*vbz
+PP*vbg NP*dt VP*vbz
+ADVP*rb PP*in NP*prp VP*vbp
+PP*in ADVP*rb NP*prp VP*vbz
+NP*dt VP*vbp
+ADVP*rb NP*dt VP*md
+NP*np VP*vbz
+NP*np VP*vbz
+CC NP*nnp VP*md
+NP*nnp VP*vbz
+PP*rb NP*np S*vp VP*vbz
+`` NP*prp VP*vbp
+S*np '' VP*vbd NP*nnp
+NP*adjp VP*vbz
+NP*prp$ VP*vp
+
+# id=part2_nopunctuation.40
+S*vp NP*np VP*vbd
+NP*dt VP*vp
+NP*dt VP*vbz
+`` S*s '' NP*nnp VP*vbd
+NP*dt ADVP*rb VP*vbz
+NP*dt VP*md
+NP*nn NP*np
+`` CC NP*dt VP*vbz
+S*np '' NP*nn VP*vbd
+SBAR*in VP*vbz
+`` ADVP*rbr VP*vbz PP*in
+S*np '' NP*nn VP*vbd
+
+# id=part2_nopunctuation.41
+NP*np NP*np
+NP*prp$ PP*in
+NP*dt VP*vbz
+PP*in NP*ex VP*vbp
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*np ADJP*adjp PP*in
+ADVP*rb SBAR*in NP*prp VP*vbp
+NP*prp VP*vbz
+NP*ex VP*vbp
+PP*in NP*prp VP*md
+VP*np
+NP*dt VP*vbz
+NP*nn ADVP*rb VP*vbz
+NP*dt VP*md
+NP*dt VP*vbz
+PP*in S*s CC S*np
+CC SBAR*whadvp NP*prp VP*vbp
+S*np CC S*np
+NP*np ADVP*rb VP*vbz
+SBAR*x NP*np VP*md
+CC S*vp VP*vbz
+S*advp S*np
+PP*in NP*np VP*vbp
+NP*wdt VP*vbz
+SBAR*in VP*vb
+NP*prp VP*md
+NP*dt VP*vbz
+ADVP*rb S*np CC S*pp
+S*pp CC S*np
+PP*in PP*in NP*prp VP*vbp
+NP*prp VP*vbz
+NP*np ADVP*rb VP*vb
+S*np CC S*np
+S*np PRN*, NP*prp VP*md
+SBAR*in NP*np VP*vbz
+NP*wdt NP-TMP*rb VP*vbz
+NP*prp VP*vbp
+S*np CC S*pp
+UCP*np NP*np VP*md
+ADJP*rbr VP*vbz NP*np
+NP*np VP*vbp
+NP*np VP*vbz
+NP*np VP*md
+ADVP*rb NP*np VP*vp
+NP*dt VP*vbp
+NP*prp VP*vbz
+NP*jjs VP*vbp
+NP-TMP*np NP*prp VP*md
+ADVP*rb NP*prp ADVP*rb VP*vbz
+FRAG*in NP*prp VP*md
+CC NP*np VP*vbz
+NP*np ADVP*rb VP*vbd
+PP*in NP*prp VP*md
+ADVP*rb ADVP*rb NP*prp VP*md
+NP*np VP*vb
+NP*np VP*vbz
+NP*nn VP*md
+NP*np VP*vbz
+NP*ex VP*vbz
+NP*np ADVP*rb VP*vbp
+PP*rb NP*prp VP*md
+VP*vb
+PP*in NP*np VP*vbp
+RB NP*dt VP*md
+SBAR*in VP*vb
+PP*vbn PRN*-lrb- NP*prp VP*vbp
+SBAR*in VP*vp
+S*np CC S*np
+NP*np VP*vbz
+NP*np VP*vp
+
+# id=part2_nopunctuation.42
+NP*jj S*vp
+ADVP*rb S*np CC S*np
+PP*in NP*ex VP*vbz
+NP*prp VP*md
+NP*prp VP*vbp
+NP*dt VP*vbz
+S*pp S*np
+WHADVP*wrb SQ*vbz
+S*np NP*ex VP*vbz
+S*advp NP*prp VP*vbp
+NP*nnp PP*in
+NP*dt VP*vbz
+NP*prp VP*vbz
+CC NP*ex VP*vbz
+NP*prp VP*vbz
+PP*in PP*rb NP*np ADVP*rb VP*md
+CC S*np CC S*np
+PP*in NP*prp VP*vbp
+PP*in NP*prp VP*vbd
+PP*in NP*dt VP*vbd
+PP*in NP*np VP*vbz
+NP*np VP*vbz
+SBAR*in NP*prp VP*vbp
+INTJ*dt S*np
+S*pp S*np
+NP*dt VP*vbz
+CC SBAR*in NP*prp VP*md
+INTJ*dt S*np
+`` S*np '' VP*vbz NP*np
+NP*prp VP*vbz
+NP*np VP*vbz
+PP*in NP*prp VP*vbz ''
+NP*np VP*vbp
+`` S*np CC S*np
+ADJP*rbr S*vp '' VP*vbd NP*np
+NP*prp ADVP*rb VP*vbd
+ADVP*rb PP*in NP*prp VP*vbp
+S*pp CC S*pp
+`` NP*prp VP*vbp
+NP*np
+NP*prp VP*vbp
+S*np '' VP*vbd NP*np
+ADVP*rb NP*ex VP*vbp
+PP*in NP*prp VP*vbz
+PP*in ADVP*rb NP*prp$ VP*vbz
+`` PP*in NP*prp VP*vbp
+PP*vbn NP*dt VP*vbz
+S*np '' VP*vbd NP*np
+NP*jj ADVP*rb VP*vbp
+PP*in NP*nnp VP*vbd ''
+CC NP*prp VP*vbd
+PP*in SBAR*in NP*prp VP*md ''
+NP*nnp VP*vbz
+S*vp NP*nnp VP*vbd
+PP*in NP*prp VP*vbp
+NP*np VP*vbz ''
+S*np S*np S*np
+INTJ*wrb NP*rb VP*vb
+S*np S*np
+ADVP*rb NP*np VP*vbd
+NP*np VP*vbz
+CC ADVP*rb NP*dt VP*vbz
+PP*vbg S*np `` S*np
+PP*vbg NP*prp VP*vbz ''
+CC S*vp VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+CC NP*dt VP*vbz
+`` NP*np VP*md
+S*np '' VP*vbd NP*np
+NP*np ADVP*rb VP*md
+PP*in NP*prp VP*vbz
+SBAR*advp `` PP*in SBAR*whadvp NP*prp VP*md ''
+CC ADVP*rb NP*np VP*vbp
+PP*in NP*np VP*vbz
+NP*np VP*vbz
+PP*rb NP*nns VP*vbz
+`` NP*dt VP*vp
+S*np CC S*np
+S*np '' NP*nnp VP*vbd
+NP*np VP*vbz
+PP*in NP*np VP*vbz
+PP*in NP*np ADVP*rb VP*vbp
+S*cc NP*prp VP*vbz
+CC NP*np VP*vbz
+RB PP*in NP*prp VP*md
+CC SBAR*rb NP*prp VP*md
+PP*in NP*np VP*vbp
+S*vp VP*vbz
+NP*prp VP*vbp
+ADVP*rb NP*prp VP*vbd
+S*np CC S*np
+NP*prp VP*md
+NP*dt VP*vbp
+NP*dt VP*vbp
+PP*in NP*np VP*vbp
+NP*np ADVP*rb VP*vb
+NP*dt VP*vbz
+PP*in NP*prp ADVP*rb VP*vbz
+NP*dt VP*vbz
+`` S*s '' NP*nnp VP*vbd
+CC NP*prp VP*vbz
+NP*dt VP*md
+CC PP*in NP*np VP*vbp
+ADVP*rb S*np CC S*x
+NP*nnp VP*vbz
+S*pp CC S*advp ''
+NP*dt VP*vbz
+PP*in NP*np VP*vbz
+SBAR*in WHADVP*wrb SQ*vbp
+S*np CC S*sbar
+SBAR*whadvp NP*np VP*vbd
+PP*in NP*jj VP*vbp
+NP*np VP*vbd
+CC PP*in NP*np VP*vbd
+S*cc CC S*np
+ADVP*rb NP*dt VP*vbp
+PP*vbn NP*prp VP*md
+CC VP*vb
+SBAR*in NP*dt VP*md
+SBAR*in NP*prp VP*md
+CC NP*prp VP*md
+
+# id=part2_nopunctuation.43
+NP*nnp VP*vbz
+VP*vb
+PP*in NP*nnp VP*vbd
+NP*dt VP*vbd
+NP*np NP*np
+NP*nnp VP*vbd
+NP*np VP*vbp
+NP*prp VP*md
+NP*nnp VP*vbz
+NP*prp VP*vbd
+`` S*pp '' NP*prp VP*vbd
+NP*dt VP*md
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*np ADVP*rb VP*vbd
+NP*prp VP*vbd
+WHADVP*wrb
+
+# id=part2_nopunctuation.44
+NP*np VP*md
+NP*np VP*md
+S*s VP*vbd NP*np
+S*vp NP*nns VP*md
+PP*in NP*qp VP*vbd
+NP*np VP*md
+INTJ*dt S*s
+`` S*pp '' VP*vbd NP*np
+PP*in NP*prp VP*md
+WHNP*wp SQ*vbp
+S*np CC S*np
+`` S*s '' NP*nnp VP*vbd
+NP*np VP*vbz
+S*np CC S*np
+NP*dt VP*vbp
+NP*dt VP*vbz
+`` S*pp '' NP*np VP*vbd
+NP*dt VP*vbp
+S*pp CC S*pp
+NP*dt VP*vbz
+`` S*sbar '' NP*nnp VP*vbd
+NP*np VP*md
+ADVP*rb NP*np VP*md
+
+# id=part2_nopunctuation.45
+NP*nnps VP*vbd
+NP*dt VP*vbz
+SBAR*in NP*prp VP*vbp
+NP*np ADVP*rb VP*vbd
+NP*dt VP*vbz
+PP*in NP*np VP*nn
+`` S*np CC S*s
+SBAR*in NP*np VP*vb
+`` S*np '' VP*vbz
+NP*np VP*vbd
+SBAR*in NP*prp VP*md
+SBAR*in NP*prp ADVP*rb VP*vbz
+SBAR*rb NP*np VP*vbd
+NP*dt VP*vbd
+NP*nns VP*vbd
+NP*np ADVP*rb VP*vbz
+PP*in NP*prp VP*vbd
+SBAR*whadvp NP*np VP*vbd
+`` S*np '' NP*nnp VP*vbd
+PP*vbg NP*np VP*vbd
+
+# id=part2_nopunctuation.46
+S*np S*np
+NP*np VP*vbn
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*dt VP*md
+NP*prp VP*md
+CC VP*advp
+ADVP*in S*np CC ADVP*jj S*np
+CC WHNP*wp SQ*vp
+ADVP*rb NP*np
+S*cc S*np S*np
+NP*np VP*vbp
+CC NP*np VP*vbp
+NP*dt VP*vbz
+NP*dt VP*md
+NP*dt VP*vbd
+NP*prp VP*vbz
+NP*dt VP*vbd
+NP*np VP*vbp
+S*np NP*prp VP*vbp
+NP*dt VP*vbz
+S*np '' VP*vbz NP*np
+S*cc NP*dt VP*vbz
+ADJP*rbr VP*vbp NP*np
+`` S*s '' NP*nnp VP*vbd
+
+# id=part2_nopunctuation.47
+NP*nnp VP*md
+NP*prp VP*vbd
+`` S*np '' NP*jj VP*vbd
+`` S*s '' NP*prp VP*vbd
+NP*prp VP*vbd
+`` S*sbar '' NP*nnp VP*vbd
+PP*vbg NP*prp VP*md
+`` SBAR*whnp VP*md
+S*np '' NP*prp VP*vbd
+S*vp VP*vbd
+CC NP*dt VP*md
+`` S*np '' NP*prp VP*vbd
+`` NP*dt VP*vbp
+S*np S*np
+
+# id=part2_nopunctuation.48
+WHNP*whnp SQ*vbp
+NP*np RB VP*vbd
+`` S*sbar '' VP*vbz NP*np
+NP*np VP*vbd
+ADVP*rb PP*in NP*dt VP*vbd
+S*advp CC S*np SBAR*whadvp
+NP*np VP*vbz
+SBAR*in NP*dt VP*md
+NP*dt VP*vbp
+`` S*np CC S*advp
+S*s '' NP*prp VP*vbd
+S*np S*np
+ADVP*rb NP*cc VP*vbp
+S*s '' NP*nn VP*vbd
+NP*np VP*vbd
+`` NP*prp VP*vbz
+S*np '' NP*prp VP*vbz
+S*np NP*np VP*vp
+S*pp NP*np VP*vbz
+`` S*pp NP*dt VP*md
+S*pp CC S*np ''
+`` ADVP*rb SBAR*in NP*np VP*vbp
+VP*pp
+S*np PRN*, CC S*np
+S*np NP*nnp VP*vbz
+NP*prp VP*vbz
+PP*rb NP*dt VP*vbz
+`` CC SBAR*rb NP*prp VP*md
+NP*nns VP*md
+S*np '' NP*prp VP*vbz
+NP*np VP*vbd
+`` S*np NP*prp VP*vbp
+SBAR*ucp '' NP*prp VP*vbd
+NP*jj VP*vbd
+NP*np VP*vp
+S*np NP*np VP*vbd
+NP*nnp VP*vbz
+`` S*np NP*prp VP*vbp ''
+NP*dt VP*vbz
+S*np CC S*np
+NP*nn PP*in
+ADVP*rb NP*np VP*md
+`` CC NP*dt VP*vbz
+S*np NP*prp VP*vbz
+`` S*np '' VP*vbz NP*np
+
+# id=part2_nopunctuation.49
+S*np NP*jj VP*vbz
+S*vp NP*dt VP*vbd ''
+NP*nnp VP*md
+ADVP*rb PRN*, NP*np VP*md
+NP*dt VP*vbz
+NP*dt VP*vbz
+FRAG*rb NP*wdt ADVP*rb VP*vbd
+CC NP*np VP*vbp
+S*vp NP*nnp VP*vbd
+CC NP*np VP*vbz
+NP*dt VP*vbz
+PP*in PP*in NP*nns VP*vbp
+NP*prp VP*vbz
+PP*in NP*np VP*advp
+CC PP*in NP*dt VP*vbd
+ADVP*rb NP*dt VP*vbd
+NP*np ADVP*rb VP*vbd
+ADVP*rb NP*nnp VP*vbd
+CC NP*np VP*vbp
+ADVP*rbs NP*np VP*vbd
+S*np NP*ex VP*vbz
+ADVP*rb ADVP*rb NP*np VP*md
+PP*in NP*dt VP*vbz
+SINV*md NP*prp VP*md
+PP*in NP*prp VP*md
+NP*np VP*vbd
+NP*nns NP*rb
+CC NP*jj VP*vbp
+PP*in VP*vbz NP*np
+PP*in NP*nnp VP*vbd
+ADVP*rb NP*nnp VP*md
+NP*dt PP*in PP*in PP*in ''
+SBAR*whadvp VP*vbz
+
+# id=part2_nopunctuation.50
+LST*jj S*np S*pp
+CC S*np-tmp CC S*pp
+PP*in VP*prn NP*np
+NP*nnp ADVP*rb VP*vbz
+NP*prp VP*vbd
+PP*in NP*np VP*md
+NP*np NP*np
+S*np NP*cd VP*vbz
+PP*in NP*dt VP*vbp
+NP*prp VP*vbd
+CC ADVP*rb ADVP*rb VP*vbz
+NP*np VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vp
+S*s NP*nnp VP*vbz
+S*np S*np
+CC PP*in NP*dt VP*vbp ''
+NP*ex VP*vbz
+S*advp NP*dt VP*vbp
+SBAR*in NP*prp VP*vbp
+NP*prp VP*vbp
+SBAR*whadvp NP*np VP*vbp
+NP*np VP*vbp
+NP*nnp VP*vbz
+NP*rb NP*np
+PP*in NP*prp VP*vbp
+FRAG*advp S*`` ''
+NP*nnp VP*vbz
+`` VP*nnp ''
+NP*nnp ADVP*cc VP*vb
+`` ADVP*rb NP*prp VP*md
+CC NP*rb VP*vbn ''
+NP*prp VP*vbz
+CC VP*vbp
+NP*`` VP*s
+ADVP*rb NP*prp VP*vbp ''
+NP*nnp S*vp
+NP*nnp
+CC ADVP*rb NP*prp VP*vbp
+NP*np VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbz ''
+S*np S*np S*np
+S*np CC S*np
+NP*nnps VP*vbp
+
+# id=part2_nopunctuation.51
+NP*np PP*in PP*in NP*jj VP*vbd
+NP*prp VP*vbz
+SBAR*in VP*vbd
+NP*np VP*vbz
+NP*np VP*vbd
+S*np NP*prp VP*vbd
+S*np NP*prp VP*vbd
+NP*dt VP*vbz
+PP*vbg NP*dt VP*vbd
+PP*in NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+PP*in NP*dt VP*vbd
+SBAR*in NP*nnp VP*vbd
+S*advp NP*prp VP*vbd
+PP*in NP*dt VP*vbz
+NP*prp VP*vbd
+PP*in NP*nnp VP*vbz
+SBAR*in NP*prp VP*vbz
+PP*in NP*np VP*vbz
+PP*in NP*np
+PP*vbg NP*dt VP*vbp ''
+NP*jj VP*vbp
+NP*np VP*vbd
+NP*np VP*vbp
+PP*in NP*prp VP*vbz
+CC PP*vbn NP*nns VP*vbp
+NP*prp VP*vbz
+S*np FRAG*advp
+SBAR*in NP-TMP*nn NP*np VP*vbz
+NP*np VP*vbz
+NP*nn VP*vbp
+SBAR*in NP*jj VP*vbp
+NP*dt ADVP*rb VP*vbz
+PP*to NP*nnp VP*vbd
+PP*in ADVP*rb NP*prp$ VP*vbz
+ADVP*rb NP*nn VP*md
+ADVP*rb S*sbar CC S*np
+CC S*vp VP*vbz
+NP*dt VP*md
+NP*jj VP*md
+
+# id=part2_nopunctuation.52
+NP*np S*np
+WHNP*wp SQ*np
+S*np S*pp
+NP*`` PP*in PP*in
+NP*prp VP*vbd
+NP*np VP*advp
+S*np CC S*np
+S*np CC S*advp
+NP*np VP*vbz
+NP*nns VP*vbp
+CC SBAR*in NP*prp VP*vbd
+NP*prp VP*vbp
+SBAR*in NP*prp VP*vbd
+S*pp S*np S*np CC S*np
+PP*in NP*prp VP*vbd
+S*np CC S*np ''
+NP*prp ADVP*rb VP*vbd
+NP*prp VP*vp ''
+RB NP*prp VP*vbd
+NP*dt VP*pp
+NP*prp VP*vbd
+S*np CC S*sbar
+NP*prp VP*vp
+ADVP*rb PP*in NP*nn VP*vbd
+S*np S*np
+NP*prp VP*vbd
+NP*np VP*vbp
+NP*dt VP*vp
+S*np S*np
+ADVP*rb PP*in NP*wdt VP*vbz
+NN
+PP*in NP*dt VP*vbp
+ADVP*rb NP*prp VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbp
+NP*`` PP*in
+'' S*np
+CC NP*prp ADVP*rb VP*vbd ''
+PP*in NP*nn VP*vbp
+CC SBAR*in NP*prp ADVP*rb VP*vbd
+RB PP*in NP*prp VP*vbz
+SBAR*in
+CC NP*dt VP*vbp
+S*pp CC S*pp
+CC SBAR*in NP*prp VP*vbp
+
+# id=part2_nopunctuation.53
+NP*nns VP*vbp
+VBZ NP*prp VP*vb
+NP*nnp VP*vbz
+CC SBAR*in NP*prp VP*vbp
+NP*np VP*vbz
+PP*in NP*nnp VP*vbz ''
+NP*prp VP*vbp
+PP*in NP*prp VP*vbp
+CC PP*in NP*prp VP*md
+ADVP*rb NP*prp VP*vbp
+S*sbar S*np
+NP*nns VP*vbp
+CC NP*prp VP*vbp
+NP*ex VP*vbp
+PP*in NP*np VP*vp
+S*np CC S*np
+RB S*vp VP*vbp
+S*np S*pp
+PP*in NP*nns VP*md
+CC SBAR*rb NP*prp VP*md
+NP*dt VP*vbz
+SBAR*in ADVP*rb NP*prp$ VP*vbz
+S*np CC S*advp
+S*np CC S*np
+CC NP*np VP*vbz
+ADVP*rb NP*dt ADVP*rb VP*vbz
+WHNP*wp SQ*vp
+VP*vb
+SBAR*whnp PRN*, NP*prp VP*vbp
+PP*in NP*nns VP*vbp
+PP*in NP*dt VP*vbp
+PP*in NP*nnp VP*vbz
+S*np CC S*np
+S*sbar NP*prp VP*md
+S*pp CC S*np
+NP*np ADVP*rb VP*vbd
+CC WHADVP*wrb SQ*md
+NP*np VP*vbz
+VBZ NP*prp VP*vb
+SBAR*in NP*np VP*vbz
+S*np S*np
+CC VBZ NP*dt ADJP*jj
+CC RB SBAR*in
+NP*prp VP*vbp
+NP*np
+CC NP*prp VP*md
+CC SBAR*in PRN*-lrb- NP*prp VP*vbp
+NP*ex VP*vbz
+SBAR*rb NP*cc VP*vbp
+S*np CC S*np
+NP*prp ADVP*rb VP*vb
+
+# id=part2_nopunctuation.54
+NP*nnp NP*np
+`` S*np '' NP*nnp VP*vbd
+`` NP*dt VP*vbz
+S*np CC S*np ''
+NP*dt VP*vbp
+NP*np VP*vbz
+`` NP*prp VP*md
+S*np '' VP*vbd NP*np
+`` NP*nnp VP*md ''
+NP*dt VP*vbd
+PP*in NP*np VP*vbd
+NP*dt VP*vbd
+S*np '' NP*nnp VP*vbd
+`` NP*prp VP*vbp ''
+PP*in ADVP*rb NP*jj VP*vbd
+ADVP*rb NP*np VP*vbd
+
+# id=part2_nopunctuation.55
+NP*jj VP*vbz
+NP*dt VP*vp
+NP*np S*pp
+PP*in NP-TMP*jj NP*nnp VP*vbd ''
+S*np NP*prp VP*vbd
+NP*np VP*vbd
+S*np S*np '' S*np ''
+S*np '' NP*prp VP*vbd
+SBAR*in NP*nn VP*vp
+NP*prp VP*vbd
+`` NP*prp$ VP*vbz
+NP*prp VP*vbp ''
+
+# id=part2_nopunctuation.56
+NP-TMP*np PP*in NP*np VP*vbd
+PP*in NP*dt VP*vbz
+NP*np VP*vbp
+S*vp NP*dt VP*vbd
+PP*vbg NP*nns VP*vbp
+PP*in NP*np VP*vbd
+CC PP*pp NP*nns VP*vbd
+S*np NP*dt VP*vbz
+NP*nnp VP*vbz ''
+S*np NP*prp ADVP*rb VP*vbz
+PP*in NP*np VP*vbp
+NP*nn VP*vbd
+PP*jj NP*jj VP*vbd
+PP*in NP*jj VP*vbn
+PP*in NP*nns VP*vbd
+PP*in NP*nns VP*vbd
+S*np NP*dt VP*vbz
+S*pp NP*dt VP*vbz
+S*np NP*prp VP*vbz
+PP*in NP*ex VP*vbd
+S*pp NP*prp VP*vbz
+
+# id=part2_nopunctuation.57
+NP*nnp PP*np NP*nnp VP*vbz
+PP*in NP*nn VP*vbz
+PP*in
+VP*vb
+NP*nnp PP*in
+NP*dt VP*vbd
+NP*prp$ VP*vbd
+NP*prp ADVP*rb VP*vbd
+`` S*np '' NP*nnp VP*vbd
+RB NP*dt VP*vbd ''
+S*np CC S*np
+NP*nnp VP*vbd
+NP*prp VP*vbz
+CC ADVP*rb NP*prp$ VP*vbd
+NP*nnp VP*vb
+NP*nnp VP*vbz
+NP*np VP*vbz
+NP*prp VP*vbd
+`` S*np '' NP*nnp VP*advp
+NP*nnp VP*md ''
+NP*nnp VP*vbz
+`` S*np '' NP*nnp VP*vbd
+NP-TMP*dt NP*nnp VP*vbz
+NP*nns VP*vbd
+NP*prp VP*vbz
+S*`` VP*vbd NP*nnp
+NP*prp VP*np
+S*np CC S*np
+`` S*np '' NP*nnp VP*vbd
+
+# id=part2_nopunctuation.58
+PP*in NP*nn VP*vbz
+NP*np VP*vbd
+NP*prp VP*vbd
+ADVP*rb NP*dt ADVP*rb VP*vbd
+PP*in PP*in
+NP*np VP*vbd
+PP*in NP*dt VP*vbd
+NP*ex VP*vbd
+NP*np VP*vbd
+NP*jj VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbz
+PP*in NP*dt VP*vbd
+NP*np VP*vbp
+NP*np VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbp
+PP*in NP*np VP*vbd
+NP*dt VP*vp
+NP*nnp VP*vbd
+PP*in NP*nnp VP*vbd
+NP*nns VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+NP*np VP*md
+S*np S*pp
+PP*in NP*nnp VP*vbd
+PP*in NP*dt VP*vbd
+PP*in NP*nnp VP*vp
+PP*in NP*nnp VP*vbd
+NP*jj NP*nnp
+NP*nnp VP*vbd
+NP*dt ADVP*rb VP*vbd
+
+# id=part2_nopunctuation.59
+S*np S*np
+NP*nns VP*vbp
+PP*in NP*np VP*vbz
+PP*jj NP*prp VP*vbz
+PP*in NP*dt VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*np VP*vbd
+S*cc S*np
+ADVP*rb NP*ex VP*vbp
+NP*dt ADVP*rb VP*vbp
+PP*to NP*nns VP*vbp
+NP*prp VP*vbp
+NP*dt VP*vbp
+NP*np ADVP*rb ADVP*rb VP*vbz
+`` S*np '' NP*prp VP*vbz
+NP*nn VP*vbp
+ADVP*rb NP*prp VP*vbz
+NP*np VP*vbz
+PP*vbg NP*jj VP*vbz
+
+# id=part2_nopunctuation.60
+NP*np PP*in VP*vbp
+NP*np VP*vbd
+PP*in NP*np VP*vbd
+PP*in NP*cd VP*vbp
+NP*np VP*vbp
+S*ucp S*np
+NP*`` NP*np
+NP*np VP*vbp
+NP*np VP*vbp
+PP*vbg NP*jj VP*vbd
+S*advp '' NP*nnp VP*vbd
+S*np NP*jj VP*vbd
+S*np NP*prp VP*vbd
+S*np S*pp
+`` NP*dt VP*vbd
+S*np '' NP*dt VP*vbd
+NP*prp VP*vbd
+PP*in NP*jj VP*vbd
+S*np S*np
+S*vp NP*dt `` NP*np VP*vbd
+PP*vbg NP*dt VP*vbn
+NP*dt VP*vbd
+NP*np VP*vbd
+
+# id=part2_nopunctuation.61
+S*np NP*dt VP*vbz
+NP*np VP*vbd
+NP*nnp VP*vbd
+S*np `` S*np ''
+NP*dt VP*vbd
+SBAR*whadvp NP*nnp VP*vp
+S*np CC S*np
+NP*prp$ VP*vbd
+CC NP*dt VP*vbd
+PP*in NP*nn VP*vbd
+PP*in NP*np VP*vbd
+NP*prp VP*vbz
+NP*nnp VP*vbd
+`` NP*prp VP*vbd
+NP*prp VP*vbp ''
+S*np CC S*pp
+`` NP*dt VP*vbz
+SBAR*rb NP*prp VP*vbz ''
+NP*prp VP*vbd
+`` NP*prp VP*vbd ''
+
+# id=part2_nopunctuation.62
+S*np NP*dt VP*vbz
+NP*dt VP*vbd
+NP*dt VP*vbd
+S*np CC S*np
+NP*nnp VP*vbd
+`` S*np '' NP*prp VP*vbd
+NP*np VP*vbz
+NP*dt VP*vbd
+NP*dt NP*prp VP*vbd
+NP*prp VP*vp
+
+# id=part2_nopunctuation.63
+NP*nn VP*vbp
+NP*dt VP*vbd
+NP*np VP*md
+NP*np VP*vbd
+NP*dt VP*md
+CC NP*np VP*md
+NP*dt VP*vbd
+NP*prp VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbd
+`` NP*prp VP*vbz ''
+PP*vbg NP*dt VP*vbz
+`` S*np '' VP*vbd NP*nnp
+NP*dt PP*jj
+S*pp CC S*np
+SBAR*in NP*prp$ VP*md
+
+# id=part2_nopunctuation.64
+NP*nn VP*vbp
+NP*nnp VP*vbz
+NP*prp VP*vp
+NP*nns VP*vbp
+PP*in NP*np ADVP*rb VP*vbd
+
+# id=part2_nopunctuation.65
+NP*nnp VP*vbz
+NP*prp$ VP*vbd
+NP*dt VP*vbz
+NP*np VP*vbd
+S*np CC S*np
+NP*nns VP*vbp
+NP*prp$ VP*vbp
+`` S*np '' NP*prp$ NP*nnp VP*vbd
+`` NP*prp VP*md ''
+NP*prp$ VP*vbd
+S*np NP*dt VP*vbd
+NP*prp VP*vbd
+NP*dt VP*vb
+
+# id=part2_nopunctuation.66
+NP*np VP*vbd
+NP*dt VP*vbd
+CC NP*prp VP*vbz
+NP*dt VP*vbd
+
+# id=part2_nopunctuation.67
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+ADVP*rb NP*dt VP*vbd
+NP*nnp VP*vbd
+PP*in NP*np VP*vbd
+NP*np ADVP*dt VP*vbd
+NP*nnp VP*vbd
+
+# id=part2_nopunctuation.68
+NP*np VP*vbz
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*jj VP*md
+`` S*np '' NP*nnp VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd
+PP*in NP*dt VP*vbd
+CC NP*prp ADVP*rb VP*vbd
+NP*np VP*vbd
+NP*nnp VP*vbp
+NP*prp VP*vp
+NP*np VP*vp
+NP*np ADVP*rb VP*vbd
+NP*np VP*vp
+NP*np VP*vbd
+
+# id=part2_nopunctuation.69
+VP*nn
+NP*np VP*vbd
+NP*np VP*vbd
+NP*nnp VP*vbp
+NP*np VP*vbd ''
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*dt VP*vp
+CC NP*np PP*in VP*vp
+NP*np
+PP*in NP*jj VP*vbd
+NP*prp ADVP*rb VP*vbd
+
+# id=part2_nopunctuation.70
+S*np S*np S*np
+CC NP*rb VP*vbp
+NP*dt VP*vp
+PP*in NP*prp VP*vbz
+NP*ex VP*vbp
+NP*prp VP*vbz
+NP*np ADVP*rb VP*vbp
+PP*in NP*ex VP*vbz
+NP*prp VP*vbz
+NP*jj VP*vbp
+CC NP*np VP*vbz
+PP*in NP-TMP*dt NP*np VP*vbd
+S*s VP*vbd NP*np
+`` S*s '' NP*prp VP*vbd
+`` S*np CC S*np ''
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+`` S*np '' NP*prp VP*vbd
+NP*np VP*vp
+PP*vbn NP*nnp VP*vbz
+S*np CC S*np
+S*np CC S*np ''
+`` S*np '' VP*vbd NP*np
+`` NP*prp VP*vbd ''
+NP*np VP*vbp
+NP*nns VP*vbp
+NP*np VP*vbd
+NP*np VP*vbd ''
+PP*in NP*dt VP*vbd
+NP*dt VP*vbd
+S*np CC S*np
+NP*dt VP*vbd
+NP*np VP*vbd
+`` NP*np PRN*, VP*vbd ''
+
+# id=part2_nopunctuation.71
+NP*dt NP*np
+NP*np VP*vbz ''
+S*vp VP*vbz
+NP*np VP*vbp
+NP*np VP*vbz
+S*vp NP*np ADVP*rb VP*vbz
+ADVP*rb NP*np VP*vbz
+VP*vb
+NP*np VP*vbp
+NP*np VP*vbp
+ADVP*rb PP*in NP*np VP*vbn
+NP*np VP*vbn
+NP*dt VP*vbd
+NP*nnp VP*vbz
+NP*np S*np VP*vbz ''
+NP*nnp VP*vbz
+S*np CC S*np ''
+`` S*np '' PRN*s `` NP*prp VP*vbz ''
+MD NP*nnp VP*vb
+NP*np VP*md
+SBAR*in NP*nnp ADVP*rb VP*vbd
+ADVP*rb PRN*, `` NP*prp VP*vbp ''
+SBAR*in NP*prp VP*md
+
+# id=part2_nopunctuation.72
+NP*np VP*vbd
+NP*jj VP*vbd
+NP*nns VP*vbp
+PP*in NP*nn VP*vbp
+PP*in NP*nns VP*vbd
+NP*nn VP*vbd
+NP*dt VP*vbd
+S*pp NP*dt VP*vbd
+ADVP*rb NP*np ADVP*rb VP*vbd
+NP*np VP*vbd ''
+SBAR*in NP*np VP*vbz
+`` S*np '' NP*np VP*vbd
+`` NP*prp VP*vbp
+S*pp CC ADVP*rb ''
+NP*np VP*vbd
+
+# id=part2_nopunctuation.73
+NP*nnp VP*vbz
+RB NP*prp VP*vbd
+`` S*advp '' NP*nnp VP*vbd
+NP*dt VP*vbd
+RB NP*nn VP*vbd
+NP*nnp VP*vbd
+`` S*np '' NP*nnp VP*vbd
+`` NP*prp VP*vbz
+NP*prp$ VP*vbz ''
+SBAR*in S*np
+NP*nnp VP*vp
+NP*nnp VP*vp
+NP*nnp VP*vbd
+NP*np VP*md
+S*np CC S*sbar
+NP*prp VP*vbd
+S*vp NP*nns VP*vbp ''
+SBAR*whadvp NP*prp VP*vbd
+NP*ex VP*vbd ''
+
+# id=part2_nopunctuation.74
+NP*nnp VP*vbz
+PP*in NP*nnp VP*vbn
+PP*in NP*nnp VP*vbd
+NP-TMP*jj NP*nnp VP*vbd
+ADVP*rb NP*prp VP*vbd
+PP*in NP*nnp VP*vbd
+SBAR*in NP*np VP*vbz
+PP*in NP*nnp VP*vbd
+ADVP*rb NP*dt VP*vbd
+`` S*np '' NP*nnp VP*vbd
+`` NP*nn VP*vbd
+S*np CC S*pp ''
+NP*prp VP*vbz
+CC NP*dt ADVP*rb VP*vbz
+S*vp NP*nnp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+NP*nnp VP*vbd
+PP*in NP*np VP*vbd
+NP*np VP*vbz
+NP-TMP*jj NP*np VP*vbd
+NP*prp VP*vp
+NP*prp VP*vbd
+NP*np VP*vbd
+
+# id=part2_nopunctuation.75
+PP*in ADVP*rb NP*np VP*vbz
+NP*np VP*vbz ''
+NP*prp VP*vbz
+NP*np VP*vbp
+NP*nnp PP*in S*vp
+CC ADVP*rb PP*in NP*prp VP*vp
+S*np NP*prp VP*vbz ''
+ADVP*rb PP*in NP*jj ADVP*rb VP*vbp
+`` S*np '' VP*vbd NP*np
+`` NP*prp VP*vbz ''
+NP*nnp VP*vbz
+NP*prp VP*vbz
+NP*prp VP*vbz
+ADVP*rb NP*nns ADVP*rb VP*vbp
+CC NP*np ADVP*rb VP*vbd
+S*np CC S*``
+NP*np VP*vbd
+NP*np ADVP*rb VP*vbd
+`` PP*in PRN*, `` VP*vbz ''
+NP*prp ADVP*rb VP*vp ''
+RB PP*in NP*nnp VP*vbd
+ADVP*rb S*np NP*dt VP*vbd
+PP*in NP*prp VP*vbd
+`` S*np '' VP*vbd NP*np
+NP*prp VP*vbd ''
+NP*nnp VP*vbz
+NP*np VP*vbd
+NP*jjs VP*vbd
+`` S*np '' NP*nnp VP*vbd
+CC PRN*, `` NP*prp VP*advp ''
+S*sbar CC S*np
+PP*in NP*nnp VP*vbd
+SBAR*in NP*prp VP*vbd
+PP*in NP*ex VP*vbd
+`` S*np '' VP*vbd NP*np
+NP*dt VP*vbd
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd
+S*vp NP*np VP*vbd
+PP*in NP*np VP*vbn
+`` S*pp '' NP*nnp VP*vbd
+`` NP*prp ADVP*rb VP*vbd
+NP*prp VP*vbd ''
+PP*in NP*nnp VP*vbd ''
+NP*nns ADVP*rb VP*vp
+`` S*s '' VP*vbd NP*np
+NP*dt VP*vbd
+`` S*s '' NP*nnp VP*vbd
+S*np `` SBARQ*whadvp
+NP*prp VP*vbz ''
+PP*in NP*dt VP*vp
+ADVP*np NP*np VP*vbd
+NP*dt VP*vbd
+CC NP-TMP*dt NP*np VP*vbd
+NP*dt VP*vbd
+S*np CC S*np
+PP*in NP*dt VP*vbd
+`` S*s '' NP*nnp VP*vbd
+S*np `` S*np ''
+NP*np VP*vbz
+S*np CC S*np
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP-TMP*nn PRN*, NP*prp VP*md
+-LRB- NP*prp VP*vbz -RRB-
+NP*np VP*vbp
+S*np CC S*np
+NP*np PP*in NP*np VP*vbp
+CC ADVP*rb SBAR*in NP*np VP*vbz
+NP*np VP*vb
+NP*prp VP*vbz
+CC RB NP*np
+`` S*np '' '' NP*nnp VP*vbd
+`` CC SBAR*in NP*prp VP*vbz ''
+
+# id=part2_nopunctuation.76
+PP*in NP*nn VP*vbz
+SBAR*in NP*prp VP*md
+NP*prp VP*md
+NP*nn ADVP*rb VP*vbp
+NP*np VP*vbg
+S*np CC S*np
+NP*prp VP*vbd
+SBAR*rb NP*np VP*vbd
+RB PP*in NP*nns VP*vbp
+NP*np PRN*, VP*vbd
+PP*in ADVP*rb NP*prp VP*vbd
+NP*prp VP*vbd
+PP*in NP*np VP*vbp
+S*pp CC S*sbar
+NP*np VP*vbd
+NP*np VP*vbp
+NP*np VP*vbn
+CC NP*np VP*vbz
+NP*prp VP*vbd
+S*np NP*prp VP*vbp ''
+
+# id=part2_nopunctuation.77
+NP*np PRN*, VP*vbp
+NP*prp VP*vbp
+NP*nns VP*vbp
+PP*in NP*np VP*vbd
+S*np CC S*np
+NP*prp VP*vbz
+NP*np VP*vbd
+NP*nnp VP*vbz
+NP*np VP*vbd
+NP*np VP*vp
+PP*in NP*prp VP*vbd
+NP*dt VP*vbp
+NP*np VP*vbp
+
+# id=part2_nopunctuation.78
+NP*nnp VP*vbd
+NP*nns VP*vbd
+NP*np VP*vbd
+S*np CC S*np
+NP*dt VP*vbd
+`` NP*nnp VP*vbd ''
+NP*np VP*vbd
+NP*prp VP*md
+NP*prp VP*vbz
+NP*nn VP*md
+NP*nnp VP*vbd
+NP*dt VP*vbd
+`` PP*in NP*prp VP*vbz
+`` S*s CC S*np ''
+NP*nnp VP*vbd
+SBAR*whadvp NP*nnp VP*vbd
+CC NP*prp VP*vbd
+S*np CC S*np
+NP*jj ADVP*rb VP*vbd
+NP*prp ADVP*rb VP*vp
+NP*nnp VP*vbd
+NP*dt VP*vbd
+NP*`` VP*nn
+
+# id=part2_nopunctuation.79
+NP*dt NP*cc
+NP*np VP*vp
+PP*in NP*dt
+PP*in NP*dt
+NP*dt VP*vbp
+PP*in ADVP*rb NP*np VP*vbp
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+S*np NP*dt VP*vbp
+NP*np NP*np
+S*vp VP*vbz
+NP*prp VP*vbz
+NP*prp VP*vbp ''
+NP*nnp VP*vbd
+NP*prp VP*vbz
+PP*jj NP*dt VP*vbp
+NP*dt PP*in ''
+S*np CC S*np
+NP*np VP*vp
+NP*np VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbd
+SBAR*in NP*dt VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbp
+PP*in PP*in NP*prp ADVP*rb VP*vbp ''
+S*np VP*vbd NP*np
+NP*dt VP*md
+
+# id=part2_nopunctuation.80
+S*np VP*vbz NP*np
+PP*in NP*nnp VP*vbz
+NP*np VP*vbd ''
+`` S*s '' NP*prp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+S*np VP*vbd NP*np
+S*vp NP*dt VP*vbd ''
+NP*dt VP*vbz
+NP*prp VP*vbd
+NP*prp VP*vbd
+NP*dt VP*vbd
+S*np '' VP*vbd NP*np ''
+IN NP*prp VP*vbd
+NP*nn VP*vbz
+ADVP*rb NP*np VP*vbd
+NP*dt VP*vp
+NP-TMP*nnp NP*dt VP*vbd
+NP*dt VP*vbd
+ADVP*rb NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vp
+PP*in NP*dt VP*vbd
+PP*in PP*in NP*prp VP*vbd
+
+# id=part2_nopunctuation.81
+NP*np VP*vbz
+NP*nn PP*in PP*in
+NP*dt VP*vp
+NP*np VP*vbz
+NP*np VP*vbp
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbd
+NP*prp VP*vp
+S*np CC S*np
+NP*dt VP*vp
+NP*np VP*vbd
+ADVP*rb SBAR*in NP*dt VP*vbd
+NP*dt VP*vbz
+NP*np VP*vbd
+NP*prp VP*md
+
+# id=part2_nopunctuation.82
+NP*dt VP*vbn
+NP*dt VP*vbd
+NP*dt VP*vbd
+PP*in NP*prp VP*vbd ''
+PP*rb NP*np VP*vbd
+NP*prp VP*vbd ''
+SBAR*whadvp NP*dt VP*vbd
+S*`` CC S*pp
+S*pp CC S*np ''
+NP*nnp VP*vbd
+ADVP*np NP*nnp VP*vbd
+
+# id=part2_nopunctuation.83
+NP*nns VP*vbz
+NP*dt VP*md
+`` S*s '' VP*vbd NP*np
+ADVP*rb PRN*, `` NP*dt VP*advp ''
+ADVP*rb NP*prp VP*vbd ''
+
+# id=part2_nopunctuation.84
+NP*`` NP*np
+NP*np VP*vbz
+NP*dt VP*vbz
+PP*in PRN*, NP*prp VP*vbd
+NP*np VP*vbz
+NP*np VP*vbz
+NP*prp VP*vbz
+NP*dt VP*vbd
+NP*dt VP*vbd
+S*np '' VP*vbd
+ADVP*rb NP*dt VP*vbz
+ADVP*rb PRN*, NP*prp NP*prp VP*vbd
+NP*np VP*vbd ''
+NP*np NP*np
+NP*prp VP*vbz
+NP*np S*vp NP*nnp VP*vbz ''
+NP*nnp VP*vbz
+
+# id=part2_nopunctuation.85
+`` S*pp '' VP*vbz NP*np
+NP*nnp VP*vbz
+NP*np VP*vp
+NP*prp VP*vbd
+S*np CC S*np
+NP*prp VP*vp
+NP*np VP*vbd
+`` S*np CC S*np
+NP*prp VP*vbd ''
+PP*vbg `` NP*prp VP*vbp
+NP*np VP*vbd
+S*advp CC S*np
+S*np CC S*np
+NP*dt VP*vbz
+`` S*np NP*prp VP*vbz
+S*np CC S*np ''
+NP*dt ADVP*rb VP*vp ''
+NP*dt ADVP*rb VP*vbp
+`` NP*prp VP*vbd
+S*advp '' VP*vbz
+NP*dt VP*md
+NP*np VP*vbz
+ADVP*rb NP*np '' VP*vbz
+PP*in NP*np VP*vbz
+
+# id=part2_nopunctuation.86
+NP*prp VP*vbp
+NP*nnp VP*vbd ''
+NP*dt VP*vbz
+CC S*vp VP*vbd
+CC PP*in NP*prp VP*vbd
+CC NP*nns ADVP*rb VP*vbd
+SBAR*in NP*prp VP*vbd
+`` S*s '' VP*vbd NP*nnp `` S*np ''
+NP*dt VP*vp
+NP*np VP*vbd
+S*ucp NP*prp VP*vbp
+PP*in NP*prp VP*vbd
+NP*prp VP*vbd
+NP*dt NP*prp VP*vbd
+NP*np VP*vbd
+S*np NP*prp VP*vbz
+NP*np VP*vbd
+NP*np VP*vbd
+`` S*np '' VP*vbz NP*np
+NP*dt VP*vbz
+ADVP*rb S*np CC S*np
+PP*in S*np CC S*np
+`` WHADVP*wrb SQ*vbp ''
+VP*vbn
+S*pp S*np
+`` S*pp '' NP*prp VP*vbp
+
+# id=part2_nopunctuation.87
+S*np CC S*pp
+S*cc SQ*vbp
+SBAR*in NP*prp ADVP*rb VP*vbp
+S*np CC S*pp
+NP*pdt SBAR*in NP*dt VP*md
+CC VP*vb
+NP*dt VP*vbd
+S*np CC S*sbar
+CC NP*dt VP*vbd
+NP*prp VP*vbd
+NP*prp ADVP*rb VP*vbd
+WHNP*whnp SQ*vbp
+VP*vbz
+INTJ*rb NP*dt VP*vbd
+S*np CC S*s
+NP*dt VP*vbd
+RB SBAR*in NP*dt VP*vbd
+PP*in NP*dt VP*vbd
+S*np CC S*np
+PP*in SBAR*in NP*nn ADVP*rb VP*vbp
+PP*in NP*prp VP*vbp
+
+# id=part2_nopunctuation.88
+NP*nnp VP*vbz
+NP*np CC S*s
+NP*prp VP*md
+NP*dt VP*vbd
+NP*prp VP*vp
+NP*dt PP*in
+ADJP*jj
+CC NP*dt VP*vbz
+ADVP*rb NP*dt VP*vbz
+NP-TMP*dt NP*prp VP*vbd
+NP*nnp VP*vp
+NP*nnp VP*vbz
+NP*nnp VP*md
+NP*dt SBAR*in NP*np VP*vbz
+NP*np VP*vbz
+S*np S*np
+SBAR*whadvp NP*prp VP*vbd
+NP*jj ADVP*rb VP*vbd
+NP*dt VP*md
+NP*prp VP*vbz
+NP*prp VP*vbz
+S*np ADVP*rb S*np
+SBAR*whnp VP*vbz
+NP*nns VP*vp
+NP*prp ADVP*rb VP*vbp
+WHNP*wdt SQ*vbp
+ADJP*rbr S*vp
+CC NP*nnp VP*md
+NP*adjp ADJP*jj
+NP*np VP*md
+ADVP*rb NP*prp ADVP*rb VP*vbp
+VP*vb
+NP*prp VP*vbd
+NP*dt S*vp VP*vbd
+NP*prp$ NP*nnp
+PP*in NP*dt VP*vbd
+NP-TMP*jj ADVP*rb NP*nnp VP*vbd
+NP*prp VP*md
+NP*nnp ADVP*rb VP*md
+NP*np VP*vbz
+CC NP*dt SBAR*in VP*md
+
+# id=part2_nopunctuation.89
+NP*dt VP*vbd
+ADVP*rb NP*prp VP*vbz
+SBAR*in NP*prp VP*md
+ADVP*rb NP*dt VP*vbz
+S*np NP*dt VP*vbz
+NP*np VP*vbz
+NP*dt VP*vp
+CC VP*vb
+NP*prn VP*vbz
+S*np S*np
+NP*prp VP*vbz
+NP*prp VP*vbp
+
+# id=part2_nopunctuation.90
+`` S*np VP*vbz
+NP*nnp VP*vbz
+ADVP*rb ADVP*cc NP*dt VP*vbp
+PP*vbg NP*prp VP*vbz
+S*np CC S*np
+S*adjp NP*prp VP*vbz
+VP*vb
+NP*prp VP*vbd
+VP*vb
+WHNP*wp SQ*vbz
+NP*dt VP*s
+PP*in NP*prp VP*vbp
+ADVP*rb NP*prp VP*vbp
+NP*prp VP*vbp
+NP*nn PRN*, VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vbd
+NP*prp VP*vbd
+NP*prp VP*vbd
+S*np
+ADVP*rb ADVP*rb NP*prp ADVP*rb VP*vbd
+NP*prp VP*vbz
+CC PP*in SBAR*whadvp NP*dt VP*vbz
+ADVP*rb NP*nn VP*vbz
+S*frag VP*vbd NP*dt
+ADVP*rb NP*prp VP*vbd
+S*np NP*prp VP*vbp
+NP*prp VP*vbp
+NP*prp VP*vbp
+SBAR*in NP*prp VP*vbd
+SBAR*rb SQ*vbp
+FRAG*intj NP*prp VP*vbp
+S*np NP*prp VP*vbp
+CC PP*in VP*vbz NP*np
+S*np CC S*np
+S*vp NP*prp VP*vbp
+S*np CC S*np
+S*s CC S*np
+NP*prp VP*vbp
+S*s VP*vbd NP*prp
+FRAG*intj VP*vbp NP*dt
+NP*prp VP*vbz
+ADVP*rb NP*np
+NP*np PRN*: VP*vbp
+NP*nns ADVP*rb VP*vbp
+NP*prp VP*vbz
+ADVP*rb NP*prp VP*vbp
+S*np CC S*sbar
+NP*prp VP*md
+
+# id=part2_nopunctuation.91
+NP*np VP*md
+NP*dt SBAR*in
+NP*dt VP*vp
+NP*np VP*vbz
+NP*dt VP*vbz
+PP*vbg ADVP*rb VP*vb
+S*np CC S*pp
+NP*np VP*md
+PP*in NP*np VP*vbd
+CC PP*in NP*prp VP*vbd
+NP*dt VP*vbz
+CC NP*jj S*vp NP*np VP*vbz
+NP*dt VP*vbz
+NP-TMP*rb NP*np VP*md
+
+# id=part2_nopunctuation.92
+PP*in PP*advp NP*dt VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*cc
+NP*np
+NP*jj VP*vbp
+S*np CC S*np
+ADVP*rb NP*prp VP*vbd
+NP*prp VP*vbp
+PP*in NP*np VP*vbz
+
+# id=part2_nopunctuation.93
+S*np-tmp CC S*advp
+NP*nnp VP*vbz
+NP*prp VP*vbz
+NP-TMP*nn NP*np VP*vp
+S*advp VP*advp NP*np
+NP*dt VP*vbz
+NP*np VP*vbd
+NP*np VP*vbd
+NP*nnp S*ucp VP*vbd
+ADVP*rb NP*np VP*x
+S*np CC S*pp
+NP*np VP*vbd
+S*np CC S*s
+S*np VP*vbd NP*np PP*in
+NP-TMP*jj NP*prp VP*vbd
+NP*nnp PP*in
+PP*np
+
+# id=part2_nopunctuation.94
+NP*cd NP*np
+CC SBAR*in NP*dt VP*vbp
+S*np CC S*np
+NP*nnp VP*vbz
+NP*nn VP*vbz
+ADVP*rb NP*prp VP*vbp
+PP*in NP*nnp VP*vbz
+NP*dt VP*vp
+SBAR*in NP*dt VP*vbz
+NP*prp ADVP*rb VP*vp
+SBAR*in NP*prp VP*vbz
+
+# id=part2_nopunctuation.95
+S*vp VP*vbp
+NP*prp VP*vbp
+NP-TMP*np S*advp CC S*np
+NP*dt VP*vbz
+NP*prp VP*vbz
+ADVP*rb NP*np VP*vbp
+NP*dt VP*vp
+NP*np VP*vbz
+NP*ex VP*vbz
+S*advp CC S*np
+SBAR*in NP*prp VP*md
+PP*in NP*dt VP*vbz
+ADVP*rb NP*prp$ VP*vbz
+NP*prp VP*md -RRB-
+S*pp S*np CC S*advp
+S*np ADVP*rb S*np
+SBAR*whnp VP*vbz
+VP*vp
+NP*np VP*vbp
+NP*dt VP*md
+SBAR*rb VP*vb
+VP*vb
+NP*jj VP*vbp
+S*np CC S*np
+S*sbar CC S*advp
+VP*vb
+SBAR*in PRN*-lrb- VP*vbz
+S*vp CC S*np
+PP*in NP*prp VP*vbp
+ADVP*rb S*s CC S*pp
+S*vp NP*prp VP*md
+RB ADJP*rb
+NP*dt VP*md
+S*pp NP*prp VP*vbz
+
+# id=part2_nopunctuation.96
+NP*nnp S*advp
+PP*in NP*dt VP*vp
+S*np CC S*np
+PP*in NP*np VP*vbd
+PP*in NP*ex VP*vbd
+NP*np VP*vbd
+CC NP*dt VP*vp
+CC NP*nnp VP*vp
+
+# id=part2_nopunctuation.97
+NP*nnp VP*vbz
+PP*in NP*nnp VP*vbz
+S*vp NP*np VP*vbz
+S*np '' CC S*np
+NP*np PP*in PP*in
+PP*vbg NP*nnp VP*vbz
+PP*in NP-TMP*nn NP*prp VP*vbd
+S*np CC S*np
+NP*dt VP*vbd
+NP*dt VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbd
+NP*np VP*vbp
+PP*in NP*dt VP*vbz
+CC NP*dt VP*vbp
+`` S*np PP*in VP*vbd NP*np
+NP*np ADVP*rb VP*vp
+
+# id=part2_nopunctuation.98
+NP*np VP*vbd
+NP*np VP*vbd
+
+# id=part2_nopunctuation.99
+S*np NP*dt VP*vbz
+NP*np VP*vbn
+PP*in NP*dt VP*vbz
+NP*dt VP*vbd
+PP*to NP*nnp VP*vbd
+
+# id=part2_nopunctuation.100
+NP*nnp VP*md
+S*np VP*vbd NP*np
+NP*np VP*vbd
+S*np NP*dt VP*vbd
+S*np NP*dt VP*vbd
+NP*nnp VP*md
+
+# id=part2_nopunctuation.101
+S*np S*np
+NP*np VP*vbd
+PP*in NP*np VP*vbd
+NP*np VP*vbz
+S*vp NP*nnp VP*vbd
+PP*in NP*dt VP*vbp
+NP*qp VP*vbd
+`` S*np `` VP*vbd NP*np
+`` S*np '' NP*prp VP*vbd
+`` S*sbar VP*vbd NP*np
+CC NP*np VP*vbd
+PP*in NP*dt VP*vbp
+S*pp VP*vbd NP*np
+NP*dt VP*vbz
+NP*np VP*vbd
+
+# id=part2_nopunctuation.102
+NP*np VP*vbz
+ADVP*rb NP*np VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbz
+PP*vbg PP*in NP*nnp VP*vbz
+NP*nnp VP*md
+`` NP*prp VP*md
+S*np VP*vbd NP*nnp NP-TMP*dt
+NP*dt VP*vbz
+`` S*np '' S*np
+`` S*np '' NP*prp VP*advp
+NP*np VP*vbd
+NP*np VP*vbz
+PP*in NP*prp VP*vbd
+NP*prp VP*vbd
+`` S*np VP*vbd NP*np
+`` S*pp CC S*np
+NP*prp VP*vbd
+`` NP*dt ADVP*rb VP*vbz
+`` S*np VP*md
+NP*np VP*vbn
+PP*in NP*dt `` VP*vbz
+S*vp NP*np ADVP*rb VP*vbd
+NP*nnp NP*prp VP*vbd
+S*adjp NP*dt VP*vbp
+
+# id=part2_nopunctuation.103
+PP*in `` S*vp VP*vbp ''
+NP*np VP*vbd
+NP*np PP*in PP*in
+SBAR*in NP*jj VP*vbd ''
+S*np SINV*``
+NP*prp VP*vbp
+NP*np VP*md
+NP*prp VP*vbp
+`` S*s '' VP*vbd NP*np
+`` S*np VP*vbz NP*np SBAR*in
+SBAR*in NP*prp VP*vbz
+CC NP*np VP*md ''
+NP*dt VP*md
+PP*in NP*prp VP*vbp
+NP*prp VP*vbp
+NP*dt VP*vbz
+NP*prp VP*vbd
+`` S*vp VP*vbp
+NP*np NP*np
+NP*ex VP*vbd
+CC NP*ex VP*md ''
+NP*np VP*vbz
+PP*in NP*np VP*vbd
+
+# id=part2_nopunctuation.104
+NP*dt S*s
+CC ADVP*rbs NP*prp VP*vbz
+SBAR*in NP*np VP*vbd
+S*vp NP*np VP*vbn
+SBAR*in NP*dt VP*vbd
+PP*in NP*dt VP*vbz
+PP*in NP*cd VP*vbd
+`` S*pp VP*vbz NP*nnp
+NP*dt VP*vbd
+S*pp S*np S*np
+NP*nnp ADVP*rb VP*vbz
+PP*in NP*nnp VP*vbz
+PP*in NP*ex VP*vbd
+`` CC NP*prp VP*vbd
+NP*prp VP*vbd
+PP*in NP*np VP*vbd
+CC ADVP*np NP*prp VP*vbd
+NP*dt VP*vbz ''
+PP*in VP*vbd NP*np PP*rb
+S*np NP*dt VP*vbz
+NP*prp VP*vbd
+ADVP*rb NP*prp VP*vbz
+NP*dt VP*vbp
+NP-TMP*nn NP*np VP*vbz
+`` PP*in NP*dt VP*vbz
+SBAR*in NP*prp VP*md
+NP*prp VP*vbp
+`` NP*np VP*vbz
+NP*cd ADVP*rb VP*vbz
+PP*in NP*ex VP*vbd
+NP*prp VP*vp
+`` NP*dt VP*vbz
+S*np NP*nns ADVP*rb VP*vbp
+NP*dt VP*advp ''
+NP*np VP*vbz
+PP*in S*np CC S*sbar
+`` PP*in NP*prp VP*vbp
+NP*dt VP*vbp
+CC NP*prp VP*md
+NP*prp VP*vbz
+S*np VP*vbz NP*np
+PP*in NP*nnp VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbz ''
+ADVP*np S*np CC S*np
+NP*prp VP*vp
+`` NP*jj VP*vbp
+
+# id=part2_nopunctuation.105
+NP*nn NP*np
+NP*dt VP*vbd
+PP*in NP*np VP*vbd
+NP*nnp VP*vbd
+S*vp NP*dt VP*vbd
+NP*dt VP*md
+S*np CC S*np
+S*np CC S*np
+PP*in NP*cd VP*vbz
+NP*np VP*vbd
+NP*np VP*vbd
+NP*nnp VP*vbd
+`` S*np VP*vbd NP*dt
+NP*prp VP*vbp ''
+`` S*np NP*nnp VP*vbd
+CC NP*prp VP*vbp
+NP*prp VP*vbd ''
+
+# id=part2_nopunctuation.106
+S*np NP*nnp NP-TMP*nn VP*vbd
+`` S*vp NP*dt VP*vbz
+PP*in PP*in NP*np VP*vbd
+S*vp VP*vbd NP*np S*vp
+PP*in
+ADVP*rb SBAR*in NP*dt VP*vbz
+NP*dt VP*vbz
+S*advp NP*np VP*vbd
+NP*dt VP*vbd
+ADVP*in NP*np VP*vp
+NP*dt VP*vbz
+S*np '' PRN*s S*np
+CONJP*rb SINV*vp CC S*s
+S*np NP*prp VP*vp
+`` NP*prp NP*prp$ '' NP*prp VP*vbd
+S*np VP*vbd NP*np
+`` NP*dt VP*vbz
+S*np CC S*sbar S*np
+ADVP*rb S*`` S*np S*vp
+PP*in NP*dt VP*vbz
+CC NP*np
+NP*dt VP*vbd
+NP*np VP*vbp
+NP*np VP*vbd
+NP*dt VP*vbz ''
+NP*jj VP*md
+S*np NP*prp VP*vbd
+NP*nnp VP*vbd
+`` PP*in NP*prp VP*vbp ''
+NP*dt VP*vbz
+NP*np VP*vbn
+`` S*pp VP*vbd NP*nnp
+PP*in NP*prp VP*vbd
+S*vp NP*nnp VP*vbz
+`` S*pp '' NP*prp VP*vbd
+S*advp NP*prp VP*vbz
+NP*prp VP*vbd
+NP*np VP*vbd
+NP*prp ADVP*rb VP*vbz
+PP*in NP*np VP*vbd
+NP*np VP*vbz
+PP*vbg NP*np VP*vbd
+VBD NP*prp VP*vbn
+NP*dt VP*vbz
+`` CC SBAR*whnp VP*vbz
+
+# id=part2_nopunctuation.107
+NP*nns S*np
+VP*advp VP*advp NP*prp
+ADVP*rb NP*prp VP*vbp
+NP*np PP*in PP*in
+NP*np VP*vb
+NP*np VP*vbn
+VP*vb
+S*np S*np
+S*np CC S*np
+ADVP*rb VP*vbz NP*nn S*vp
+S*np S*np
+NP*nn NP*nnp S*np PP*in
+
+# id=part2_nopunctuation.108
+NP*nnp NP*np
+PP*vbg NP*prp VP*vbz
+SBAR*in NP*prp VP*vbp
+ADVP*rb NP*dt VP*vbz
+SBAR*in WHNP*wp SQ*vp
+ADVP*rb NP*jj VP*md
+NP*np VP*vbz
+SBAR*in NP*prp VP*vbz
+S*adjp NP*np VP*vp
+ADVP*rb NP*prp VP*md
+CC NP*nnp VP*vbz
+ADVP*rb NP*nnp VP*md
+S*pp S*np
+PP*in NP*rb VP*vbp
+SBAR*whnp VP*vbz
+NP*dt VP*vbz
+PP*in NP*np VP*vbz
+NP*prp VP*vbz
+SBAR*in WHNP*wp SQ*md
+SBAR*in NP*prp VP*md
+NP*prp VP*vbz
+NP*np VP*vbz
+NP*nnp ADVP*rb VP*vbz
+S*np CC S*np
+
+# id=part2_nopunctuation.109
+NP*nnp S*s
+NP*np VP*vbz
+PP*in PRN*, NP*jj VP*vbd
+NP*np VP*vbd
+`` S*np '' VP*vbd NP*np
+`` S*np '' VP*vbd NP*dt
+`` S*s '' VP*vbd NP*nnp
+S*np NP*dt VP*md
+NP*np VP*vbd
+S*vp NP*dt VP*vbd
+NP*jj VP*vbz
+`` SBAR*whadvp NP*ex VP*vbz
+CC PRN*s `` NP*prp VP*vbd
+S*vp NP*np VP*vbd ''
+`` NP*np VP*-rrb-
+S*np NP*prp VP*vbd
+NP*dt PP*in S*vp
+NP*prp VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbz
+S*vp NP*dt VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+PP*in NP*nnp VP*md
+NP*dt VP*md
+NP*np VP*md
+PP*in NP*prp VP*vbz
+NP*nns VP*vbp
+`` S*advp '' VP*vbd NP*np
+`` INTJ*uh NP*prp VP*vbp
+INTJ*uh NP*nns VP*vbp
+CC RB NP*np
+S*np NP*nnp VP*vp
+S*`` NP*prp VP*vbd
+PP*in NP*nnp VP*vbz
+PP*in NP*dt VP*vbp
+S*np NP*dt VP*vbd
+NP*nnp VP*vp
+`` S*np VP*vbd NP*np
+PP*in NP*prp VP*vbp
+NP*prp VP*vbz ''
+ADVP*rb PP*in NP*dt VP*vbz
+PP*vbg
+NP*dt VP*vbz
+S*np NP*dt VP*md
+
+# id=part2_nopunctuation.110
+NP*nnp PRN*-lrb- NP*np NP*np
+VP*vbd NP*prp PP*in
+NP*np
+NP*np VP*md
+CC SBAR*whnp
+NP*np VP*vbz
+ADJP*rbr SBAR*whnp
+S*vp NP*nn VP*vbp
+NP*prp VP*vbd
+PP*in VP*vbd NP*np
+PP*in NP*np
+SBAR*in VP*vbd
+S*np VP*vbd NP*nnp
+VP*advp VBP NP*np ADJP*jj
+NP*dt PP*in PP*in
+NP*np VP*vbd
+NP*qp PP*np
+S*s NP*np VP*vbd
+ADJP*jjr VP*vbz NP*np
+RB NP*adjp VP*vbp
+NP*np NP*np VP*vbn
+NP*dt PP*in PP*in PP*in
+FRAG*np NP*prp VP*vbd
+S*np NP*prp VP*vbd
+NP*prp VP*advp
+NP*nns VP*vbp
+NP*jj VP*vbp
+NP*prp$ VP*vbd
+PP*in NP*dt VP*vbd
+PP*in NP*nnp VP*vbz
+NP*dt VP*vbd
+NP*dt VP*vbz
+NP*prp VP*vbd
+PP*in NP*nnp VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbd
+PP*in `` S*np ''
+NP*np VP*vbp
+S*pp VP*vbd NP*np
+NP*prp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbz
+S*np `` S*ucp
+NP*prp VP*vbz ''
+CC NP*np
+NP*dt PP*in
+
+# id=part2_nopunctuation.111
+WHNP*wdt SQ*vp
+NP*np VP*md
+NP*np VP*vbp
+PP*vbg NP*prp VP*vp
+NP*np VP*vbp
+NP*np VP*vbd
+NP*np ADVP*rb VP*vbd
+NP*np VP*vbd
+S*np CC S*np
+NP*np VP*vbd
+PP*vbg NP*prp VP*vbd
+S*np CC S*pp
+NP*dt VP*vbd
+NP*np VP*vbd
+PP*vbg NP*dt VP*vbn
+ADVP*rb SBAR*in NP*dt VP*vbz
+NP*np ADVP*rb VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+PP*in
+S*np CC S*np
+S*np NP*prp VP*vbd
+`` NP*np VP*vbd ''
+CC NP*prp VP*vbd
+PP*in NP*dt VP*vbd
+S*np RB S*np
+ADVP*rb PRN*: NP*prp ADVP*rb VP*vbd
+NP*np VP*vbn
+PP*to S*np VP*vbd
+ADVP*rb NP*np VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbn
+NP*nnp VP*vbd
+VP*pp
+CC NP*np
+NP*dt VP*vbd
+VP*vbd
+NP*dt VP*vbd
+S*vp VP*vbz
+NP*dt VP*vbd
+NP*dt VP*vbd
+PP*vbg
+VP*vbd
+NNP NNP
+S*np S*advp
+PP*in NP*dt VP*vbd
+S*np CC S*np
+NP*np VP*vbp
+NP*np VP*vbz
+S*vp NP*wdt VP*vbz
+PP*in NP*dt VP*vbd
+PP*vbg NP*dt VP*vbd
+NP*np VP*vbd
+PP*vbg NP*nnp VP*vp
+NNP NNP NNP NNP
+PP*cc
+VP*vbd
+ADVP*rb NP*np VP*vbd
+ADVP*rb NP*prp VP*md
+NP*nnp VP*vbd
+PP*vbg S*np CC S*np
+NP*prp ADVP*rb VP*vbd
+NP*np
+PP*in S*np NP*dt VP*vbd
+S*np CC S*np
+SBAR*in NP*prp VP*vbd
+VP*pp
+NP*dt VP*vbd
+NP*dt VP*vbp
+NP*np VP*md
+S*np CC S*sbar
+S*np CC S*np
+CC NP*prp VP*md
+SBAR*in NP*prp VP*vbz
+
+# id=part2_nopunctuation.112
+NP*dt PP*in
+PP*in NP*dt VP*vbp
+NP*np VP*vbd
+PP*vbg S*np RB S*np
+NP*dt VP*vbn
+S*np CC S*np
+PP*in NP*np VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbz
+ADVP*rb PP*vbg VP*md
+SBAR*in NP*np VP*vbz
+PP*in NP*cd VP*vbd
+S*np CC S*np
+NP*dt VP*vbd
+S*np NP*prp VP*md
+SBAR*in NP*np VP*vbd
+S*vp NP*np VP*vbd
+`` NP*dt VP*md
+NP*dt VP*vbd
+S*np VP*vbd NP*np
+
+# id=part2_nopunctuation.113
+NP*nnp FRAG*sbar
+NP*np VP*vbp
+PP*in NP*dt VP*vbz
+SBAR*in NP*np VP*vbp
+NP*dt VP*vbz
+NP*nnp VP*vbz
+SBAR*rb NP*nns VP*vbp
+S*np S*np
+S*np CC S*np
+S*np S*np
+NP*dt VP*vbz
+NP*jj VP*vbp
+NP*nn VP*md
+ADVP*advp NP*qp VP*vb
+NP*dt VP*vbz
+S*np S*np
+S*np RB S*pp
+PP*in NP*rb VP*vbp
+PP*in NP*dt VP*vbz
+ADVP*rb NP*np VP*vbz
+SBAR*in NP*prp VP*vbz
+PP*in S*np S*np S*advp CC S*np
+NP*cd VP*vbz
+NP*prp VP*vbz
+
+# id=part2_nopunctuation.114
+VP*vbz
+PP*vbg NP*jj VP*md
+`` S*np VP*vbz NP*dt
+PP*in NP*np VP*vbd
+PP*in NP*np VP*vbd
+NP*dt VP*vbd
+PP*jj NP*prp VP*vbd
+NP*dt VP*vbd
+S*vp NP*np VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+NP*dt VP*vp
+NP*dt VP*vbd ''
+S*np S*s
+PP*vbg S*vp NP*jj VP*md
+NP*prp VP*vbz
+`` S*np VP*vbz NP*dt
+NP*jj VP*vbd
+`` S*np NP*prp VP*vbd
+SBAR*in VP*md
+MD NP*np VP*vb
+
+# id=part2_nopunctuation.115
+S*np S*np
+NP*nnp VP*vbz
+PP*in NP*np VP*vbz
+PP*in NP*np ADVP*rb VP*md
+NP*nnp ADVP*rb VP*vbd
+S*np `` S*s
+PP*vbg NP*np VP*vbz
+VP*vbg
+S*np ''
+ADVP*rb NP*nn VP*md
+RB NP*dt VP*vbp
+S*vp NP*nns VP*md
+PP*in NP*prp VP*md
+S*np S*np
+`` WHNP*wp SQ*vp ''
+VP*vp
+NP*prp VP*vbz
+S*advp S*frag
+PP*in NP*nn VP*vbz
+S*np S*np
+NP*dt VP*vbd
+S*np S*np
+-LRB- ADVP*rb VP*vp
+ADVP*rb NP*prp VP*md -RRB-
+SBAR*in NP*ex VP*vbp
+NP*prp VP*vbz
+ADVP*rb NP*prp ADVP*rb VP*vbp
+ADVP*rb NP*np VP*vbp
+NP*np VP*md
+ADVP*rb NP*np VP*vbz
+CC ADVP*rb NP*prp VP*vbz
+NP*nn VP*vbz
+S*sbar S*np
+S*np PRN*, RB S*np
+PP*in NP*nns VP*md
+S*np S*np
+CC NP*np VP*md
+S*np S*np
+S*sbar S*np
+SBAR*in NP*prp VP*vp
+NP*np VP*vbz
+NP-TMP*np S*np CC S*rb
+NP*nnp VP*vbz
+X*np VP*vbz
+PP*in NP*np VP*vbp
+S*advp S*np
+NP*np VP*vbd
+ADVP*rb NP*dt VP*vbp
+NP*np VP*vbz
+S*advp S*np
+NP*nns VP*vbp
+ADVP*rb NP*np VP*md
+NP*np VP*vbz
+
+# id=part2_nopunctuation.116
+NP*np VP*vbd
+S*np VP*vbz NP*np
+S*np NP*prp VP*vbp
+NP*dt NP*np
+S*vp VP*md
+NP*np VP*vbd
+NP*prp VP*vbz
+PP*in NP*prp VP*vbd
+S*np RB S*np
+PP*vbg NP*dt VP*vbd
+NP*dt VP*vbz
+
+# id=part2_nopunctuation.117
+NP*dt VP*vbd
+NP*np VP*vbd
+NP*np VP*vbz
+NP*np VP*vbp
+PP*vbg NP*dt VP*vbp
+PP*in NP*nns VP*vbp
+NP*np VP*vbd
+NP*np VP*vbz
+PP*in NP*np VP*md
+NP*np VP*vbz
+NP*prp VP*vbz
+
+# id=part2_nopunctuation.118
+PP*in NP*dt VP*vbd
+S*np S*vp S*np S*np S*pp
+NP*np ADVP*rb VP*vbp
+PP*in NP*np VP*vbz
+NP*dt VP*vbz
+SBAR*in ADVP*rb ADVP*jj S*np
+NP*nnp VP*vbz
+`` NP*dt VP*vp
+NP*dt VP*vp
+ADVP*rb SBAR*in NP*cc VP*md
+SBAR*whnp VP*vbz
+`` S*np VP*vbz NP*dt S*vp
+NP*dt VP*vbz
+S*np CC S*np
+
+# id=part2_nopunctuation.119
+NP*jj VP*vbz
+VP*vb
+PP*in NP*dt VP*vbz
+PP*vbn NP*nnp VP*vbz
+NP*prp VP*vbz
+`` PP*in NP*dt VP*vbz
+NP*np VP*vbz
+SBAR*in NP*dt VP*vbd
+NP*dt VP*vp
+S*np CC S*np
+NP*np VP*vbz
+`` S*sbar '' VP*vbz NP*np
+NP*prp VP*md
+NP*dt VP*md
+NP*prp VP*md
+CC PP*in NP*prp VP*md
+RB PP*in NP*dt VP*md
+NP*nn VP*vbz
+PP*vbg VP*vbz NP*np
+NP*dt VP*vbz
+S*np IN S*np
+NP*ex VP*vbz
+NP*dt VP*vbz
+SBAR*in NP*dt VP*md
+
+# id=part2_nopunctuation.120
+NP*np VP*vbz
+NP*np VP*vbz
+PP*in NP*np VP*vbz
+`` PP*in PRN*, NP*dt VP*vbd
+`` S*np VP*vbd NP*np S*vp
+NP*np VP*vbz
+S*s S*s
+PP*vbg NP*prp VP*vbz
+S*np PRN*-lrb- CC S*np
+NP*np VP*md
+S*np RB S*np
+`` S*s VP*vbd NP*np
+NP*dt VP*vbz
+ADVP*rb PP*in NP*np VP*md
+NP*np VP*md
+NP*np VP*vbz
+NP*dt VP*md
+PP*in NP*np VP*md
+S*np S*np
+NP*dt VP*md
+S*np CC S*np
+S*np S*advp S*np PP*jj
+S*`` NP*prp VP*vbd
+NP*np VP*md
+S*np NP*nns VP*vbp
+NP*nn VP*vbz
+PP*in NP*dt VP*md
+NP*prp VP*md
+`` S*np VP*vbd NP*nnp PP*in
+ADVP*in PRN*, NP*np VP*md
+NP*dt VP*vbz
+NP*nns VP*vbd
+`` S*np NP*dt VP*vp
+NP*np VP*vbd
+
+# id=part2_nopunctuation.121
+NP*jj VP*vbp
+PP*in NP*jj VP*vbd
+SBAR*whadvp X*dt NP*np
+PP*in NP*jj VP*vp
+NP*nnp VP*vbd
+NP*np VP*vbd
+PP*in NP*dt VP*vbd
+NP*np VP*vbp
+NP*dt VP*vbd
+NP*np VP*vbp
+PP*in NP*dt VP*vbd
+NP*np VP*vbd
+S*vp S*np
+PP*in NP*nn VP*vbd
+NP*nns VP*vbd
+NP*np VP*vbd
+NP*np VP*vbn
+NP*np VP*vbd
+PP*vbg NP*np VP*vbd
+NP*nns VP*vbd
+PP*in NP*dt VP*vbd
+NP*cd VP*vbd
+NP*np VP*vp
+NP*prp$ VP*vbn
+S*np CC S*np
+
+# id=part2_nopunctuation.122
+NP*dt PP*to PP*in
+PP*vbg NP*ex VP*vbz
+NP*prp VP*vbd
+NP*prp VP*vbd
+NP*np VP*vbz
+NP*prp VP*vbz
+NP*np VP*vbp
+S*pp S*np
+NP*np VP*vbp
+S*np S*np
+PP*vbg PP*jj NP*nnp VP*vbz
+NP*nnp VP*vbd
+NP*prp VP*vbd
+S*`` NP*prp VP*vbd
+NP*prp VP*vbd
+S*np CC S*s
+S*np NP*prp VP*vbd
+NP*nnp VP*vbd
+NP*np VP*vbd
+
+# id=part2_nopunctuation.123
+NP-TMP*np S*np S*np
+NP*np VP*vbp
+NP*np VP*vbn
+PP*vbg NP*np VP*vbd
+S*np S*pp
+NP*np VP*vbz
+NP*dt VP*vbd
+ADVP*np PP*in NP*nnp VP*vbd
+NP*prp VP*vbd
+NP*np VP*vbd
+NP*nns VP*vbp
+ADVP*rb NP*np VP*md
+S*np CC S*np
+S*np NP*np VP*vbp
+SBAR*whnp VP*vbz
+NP*nnp ADVP*rb VP*vbz
+
+# id=part2_nopunctuation.124
+VP*vb
+NP*nnp VP*vbp
+NP*nn VP*vbz
+NP*nn VP*vbz
+S*np NP*dt VP*vbp
+S*s S*pp
+NP*nnp VP*vbd
+S*np S*np
+NP*nnp VP*vbd
+SBAR*in NP*dt VP*vbz
+NP*np ADVP*rb VP*vbz
+NP*nnp VP*vbd
+PP*vbg NP*np VP*md
+SBAR*in NP*dt VP*vbz
+NP*nnp ADVP*rb VP*vbd
+`` S*sbar VP*vbd
+
+# id=part2_nopunctuation.125
+NP*nnp S*np
+PP*in NP*np VP*vbd
+ADVP*rb NP*dt VP*vbz
+S*np S*np
+NP*np VP*vbd
+ADJP*fw PRN*: VP*vbd SBAR*in
+`` S*np CC S*pp
+NP*nnp ADVP*rb VP*vbd
+S*vp VP*md
+PP*vbg NP*prp VP*vbz
+S*sbar S*pp
+`` S*s VP*vbd NP*nnp
+NP*prp ADVP*rb VP*vbd
+S*vp NP*prp VP*vbz
+`` S*s VP*vbd NP*nnp
+PP*in NP*np VP*vbn
+
+# id=part2_nopunctuation.126
+NP*np PP*in PP*in PP*in PP*in VP*vbp
+NP*np PRN*, NP*dt VP*vbz
+NP*np VP*md
+S*advp S*np
+PP*in NP*prp VP*vbd
+S*advp CC S*advp
+NP*nnp VP*vbd
+SBAR*in NP*prp VP*vbp
+PP*in NP*nnp VP*vbz
+NP*np VP*vbz
+NP*np VP*vbp
+S*np VP*vbd NP*np
+S*np NP*nnp VP*md
+NP*jj VP*vbp
+PP*in NP*nnp VP*md
+PP*vbg NP*np VP*md
+SBAR*in S*np CC S*np
+NP*nn VP*vbz
+
+# id=part2_nopunctuation.127
+NP*nnp NP*np
+PP*vbg NP*np VP*vbp
+NP*np VP*vbz
+SBAR*in VP*vbd
+PP*vbn NP*nn VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+ADVP*rb NP*np VP*vbd
+PP*vbg S*np S*np CC S*np
+`` S*s VP*vbd NP*np
+PP*vbg NP*dt VP*vbz
+S*vp NP*dt VP*vbz
+S*`` VP*vbd NP*np
+`` S*np NP*nnp VP*vbd
+NP*jj VP*vbd
+S*np IN S*np
+
+# id=part2_nopunctuation.128
+NP*nnp `` S*pp
+CC PP*in NP*dt VP*vbz
+NP*dt VP*vbz
+`` S*np '' VP*vbz NP*dt
+`` ADVP*rb NP*np VP*vbz
+S*np VP*vbz NP*nnp
+PP*in NP*np VP*vbz
+IN NP*nns `` NP*np VP*vbz
+S*np VP*vbz NP*dt `` S*s
+VP*to
+NP*np PRN*, `` NP*np VP*vbz ''
+PP*in NP*np VP*vbz
+CC VP*vbz
+VP*np
+ADVP*rb NP*np VP*vbp
+`` SBAR*in PRN*: NP*np VP*vbz
+PP*in PP*in NP*ex VP*vbp
+PP*in PP*in S*np CC S*np
+
+# id=part2_nopunctuation.129
+NP*nns PP*in NP*nnp `` S*s
+PP*in NP*nnp VP*vbp
+NP*np VP*jj
+S*vp NP*nn VP*vbz
+`` S*np CC S*np
+NP*np VP*vbz ''
+`` ADVP*rb NP*np VP*vbz ''
+NP*nnp VP*vbz
+NP*np VP*vbd
+NP*prp VP*vbz
+PP*in NP*np VP*vbz
+`` S*s VP*vbd NP*np
+`` NP*prp VP*vbp
+`` S*np CC S*np
+S*np CC S*np
+`` NP*dt VP*vbz
+CC PP*in NP*np VP*vbz
+NP*nnp ADVP*rb VP*vbd
+`` ADVP*rb NP*dt VP*vbz
+
+# id=part2_nopunctuation.130
+PP*np NP*prp VP*vbd
+NP*dt VP*vbz
+`` PP*in VP*vbz
+`` S*np VP*vbz NP*nnp
+`` S*pp CC S*np
+SBAR*whnp NP*prp VP*vbp
+ADVP*in PP*in NP*prp VP*vbp
+NP*nnp VP*vbd
+`` S*np CC S*np
+S*advp CC S*np
+NP*prp VP*vbz
+PP*in NP*dt VP*vbz
+NP*np VP*vb
+S*np CC S*np
+
+# id=part2_nopunctuation.131
+S*np S*pp S*pp
+NP*dt VP*vbz
+PP*in NP*np VP*md
+SBAR*rb NP*dt VP*md
+`` S*s VP*vbz
+NP*ex VP*vbz
+S*pp CC S*np
+PP*in PRN*: NP*prp VP*md ''
+PP*in NP*nnp VP*vbz
+SBAR*in ADVP*rb NP*prp$ VP*md
+ADVP*rb NP*nns VP*vbp
+PP*in NP*prp VP*vbp
+ADVP*rb NP*np VP*md
+PP*in PP*in NP*`` VP*vbz
+NP*np `` VP*vp
+
+# id=part2_nopunctuation.132
+NP*nnp
+DT JJ JJ NN
+NP*rb VP*vbz
+S*np S*np
+NP*dt VP*vbd
+NP*np VP*vb
+S*np `` S*np
+S*np S*np ''
+S*s SQ*md
+S*cc S*np
+ADVP*rb PP*in NP*ex VP*vbp
+S*np S*advp
+NP*np VP*vp
+`` VP*vb
+S*np S*sbar
+NP*np
+ADVP*rb PP*in NP*np VP*vbz
+NP*cd VP*vbp
+S*np NP*nnp
+NP*nnp NP*nns
+PP*in NP*dt VP*vp
+S*pp CC S*np
+ADVP*rb PP*in NP*nnp VP*vbz
+SBAR*whnp VP*md
+
+# id=part2_nopunctuation.133
+S*np S*pp
+CC NP*jj VP*vbp
+NP*qp VP*vbp
+INTJ*rb ADVP*rb NP*nns VP*vbp
+ADVP*rb PP*to NP*prp VP*vbp
+NP*prp VP*vbp
+NP*np VP*vbz
+NP*np VP*vbz
+ADVP*rb PRN*s NP*np VP*vbp
+NP*prp VP*vbz
+NP*dt ADVP*rb VP*vbz
+NP*cd VP*vbp
+PP*in NP*dt VP*vbz
+NP*nnp PP*in
+NP*prp VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbz
+NP*dt VP*vbd
+NP*np ADVP*rb VP*vbz
+NP*np VP*vbp
+PP*in NP*dt VP*vbz
+PP*in NP*np VP*vbp
+PP*in NP*dt VP*vbz
+PP*in NP*prp VP*vbz
+NP*np VP*vbp
+PP*in S*np CC S*advp
+NP*nns ADVP*rb VP*vb
+PP*in NP*nns VP*vbp
+NP*advp NP*np
+NP*prp VP*vbz
+
+# id=part2_nopunctuation.134
+NP*nnp NP*nnp S*np NP*np
+NP*nnp VP*vbz
+SBAR*in NP*prp VP*vbd
+NP*np VP*vbd
+PP*vbg ADVP*rb NP*np VP*md
+
+# id=part2_nopunctuation.135
+S*np S*np S*adjp
+NP*dt VP*vbd
+NP*dt S*vp VP*vbd
+NP*dt VP*vbz
+NP*cc PP*in NP*dt VP*vp
+NP*np VP*vbz
+NP*np VP*vbz
+S*np CC S*np
+S*pp CC ADVP*rb S*np
+S*np S*np
+CC SBAR*in
+CC NP*prp VP*vbp
+NP*np VP*vbz
+ADVP*rb PP*in SBAR*in NP*prp VP*vbd
+ADVP*rb NP*dt VP*vbp
+IN NP*np VP*vbz
+NP*prp VP*vbp
+SBAR*whnp NP*np ADVP*rb VP*vbz
+PP*in NP*dt VP*vbz
+PP*in NP*np VP*vbz
+PP*in NP*np VP*vbd
+CC ADVP*rb NP*np
+ADVP*rb NP*prp VP*vbz
+PP*in NP*np VP*vbz
+NP*cd VP*vbz
+PP*in S*vp VP*md
+CC S*vp NP*prp VP*vbz
+
+# id=part2_nopunctuation.136
+NP*np VP*vb
+S*np CC ADVP*rb S*np
+PP*in NP*nn VP*vbd
+S*vp S*np
+NP*np VP*vbz
+`` S*np '' VP*vbz NP*np
+NP*dt VP*vbd
+S*np VP*vbz NP*np
+VP*vb
+`` NP*dt VP*md
+ADVP*rb PP*in
+ADVP*rb NP*np VP*vbp
+NP*jj VP*md
+PP*in NP*dt
+NP*np VP*vbz
+PP*in NP*dt VP*vbp
+
+# id=part2_nopunctuation.137
+NP*nns FRAG*advp
+VP*vb
+NP*dt ADVP*rb VP*vp
+S*s VP*vbz NP*np
+NP*nn VP*vbz
+NP*np NP*np VP*vbg PP*jj
+NP*np VP*vbp
+NP*np VP*vbz
+ADVP*rb NP*np VP*vbz
+ADVP*rb S*advp CC S*sbar
+
+# id=part2_nopunctuation.138
+NP*np VP*vbz
+S*np CC S*np
+NP*nnp VP*vbz
+PP*np PP*in NP*nnp VP*vbd
+NP*np VP*vp
+`` S*np VP*vbd NP*np
+PP*vbg NP*nnp VP*vbz
+
+# id=part2_nopunctuation.139
+NP*nnp ADVP*rb VP*vbz
+NP*nn VP*vbz
+S*pp VP*vbp NP*np
+S*np NP*nnp VP*vbz
+NP*nn VP*,
+NP*nn VP*,
+NP*nn VP*-rrb-
+NP*jj VP*vbp
+PP*advp NP*prp VP*vbz
+S*np S*pp S*pp
+S*np CC S*pp
+NP*dt VP*vp
+PP*in NP*adjp VP*vbz
+PP*in NP*dt VP*md
+CC SBAR*in NP*prp VP*vbz
+CC NP*ex VP*vbp
+S*np S*np
+S*np CC S*s
+
+# id=part2_nopunctuation.140
+S*sbar S*np
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbp
+SBAR*in NP*dt VP*vp
+S*vp VP*vbz
+NP*np VP*vbd
+
+# id=part2_nopunctuation.141
+NP*nns S*np
+NP*np VP*vbz
+VBZ NP*dt VP*vbg
+NP*dt VP*vbz
+NP*dt VP*vbz
+PP*in NP*dt VP*vbz
+RB ADVP*rb
+NP*np VP*vbz
+NP*np VP*vbz
+NP*np VP*vbz
+PP*vbg NP*np S*vp VP*md
+`` NP*dt VP*vp ''
+PP*in NP*dt VP*vbp
+PP*vbg NP*jj VP*vbz
+S*vp NP*prp VP*md
+PP*in
+PP*in SBAR*whadvp NP*cd VP*vbp
+PP*in NP*qp VP*vbz
+NP*rb PRN*-lrb- PP*in
+NP*nns VP*vbp
+PP*in NP*nnp VP*vbp
+PP*in NP*nnp VP*vp
+S*pp CC S*np
+S*pp S*np
+
+# id=part2_nopunctuation.142
+NP*np VP*vbp
+`` S*np NP*prp VP*vbz
+NP*dt VP*vbn
+NP*np PP*in VP*vbz
+S*advp VP*vbz NP*np
+S*np S*s
+PP*in NP*nnp VP*vbz
+CC S*vp NP*dt VP*vbp
+`` S*np '' VP*vbz NP*np `` S*s
+S*rb S*np
+NP*prp VP*vbz
+S*vp VP*vbp
+NP*dt VP*vbz
+S*pp S*np
+`` S*np '' VP*vp NP*jj
+NP*prp VP*vbz
+S*np S*np
+S*np CC S*sbar
+
+# id=part2_nopunctuation.143
+NP*np VP*vbd
+NP*np VP*vbp
+RB VP*vbn VP*vbz NP*np
+`` PP*in PRN*, NP*dt VP*vbd
+`` PP*in NP*prp VP*vbd
+S*np `` S*np
+ADVP*rb NP*ex VP*vbp
+NP*np VP*vbp
+S*pp NP*jj VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbd
+S*np ADVP*rb S*np
+PP*in S*vp VP*vbz
+
+# id=part2_nopunctuation.144
+S*sbar CC S*advp
+NP*np VP*vbp
+S*np NP*nn VP*vbd
+SBAR*whadvp NP*np VP*vbp
+NP*np VP*vbz
+NP*dt VP*md
+CC ADVP*rb NP*ex VP*md
+NP*nns PP*in
+NP*dt VP*vbd
+SBAR*whadvp NP*prp VP*vbd
+S*advp CC S*pp
+`` NP*nnp VP*vp ''
+NP*np VP*vbz
+NP*dt VP*vbz
+PP*in NP*ex VP*vbp
+PP*in SBAR*rb VP*vbp
+NP*nn S*vp
+S*np NP*jj VP*vbz
+PP*in NP*np VP*vp
+VP*to
+S*cc S*np
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+S*pp CC S*np
+NP*np ADVP*rb VP*vbz
+NP*np VP*vbp
+NP*nnp VP*vbz
+PP*in NP*dt
+NP*jj S*vp VP*vbz
+SBAR*rb NP*dt VP*vp
+NP*prp VP*vbz
+
+# id=part2_nopunctuation.145
+NP*nnp VP*vbz
+NP*prp VP*md
+NP*np VP*vp
+ADVP*rb NP*prp VP*md
+NP*dt ADVP*rb VP*vbz
+ADVP*rb PP*in NP*dt VP*md
+NP*prp VP*md
+NP*dt VP*vbz
+NP*dt VP*vbz
+ADVP*np NP*prp VP*vbd
+PP*in NP*nnp VP*md
+NP*prp VP*vp
+NP*prp$ VP*md
+NP*nnp VP*vbz
+NP*prp VP*vbz
+NP*prp VP*vbz
+ADVP*rb NP*prp VP*vbd ''
+
+# id=part2_nopunctuation.146
+NP*np VP*vbp
+NP*np PRN*s VP*vbd
+NP*np VP*vbz
+NP*prp VP*vp
+
+# id=part2_nopunctuation.147
+S*vp S*pp CC S*,
+CC PP*in
+ADVP*rb NP*prp VP*md
+NP*prp VP*vbp
+CC NP*prp VP*vbz
+NP*nnp VP*vbz
+VBP NP*prp VP*adjp
+S*np CC S*np
+NP*np VP*vbz
+NP*np ADVP*cc NP*prp VP*vbz
+RB VP*to
+NP*np VP*vbp
+NP*in PP*in
+S*np NP*prp VP*vbp
+NP*prp VP*vbp
+PP*in NP*prp VP*vbd
+CC PP*in NP*ex VP*vbd
+ADVP*rb PP*in NP*prp VP*vbd
+CC NP*prp VP*vbd
+S*vp NP*dt VP*vbz
+VBZ RB NP*prp NP*np
+S*np CC S*np
+NP*prp VP*vbp
+NP*prp VP*vbp
+NP*np VP*vbp
+
+# id=part2_nopunctuation.148
+`` NP*np VP*vbz
+CC FRAG*advp
+S*np VP*vbd NP*nnp
+SBAR*whadvp NP*prp VP*vbd
+`` S*np '' VP*vbz NP*nnp
+S*np CC PRN*, S*np
+NP*dt VP*vbz
+SBAR*in NP*prp VP*md
+IN S*np S*np
+CC ADVP*np
+S*np S*np
+SBAR*in CC ADVP*rb
+PP*in NP*nn VP*md
+S*np CC S*np
+SBAR*in NP-TMP*jj ADVP*rb VP*md
+NP*dt VP*vbp
+PP*in NP*wp VP*vbz
+S*np VP*vbz NP*nn
+S*np S*np
+S*np CC S*np
+NP-TMP*jj NP*np VP*vbd
+NP-TMP*dt NP*dt VP*vbp
+ADVP*rb PP*vbg NP*dt VP*vbz
+CC NP*dt VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*prp VP*vbz
+S*sbar VP*vbz NP*nnp
+NP*dt VP*vp
+S*np CC S*sbar
+NP*dt VP*md
+S*s VP*vbz NP*nnp
+
+# id=part2_nopunctuation.149
+NP*prp$ VP*md
+NP*dt VP*vbd
+NP*np CC S*pp
+NP*dt VP*vbz
+NP*dt VP*md
+NP*prp VP*md
+S*np VP*vbz NP*np
+S*np CC S*np
+NP*prp VP*md
+NP*np VP*vbz
+NP*nnp VP*vbz
+NP*prp VP*vbd
+NP*np VP*vbz
+S*np CC S*np
+
+# id=part2_nopunctuation.150
+NP*np VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbp
+NP*nns VP*vp
+`` S*sbar '' VP*vbz NP*np
+NP*np VP*vbd
+NP*np VP*md
+NP*np VP*vbp
+S*np CC S*advp
+S*advp '' VP*vbz NP*nnp
+NP*np VP*vbz
+SBAR*whnp VP*vbz
+NP*np VP*vbz
+S*np '' VP*vbd NP*nnp
+S*np CC S*np
+NP*np VP*vbz
+NP-TMP*dt NP*np VP*vbz
+NP*nns VP*vbp
+NP*nn VP*vbz
+S*sbar '' VP*vbz NP*nnp
+PP*in NP*np VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbp
+S*s '' VP*vbz NP*nnp
+NP*dt PP*in VP*vbz
+NP*np ADVP*rb VP*vbz
+NP*nnp NP-TMP*dt VP*vbz
+S*s VP*vbz NP*np
+PP*in ADVP*rb NP*dt VP*md
+S*np RB S*sbar
+CC NP*prp VP*md
+
+# id=part2_nopunctuation.151
+NP*nnp S*np
+SBAR*whadvp NP*prp VP*vbd
+S*np CC S*np
+SBAR*in
+NP*dt ADVP*rb VP*vp
+S*np CC S*pp
+NP*nnp VP*vbz
+NP*prp VP*vbd
+NP*prp VP*vbd
+S*np CC RB S*advp
+S*np NP*prp VP*vbd
+NP*np VP*vbz
+NP*np VP*vbz
+NP*jj VP*nn
+PP*in S*np CC S*np
+S*np S*s
+PP*in NP*prp VP*vbz
+NP*jj ADVP*dt VP*md
+S*vp VP*vbz
+ADVP*rb S*vp VP*vbz
+NP*np VP*vbz
+PP*in NP*np VP*vbz CC VP*vbz
+NP*np VP*md
+PP*in NP*prp VP*vbz
+NP*dt VP*vbd
+NP*jj VP*vp
+NP*np VP*vbz
+SBAR*in NP*dt VP*md
+S*np S*np
+NP*dt VP*md
+S*np RB S*np
+
+# id=part2_nopunctuation.152
+NP*np VP*advp
+NP*dt VP*vbd
+PP*rb NP*np VP*md
+NP*dt VP*md
+PP*vbg NP*nnp VP*vbz
+S*np VP*vbd NP*np
+S*np NP*prp VP*vbd
+NP*nnp VP*vbz
+NP*nnp VP*vbz
+NP*np SBAR*whnp VP*vbp
+PP*in NP*nnp VP*vbd
+NP*nnp VP*vbz
+
+# id=part2_nopunctuation.153
+NP-TMP*dt NP*nns VP*vbd
+PP*in NP*prp ADVP*rb VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*np VP*vbd
+NP-TMP*nn NP*dt VP*vbd
+NP*pdt VP*vbd
+PP*in NP*dt VP*vbz
+SBAR*in NP*prp VP*vbp
+ADVP*rb NP*np VP*vbd
+PP*in NP*prp VP*vp
+PP*in NP*prp VP*vbd
+
+# id=part2_nopunctuation.154
+NP*nnp VP*vbz
+S*np NP*nnp VP*md
+NP*prp VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*dt VP*vbd
+NP*nnp VP*vbz
+PP*vbg NP*dt VP*md
+ADVP*rb PP*in NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbz
+NP*nns VP*vbp
+PP*in NP-TMP*nn NP*np VP*vbd
+ADVP*rb PRN*, NP*ex VP*vbz
+S*np NP*dt VP*vbz
+NP*nn VP*vbd
+NP*np VP*vbd
+PP*in NP*nnp VP*vbd ''
+NP*np VP*vbd
+PP*in NP*dt VP*vbd
+NP*np VP*vbd
+
+# id=part2_nopunctuation.155
+S*np NP*nnp VP*vbp
+NP*prp VP*vbz
+NP*np VP*vbz
+NP*nnp VP*vbd
+NP*np VP*vbz
+NP*prp VP*vbd
+NP*np VP*vp
+NP*dt VP*vbd
+NP*prp VP*vbd
+PP*in NP*prp VP*vbd
+NP*nnp VP*vp
+NP*dt VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbz
+S*np RB S*np
+NP*dt ADVP*rb VP*vbz
+NP*nnp VP*vbd
+S*np VP*vbd NP*nnp
+ADVP*rb NP*dt VP*vbd
+NP*dt VP*vbd
+NP*dt VP*vbd
+S*np PRN*, CC S*np
+PP*in NP*prp VP*vbz
+PP*in NP*nnp VP*vbz
+NP*dt VP*vbd
+NP*prp VP*vbd
+S*np '' S*np ''
+PP*in S*pp CC S*np
+NP*dt VP*vbd ''
+PP*in NP*nnp VP*vbz
+
+# id=part2_nopunctuation.156
+S*np S*np
+NP-TMP*nn NP*dt VP*advp
+ADVP*rb S*np CC S*np
+NP*np VP*vbz
+NP*dt VP*vp
+NP*dt VP*vbp ''
+NP*np VP*vbd
+CC PP*in NP*ex VP*vbd
+ADVP*rb NP*dt VP*vbd
+NP-TMP*dt NP*dt VP*vbd
+NP*np VP*md
+NP*dt VP*vbz ''
+ADVP*rb NP*dt ADVP*rb VP*vbd
+NP*dt VP*vbp
+S*np CC S*np
+ADVP*rb NP*dt VP*vbp
+SBAR*rb NP*dt VP*vbp
+NP*dt VP*vp
+
+# id=part2_nopunctuation.157
+NP*np VP*md
+NP*np VP*md
+NP*np VP*vbz
+SBAR*in NP*prp ADVP*rb VP*vbp
+NP*nnp VP*vp
+S*np NP*dt VP*vbd
+NP*prp VP*vbz
+S*np VP*vbd NP*nnp
+PP*vbg NP*prp VP*md
+PP*in NP*dt VP*vp
+NP*np VP*vbz
+PP*in NP*prp VP*vp
+PP*in NP*prp ADVP*rb VP*vbd
+PP*in NP*prp VP*vbz
+
+# id=part2_nopunctuation.158
+NP*nnp VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbz
+NP*dt VP*vbd
+NP*dt ADVP*rb VP*vbz
+S*np PRN*, IN S*np
+NP*dt VP*vbd
+NP*dt VP*md
+PP*vbg NP*dt VP*vbz
+S*s VP*vbd NP*nnp
+ADVP*rb NP*np VP*md
+S*pp VP*vbd NP*nnp
+PP*in NP-TMP*rb NP*dt VP*vbd
+PP*in NP*dt VP*md
+PP*in NP*np VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*dt VP*vbd
+PP*in NP*dt ADVP*rb VP*vbd
+NP*dt VP*vbp
+ADVP*rb NP-TMP*dt NP*prp VP*vbp
+NP*np ADVP*rb VP*vbz
+NP*dt VP*vbd
+PP*in S*np CC S*np
+
+# id=part2_nopunctuation.159
+NP*jj NP*np
+NP*np VP*vbz
+PP*in NP*dt VP*vbz
+NP*dt VP*vbz
+NP*np VP*md
+ADVP*rb NP*prp VP*vbp
+ADVP*rb SBAR*in NP*prp VP*md
+NP*np VP*vbz
+NP*prp VP*vbp
+NP*nns VP*vbp
+S*np CC IN S*np
+PP*in NP*dt VP*vbp
+S*np S*np
+NP*np VP*vbz
+NP*dt VP*md
+S*sbar NP*dt VP*vbd
+PP*in NP*dt VP*vbp
+NP*np VP*vbz
+NP*np VP*vbz
+S*np VP*vbz NP*np
+
+# id=part2_nopunctuation.160
+NP*nn PP*in
+NP*np VP*vp
+NP*dt VP*vbd
+ADVP*rb NP*prp VP*md
+NP*np VP*vbd
+PP*vbg NP*dt VP*md
+S*np VP*vbd NP*nnp
+PP*in NP*dt VP*vbd
+NP*dt VP*vbd
+NP*prp NP*nn VP*vbd
+NP*dt VP*md
+PP*in NP*dt VP*vbd
+
+# id=part2_nopunctuation.161
+NP*np VP*vbz
+NP*nnp VP*vbz
+PP*vbg NP*nnp VP*vbz
+PP*in NP*prp VP*vbd
+NP*np VP*vbz
+SBAR*in NP*nnp VP*vbz
+NP*dt VP*md
+NP*np VP*vbp
+NP*np VP*vbp
+NP*prp VP*vbd
+NP*nnp VP*vbd ''
+CC ADVP*rb NP*prp VP*md
+S*s NP*nn VP*vbd
+NP-TMP*dt NP*nnp VP*vbd
+NP*np ADVP*rb VP*vbd
+NP*prp VP*vbp
+NP*prp VP*vbd
+ADVP*rb NP*prp VP*vbd
+
+# id=part2_nopunctuation.162
+NP*dt VP*vp
+SBAR*in NP*ex VP*md
+NP*np VP*md
+ADVP*rbr PP*to VP*vbp
+ADVP*rb NP*dt VP*vbp
+S*np S*np
+NP*np VP*vbz
+S*s FRAG*np
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*np VP*md
+S*np CC S*np
+PP*in NP*nns VP*md
+S*np CC S*np-tmp
+NP*jj VP*vbp
+NP-TMP*dt NP*jj VP*vbp
+NP*nnp VP*vp
+NP*dt VP*vbp
+NP*dt VP*vbp
+NP*np VP*md
+NP*dt VP*md
+
+# id=part2_nopunctuation.163
+S*np S*np S*np PP*vbg
+NP*dt PP*in
+NP*np PRN*, VP*vbd
+NP*dt VP*vbd
+PP*in NP*nns VP*vbp
+NP*jj VP*vbp
+PP*vbg NP*dt VP*vbp
+PP*vbg NP*dt VP*vbd
+PP*in PP*in NP*jj VP*vbz
+NP*np VP*vbd
+NP*np VP*vbz
+NP*jj VP*vbp
+CC PP*in S*np
+
+# id=part2_nopunctuation.164
+S*np VP*vbz NP*nnp
+NP*np VP*vbz
+NP*np VP*vbz
+PP*in VP*vbd NP*np
+PP*in NP*prp VP*vbd
+NP*prp VP*vbd
+S*np CC S*np
+PP*vbg NP*np VP*vbz
+ADVP*rb PP*in NP*nnp VP*vbz
+NP*prp VP*vbd
+S*np NP*prp VP*vbd
+NP*prp VP*vbp
+S*s NP*prp VP*vbd
+PP*in NP*np VP*vbz
+PP*in NP*nnp VP*vp
+PP*in ADVP*np NP*nnp VP*vp
+S*advp VP*vbd NP*np
+SBAR*in VP*vbz
+NP*nnp ADVP*rb VP*vbp
+
+# id=part2_nopunctuation.165
+NP*dt VP*vbz
+PP*np NP-TMP*dt NP*dt VP*vbd
+S*np VP*vbd NP*np
+ADVP*rb NP*dt VP*vp
+NP*dt VP*vbd
+S*np CC S*pp
+NP*dt VP*vbz
+NP*nnp VP*vbz
+S*np CC S*np
+PP*vbg NP*ex VP*vbd
+PP*in NP*dt VP*vbz
+NP*prp VP*vp
+NP*nnp VP*vbz
+NP*dt VP*vbp
+NP*nnp VP*vbd
+NP*dt VP*vbz
+ADVP*rb NP*pdt ADVP*rb VP*vbd
+RB ADVP*rb NP*dt VP*vbp
+NP*prp VP*vbp
+RB NP*np VP*vbz
+S*np NP*nnp VP*vbd
+NP*prp ADVP*rb VP*vbd
+NP*prp VP*vbz
+NP*nn VP*vbz
+S*np CC S*np
+S*np VP*vbd NP*nnp
+NP-TMP*jj NP*nnp VP*vbd
+NP*prp VP*vp
+NP*prp VP*vbd
+NP*nnp VP*vbd
+PP*vbg NP*dt VP*vbz
+NP*nnp VP*vbz
+NP*dt VP*vbd
+S*np NP*prp VP*vbp
+
+# id=part2_nopunctuation.166
+NP*np VP*md
+PP*vbg NP*np VP*md
+NP*dt VP*md
+CC NP*dt VP*vbp
+NP*np VP*vbp
+NP*dt VP*vbz
+NP*nns VP*vbp
+S*np NP*ex VP*md
+NP*dt VP*vbz
+NP*np VP*md
+NP*np VP*md
+NP-TMP*jj NP*np VP*vbd
+NP*nns VP*vbd
+NP*dt VP*vbp
+ADVP*rb NP*nns VP*vbp
+CC NP*prp VP*vbp
+ADVP*rb NP*dt VP*vbz
+NP*jj VP*vbd
+NP*nn VP*vbz
+NP*jj VP*vbp
+PP*in NP*qp VP*vbp
+MD NP*nns VP*vb
+NP*dt VP*vbp
+PP*in NP*prp VP*md
+NP*np VP*vbz
+NP*prp$ VP*vbz
+NP*np VP*vbd
+NP*prp VP*vbz
+PP*in NP*prp VP*vbp
+S*np VP*vbd NP*nnp
+NP*np ADVP*rb VP*vbz
+S*np VP*vbd NP*nn
+S*np VP*vbp NP*np
+SBAR*in NP*np VP*md
+`` S*pp '' VP*vbz NP*nnp
+NP*nns VP*vbp
+NP*dt VP*vbp
+S*np VP*vbz NP*nnp
+S*np NP*vbg VP*vbp
+PP*vbg S*np CC S*np
+NP*dt ADVP*rb VP*vbp
+RB NP*nns VP*md
+NP*prp VP*vbz
+S*np VP*vbz NP*nnp
+
+# id=part2_nopunctuation.167
+NP*np VP*vbz
+NP*np VP*vbp
+NP*prp VP*vbp
+NP*np VP*vbz
+S*np NP*dt VP*vbd
+NP*nn VP*vbd
+S*np NP*dt VP*vbd
+S*np NP*dt VP*vbd
+
+# id=part2_nopunctuation.168
+NP*nnp VP*vbz
+NP*dt VP*vbd
+NP*dt ADVP*rb VP*vbd
+PP*in NP*nns VP*vbp
+NP*nnp VP*vp
+NP*np VP*vbz
+NP*np VP*md
+NP*np VP*md
+NP*nnps VP*vbd
+NP*nnp VP*vbd
+`` NP*dt VP*vbp
+S*np '' NP*prp VP*vbd
+NP*nnp VP*vbd
+ADVP*rb NP*np VP*vbp
+PP*in NP*prp VP*vbd
+`` S*vp VP*vbd
+NP*nns VP*vbd
+`` S*np '' VP*vbd NP*nnp
+`` NP*prp VP*vbd '' ''
+NP*dt VP*md
+CC NP*dt VP*vbd ''
+NP*np PRN*: VP*md
+ADVP*rb S*np CC S*np
+`` NP*jj '' SBAR*in NP*nns VP*vbd
+NP*np VP*vbd
+`` S*np '' VP*vbd NP*nnp
+`` S*np '' VP*vbd NP*np
+`` NP*dt VP*vbz
+NP*dt VP*vbp ''
+
+# id=part2_nopunctuation.169
+NP*nnp `` NP*np VP*vbd
+S*np NP*np VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbd
+NP*np VP*vbp
+`` S*s '' VP*vbd NP*nnp
+NP*nnp VP*vbd
+`` S*np '' NP*prp VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*nac VP*vp
+NP*dt VP*vbd
+
+# id=part2_nopunctuation.170
+NP*nn VP*vbz
+NP*dt VP*np
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*nnp VP*vbz
+NP*nns VP*vbp
+S*np CC S*np
+S*np CC S*np
+NP*np VP*vbz
+CC SBAR*in NP*prp$ VP*vbz
+NP*adjp VP*vbd
+`` S*np '' NP*prp VP*vbd
+`` S*np S*np CC S*np ''
+S*pp CC S*s
+PP*in S*vp VP*vbd
+NP*jj VP*vp
+NP*nn ADVP*rb VP*vbd
+S*np CC S*np
+NP*dt VP*vbd
+
+# id=part2_nopunctuation.171
+NP*nn VP*vbz
+NP*np VP*vbd
+PP*in NP*ex VP*vbd
+S*np CC S*np
+NP*prp VP*vbz
+S*np '' NP*prp VP*vbd
+S*np CC S*np
+PP*in NP*dt VP*md
+
+# id=part2_nopunctuation.172
+ADVP*rb NP*prp VP*md
+NP*nn PP*in
+PP*in NP*np VP*vbz
+NP*dt VP*md
+NP*np VP*vbz
+PP*in NP*prp VP*vbz
+NP*prp VP*vbz
+NP*prp VP*vbz
+MD NP*dt VP*vb
+MD NP*jj VP*vb
+MD NP*dt VP*vb
+VBZ NP*prp ADJP*jj S*vp
+S*np NP*prp VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*prp VP*vbp
+NP*nns VP*vbp
+NP*np PP*in
+NP*nnp VP*vbz
+CC NP*nn VP*vbz
+NP*prp VP*vbz
+NP*prp VP*vbz
+PP*rb NP*prp VP*vbz
+MD NP*nnp VP*vb
+PP*in NP*cd VP*vbz ''
+
+# id=part2_nopunctuation.173
+NP*np VP*vbz
+NP*np VP*vbz
+NP*nn VP*vbp
+PP*in NP*dt
+S*np NP*prp VP*vbz
+S*np CC S*np
+NP*np VP*vbd
+NP*cd VP*vbd
+NP-TMP*rb NP*nn VP*vbp
+S*np S*np
+VP*vb
+NP*nnp VP*vp
+SBAR*in NP*dt VP*vbz
+ADVP*rb NP*prp VP*vbz
+PP*in `` PP*in NP*np VP*vbz
+RB IN S*np
+NP*dt VP*md
+NP*prp VP*vbz
+NP*np ADVP*rb VP*vbd
+NP*jj ADVP*rb VP*vbd
+S*np CC S*np
+NP*nnp VP*vbz
+CC PP*pp NP*dt VP*vbp
+VP*pp
+
+# id=part2_nopunctuation.174
+NP*np VP*vbd
+PP*in NP*dt VP*vbd
+S*pp VP*vbd NP*np
+SBAR*in NP*prp VP*md
+NP*prp VP*vbd
+PP*in NP*np VP*vbd
+ADVP*rb NP*np VP*vbp
+NP*dt ADVP*rb VP*vbd
+NP-TMP*dt NP*nns VP*vbd
+PP*in NP*dt VP*vbd
+NP*np VP*vbd
+SBAR*in NP*nnp VP*vbd
+S*np NP*prp VP*vbd
+NP*prp VP*vbz
+S*vp NP*nns VP*vbd
+S*np NP*nns VP*vbd
+S*np CC S*np
+NP*dt VP*vbd
+ADVP*rb NP*np VP*vbd
+S*np CC S*np
+S*np PRN*, CC S*np
+NP*dt VP*vbd
+NP*nnp VP*vbd
+NP*prp VP*vbd
+S*np NP*prp VP*vbd
+`` SBAR*whadvp NP*prp VP*vbp ''
+
+# id=part2_nopunctuation.175
+S*np NP*nnp VP*vbd
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbp
+NP*dt VP*vbp ''
+NP*np VP*vbp
+NP*np VP*vbp
+NP*nnp VP*vbz
+NP*nnp VP*vp
+NP*np VP*md
+NP*np VP*vbd
+NP*dt VP*vbz
+NP*nns VP*vbp
+S*np S*np
+NP*nnp VP*vbz
+NP*prp VP*vbz
+NP*np VP*vbp
+NP*np VP*vbz
+NP*np VP*vbz
+S*np VP*vbd NP*np
+NP*nnp VP*vbd
+NP*dt VP*vbp
+S*np VP*vbd NP*np
+NP*nnp VP*vp
+NP*prp VP*vbd
+
+# id=part2_nopunctuation.176
+NP*np VP*vbd
+NP*nns VP*vbd
+NP*nnp VP*vbd
+CC NP*np VP*vbd
+PP*in NP*prp VP*vbd
+NP*prp VP*vbd
+S*np VP*vbd NP*np
+NP*dt VP*vp
+NP*np VP*vbz
+PP*in NP*nnp VP*vbz
+NP*np VP*vbp
+S*np NP*nns VP*vbd
+CC NP*prp VP*vbp
+CC NP*np VP*vbd
+SBAR*in WHNP*wdt S*vp
+NP*nnp VP*vbd
+NP*dt VP*vbz
+
+# id=part2_nopunctuation.177
+NP*np VP*vbd
+S*np CC S*np
+NP*dt VP*vbd
+PP*in PRN*, `` NP*dt VP*vbz ''
+NP*jj VP*vbd ''
+S*np NP*prp VP*vbd
+S*s NP*ex VP*vbz
+NP*dt VP*vp
+NP*dt VP*vbp
+PP*vbg S*np CC S*np
+S*np NP*prp VP*vbd ''
+PP*in NP*nns VP*vbd
+CC NP*dt VP*vbd
+SBAR*whadvp PRN*, `` ADVP*rb NP*dt VP*vbz ''
+NP*prp ADVP*rb VP*vbd ''
+NP*prp VP*vbd
+S*np NP*prp VP*vbd
+PP*in `` NP*prp VP*md
+
+# id=part2_nopunctuation.178
+NP*nn VP*vbp
+S*sbar CC S*np
+CC SBAR*whnp VP*vbz
+NP*np VP*vbd
+NP*dt ADVP*rb VP*vbd
+NP*np VP*vbd
+NP*jj VP*vbd
+NP*np VP*vbz
+NP*np VP*vbd
+SBAR*in NP*dt VP*vbz
+NP*np VP*vbd
+S*np VP*vbd NP*np
+S*np VP*vbd NP*np
+S*np NP*nnp VP*vbd
+ADVP*rb S*np CC S*np
+CC SBAR*whnp VP*vbz
+NP*nnp VP*vbd
+NP-TMP*dt PP*in NP*dt VP*vbp
+NP*np VP*vbz
+S*np NP*nnp VP*vbd
+NP*nns VP*vbp
+S*np VP*vbd NP*np
+NP*dt VP*vbz
+IN NP*dt VP*md
+S*cc NP*prp VP*vbz
+NP*prp$ VP*vbz
+NP*prp VP*vbp
+NP*np VP*vbd
+S*np VP*vbd NP*np
+
+# id=part2_nopunctuation.179
+S*vp NP*dt VP*vbd
+NP*np VP*vp
+NP*np VP*vbd
+PP*in NP*np VP*vbd
+RB SBAR*in NP*prp$ VP*vbd
+UH
+NP*dt VP*vbz
+S*vp VP*vbd
+INTJ*uh ADVP*rb
+NP*prp VP*vbd
+S*s S*np
+NP*dt VP*vbz
+SBAR*in NP*ex VP*vbp
+PP*in NP*np VP*vbd
+NP*prp$ VP*vbp
+NP*np VP*vbp
+NP*jj ADVP*rb VP*vbp
+CC S*vp VP*md
+S*sbar VP*vbd NP*np
+NP*prp VP*vbp
+NP*np VP*vbz
+S*vp NP*prp VP*vbz
+PP*in NP*dt VP*vbz
+
+# id=part2_nopunctuation.180
+NP*jj VP*vbz
+NP*np VP*vbp
+NP*jj VP*vbd
+NP*cd VP*vbd
+NP*np VP*vbd
+NP*cd VP*vbd
+NP*np VP*vbd
+S*s VP*vbd NP*np
+NP*prp VP*md
+NP*np ADVP*jj VP*vbd
+NP*nnp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vp
+S*np NP*nnp VP*vbd
+NP*prp VP*vbp
+NP*np VP*vbd
+
+# id=part2_nopunctuation.181
+S*np NP*nnp VP*vbd
+SBAR*in NP*dt VP*md
+NP*nnp VP*vbd
+NP*jj VP*vbd
+S*np VP*vbd NP*np S*vp
+NP*dt VP*vbd ''
+S*np CC S*np
+NP*nnp VP*vbd
+S*np VP*vbd NP*np
+PP*vbn NP*dt ADVP*rb VP*vbn
+NP*prp VP*vp
+NP*dt VP*vp
+S*np CC S*sbar
+SBAR*in NP*nnp VP*md
+NP*np VP*vbz
+S*np NP*dt VP*vbd
+
+# id=part2_nopunctuation.182
+NP*np VP*vbd
+NP*np VP*vbz
+NP*dt VP*vbd
+S*np NP*nnp VP*vbd
+NP*dt VP*vbz
+NP*dt ADVP*rb VP*vbd
+S*np NP*prp VP*vbd
+NP*nnp VP*vbd
+NP*prp VP*vbd
+SBAR*whnp VP*vbz
+SBAR*whadvp NP*ex VP*vbd
+NP*nn VP*vbz
+NP*dt VP*vbp
+NP*np VP*vbd
+S*np CC S*np
+NP*nnp VP*vbd
+NP*prp ADVP*rb VP*vbd
+NP*nnp VP*vbd
+S*np NP*prp VP*vbd
+NP*dt VP*vp
+
+# id=part2_nopunctuation.183
+NP*nnp NP*np
+NP*nnp S*vp VP*vbd
+S*np NP*prp VP*vbd
+NP*np VP*vbz
+S*np CC S*np
+NP*prp VP*vbd
+PP*in NP*dt VP*vbd
+NP*nnp VP*vbz
+PP*in NP*prp VP*vp
+NP*dt VP*vbz
+CC PP*in NP*nnp VP*vbz
+ADVP*rb S*np S*np CC S*np
+NP*nnp VP*vbz ''
+PP*in NP*np VP*vbd ''
+NP*np VP*vbd
+NP*nns VP*vbp
+NP*nnp VP*vbd
+NP*nnp ADVP*rb VP*vbd
+S*np `` S*np
+NP*prp VP*md ''
+
+# id=part2_nopunctuation.184
+PP*in NP*np VP*vbd ''
+NP*prp VP*vbd
+NP*prp VP*vbp
+S*np VP*vbd NP*np
+S*sbar '' NP*dt VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP-TMP*jj NP*np VP*vbd
+NP*np VP*vbz ''
+S*np '' NP*prp VP*vbd
+NP*np VP*vbz
+NP*np
+NP*jj VP*vbp
+PP*in NP*dt VP*vbp
+PP*in NP*jj VP*vbp
+PP*in NP*nn VP*vbp
+PP*in S*np PRN*: CC S*pp
+NP*np VP*vbd
+PP*in NP*nnp VP*vbd
+ADVP*rb NP*np VP*vbd
+NP*dt VP*vp
+NP*prp VP*vbz
+S*np NP*nn VP*vbp
+SBAR*np X*dt NP*jj VP*vbp
+NP*np VP*vbz
+NP*nnp VP*vbp
+NP*np VP*vbd
+S*np NP*prp VP*vbd
+NP*np VP*vp
+CC PP*in NP*prp VP*vbp
+PP*in PRN*, NP*dt VP*md
+S*np VP*vbd NP*np
+INTJ*uh NP*prp VP*vbp
+CC NP*dt VP*vbz
+NP*prp VP*vbz
+NP*jj VP*vbp
+NP*np VP*vbd
+NP*prp VP*vp ''
+NP*np VP*vbd
+PP*in NP*np ADVP*rb PRN*, NP*prp VP*vbz
+NP*np NP*prp VP*vbd
+SBAR*rb NP*prp VP*vbd
+NP*dt VP*vbz
+S*advp `` S*np ''
+FRAG*s S*np CC FRAG*rb
+S*np NP*prp VP*vbd
+NP*prp VP*vbp
+
+# id=part2_nopunctuation.185
+NP*nnp VP*vbz
+NP*np VP*vbd
+CC NP*prp VP*vbd
+S*vp VP*vbz
+CC NP*prp VP*vbz
+S*np VP*vbd NP*np
+NP*np ''
+NP*prp VP*vbz
+ADVP*rb NP*dt VP*md
+NP*dt VP*vbd
+ADVP*rb NP*nnp VP*vbd
+NP*nnp VP*vbd
+NP*dt VP*vbd
+S*np VP*vbd NP*np
+NP*nnp VP*vbd
+PP*in NP*nn VP*vbp
+NP*dt VP*vbz
+NP*np VP*vbd
+S*np VP*vbd NP*np
+NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+NP*dt VP*vbd
+NP*np VP*vp
+NP*np VP*vbz
+S*np S*np
+S*np VP*vbd NP*np
+NP*dt VP*vbp
+
+# id=part2_nopunctuation.186
+NP*np VP*md
+NP*np VP*md
+NP*np VP*md
+NP*prp VP*vbz
+S*s S*np CC S*np
+PP*in NP*dt VP*vbp
+CC NP*np VP*md
+S*np NP*dt VP*vbz
+NP*prp VP*md
+NP*np VP*md
+PP*in NP*dt VP*md
+NP*nn VP*vbz
+NP*nnp VP*md
+NP*np VP*vbz
+NP*dt VP*md
+NP*dt VP*md
+`` S*np '' NP*dt VP*vbd
+S*advp NP*np VP*md
+NP*np VP*md
+NP*dt VP*md
+NP*dt VP*vbz
+PP*in NP*in VP*md
+NP*dt VP*vbz
+PP*vbn NP*prp VP*vbz
+NP*nnp VP*vbp
+S*np CC S*np
+SBAR*rb NP*dt VP*md
+NP*nns VP*md
+NP*dt VP*vbz
+
+# id=part2_nopunctuation.187
+NP*nnps VP*vbp
+NP*np VP*vbd
+NP*prp VP*vbd
+S*np CC S*np
+NP*jj VP*vbd
+NP*np VP*vbz
+NP*np VP*vbp
+S*np CC S*np
+NP-TMP*jj NP*prp VP*vbd
+NP*nnp VP*vbd
+NP*nnp VP*vbd
+NP*dt VP*vbd
+PP*in NP*nnp VP*vbd
+NP*nns VP*vbd
+PP*in NP*prp$ VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbp
+NP*nnp VP*vbd
+`` S*advp '' NP*prp VP*vbd
+S*cc CC S*np ''
+NP*np VP*vbd
+NP*dt VP*vbd
+S*vp NP-TMP*jj NP*nnp VP*vbd ''
+NP*prp VP*vbd
+NP*prp VP*vbz
+NP*prp ADVP*rb VP*md ''
+
+# id=part2_nopunctuation.188
+S*vp NP*nnp PP*in VP*vbp
+NP*np VP*vbn
+NP*dt VP*vbd
+NP*np VP*vbp
+NP*np VP*vbz
+NP*prp VP*vbd
+`` WHADVP*wrb SQ*vp
+NP*prp VP*vbz
+`` NP*np NP*nnp VP*vbd
+S*np CC S*np ''
+
+# id=part2_nopunctuation.189
+NP*np VP*vbd
+ADVP*advp PP*vbg PP*vbg VP*vbd
+PP*in NP*np VP*vbz
+NP*np VP*vbd
+NP*nn VP*vbd
+S*np NP*prp VP*vbp
+NP*np VP*vbd
+S*vp NP*dt VP*vbn
+NP*dt VP*vbd
+NP*dt VP*vbd
+S*np CC S*np
+PP*in S*advp VP*vbd
+S*np VP*vbd NP*np
+S*np VP*vbz NP*np
+NP*ex VP*vbp
+PP*in NP*dt VP*vbz
+S*np `` S*np-tmp ''
+NP*np VP*vbd
+PP*vbg NP*qp VP*vbd
+PP*in NP*np VP*vbn
+PP*pp NP*np VP*vbd
+PP*in NP*np VP*vbn
+PP*in NP*np VP*vbn
+
+# id=part2_nopunctuation.190
+S*np S*np
+NP*qp VP*vbd
+NP*dt VP*vbd
+NP*nn VP*vbd
+NP*dt VP*vbd
+NP*dt PP*in
+NP*dt VP*vbp
+S*pp '' VP*vbd NP*np
+NP*np ADVP*rb NP*nnp VP*vbp
+PP*in NP*nnp VP*vbz
+S*np VP*vbd NP*np
+NP*prp VP*vbd
+NP*np VP*vbz
+NP*np VP*vbp
+PP*in PP*in NP*np VP*vbd
+NP*np VP*vbp
+S*np VP*vbd NP*np SBAR*in
+PP*in S*np CC S*np
+NP*np VP*vbz
+NP*np VP*vbz
+SBAR*in NP*dt VP*md
+
+# id=part2_nopunctuation.191
+NP*nn NP*np
+NP*np VP*vp
+NP*cd PP*vbg PP*vbg NP*wdt VP*vbz
+S*vp NP*dt VP*vbn
+NP*dt VP*vbd
+NP*dt VP*vbd
+S*np VP*vbd NP*dt
+NP*nn ADVP*rb VP*vp
+NP*nnp VP*vbd
+S*pp CC S*np
+NP*prp VP*vbp
+NP*np VP*vbd
+NP*np VP*vbd
+PP*in S*advp VP*vbd
+S*np VP*vbd NP*np
+S*np VP*vbz NP*np
+NP*ex VP*vbp
+PP*in NP*dt VP*vbz
+S*np `` S*np-tmp ''
+NP*nnp VP*vbd
+NP*np VP*vbd
+PP*vbg NP*qp VP*vbd
+PP*in NP*np VP*vbn
+PP*in NP*np VP*vbd
+PP*in NP*np VP*vbn
+PP*in NP*np VP*vbn
+
+# id=part2_nopunctuation.192
+S*np S*pp PP*in
+S*pp VP*vbz NP*nnp
+PP*vbg S*`` PRN*s CC `` S*s
+NP*np VP*md ''
+PP*in NP*np VP*vbd
+NP*jj ADVP*rb VP*vbd
+PP*in NP*dt VP*vbd
+S*np S*np S*np
+S*s NP*dt VP*vbd
+ADVP*rb NP*prp VP*vp
+SBAR*in NP*prp VP*vbd
+ADVP*rb NP*dt VP*vbz ''
+NP*prp ADVP*rb VP*vbz
+S*pp S*np
+NP*np VP*vbd
+S*np S*np
+S*np CC S*sbar
+S*pp NP*nnp VP*vbd
+S*np NP*prp VP*vbd
+NP*np VP*md
+NP*dt NP-TMP*nn VP*vbz
+
+# id=part2_nopunctuation.193
+NP*rb S*np
+NP*np VP*vbz
+NP*np VP*vbz
+CC NP*np
+NP*np VP*vp
+NP*np VP*md
+S*np VP*vbz NP*np
+S*np VP*vbz NP*nnp
+S*np CC S*np
+S*np VP*vbz NP*np S*vp
+S*s VP*vbz NP*dt
+PP*in NP*prp VP*vbz
+PP*vbg NP*dt VP*vbz
+CC PP*in NP*dt VP*vp
+
+# id=part2_nopunctuation.194
+PP*in PRN*, NP*np VP*vbz
+PP*in NP*np VP*vbp
+NP*np VP*md
+S*np VP*vbz NP*nnp S*vp
+S*cc NP*prp VP*vbd
+ADVP*rb NP*prp VP*vbd
+S*vp
+PP*in NP*np ADVP*rb VP*vbd
+NP*nnp VP*vp
+S*s VP*vbd NP*dt
+NP*prp VP*vbd
+NP*np VP*vbd
+S*s VP*vbd NP*nnp
+
+# id=part2_nopunctuation.195
+S*np NP*nnp VP*vbz
+S*np NP*prp$ VP*vbd
+NP*np ADVP*rb VP*vbd
+PP*vbg NP*np ADVP*rb NP*nnp VP*md
+S*np VP*vbd NP*nnp
+SBAR*whadvp NP*cc VP*vbd
+NP*nnp ADVP*rb VP*vbz
+NP*dt VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbd
+PP*vbg NP*dt VP*vbd
+NP*np VP*vbd
+S*s VP*vbd NP*nnp
+NP-TMP*nnp NP*np VP*vbd
+NP*nnp VP*vbd
+CC NP*np VP*vbp
+NP-TMP*cd PP*to NP*nnp VP*vbd
+PP*in NP*dt VP*vbd
+ADVP*rb PP*in NP*dt VP*vbz
+NP*nns VP*vbp
+PP*in NP*prp$ ADVP*rb VP*vbd
+
+# id=part2_nopunctuation.196
+NP*np NP*np
+NP*np VP*vbz
+NP*cd VP*vbd
+NP*np VP*vbn
+PP*in NP*prp VP*vbd
+S*np CC S*np
+S*np CC S*np
+PP*in NP*np VP*vbd
+S*vp NP*dt VP*md
+NP*np VP*vbd
+S*np VP*vbp NP*np
+NP*prp VP*vbd
+S*np CC S*np
+S*np VP*vbd NP*nnp
+
+# id=part2_nopunctuation.197
+NP*np VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbd
+S*s VP*vbd NP*nnp
+NP*dt PP*in ADVP*rb
+S*np RB S*np
+NP*dt VP*vbd
+PP*in NP*nnp VP*vbd
+
+# id=part2_nopunctuation.198
+NP*np VP*vbd
+S*pp VP*vbd NP*np
+S*vp NP*dt VP*vbd
+NP*dt VP*vp
+CC NP*dt VP*vbd
+S*s NP*nnp VP*vbd
+S*np NP*prp VP*vbp
+S*np CC S*advp S*np
+S*np NP*nnp VP*vbd
+S*np NP*prp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+S*np NP*prp VP*vbd
+NP*np VP*vbd
+S*vp NP*prp VP*vp
+SBAR*in NP*prp VP*md
+NP*np VP*vbz
+NP*nnp VP*vbd
+NP-TMP*cd NP*nnp VP*vbd
+
+# id=part2_nopunctuation.199
+S*np NP*np VP*vbz
+PP*vbg S*np CC S*np
+X*dt NP*np VP*vbd
+NP*prp VP*vbp
+ADVP*rb PRN*, NP*prp VP*vbd
+NP*np VP*vbz
+NP*dt VP*vbn
+NP*nns VP*vbd
+NP*dt VP*vbd
+S*np VP*vbd NP*nnp
+PP*in NP*np VP*vbp
+S*advp VP*vbd NP*np
+NP*dt VP*vbz
+S*np CC S*np
+
+# id=part2_nopunctuation.200
+NP*nnp S*np
+PP*in NP*np VP*vp
+NP*nn PP*in
+S*``
+S*np
+NP*np ''
+NP*dt VP*vbd
+NP*dt VP*vbd
+NP-TMP*dt NP*dt VP*vbd
+S*advp VP*vbd NP*dt
+NP*dt VP*vbd
+NP*np ADVP*rb VP*advp
+NP*np VP*vbd
+NP*nnp VP*vbz
+NP*dt VP*vbp
+ADVP*rb NP*jj VP*vbd
+NP*np VP*vbz
+
+# id=part2_nopunctuation.201
+NP*dt VP*vbz
+NP*prp VP*vbp
+S*vp NP*np VP*vbd
+PP*in NP*prp ADVP*rb VP*vbd
+NP*np VP*vp
+NP*np VP*vbd
+NP*np VP*md
+NP*dt VP*vp
+NP*np VP*vbd
+NP*prp VP*vbz
+PP*in NP*dt VP*vbd
+S*np VP*vbd NP*np
+NP*np VP*vbn
+NP*prp VP*vbd
+NP*cd VP*vbd
+S*np VP*vbd NP*np
+S*np NP*prp VP*vbd
+PP*advp NP*np VP*vp
+NP*dt VP*vbd
+NP*dt VP*vbd
+S*s NP*np VP*vbd
+NP-TMP*cd NP*dt VP*vbn
+NP*nnp VP*vbd
+NP*dt VP*md
+NP*dt VP*vbd
+NP*prp VP*vbd
+NP*dt VP*vbd
+PP*vbg NP*cd VP*vbd
+NP*prp VP*vbd
+
+# id=part2_nopunctuation.202
+NP*nn S*np
+NP*np VP*vbd
+NP*prp VP*vp
+PP*vbg NP*np VP*vbz
+NP*dt VP*vp
+ADVP*rb NP*nnp VP*vbd
+PP*in NP*nnp VP*vbd
+S*np VP*vbd NP*prp PP*in
+NP*dt VP*vbd
+NP*prp VP*vbz
+NP*np ADVP*rb VP*vbd
+PP*in SQ*vbp
+VP*vbd
+PP*in NP*dt `` VP*vbz
+NP*np VP*vbz
+NP*nnp VP*vbd
+NP*np VP*advp
+S*vp NP*prp VP*vbd
+NP*cd VP*vbz
+NP*nnp VP*vbd
+PP*in NP*prp VP*vbd
+
+# id=part2_nopunctuation.203
+NP*nnp VP*vbz
+PP*vbg NP*dt VP*vbz
+NP*np VP*vbz
+S*advp VP*vbz NP*np
+S*np S*s
+NP*dt VP*vbd
+PP*in NP*jj VP*vbp
+ADVP*rb NP*np VP*vbz
+S*np S*advp
+NP*nnp VP*vbp
+NP*dt VP*vbz
+S*np CC S*np
+
+# id=part2_nopunctuation.204
+NP*np PP*in NP*np VP*vbp
+PP*in NP*np VP*vbp
+NP*np VP*vbp
+NP*prp VP*vbd
+S*vp VP*vbz
+S*s VP*vbd NP*np
+NP*np VP*md
+NP*prp VP*md
+NP*dt VP*vbd
+S*np VP*vbz NP*np
+PP*in NP*np VP*vbz
+PP*in NP*dt VP*vbp
+NP*dt VP*vbz
+S*np CC S*np
+S*s VP*vbz NP*np
+PP*vbg NP*nn VP*md
+NP*nns VP*md
+NP*dt VP*md
+S*np VP*vbz NP*np
+NP*dt VP*vbd
+ADVP*rb NP*prp ADVP*rb VP*vbd
+NP*np VP*vbz
+NP*prp$ VP*md
+NP*prp VP*vbp
+S*np VP*vbz NP*np
+
+# id=part2_nopunctuation.205
+S*np VP*vbz NP*np
+NP*dt VP*vbz
+NP*prp VP*vbz
+S*np CC S*vp
+S*np VP*vbd NP*dt
+NP*nnp VP*vbd
+NP*dt VP*vbd
+S*np VP*vbd NP*nnp
+NP*np VP*vbd
+NP*dt ADVP*rb VP*vbd
+NP*prp VP*vbd
+S*np VP*vbd NP*nnp
+S*np NP*prp VP*vbd
+NP*nnp VP*vbd
+S*s NP*prp VP*vbd
+ADVP*rb PP*in NP*prp VP*vbd
+NP*nnp VP*vbz
+NP*prp VP*vbd
+PP*in NP*prp VP*vbd
+ADVP*rb NP*prp VP*vbz
+NP*np VP*vbd
+PP*in NP*nnp VP*vbd
+NP*dt VP*vbd
+S*s NP*prp VP*vbd
+PP*in NP*np VP*md
+ADVP*rb S*vp VP*vbd
+
+# id=part2_nopunctuation.206
+S*np CC S*np
+NP*nnp VP*vbd
+NP*np VP*vbd
+PP*in NP*prp VP*vbd
+ADVP*rb NP-TMP*nnp NP*np VP*vbz
+PP*in S*np S*np PP*vbg
+NP*prp ADVP*rb VP*vbd
+S*sbar VP*vbz NP*np
+NP*prp VP*np
+SBAR*in PRN*, VP*vbp
+PP*in NP*prp VP*vbp
+NP*dt PP*vbg VP*vbz
+NP*prp ADVP*rb VP*vbp
+PP*in S*np CC PP*in PP*in
+NP*prp VP*vbz
+S*s S*``
+
+# id=part2_nopunctuation.207
+NP*nnp S*np
+NP*np VP*md
+NP*dt VP*vbz
+ADVP*rb NP*np VP*vbz
+NP*np VP*vbz
+NP*np VP*md
+NP*prp VP*vbp
+S*np VP*vbd NP*np
+PP*in NP*np VP*vbd
+S*np NP*prp VP*vbd
+PP*in NP*np VP*vbz
+SBAR*in NP*nnp VP*vbz
+SBAR*in NP*np VP*vbd
+ADVP*rb NP*np VP*vbd
+PP*in `` S*md ''
+NP*prp VP*vbp
+PP*in NP*np VP*vbz
+S*np NP*prp VP*vp
+S*np VP*vbz NP*np
+NP*dt VP*vbd
+
+# id=part2_nopunctuation.208
+NP*dt NP*np PP*in
+S*sbar S*pp S*np
+PP*in NP*dt VP*vbd
+NP*np VP*md
+NP*np VP*vbp
+NP*nn ADVP*rb VP*vbz
+ADVP*rb S*np S*np
+PP*in NP*prp VP*vbp
+NP*np VP*md
+ADVP*rb NP*prp VP*vbp
+NP*advp
+NP*advp
+NP*advp
+S*vp NP*prp VP*vbp
+NP*prp VP*vbp
+PP*in PP*in NP*np VP*vbz
+S*vp NP*np VP*vbz
+S*np S*pp
+ADVP*rb NP*np VP*vb
+NP*dt VP*vbp
+PP*in NP*nn VP*md
+NP*prp ADVP*rb VP*vbp
+
+# id=part2_nopunctuation.209
+S*np VP*vbd NP*np
+NP*np VP*vbd
+S*np VP*vbd NP*nnp S*vp
+S*np CC S*np
+S*np NP*prp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+S*np VP*vbd NP*np
+PP*in NP*prp VP*vbd
+NP*np VP*vbd
+PP*in NP*nnp VP*vbz
+S*pp VP*vbd NP*nnp
+PP*in NP*np VP*vbd
+PP*to NP*nnp VP*vbd
+S*sbar NP*prp VP*vbd
+NP*nnp ADVP*rb VP*vbd
+NP*np VP*vbd
+S*np VP*vbd NP*dt
+S*np VP*vbz NP*nnp S*vp
+
+# id=part2_nopunctuation.210
+NP*np VP*vbd
+PP*in NP-TMP*nn NP*nnp VP*vbd
+S*pp VP*vbn
+VP*np
+ADVP*rb NP*prp VP*vbd
+S*np NP*nnp VP*vbd
+NP*dt VP*vbz
+NP*np VP*``
+S*np CC S*np
+NP-TMP*dt NP*prp VP*md
+S*np NP*prp VP*vbd
+NP*np VP*vbd
+PP*vbg NP*dt VP*md
+S*np VP*vbd NP*np
+PP*in NP*prp VP*vbd
+S*np CC S*vp
+NP*nnp VP*vp
+NP*dt VP*md
+NP*np VP*vbz
+S*np VP*vbz NP*nnp
+NP*np VP*md
+NP*dt VP*vbd
+NP*dt ADVP*rb VP*vp
+PP*in NP*np
+
+# id=part2_nopunctuation.211
+NP*nnp NP*np
+NP*nnp PP*in NP*nns VP*md
+NP*np VP*md
+NP*np VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbz
+PP*in NP*qp VP*advp
+PP*in NP*ex VP*vbd
+ADVP*rb PP*in NP*np VP*vbd
+PP*in NP*np VP*vbd ''
+S*np NP*dt VP*vbd
+NP*np VP*vbd
+NP*np VP*md
+S*np S*np
+S*np NP*dt VP*vbd
+S*np NP*dt VP*vbd
+VP*vbg
+PP*in NP*dt VP*vbd
+NP*dt VP*vbz
+NP*dt VP*vbz
+NP*dt VP*vp
+NP*np VP*vbp
+
+# id=part2_nopunctuation.212
+NP*jj VP*vbz
+NP*dt VP*vbz
+S*np NP*np VP*vbd
+S*np NP*nnp VP*vbd
+NP*dt ADVP*rb VP*vbd
+NP*dt VP*vbz
+NP*prp$ VP*vbd
+NP*dt VP*vbd
+NP*jj VP*vbp
+NP*dt VP*vp
+NP*np VP*vp
+NP*nn VP*vbd
+ADVP*advp VP*vbd NP*np
+NP*nns VP*vp
+PP*in NP*nns ADVP*rb VP*vbd
+PP*vbg NP*nnp VP*vbd
+S*np NP*prp VP*vbd
+NP*np ADVP*rb VP*vbd
+NP*prp VP*vbp
+S*np VP*vbd NP*np
+NP*dt VP*vbz
+PP*in PRN*, NP*prp VP*vbd
+PP*in NP*dt VP*vbd
+
+# id=part2_nopunctuation.213
+NP*dt VP*md
+RB SBAR*in VP*vbz
+CC SBAR*rb
+NP*dt VP*md
+NP*np VP*vbp
+ADVP*rb NP*dt VP*vbz
+S*sbar VP*vbz NP*nnp
+NP*dt VP*vbp
+CC RB NP*np
+NP*np VP*vbz
+NP*cd VP*md
+NP*dt VP*vbz ''
+NP*prp VP*vbz
+RB NP*prp VP*vbp
+S*np CC S*vp
+NP*dt VP*vbp
+S*np VP*vbz NP*nnp
+PP*in S*np CC S*np
+NP*dt VP*md
+S*np VP*vbz NP*nnp
+SBAR*in NP*dt VP*vbz
+SBAR*whadvp NP*prp VP*vbz
+
+# id=part2_nopunctuation.214
+S*np-tmp S*np
+SBAR*in NP*prp VP*md
+CC NP*nnp VP*vbd
+NP*dt VP*vbd
+S*np VP*vbz NP*nnp
+NP*prp VP*vbz
+PP*in NP*np VP*vbd
+`` S*pp '' VP*vbz NP*np
+NP*dt VP*vbd
+PP*in NP*prp VP*vbd
+S*vp VP*vbz
+PP*in S*np `` S*np
+ADVP*rb NP*rb VP*vbp ''
+NP*jj VP*vbp
+`` S*np CC S*np ''
+VP*vbz
+PP*vbg NP*dt VP*vbd
+CC NP*np VP*vbp
+PP*in NP*dt VP*vbd
+PP*vbg NP*nnp VP*vbz
+S*np VP*vbz NP*nnp
+PP*in PP*in NP*dt VP*vbd
+NP*np NP*np VP*vbz
+NP*np VP*vbd
+S*np VP*vbz NP*nnp
+SBAR*in NP*np VP*md
+
+# id=part2_nopunctuation.215
+NP*np PP*in VP*vbd
+ADVP*rb NP*np VP*vp
+NP*dt VP*vbz
+NP*dt VP*md
+IN NP*prp VP*md
+S*np VP*vbz NP*np
+CC NP*ex VP*vbp
+S*np VP*vbz NP*nnp
+NP*prp VP*vbz
+SBAR*whadvp VP*vbz
+PP*in NP*dt ADVP*rb VP*vbd
+PP*in NP*dt VP*vp
+S*np VP*vbz NP*nnp
+NP*ex VP*md
+CC NP*dt VP*vbd
+PP*in NP*dt VP*vbd
+ADVP*np NP*dt VP*vbd
+
+# id=part2_nopunctuation.216
+S*np CC S*np
+NP*np VP*vbp
+NP*np VP*vbp
+NP*np VP*vbz
+NP*np VP*vbp
+S*pp S*np
+NP*nnp VP*vbd
+NP*cd VP*vbd
+NP*dt PRN*, VP*vbz
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*dt VP*vbz
+NP*dt NP*np
+S*np VP*vbd NP*dt
+S*vp VP*vbp
+S*np VP*vbz NP*nnp
+NP*np ADVP*rb VP*vbd
+NP*prp VP*vbp
+S*np NP*dt VP*vbd
+S*np VP*vbd NP*nnp
+NP*dt VP*vbd
+NP*dt VP*vbz
+PP*rb NP*prp VP*vbd
+NP*dt VP*vbz
+
+# id=part2_nopunctuation.217
+PP*np NP*prp VP*vbd
+NP*np VP*vbd
+ADVP*rb NP*np VP*vbz
+NP*np VP*vbp
+PP*in NP*np VP*vbd
+S*np CC S*pp
+NP*np VP*vbd
+PP*in S*vp VP*md
+NP*np VP*vbz
+CC NP*nn VP*vbp
+NP*np VP*md
+PP*in NP*jj VP*vbp
+NP*nnp VP*vbz
+NP*dt VP*vbp
+NP*dt VP*vbd
+NP*np VP*vbd
+
+# id=part2_nopunctuation.218
+S*np CC S*np
+PP*in NP*dt VP*vbz
+ADVP*rb ADVP*rb
+NP*nn VP*vbz
+NP*nnp VP*vbp
+NP*np VP*vbd
+S*vp S*np
+CC ADVP*rb NP*nn VP*vbd
+CC PP*in
+NP*nn VP*vbz
+NP*rb VP*vbp
+NP*nn ADVP*rb VP*advp
+CC ADVP*rb S*np
+NP*ucp VP*vbp
+NP*jj VP*vbz
+SBAR*in NP*dt VP*md
+NP*dt VP*vbz
+PP*in NP*nn VP*vbz
+NP*np VP*vbp
+PP*in NP*ex VP*vbd
+NP*nnp ADVP*rb VP*md
+CC NP*dt VP*vbz
+ADVP*rbr NP*nn ADVP*rb VP*vbz
+NP*dt VP*vbp
+NP*dt VP*vbz
+NP*nns VP*vbp
+S*np NP*dt VP*md
+NP*np VP*vbp
+NP*np VP*vbz
+NP*nn VP*vbz
+NP*prp VP*vbz
+CC NP*nn VP*md
+NP*dt VP*md
+
+# id=part2_nopunctuation.219
+S*np NP*dt VP*vbd
+S*np VP*vbd NP*np
+NP*np ADVP*rb VP*vbd
+PP*vbg NP*dt VP*vbz
+NP*dt VP*md
+NP*dt VP*vp
+NP*nn VP*vbd
+ADVP*rb NP*dt VP*md
+S*np VP*vbd NP*nnp S*vp
+NP*nnp VP*vbd
+NP*dt VP*md
+NP*dt VP*vbz
+S*np VP*vbd NP*np
+SBAR*in NP*prp$ ADVP*rb VP*vbd
+
+# id=part2_nopunctuation.220
+NP*nnp VP*vbp
+PP*in VP*vbd NP*np
+CC PP*vbg NP*nnp VP*vbz
+NP*dt ADVP*rb VP*vbp
+NP*np VP*vbd
+NP*np VP*vbd
+S*np S*np
+NP*dt VP*vbd
+NP*nnp ADVP*rb VP*vbz
+S*pp VP*vbd NP*np
+NP*dt VP*vbd
+NP*np VP*vbd
+
+# id=part2_nopunctuation.221
+NP*dt NP*prp VP*advp
+SBAR*np NP*dt VP*vbz
+NP-TMP*nn NP*dt VP*vbd
+NP*dt VP*vbd
+CC NP*nnp VP*vbd
+ADVP*rb NP*dt PP*rb NP*np VP*md
+NP*np VP*vbz
+NP*np VP*vbd
+ADVP*np NP*nnp VP*vbd
+S*np NP*cd VP*vbd
+S*np VP*vbd NP*np
+PP*in VP*vbd NP*np
+NP*np VP*vbd
+PP*in NP*prp VP*vbd
+PP*in NP*ex VP*vbd
+ADVP*rbs NP*np VP*vbd
+VP*pp
+NP*np VP*vbd
+NP*prp VP*vbd
+NP*prp ADVP*rb VP*vbd
+PP*in NP*nnp VP*vbd
+FRAG*np FRAG*pp
+NP*dt VP*vbd
+NP*np VP*vbd
+ADVP*rb NP*nnp ADVP*rb VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+PP*in NP*nnp VP*vbz
+S*np S*pp S*pp
+NP*dt VP*md
+S*pp S*np
+S*pp CC S*np
+NP*nns ADVP*rb VP*vbp
+NP*dt VP*vbp
+NP*np VP*md
+NP*adjp PP*in VP*vbp
+ADVP*rb NP*prp VP*vbz
+S*s SINV*``
+PP*in PRN*, `` NP*dt VP*vbz
+PP*in NP*`` VP*vbz
+NP*nns `` VP*md
+NP*dt VP*vbp
+NP*dt VP*vbp
+NP*prp VP*vbp
+NP*np VP*vbp
+NP*dt VP*vbd
+PP*in NP*nns VP*vbp
+S*np S*advp
+PP*in NP*dt VP*vbp
+NP*np VP*vbp
+PP*in NP*dt VP*vbz
+PP*vbg NP*rb VP*md
+NP*dt VP*vbz
+PP*in NP*np VP*vbp
+NP*dt VP*vbd
+PP*in NP*ex VP*vbd
+NP*np VP*vbd
+PP*in PP*in NP*np ADVP*rb `` VP*vbp
+S*np S*``
+S*np S*np
+S*pp VP*vbz NP*nn
+NP*dt VP*md
+NP*dt VP*vbd
+
+# id=part2_nopunctuation.222
+S*np '' VP*vbz
+NP*np ADVP*rb VP*vbd
+S*np S*pp CC S*pp
+NP*prp VP*vbd
+S*advp NP*nnp VP*vbd
+PP*advp NP*np VP*vbd
+NP*dt VP*vbz
+S*np NP*nnp VP*vbd ''
+NP*dt VP*vbz
+NP*np VP*vbz
+NP*nnp VP*vp
+PP*in NP*nnp VP*vp
+S*np VP*vbd NP*nnp
+NP*prp VP*vbz
+NP*np VP*vbd
+NP*nnp VP*vbd
+NP*dt PRN*, VP*vp
+S*adjp NP*np VP*vbz
+NP*dt VP*vbz
+S*np CC S*np
+NP*np VP*vbz
+NP*np VP*vbd
+S*np NP*prp VP*vp
+NP*np VP*vbd
+NP*dt VP*vbz
+WHADVP*wrb NP*rb
+WHNP*wp SQ*vp
+NP*np VP*vbz
+S*vp NP*prp VP*vbz
+
+# id=part2_nopunctuation.223
+NP*dt NP*np
+NP*np VP*vbd
+S*advp S*s
+NP*dt CC S*np
+CC VP*advp
+PP*in `` S*np ''
+NP*np VP*vbz
+NP*dt VP*md
+CC S*vp
+S*vp
+CC NP*np
+VP*md
+S*vp VP*md
+NP*np ADVP*rb VP*vbd
+NP*rb PP*in
+`` S*np '' VP*vbd NP*np
+S*np VP*vbd NP*nnp `` S*sbar
+CC S*np `` S*np
+NP*dt VP*vbz ''
+PP*in NP*dt VP*vbd
+S*np PRN*, CC S*np
+PP*in NP*nns VP*vbd
+NP*prp VP*vbd
+CC NP*np VP*vbd
+NP*prp VP*vbp
+NP*np VP*vbd NP*np
+S*np CC RB S*np
+NP*prp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbd
+NP*prp VP*vbz
+CC PP*in NP*prp VP*vbd
+S*np CC S*np
+
+# id=part2_nopunctuation.224
+NP*np NP*np
+CC PP*in NP*dt VP*vbd
+NP*np VP*vbd
+NP*nnp S*np
+PP*in NP-TMP*nn PP*in VP*vbd
+PP*in NP*dt VP*vbd
+ADVP*in NP*dt VP*vbd
+ADVP*rb NP*np VP*vbd
+S*np ADVP*rb S*np
+NP*nnp VP*vbd
+PP*in NP*dt VP*vbn
+CC NP*np VP*vbd
+ADVP*rb NP*dt VP*vp
+SBAR*in NP*prp$ ADVP*rb VP*advp
+ADVP*rb NP*prp VP*vbz
+NP*dt VP*vbd
+NP*prp VP*vbd
+PP*in NP*dt ADVP*rb VP*vbd ''
+NP*np VP*vbd
+PP*in NP*prp VP*vp
+DT NN SBAR*s
+S*np NP*nnp VP*vbd
+NP*prp$ ADVP*rb VP*vbz
+NP*nnp VP*vbz
+CC NP*dt VP*vbz
+NP*nnp VP*vbd
+ADVP*rb NP*prp$ VP*vbz
+
+# id=part2_nopunctuation.225
+NP*np S*np
+NP*nn CC VP*vbn
+NP*nn S*pp
+S*np VP*vbd NP*nnp
+NP*dt VP*vbz
+NP*dt VP*vbd
+S*np VP*vbd NP*nnp
+PP*in NP*prp VP*vbd
+NP*np VP*vbd
+NP*np VP*vbn
+S*np VP*vbd NP*nn
+NP*nnp VP*vbd
+S*np NP*prp VP*vbd
+PP*in S*vp VP*vbd
+PP*vbg NP*dt VP*vbn
+ADVP*rb NP*prp VP*vbd
+PP*in ADVP*rb NP*prp VP*vbd
+S*pp VP*vbz NP*nnp
+S*np NP*prp VP*vbz
+NP*dt VP*vp
+
+# id=part2_nopunctuation.226
+VP*vp
+NP*np VP*vbp
+ADVP*rb NP*nns VP*vbp
+SBAR*whadvp NP*prp VP*md
+CC NP*np VP*vbz
+CC NP*jj VP*vbp
+S*np S*np
+NP*np VP*md
+SBAR*rb NP*np VP*md
+NP*nn VP*vbp
+NP*np ADVP*rb VP*vbp
+NP*nn ADVP*rb VP*vbz
+NP*nnp VP*vbd
+NP*prp VP*vbz
+NP*prp$ VP*vbz
+S*np NP*prp VP*vbz
+NP*prp VP*vbz
+PP*in VP*vbp NP*np S*vp
+S*np NP*prp VP*vbz
+NP*jj VP*vbp
+S*np CC S*np
+NP*nnp VP*vp
+NP*prp VP*vp
+NP*prp VP*vbz
+NP*dt VP*vbz
+VP*vb ''
+S*np-tmp S*np S*np
+NP*prp VP*vbd
+S*np S*np S*np
+S*np NP*prp VP*vbz
+S*pp NP*prp VP*vbz
+S*np S*pp
+PP*in PRN*, NP*prp VP*vbp
+S*adjp NP*np
+NP*jj VP*vbp
+S*np S*np S*np
+PP*in NP*dt ADVP*rb VP*vbz
+S*np VP*vbz NP*np
+S*np NP*np VP*vbz
+PP*in PRN*, NP*prp VP*vbz
+NP*jj ADVP*rb ADVP*rb VP*vbp
+S*np S*np S*s
+S*vp VP*vbz NP*np
+S*np NP*np VP*vbz
+ADVP*rb SBAR*whadvp VP*vbz
+S*np VP*vbz NP*nnp
+CC NP*rb VP*md
+S*np CC S*np
+NP*nns VP*vbp
+S*np VP*vbz NP*nnp
+CC NP*prp VP*vbz
+S*np S*np
+NP*nn VP*md
+S*sbar VP*vbz NP*jj
+SBAR*in VP*vbz
+S*np S*np-tmp
+NP*nns VP*vbp
+NP*dt VP*vbp
+ADVP*rb NP*np VP*vbz
+NP*np VP*vbp
+NP*prp VP*vbp
+NP*nns VP*md
+CC NP*np
+PP*in NP*np VP*vbd
+S*pp NP*prp VP*vp
+ADVP*rb NP*np
+NP*prp NP*prp VP*vbd
+PP*in NP*prp VP*md
+S*sbar S*np
+S*s NP*prp VP*vbz
+NP*prp VP*vbz
+NP*prp VP*md
+NP-TMP*np NP*prp VP*vbz
+VP*vbp
+NP*prp ADVP*rb VP*vbz
+CC NP*prp VP*vbz
+PP*in NP*dt VP*vbp
+SBAR*whadvp NP*prp ADVP*rb VP*md
+PP*in NP*dt VP*vbp
+SBAR*whadvp NP*np VP*vbz
+S*vp NP*prp VP*vbz
+S*np NP*prp VP*md
+NP*nn NP*cd
+NP*nnp VP*vbz
+NP*prp VP*vp
+ADVP*np NP*dt VP*vbd
+SBAR*in NP*prp VP*vbz
+S*np VP*vbz NP*nnp
+NP*prp VP*vbp
+S*np S*np
+NP*prp$ VP*vbd
+PP*in NP*prp VP*vbz
+`` S*np NP*nn VP*vbz
+S*np NP*dt VP*vbz ''
+NP*np VP*vbp
+NP*np VP*vbp
+ADVP*jj NP*adjp VP*vbp
+NP*nnp ADVP*rb VP*vbz
+S*np VP*vbz NP*np
+S*np CC S*np
+NP*nnp VP*vbz
+NP*nns VP*vbp
+NP*dt VP*vbz
+S*sbar VP*vbz NP*nnp
+S*sbar CC S*np
+NP*dt PP*in
+NP*nn VP*vbz
+NP*prp VP*vbz
+S*np S*np
+NP*prp VP*vbz
+NP*prp VP*vp
+S*np S*np
+NP*dt PRN*, VP*vbp
+S*np NP*prp VP*vbz
+ADVP*jj NP*np VP*vbp
+ADJP*adjp
+NP*np VP*vp
+ADVP*rb NP*np VP*vbp
+NP*np PRN*, VP*md
+DT NN SBAR*whnp
+NP*dt VP*md
+
+# id=part2_nopunctuation.227
+S*np S*pp
+NP*dt VP*vbz
+NP*nnp S*np
+S*np NP*dt VP*vbz
+NP*dt VP*vbp
+NP*np VP*md
+ADVP*rb NP*np
+NP*prp VP*md
+NP*dt VP*md
+PP*in NP*nnp VP*vbd
+NP*jj VP*vbz
+NP*prp VP*vbd
+ADVP*rb PP*in NP*prp VP*vbd
+PP*in NP*np VP*vbz
+S*np S*np
+S*np VP*vbz NP*nnp
+S*np VP*vbd NP*nnp
+PP*in NP*nnp VP*vbd
+NP*dt ADVP*rb VP*vbd
+S*np VP*vbz NP*nnp
+S*s NP*dt VP*vbp
+
+# id=part2_nopunctuation.228
+NP*nnp NP*prp VP*md
+NP*dt VP*vbz
+NP*dt NP*np PP*in
+NP*ex VP*vbz
+S*vp VP*vbp
+NP*np VP*vbp
+NP*jj SBAR*in
+NP*dt VP*vbz
+NP*nn VP*vbz
+ADVP*rb NP*jj VP*vbp
+NP*np VP*vbp
+CC SBAR*in NP*nnp VP*vbz
+NP*nn VP*vbp
+
+# id=part2_nopunctuation.229
+S*s CC S*np
+NP*dt S*adjp VP*vbz
+NP*rb VP*vbp
+NP*dt VP*vbd
+
+# id=part2_nopunctuation.230
+NP*np VP*vbz ''
+NP*dt VP*vbz
+NP*nnp VP*vp
+ADVP*rb NP*nnp VP*vp
+PP*in NP*prp VP*vbz
+NP*np VP*vbz
+NP*nnp VP*vbp
+NP*prp VP*vbp
+NP*dt VP*vbz
+PP*in NP*prp VP*vbz
+NP*dt VP*vbp
+NP*prp VP*vbz
+NP*dt VP*vp
+
+# id=part2_nopunctuation.231
+NP*nnp VP*vbz
+NP*np VP*vbz
+PP*in NP*nnp VP*vbd
+`` S*pp '' NP*dt VP*vbd
+`` S*pp '' NP*prp VP*vbd
+PP*in NP*prp VP*vbd
+NP*np VP*vbd
+NP*nnp ADVP*rb VP*vbd
+PP*vbg NP*dt VP*vp
+NP*cd PP*in
+NP*np VP*md
+NP*dt VP*md
+S*np CC S*np
+SINV*conjp NP*ex VP*md
+IN NP*prp VP*md
+NP*np VP*md
+NP*vbg VP*md
+NP*jj PP*in
+NP*np VP*md
+NP*np VP*md
+
+# id=part2_nopunctuation.232
+NP*nn NP*np
+ADVP*rb NP*nn VP*vbz
+NP*np VP*vbz
+NP*np S*np
+PP*vbg NP*prp VP*vbp
+NP*np VP*vbz
+S*vp NP*prp VP*vbp
+NP*dt VP*vbz
+ADVP*rb NP*prp VP*md
+S*vp NP*dt VP*vbz
+NP*np VP*vbz
+NP*np ADVP*advp VP*vbz
+S*np VP*vbd NP*np
+CC SBAR*rb NP*np VP*md
+SBAR*in NP*np VP*vbz
+NP*dt VP*vbz
+ADVP*rb PP*in NP*dt VP*vbz
+NP*np VP*vbz
+NP*prp VP*vbz
+ADVP*rb NP*np VP*md
+NP*np VP*vbz
+PP*in NP*dt VP*md
+NP*np VP*vbz
+NP*dt VP*vbd
+S*prn ''
+
+# id=part2_nopunctuation.233
+NP*np VP*vbz
+NP*prp VP*vbd
+S*s CC S*np
+PP*in NP*dt VP*vp
+PP*vbn NP*dt VP*vbz
+NP*np VP*vbz
+NP*prp VP*vp
+NP*np VP*vbz
+NP*np VP*vb
+NP*np VP*vp
+S*intj CC S*pp
+NP*dt VP*vbz
+NP*ex VP*vbz
+PP*in NP*prp VP*vp
+NP*dt VP*vbz
+NP*dt S*np
+S*np S*np-tmp
+CC NP*dt VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbp
+NP*prp VP*md
+
+# id=part2_nopunctuation.234
+NP*np S*np PP*in
+S*np S*np
+NP*nnp VP*vbd
+ADVP*rb SBAR*in
+CC NP*np VP*vbp
+SBAR*in NP*prp VP*vbd
+NP*dt VP*vbp
+CC S*adjp S*pp S*advp
+
+# id=part2_nopunctuation.235
+NP*np VP*vbp
+NP*np VP*vbz
+NP*dt VP*vbz
+S*np S*np
+NP*dt VP*vbz
+NP*np VP*vp
+PP*in NP*np VP*vp
+`` S*np VP*vbp NP*np
+S*advp '' VP*vbz NP*np
+NP*np VP*vbz
+PP*vbg S*x CC S*vp
+NP*ex VP*vbd
+PP*in NP*np VP*vbd
+NP*np VP*vbz
+SBAR*in '' NP*nnp VP*vbz
+
+# id=part2_nopunctuation.236
+S*np NP*nnp
+PP*vbg NP*dt VP*md ''
+NP*np VP*vbz
+PP*in NP*np VP*vbd
+PP*in NP*dt ADVP*rb VP*vbz
+
+# id=part2_nopunctuation.237
+NP*np VP*vbp
+NP*np VP*vbn
+NP*nn VP*vbd
+NP*np VP*vbd
+NP*nac VP*vbz
+NP*prp VP*vbz
+S*np CC S*np
+PP*in NP*dt VP*vbz
+NP*rb VP*vbp
+PP*in `` S*pp ''
+PP*in NP*prp VP*vbd ''
+PP*in `` S*np ''
+PP*in `` NP*nnp '' VP*vbd ''
+PP*in `` S*np ''
+PP*in NP*prp ADVP*rb VP*vbd
+`` NP*prp VP*vbd ''
+PP*in `` S*np ''
+PP*in NP*np VP*vbp ''
+PP*in `` SBAR*pp `` NP*nnp VP*vp '' ''
+PP*in `` S*np
+NP*dt VP*vbd
+NP*ex VP*vbz ''
+IN NP*np
+WHNP*wp SQ*vbd
+WHNP*wp SQ*vbd
+
+# id=part2_nopunctuation.238
+S*np S*cc S*vp
+NP*prp$ VP*vbd
+NP*prp VP*md
+NP*dt VP*vbd
+NP*dt VP*vbd
+PP*in NP*prp VP*vbd
+NP*dt VP*vbz
+NP*prp VP*vbp
+NP*prp VP*vbp
+
+# id=part2_nopunctuation.239
+S*np ADVP*rb S*pp
+NP*dt VP*vbz
+NP*nnp VP*vp
+NP*np VP*md
+ADVP*rb PRN*, NP*np VP*vbz
+NP*np VP*vbz
+NP*np VP*vp
+ADVP*rb NP*prp VP*vbz
+NP*dt VP*vbz
+S*pp VP*vbp NP*np
+PP*in S*np RB S*sbar
+PP*in NP*prp VP*vbz
+PP*in PP*in NP*np VP*vbz
+S*pp CC S*np
+NP-TMP*rb NP*np VP*vbd
+NP*np VP*vbz
+
+# id=part2_nopunctuation.240
+NP*np VP*vbz
+NP*np VP*vbz
+SBAR*whnp VP*vbz
+CC NP*dt VP*vbz
+PP*vbg NP*np VP*vbd
+PP*in S*np ADVP*rb VP*vbz
+PP*vbg SBAR*in NP*np VP*md
+NP*dt VP*md
+PP*in NP*dt VP*vbz
+SBAR*in NP*prp VP*vbz
+SBAR*sbar NP*dt VP*vbz
+
+# id=part2_nopunctuation.241
+NP*np VP*nn
+NP*np VP*vbz
+CC NP*dt VP*md
+PP*in NP*nnp VP*vbz
+
