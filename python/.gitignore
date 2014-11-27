@@ -5,7 +5,7 @@
 .*.swp
 
 # python build files
-build  
-discourse.egg-info  
-dist  
+build/
+discourse.egg-info/
+dist/
 installed_files.txt

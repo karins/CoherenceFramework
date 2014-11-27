@@ -5,6 +5,9 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 
+# Java bitecode
+*.class
+
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
