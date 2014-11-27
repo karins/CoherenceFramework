@@ -82,18 +82,25 @@ def loglikelihood(corpus, T):
 
 def main(args):
 
+    # reads in the model
     logging.info('Loading model: %s', args.model)
     T, vocab = load_model(args.model, '<null>')
     logging.info('%d patterns and %d entries', len(vocab), T.size)
 
     # detect whether document boundary tokens were used in the model
     boundaries = '<doc>' in vocab
+    # reads in the test documents
     logging.info('Reading test documents in (boundaries=%s) ...', boundaries)
     documents = read_documents(sys.stdin, boundaries)  
     logging.info('%d test documents read', len(documents))
-    
+   
+    # encode test documents using the model's vocabulary
     test = encode_test_documents(documents, vocab)
+
+    # computes the log likelihood of each document
     L = loglikelihood(test, T)
+
+    # dumps scores
     print '#doc\t#loglikelihood'
     for i, l in enumerate(L):
         print '{0}\t{1}'.format(i, l)
