@@ -1,11 +1,17 @@
 """
 Some utilitary functions.
 
+You can test me:
+    python -m doctest util.py
+
+Also check my docstrings ;)
+
 @author waziz
 """
 import sys
 import itertools
 import numpy as np
+import gzip
 from collections import defaultdict
 
 try:
@@ -13,6 +19,12 @@ try:
     _PROGRESSBAR_ = True
 except:
     _PROGRESSBAR_ = False
+    
+try:
+    import tabulate as tab
+    _TABULATE_ = True
+except:
+    _TABULATE_ = False
 
 from doctext import iterdoctext
 
@@ -21,6 +33,11 @@ def bar(iterable):
     """wraps an iterable with a progress bar"""
     # if progressbar is installed we use it
     return ProgressBar()(iterable) if _PROGRESSBAR_ else iterable
+
+
+def tabulate(*args, **kwargs):
+    """wraps a call to tabulate.tabulate if available"""
+    return tab.tabulate(*args, **kwargs) if _TABULATE_ else 'Tip: consider installing tabulate for nice summaries at the end of some processes'
 
 
 def pairwise(iterable):
@@ -128,3 +145,11 @@ def encode_test_documents(T, vocab):
     return np.array([[np.array([vocab.get(t, -1) for t in S], int) for S in D] for D in T])
 
 
+def smart_open(path, *args, **kwargs):
+    if path.endswith('.gz'):
+        return gzip.open(path, *args, **kwargs)
+    else:
+        return open(path, *args, **kwargs)
+
+if __name__ == '__main__':
+    print >> sys.stderr, __doc__

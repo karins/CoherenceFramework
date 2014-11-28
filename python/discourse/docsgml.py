@@ -10,6 +10,7 @@ sgml-formatted document container files.
 """
 import gzip
 import xml.parsers.expat
+import re
 from xml.dom.minidom import getDOMImplementation
 from xml.sax.saxutils import escape, unescape
 from functools import partial
@@ -30,7 +31,7 @@ class TextFromSGML(object):
         # parsed documents
         state['documents'] = []
         # temporary data (e.g. curent document's id, sentences and status)
-        state['_id'] = None
+        state['_attrs'] = None
         state['_doc'] = None
         state['_reading'] = False
         state['_text_under'] = text_under
@@ -47,16 +48,16 @@ class TextFromSGML(object):
         self._state = state
 
     def iterdocs(self):
-        """Iterates over documents in a given sgm file -> {'id':doc_id, 'data':doc_sentences}"""
-        for did, doc in self._state['documents']:
-            yield {'id': did, 'text':'\n'.join(doc)}
+        """Iterates over documents in a given sgm file -> content, attributes"""
+        for content, attrs in self._state['documents']:
+            yield content, attrs
 
     @staticmethod
     def _start_element(name, attrs, state):
         """starts a document"""
         if name.lower() == 'doc':
             state['_doc'] = []
-            state['_id'] = attrs['id']
+            state['_attrs'] = dict(attrs)
         if state['_text_under'].lower() == name.lower():
             state['_reading'] = True
 
@@ -64,9 +65,9 @@ class TextFromSGML(object):
     def _end_element(name, state):
         """ends a document"""
         if name.lower() == 'doc':
-            state['documents'].append((state['_id'], state['_doc']))
+            state['documents'].append((state['_doc'], state['_attrs']))
             state['_doc'] = None
-            state['_id'] = None
+            state['_attrs'] = None
         if state['_text_under'].lower() == name.lower():
             state['_reading'] = False
 
@@ -102,3 +103,110 @@ class MakeSGMLDocs(object):
         with gzip.open(path, 'wb') as fout:
             # returns utf-8 encoded into python string
             fout.write(self._docs.toprettyxml(encoding='utf-8'))
+
+
+def wmtbadsgml_iterdoc(istream, empty=''):
+    """
+    Parses WMT's baddly formatted SGML files.
+    They are not really XML files, they are simply plain text with XML-style tags.
+    If you parse them using an XML parser, you will have problems with invalid chars all over.
+
+    Arguments
+    ---------
+    istream: an iterable returning the lines in the file
+    empty: what to output if a segment is empty
+
+    Returns
+    -------
+    a generator of tuples of the kind (content, attributes) where each tuple represents a document
+    the content is a list of segments
+    the attributes is a dictionary of string keys and string values
+    
+    >>> docs = list(wmtbadsgml_iterdoc(_WMT_SGML_EXAMPLE_))
+    >>> len(docs)
+    2
+    >>> content, attrs = docs[0]
+    >>> content
+    ['A Republican strategy to counter the re-election of Obama', 'Republican leaders justified their policy by the need to combat electoral fraud.', 'Indeed, Republican lawyers identified only 300 cases of electoral fraud in the United States in a decade.']
+    >>> sorted(attrs.iteritems(), key=lambda (k,v): k)
+    [('docid', 'cyberpresse/2012/12/01/1564248'), ('genre', 'news'), ('origlang', 'fr'), ('sysid', 'ref')]
+    >>> content, attrs = docs[1]
+    >>> content  # note the EMPTY segment at the end of the list
+    ['One thing is certain: these new provisions will have a negative impact on voter turn-out.', '']
+    >>> docs = list(wmtbadsgml_iterdoc(_WMT_SGML_EXAMPLE_, empty='<EMPTY>'))  # use it like this if you don't like empty strings
+    >>> docs[1][0]
+    ['One thing is certain: these new provisions will have a negative impact on voter turn-out.', '<EMPTY>']
+    """
+
+    # matching tags of regardless of case
+    start_doc_re = re.compile('<doc(.*)>', re.IGNORECASE)
+    end_doc_re = re.compile('</doc>', re.IGNORECASE)
+    attr_re = re.compile('([^= ]+)="([^"]+)"')
+    seg_re = re.compile('<seg[^>]*>(.*)</seg>', re.IGNORECASE)
+
+    content = None
+    attrs = None
+
+    for line in istream:
+        
+        # end doc
+        m = end_doc_re.search(line)
+        if m is not None:
+            yield content, attrs
+            content = None
+            attrs = None
+            continue
+
+        # begin doc
+        m = start_doc_re.search(line)
+        if m is not None:
+            content = []
+            attrs = dict(attr_re.findall(m.group(1)))
+            continue
+        
+        # segments
+        m = seg_re.search(line)
+        if m is not None:
+            seg_str = m.group(1).strip()
+            content.append(seg_str if seg_str else empty)
+
+def main():
+    """
+    Converts WMT's bad SGML format to doctext
+    """
+
+    from doctext import writedoctext
+    import sys
+
+    if len(sys.argv) > 1:
+        print >> sys.stderr, 'Usage: python docsgml < wmt_bad_sgml > doctext'
+        sys.exit(0)
+
+    for content, attrs in wmtbadsgml_iterdoc(sys.stdin, '<EMPTY>'):
+        writedoctext(sys.stdout, content, **attrs)
+
+if __name__ == '__main__':
+    main()
+
+
+_WMT_SGML_EXAMPLE_ =  \
+"""
+<refset trglang="en" setid="newstest2013" srclang="any">
+<doc sysid="ref" docid="cyberpresse/2012/12/01/1564248" genre="news" origlang="fr">
+<h1>
+<seg id="1">A Republican strategy to counter the re-election of Obama </seg>
+</h1>
+<p>
+<seg id="2">Republican leaders justified their policy by the need to combat electoral fraud.</seg>
+<seg id="4">Indeed, Republican lawyers identified only 300 cases of electoral fraud in the United States in a decade.</seg>
+</p>
+</doc>
+<DOC sysid="ref" docid="cyberpresse/2012/12/01/1564249" genre="news" origlang="fr">
+<p>
+<seg id="5">One thing is certain: these new provisions will have a negative impact on voter turn-out.</seg>
+<seg></seg>
+</p>
+</DOC>
+</refset>
+""".split('\n')
+
