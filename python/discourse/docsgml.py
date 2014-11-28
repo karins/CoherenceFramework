@@ -124,7 +124,7 @@ def wmtbadsgml_iterdoc(istream, empty=''):
     
     >>> docs = list(wmtbadsgml_iterdoc(_WMT_SGML_EXAMPLE_))
     >>> len(docs)
-    2
+    3
     >>> content, attrs = docs[0]
     >>> content
     ['A Republican strategy to counter the re-election of Obama', 'Republican leaders justified their policy by the need to combat electoral fraud.', 'Indeed, Republican lawyers identified only 300 cases of electoral fraud in the United States in a decade.']
@@ -133,6 +133,9 @@ def wmtbadsgml_iterdoc(istream, empty=''):
     >>> content, attrs = docs[1]
     >>> content  # note the EMPTY segment at the end of the list
     ['One thing is certain: these new provisions will have a negative impact on voter turn-out.', '']
+    >>> content, attrs = docs[2]
+    >>> content  # note how this one also recovered the segments even though they were not inline
+    ['One thing is certain: these new provisions will have a negative impact on voter turn-out.', 'Republican leaders justified their policy by the need to combat electoral fraud.', 'Indeed, Republican lawyers identified only 300 cases of electoral fraud in the United States in a decade.']
     >>> docs = list(wmtbadsgml_iterdoc(_WMT_SGML_EXAMPLE_, empty='<EMPTY>'))  # use it like this if you don't like empty strings
     >>> docs[1][0]
     ['One thing is certain: these new provisions will have a negative impact on voter turn-out.', '<EMPTY>']
@@ -143,12 +146,15 @@ def wmtbadsgml_iterdoc(istream, empty=''):
     end_doc_re = re.compile('</doc>', re.IGNORECASE)
     attr_re = re.compile('([^= ]+)="([^"]+)"')
     seg_re = re.compile('<seg[^>]*>(.*)</seg>', re.IGNORECASE)
+    start_seg_re = re.compile('<seg[^>]*>(.*)', re.IGNORECASE)
+    end_seg_re = re.compile('(.*)</seg>', re.IGNORECASE)
 
     content = None
     attrs = None
 
-    for line in istream:
-        
+    iterable = iter(istream)
+
+    for line in iterable: 
         # end doc
         m = end_doc_re.search(line)
         if m is not None:
@@ -164,11 +170,26 @@ def wmtbadsgml_iterdoc(istream, empty=''):
             attrs = dict(attr_re.findall(m.group(1)))
             continue
         
-        # segments
+        # inline segments
         m = seg_re.search(line)
         if m is not None:
             seg_str = m.group(1).strip()
             content.append(seg_str if seg_str else empty)
+            continue
+
+        # multiple line segments
+        m = start_seg_re.search(line)
+        if m is not None:
+            parts = [m.group(1).strip()]
+            for more in iterable:
+                m = end_seg_re.search(more)
+                if m is not None:
+                    parts.append(m.group(1).strip())
+                    break
+                else:
+                    parts.append(more.strip())
+            content.append(' '.join(parts).strip())
+
 
 def main():
     """
@@ -184,6 +205,7 @@ def main():
 
     for content, attrs in wmtbadsgml_iterdoc(sys.stdin, '<EMPTY>'):
         writedoctext(sys.stdout, content, **attrs)
+
 
 if __name__ == '__main__':
     main()
@@ -207,6 +229,17 @@ _WMT_SGML_EXAMPLE_ =  \
 <seg></seg>
 </p>
 </DOC>
+<DOC sysid="ref" docid="cyberpresse/2012/12/01/1564249" genre="news" origlang="fr">
+<p>
+<seg id="5">
+One thing is certain: these new provisions will have a negative impact on voter turn-out.
+</seg>
+<seg id="2">
+
+Republican leaders justified their policy by the need to combat electoral fraud.</seg>
+<seg id="4">Indeed, Republican lawyers identified only 300 cases of electoral fraud in the United States in a 
+decade.</seg>
+</p>
+</DOC>
 </refset>
 """.split('\n')
-

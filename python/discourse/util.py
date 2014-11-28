@@ -12,6 +12,7 @@ import sys
 import itertools
 import numpy as np
 import gzip
+import glob
 from collections import defaultdict
 
 try:
