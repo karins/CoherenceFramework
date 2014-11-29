@@ -2,6 +2,12 @@
 
 * Potet 
 
+              |  fr-en 
+    :---------|-------:
+    systems   |  2    
+    docs      |  361    
+    sentences |  10755
+
             "Marion Potet, Emmanuelle Esperança-rodier, Laurent Besacier, Hervé Blanchon.(2012). Collection of a Large Database of French-English SMT Output Corrections. Proceedings of the 8th International Conference on Language Resources and Evaluation (LREC), Istanbul (Turkey), 23-25 May 2012."
 
             @INPROCEEDINGS{Potet12,

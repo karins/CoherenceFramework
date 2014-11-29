@@ -191,7 +191,71 @@ def wmtbadsgml_iterdoc(istream, empty=''):
             content.append(' '.join(parts).strip())
 
 
-def main():
+def badsgml_iterdoc(istream, empty=''):
+    """
+    """
+
+    # matching tags of regardless of case
+    start_doc_re = re.compile('<doc(.*)>', re.IGNORECASE)
+    end_doc_re = re.compile('</doc>', re.IGNORECASE)
+    attr_re = re.compile('([^= ]+)="([^"]+)"')
+
+    content = None
+    attrs = None
+
+    for line in istream: 
+        # end doc
+        m = end_doc_re.search(line)
+        if m is not None:
+            yield content, attrs
+            content = None
+            attrs = None
+            continue
+
+        # begin doc
+        m = start_doc_re.search(line)
+        if m is not None:
+            content = []
+            attrs = dict(attr_re.findall(m.group(1)))
+            continue
+        
+        # content
+        if content is not None:
+            line = line.strip()
+            content.append(line if line else empty)
+
+
+def parse_args():
+    """parse command line arguments"""
+    import argparse
+    import sys
+
+    parser = argparse.ArgumentParser(description='Create doctext files from SGML',
+            formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+
+    parser.add_argument('input', nargs='?', 
+            type=argparse.FileType('r'), default=sys.stdin,
+            help='list of files or (see --add-header)')
+    parser.add_argument('output', nargs='?', 
+            type=argparse.FileType('w'), default=sys.stdout,
+            help='doctext file containing all documents')
+    parser.add_argument('--no-seg', 
+            action='store_true',
+            help='sentences are not wrapped with a <seg> tag')
+    parser.add_argument('--add-id', 
+            action='store_true',
+            help='add sequential ids to the documents')
+    parser.add_argument('--attr', 
+            action='append',
+            default=[],
+            help='add a key value pair attribute to all documents (key=value)')
+
+    args = parser.parse_args()
+
+    return args
+
+
+def main(args):
     """
     Converts WMT's bad SGML format to doctext
     """
@@ -199,16 +263,19 @@ def main():
     from doctext import writedoctext
     import sys
 
-    if len(sys.argv) > 1:
-        print >> sys.stderr, 'Usage: python docsgml < wmt_bad_sgml > doctext'
-        sys.exit(0)
+    converter = badsgml_iterdoc if args.no_seg else wmtbadsgml_iterdoc
 
-    for content, attrs in wmtbadsgml_iterdoc(sys.stdin, '<EMPTY>'):
-        writedoctext(sys.stdout, content, **attrs)
+    for did, (content, attrs) in enumerate(converter(args.input, '<EMPTY>')):
+        if args.add_id:
+            attrs['docid'] = did
+        for kv in args.attr:
+            k, v = kv.split('=')
+            attrs[k] = v
+        writedoctext(args.output, content, **attrs)
 
 
 if __name__ == '__main__':
-    main()
+    main(parse_args())
 
 
 _WMT_SGML_EXAMPLE_ =  \
