@@ -23,6 +23,12 @@
 
 * WMT14
 
+              |  de-en | fr-en  | ru-en
+    :---------|-------:|-------:|--------:
+    systems   |  14    | 9      | 14
+    docs      |  164   | 176    | 175
+    sentences |  3003  | 3003   | 3003
+
 ## docs
 
 Contains the documents in `doctext` format.
