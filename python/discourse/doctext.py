@@ -61,22 +61,94 @@ def iterdoctext(istream):
         yield doc['lines'], doc['attrs']
 
 
-def main():
+def iteraddheader(istream):
+    """
+    Iterates over documents adding headers
+    :param istream: where we are reading from
+    :yields documents line by line, including starting header and empty line separating documents 
+    Chain it with `iterdoctext` to read documents from a file which misses headers:
+
+    >>> import sys
+    >>> stream = 'a b c'.split() + [''] + 'd e f'.split()
+    >>> _ = [writedoctext(sys.stdout, doc, **attrs) for doc, attrs in iterdoctext(iteraddheader(stream))]
+    # id=0
+    a
+    b
+    c
+    <BLANKLINE>
+    # id=1
+    d
+    e
+    f
+    <BLANKLINE>
+    >>> stream = 'a b c'.split() + [''] + 'd e f'.split() + ['']
+    >>> _ = [writedoctext(sys.stdout, doc, **attrs) for doc, attrs in iterdoctext(iteraddheader(stream))]
+    # id=0
+    a
+    b
+    c
+    <BLANKLINE>
+    # id=1
+    d
+    e
+    f
+    <BLANKLINE>
+    """
+    
+    first = True
+    n = 0
+    for line in istream:
+        if first:
+            yield '# id={0}'.format(n)
+            first = False
+            n += 1
+        elif not line.strip():
+            first = True
+        yield line
+
+
+def parse_args():
+    """parse command line arguments"""
+    import argparse
+    import sys
+
+    parser = argparse.ArgumentParser(description='Create doctext files',
+            formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+
+    parser.add_argument('input', nargs='?', 
+            type=argparse.FileType('r'), default=sys.stdin,
+            help='list of files or (see --add-header)')
+    parser.add_argument('output', nargs='?', 
+            type=argparse.FileType('w'), default=sys.stdout,
+            help='doctext file containing all documents')
+    parser.add_argument('--add-header', '-a',
+            action='store_true',
+            help='switches to a different mode in which the input is seen as a container of documents, separated by 1 empty line (as in doctext), but missing a header')
+
+    args = parser.parse_args()
+
+    return args
+
+
+def main(args):
     """Use this to convert a list of documents (one document per file) into a single doctext"""
     import sys
     import os
     
-    if len(sys.argv) > 1:
-        print >> sys.stderr, 'python -m discourse.doctext < corpus.files > corpus.doctext'
-        sys.exit(0)
+    if not args.add_header:
+        # in this mode the input is a list of files (1 document per file)
+        files = [path.strip() for path in args.input if not path.startswith('#')]
+        for path in files:
+            doc_name = os.path.basename(path)
+            with open(path) as fi:
+                lines = [line.strip() for line in fi]
+                writedoctext(args.output, lines, id=doc_name)
+    else:
+        # in this mode the input is a stream of documents separated by 1 empty line (to be a doctext file, documents need an added header)
+        for content, attrs in iterdoctext(iteraddheader(args.input)):
+            writedoctext(args.output, content, **attrs)
 
-    files = [path.strip() for path in sys.stdin if not path.startswith('#')]
-    for path in files:
-        doc_name = os.path.basename(path)
-        with open(path) as fi:
-            lines = [line.strip() for line in fi]
-            writedoctext(sys.stdout, lines, id=doc_name)
 
 if __name__ == '__main__':
-    main()
+    main(parse_args())
 
