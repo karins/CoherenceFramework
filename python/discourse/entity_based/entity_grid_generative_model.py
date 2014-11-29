@@ -10,13 +10,38 @@ import logging
 import itertools
 import math 
 import numpy as np
-from grid import read_grid 
+from grid import read_grid , r2i
 
-#def read_unigrams(file):
-#    np.loadtxt(file).reshape((4,5,10))
+#convert to dictionary from numpy [ 146.    7.    8.    4.]
+#r2i = {'S': 3, 'O': 2, 'X': 1, '-': 0}
+def read_unigrams(raw_unigrams):
+    unigrams = {}
+    for idx in range(len(raw_unigrams)):
+        unigrams[get_role(idx)] = raw_unigrams[idx]
+    logging.info(unigrams)
+    return unigrams
+
+'''  grid indexing to create following format:
+    -- -X -O -S
+    X- XX XO XS
+    O- OX OO OS
+    S- SX SP SS
+ '''
+def read_bigrams(raw_bigrams):
+    bigrams = {}
     
-#def read_bigrams(file):
-#    np.loadtxt(file).reshape((4,5,10))
+    for idx in range(len(raw_bigrams)):
+        row = raw_bigrams[idx,:]
+        
+        for idx2 in range(len(row)): 
+            bigrams[get_role(idx)+get_role(idx2)] = row[idx2]
+    logging.info(bigrams)
+    return bigrams
+
+def get_role(value_to_match):
+    for key, value in r2i.items():
+        if value == value_to_match:
+            return key
 
 def pairwise(iterable):
     "s -> (s0,s1), (s1,s2), (s2, s3), ..."
@@ -37,18 +62,19 @@ def compute_coherence(doc_set, unigrams, bigrams):
     
     # for each document
     for doc in doc_set:
-        # for each sentence pair
-        for Sa, Sb in pairwise(doc):
-            # for each transition in the second sentence of the pair
-            for v in Sb:
-                # sum up the contributions of the pattern v conditioned on each pattern u in the first sentence of the pair
-                prob_v_given_u = sum((float(bigrams.get((u, v), 0)))/(float(unigrams.get(u, 0))) for u in Sa)
-
-                # compute the contribution of pattern v in Sb to the training likelihood
-                coherence += math.log(1.0/len(Sa)) + math.log(prob_v_given_u)
-
-                coherence/len()
+        for entity_roles in doc.transpose():
+            for ri, rj in pairwise(entity_roles):
                 
+                # sum up the probability of entity role ri conditioned on entity role rj in the first sentence of the pair
+                logging.debug( 'entity: '+str(int(ri)) +str(int(rj))+' -> '+str(bigrams.get(str(int(ri)) +str(int(rj)), 0)))
+                prob = float(bigrams.get(str(int(ri)) +str(int(rj)), 0))/float(unigrams.get(str(int(ri)), 0))
+                logging.debug( 'prob '+prob)
+                # compute the contribution of pattern v in Sb to the training likelihood
+                #coherence += math.log(float(bigrams.get(str(int(ri)) +str(int(rj)), 0))/float(unigrams.get(str(int(ri)), 0)))
+                coherence += math.log(prob)
+        coherence_scores[doc]= (1/(len(ri) * len(rj)) * coherence)
+        
+        logging.debug(coherence_scores[doc]) 
     return coherence_scores
 
 def main(args):
@@ -59,12 +85,12 @@ def main(args):
         logging.info('Processing %s', path)
         with open(path, 'r') as fi:
             data_set.append(read_grid(fi))
-    unigrams = np.loadtxt(args.unigramfile)
-    bigrams = np.loadtxt(args.bigramfile)
-    logging.info( unigrams)
-    logging.info( bigrams)
-    #unigrams = read_unigrams(unigram_file)
-    #bigrams = read_bigrams(bigram_file)
+    coded_unigrams = np.loadtxt(args.unigramfile)
+    coded_bigrams = np.loadtxt(args.bigramfile)
+    logging.info(coded_unigrams)
+    logging.info(coded_bigrams)
+    unigrams = read_unigrams(coded_unigrams)
+    bigrams = read_bigrams(coded_bigrams)
     print compute_coherence(data_set, unigrams, bigrams)
             
 
