@@ -4,7 +4,8 @@
 
               |  fr-en 
     :---------|-------:
-    systems   |  2    
+    systems   |  1    
+    references|  1
     docs      |  361    
     sentences |  10755
 
@@ -19,19 +20,21 @@
             MONTH={May}
             }
 
-* WMT13
+* WMT13's *newstest2013*
 
               |  de-en | fr-en  | ru-en
     :---------|-------:|-------:|--------:
-    systems   |  24    | 20     | 24
+    systems   |  23    | 19     | 23
+    references|  1     | 1      | 1
     docs      |  52    | 52     | 52
     sentences |  3000  | 3000   | 3000
 
-* WMT14
+* WMT14's *newstest2014*
 
               |  de-en | fr-en  | ru-en
     :---------|-------:|-------:|--------:
-    systems   |  14    | 9      | 14
+    systems   |  13    | 8      | 13
+    references|  1     | 1      | 1
     docs      |  164   | 176    | 175
     sentences |  3003  | 3003   | 3003
 
@@ -47,7 +50,7 @@ The original sgml files can be downloaded from WMT's site.
 
 To convert all of them you can run:
 
-    for file in wmt14-data/sgm/system-outputs/newstest2014/de-en/*; do echo $file; python -m discourse.docsgml < $file > data/wmt14/docs/`basename $file .sgm`; done
+    for file in wmt14-data/sgm/system-outputs/newstest2014/de-en/*; do echo $file; python -m discourse.docsgml < $file > newstest2014/docs/`basename $file .sgm`; done
 
 ## trees
 
@@ -55,10 +58,10 @@ Contains the parsed documents. We used Stanford lexicalised PCG parser.
 
 To parse one file you can use:
 
-    python -m discourse.preprocessing.parsedoctext data/docs/newstest2013-src.de data/trees/newstest2013-src.de --jobs 10
+    python -m discourse.preprocessing.parsedoctext docs/newstest2013.de-en.ref trees/newstest2013.de-en.ref --jobs 10
 
 Note that `discourse.preprocessing.parsedoctext` wraps calls to Stanford parser. You might need to overwrite some of its command line arguments omitted here (e.g. path to Stanford parser, models and grammars).
 
 To parse all of them you can write:
 
-    for file in data/docs/*; do python -m discourse.preprocessing.parsedoctext $file data/trees/`basename $file` --jobs 10; done
+    for file in docs/*; do python -m discourse.preprocessing.parsedoctext $file trees/`basename $file` --jobs 10; done
