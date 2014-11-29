@@ -58,7 +58,7 @@ def compute_coherence(doc_set, unigrams, bigrams):
 #length (n) and the probability of the entire text is normalized
 #by the number of columns (m):
     coherence = 0.0
-    coherence_scores = {}
+    coherence_scores = []
     
     # for each document
     for doc in doc_set:
@@ -66,15 +66,17 @@ def compute_coherence(doc_set, unigrams, bigrams):
             for ri, rj in pairwise(entity_roles):
                 
                 # sum up the probability of entity role ri conditioned on entity role rj in the first sentence of the pair
-                logging.debug( 'entity: '+str(int(ri)) +str(int(rj))+' -> '+str(bigrams.get(str(int(ri)) +str(int(rj)), 0)))
-                prob = float(bigrams.get(str(int(ri)) +str(int(rj)), 0))/float(unigrams.get(str(int(ri)), 0))
-                logging.debug( 'prob '+prob)
-                # compute the contribution of pattern v in Sb to the training likelihood
-                #coherence += math.log(float(bigrams.get(str(int(ri)) +str(int(rj)), 0))/float(unigrams.get(str(int(ri)), 0)))
+                logging.debug( 'entity: \''+get_role(ri) +get_role(rj)+'\' -> '+str(bigrams.get(get_role(ri)+get_role(rj))))
+                logging.debug( 'unigram: \''+get_role(ri)+'\' -> '+ str(unigrams.get( get_role(int(ri))) ))
+                #prob = float(bigrams.get(str(int(ri)) +str(int(rj)), 0))/float(unigrams.get(str(int(ri)), 0))
+                prob = bigrams.get(get_role(ri)+get_role(rj), 0)/unigrams.get( get_role(int(ri)),0) 
+                logging.debug( 'prob '+str(prob)) 
                 coherence += math.log(prob)
-        coherence_scores[doc]= (1/(len(ri) * len(rj)) * coherence)
+        m = doc.shape[0]
+        n =doc.shape[1]
+        coherence_scores.append( ( 1 /(m * n)) *  coherence)
         
-        logging.debug(coherence_scores[doc]) 
+         
     return coherence_scores
 
 def main(args):
@@ -91,6 +93,7 @@ def main(args):
     logging.info(coded_bigrams)
     unigrams = read_unigrams(coded_unigrams)
     bigrams = read_bigrams(coded_bigrams)
+    
     print compute_coherence(data_set, unigrams, bigrams)
             
 
