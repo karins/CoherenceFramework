@@ -15,9 +15,15 @@
 
 * WMT13
 
+              |  de-en | fr-en  | ru-en
+    :---------|-------:|-------:|--------:
+    systems   |  24    | 20     | 24
+    docs      |  52    | 52     | 52
+    sentences |  3000  | 3000   | 3000
+
 * WMT14
 
-## `docs`
+## docs
 
 Contains the documents in `doctext` format.
 
@@ -31,7 +37,7 @@ To convert all of them you can run:
 
     for file in wmt14-data/sgm/system-outputs/newstest2014/de-en/*; do echo $file; python -m discourse.docsgml < $file > data/wmt14/docs/`basename $file .sgm`; done
 
-## `trees`
+## trees
 
 Contains the parsed documents. We used Stanford lexicalised PCG parser. 
 
