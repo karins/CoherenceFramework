@@ -68,14 +68,15 @@ def compute_coherence(doc_set, unigrams, bigrams):
                 # sum up the probability of entity role ri conditioned on entity role rj in the first sentence of the pair
                 logging.debug( 'entity: \''+get_role(ri) +get_role(rj)+'\' -> '+str(bigrams.get(get_role(ri)+get_role(rj))))
                 logging.debug( 'unigram: \''+get_role(ri)+'\' -> '+ str(unigrams.get( get_role(int(ri))) ))
-                #prob = float(bigrams.get(str(int(ri)) +str(int(rj)), 0))/float(unigrams.get(str(int(ri)), 0))
-                prob = bigrams.get(get_role(ri)+get_role(rj), 0)/unigrams.get( get_role(int(ri)),0) 
+                
+                prob = float(bigrams.get(get_role(ri)+get_role(rj), 0))/float(unigrams.get( get_role(int(ri)),0)) 
                 logging.debug( 'prob '+str(prob)) 
                 coherence += math.log(prob)
         m = doc.shape[0]
         n =doc.shape[1]
-        coherence_scores.append( ( 1 /(m * n)) *  coherence)
+        coherence_scores.append( ( 1.0 /(m * n)) *  coherence)
         
+        logging.debug( 'Coherence score '+str(( 1.0 /(m * n)) *  coherence))
          
     return coherence_scores
 

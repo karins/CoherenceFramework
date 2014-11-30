@@ -37,7 +37,6 @@ def pairwise(iterable):
 def train(corpus):
     
     U = np.zeros(len(r2i), int)
-    # 0 0 0 0
     B = np.zeros((len(r2i), len(r2i)), int)
     
     # counts
@@ -49,9 +48,7 @@ def train(corpus):
                 U[r] += 1
             for ri, rj in pairwise(entity_roles):
                 B[ri,rj] += 1
-                #logging.info('for pair '+ri+' '+rj+' incrementing to ')
-    
-    # dump it somehow
+                 
     return U,B
 
 
@@ -99,7 +96,6 @@ def main(args):
         with open(path, 'r') as fi:
             data_set.append(read_grid(fi))
             
-    logging.info('now extracting unigrams..')
     unigrams,bigrams = train(data_set)    
     
     logging.info( unigrams)    
@@ -108,8 +104,6 @@ def main(args):
     """save unigrams and bigrams"""
     np.savetxt(args.unigramfile, unigrams)
     np.savetxt(args.bigramfile, bigrams)
-    #new_data = np.loadtxt(args.unigramfile)
-    #print new_data
     
 if __name__ == '__main__':
      main(parse_args())
