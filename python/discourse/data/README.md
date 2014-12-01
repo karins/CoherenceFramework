@@ -44,13 +44,13 @@ Contains the documents in `doctext` format.
 
 To convert from WMT's bad SGML format to doctext we used:
 
-    python -m discourse.docsgml < sgml/newstest2013-src.de.sgml > docs/newstest2013-src.de
+    python -m discourse.docsgml < sgml/newstest2013.de-en.en.sgml > docs/newstest2013.de-en.ref
 
 The original sgml files can be downloaded from WMT's site.
 
 To convert all of them you can run:
 
-    for file in wmt14-data/sgm/system-outputs/newstest2014/de-en/*; do echo $file; python -m discourse.docsgml < $file > newstest2014/docs/`basename $file .sgm`; done
+    for file in wmt14-data/sgm/system-outputs/newstest2014/de-en/*; do echo $file; python -m discourse.docsgml < $file > docs/`basename $file .sgm`; done
 
 ## trees
 

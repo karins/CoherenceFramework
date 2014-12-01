@@ -6,7 +6,7 @@ You can test me:
 
 Also check my docstrings ;)
 
-@author waziz
+@author: wilkeraziz
 """
 import sys
 import itertools
@@ -16,7 +16,7 @@ import glob
 from collections import defaultdict
 
 try:
-    from progressbar import ProgressBar
+    from progressbar import ProgressBar, AnimatedMarker, Percentage, Timer, ETA, Bar
     _PROGRESSBAR_ = True
 except:
     _PROGRESSBAR_ = False
@@ -30,10 +30,17 @@ except:
 from doctext import iterdoctext
 
 
-def bar(iterable):
+def bar(iterable, msg='', maxval=None, none=False):
     """wraps an iterable with a progress bar"""
     # if progressbar is installed we use it
-    return ProgressBar()(iterable) if _PROGRESSBAR_ else iterable
+    if not _PROGRESSBAR_ or none:
+        return iterable
+    widgets=[msg, Bar(), ' ', Percentage(), ' ', Timer(), ' ', ETA()]
+    if maxval is None:
+        b = ProgressBar(widgets=widgets)
+    else:
+        b = ProgressBar(maxval=maxval, widgets=widgets)
+    return b(iterable)
 
 
 def tabulate(*args, **kwargs):

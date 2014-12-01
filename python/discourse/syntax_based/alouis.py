@@ -20,7 +20,7 @@ But this is silly as it will simply retrieve the MLE solution (1). That is, scip
 Perhaps a way around would be to introduce the possibility of null alignments in her formulation (still assuming complete data).
 A much better way around is not to assume the data is complete and use EM (basically, IBM model 1), see `ibm1.py`.
 
-@author waziz
+@author: wilkeraziz
 """
 
 import itertools

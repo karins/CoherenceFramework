@@ -7,10 +7,14 @@ This module can be used to score a document using IBM model 1.
 import sys
 import argparse
 import logging
-import math
 import numpy as np
+import traceback
+from itertools import izip
 from collections import defaultdict
+from multiprocessing import Pool
+from functools import partial
 from discourse.util import register_token, read_documents, encode_documents, encode_test_documents, ibm_pairwise
+from discourse.util import smart_open
 
 
 def parse_args():
@@ -88,21 +92,29 @@ def loglikelihood(corpus, T):
             E = np.array([e for e in _E if e >= 0])
             for f in F:
                 # sum up the contributions of the pattern v conditioned on each pattern u in the first sentence of the pair
-                L[i] += -np.infty if f < 0 else math.log(T[f,E].sum())
+                L[i] += -np.infty if f < 0 else np.log(T[f,E].sum())
     return L
 
-def main(args):
+
+def wrapped_loglikelihood(corpus, T):
+    try:
+        return loglikelihood(corpus, T)
+    except:
+        raise Exception(''.join(traceback.format_exception(*sys.exc_info())))
+
+
+def decode(model, istream, ostream, estream=sys.stderr):
 
     # reads in the model
-    logging.info('Loading model: %s', args.model)
-    T, vocab = load_model(args.model, '<null>')
+    logging.info('Loading model: %s', model)
+    T, vocab = load_model(model, '<null>')
     logging.info('%d patterns and %d entries', len(vocab), T.size)
 
     # detect whether document boundary tokens were used in the model
     boundaries = '<doc>' in vocab
     # reads in the test documents
     logging.info('Reading test documents in (boundaries=%s) ...', boundaries)
-    documents = read_documents(args.input, boundaries)  
+    documents = read_documents(istream, boundaries)  
     logging.info('%d test documents read', len(documents))
    
     # encode test documents using the model's vocabulary
@@ -112,16 +124,56 @@ def main(args):
     L = loglikelihood(test, T)
 
     # dumps scores
-    print >> args.output, '#doc\t#logprob\t#sentences\t#s_normalised\t#patterns\t#p_normalised'
+    print >> ostream, '#doc\t#logprob\t#sentences\t#s_normalised\t#patterns\t#p_normalised'
     for i, ll in enumerate(L):
         num_sentences = len(test[i])
         num_patterns = sum(len(row) for row in test[i])
-        print >> args.output, '{0}\t{1}\t{2}\t{3}\t{4}\t{5}'.format(i, ll, num_sentences, 
+        print >> ostream, '{0}\t{1}\t{2}\t{3}\t{4}\t{5}'.format(i, ll, num_sentences, 
                 ll/num_sentences, num_patterns, ll/num_patterns)
-    print >> sys.stderr, '#sum\t#mean'
-    print >> sys.stderr, '{0}\t{1}'.format(L.sum(), np.mean(L))
+    print >> estream, '#sum\t#mean'
+    print >> estream, '{0}\t{1}'.format(L.sum(), np.mean(L))
   
-    # TODO: print viterbi alignments
+
+def decode_many(model, ipaths, opaths, jobs, estream=sys.stderr):
+
+    # reads in the model
+    logging.info('Loading model: %s', model)
+    T, vocab = load_model(model, '<null>')
+    logging.info('%d patterns and %d entries', len(vocab), T.size)
+
+    # detect whether document boundary tokens were used in the model
+    boundaries = '<doc>' in vocab
+
+    # reads in the test documents
+    logging.info('Reading test documents in (boundaries=%s) ...', boundaries)
+
+    tests = [None] * len(ipaths)
+    for i, ipath in enumerate(ipaths):
+        documents = read_documents(smart_open(ipath), boundaries)  
+        logging.info('%s: %d test documents read', ipath, len(documents))
+        # encode test documents using the model's vocabulary
+        tests[i] = encode_test_documents(documents, vocab)
+
+    # computes the log likelihood of each document in each test file
+    pool = Pool(jobs)
+    all_L = pool.map(partial(wrapped_loglikelihood, T=T), tests)
+
+    print >> estream, '#file\t#sum\t#mean'
+    for ipath, opath, test, L in izip(ipaths, opaths, tests, all_L):
+        with smart_open(opath, 'w') as ostream:
+            # dumps scores
+            print >> ostream, '#doc\t#logprob\t#sentences\t#s_normalised\t#patterns\t#p_normalised'
+            for i, ll in enumerate(L):
+                num_sentences = len(test[i])
+                num_patterns = sum(len(row) for row in test[i])
+                print >> ostream, '{0}\t{1}\t{2}\t{3}\t{4}\t{5}'.format(i, ll, num_sentences, 
+                        ll/num_sentences, num_patterns, ll/num_patterns)
+            print >> estream, '{0}\t{1}\t{2}'.format(opath, L.sum(), np.mean(L))
+
+
+def main(args):
+
+    decode(args.model, args.input, args.output)
     
 
 
