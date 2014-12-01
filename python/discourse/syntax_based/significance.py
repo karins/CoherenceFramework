@@ -163,7 +163,9 @@ def test_all_rankers(rankers, rounds, p_value):
 def main(args):
 
     rankers = test_all_rankers(args.ranker, args.rounds, args.pvalue)
-    for ranker in rankers:
+    odirs = [os.path.split(path)[0] for _, path in args.ranker]
+
+    for r, ranker in enumerate(rankers):
         # clean up system names
         #prefix = os.path.commonprefix(ranker.systems)
         #short_names = [sysname[len(prefix):] for sysname in ranker.systems]
@@ -174,7 +176,7 @@ def main(args):
                 key=lambda row: row[1], 
                 reverse=True)
         for fmt in args.tablefmt:
-            with open('{0}/{1}.first.{2}'.format(args.output, ranker.alias, fmt), 'w') as fo:
+            with open('{0}/{1}.first.{2}'.format(odirs[r], ranker.alias, fmt), 'w') as fo:
                 print >> fo, tabulate(first_table, 
                         headers=['system', 'first', 'lower', 'upper'],
                         tablefmt=fmt)
@@ -182,7 +184,7 @@ def main(args):
         # 2) all pairwise comparisons
         pairwise_table = np.column_stack((short_names, ranker.comparisons))
         for fmt in args.tablefmt:
-            with open('{0}/{1}.comparisons.{2}'.format(args.output, ranker.alias, fmt), 'w') as fo:
+            with open('{0}/{1}.comparisons.{2}'.format(odirs[r], ranker.alias, fmt), 'w') as fo:
                 print >> fo, tabulate(pairwise_table, 
                         headers=short_names,
                         tablefmt=fmt)
@@ -194,7 +196,7 @@ def main(args):
                     key=lambda row: row[1],
                     reverse=True)
             for fmt in args.tablefmt:
-                with open('{0}/{1}.ref.{2}'.format(args.output, ranker.alias, fmt), 'w') as fo:
+                with open('{0}/{1}.ref.{2}'.format(odirs[r], ranker.alias, fmt), 'w') as fo:
                     print >> fo, tabulate(ref_table, 
                         headers=['system', 'reference wins', 'confidence'],
                         tablefmt=fmt)
