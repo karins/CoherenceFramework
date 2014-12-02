@@ -92,7 +92,7 @@ def loglikelihood(T, U, B, c=0, insertion=False):
             # for each pattern in the second sentence of the pair
             for v in Sb:
                 # sum up the contributions of the pattern v conditioned on each pattern u in the first sentence of the pair
-                ll += math.log(1.0/len(Sa)) + math.log(sum(float(B[u,v])/(U[u] + c * len(U)) for u in Sa))
+                ll += np.log(1.0/len(Sa)) + np.log(np.sum([float(B[u,v] + c)/(U[u] + c * len(U)) for u in Sa]))
 
     return ll
 

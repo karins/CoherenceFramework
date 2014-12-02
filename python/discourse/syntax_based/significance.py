@@ -183,9 +183,14 @@ def main(args):
         
         # 2) all pairwise comparisons
         pairwise_table = np.column_stack((short_names, ranker.comparisons))
+        confidence_table = np.column_stack((short_names, ranker.confidence))
         for fmt in args.tablefmt:
             with open('{0}/{1}.comparisons.{2}'.format(odirs[r], ranker.alias, fmt), 'w') as fo:
                 print >> fo, tabulate(pairwise_table, 
+                        headers=short_names,
+                        tablefmt=fmt)
+            with open('{0}/{1}.confidence.{2}'.format(odirs[r], ranker.alias, fmt), 'w') as fo:
+                print >> fo, tabulate(confidence_table, 
                         headers=short_names,
                         tablefmt=fmt)
 

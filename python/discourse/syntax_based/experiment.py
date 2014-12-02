@@ -17,25 +17,40 @@ from multiprocessing import Pool
 from discourse.doctext import iterdoctext, writedoctext
 from discourse.syntax_based.dseq import dseqs
 from discourse.syntax_based.ibm1_decoder import decode_many as ibm1_decode_many
+from discourse.syntax_based.alouis_decoder import decode_many as alouis_decode_many
 from discourse.util import smart_open, tabulate
 
 
 def make_namespace(args):
-    experiment = '{0}.d{1}.m{2}'.format(args.training, args.depth, args.m1)
+    ibm1_experiment = '{0}.d{1}.m{2}'.format(args.training, args.depth, args.m1)
     if args.alias:
-        experiment += '.' + args.alias
-    names = argparse.Namespace(**{
+        ibm1_experiment += '.' + args.alias
+    
+    alouis_experiment = '{0}.d{1}.c{2}'.format(args.training, args.depth, args.smoothing)
+    if args.alias:
+        alouis_experiment += '.' + args.alias
+    
+    paths = {
         'docs': '{0}/docs'.format(args.data),
         'trees': '{0}/trees'.format(args.data),
         'workspace': args.workspace,
-        'experiment': experiment,
+        'ibm1_experiment': ibm1_experiment,
+        'alouis_experiment': alouis_experiment,
         'dseqs': '{0}/dseqs{1}'.format(args.workspace, args.depth),
-        'ibm1': '{0}/ibm1/{1}'.format(args.workspace, experiment),
-        'ibm1_model': '{0}/ibm1/{1}/model'.format(args.workspace, experiment),
-        't1': '{0}/ibm1/{1}/model/t1'.format(args.workspace, experiment),
-        'ibm1_probs': '{0}/ibm1/{1}/probs'.format(args.workspace, experiment),
-        'ibm1_eval': '{0}/ibm1/{1}/eval'.format(args.workspace, experiment),
-        })
+        'ibm1': '{0}/ibm1/{1}'.format(args.workspace, ibm1_experiment),
+        'ibm1_model': '{0}/ibm1/{1}/model'.format(args.workspace, ibm1_experiment),
+        'ibm1_probs': '{0}/ibm1/{1}/probs'.format(args.workspace, ibm1_experiment),
+        'ibm1_eval': '{0}/ibm1/{1}/eval'.format(args.workspace, ibm1_experiment),
+        't1': '{0}/ibm1/{1}/model/t1'.format(args.workspace, ibm1_experiment),
+        
+        'alouis': '{0}/alouis/{1}'.format(args.workspace, alouis_experiment),
+        'alouis_model': '{0}/alouis/{1}/model'.format(args.workspace, alouis_experiment),
+        'alouis_probs': '{0}/alouis/{1}/probs'.format(args.workspace, alouis_experiment),
+        'alouis_eval': '{0}/alouis/{1}/eval'.format(args.workspace, alouis_experiment),
+        'unigrams': '{0}/alouis/{1}/model/counts.unigrams'.format(args.workspace, alouis_experiment),
+        'bigrams': '{0}/alouis/{1}/model/counts.bigrams'.format(args.workspace, alouis_experiment),
+        }
+    names = argparse.Namespace(**paths)
 
     if args.namespace:
         for k, v in vars(namespace).iteritems():
@@ -44,7 +59,7 @@ def make_namespace(args):
     logging.info('Namespace: %s', names)
 
     if not args.dry_run:
-        for path in [names.workspace, names.dseqs, names.ibm1, names.ibm1_model, names.ibm1_probs, names.ibm1_eval]:
+        for path in [names.workspace, names.dseqs] + [v for k, v in paths.iteritems() if k.startswith('ibm') or k.startswith('alouis')]:
             if not os.path.exists(path):
                 os.makedirs(path)
 
@@ -96,6 +111,49 @@ def extract_dseqs(corpus, args, namespace, **kwargs):
     pool.map(partial(wrap_dseqs, depth=args.depth, **kwargs), jobs)
 
 
+def train_alouis(args, namespace):
+    logging.info("Training A. Louis's model with: %s", args.training)
+    output_prefix = '{0}/counts'.format(namespace.alouis_model)
+    unigram_path = '{0}.unigram'.format(output_prefix)
+    bigram_path = '{0}.bigram'.format(output_prefix)
+    if os.path.exists(unigram_path) and os.path.exists(bigram_path):
+        logging.info("A. Louis's model already exists: %s", output_path)
+        return 
+    
+    input_prefix = '{0}/{1}'.format(namespace.dseqs, args.training)
+    training_files = glob(input_prefix + '*')
+    logging.info('%d training files matching %s*', len(training_files), input_prefix)
+    istream = itertools.chain(*map(smart_open, training_files))
+    cmd_line = 'python -m discourse.syntax_based.alouis -b --smoothing {0} {1} {2}'.format(args.smoothing, args.alouis_config, output_prefix)
+    logging.info(cmd_line)
+    cmd_args = shlex.split(cmd_line)
+
+    if args.dry_run:
+        return
+
+    proc = sp.Popen(cmd_args, stdin=sp.PIPE)
+    proc.communicate(''.join(istream))
+
+
+def decode_alouis(corpus, args, namespace):
+
+    logging.info("Decoding with A. Louis's model: %s", corpus)
+    input_dir = namespace.dseqs
+    output_dir = namespace.alouis_probs
+
+    todo, done, missing = file_check(corpus, input_dir, output_dir)
+    if not missing:
+        logging.info('all alouis probabilities are there, nothing to be done')
+        return 
+
+    if args.dry_run:
+        return 
+    
+    ipaths = ['{0}/{1}'.format(input_dir, name) for name in missing]
+    opaths = ['{0}/{1}'.format(output_dir, name) for name in missing]
+    alouis_decode_many(namespace.unigrams, namespace.bigrams, args.smoothing, ipaths, opaths, jobs=args.jobs)
+
+
 def train_ibm1(args, namespace):
     logging.info('Training IBM model 1 with: %s', args.training)
     ll_path = '{0}/likelihood'.format(namespace.ibm1_model)
@@ -108,7 +166,7 @@ def train_ibm1(args, namespace):
     training_files = glob(input_prefix + '*')
     logging.info('%d training files matching %s*', len(training_files), input_prefix)
     istream = itertools.chain(*map(smart_open, training_files))
-    cmd_line = 'python -m discourse.syntax_based.ibm1 -m {0} -b -p {1} --ll {2} - {3}'.format(args.m1, args.m1_config, ll_path, output_path)
+    cmd_line = 'python -m discourse.syntax_based.ibm1 -m {0} -g 0 -b -p {1} --ll {2} - {3}'.format(args.m1, args.m1_config, ll_path, output_path)
     logging.info(cmd_line)
     cmd_args = shlex.split(cmd_line)
 
@@ -141,10 +199,10 @@ def decode_ibm1(corpus, args, namespace):
     ibm1_decode_many(namespace.t1, ipaths, opaths, jobs=args.jobs)
 
 
-def evaluate(corpus, model, args, namespace):
+def evaluate(corpus, model, probs_dir, eval_dir, args, namespace):
     logging.info('Evaluate (model=%s): %s', model, corpus)
-    input_dir = namespace.ibm1_probs
-    output_dir = '{0}/{1}'.format(namespace.ibm1_eval, corpus)
+    input_dir = probs_dir
+    output_dir = '{0}/{1}'.format(eval_dir, corpus)
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     
@@ -233,12 +291,27 @@ def parse_args():
 
     # IBM1
     ibm_group = parser.add_argument_group('IBM model 1')
+    ibm_group.add_argument('--ibm1',
+            action='store_true',
+            help='uses IBM model 1')
     ibm_group.add_argument('--m1', 
             type=int, default=30,
             help='ibm model 1 iterations')
     ibm_group.add_argument('--m1-config', 
             type=str, default='',
             help='additional options to dicourse.syntax_based.ibm1')
+    
+    # A. Louis
+    alouis_group = parser.add_argument_group("A. Louis's model")
+    alouis_group.add_argument('--alouis',
+            action='store_true',
+            help="uses A. Louis's model")
+    alouis_group.add_argument('--smoothing', '-c',
+            type=float, default=0.001,
+            help='smoothing constant')
+    alouis_group.add_argument('--alouis-config', 
+            type=str, default='',
+            help='additional options to dicourse.syntax_based.alouis')
     
     # eval
     eval_group = parser.add_argument_group('Evaluation')
@@ -276,11 +349,18 @@ def main(args):
     if args.test:
         extract_dseqs(args.test, args, namespace, backoff=['*'])
 
-    train_ibm1(args, namespace)
-    
-    if args.test:
-        decode_ibm1(args.test, args, namespace)
-        evaluate(args.test, namespace.t1, args, namespace)
+    if args.ibm1:
+        train_ibm1(args, namespace)
+        
+        if args.test:
+            decode_ibm1(args.test, args, namespace)
+            evaluate(args.test, namespace.ibm1, namespace.ibm1_probs, namespace.ibm1_eval, args, namespace)
+
+    if args.alouis:
+        train_alouis(args, namespace)
+        if args.test:
+            decode_alouis(args.test, args, namespace)
+            evaluate(args.test, namespace.alouis, namespace.alouis_probs, namespace.alouis_eval, args, namespace)
 
 
 if __name__ == '__main__':

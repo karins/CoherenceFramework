@@ -10,7 +10,7 @@ The following is an example of ranking
 2 A C B
 3 A C B
 
-@author waziz
+@author: wilkeraziz
 """
 
 import sys

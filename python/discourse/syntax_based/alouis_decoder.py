@@ -1,5 +1,5 @@
 """
-This module can be used to score a document using IBM model 1.
+This module can be used to score a document using A. Louis's model
 
 @author: wilkeraziz
 """
@@ -13,25 +13,31 @@ from itertools import izip
 from collections import defaultdict
 from multiprocessing import Pool
 from functools import partial
-from discourse.util import register_token, read_documents, encode_documents, encode_test_documents, ibm_pairwise
+from discourse.util import register_token, read_documents, encode_documents, encode_test_documents, ibm_pairwise, pairwise
 from discourse.util import smart_open
 
 
 def parse_args():
     """parse command line arguments"""
 
-    parser = argparse.ArgumentParser(description='IBM model 1 decoder for syntax-based coherence',
+    parser = argparse.ArgumentParser(description="A. Louis decoder for syntax-based coherence",
             formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     
-    parser.add_argument('model',
+    parser.add_argument('unigrams',
             type=str,
-            help='path to model estimated by ibm1.py')
+            help='unigram counts')
+    parser.add_argument('bigrams',
+            type=str,
+            help='bigram counts')
     parser.add_argument('input', nargs='?', 
             type=argparse.FileType('r'), default=sys.stdin,
             help='test corpus in doctext format')
     parser.add_argument('output', nargs='?', 
             type=argparse.FileType('w'), default=sys.stdout,
             help='document log probabilities')
+    parser.add_argument('--smoothing', '-c',
+            type=float, default=0.001,
+            help='smoothing constant')
     parser.add_argument('--verbose', '-v',
             action='store_true',
             help='increase the verbosity level')
@@ -45,7 +51,7 @@ def parse_args():
     return args
 
 
-def load_model(path, null_symbol='<null>'):
+def load_model(u_path, b_path, null_symbol='<null>'):
     """
     Loads a model stored in a file.
 
@@ -59,25 +65,42 @@ def load_model(path, null_symbol='<null>'):
     T: numpy array such that T[f,e] = t(f|e)
     vocab: defaultdict mapping a pattern (str) into an id (int)
     """
-    with open(path) as fi:
+    vocab = defaultdict()
+    register_token(null_symbol, vocab)  # makes sure <null> gets id 0
+    u_entries = []
+    b_entries = []
+    
+    # read unigrams in
+    with open(u_path) as fi:
         header = next(fi)
-        vocab = defaultdict()
-        register_token(null_symbol, vocab)  # makes sure <null> gets id 0
-        entries = []
         for line in fi:
             line = line.strip()
             if not line:
                 continue
-            e, f, t = line.split('\t') # t = t(f|e) where e=trigger and f=pattern
-            entries.append((register_token(f, vocab), register_token(e, vocab), float(t)))
-        V = len(vocab)
-        T = np.zeros((V, V), float)
-        for f, e, t in entries:
-            T[f,e] = t
-    return T, vocab
+            w, count = line.split('\t') 
+            u_entries.append((register_token(w, vocab), float(count)))
+    
+    # read bigrams in
+    with open(b_path) as fi:
+        header = next(fi)
+        for line in fi:
+            line = line.strip()
+            if not line:
+                continue
+            w1, w2, count = line.split('\t') 
+            b_entries.append((register_token(w1, vocab), register_token(w2, vocab), float(count)))
+    
+    V = len(vocab)
+    U = np.zeros(V, int)
+    B = np.zeros((V, V), int)
+    for w, c in u_entries:
+        U[w] = c
+    for w1, w2, c in b_entries:
+        B[w1,w2] = c
+    return U, B, vocab
 
 
-def loglikelihood(corpus, T):
+def loglikelihood(corpus, U, B, c, insertion=False):
     """
     Computes -log(likelihood(T))
 
@@ -85,33 +108,39 @@ def loglikelihood(corpus, T):
     because it has to deal with unknown patterns.
     """
     L = np.zeros(len(corpus))
+     
+    getpairs = ibm_pairwise if insertion else pairwise
+    u_count = lambda w: U[w] if w >= 0 else 0.0
+    b_count = lambda w1, w2: B[w1,w2] if (w1 >= 0 and w2 >= 0) else 0.0
+
     for i, D in enumerate(corpus):
         # for each sentence pair
-        for _E, F in ibm_pairwise(D):
+        for Sa, Sb in getpairs(D):  # if insertion=True, then getpairs=ibm_pairwise, consequently, Sa[0] is the null word
             # for each pattern in the second sentence of the pair
-            E = np.array([e for e in _E if e >= 0])
-            for f in F:
+            for v in Sb:
                 # sum up the contributions of the pattern v conditioned on each pattern u in the first sentence of the pair
-                L[i] += -np.infty if f < 0 else np.log(T[f,E].sum())
+                L[i] = np.log(1.0/len(Sa)) + np.log(np.sum([(b_count(u,v) + c)/(u_count(u) + c * len(U)) for u in Sa]))
     return L
 
 
-def wrapped_loglikelihood(corpus, T):
+def wrapped_loglikelihood(corpus, U, B, c, insertion):
     try:
-        return loglikelihood(corpus, T)
+        return loglikelihood(corpus, U, B, c, insertion)
     except:
         raise Exception(''.join(traceback.format_exception(*sys.exc_info())))
 
 
-def decode(model, istream, ostream, estream=sys.stderr):
+def decode(unigrams, bigrams, c, istream, ostream, estream=sys.stderr):
 
     # reads in the model
-    logging.info('Loading model: %s', model)
-    T, vocab = load_model(model, '<null>')
-    logging.info('%d patterns and %d entries', len(vocab), T.size)
+    logging.info('Loading model: %s and %s', unigrams, bigrams)
+    U, B, vocab = load_model(unigrams, bigrams, '<null>')
+    logging.info('%d unigrams and %d bigrams', U.shape[0], B.shape[0])
 
     # detect whether document boundary tokens were used in the model
     boundaries = '<doc>' in vocab
+    # detect whether insertion was swtiched
+    insertion = B[0,:].sum() > 0
     # reads in the test documents
     logging.info('Reading test documents in (boundaries=%s) ...', boundaries)
     documents = read_documents(istream, boundaries)  
@@ -121,7 +150,7 @@ def decode(model, istream, ostream, estream=sys.stderr):
     test = encode_test_documents(documents, vocab)
 
     # computes the log likelihood of each document
-    L = loglikelihood(test, T)
+    L = loglikelihood(test, U, B, c, insertion)
 
     # dumps scores
     print >> ostream, '#doc\t#logprob\t#sentences\t#s_normalised\t#patterns\t#p_normalised'
@@ -134,15 +163,17 @@ def decode(model, istream, ostream, estream=sys.stderr):
     print >> estream, '{0}\t{1}'.format(L.sum(), np.mean(L))
   
 
-def decode_many(model, ipaths, opaths, jobs, estream=sys.stderr):
+def decode_many(unigrams, bigrams, c, ipaths, opaths, jobs, estream=sys.stderr):
 
     # reads in the model
-    logging.info('Loading model: %s', model)
-    T, vocab = load_model(model, '<null>')
-    logging.info('%d patterns and %d entries', len(vocab), T.size)
+    logging.info('Loading model: %s and %s', unigrams, bigrams)
+    U, B, vocab = load_model(unigrams, bigrams, '<null>')
+    logging.info('%d unigrams and %d bigrams', U.shape[0], B.shape[0])
 
     # detect whether document boundary tokens were used in the model
     boundaries = '<doc>' in vocab
+    # detect whether insertion was swtiched
+    insertion = B[0,:].sum() > 0
 
     # reads in the test documents
     logging.info('Reading test documents in (boundaries=%s) ...', boundaries)
@@ -156,7 +187,7 @@ def decode_many(model, ipaths, opaths, jobs, estream=sys.stderr):
 
     # computes the log likelihood of each document in each test file
     pool = Pool(jobs)
-    all_L = pool.map(partial(wrapped_loglikelihood, T=T), tests)
+    all_L = pool.map(partial(wrapped_loglikelihood, U=U, B=B, c=c, insertion=insertion), tests)
 
     print >> estream, '#file\t#sum\t#mean'
     for ipath, opath, test, L in izip(ipaths, opaths, tests, all_L):
@@ -173,9 +204,10 @@ def decode_many(model, ipaths, opaths, jobs, estream=sys.stderr):
 
 def main(args):
 
-    decode(args.model, args.input, args.output)
+    decode(args.unigrams, args.bigrams, args.smoothing, args.input, args.output)
     
 
 
 if __name__ == '__main__':
     main(parse_args())
+
