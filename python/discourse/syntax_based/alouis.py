@@ -31,10 +31,10 @@ from collections import defaultdict
 from scipy.optimize import minimize_scalar
 import argparse
 import numpy as np
-from discourse.util import bar, pairwise, ibm_pairwise, read_documents, encode_documents
+from discourse.util import bar, pairwise, ibm_pairwise, read_documents, encode_documents, find_least_common
 
 
-def count(T, V, insertion=False):
+def count(T, V, insertion=False, null=0):
     """
     Count unigram and bigram patterns in training data
 
@@ -56,9 +56,9 @@ def count(T, V, insertion=False):
     getpairs = ibm_pairwise if insertion else pairwise
 
     # counting
-    for D in bar(T):
+    for D in bar(T, msg='Counting'):
         if insertion:  # if we have null tokens we count one occurrence for each sentence in the document (that can head a pair of sentences)
-            U[0] += len(D) - 1
+            U[null] += len(D) - 1
         for Sa in D:
             for u in Sa:
                 U[u] += 1
@@ -86,7 +86,7 @@ def loglikelihood(T, U, B, c=0, insertion=False):
     
     getpairs = ibm_pairwise if insertion else pairwise
 
-    for D in T:
+    for D in bar(T, maxval=len(T), msg='log likelihood'):
         # for each sentence pair
         for Sa, Sb in getpairs(D):  # if insertion=True, then getpairs=ibm_pairwise, consequently, Sa[0] is the null word
             # for each pattern in the second sentence of the pair
@@ -127,6 +127,9 @@ def parse_args():
     parser.add_argument('--boundary', '-b',
             action='store_true',
             help='add document boundary tokens')
+    parser.add_argument('--unk', '-u',
+            action='store_true',
+            help='replaces singletons by an unk token')
     parser.add_argument('--mle',
             action='store_true',
             help="chooses c to maximise the data's likelihood (useless, note that this will retrieve the MLE solution, i.e. c=0)")
@@ -150,11 +153,14 @@ def main(args):
     logging.info('Reading documents in ...')
     documents = read_documents(sys.stdin, args.boundary)
     logging.info('%d documents, on average %.2f sentences per document', len(documents), np.mean([len(D)for D in documents]))
+    
+    least_common, min_count = find_least_common(documents) if args.unk else (frozenset(), 0)
+    if args.unk:
+        logging.info('Least common patterns: frequency=%d patterns=%d', min_count, len(least_common))
    
     # decide whether or not there will be a null symbol
-    null_symbol = '<null>' if args.insertion else None
     # encode documents using numpy array of ids
-    T, vocab = encode_documents(documents, null_symbol)
+    T, vocab = encode_documents(documents, ignore=least_common)
    
     # gather unigram and bigram counts
     logging.info('Counting ...')    

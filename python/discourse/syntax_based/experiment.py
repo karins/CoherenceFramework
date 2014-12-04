@@ -18,24 +18,26 @@ from discourse.doctext import iterdoctext, writedoctext
 from discourse.syntax_based.dseq import dseqs
 from discourse.syntax_based.ibm1_decoder import decode_many as ibm1_decode_many
 from discourse.syntax_based.alouis_decoder import decode_many as alouis_decode_many
-from discourse.util import smart_open, tabulate
+from discourse.util import smart_open, tabulate, partial_ordering
 
 
 def make_namespace(args):
     ibm1_experiment = '{0}.d{1}.m{2}'.format(args.training, args.depth, args.m1)
+    alouis_experiment = '{0}.d{1}.c{2}'.format(args.training, args.depth, args.smoothing)
+
+    if args.unk:
+        ibm1_experiment += '.u'
+        alouis_experiment += '.u'
+    if args.insertion:
+        alouis_experiment += '.i'
     if args.alias:
         ibm1_experiment += '.' + args.alias
-    
-    alouis_experiment = '{0}.d{1}.c{2}'.format(args.training, args.depth, args.smoothing)
-    if args.alias:
         alouis_experiment += '.' + args.alias
     
     paths = {
         'docs': '{0}/docs'.format(args.data),
         'trees': '{0}/trees'.format(args.data),
         'workspace': args.workspace,
-        'ibm1_experiment': ibm1_experiment,
-        'alouis_experiment': alouis_experiment,
         'dseqs': '{0}/dseqs{1}'.format(args.workspace, args.depth),
         'ibm1': '{0}/ibm1/{1}'.format(args.workspace, ibm1_experiment),
         'ibm1_model': '{0}/ibm1/{1}/model'.format(args.workspace, ibm1_experiment),
@@ -114,17 +116,22 @@ def extract_dseqs(corpus, args, namespace, **kwargs):
 def train_alouis(args, namespace):
     logging.info("Training A. Louis's model with: %s", args.training)
     output_prefix = '{0}/counts'.format(namespace.alouis_model)
-    unigram_path = '{0}.unigram'.format(output_prefix)
-    bigram_path = '{0}.bigram'.format(output_prefix)
+    unigram_path = '{0}.unigrams'.format(output_prefix)
+    bigram_path = '{0}.bigrams'.format(output_prefix)
     if os.path.exists(unigram_path) and os.path.exists(bigram_path):
-        logging.info("A. Louis's model already exists: %s", output_path)
+        logging.info("A. Louis's model already exists: %s and %s", unigram_path, bigram_path)
         return 
     
     input_prefix = '{0}/{1}'.format(namespace.dseqs, args.training)
     training_files = glob(input_prefix + '*')
     logging.info('%d training files matching %s*', len(training_files), input_prefix)
     istream = itertools.chain(*map(smart_open, training_files))
-    cmd_line = 'python -m discourse.syntax_based.alouis -b --smoothing {0} {1} {2}'.format(args.smoothing, args.alouis_config, output_prefix)
+    opt_flags = []
+    if args.unk:
+        opt_flags.append('--unk')
+    if args.insertion:
+        opt_flags.append('--insertion')
+    cmd_line = 'python -m discourse.syntax_based.alouis -b --smoothing {0} {1} {2} {3}'.format(args.smoothing, args.alouis_config, ' '.join(opt_flags), output_prefix)
     logging.info(cmd_line)
     cmd_args = shlex.split(cmd_line)
 
@@ -166,7 +173,8 @@ def train_ibm1(args, namespace):
     training_files = glob(input_prefix + '*')
     logging.info('%d training files matching %s*', len(training_files), input_prefix)
     istream = itertools.chain(*map(smart_open, training_files))
-    cmd_line = 'python -m discourse.syntax_based.ibm1 -m {0} -g 0 -b -p {1} --ll {2} - {3}'.format(args.m1, args.m1_config, ll_path, output_path)
+    unkflag = '--unk' if args.unk else ''
+    cmd_line = 'python -m discourse.syntax_based.ibm1 -m {0} -g 0 -b -p {1} --ll {2} {3} - {4}'.format(args.m1, args.m1_config, ll_path, unkflag, output_path)
     logging.info(cmd_line)
     cmd_args = shlex.split(cmd_line)
 
@@ -241,8 +249,10 @@ def evaluate(corpus, model, probs_dir, eval_dir, args, namespace):
         # computes and stores rankings
         # and counts how many times each system ranked first
         for i in range(n_docs):
-            ranking = sorted(enumerate(results[:,i]), key=lambda (_, score): score, reverse=True)
-            print >> fo, ' '.join(names[sysid] for sysid, score in ranking)
+            ranking = partial_ordering(results[:,i], reverse=True, shuf=False)  # random oder for ties
+            print >> fo, ' > '.join(' '.join(names[sysid] for sysid in group) for r, group in ranking)
+            #ranking = sorted(enumerate(results[:,i]), key=lambda (_, score): score, reverse=True)
+            #print >> fo, ' '.join(names[sysid] for sysid, score in ranking)
         
 
 def parse_args():
@@ -312,6 +322,25 @@ def parse_args():
     alouis_group.add_argument('--alouis-config', 
             type=str, default='',
             help='additional options to dicourse.syntax_based.alouis')
+    ibm_group.add_argument('--insertion', '-i',
+            action='store_true',
+            help='models insertion (alignment to null)')
+    
+    ibm1_alouis_group = parser.add_argument_group("IBM model 1 and A. Louis's model")
+    ibm1_alouis_group.add_argument('--unk', '-u',
+            action='store_true',
+            help='replaces singletons by an unk token')
+    
+    # Graph similarity
+    graph_group = parser.add_argument_group("Graph similarity")
+    graph_group.add_argument('--graph',
+            action='store_true',
+            help="uses Graph similarity")
+    # Grid model
+    grid_group = parser.add_argument_group("Grid model")
+    grid_group.add_argument('--grid',
+            action='store_true',
+            help="uses Grid model")
     
     # eval
     eval_group = parser.add_argument_group('Evaluation')

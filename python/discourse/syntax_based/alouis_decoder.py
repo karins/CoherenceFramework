@@ -51,7 +51,7 @@ def parse_args():
     return args
 
 
-def load_model(u_path, b_path, null_symbol='<null>'):
+def load_model(u_path, b_path, null='<null>', unk='<unk>'):
     """
     Loads a model stored in a file.
 
@@ -66,7 +66,8 @@ def load_model(u_path, b_path, null_symbol='<null>'):
     vocab: defaultdict mapping a pattern (str) into an id (int)
     """
     vocab = defaultdict()
-    register_token(null_symbol, vocab)  # makes sure <null> gets id 0
+    register_token(null, vocab)  # makes sure <null> gets id 0
+    register_token(unk, vocab)  # makes sure <null> gets id 0
     u_entries = []
     b_entries = []
     
@@ -110,8 +111,6 @@ def loglikelihood(corpus, U, B, c, insertion=False):
     L = np.zeros(len(corpus))
      
     getpairs = ibm_pairwise if insertion else pairwise
-    u_count = lambda w: U[w] if w >= 0 else 0.0
-    b_count = lambda w1, w2: B[w1,w2] if (w1 >= 0 and w2 >= 0) else 0.0
 
     for i, D in enumerate(corpus):
         # for each sentence pair
@@ -119,7 +118,7 @@ def loglikelihood(corpus, U, B, c, insertion=False):
             # for each pattern in the second sentence of the pair
             for v in Sb:
                 # sum up the contributions of the pattern v conditioned on each pattern u in the first sentence of the pair
-                L[i] = np.log(1.0/len(Sa)) + np.log(np.sum([(b_count(u,v) + c)/(u_count(u) + c * len(U)) for u in Sa]))
+                L[i] = np.log(1.0/len(Sa)) + np.log(np.sum([(B[u,v] + c)/(U[u] + c * len(U)) for u in Sa]))
     return L
 
 
@@ -134,7 +133,7 @@ def decode(unigrams, bigrams, c, istream, ostream, estream=sys.stderr):
 
     # reads in the model
     logging.info('Loading model: %s and %s', unigrams, bigrams)
-    U, B, vocab = load_model(unigrams, bigrams, '<null>')
+    U, B, vocab = load_model(unigrams, bigrams)
     logging.info('%d unigrams and %d bigrams', U.shape[0], B.shape[0])
 
     # detect whether document boundary tokens were used in the model
@@ -167,7 +166,7 @@ def decode_many(unigrams, bigrams, c, ipaths, opaths, jobs, estream=sys.stderr):
 
     # reads in the model
     logging.info('Loading model: %s and %s', unigrams, bigrams)
-    U, B, vocab = load_model(unigrams, bigrams, '<null>')
+    U, B, vocab = load_model(unigrams, bigrams)
     logging.info('%d unigrams and %d bigrams', U.shape[0], B.shape[0])
 
     # detect whether document boundary tokens were used in the model

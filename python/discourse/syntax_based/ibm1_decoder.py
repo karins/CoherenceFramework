@@ -45,7 +45,7 @@ def parse_args():
     return args
 
 
-def load_model(path, null_symbol='<null>'):
+def load_model(path, null='<null>', unk='<unk>'):
     """
     Loads a model stored in a file.
 
@@ -62,7 +62,8 @@ def load_model(path, null_symbol='<null>'):
     with open(path) as fi:
         header = next(fi)
         vocab = defaultdict()
-        register_token(null_symbol, vocab)  # makes sure <null> gets id 0
+        register_token(null, vocab)  # makes sure <null> gets id 0
+        register_token(unk, vocab)  # makes sure <null> gets id 1
         entries = []
         for line in fi:
             line = line.strip()
@@ -87,12 +88,11 @@ def loglikelihood(corpus, T):
     L = np.zeros(len(corpus))
     for i, D in enumerate(corpus):
         # for each sentence pair
-        for _E, F in ibm_pairwise(D):
+        for E, F in ibm_pairwise(D):
             # for each pattern in the second sentence of the pair
-            E = np.array([e for e in _E if e >= 0])
             for f in F:
                 # sum up the contributions of the pattern v conditioned on each pattern u in the first sentence of the pair
-                L[i] += -np.infty if f < 0 else np.log(T[f,E].sum())
+                L[i] += np.log(T[f,E].sum())
     return L
 
 
@@ -107,7 +107,7 @@ def decode(model, istream, ostream, estream=sys.stderr):
 
     # reads in the model
     logging.info('Loading model: %s', model)
-    T, vocab = load_model(model, '<null>')
+    T, vocab = load_model(model)
     logging.info('%d patterns and %d entries', len(vocab), T.size)
 
     # detect whether document boundary tokens were used in the model
@@ -138,7 +138,7 @@ def decode_many(model, ipaths, opaths, jobs, estream=sys.stderr):
 
     # reads in the model
     logging.info('Loading model: %s', model)
-    T, vocab = load_model(model, '<null>')
+    T, vocab = load_model(model)
     logging.info('%d patterns and %d entries', len(vocab), T.size)
 
     # detect whether document boundary tokens were used in the model

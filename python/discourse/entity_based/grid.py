@@ -10,47 +10,32 @@ s3  S  O  X
 """
 import argparse
 import numpy as np
-import itertools
-import math
 import sys
 import logging
-from collections import defaultdict
+import itertools
+from discourse.util import pairwise
+from discourse.doctext import iterdoctext
 
+
+# TODO: generalise vocabulary of roles
 r2i = {'S': 3, 'O': 2, 'X': 1, '-': 0}
-
-def read_grid(file):
-    
-    #doc = np.array([np.array([r2i[r] for r in line.strip().split()]) for line in file])
-    doc = np.array([np.array([r2i[line[idx]] for idx in range((len(line)-1))]) for line in file])
-    logging.info( doc)
-    
-    return doc 
+i2r = {v: k for k, v in r2i.iteritems()}
 
 
+def read_grids(istream, str2int):
+    return [np.array([[str2int[role] for role in line] for line in lines], int) for lines, attrs in iterdoctext(istream)]
 
-def pairwise(iterable):
-    "s -> (s0,s1), (s1,s2), (s2, s3), ..."
-    a, b = itertools.tee(iterable)
-    next(b, None)
-    return itertools.izip(a, b)
 
-def train(corpus):
-    
-    U = np.zeros(len(r2i), int)
-    B = np.zeros((len(r2i), len(r2i)), int)
-    
-    # counts
-    for doc in corpus:
-        for entity_roles in doc.transpose():
-            #print 'transposed'
-            #print doc
+def train(corpus, vocab_size):
+    U = np.zeros(vocab_size, int)
+    B = np.zeros((vocab_size, vocab_size), int)
+    for grid in corpus:
+        for entity_roles in grid.transpose():
             for r in entity_roles:
                 U[r] += 1
             for ri, rj in pairwise(entity_roles):
                 B[ri,rj] += 1
-                 
-    return U,B
-
+    return U, B
 
     
 def parse_args():
@@ -59,25 +44,17 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Generative implementation of Entity grid ',
             formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     
-    parser.add_argument('prefix', 
-            type=str,
-            help="prefix for input files")  
+    parser.add_argument('input', nargs='?', 
+            type=argparse.FileType('r'), default=sys.stdin,
+            help='input corpus in doctext format')
     
-    parser.add_argument('n',
-            type=int,
-            help='number of documents')
+    parser.add_argument('output', 
+            type=str,
+            help="prefix for model files")
     
     parser.add_argument('--verbose', '-v',
             action='store_true',
             help='increase the verbosity level')
-    
-    parser.add_argument('unigramfile', 
-            type=str,
-            help="path for unigram file")
-    
-    parser.add_argument('bigramfile', 
-            type=str,
-            help="path for bigram file")
     
     args = parser.parse_args()
     
@@ -88,22 +65,25 @@ def parse_args():
 
 def main(args):
     """load grids and extract unigrams and bigrams"""
-    data_set = []
-    for index in range(args.n):
-        path = args.prefix + str(index)
-        logging.info('Processing %s', path)
-        # read all docs first into data_set
-        with open(path, 'r') as fi:
-            data_set.append(read_grid(fi))
-            
-    unigrams,bigrams = train(data_set)    
+
+    training = read_grids(args.input, r2i)
+    logging.info('Training set contains %d docs', len(training))
+    unigrams, bigrams = train(training, len(r2i)) 
+    logging.info('%d unigrams and %d bigrams', unigrams.size, bigrams.size)
     
-    logging.info( unigrams)    
-    logging.info( bigrams)
+    # save unigrams and bigrams
+    # this is nice ;) but perhaps for now we are interested in a more human readable format
+    # np.savetxt('{0}.unigrams'.format(args.output), unigrams)
+    # np.savetxt('{0}.bigrams'.format(args.output), bigrams)
+    with open('{0}.unigrams'.format(args.output), 'w') as fu:
+        print >> fu, '#role\t#count'
+        for rid, count in enumerate(unigrams):
+            print >> fu, '{0}\t{1}'.format(i2r[rid], count)
+    with open('{0}.bigrams'.format(args.output), 'w') as fb:
+        print >> fb, '#role\t#role\t#count'
+        for r1, r2 in itertools.product(xrange(len(r2i)), xrange(len(r2i))):
+            print >> fb, '{0}\t{1}\t{2}'.format(i2r[r1], i2r[r2], bigrams[r1,r2])
     
-    """save unigrams and bigrams"""
-    np.savetxt(args.unigramfile, unigrams)
-    np.savetxt(args.bigramfile, bigrams)
     
 if __name__ == '__main__':
      main(parse_args())

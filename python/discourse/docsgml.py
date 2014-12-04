@@ -96,6 +96,18 @@ class MakeSGMLDocs(object):
         # decode python strings into utf-8
         doc.appendChild(self._docs.createTextNode(doc_text.decode('utf-8')))
         self._docs.documentElement.appendChild(doc)
+    
+    def add_doc(self, segments, **kwargs):
+        doc = self._docs.createElement('doc')
+        for k, v in kwargs.iteritems():
+            doc.setAttribute(k, v)
+        # decode python strings into utf-8
+        for i, txt_seg in enumerate(segments):
+            seg = self._docs.createElement('seg')
+            seg.setAttribute('id', str(i))
+            seg.appendChild(self._docs.createTextNode(txt_seg.decode('utf-8')))
+            doc.appendChild(seg)
+        self._docs.documentElement.appendChild(doc)
 
     def writegz(self, path):
         if not path.endswith('.gz'):
@@ -103,6 +115,10 @@ class MakeSGMLDocs(object):
         with gzip.open(path, 'wb') as fout:
             # returns utf-8 encoded into python string
             fout.write(self._docs.toprettyxml(encoding='utf-8'))
+    
+    def write(self, ostream):
+        # returns utf-8 encoded into python string
+        ostream.write(self._docs.toprettyxml(encoding='utf-8'))
 
 
 def wmtbadsgml_iterdoc(istream, empty=''):
@@ -273,8 +289,21 @@ def main(args):
             attrs[k] = v
         writedoctext(args.output, content, **attrs)
 
+def main2():
+    """
+    Converts doctext to good SGML
+    """
+
+    from doctext import iterdoctext
+    import sys
+
+    sgmler = MakeSGMLDocs()
+    [sgmler.add_doc(content, **attrs) for content, attrs in iterdoctext(sys.stdin)]
+    sgmler.write(sys.stdout)
+
 
 if __name__ == '__main__':
+    #main2()
     main(parse_args())
 
 

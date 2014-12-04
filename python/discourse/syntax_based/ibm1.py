@@ -42,7 +42,7 @@ import logging
 import itertools
 import argparse
 import numpy as np
-from discourse.util import bar, ibm_pairwise, read_documents, encode_documents
+from discourse.util import bar, ibm_pairwise, read_documents, encode_documents, find_least_common
 
 
 def loglikelihood(corpus, T, progress=False):
@@ -136,6 +136,9 @@ def parse_args():
     parser.add_argument('--boundary', '-b',
             action='store_true',
             help='add document boundary tokens')
+    parser.add_argument('--unk', '-u',
+            action='store_true',
+            help='replaces singletons by an unk token')
     parser.add_argument('--progress', '-p',
             action='store_true',
             help='display progress information')
@@ -158,11 +161,15 @@ def main(args):
     documents = read_documents(args.input, args.boundary)
     logging.info('%d documents read', len(documents))
 
+    least_common, min_count = find_least_common(documents) if args.unk else (frozenset(), 0)
+    if args.unk:
+        logging.info('Least common patterns: frequency=%d patterns=%d', min_count, len(least_common))
+
     # maps tokens to integer ids (0 is reserved for a special <null> symbol)
     # and encodes the training data using numpy arrays of vocab ids
     logging.info('Making vocab')
-    corpus, vocab = encode_documents(documents, '<null>')
-    logging.info('%d tokens read (including <null>)', len(vocab))
+    corpus, vocab = encode_documents(documents, ignore=least_common)
+    logging.info('%d tokens read (including <null> and <unk>)', len(vocab))
 
     # estimates parameters T[f,e] = t(f|e)
     # where (e, f) are syntactic patterns occurring in adjacent sentences in a document

@@ -13,7 +13,8 @@ import itertools
 import numpy as np
 import gzip
 import glob
-from collections import defaultdict
+import random
+from collections import defaultdict, Counter
 
 try:
     from progressbar import ProgressBar, AnimatedMarker, Percentage, Timer, ETA, Bar
@@ -83,6 +84,62 @@ def ibm_pairwise(document, e0=0):
     return ((np.concatenate((np.array([e0], int), _E)), F) for _E, F in pairwise(document))
 
 
+def partial_ordering(elements, reverse=False, shuf=False):
+    sorted_ids = sorted(range(len(elements)), key=lambda i: elements[i], reverse=reverse)
+    if not shuf:
+        make_list = lambda g: list(g) 
+    else:
+        make_list = sorted(g, key=lambda _: random.random())
+    return [(e, make_list(g)) for e, g in itertools.groupby(sorted_ids, key=lambda i: elements[i])]
+
+
+def make_total_ordering(partial):
+    """
+    Returns an iterator over a total ordering (ties are randomly broken) from a partial ordering
+    Arguments
+    ---------
+    partial: ordered list of groups (within a group elements are tied)
+    Returns
+    -------
+    total ordering: a generator of elements respecting that partial ordering, however with ties randomly broken
+
+    Eg.
+    make_total_ordering([[1,2], [3,4,5]])
+    might produce
+    [1,2,3,4,5]
+    or
+    [2,1,3,5,4]
+    but will never produce
+    [1,3,2,4,5] (note the partial ordering was not respected)
+    """
+    return itertools.chain(*(sorted(group, key=lambda _: random.random()) for group in partial))
+
+def _partial_ordering(elements, shuf=True, reverse=False):
+    """
+    Returns a "random partial ordering", that is, a partial ordering, where tied elements are sorted at random.
+
+    Arguments
+    ---------
+    elements: list of elements to be sorted
+    shuf: whether or not to shuffle ties (defaults to True)
+    reverse: asc vs desc order
+
+    Returns
+    -------
+    partial ordering (sorted ids)
+
+    >>> x = [1, 1, 5, 6, 5, 7, 4, 3, 5]
+    >>> f = lambda l, order: [l[i] for i in order]
+    >>> all(f(x, partial_ordering(x)) == sorted(x) for _ in range(10))
+    True
+    """
+    if not shuf:
+        my_cmp = cmp
+    else:
+        my_cmp = lambda x, y: cmp(x,y) if x != y else cmp(0, random.choice([-1,1]))
+    return tuple(i for i, e in sorted(enumerate(elements), key=lambda (i, e): e, cmp=my_cmp, reverse=reverse))
+
+
 def read_documents(istream, doc_boundaries=False):
     """reads documents from an input stream"""
     def wrap_doc(sentences):
@@ -100,8 +157,16 @@ def register_token(t, vocab):
         vocab[t] = i
     return i
 
+def find_least_common(T):
+    counter = Counter(itertools.chain(*(itertools.chain(*((p for p in S) for S in D )) for D in T)))
+    if not counter:
+        return frozenset(), 0
+    sorted_pairs = counter.most_common()
+    n = sorted_pairs[-1][1]
+    return frozenset(u for u, c in itertools.takewhile(lambda (u, c): c == n, reversed(sorted_pairs))), n
 
-def encode_documents(T, null=None):
+
+def encode_documents(T, null='<null>', unk='<unk>', ignore=frozenset()):
     """
     Encodes the corpus using numpy arrays of integers.
 
@@ -133,14 +198,15 @@ def encode_documents(T, null=None):
     
     """
     vocab = defaultdict()
-    if null is not None:
-        register_token(null, vocab)  # make sure id=0 refers to the NULL token
+    register_token(null, vocab)  # make sure id=0 refers to the NULL token
+    register_token(unk, vocab)
+    wrap_token = lambda t: t if t not in ignore else unk
     # register all tokens
-    encoded = np.array([[np.array([register_token(t, vocab) for t in S], int) for S in D] for D in T])
+    encoded = np.array([[np.array([register_token(wrap_token(t), vocab) for t in S], int) for S in D] for D in T])
     return encoded, vocab
 
 
-def encode_test_documents(T, vocab):
+def encode_test_documents(T, vocab, unk='<unk>'):
     """
     Encodes test documents into numpy arrays of ids with a fixed (training) vocab.
     New symbols are assigned id -1.
@@ -150,7 +216,9 @@ def encode_test_documents(T, vocab):
     >>> encode_test_documents(T, vocab)
     array([[array([1]), array([ 2,  3, -1,  2,  3]), array([-1])]], dtype=object)
     """
-    return np.array([[np.array([vocab.get(t, -1) for t in S], int) for S in D] for D in T])
+    assert unk in vocab, 'Your vocab does not assign an id to unknonw symbols'
+    unk_id = vocab['<unk>']
+    return np.array([[np.array([vocab.get(t, unk_id) for t in S], int) for S in D] for D in T])
 
 
 def smart_open(path, *args, **kwargs):
