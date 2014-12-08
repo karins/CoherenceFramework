@@ -1,6 +1,7 @@
 from setuptools import setup
 
 setup(
-        name = 'discourse',
-        packages = ['discourse', 'discourse.preprocessing', 'discourse.entity_based', 'discourse.syntax_based'],
+        name='discourse',
+        packages=['discourse', 'discourse.preprocessing', 'discourse.entity_based', 'discourse.syntax_based'],
+        py_modules=['discotools']
 )

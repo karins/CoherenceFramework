@@ -69,6 +69,20 @@ This is what I get running `yolk -l`
 
 # Usage
 
+The module `discotools` can be used as an interface to tools in this package.
+You can obtain a list of subcommands by checking the help message:
+
+    python -m discotools -h
+
+For example, you can find `preprocessing` tools using:
+
+    python -m discotools preprocessing -h
+
+One such tool can be used to fix the SGML markup of WMT files:
+
+    python -m discotools preprocessing fixwmt -h
+
+
 ## Syntax-based coherence
 
 ### IBM model 1

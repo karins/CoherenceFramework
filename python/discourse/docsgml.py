@@ -6,7 +6,7 @@ It deals with multiple documents in a single XML file.
 In addition, it implements a wrapper to mini dom that eases the creation of simple 
 sgml-formatted document container files.
 
-@author waziz
+@author: wilkeraziz
 """
 import gzip
 import xml.parsers.expat
@@ -14,6 +14,8 @@ import re
 from xml.dom.minidom import getDOMImplementation
 from xml.sax.saxutils import escape, unescape
 from functools import partial
+from discourse import command
+
 
 class TextFromSGML(object):
 
@@ -90,6 +92,7 @@ class MakeSGMLDocs(object):
             self._docs.documentElement.setAttribute(k, v)
 
     def add(self, doc_text, **kwargs):
+        """adds a document (as a string)"""
         doc = self._docs.createElement('doc')
         for k, v in kwargs.iteritems():
             doc.setAttribute(k, v)
@@ -98,6 +101,7 @@ class MakeSGMLDocs(object):
         self._docs.documentElement.appendChild(doc)
     
     def add_doc(self, segments, **kwargs):
+        """adds a document as a list of segments"""
         doc = self._docs.createElement('doc')
         for k, v in kwargs.iteritems():
             doc.setAttribute(k, v)
@@ -241,23 +245,119 @@ def badsgml_iterdoc(istream, empty=''):
             content.append(line if line else empty)
 
 
-def parse_args():
-    """parse command line arguments"""
-    import argparse
+def main(args):
+    """
+    Converts doctext to good SGML
+    Arguments
+    ---------
+    argparse's args
+    """
+    from discourse.doctext import iterdoctext
+    from discourse.docsgml import MakeSGMLDocs
     import sys
 
-    parser = argparse.ArgumentParser(description='Create doctext files from SGML',
-            formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    sgmler = MakeSGMLDocs()
+    [sgmler.add_doc(content, **attrs) for content, attrs in iterdoctext(args.input)]
+    sgmler.write(args.output)
+
+
+@command('docsgml', 'preprocessing')
+def argparser(parser=None, func=main):
+    """
+    Configures and returns a parser for the tool 'docsgml'.
+
+    Arguments
+    ---------
+    parser: a clean argparse parser to be configured (the program name won't be changed),
+        or None in which case a parser will be created
+    main: the main function to be called when the program is invoked
+
+    Returns
+    -------
+    a configured parser
+    """
+    import sys
+    import argparse
+
+    if parser is None:
+        parser = argparse.ArgumentParser(prog='docsgml')
+
+    parser.description = "Convert from doctext to properly formatted SGML"
 
     parser.add_argument('input', nargs='?', 
             type=argparse.FileType('r'), default=sys.stdin,
-            help='list of files or (see --add-header)')
+            help='a WMT file')
+    
     parser.add_argument('output', nargs='?', 
             type=argparse.FileType('w'), default=sys.stdout,
-            help='doctext file containing all documents')
-    parser.add_argument('--no-seg', 
-            action='store_true',
-            help='sentences are not wrapped with a <seg> tag')
+            help='an SGML file')
+    
+    if func is not None:
+        parser.set_defaults(func=func)
+
+    return parser
+
+
+def fixwmt_main(args):
+    """
+    Recover from WMT's bad SGML markup producing doctext by default (or good SGML)
+    Arguments
+    ---------
+    argparse's args
+    """
+
+    from doctext import writedoctext
+    from discourse.docsgml import MakeSGMLDocs
+    
+    if args.sgml:
+        sgmler = MakeSGMLDocs()
+
+    for did, (content, attrs) in enumerate(wmtbadsgml_iterdoc(args.input, '<EMPTY>')):
+        if args.add_id:
+            attrs['docid'] = did
+        for kv in args.attr:
+            k, v = kv.split('=')
+            attrs[k] = v
+        
+        if args.sgml:
+            sgmler.add_doc(content, **attrs)
+        else:
+            writedoctext(args.output, content, **attrs)
+
+    if args.sgml:
+        sgmler.write(args.output)
+
+
+@command('fixwmt', 'preprocessing')
+def fixwmt_argparser(parser=None, func=fixwmt_main):
+    """
+    Configures and returns a parser for the tool 'fixwmt'.
+
+    Arguments
+    ---------
+    parser: a clean argparse parser to be configured (the program name won't be changed),
+        or None in which case a parser will be created
+    main: the main function to be called when the program is invoked
+
+    Returns
+    -------
+    a configured parser
+    """
+    import argparse
+    import sys
+
+
+    if parser is None:
+        parser = argparse.ArgumentParser(prog='fixwmt')
+    
+    parser.description = "Recover from WMT's bad SGML markup"
+
+    parser.add_argument('input', nargs='?', 
+            type=argparse.FileType('r'), default=sys.stdin,
+            help='WMT file')
+    parser.add_argument('output', nargs='?', 
+            type=argparse.FileType('w'), default=sys.stdout,
+            help='doctext file (or see --sgml)')
     parser.add_argument('--add-id', 
             action='store_true',
             help='add sequential ids to the documents')
@@ -265,46 +365,18 @@ def parse_args():
             action='append',
             default=[],
             help='add a key value pair attribute to all documents (key=value)')
+    parser.add_argument('--sgml', 
+            action='store_true',
+            help='by default we output doctext, use this flag if you prefer (proper) SGML')
 
-    args = parser.parse_args()
+    if func is not None:
+        parser.set_defaults(func=func)
 
-    return args
-
-
-def main(args):
-    """
-    Converts WMT's bad SGML format to doctext
-    """
-
-    from doctext import writedoctext
-    import sys
-
-    converter = badsgml_iterdoc if args.no_seg else wmtbadsgml_iterdoc
-
-    for did, (content, attrs) in enumerate(converter(args.input, '<EMPTY>')):
-        if args.add_id:
-            attrs['docid'] = did
-        for kv in args.attr:
-            k, v = kv.split('=')
-            attrs[k] = v
-        writedoctext(args.output, content, **attrs)
-
-def main2():
-    """
-    Converts doctext to good SGML
-    """
-
-    from doctext import iterdoctext
-    import sys
-
-    sgmler = MakeSGMLDocs()
-    [sgmler.add_doc(content, **attrs) for content, attrs in iterdoctext(sys.stdin)]
-    sgmler.write(sys.stdout)
+    return parser
 
 
 if __name__ == '__main__':
-    #main2()
-    main(parse_args())
+    main(argparser().parse_args())
 
 
 _WMT_SGML_EXAMPLE_ =  \

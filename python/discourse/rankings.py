@@ -12,44 +12,14 @@ import numpy as np
 import os
 from tabulate import tabulate
 from discourse.util import partial_ordering
-
-
-def parse_args():
-    """parse command line arguments"""
-
-    parser = argparse.ArgumentParser(description='Get rankings',
-            formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    
-    parser.add_argument('output', nargs='?', 
-            type=argparse.FileType('w'), default=sys.stdout,
-            help='rankings')
-
-    parser.add_argument('--named-system',  
-            default=[], action='append', nargs=2,
-            help='add a system (name and path to probabilities)')
-    
-    parser.add_argument('--systems',  
-            default=[], nargs='+',
-            help='add systems (path to probabilities, the file names the system)')
-
-    parser.add_argument('--column', '-k',
-            type=int, default=1,
-            help='output score used to compare documents (0-based)')
-
-    parser.add_argument('--verbose', '-v',
-            action='store_true',
-            help='increase the verbosity level')
-
-    args = parser.parse_args()
-
-    logging.basicConfig(
-            level=(logging.DEBUG if args.verbose else logging.INFO), 
-            format='%(levelname)s %(message)s')
-
-    return args
+from discourse import command
 
 
 def main(args):
+    
+    logging.basicConfig(
+            level=(logging.DEBUG if args.verbose else logging.INFO), 
+            format='%(levelname)s %(message)s')
 
     systems = list(args.named_system)
     [systems.append((os.path.basename(path), path)) for path in args.systems]
@@ -79,12 +49,43 @@ def main(args):
         #ranking = sorted(enumerate(results[:,i]), key=lambda (_, score): score, reverse=True)
         #print ' '.join(names[sysid] for sysid, score in ranking)
 
-    
 
+@command('rankings', 'eval')
+def argparser(parser=None, func=main):
+    """parse command line arguments"""
+
+    if parser is None:
+        parser = argparse.ArgumentParser(prog='rankings')
+    parser.description = 'Make rankings'
+    parser.formatter_class = argparse.ArgumentDefaultsHelpFormatter
+    
+    parser.add_argument('output', nargs='?', 
+            type=argparse.FileType('w'), default=sys.stdout,
+            help='rankings')
+
+    parser.add_argument('--named-system',  
+            default=[], action='append', nargs=2,
+            help='add a system (name and path to probabilities)')
+    
+    parser.add_argument('--systems',  
+            default=[], nargs='+',
+            help='add systems (path to probabilities, the file names the system)')
+
+    parser.add_argument('--column', '-k',
+            type=int, default=1,
+            help='output score used to compare documents (0-based)')
+
+    parser.add_argument('--verbose', '-v',
+            action='store_true',
+            help='increase the verbosity level')
+
+    if func is not None:
+        parser.set_defaults(func=func)
+
+    return parser
 
 
 if __name__ == '__main__':
-
-    main(parse_args())
+    main(argparser().parse_args())
 
 

@@ -28,6 +28,7 @@ from ldc import get_ldc_name
 from discourse.doctext import iterdoctext, writedoctext
 from nltk.tree import Tree
 from discourse.util import tabulate
+from discourse import command
 
 
 def parse(content, args):
@@ -90,9 +91,33 @@ def wrap_parse(doc, args):
         raise Exception(''.join(traceback.format_exception(*sys.exc_info())))
 
 
-def parse_args():
-    parser = argparse.ArgumentParser(description='Extracts documents from LDC GigaWord data',
-            formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+def main(args):
+    logging.basicConfig(level=logging.INFO, format='%(levelname)s %(message)s')
+
+    # reads docs from input
+    docs = list(iterdoctext(args.input))
+
+    # distributes the jobs
+    pool = Pool(args.jobs)
+    logging.info('Distributing %d jobs to %d workers', len(docs), args.jobs)
+    result = pool.map(partial(wrap_parse, args=args), docs)
+
+    # stores the output
+    times = []
+    for (content, attrs), (trees, dt) in itertools.izip(docs, result):
+        writedoctext(args.output, trees, **attrs)
+        times.append(dt)
+
+    # dumps a summary
+    print >> sys.stderr, tabulate(enumerate(times), headers=['doc', 'time'], tablefmt='pipe')
+
+
+@command('parsedocs', 'analysis')
+def argparser(parser=None, func=main):
+    if parser is None:
+        parser = argparse.ArgumentParser(prog='parsedocs')
+    parser.description = 'Parse documents using Stanford parser'
+    parser.formatter_class = argparse.ArgumentDefaultsHelpFormatter
 
     parser.add_argument('input', nargs='?', 
             type=argparse.FileType('r'), default=sys.stdin,
@@ -122,31 +147,11 @@ def parse_args():
             default='/home/waziz/tools/stanford/stanford-parser-full-2014-10-31/englishPCFG.ser.gz',
             help='Path to Stanford gramar (gz)')
 
-    args = parser.parse_args()
-    logging.basicConfig(level=logging.INFO, format='%(levelname)s %(message)s')
+    if func is not None:
+        parser.set_defaults(func=func)
 
-    return args
-
-
-def main(args):
-
-    # reads docs from input
-    docs = list(iterdoctext(args.input))
-
-    # distributes the jobs
-    pool = Pool(args.jobs)
-    logging.info('Distributing %d jobs to %d workers', len(docs), args.jobs)
-    result = pool.map(partial(wrap_parse, args=args), docs)
-
-    # stores the output
-    times = []
-    for (content, attrs), (trees, dt) in itertools.izip(docs, result):
-        writedoctext(args.output, trees, **attrs)
-        times.append(dt)
-
-    # dumps a summary
-    print >> sys.stderr, tabulate(enumerate(times), headers=['doc', 'time'], tablefmt='pipe')
+    return parser
 
 
 if __name__ == '__main__':
-    main(parse_args())
+    main(argparser().parse_args())

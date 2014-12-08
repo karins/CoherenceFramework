@@ -38,19 +38,30 @@
     docs      |  164   | 176    | 175
     sentences |  3003  | 3003   | 3003
 
+## sgml
+
+Contains the documents in (proper) `sgml` format, that is, using valid XML files (unlike WMT's).
+
+To convert from WMT's bad SGML format we used:
+
+    python -m discotools preprocessing fixwmt --sgml < bad-sgml/newstest2013.de-en.en.sgml > sgml/newstest2013.de-en.ref
+
+
 ## docs
 
 Contains the documents in `doctext` format.
 
 To convert from WMT's bad SGML format to doctext we used:
 
-    python -m discourse.docsgml < sgml/newstest2013.de-en.en.sgml > docs/newstest2013.de-en.ref
+    python -m discotools preprocessing fixwmt < bad-sgml/newstest2013.de-en.en.sgml > docs/newstest2013.de-en.ref
+
 
 The original sgml files can be downloaded from WMT's site.
 
 To convert all of them you can run:
 
-    for file in wmt14-data/sgm/system-outputs/newstest2014/de-en/*; do echo $file; python -m discourse.docsgml < $file > docs/`basename $file .sgm`; done
+    for file in wmt14-data/sgm/system-outputs/newstest2014/de-en/*; do echo $file; python -m discotools preprocessing fixwmt < $file > docs/`basename $file .sgm`; done
+
 
 ## trees
 
@@ -58,10 +69,14 @@ Contains the parsed documents. We used Stanford lexicalised PCG parser.
 
 To parse one file you can use:
 
-    python -m discourse.preprocessing.parsedoctext docs/newstest2013.de-en.ref trees/newstest2013.de-en.ref --jobs 10
+    python -m discotools analysis parsedocs docs/newstest2013.de-en.ref trees/newstest2013.de-en.ref --jobs 10
 
 Note that `discourse.preprocessing.parsedoctext` wraps calls to Stanford parser. You might need to overwrite some of its command line arguments omitted here (e.g. path to Stanford parser, models and grammars).
 
 To parse all of them you can write:
 
-    for file in docs/*; do python -m discourse.preprocessing.parsedoctext $file trees/`basename $file` --jobs 10; done
+    for file in docs/*; do python -m discotools analysis parsedocs $file trees/`basename $file` --jobs 10; done
+
+## grids
+
+Entity grids.

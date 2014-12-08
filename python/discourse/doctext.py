@@ -22,6 +22,8 @@ This is another, this one has a single sentence.
 @author waziz
 """
 from itertools import ifilter
+from discourse import command
+
 
 def writedoctext(ostream, lines, **kwargs):
     """
@@ -35,6 +37,7 @@ def writedoctext(ostream, lines, **kwargs):
     for line in ifilter(lambda x: x.strip(), lines):
         print >> ostream, line
     print >> ostream
+
 
 def iterdoctext(istream):
     """
@@ -107,31 +110,10 @@ def iteraddheader(istream):
         yield line
 
 
-def parse_args():
-    """parse command line arguments"""
-    import argparse
-    import sys
-
-    parser = argparse.ArgumentParser(description='Create doctext files',
-            formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-
-    parser.add_argument('input', nargs='?', 
-            type=argparse.FileType('r'), default=sys.stdin,
-            help='list of files or (see --add-header)')
-    parser.add_argument('output', nargs='?', 
-            type=argparse.FileType('w'), default=sys.stdout,
-            help='doctext file containing all documents')
-    parser.add_argument('--add-header', '-a',
-            action='store_true',
-            help='switches to a different mode in which the input is seen as a container of documents, separated by 1 empty line (as in doctext), but missing a header')
-
-    args = parser.parse_args()
-
-    return args
-
-
 def main(args):
-    """Use this to convert a list of documents (one document per file) into a single doctext"""
+    """
+    Use this to convert a list of documents (one document per file) into a single doctext
+    """
     import sys
     import os
     
@@ -149,6 +131,32 @@ def main(args):
             writedoctext(args.output, content, **attrs)
 
 
-if __name__ == '__main__':
-    main(parse_args())
+@command('doctext', 'preprocessing')
+def argparser(parser=None, func=main):
+    """parse command line arguments"""
+    import argparse
+    import sys
 
+    if parser is None:
+        parser = argparse.ArgumentParser(prog='doctext')
+    
+    parser.description = 'Create doctext files'
+
+    parser.add_argument('input', nargs='?', 
+            type=argparse.FileType('r'), default=sys.stdin,
+            help='list of files or (see --add-header)')
+    parser.add_argument('output', nargs='?', 
+            type=argparse.FileType('w'), default=sys.stdout,
+            help='doctext file containing all documents')
+    parser.add_argument('--add-header', '-a',
+            action='store_true',
+            help='switches to a different mode in which the input is seen as a container of documents, separated by 1 empty line (as in doctext), but missing a header')
+
+    if func is not None:
+        parser.set_defaults(func=func)
+        
+    return parser
+
+
+if __name__ == '__main__':
+    main(argparser().parse_args())
