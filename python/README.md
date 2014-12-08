@@ -69,12 +69,22 @@ This is what I get running `yolk -l`
 
 # Usage
 
-The module `discotools` can be used as an interface to tools in this package.
+Several modules expose a command line interface.
+
+To learn more about training syntax-based models based on IBM model 1, you can run:
+
+    python -m discourse.syntax_based.ibm1 -h
+
+If you are not sure which module implements the functionality you are looking for, you can use the module `discotools` which is an interface to every tool in this package.
 You can obtain a list of subcommands by checking the help message:
 
     python -m discotools -h
 
-For example, you can find `preprocessing` tools using:
+IBM1 example using discotools:
+
+    python -m discotools syntax-based ibm1 -h
+
+You can also find other types of tools, such as `preprocessing` tools:
 
     python -m discotools preprocessing -h
 
