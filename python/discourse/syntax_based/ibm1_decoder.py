@@ -13,36 +13,8 @@ from itertools import izip
 from collections import defaultdict
 from multiprocessing import Pool
 from functools import partial
-from discourse.util import register_token, read_documents, encode_documents, encode_test_documents, ibm_pairwise
-from discourse.util import smart_open
-
-
-def parse_args():
-    """parse command line arguments"""
-
-    parser = argparse.ArgumentParser(description='IBM model 1 decoder for syntax-based coherence',
-            formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    
-    parser.add_argument('model',
-            type=str,
-            help='path to model estimated by ibm1.py')
-    parser.add_argument('input', nargs='?', 
-            type=argparse.FileType('r'), default=sys.stdin,
-            help='test corpus in doctext format')
-    parser.add_argument('output', nargs='?', 
-            type=argparse.FileType('w'), default=sys.stdout,
-            help='document log probabilities')
-    parser.add_argument('--verbose', '-v',
-            action='store_true',
-            help='increase the verbosity level')
-
-    args = parser.parse_args()
-
-    logging.basicConfig(
-            level=(logging.DEBUG if args.verbose else logging.INFO), 
-            format='%(levelname)s %(message)s')
-
-    return args
+from discourse.util import register_token, read_documents, encode_documents, encode_test_documents, ibm_pairwise, smart_open
+from discourse import command
 
 
 def load_model(path, null='<null>', unk='<unk>'):
@@ -172,10 +144,40 @@ def decode_many(model, ipaths, opaths, jobs, estream=sys.stderr):
 
 
 def main(args):
-
+    logging.basicConfig(
+            level=(logging.DEBUG if args.verbose else logging.INFO), 
+            format='%(levelname)s %(message)s')
     decode(args.model, args.input, args.output)
     
 
+@command('ibm1_decoder', 'syntax-based')
+def argparser(parser=None, func=main):
+    """parse command line arguments"""
+
+    if parser is None:
+        parser = argparse.ArgumentParser(prog='ibm1_decoder')
+
+    parser.description = 'IBM model 1 decoder for syntax-based coherence'
+    parser.formatter_class = argparse.ArgumentDefaultsHelpFormatter
+    
+    parser.add_argument('model',
+            type=str,
+            help='path to model estimated by ibm1.py')
+    parser.add_argument('input', nargs='?', 
+            type=argparse.FileType('r'), default=sys.stdin,
+            help='test corpus in doctext format')
+    parser.add_argument('output', nargs='?', 
+            type=argparse.FileType('w'), default=sys.stdout,
+            help='document log probabilities')
+    parser.add_argument('--verbose', '-v',
+            action='store_true',
+            help='increase the verbosity level')
+
+    if func is not None:
+        parser.set_defaults(func=func)
+
+    return parser
+
 
 if __name__ == '__main__':
-    main(parse_args())
+    main(argparser().parse_args())

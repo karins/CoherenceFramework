@@ -14,6 +14,13 @@ def importall():
     import discourse.doctext
     import discourse.preprocessing.parsedoctext
     import discourse.rankings
+    import discourse.entity_based.grid
+    import discourse.entity_based.grid_decoder
+    import discourse.syntax_based.dseq
+    import discourse.syntax_based.ibm1
+    import discourse.syntax_based.ibm1_decoder
+    import discourse.syntax_based.alouis
+    import discourse.syntax_based.alouis_decoder
 
 def configure_commands(cls, parser):
     subparsers = parser.add_subparsers(title='subcommands',

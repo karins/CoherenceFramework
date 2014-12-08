@@ -1,10 +1,10 @@
-'''
+"""
 
 Algorithm for generative entity grid. Takes the transitions from training.
 Created on 25 Nov 2014
 
 @author: Karin
-'''
+"""
 import sys
 import argparse
 import logging
@@ -12,6 +12,7 @@ import itertools
 import numpy as np
 from discourse.util import pairwise
 from grid import read_grids, r2i, i2r
+from discourse import command
 
 
 def read_unigrams(istream, str2int):
@@ -52,8 +53,12 @@ def loglikelihood(grid, U, B):
     # by the number of columns (m):
     return logprob / grid.size
 
+
 def main(args):
     """load data and compute the coherence"""
+    logging.basicConfig(
+            level=(logging.DEBUG if args.verbose else logging.INFO), 
+            format='%(levelname)s %(message)s')
     U = read_unigrams(args.unigrams, r2i)
     logging.info('Read in %d unigrams', U.size)
     B = read_bigrams(args.bigrams, r2i)
@@ -66,11 +71,15 @@ def main(args):
         print >> args.output, '{0}\t{1}'.format(i, ll)
             
 
-def parse_args():
+@command('grid_decoder', 'entity-based')
+def argparser(parser=None, func=main):
     """parse command line arguments"""
     
-    parser = argparse.ArgumentParser(description='Generative implementation of Entity grid ',
-            formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    if parser is None:
+        parser = argparse.ArgumentParser(prog='grid_decoder')
+
+    parser.description = 'Generative implementation of Entity grid '
+    parser.formatter_class = argparse.ArgumentDefaultsHelpFormatter
     
     parser.add_argument('unigrams', 
             type=argparse.FileType('r'),
@@ -88,14 +97,11 @@ def parse_args():
     parser.add_argument('--verbose', '-v',
             action='store_true',
             help='increase the verbosity level')
-    
-    args = parser.parse_args()
-    
-    logging.basicConfig(
-            level=(logging.DEBUG if args.verbose else logging.INFO), 
-            format='%(levelname)s %(message)s')
-    
-    return args
+   
+    if func is not None:
+        parser.set_defaults(func=func)
+     
+    return parser
     
 if __name__ == '__main__':
-     main(parse_args())
+     main(argparser().parse_args())

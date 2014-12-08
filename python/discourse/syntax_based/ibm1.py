@@ -43,7 +43,7 @@ import itertools
 import argparse
 import numpy as np
 from discourse.util import bar, ibm_pairwise, read_documents, encode_documents, find_least_common
-
+from discourse import command
 
 def loglikelihood(corpus, T, progress=False):
     """computes -log(likelihood(T))"""
@@ -112,50 +112,12 @@ def ibm1(corpus, V, max_iterations, min_gain, progress=False):
     return T, LL
 
      
-def parse_args():
-    """parse command line arguments"""
-
-    parser = argparse.ArgumentParser(description='IBM model 1 for syntax-based coherence',
-            formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-
-    parser.add_argument('input', nargs='?', 
-            type=argparse.FileType('r'), default=sys.stdin,
-            help='input corpus in doctext format')
-    parser.add_argument('output', nargs='?', 
-            type=argparse.FileType('w'), default=sys.stdout,
-            help='output IBM1 estimates')
-    parser.add_argument('--ll',
-            type=str,
-            help='store the progression of the likelihood')
-    parser.add_argument('--max-iterations', '-m',
-            type=int, default=50,
-            help='maximum number of iterations')
-    parser.add_argument('--min-gain', '-g',
-            type=int, default=np.log(10),
-            help='minimum loglikelihood gain between two iterations (in log domain)')
-    parser.add_argument('--boundary', '-b',
-            action='store_true',
-            help='add document boundary tokens')
-    parser.add_argument('--unk', '-u',
-            action='store_true',
-            help='replaces singletons by an unk token')
-    parser.add_argument('--progress', '-p',
-            action='store_true',
-            help='display progress information')
-    parser.add_argument('--verbose', '-v',
-            action='store_true',
-            help='increase the verbosity level')
-
-    args = parser.parse_args()
-
+def main(args):
+    
     logging.basicConfig(
             level=(logging.DEBUG if args.verbose else logging.INFO), 
             format='%(asctime)s %(levelname)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S')
 
-    return args
-
-
-def main(args):
     # read documents 
     logging.info('Reading documents in...')
     documents = read_documents(args.input, args.boundary)
@@ -193,7 +155,51 @@ def main(args):
             print >> args.output, '{0}\t{1}\t{2}'.format(tokens[e], tokens[f], T[f,e])
 
 
+@command('ibm1', 'syntax-based')
+def argparser(parser=None, func=main):
+    """parse command line arguments"""
+
+    if parser is None:
+        parser = argparse.ArgumentParser(prog='ibm1')
+
+    parser.description = 'IBM model 1 for syntax-based coherence'
+    parser.formatter_class = argparse.ArgumentDefaultsHelpFormatter
+
+    parser.add_argument('input', nargs='?', 
+            type=argparse.FileType('r'), default=sys.stdin,
+            help='input corpus in doctext format')
+    parser.add_argument('output', nargs='?', 
+            type=argparse.FileType('w'), default=sys.stdout,
+            help='output IBM1 estimates')
+    parser.add_argument('--ll',
+            type=str,
+            help='store the progression of the likelihood')
+    parser.add_argument('--max-iterations', '-m',
+            type=int, default=50,
+            help='maximum number of iterations')
+    parser.add_argument('--min-gain', '-g',
+            type=int, default=np.log(10),
+            help='minimum loglikelihood gain between two iterations (in log domain)')
+    parser.add_argument('--boundary', '-b',
+            action='store_true',
+            help='add document boundary tokens')
+    parser.add_argument('--unk', '-u',
+            action='store_true',
+            help='replaces singletons by an unk token')
+    parser.add_argument('--progress', '-p',
+            action='store_true',
+            help='display progress information')
+    parser.add_argument('--verbose', '-v',
+            action='store_true',
+            help='increase the verbosity level')
+
+    if func is not None:
+        parser.set_defaults(func=func)
+
+    return parser
+
+
 if __name__ == '__main__':
-    main(parse_args())
+    main(argparser().parse_args())
 
 

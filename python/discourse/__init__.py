@@ -17,7 +17,7 @@ class command(object):
     A command decorator which accepts two arguments (the command name and its group, e.g 'sgml', 'preprocessing')
     """
 
-    def __init__(self, name, cls=''):
+    def __init__(self, name, cls):
 
         self.name_ = name
         self.cls_ = cls

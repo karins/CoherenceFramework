@@ -2,11 +2,15 @@
 Extract d-sequences from PTB-style parse trees (see Louis and Nekova, 2012).
 
 
-@author waziz
+@author: wilkeraziz
 """
 
 import string
+import argparse
+import sys
 from nltk.tree import Tree
+from discourse.doctext import writedoctext, iterdoctext
+from discourse import command
 
 
 def _find_subtrees(tree, depth, target_depth, subtrees):
@@ -152,30 +156,6 @@ def dseqs(tree, depth=2, no_punc=True, lexicalised=False, child_phrase='leftmost
     return patterns if patterns else backoff 
 
 
-def parse_args():
-    parser = argparse.ArgumentParser(description='Extracts d-sequences of depth d from PTB annotated data',
-            formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-
-    parser.add_argument('input', nargs='?', 
-            type=argparse.FileType('r'), default=sys.stdin,
-            help='parsed corpus in doctext format')
-    parser.add_argument('output', nargs='?', 
-            type=argparse.FileType('w'), default=sys.stdout,
-            help='d-sequences')
-    parser.add_argument('--depth', '-d', type=int, default=2)
-    parser.add_argument('--punc', '-p', action='store_true',
-            help='allow punctuation')
-    parser.add_argument('--lexicalised', '-l', action='store_true',
-            help='allow lexicalised patterns')
-    parser.add_argument('--child', '-c',
-            choices=['leftmost', 'rightmost', 'none'], default='leftmost',
-            help='annotate parent node with a child node')
-
-    args = parser.parse_args()
-
-    return args
-
-
 def main(args):
     # reads in documents
     for trees, attrs in iterdoctext(args.input):
@@ -192,10 +172,36 @@ def main(args):
                 (' '.join(patterns) for patterns in sequences),
                 **attrs)
 
+
+@command('dseq', 'analysis')
+def argparser(parser=None, func=main):
+    if parser is None:
+        parser = argparse.ArgumentParser(prog='dseq')
+    parser.description = 'Extracts d-sequences of depth d from PTB annotated data'
+    parser.formatter_class = argparse.ArgumentDefaultsHelpFormatter
+
+    parser.add_argument('input', nargs='?', 
+            type=argparse.FileType('r'), default=sys.stdin,
+            help='parsed corpus in doctext format')
+    parser.add_argument('output', nargs='?', 
+            type=argparse.FileType('w'), default=sys.stdout,
+            help='d-sequences')
+    parser.add_argument('--depth', '-d', type=int, default=2)
+    parser.add_argument('--punc', '-p', action='store_true',
+            help='allow punctuation')
+    parser.add_argument('--lexicalised', '-l', action='store_true',
+            help='allow lexicalised patterns')
+    parser.add_argument('--child', '-c',
+            choices=['leftmost', 'rightmost', 'none'], default='leftmost',
+            help='annotate parent node with a child node')
+
+    if func is not None:
+        parser.set_defaults(func=func)
+
+    return parser
+
+
 if __name__ == '__main__':
-    import argparse
-    import sys
-    from discourse.doctext import writedoctext, iterdoctext
-    main(parse_args())
+    main(argparser().parse_args())
 
 

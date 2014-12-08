@@ -32,7 +32,7 @@ from scipy.optimize import minimize_scalar
 import argparse
 import numpy as np
 from discourse.util import bar, pairwise, ibm_pairwise, read_documents, encode_documents, find_least_common
-
+from discourse import command
 
 def count(T, V, insertion=False, null=0):
     """
@@ -109,45 +109,11 @@ def minimize(T, U, B, insertion):
     return minimize_scalar(f, bounds=(0.0, 1.0), args=(T, U, B, insertion), method='bounded')
 
 
-def parse_args():
-    """parse command line arguments"""
-
-    parser = argparse.ArgumentParser(description='Hyperparameter tuning via MLE',
-            formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-
-    parser.add_argument('output', 
-            type=str,
-            help="prefix for output files")
-    parser.add_argument('--insertion', '-i',
-            action='store_true',
-            help='allows for insertion (obviating the need for a smoothing constant)')
-    parser.add_argument('--smoothing', '-c',
-            type=float, default=0.0,
-            help='smoothing constant in absolute discounting')
-    parser.add_argument('--boundary', '-b',
-            action='store_true',
-            help='add document boundary tokens')
-    parser.add_argument('--unk', '-u',
-            action='store_true',
-            help='replaces singletons by an unk token')
-    parser.add_argument('--mle',
-            action='store_true',
-            help="chooses c to maximise the data's likelihood (useless, note that this will retrieve the MLE solution, i.e. c=0)")
-    parser.add_argument('--verbose', '-v',
-            action='store_true',
-            help='increase the verbosity level')
-
-    args = parser.parse_args()
-
+def main(args):
+    """load data and optimise the likelihood"""
     logging.basicConfig(
             level=(logging.DEBUG if args.verbose else logging.INFO), 
             format='%(levelname)s %(message)s')
-
-    return args
-
-
-def main(args):
-    """load data and optimise the likelihood"""
 
     # read in documents
     logging.info('Reading documents in ...')
@@ -194,7 +160,43 @@ def main(args):
         print minimize(T, U, B, args.insertion)
 
 
-if __name__ == '__main__':
+@command('alouis', 'syntax-based')
+def argparser(parser=None, func=main):
+    """parse command line arguments"""
 
-    main(parse_args())
+    if parser is None:
+        parser = argparse.ArgumentParser(prog='alouis')
+    parser.description = 'Hyperparameter tuning via MLE'
+    parser.formatter_class = argparse.ArgumentDefaultsHelpFormatter
+
+    parser.add_argument('output', 
+            type=str,
+            help="prefix for output files")
+    parser.add_argument('--insertion', '-i',
+            action='store_true',
+            help='allows for insertion (obviating the need for a smoothing constant)')
+    parser.add_argument('--smoothing', '-c',
+            type=float, default=0.0,
+            help='smoothing constant in absolute discounting')
+    parser.add_argument('--boundary', '-b',
+            action='store_true',
+            help='add document boundary tokens')
+    parser.add_argument('--unk', '-u',
+            action='store_true',
+            help='replaces singletons by an unk token')
+    parser.add_argument('--mle',
+            action='store_true',
+            help="chooses c to maximise the data's likelihood (useless, note that this will retrieve the MLE solution, i.e. c=0)")
+    parser.add_argument('--verbose', '-v',
+            action='store_true',
+            help='increase the verbosity level')
+
+    if func is not None:
+        parser.set_defaults(func=func)
+
+    return parser
+
+
+if __name__ == '__main__':
+    main(argparser().parse_args())
 

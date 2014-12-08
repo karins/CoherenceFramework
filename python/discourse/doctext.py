@@ -19,7 +19,7 @@ It has two sentences.
 # id=doc2
 This is another, this one has a single sentence.
 
-@author waziz
+@author: wilkeraziz
 """
 from itertools import ifilter
 from discourse import command

@@ -7,6 +7,7 @@ s1  S  -  O
 s2  -  S  -
 s3  S  O  X
 
+@author: wilkeraziz
 """
 import argparse
 import numpy as np
@@ -15,6 +16,7 @@ import logging
 import itertools
 from discourse.util import pairwise
 from discourse.doctext import iterdoctext
+from discourse import command
 
 
 # TODO: generalise vocabulary of roles
@@ -38,33 +40,12 @@ def train(corpus, vocab_size):
     return U, B
 
     
-def parse_args():
-    """parse command line arguments"""
-    
-    parser = argparse.ArgumentParser(description='Generative implementation of Entity grid ',
-            formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    
-    parser.add_argument('input', nargs='?', 
-            type=argparse.FileType('r'), default=sys.stdin,
-            help='input corpus in doctext format')
-    
-    parser.add_argument('output', 
-            type=str,
-            help="prefix for model files")
-    
-    parser.add_argument('--verbose', '-v',
-            action='store_true',
-            help='increase the verbosity level')
-    
-    args = parser.parse_args()
-    
+def main(args):
+    """load grids and extract unigrams and bigrams"""
+
     logging.basicConfig(
             level=(logging.DEBUG if args.verbose else logging.INFO), 
             format='%(levelname)s %(message)s')
-    return args
-
-def main(args):
-    """load grids and extract unigrams and bigrams"""
 
     training = read_grids(args.input, r2i)
     logging.info('Training set contains %d docs', len(training))
@@ -84,6 +65,34 @@ def main(args):
         for r1, r2 in itertools.product(xrange(len(r2i)), xrange(len(r2i))):
             print >> fb, '{0}\t{1}\t{2}'.format(i2r[r1], i2r[r2], bigrams[r1,r2])
     
+
+@command('grid', 'entity-based')
+def argparser(parser=None, func=main):
+    """parse command line arguments"""
+
+    if parser is None:
+        parser = argparse.ArgumentParser(prog='grid')
     
+    parser.description = 'Generative implementation of Entity grid'
+    parser.formatter_class = argparse.ArgumentDefaultsHelpFormatter
+    
+    parser.add_argument('input', nargs='?', 
+            type=argparse.FileType('r'), default=sys.stdin,
+            help='input corpus in doctext format')
+    
+    parser.add_argument('output', 
+            type=str,
+            help="prefix for model files")
+    
+    parser.add_argument('--verbose', '-v',
+            action='store_true',
+            help='increase the verbosity level')
+    
+    if func is not None:
+        parser.set_defaults(func=func)
+    
+    return parser
+
+
 if __name__ == '__main__':
-     main(parse_args())
+     main(argparser().parse_args())
