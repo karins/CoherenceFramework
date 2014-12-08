@@ -108,3 +108,62 @@ python -m discourse.syntax_based.ibm1 -m 30 -b < discourse/syntax_based/data/pot
 
 ```
 
+# discotools
+
+If you develop a new module and want it to be listed by `discotools` do the following:
+
+
+```python
+from discourse import command
+
+# write a main function which receives parsed arguments (an instance of argparse.Namespace)
+def main(args):
+    """Example main, simply writes the input to the output"""
+    for line in args.input:
+        print >> args.output, line.strip()
+    
+# write a function to configure an argparse.ArgumentParser object and declare it as a command
+@command('mymodule', 'mygroup')
+def argparser(parser=None, func=main):
+    """
+    Configures and returns a parser for the tool 'mymodule' which is part of the groups of tools 'mygroup'.
+
+    Arguments
+    ---------
+    parser: a clean argparse parser to be configured (the program name shouldn't be changed),
+        or None in which case a parser will be created
+    main: the main function to be called when the program is invoked
+
+    Returns
+    -------
+    a configured parser
+    """
+    if parser is None:
+        parser = argparse.ArgumentParser(prog='mymodule')
+    
+    parser.description = "Example"
+
+    parser.add_argument('input', nargs='?', 
+            type=argparse.FileType('r'), default=sys.stdin,
+            help='Input stuff')
+    parser.add_argument('output', nargs='?', 
+            type=argparse.FileType('w'), default=sys.stdout,
+            help='output stuff')
+    
+    if func is not None:
+        parser.set_defaults(func=func)
+
+    # note that we do not parse the command line arguments,
+    # we just configure the parser
+    return parser
+
+if __name__ == '__main__':
+    # having this bit will make your module expose an interface of its own (which is a good idea)
+    # however, because we declared a command, we can also have this interface as part of discotools
+    main(argparser().parse_args())
+```
+
+To complete, change `discotools` to import your module. Then you will be able to run
+
+    python -m discotools mygroup mymodule -h
+
