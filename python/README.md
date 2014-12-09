@@ -3,21 +3,7 @@
 * numpy
 * scipy
 * nltk
-
-# Optional
-
-* install `progressbar` from Google code for improved feedback
-
-```bash
-wget https://python-progressbar.googlecode.com/files/progressbar-2.3.tar.gz
-tar -xzvf progressbar-2.3.tar.gz
-cd progressbar-2.3
-sudo python setup.py install --record files.txt
-```
-
-* I often use tabulate to dump markdown tables with some helpful information, you can easily install it with `pip`
-
-    sudo pip install tabulate
+* tabulate
 
 
 # Install
@@ -38,13 +24,20 @@ I recommend using `virtualenv`
         pip install numpy
         pip install scipy
         pip install nltk
+        pip install tabulate
 
 4. Install extras, such as progressbar
+
+```bash
+wget https://python-progressbar.googlecode.com/files/progressbar-2.3.tar.gz
+tar -xzvf progressbar-2.3.tar.gz
+cd progressbar-2.3
+python setup.py install --record files.txt
+```
 
 5. Git clone the code, navigate to the python directory and run
 
         python setup.py install
-
 
 ## Check
 
