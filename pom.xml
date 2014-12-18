@@ -8,7 +8,6 @@
   <name>DiscourseFramework</name>
   <url>https://github.com/karins/EntityFramework</url>
   
-  
      
 <build>
   <plugins>
@@ -17,11 +16,19 @@
       <artifactId>maven-compiler-plugin</artifactId>
       <version>2.5.1</version>
       <configuration>
-        <source>1.6</source>
-        <target>1.6</target>
+        <source>1.7</source>
+        <target>1.7</target>
       </configuration>
     </plugin>
-
+	 <plugin>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-dependency-plugin</artifactId>
+	    <configuration>
+	        <outputDirectory>
+	            ${project.build.directory}
+	        </outputDirectory>
+	    </configuration>
+	</plugin>
     <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
         <executions>
@@ -55,23 +62,28 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
-
+		
 		<dependency>
-			<groupId>edu.stanford.nlp</groupId>
-			<artifactId>stanford-parser-3.3.0-models</artifactId>
-			<version>3.3.0</version>
-			</dependency>
-			<dependency>
-				<groupId>stanford-corenlp-3.3.0</groupId>
-				<artifactId>stanford-corenlp</artifactId>
-				<version>3.3.0</version>
-				<classifier>models</classifier>
-			</dependency>
-			<dependency>
-				<groupId>stanford-corenlp-3.3.0-models</groupId>
-				<artifactId>stanford-corenlp</artifactId>
-				<version>3.3.0</version>
-				<classifier>models</classifier>
-			</dependency>
+			<groupId>javatuples</groupId>
+			<artifactId>javatuples</artifactId>
+			<version>1.2</version>
+			<scope>test</scope>
+		</dependency>
+
+		
+			
+		<dependency>
+		    <groupId>edu.stanford.nlp</groupId>
+		    <artifactId>stanford-corenlp</artifactId>
+		    <version>3.3.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>edu.stanford.nlp</groupId>
+		    <artifactId>stanford-corenlp</artifactId>
+		    <version>3.3.0</version>
+		    <classifier>models</classifier>
+		</dependency>
+
 	</dependencies>
+	
 </project>
