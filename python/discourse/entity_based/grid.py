@@ -17,7 +17,7 @@ import itertools
 from discourse.util import pairwise
 from discourse.doctext import iterdoctext
 from discourse import command
-
+import functools
 
 # TODO: generalise vocabulary of roles
 r2i = {'S': 3, 'O': 2, 'X': 1, '-': 0}
@@ -28,18 +28,27 @@ def read_grids(istream, str2int):
     return [np.array([[str2int[role] for role in line] for line in lines], int) for lines, attrs in iterdoctext(istream)]
 
 
-def train(corpus, vocab_size):
+def train(corpus, vocab_size, salience):
     U = np.zeros(vocab_size, int)
     B = np.zeros((vocab_size, vocab_size), int)
     for grid in corpus:
         for entity_roles in grid.transpose():
-            for r in entity_roles:
-                U[r] += 1
-            for ri, rj in pairwise(entity_roles):
-                B[ri,rj] += 1
+            #not v pythonesque :(
+            if not ( salience is None) and get_role_count(entity_roles) >= salience:
+                for r in entity_roles:
+                    U[r] += 1
+                for ri, rj in pairwise(entity_roles):
+                    B[ri,rj] += 1
     return U, B
 
+def get_role_count(entity_roles):
     
+    from collections import Counter
+    roles = Counter(entity_roles)
+    temp = functools.reduce(lambda x, y: x+y,  Counter(entity_roles).values())
+    
+    return temp - roles[0]
+
 def main(args):
     """load grids and extract unigrams and bigrams"""
 
@@ -49,7 +58,7 @@ def main(args):
 
     training = read_grids(args.input, r2i)
     logging.info('Training set contains %d docs', len(training))
-    unigrams, bigrams = train(training, len(r2i)) 
+    unigrams, bigrams = train(training, len(r2i), args.salience) 
     logging.info('%d unigrams and %d bigrams', unigrams.size, bigrams.size)
     
     # save unigrams and bigrams
@@ -77,12 +86,16 @@ def argparser(parser=None, func=main):
     parser.formatter_class = argparse.ArgumentDefaultsHelpFormatter
     
     parser.add_argument('input', nargs='?', 
-            type=argparse.FileType('r'), default=sys.stdin,
+            type=argparse.FileType('r'), default=open(sys.argv[1], 'r'),
             help='input corpus in doctext format')
     
     parser.add_argument('output', 
             type=str,
             help="prefix for model files")
+    
+    parser.add_argument('salience', default=0,
+            type=int,
+            help='salience variable for entities')
     
     parser.add_argument('--verbose', '-v',
             action='store_true',
@@ -95,4 +108,4 @@ def argparser(parser=None, func=main):
 
 
 if __name__ == '__main__':
-     main(argparser().parse_args())
+    main(argparser().parse_args())
