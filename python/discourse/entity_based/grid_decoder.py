@@ -3,7 +3,7 @@
 Algorithm for generative entity grid. Takes the transitions from training.
 Created on 25 Nov 2014
 
-@author: Karin
+@author: Karin Sim
 """
 import sys
 import argparse
@@ -11,7 +11,7 @@ import logging
 import itertools
 import numpy as np
 from discourse.util import pairwise
-from grid import read_grids, r2i, i2r
+from grid import read_grids, r2i, i2r, get_role_count
 from discourse import command
 
 
@@ -41,13 +41,14 @@ def read_bigrams(istream, str2int):
     return B
 
 
-def loglikelihood(grid, U, B):
+def loglikelihood(grid, U, B, salience):
     # sum_i sum_j log p(rj|ri)
     # where p(rj|ri) = c(ri,rj)/c(ri)
     logprob = np.sum([
         np.sum(
-            [np.log(np.divide(float(B[ri,rj]), U[ri])) for ri, rj in pairwise(entity_roles)]) 
-        for entity_roles in grid.transpose()])
+            [np.log(np.divide(float(B[ri,rj]), U[ri])) for ri, rj in pairwise(entity_roles)])
+        for entity_roles in grid.transpose() if get_role_count(entity_roles) >= salience])
+    
     # probabilities for individual columns are normalized by column
     # length (n) and the probability of the entire text is normalized
     # by the number of columns (m):
@@ -67,7 +68,7 @@ def main(args):
     logging.info('Scoring %d documents', len(test)) 
     print >> args.output, '#docid\t#loglikelihood'
     for i, grid in enumerate(test):
-        ll = loglikelihood(grid, U, B)
+        ll = loglikelihood(grid, U, B, args.salience)
         print >> args.output, '{0}\t{1}'.format(i, ll)
             
 
@@ -93,7 +94,9 @@ def argparser(parser=None, func=main):
     parser.add_argument('output', nargs='?', 
             type=argparse.FileType('w'), default=sys.stdout,
             help='output probabilities')
-    
+    parser.add_argument('salience', default=0,
+            type=int,
+            help='salience variable for entities')
     parser.add_argument('--verbose', '-v',
             action='store_true',
             help='increase the verbosity level')
