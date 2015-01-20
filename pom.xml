@@ -18,6 +18,7 @@
       <configuration>
         <source>1.7</source>
         <target>1.7</target>
+        <encoding>UTF-8</encoding>
       </configuration>
     </plugin>
 	 <plugin>
@@ -50,24 +51,34 @@
 </build>
 
 <dependencies>
-		<dependency>
+		<!-- >dependency>
 			<groupId>de.abelssoft</groupId>
 			<artifactId>jwordsplitter</artifactId>
 			<version>3.4</version>
-		</dependency>
+		</dependency-->
  
+ 	<dependency>
+			<groupId>de.danielnaber</groupId>
+			<artifactId>jwordsplitter</artifactId>
+			<version>3.5</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
-			<scope>test</scope>
+			
 		</dependency>
-		
+		<dependency>
+    	<groupId>com.google.guava</groupId>
+    	<artifactId>guava</artifactId>
+    	<version>17.0</version>
+		</dependency>
 		<dependency>
 			<groupId>javatuples</groupId>
 			<artifactId>javatuples</artifactId>
 			<version>1.2</version>
-			<scope>test</scope>
+			
 		</dependency>
 
 		
