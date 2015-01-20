@@ -1,7 +1,6 @@
 package nlp.framework.discourse;
 
 import java.util.Map;
-
 import junit.framework.TestCase;
 
 public class EntityTransitionExtractorTest extends TestCase {

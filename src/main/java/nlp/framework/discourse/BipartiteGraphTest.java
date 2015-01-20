@@ -1,11 +1,7 @@
 package nlp.framework.discourse;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
-import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
-import edu.stanford.nlp.util.CoreMap;
 import junit.framework.TestCase;
 
 public class BipartiteGraphTest extends TestCase {
@@ -24,14 +20,14 @@ public class BipartiteGraphTest extends TestCase {
 			"<doc><p><seg id=\"15\"> In comparison, only 55 percent said it would definitely vote in parliamentary elections if they were to be held this Sunday while another 15 percent said it most likely would cast a ballot. "
 			+"Given current determination to vote, the referendum is certain to be valid. </seg></p></doc></refset>";
 
-	public static final String xmlFrench = "<refset setid=\"newsdev2009\"><doc docid=\"napi.hu/2007/12/12/0\" genre=\"news\"><hl><seg id=\"1\"> L'inflation, en Europe, a dérapé sur l'alimentation. </seg>"+
-			"</hl><p><seg id=\"2\">  L'inflation accélérée, mesurée dans la zone euro, est due principalement à l'augmentation rapide des prix de l'alimentation. </seg></p></doc></refset>";
+	public static final String xmlFrench = "<refset setid=\"newsdev2009\"><doc docid=\"napi.hu/2007/12/12/0\" genre=\"news\"><hl><seg id=\"1\"> L'inflation, en Europe, a dï¿½rapï¿½ sur l'alimentation. </seg>"+
+			"</hl><p><seg id=\"2\">  L'inflation accï¿½lï¿½rï¿½e, mesurï¿½e dans la zone euro, est due principalement ï¿½ l'augmentation rapide des prix de l'alimentation. </seg></p></doc></refset>";
 	  
 	public static final String xmlFrench2 ="<refset setid=\"newsdev2009\"><doc docid=\"napi.hu/2007\"><hl><seg id=\"1\">Gallup indique une crise du gouvernement. </seg></hl><p><seg id=\"2\">"+
-			"Après une longue stagnation, le nombre des partisans du Fidesz (Alliance des jeunes démocrates) a augmenté significativement début décembre. "+
-			"Ainsi depuis 2002, il dispose actuellement du plus grand nombre de partisans, alors que Gallup (Institut de sondage) n'a jamais constaté auparavant un aussi faible soutien socialiste, à savoir 13 pour cent. </seg></p></doc>"+
-			"<doc><p><seg id=\"15\"> Pour faire la comparaison, pour une élection législative organiser dimanche prochain, seulement 55 pour cent des sondés participeraient certainement et 15 pour cent complémentaires participeraient probablement. "
-			+"Suivant les intentions actuelles, le résultat du référendum ne ferait aucun doute. </seg></p></doc></refset>";
+			"Aprï¿½s une longue stagnation, le nombre des partisans du Fidesz (Alliance des jeunes dï¿½mocrates) a augmentï¿½ significativement dï¿½but dï¿½cembre. "+
+			"Ainsi depuis 2002, il dispose actuellement du plus grand nombre de partisans, alors que Gallup (Institut de sondage) n'a jamais constatï¿½ auparavant un aussi faible soutien socialiste, ï¿½ savoir 13 pour cent. </seg></p></doc>"+
+			"<doc><p><seg id=\"15\"> Pour faire la comparaison, pour une ï¿½lection lï¿½gislative organiser dimanche prochain, seulement 55 pour cent des sondï¿½s participeraient certainement et 15 pour cent complï¿½mentaires participeraient probablement. "
+			+"Suivant les intentions actuelles, le rï¿½sultat du rï¿½fï¿½rendum ne ferait aucun doute. </seg></p></doc></refset>";
 
 	
 	@Override
