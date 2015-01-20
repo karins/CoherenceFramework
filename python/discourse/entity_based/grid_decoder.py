@@ -11,7 +11,7 @@ import logging
 import itertools
 import numpy as np
 from discourse.util import pairwise
-from grid import read_grids, r2i, i2r, get_role_count
+from grid import read_grids, r2i, i2r
 from discourse import command
 
 
@@ -41,14 +41,14 @@ def read_bigrams(istream, str2int):
     return B
 
 
-def loglikelihood(grid, U, B, salience):
+def loglikelihood(grid, U, B):
     # sum_i sum_j log p(rj|ri)
     # where p(rj|ri) = c(ri,rj)/c(ri)
     logprob = np.sum([
         np.sum(
-            [np.log(np.divide(float(B[ri,rj]), U[ri])) for ri, rj in pairwise(entity_roles)])
-        for entity_roles in grid.transpose() if get_role_count(entity_roles) >= salience])
-    
+            [np.log( np.divide(float(B[ri,rj]), U[ri])) for ri, rj in pairwise(entity_roles)])
+        for entity_roles in grid.transpose()])
+    print logprob
     # probabilities for individual columns are normalized by column
     # length (n) and the probability of the entire text is normalized
     # by the number of columns (m):
@@ -68,7 +68,7 @@ def main(args):
     logging.info('Scoring %d documents', len(test)) 
     print >> args.output, '#docid\t#loglikelihood'
     for i, grid in enumerate(test):
-        ll = loglikelihood(grid, U, B, args.salience)
+        ll = loglikelihood(grid, U, B)
         print >> args.output, '{0}\t{1}'.format(i, ll)
             
 
