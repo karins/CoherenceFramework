@@ -13,6 +13,7 @@ import java.nio.channels.FileChannel;
 import java.nio.charset.CharsetDecoder;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
+import java.util.zip.GZIPOutputStream;
 
 public class FileOutputUtils {
 	
@@ -23,7 +24,9 @@ public class FileOutputUtils {
 	 * @param grid two dimensional array of chars
 	 */
 	public static void writeGridToFile(String filename, char grid [][]){
-		writeGridToFile(filename, grid, false, null);
+		int idx=filename.lastIndexOf(File.pathSeparator);
+		
+		writeGridToFile(filename.substring(idx+1),filename.substring(0, idx), grid, false, null, false);
 	}
 	
 	
@@ -33,12 +36,25 @@ public class FileOutputUtils {
 	 * @param filename
 	 * @param grid two dimensional array of chars
 	 */
-	public static void writeGridToFile(String filename, char grid [][], boolean append, String docid){
+	public static void writeGridToFile(String directory,String filename, char grid [][], boolean append, String docid, boolean compress){
 		OutputStream output = null;
 		try{
 			CharsetDecoder decoder = StandardCharsets.UTF_8.newDecoder();
-			output = new BufferedOutputStream(new FileOutputStream(new File(filename), append));
+			File newFile = new File(directory);
+			if(!newFile.exists()){
+				newFile.mkdirs();				
+			}
+			String outputFile = directory+File.separator+filename;
+			if(compress){
+				GZIPOutputStream zip = new GZIPOutputStream(new FileOutputStream(new File(outputFile+".gz"), append));
+				//output = new BufferedWriter(new OutputStreamWriter(zip, "UTF-8"));
+				output = new BufferedOutputStream(zip);
+			}else{
+				output = new BufferedOutputStream(new FileOutputStream(new File(outputFile), append));
+			}
 			
+			
+
 			if(docid != null){
 				char [] id = docid.toCharArray();
 				for(int i = 0; i<id.length; i++){ 

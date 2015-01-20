@@ -39,7 +39,7 @@ public class EntityExperiments {
 		File[] files = new File(directory).listFiles();
 		for (File file : files) {
 			if (file.isFile()){
-				System.out.println("file = "+directory+"\\"+file.getName());
+				System.out.println("file = "+directory+File.separator+file.getName());
 				
 				if(gridAndGraph){
 					int projection = new Integer(args[4]);
@@ -54,18 +54,24 @@ public class EntityExperiments {
 	private void getGrid(String path, String filename, String language,  boolean isXML){
 		Map<String,String> docs;
 		if(isXML){
-			docs = new CorpusReader().readXMLwithDocIds(path+"\\"+filename);
+			docs = new CorpusReader().readXMLwithDocIds(path+File.separator+filename);
 		}else{
-			docs = new CorpusReader().readDataAsDocs(path+"\\"+filename);
+			docs = new CorpusReader().readDataAsDocs(path+File.separator+filename);
 		}
 		EntityGridFramework framework = new EntityGridFactory().getEntityGridFramework(language, "");
 		for(String docid : docs.keySet()){
 			
 			Map<String, ArrayList<Map <Integer, String>>> entities = framework.identifyEntitiesFromSentences(docs.get(docid));
-			FileOutputUtils.writeGridToFile(getPath(filename, path), framework.constructGrid(entities), true, docid);
+			//FileOutputUtils.writeGridToFile(getPath(filename, path), framework.constructGrid(entities), true, docid);
+			FileOutputUtils.writeGridToFile(getDirectory(path),getFilenameWithoutExtensions(filename)+"_grids", 
+								framework.constructGrid(entities), true, docid, isCompressed(filename));
 		}
 	}
 	
+	private boolean isCompressed(String filename) {
+		return filename.endsWith("gz");
+	}
+
 	/*public static void main(String[] args) {			
 		
 		String directory = args[0];
@@ -101,8 +107,11 @@ public class EntityExperiments {
 		EntityGridFramework framework = new EntityGridFactory().getEntityGridFramework(language, "");		
 		
 		StringBuffer graphdirectory = new StringBuffer(path);
-		graphdirectory.append("\\output\\");
-		graphdirectory.append("graph\\"); 
+		graphdirectory.append(File.separator);
+		graphdirectory.append("output");
+		graphdirectory.append(File.separator);
+		graphdirectory.append("graph"); 
+		graphdirectory.append(File.separator);
 		graphdirectory.append(filename+"_graph_scores");
 		
 		for(int fileidx = 0; fileidx< docs.size(); fileidx++){
@@ -125,19 +134,45 @@ public class EntityExperiments {
 	private String getPath(String filename, String outputdirectory, int fileidx) {
 		StringBuffer path = new StringBuffer();
 		path.append(outputdirectory.toString());
-		path.append("\\output\\");
-		path.append("grid\\");
+		path.append(File.separator);
+		path.append("output");
+		path.append(File.separator);
+		path.append("grid");
+		path.append(File.separator);
 		path.append(filename+"_grid_"+fileidx);
 		return path.toString();
 	}
 	
-	private String getPath(String filename, String outputdirectory) {
+	private StringBuffer getPath(String filename, String outputdirectory) {
 		StringBuffer path = new StringBuffer();
 		path.append(outputdirectory.toString());
-		path.append("\\output\\");
-		path.append("grid\\");
-		path.append(filename+"_grids");
+		path.append(File.separator);
+		path.append("output");
+		path.append(File.separator);
+		path.append("grid");
+		path.append(File.separator);
+		//path.append(getFilenameWithoutExtensions(filename)+"_grids");
+		return path;
+	}
+	private String getDirectory(String outputdirectory) {
+		StringBuffer path = new StringBuffer();
+		path.append(outputdirectory.toString());
+		path.append(File.separator);
+		path.append("output");
+		path.append(File.separator);
+		path.append("grid");
+		path.append(File.separator);
+		
 		return path.toString();
+	}
+
+	private String getFilenameWithoutExtensions(String filename) {
+		
+		if(filename != null && filename.contains(".")){
+			int idx = filename.indexOf('.');
+			return filename.substring(0, idx);
+		}
+		return filename;
 	}
 
 	private static void streamCoherenceScore(int projection, int fileidx,

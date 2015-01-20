@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.io.PushbackInputStream;
 import java.io.Reader;
 import java.io.StringBufferInputStream;
 import java.nio.charset.CharsetDecoder;
@@ -22,6 +23,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.zip.GZIPInputStream;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
@@ -66,6 +68,42 @@ public class CorpusReader {
 			return null;
 		}
 	}
+	/**
+	 * Reads in contents of a file and returns as List of strings
+	 * @param filename name of the file to read from
+	 * @return
+	 */
+	//public Map<String, String> readDataAsDocs(String filename){
+	//GZIPInputStream
+	
+	public boolean isCompressed(byte[] bytes) throws IOException
+	{
+		if ((bytes == null) || (bytes.length < 2))
+		{
+			return false;
+		}else{
+			return ((bytes[0] == (byte) (GZIPInputStream.GZIP_MAGIC)) && (bytes[1] == (byte) (GZIPInputStream.GZIP_MAGIC >> 8)));
+		}
+	}
+	
+	public InputStream decompressStream(InputStream input) {
+		PushbackInputStream pb = new PushbackInputStream( input, 2 ); //we need a pushbackstream to look ahead
+		byte [] signature = new byte[2];
+		try {
+			pb.read( signature );
+			pb.unread( signature ); //push back the signature to the stream
+		 //read the signature
+		
+		if( signature[ 0 ] == (byte) 0x1f && signature[ 1 ] == (byte) 0x8b ) //check if matches standard gzip magic number
+			return new GZIPInputStream( pb );
+		else 
+			return pb;
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return pb;
+	}
 	
 	/**
 	 * Reads in contents of a file and returns as List of strings
@@ -82,7 +120,9 @@ public class CorpusReader {
 			StringBuilder contents = new StringBuilder();
 			
 			CharsetDecoder decoder = StandardCharsets.UTF_8.newDecoder();
-			input =  new BufferedReader(new InputStreamReader(new FileInputStream(new File(filename)), decoder));
+			//input =  new BufferedReader(new InputStreamReader(new FileInputStream(new File(filename)), decoder));
+			InputStream inputStream =  new FileInputStream(new File(filename));
+			input = new BufferedReader(new InputStreamReader(decompressStream(inputStream), decoder));
 			
 			for(String line = input.readLine(); line != null; line = input.readLine()) {
 				
