@@ -75,7 +75,7 @@
     	<version>17.0</version>
 		</dependency>
 		<dependency>
-			<groupId>javatuples</groupId>
+			<groupId>org.javatuples</groupId>
 			<artifactId>javatuples</artifactId>
 			<version>1.2</version>
 			
