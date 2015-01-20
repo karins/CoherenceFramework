@@ -51,17 +51,17 @@
 </build>
 
 <dependencies>
-		<!-- >dependency>
+		<dependency>
 			<groupId>de.abelssoft</groupId>
 			<artifactId>jwordsplitter</artifactId>
 			<version>3.4</version>
-		</dependency-->
+		</dependency>
  
- 	<dependency>
+ 	<!--dependency>
 			<groupId>de.danielnaber</groupId>
 			<artifactId>jwordsplitter</artifactId>
 			<version>3.5</version>
-		</dependency>
+		</dependency-->
 		
 		<dependency>
 			<groupId>junit</groupId>
