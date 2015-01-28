@@ -56,7 +56,7 @@ public class EntityGridFramework {
 	
 	protected StanfordCoreNLP pipeline;
 	private char grid[][];
-	private int sentences;
+	//private int sentences;
 	
 	
 	/**
@@ -69,12 +69,27 @@ public class EntityGridFramework {
 		properties.put("-parseInside", "HEADLINE|P");
 		properties.put("annotators", "tokenize, ssplit, pos, lemma, parse");
 		properties.setProperty("tokenize.whitespace", "true");//for annotator tokenize
-		properties.setProperty("ssplit.eolonly", "true");//for annotator ssplit
+		//properties.setProperty("ssplit.eolonly", "true");//for annotator ssplit
 
 		this.pipeline = new StanfordCoreNLP(properties);	
 	}
-	
 
+	/**
+	 * Default grid is English-based
+	 * @param language
+	 */
+	public EntityGridFramework(String urlForPOStagger, String urlForParseModel) {
+	
+		Properties properties = new Properties();	
+		properties.put("-parseInside", "HEADLINE|P");
+		properties.put("annotators", "tokenize, ssplit, pos, lemma, parse");
+		properties.setProperty("tokenize.whitespace", "true");//for annotator tokenize
+		//properties.setProperty("ssplit.eolonly", "true");//for annotator ssplit
+		//properties.put("parse.model", "edu/stanford/nlp/models/lexparser/frenchFactored.ser.gz");
+		properties.put("parse.model",urlForParseModel);
+		properties.put("pos.model",urlForPOStagger);
+		this.pipeline = new StanfordCoreNLP(properties);	
+	}
 	/**
 	 * The various options are set on the commandline, to ensure correct parser is set.
 	 * In the following format and order:
@@ -128,7 +143,7 @@ public class EntityGridFramework {
 
 	
 	/**
-	 * Read in source text and invoke coreference resolve to identify entities.
+	 * Read in source text and invoke coreference resolver to identify entities.
 	 */
 	public Map<String, ArrayList<Map <Integer, String>>> identifyEntitiesFromSentences(String docAsString){
 		List<CoreMap> sentences = getAnnotatedDocument(docAsString);
@@ -144,13 +159,13 @@ public class EntityGridFramework {
 		List<CoreMap> sentences = getAnnotatedDocument(docAsString);
 		Map<String, ArrayList<Map <Integer, String>>> entities = identifyEntities(sentences);
 		
-		return constructGrid(entities);
+		return constructGrid(entities, sentences.size());
 	}
 	/**
 	 * Read in source text and invoke coreference resolve to identify entities.
 	 * @param String docContents
 	 */
-	private List<CoreMap> getAnnotatedDocument(String docAsString){
+	protected List<CoreMap> getAnnotatedDocument(String docAsString){
 		Annotation document = new Annotation(docAsString);
 		this.pipeline.annotate(document);
 		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
@@ -164,9 +179,9 @@ public class EntityGridFramework {
 	/**
 	 * Read in source text and invoke coreference resolve to identify entities.
 	 */
-	public char[][] getConstructedGrid(Map<String, ArrayList<Map <Integer, String>>> entities){
+	public char[][] getConstructedGrid(Map<String, ArrayList<Map <Integer, String>>> entities, int numberOfSentences){
 		
-		return constructGrid(entities);
+		return constructGrid(entities, numberOfSentences);
 	}
 	
 	/**
@@ -177,7 +192,6 @@ public class EntityGridFramework {
 	public Map<String, ArrayList<Map<Integer, String>>> identifyEntities(List<CoreMap> sentences ){
 		
 		Map<String, ArrayList<Map <Integer, String>>> entities = new HashMap<String, ArrayList<Map <Integer, String>>>();
-		this.sentences = sentences.size();
 		
 		//FileOutputUtils.writeDebugToFile(debugFile, "doc= "+docAsString+"\n sentences: "+sentences);
 		buffer.append("sentences: "+sentences.size());
@@ -298,8 +312,8 @@ public class EntityGridFramework {
 	 * @param entities
 	 * @return
 	 */	
-	public char[][] constructGrid(Map<String, ArrayList<Map <Integer, String>>> entities) {
-		this.grid = new char[sentences][entities.size()];
+	public char[][] constructGrid(Map<String, ArrayList<Map <Integer, String>>> entities, int numberOfSentences) {
+		this.grid = new char[numberOfSentences ][entities.size()];
 		
 		int entityIndex = 0;
 		for(String entity : entities.keySet()){

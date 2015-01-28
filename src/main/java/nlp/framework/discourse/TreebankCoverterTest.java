@@ -212,9 +212,8 @@ public class TreebankCoverterTest extends TestCase {
 		//String production1 = new String("NP NP .");
 		String production = new String("NP VP .");
 		
-		
 		assertEquals(message, 4, counts.get(production).intValue());
-		
+ 		
 	}
 	
 	/**

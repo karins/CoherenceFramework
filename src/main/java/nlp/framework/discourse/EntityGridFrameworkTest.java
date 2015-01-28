@@ -48,6 +48,7 @@ public class EntityGridFrameworkTest extends TestCase {
 		//gridframework = new EntityGridFramework( true);
 	}
 	
+	
 	/**
 	 * Read in source text and invoke coreference resolve to identify entities.
 	 * Test that entities are resolved
@@ -67,7 +68,7 @@ public class EntityGridFrameworkTest extends TestCase {
 	
 	
 	public void testIdentifyEntities(){
-		EntityGridFramework gridframework = new EntityGridFramework();
+		EntityGridFramework gridframework = getEntityGridFramework();
 		Map<String, ArrayList<Map<Integer, String>>> entities = gridframework.identifyEntitiesFromSentences(teststring1);
 		
 		List<Map<Integer, String>> berlinOccurences = entities.get("Berlin");
@@ -84,9 +85,15 @@ public class EntityGridFrameworkTest extends TestCase {
 		Map<Integer, String> occurance3 = cityOccurences.get(1);
 		assertEquals(message, "S", occurance3.get(2));
 	}
+
+
+	protected EntityGridFramework getEntityGridFramework() {
+		
+		return new EntityGridFramework();
+	}
 	
 	public void testEntityResolver(){
-		EntityGridFramework gridframework = new EntityGridFramework();
+		EntityGridFramework gridframework = getEntityGridFramework();
 		char grid [][] = gridframework.identifyEntitiesAndConstructGrid(teststring1);	
 		
 		assertEquals(message, 'O',grid[0][0]);//sentence 1, Berlin
@@ -105,7 +112,7 @@ public class EntityGridFrameworkTest extends TestCase {
 	 */
 	public void testEntityResolver2(){
 		
-		EntityGridFramework gridframework2 = new EntityGridFramework( );
+		EntityGridFramework gridframework2 = getEntityGridFramework();
 		char grid [][] = gridframework2.identifyEntitiesAndConstructGrid(teststring2 );
 		
 		int Os = 0; 
@@ -132,7 +139,7 @@ public class EntityGridFrameworkTest extends TestCase {
 	 * check that a document is correctly extracted from an xml segment 
 	 */
 	public void testXmlExtractDocs1(){
-		EntityGridFramework gridframework = new EntityGridFramework();
+		EntityGridFramework gridframework = getEntityGridFramework();
 		List<String> docs = new CorpusReader().readXMLString(xml);
 		int fileidx = 0;
 		for(String docAsString: docs){
@@ -148,7 +155,7 @@ public class EntityGridFrameworkTest extends TestCase {
 	 * check that a document is correctly extracted from an xml segment 
 	 */
 	public void testXmlExtractDocs2(){
-		EntityGridFramework gridframework = new EntityGridFramework();
+		EntityGridFramework gridframework = getEntityGridFramework();
 		List<String> docs = new CorpusReader().readXMLString(xml2);
 		int fileidx = 0;
 		for(String docAsString: docs){
@@ -164,7 +171,7 @@ public class EntityGridFrameworkTest extends TestCase {
 	 * check that a document is correctly extracted from an xml segment 
 	 */
 	public void testFrenchXmlExtractDocs1(){
-		EntityGridFramework gridframework = new EntityGridFramework();
+		EntityGridFramework gridframework = getEntityGridFramework();
 		List<String> docs = new CorpusReader().readXMLString(xmlFrench);
 		gridframework = new EntityGridFactory().getEntityGridFramework( "French", EntityGridFramework.FRENCH_TAGGER);
 		int fileidx = 0;
