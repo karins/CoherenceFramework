@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import edu.stanford.nlp.util.CoreMap;
+
 /**
  * Creates Entity Grid and optionally also Entity Graph. 
  * Outputs grids and scores to file.
@@ -61,14 +63,17 @@ public class EntityExperiments {
 		EntityGridFramework framework = new EntityGridFactory().getEntityGridFramework(language, "");
 		for(String docid : docs.keySet()){
 			
-			Map<String, ArrayList<Map <Integer, String>>> entities = framework.identifyEntitiesFromSentences(docs.get(docid));
+			//Map<String, ArrayList<Map <Integer, String>>> entities = framework.identifyEntitiesFromSentences(docs.get(docid));
+			List<CoreMap> sentences = framework.getAnnotatedDocument(docs.get(docid));
+			Map<String, ArrayList<Map <Integer, String>>> entities = framework.identifyEntities(sentences);
+			
 			//FileOutputUtils.writeGridToFile(getPath(filename, path), framework.constructGrid(entities), true, docid);
 			FileOutputUtils.writeGridToFile(getDirectory(path),getFilenameWithoutExtensions(filename)+"_grids", 
-								framework.constructGrid(entities), true, docid, isCompressed(filename));
+								framework.constructGrid(entities, sentences.size()), true, docid, isCompressed(filename));
 		}
 	}
 	
-	private boolean isCompressed(String filename) {
+	public static boolean isCompressed(String filename) {
 		return filename.endsWith("gz");
 	}
 
@@ -117,7 +122,9 @@ public class EntityExperiments {
 		for(int fileidx = 0; fileidx< docs.size(); fileidx++){
 		
 			//Map<String, ArrayList<Map <Integer, String>>> entities = framework.identifyEntitiesForGraph(docs.get(fileidx));		
-			Map<String, ArrayList<Map <Integer, String>>> entities = framework.identifyEntitiesFromSentences(docs.get(fileidx));
+			//Map<String, ArrayList<Map <Integer, String>>> entities = framework.identifyEntitiesFromSentences(docs.get(fileidx));
+			List<CoreMap> sentences = framework.getAnnotatedDocument(docs.get(fileidx));
+			Map<String, ArrayList<Map <Integer, String>>> entities = framework.identifyEntities(sentences);
 			
 			BipartiteGraph bipartitegraph = new BipartiteGraph(entities);			
 			////bipartitegraph.setDocId(filename+fileidx+"_debug_");		
@@ -125,7 +132,7 @@ public class EntityExperiments {
 			streamCoherenceScore(projection, fileidx, stringbuffer, 
 					bipartitegraph.getLocalCoherence( projection), bipartitegraph);
 			System.out.println("entities"+entities.size());
-			FileOutputUtils.writeGridToFile(getPath(filename, path, fileidx), framework.constructGrid(entities));
+			FileOutputUtils.writeGridToFile(getPath(filename, path, fileidx), framework.constructGrid(entities, sentences.size()));
 		}
 		
 		FileOutputUtils.streamToFile(graphdirectory.toString(), stringbuffer);
@@ -154,7 +161,7 @@ public class EntityExperiments {
 		//path.append(getFilenameWithoutExtensions(filename)+"_grids");
 		return path;
 	}
-	private String getDirectory(String outputdirectory) {
+	public static String getDirectory(String outputdirectory) {
 		StringBuffer path = new StringBuffer();
 		path.append(outputdirectory.toString());
 		path.append(File.separator);
@@ -166,7 +173,7 @@ public class EntityExperiments {
 		return path.toString();
 	}
 
-	private String getFilenameWithoutExtensions(String filename) {
+	public static String getFilenameWithoutExtensions(String filename) {
 		
 		if(filename != null && filename.contains(".")){
 			int idx = filename.indexOf('.');

@@ -15,6 +15,7 @@ import java.io.OutputStream;
 import java.io.PushbackInputStream;
 import java.io.Reader;
 import java.io.StringBufferInputStream;
+import java.io.StringReader;
 import java.nio.charset.CharsetDecoder;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
@@ -35,6 +36,8 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 import edu.stanford.nlp.dcoref.Document;
+import edu.stanford.nlp.trees.PennTreeReader;
+import edu.stanford.nlp.trees.Tree;
 
 /**
  * Basic IO functionality methods
@@ -86,23 +89,79 @@ public class CorpusReader {
 		}
 	}
 	
+	/**
+	 * Check if stream is gzipped, and decompress if so. Returns wrapped stream.
+	 * @param input
+	 * @return
+	 */
 	public InputStream decompressStream(InputStream input) {
-		PushbackInputStream pb = new PushbackInputStream( input, 2 ); //we need a pushbackstream to look ahead
+		
+		PushbackInputStream pb = new PushbackInputStream( input, 2 ); 
 		byte [] signature = new byte[2];
 		try {
+			//check if this is indeed gzipped..
 			pb.read( signature );
-			pb.unread( signature ); //push back the signature to the stream
-		 //read the signature
+			pb.unread( signature ); 
 		
-		if( signature[ 0 ] == (byte) 0x1f && signature[ 1 ] == (byte) 0x8b ) //check if matches standard gzip magic number
-			return new GZIPInputStream( pb );
-		else 
-			return pb;
-		} catch (IOException e) {
+			if( signature[ 0 ] == (byte) 0x1f && signature[ 1 ] == (byte) 0x8b ){ //check if matches standard gzip signature
+				return new GZIPInputStream( pb );
+			}
+			else{
+				return pb;
+			}
+		}catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return pb;
+	}
+	
+
+	/**
+	 * Reads in contents of a file and returns as List of Trees
+	 * @param filename name of the file to read from
+	 * @return
+	 */
+	public Map<String, List<Tree>> readPtbDataAsDocs(String filename){
+		String START = new String("#");
+		String docId = null;
+		Map<String, List<Tree>> docs = new LinkedHashMap<String, List<Tree>>();
+		BufferedReader input =  null;
+		try{
+			//StringBuilder contents = new StringBuilder();
+			List<Tree> docTrees = new ArrayList<Tree>();
+			
+			CharsetDecoder decoder = StandardCharsets.UTF_8.newDecoder();
+			//input =  new BufferedReader(new InputStreamReader(new FileInputStream(new File(filename)), decoder));
+			InputStream inputStream =  new FileInputStream(new File(filename));
+			input = new BufferedReader(new InputStreamReader(decompressStream(inputStream)));//, decoder));
+			//PennTreeReader treeReader = new PennTreeReader(new InputStreamReader(new FileInputStream(new File(filename))));//, factory);
+//			PennTreeReader treeReader = new PennTreeReader(new InputStreamReader(new FileInputStream(file)));
+			
+			for(String line = input.readLine(); line != null; line = input.readLine()) {
+				//System.out.println(line);
+				if(line.startsWith(START)){	
+					docId = line;
+					
+				}else if(line.isEmpty()){//end of doc					
+					docs.put(docId, docTrees);
+					docTrees = new ArrayList<Tree>();
+				}else{
+					PennTreeReader treeReader = new PennTreeReader(new StringReader(line));
+					Tree tree = treeReader.readTree();
+					docTrees.add(tree);	
+				}
+			}docs.put(docId, docTrees);
+			
+			return docs;
+		} catch(IOException e) {
+			e.printStackTrace();
+			System.exit(1);
+			return null;
+		}
+		finally{
+			try {  input.close();  }  catch (Exception e) { /* log it ?*/ }
+		}
 	}
 	
 	/**
@@ -133,7 +192,7 @@ public class CorpusReader {
 				}else if(line.isEmpty()){//end of doc
 					
 					docs.put(docId,contents.toString());
-					contents = new StringBuilder();					
+					contents = new StringBuilder();	
 					
 				}else{
 					contents.append(line);
