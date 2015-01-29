@@ -30,7 +30,7 @@ import edu.stanford.nlp.util.CoreMap;
 /**
  * Extracts Entity Grids, similar to EntityGridFramework, but this class takes as input preconstructed
  * ptb trees instead of raw text input.
- * 
+ *  
  * @author Karin Sim
  *
  */
@@ -187,6 +187,7 @@ public class EntityGridExtractor extends EntityGridFramework {
 						
 							trackEntity(word.value(), idx, X, entities);
 						}
+						break;
 					}
 				}
 			}
