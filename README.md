@@ -3,16 +3,17 @@ CoherenceFramework
 This codebase now includes several basic coherence models:
 
 
-<h2>Entity-based coherence models</h2>: code for entity grid experiment and entity graph experiment.
+<h2>Entity-based coherence models: </h2> Code for entity grid experiment and entity graph experiment.
 Both are multilingual. They currently work for French and German.
 (Although following recent updates need tested for the multilingual initialisation, particularly the EntityGridExtractor which takes
 ptb trees as input. Entry point for EntityGridFramework should still be fine.)
 
-<h2>Syntax-based coherence models</h2>: code for a syntax-based model, similar to the local coherence model of A.Louis(Louis and Nenkova, 2012) based on syntactic patterns ,
+<h2>Syntax-based coherence models: </h2>Code for a syntax-based model, similar to the local coherence model of A.Louis(Louis and Nenkova, 2012) based on syntactic patterns ,
 in addition to our own adaptation of it, which is a fully generative model based on IBM1. We learn a
 probability distribution over the alignments to better learn the patterns, instead of a uniform distribution.
 
-Our objective was to test existing models on an Machine Translation output, an entirely different, more challenging context than the one they are generally used in.
+=====================================================
+<b>Our objective</b> was to test existing models on an Machine Translation output, an entirely different, more challenging context than the one they are generally used in.
 Previously they have been used to assess coherence monolingually, in a clear-cut task (eg selecting best order from
 shuffled sentences) whereas lack of coherence can be caused in other more subtle ways. 
 For MT output this is a particular challenge, as
@@ -42,8 +43,17 @@ entities,and connections to the sentences they occur in.
 The coherence of a text in this model is measured by calculating the average outdegree
 of a projection, summing the shared edges (ie of entities leaving a sentence) between 2 sentences.
 
-<b>Syntax models <b>
-
+<b>Syntax models <b
+Louis and Nenkova (2012) create a coherence model based on syntactic patterns. 
+They take the syntax patterns extracted from documents marked up with parse trees,
+The local model holds that in a coherent text, consecutive sentences will exhibit syntactic regularities. 
+Particular patterns may prove typical to speciﬁc discourse types and identify the ‘intentional discourse structure'. 
+We examine the syntactic structure of sentence pairs, to establish any patterns. 
+This done by computing the most frequent syntactic productions that occur in adjacent sentences.
+We initially work with parse tree productions, invsetigating pairs of syntactic items.
+ 
+ 
+  
 ===========================
 Running the code:
 
