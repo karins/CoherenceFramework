@@ -57,10 +57,17 @@ We initially work with parse tree productions, invsetigating pairs of syntactic 
 ===========================
 Running the code:
 
-EntityExperiments:
-java -classpath  DiscourseFramework.jar nlp/framework/discourse/EntityExperiments "C:\\SMT\\datasets\\corpus-PE\\corpus\\test\\" "English" "false" "false" "2"
+EntityGridExtractor:
+creates grid from ptb input files.
+on linux
+java -classpath  DiscourseFramework-1.0.jar:. nlp/framework/discourse/EntityGridExtractor "/data/test" "English" "false" "false"
 
-java -classpath  DiscourseFramework-1.0.jar:. nlp/framework/discourse/EntityExperiments "/home/ksmith/workspace/EntityFramework/python/discourse/data/test" "English" "false" "false"
+
+EntityExperiments:
+on windows
+java -classpath  DiscourseFramework-1.0.jar:. nlp/framework/discourse/EntityExperiments "C:\\inputfilelocation\\" "English" "false" "false" "2"
+on linux
+java -classpath  DiscourseFramework-1.0.jar:. nlp/framework/discourse/EntityExperiments "/experiments/data/test" "English" "false" "false"
 
 
 
@@ -69,6 +76,6 @@ stanford-corenlp-3.3.0-models.jar
 Entity Grid
 
 java -classpath  DiscourseFramework.jar nlp/framework/discourse/EntityGridFramework inputfile 
-"C:\\SMT\\datasets\\wmt14\\output\\graph_model\\graph\\test\\docs\\" "English" "false" "false" 
+"C:\\inputfilelocation\\" "English" "false" "false" 
 
 Entity Graph
