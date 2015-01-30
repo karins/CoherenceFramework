@@ -29,6 +29,8 @@ import edu.stanford.nlp.trees.TypedDependency;
  */
 public class EntityGridExtractor extends EntityGridFramework {
 	
+	private static boolean debug = false;
+	
 	static List<String> NOUNS = new ArrayList<String>();
 	static{
 		NOUNS.add("NNP");
@@ -77,9 +79,12 @@ public class EntityGridExtractor extends EntityGridFramework {
 	public static void main(String args[]){
 		String directory = args[0];
 		String language = args[1];
+		if(args.length > 2){
+			debug = new Boolean(args[2]);
+		}
 		
 		EntityGridExtractor gridExtractor = new EntityGridExtractor();
-		System.out.println("dir = "+directory);
+		System.out.println("Extracting files from directory "+directory);
 		try {
 			gridExtractor.convertPtbsToGrids(directory);
 		} catch (FileNotFoundException e) {
@@ -96,19 +101,19 @@ public class EntityGridExtractor extends EntityGridFramework {
 		if(files == null)throw new FileNotFoundException();
 		for (File file : files) {
 			if (file.isFile()){
-				System.out.println("file = "+directory+File.separator+file.getName());
+				if(debug)System.out.println("file = "+directory+File.separator+file.getName());
 				
 				//get all docs from that file:	
 				Map<String, List<Tree>> docs = new CorpusReader().readPtbDataAsDocs(directory+File.separator+file.getName());
 				
 				for(String docid : docs.keySet()){
 					Map<String, ArrayList<Map <Integer, String>>> entities = new HashMap<String, ArrayList<Map <Integer, String>>>();
-					System.out.println("doc="+docid);
+					if(debug)System.out.println("doc="+docid);
 					
 					//read in ptb trees for each sub tree in each doc, 
 					List<Tree> treesInDoc = docs.get(docid);
 					int idx = 0;
-					for(Tree tree: treesInDoc){System.out.println("tree in doc :"+tree);
+					for(Tree tree: treesInDoc){
 						
 						getDependenciesForNouns(tree, entities, idx, gsf);
 						idx++;
@@ -170,14 +175,14 @@ public class EntityGridExtractor extends EntityGridFramework {
 						
 						if(SUBJECT.contains(dependency.reln())){
 							
-							System.out.println("tracking "+word.value()+" at "+idx+" as S");
+							if(debug)System.out.println("tracking "+word.value()+" at "+idx+" as S");
 							trackEntity(word.value(), idx, S, entities);
 						}else if(OBJECT.contains(dependency.reln())){
 							
-							System.out.println("tracking "+word.value()+" at "+idx+" as O");
+							if(debug)System.out.println("tracking "+word.value()+" at "+idx+" as O");
 							trackEntity(word.value(), idx, O, entities);
-						}else{System.out.println("tracking "+word.value()+" at "+idx+" as X");
-						
+						}else{
+							if(debug)System.out.println("tracking "+word.value()+" at "+idx+" as X");
 							trackEntity(word.value(), idx, X, entities);
 						}
 						break;
