@@ -176,7 +176,7 @@ public class EntityExperiments {
 	public static String getFilenameWithoutExtensions(String filename) {
 		
 		if(filename != null && filename.contains(".")){
-			int idx = filename.indexOf('.');
+			int idx = filename.lastIndexOf('.');
 			return filename.substring(0, idx);
 		}
 		return filename;

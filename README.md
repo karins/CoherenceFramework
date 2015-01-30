@@ -3,13 +3,17 @@ CoherenceFramework
 This codebase now includes several basic coherence models:
 
 
-<h2>Entity-based coherence models: </h2> Code for 1)entity grid experiment and 2)entity graph experiment.
+<h2>Entity-based coherence models: </h2> Code for 1) entity grid experiment and 2) entity graph experiment.
 Both are multilingual. They currently work for French and German.
-(Although following recent updates need tested for the multilingual initialisation, particularly the EntityGridExtractor which takes
-ptb trees as input. Entry point for EntityGridFramework should still be fine.)
+For English, syntactic roles can be derived. This is currently not the case for French or German.
+Therefore the grid/graph will only derive the entity occurances, not their syntactic roles. In the case of the graph, in particular, 
+the best option then is to run with the weighted projection. 
 
-<h2>Syntax-based coherence models: </h2>Code for a syntax-based model, similar to the 1)local coherence model of A.Louis(Louis and Nenkova, 2012) based on syntactic patterns ,
-in addition to 2)our own adaptation of it, which is a fully generative model based on IBM1. We learn a
+(Although The EntityGridExtractor will not run with French/German for that reason, ie it works from ptb trees and then derives 
+the dependencies. Entry point for EntityGridFramework should still be fine.)
+
+<h2>Syntax-based coherence models: </h2>Code for a syntax-based model, similar to the 1) local coherence model of A.Louis(Louis and Nenkova, 2012) based on syntactic patterns ,
+in addition to 2) our own adaptation of it, which is a fully generative model based on IBM1. We learn a
 probability distribution over the alignments to better learn the patterns, instead of a uniform distribution.
 
 =====================================================
@@ -42,6 +46,12 @@ cross-sentenial references. The graph tracks the presence of all entities, takin
 entities,and connections to the sentences they occur in. 
 The coherence of a text in this model is measured by calculating the average outdegree
 of a projection, summing the shared edges (ie of entities leaving a sentence) between 2 sentences.
+There are 3 types of graph projections: binary, weighted and syntactic. 
+Binary projections simply record whether sentences have any entities in common. 
+Weighted projections take the number of shared entities into account, rating the projections higher for more shared
+A syntactic projection includes syntax information,where syntactic information is used to weight the importance of the link by 
+calculating an entity in role of subject(S)as a 3,an entity in role of object (O) as a 2, and other (X) as a 1.
+
 
 <b>Syntax models </b>
 Louis and Nenkova (2012) create a coherence model based on syntactic patterns. 
@@ -50,7 +60,7 @@ The local model holds that in a coherent text, consecutive sentences will exhibi
 Particular patterns may prove typical to speciﬁc discourse types and identify the ‘intentional discourse structure'. 
 We examine the syntactic structure of sentence pairs, to establish any patterns. 
 This done by computing the most frequent syntactic productions that occur in adjacent sentences.
-We initially work with parse tree productions, invsetigating pairs of syntactic items.
+We initially work with parse tree productions, investigating pairs of syntactic items.
  
  
   
@@ -60,7 +70,7 @@ Running the code:
 EntityGridExtractor:
 creates grid from ptb input files.
 on linux
-java -classpath  DiscourseFramework-1.0.jar:. nlp/framework/discourse/EntityGridExtractor "/data/test" "English" "false" "false"
+java -classpath  DiscourseFramework-1.0-jar-with-dependencies.jar:. nlp/framework/discourse/EntityGridExtractor "/experiments/data/" "English" 
 
 
 EntityExperiments:
