@@ -8,9 +8,7 @@
   <name>DiscourseFramework</name>
   <url>https://github.com/karins/EntityFramework</url>
   
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>    
+     
 <build>
   <plugins>
     <plugin>
@@ -51,9 +49,15 @@
     
   </plugins>
 </build>
-
+<properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 <dependencies>
-		
+		<!-- >dependency>
+			<groupId>de.abelssoft</groupId>
+			<artifactId>jwordsplitter</artifactId>
+			<version>3.4</version>
+		</dependency-->
  
  	<dependency>
 			<groupId>de.danielnaber</groupId>
@@ -84,12 +88,12 @@
 		<dependency>
 		    <groupId>edu.stanford.nlp</groupId>
 		    <artifactId>stanford-corenlp</artifactId>
-		    <version>3.3.0</version>
+		    <version>3.5.1</version>
 		</dependency>
 		<dependency>
 		    <groupId>edu.stanford.nlp</groupId>
 		    <artifactId>stanford-corenlp</artifactId>
-		    <version>3.3.0</version>
+		    <version>3.5.1</version>
 		    <classifier>models</classifier>
 		</dependency>
 
