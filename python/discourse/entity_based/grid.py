@@ -33,13 +33,17 @@ def train(corpus, vocab_size, salience):
     B = np.zeros((vocab_size, vocab_size), int)
     for grid in corpus:
         for entity_roles in grid.transpose():
-            #not v pythonesque :(
-            if not ( salience is None) and get_role_count(entity_roles) >= salience:
+            if not ( salience is None) and get_number_of_occurrences(entity_roles) >= salience:
                 for r in entity_roles:
                     U[r] += 1
                 for ri, rj in pairwise(entity_roles):
                     B[ri,rj] += 1
     return U, B
+
+
+def get_number_of_occurrences(entity_roles):
+    # the number of roles (not null) recorded for the entity
+    return sum(r != r2i['-'] for r in entity_roles)
 
 def get_role_count(entity_roles):
     
