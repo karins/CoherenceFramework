@@ -8,65 +8,36 @@ import numpy as np
 import itertools
 import argparse
 import logging
+import modeleval
+import wmtgold
 from functools import partial
 from tabulate import tabulate
 from scipy import stats
 from collections import namedtuple
-from discourse.util import make_total_ordering
 from scipy.stats import spearmanr
+from discourse.util import make_total_ordering
+from discourse import command
 
 
 RankerData = namedtuple('RankerData', 'alias systems rankings first intervals comparisons confidence')
 
 
-WMT_DE_EN = {
-'newstest2014.de-en.ref': 0,
-'newstest2014.de-en.onlineB.0': 1,
-'newstest2014.de-en.uedin-syntax.3035': 2,
-'newstest2014.de-en.onlineA.0': 2,
-'newstest2014.de-en.LIMSI-KIT-Submission.3359': 3,
-'newstest2014.de-en.uedin-wmt14.3025': 3,
-'newstest2014.de-en.eubridge.3569': 3,
-'newstest2014.de-en.kit.3109': 4,
-'newstest2014.de-en.RWTH-primary.3266': 4,
-'newstest2014.de-en.DCU-ICTCAS-Tsinghua-L.3444': 5,
-'newstest2014.de-en.CMU.3461': 5,
-'newstest2014.de-en.rbmt4.0': 5,
-'newstest2014.de-en.rbmt1.0': 6,
-'newstest2014.de-en.onlineC.0': 7}
-
-WMT_FR_EN = {
-'newstest2014.fr-en.ref': 0,
-'newstest2014.fr-en.uedin-wmt14.3024': 1,
-'newstest2014.fr-en.kit.3112': 2,
-'newstest2014.fr-en.onlineB.0': 2,
-'newstest2014.fr-en.Stanford-University.3496': 2,
-'newstest2014.fr-en.onlineA.0': 3,
-'newstest2014.fr-en.rbmt1.0': 4,
-'newstest2014.fr-en.rbmt4.0': 5,
-'newstest2014.fr-en.onlineC.0': 6}
-
-WMT_RU_EN = {
-'newstest2014.ru-en.ref': 0,
-'newstest2014.ru-en.AFRL-Post-edited.3431': 1,
-'newstest2014.ru-en.onlineB.0': 2,
-'newstest2014.ru-en.onlineA.0': 3,
-'newstest2014.ru-en.PROMT-Hybrid.3084': 3,
-'newstest2014.ru-en.PROMT-Rule-based.3085': 3,
-'newstest2014.ru-en.uedin-wmt14.3364': 3,
-'newstest2014.ru-en.shad-wmt14.3464': 3,
-'newstest2014.ru-en.onlineG.0': 3,
-'newstest2014.ru-en.AFRL.3349': 4,
-'newstest2014.ru-en.uedin-syntax.3166': 5,
-'newstest2014.ru-en.kaznu1.3549': 6,
-'newstest2014.ru-en.rbmt1.0': 7,
-'newstest2014.ru-en.rbmt4.0': 8}
-
-WMT_RANKINGS = {'de-en': WMT_DE_EN, 'fr-en': WMT_FR_EN, 'ru-en': WMT_RU_EN}
-
 def read_rankings(istream, tiebreak=False):
     """
-    Read rankings from stream.
+    Read partial rankings from stream.
+
+    Arguments
+    ---------
+    istream: input stream, one document per line, ranking is made of system names in order, from best to worst
+        within a group systems are space separated, groups are separated with a greater than symbol '>'
+        example: "A B C > D E F > G"
+    tiebreak: by default ties are allowed, the ranking in the example above would be 1 1 1 2 2 2 3,
+        otherwise we can break ties at random producing for example: 2 1 3 4 6 5 7
+
+    Returns
+    -------
+    numpy array such that R[d,s] is the ranking of system s for document d
+    system names
     """
 
     # read in rankings
@@ -112,29 +83,6 @@ def assess_first(rankings):
     return np.array([sum(r == 1 for r in rankings[:,s]) for s in xrange(M)], float)/N
 
 
-def assess_first_noties(rankings):
-    """
-    Arguments
-    ---------
-    ranking: numpy array such that ranking[d,m] is the ref's ranking by model m in document d
-    Returns
-    -------
-    goodness: numpy array such that goodness[m] is the ratio at wich ranking[d,m] == 1 
-    """
-    N, M = rankings.shape
-    goodness = np.zeros(M)
-    skip = 0
-    for d in xrange(N):
-        # if there is a tie at the first position
-        if sum(r == 1 for r in rankings[d,:]) > 1:
-            skip += 1
-            continue
-        goodness[rankings[d,:].argmin()] += 1
-
-    logging.info('Skipping %d out of %d', skip, N)
-    return np.array([sum(r == 1 for r in rankings[:,m]) for m in range(M)], float)/N
-
-
 def assess_comparisons(rankings):
     """
     Arguments
@@ -161,6 +109,7 @@ def assess_comparisons(rankings):
  
 
 def get_confidence_intervals(assessments, p_value=0.05):
+    """returns confidence intervals with a certain confidence level (1-pvalue)"""
     N = assessments.shape[0]
     l = int(N * p_value/2)
     u = int(N * (1 - p_value/2))
@@ -177,101 +126,6 @@ def bootstrap_resampling(R, rounds, metric):
         batch = np.random.choice(N, size=N, replace=True)
         assessments.append(metric(R[batch,:]))
     return np.sort(assessments, 0)
-
-
-def assess_models(R, refid, allow_ties=False):
-    """
-    Arguments
-    ---------
-    R[m,d,s] is the ranking of system s in document d by model m
-
-    Returns
-    -------
-    goodness[m] = average across documents of the rate at which model m scores the reference higher than every other system
-    """
-    M, D, S = R.shape
-    # for each model
-    #   for each document
-    #       computes the rate at which the references scores higher than other systems (the denominator S-1 excludes the ref)
-    #   and returns the average across documents for that given model
-    if not allow_ties:
-        return np.array([np.array([float(sum(rankings[refid] < r for r in rankings))/(S-1) for rankings in docs]).mean() for docs in R])
-    else:
-        return np.array([np.array([float(sum(rankings[refid] <= r for r in rankings))/(S-1) for rankings in docs]).mean() for docs in R])
-
-
-def assess_models_EW(R, refid):
-    M, D, S = R.shape
-    ref_wins = np.zeros((M, S))
-    ref_loses = np.zeros((M, S))
-    for m in xrange(M):
-        for d in xrange(D):
-            for s in xrange(S):
-                if s == refid:
-                    continue
-                if R[m,d,refid] < R[m,d,s]:
-                    ref_wins[m,s] += 1
-                elif R[m,d,refid] > R[m,d,s]:
-                    ref_loses[m,s] += 1
-
-    score = np.zeros(M)
-    for m in xrange(M):
-        for s in xrange(S):
-            if s == refid: 
-                continue
-            score[m] += ref_wins[m,s]/(ref_wins[m,s] + ref_loses[m,s])
-
-    return score/S
-
-
-def assess_models_top1(R, refid, allow_ties=True):
-    """
-    Arguments
-    ---------
-    R[m,d,s] is the ranking of system s in document d by model m
-
-    Returns
-    -------
-    goodness[m] = average across documents of the rate at which model m scores the reference higher than every other system
-    """
-    M, D, S = R.shape
-    # for each model
-    #   for each document
-    #       computes the rate at which the references scores higher than other systems (the denominator S-1 excludes the ref)
-    #   and returns the average across documents for that given model
-    with_ties = np.zeros(M, float)
-    no_ties = np.zeros(M, float)
-    for m in xrange(M):
-        for d in xrange(D):
-            if R[m,d,refid] == 1:
-                with_ties[m] += 1
-                if sum(r == 1 for r in R[m,d,:]) == 1:
-                    no_ties[m] += 1
-    return with_ties/D if allow_ties else no_ties/D
-
-
-def assess_models_spearmanr(R, refid, gold_rankings):
-    """
-    Arguments
-    ---------
-    R[m,d,s] is the ranking of system s in document d by model m
-
-    Returns
-    -------
-    goodness[m] = average across documents of the rate at which model m scores the reference higher than every other system
-    """
-    M, D, S = R.shape
-    # for each model
-    #   for each document
-    #       computes the rate at which the references scores higher than other systems (the denominator S-1 excludes the ref)
-    #   and returns the average across documents for that given model
-    gold = np.concatenate((gold_rankings[:refid], gold_rankings[refid+1:]))
-    mean_rankings = R.mean(1)
-    ids = range(S)
-    ids.remove(refid)
-    hyp = mean_rankings[:,ids]
-    return np.array([spearmanr(hyp[m], gold)[0] for m in xrange(M)])
-
 
 
 def paired_bootstrap_resampling(R, rounds, metric):
@@ -295,6 +149,9 @@ def paired_bootstrap_resampling(R, rounds, metric):
 
 
 def paired_bootstrap_resampling_pairwise(R, rounds, pairwise_metric):
+    """
+    Paired bootstrap resampling using a pairwise metric
+    """
     N, M = R.shape
     wins = np.zeros((M, M))
     for i in xrange(rounds):
@@ -319,8 +176,9 @@ def get_refsysid(systems, suffix='ref'):
 
 
 def test_ranker(ranker, rankings, systems, rounds=1000, p_value=0.95):
-    
-   
+    """
+    Compares diferent systems as ranked by a given model.
+    """
     # 1) FIRST
     first = assess_first(rankings)
     f_assessments = bootstrap_resampling(rankings, rounds, metric=assess_first)
@@ -368,7 +226,6 @@ def modelcmp(rankers, args, alias, header, metric, scale=100):
                     tablefmt=fmt,
                     floatfmt=".2f")
     logging.info('Confidence: %s', alias)
-    #confidence = paired_bootstrap_resampling(R, args.rounds, metric=partial(assess_models, refid=refsysid))
     confidence = paired_bootstrap_resampling(R, args.rounds, metric=metric) * 100
     for fmt in args.tablefmt:
         with open('{0}.modelcmp-{1}-confidence.{2}.{3}'.format(args.output, alias, cmp_id, fmt), 'w') as fo:
@@ -380,14 +237,16 @@ def modelcmp(rankers, args, alias, header, metric, scale=100):
     
 
 def main(args):
+    
+    logging.basicConfig(
+            level=(logging.DEBUG if args.verbose else logging.INFO), 
+            format='%(asctime)s %(levelname)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S')
+
 
     rankers = test_all_rankers(args.ranker, args.rounds, args.pvalue)
-    #odirs = [os.path.split(path)[0] for _, path in args.ranker]
 
     for r, ranker in enumerate(rankers):
         # clean up system names
-        #prefix = os.path.commonprefix(ranker.systems)
-        #short_names = [sysname[len(prefix):] for sysname in ranker.systems]
         short_names = ranker.systems
 
         # 1) ranked first
@@ -433,21 +292,6 @@ def main(args):
 
     rankers_names = [ranker.alias for ranker in rankers]
     cmp_id = '_'.join(sorted(ranker.alias for ranker in rankers))
-    """
-    cmp_first = np.column_stack([ranker.first for ranker in rankers])
-    cmp_ref = np.column_stack([ranker.comparisons[refsysid,:] for ranker in rankers])
-    for fmt in args.tablefmt:
-        with open('{0}.modelcmp-first.{1}.{2}'.format(args.output, cmp_id, fmt), 'w') as fo:
-            print >> fo, tabulate(np.column_stack((short_names, cmp_first * 100)), 
-                    headers=rankers_names,
-                    tablefmt=fmt,
-                    floatfmt=".2f")
-        with open('{0}.modelcmp-ref.{1}.{2}'.format(args.output, cmp_id, fmt), 'w') as fo:
-            print >> fo, tabulate(np.column_stack((short_names, cmp_ref * 100)), 
-                    headers=rankers_names,
-                    tablefmt=fmt,
-                    floatfmt=".2f")
-    """
     # M - number of models
     # D - number of documents
     # S - number of systems
@@ -458,36 +302,33 @@ def main(args):
         system_names = rankers[0].systems
         R = np.array([ranker.rankings for ranker in rankers])
 
-        """
-        model_assessments = assess_models(R, refsysid) 
-        model_table = sorted(np.column_stack((rankers_names, model_assessments * 100)),
-                key=lambda row: float(row[1]), 
-                reverse=True)
-        for fmt in args.tablefmt:
-            with open('{0}.modelcmp-goal.{1}.{2}'.format(args.output, cmp_id, fmt), 'w') as fo:
-                print >> fo, tabulate(model_table,
-                        headers=['model', 'ref wins'],
-                        tablefmt=fmt,
-                        floatfmt=".2f")
-        logging.info('Comparing models')
-        confidence = paired_bootstrap_resampling(R, args.rounds, metric=partial(assess_models, refid=refsysid))
-        for fmt in args.tablefmt:
-            with open('{0}.modelcmp-confidence.{1}.{2}'.format(args.output, cmp_id, fmt), 'w') as fo:
-                print >> fo, tabulate(np.column_stack((rankers_names, confidence * 100)),
-                        headers=rankers_names,
-                        tablefmt=fmt,
-                        floatfmt=".2f")
-        """
-        A1 = modelcmp(rankers, args, 'refgt', 'refgt', metric=partial(assess_models, refid=refsysid, allow_ties=False))
-        A2 = modelcmp(rankers, args, 'refge', 'refge', metric=partial(assess_models, refid=refsysid, allow_ties=True))
-        A3 = modelcmp(rankers, args, 'firstx', 'firstx', metric=partial(assess_models_top1, refid=refsysid, allow_ties=False))
-        A4 = modelcmp(rankers, args, 'first', 'first', metric=partial(assess_models_top1, refid=refsysid, allow_ties=True))
-        A5 = modelcmp(rankers, args, 'EW', 'EW', metric=partial(assess_models_EW, refid=refsysid))
+        for metricname in args.metric:
+            if metricname == 'ranks_higher':
+                metricfunc = partial(modeleval.ranks_higher, sysid=refsysid, strictly=True)
+                infix = 'refgt'
+            elif metricname == 'no_worse':
+                metricfunc = partial(modeleval.ranks_higher, sysid=refsysid, strictly=False)
+                infix = 'refge'
+            elif metricname == 'top1':
+                metricfunc = partial(modeleval.top1, sysid=refsysid, exclusive=False)
+                infix = 'first'
+            elif metricname == 'top1x':
+                metricfunc = partial(modeleval.top1, sysid=refsysid, exclusive=True)
+                infix = 'firstx'
+
+            #A = modelcmp(rankers, args, infix, infix, metric=metricfunc)
+            
+
+        A1 = modelcmp(rankers, args, 'refgt', 'refgt', metric=partial(modeleval.ranks_higher, sysid=refsysid, strictly=True))
+        A2 = modelcmp(rankers, args, 'refge', 'refge', metric=partial(modeleval.ranks_higher, sysid=refsysid, strictly=False))
+        A3 = modelcmp(rankers, args, 'firstx', 'firstx', metric=partial(modeleval.top1, sysid=refsysid, exclusive=True))
+        A4 = modelcmp(rankers, args, 'first', 'first', metric=partial(modeleval.top1, sysid=refsysid, exclusive=True))
+        A5 = modelcmp(rankers, args, 'EW', 'EW', metric=partial(modeleval.expected_win, sysid=refsysid))
         H = ['refgt', 'refge', 'firstx', 'first', 'EW']
         ALL = [rankers_names, A1, A2, A3, A4, A5]
-        if args.pair in WMT_RANKINGS:
-            gold=np.array([WMT_RANKINGS[args.pair][sysname] for sysname in system_names], float)
-            A6 = modelcmp(rankers, args, 'gold', 'gold', scale=1.0, metric=partial(assess_models_spearmanr, refid=refsysid, gold_rankings=gold))
+        if args.pair in wmtgold.WMT14_RANKINGS:
+            gold=np.array([wmtgold.WMT14_RANKINGS[args.pair][sysname] for sysname in system_names], float)
+            A6 = modelcmp(rankers, args, 'gold', 'gold', scale=1.0, metric=partial(modeleval.rho, sysid=refsysid, gold_rankings=gold))
             ALL.append(A6)
             H.append('gold')
         
@@ -527,13 +368,15 @@ def main(args):
                     floatfmt='.4f')
 
 
-
-
-def parse_args():
+@command('sigtest', 'eval')
+def argparser(parser=None, func=main):
     """parse command line arguments"""
 
-    parser = argparse.ArgumentParser(description='Significance tests',
-            formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    if parser is None:
+        parser = argparse.ArgumentParser(prog='sigtest')
+
+    parser.description = 'Significance tests'
+    parser.formatter_class = argparse.ArgumentDefaultsHelpFormatter
 
     parser.add_argument('output', 
             type=str,
@@ -558,18 +401,18 @@ def parse_args():
             default=['plain'], action='append',
             choices=['plain', 'pipes', 'latex', 'simple', 'grid'],
             help='add an output tabulate format')
+    parser.add_argument('--metric',
+            default=['ranks_higher'], action='append',
+            choices=['top1', 'top1x', 'no_worse', 'EW'])
     parser.add_argument('--verbose', '-v',
             action='store_true',
             help='increase the verbosity level')
 
-    args = parser.parse_args()
+    if func is not None:
+        parser.set_defaults(func=func)
 
-    logging.basicConfig(
-            level=(logging.DEBUG if args.verbose else logging.INFO), 
-            format='%(asctime)s %(levelname)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S')
-
-    return args
+    return parser
 
 
 if __name__ == '__main__':
-    main(parse_args())
+    main(argparser().parse_args())

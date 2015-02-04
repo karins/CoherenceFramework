@@ -21,6 +21,7 @@ def importall():
     import discourse.syntax_based.ibm1_decoder
     import discourse.syntax_based.alouis
     import discourse.syntax_based.alouis_decoder
+    import discourse.significance
 
 def configure_commands(cls, parser):
     subparsers = parser.add_subparsers(title='subcommands',
