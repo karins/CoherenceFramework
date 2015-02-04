@@ -18,25 +18,36 @@ from discourse.doctext import iterdoctext, writedoctext
 from discourse.syntax_based.dseq import dseqs
 from discourse.syntax_based.ibm1_decoder import decode_many as ibm1_decode_many
 from discourse.syntax_based.alouis_decoder import decode_many as alouis_decode_many
+from discourse.entity_based.grid_decoder import decode_many as grid_decode_many
 from discourse.util import smart_open, tabulate, partial_ordering
 
 
 def make_namespace(args):
+    # these are the output folders for each type of model
+    # the folder is a function of the hyperparameters of the experiment
     ibm1_experiment = '{0}.d{1}.m{2}'.format(args.training, args.depth, args.m1)
     alouis_experiment = '{0}.d{1}.c{2}'.format(args.training, args.depth, args.smoothing)
+    grid_experiment = '{0}.d{1}.s{2}'.format(args.training, args.depth, args.salience)
 
+    # additional hyperparameters affect some models
     if args.unk:
         ibm1_experiment += '.u'
         alouis_experiment += '.u'
     if args.insertion:
         alouis_experiment += '.i'
+
+    # and finally we add an alias to every experiment in case the user requested
     if args.alias:
         ibm1_experiment += '.' + args.alias
         alouis_experiment += '.' + args.alias
+        grid_experiment += '.' + args.alias
     
     paths = {
+        # input stuff
         'docs': '{0}/docs'.format(args.data),
         'trees': '{0}/trees'.format(args.data),
+        'grids': '{0}/grids'.format(args.data),
+        # output stuff
         'workspace': args.workspace,
         'dseqs': '{0}/dseqs{1}'.format(args.workspace, args.depth),
         'ibm1': '{0}/ibm1/{1}'.format(args.workspace, ibm1_experiment),
@@ -49,19 +60,26 @@ def make_namespace(args):
         'alouis_model': '{0}/alouis/{1}/model'.format(args.workspace, alouis_experiment),
         'alouis_probs': '{0}/alouis/{1}/probs'.format(args.workspace, alouis_experiment),
         'alouis_eval': '{0}/alouis/{1}/eval'.format(args.workspace, alouis_experiment),
-        'unigrams': '{0}/alouis/{1}/model/counts.unigrams'.format(args.workspace, alouis_experiment),
-        'bigrams': '{0}/alouis/{1}/model/counts.bigrams'.format(args.workspace, alouis_experiment),
+        'dseq_unigrams': '{0}/alouis/{1}/model/counts.unigrams'.format(args.workspace, alouis_experiment),
+        'dseq_bigrams': '{0}/alouis/{1}/model/counts.bigrams'.format(args.workspace, alouis_experiment),
+
+        'grid': '{0}/grid/{1}'.format(args.workspace, grid_experiment),
+        'grid_model': '{0}/grid/{1}/model'.format(args.workspace, grid_experiment),
+        'grid_probs': '{0}/grid/{1}/probs'.format(args.workspace, grid_experiment),
+        'grid_eval': '{0}/grid/{1}/eval'.format(args.workspace, grid_experiment),
+        'role_unigrams': '{0}/grid/{1}/model/counts.unigrams'.format(args.workspace, grid_experiment),
+        'role_bigrams': '{0}/grid/{1}/model/counts.bigrams'.format(args.workspace, grid_experiment),
         }
     names = argparse.Namespace(**paths)
 
     if args.namespace:
-        for k, v in vars(namespace).iteritems():
+        for k, v in vars(names).iteritems():
             print '{0}={1}'.format(k, repr(v))
         sys.exit(0)
     logging.info('Namespace: %s', names)
 
     if not args.dry_run:
-        for path in [names.workspace, names.dseqs] + [v for k, v in paths.iteritems() if k.startswith('ibm') or k.startswith('alouis')]:
+        for path in [names.workspace, names.dseqs] + [v for k, v in paths.iteritems() if k.split('_')[0] in ['ibm1', 'alouis', 'grid']]:
             if not os.path.exists(path):
                 os.makedirs(path)
 
@@ -116,8 +134,8 @@ def extract_dseqs(corpus, args, namespace, **kwargs):
 def train_alouis(args, namespace):
     logging.info("Training A. Louis's model with: %s", args.training)
     output_prefix = '{0}/counts'.format(namespace.alouis_model)
-    unigram_path = '{0}.unigrams'.format(output_prefix)
-    bigram_path = '{0}.bigrams'.format(output_prefix)
+    unigram_path = namespace.dseq_unigrams
+    bigram_path = namespace.dseq_bigrams
     if os.path.exists(unigram_path) and os.path.exists(bigram_path):
         logging.info("A. Louis's model already exists: %s and %s", unigram_path, bigram_path)
         return 
@@ -158,7 +176,7 @@ def decode_alouis(corpus, args, namespace):
     
     ipaths = ['{0}/{1}'.format(input_dir, name) for name in missing]
     opaths = ['{0}/{1}'.format(output_dir, name) for name in missing]
-    alouis_decode_many(namespace.unigrams, namespace.bigrams, args.smoothing, ipaths, opaths, jobs=args.jobs)
+    alouis_decode_many(namespace.dseq_unigrams, namespace.dseq_bigrams, args.smoothing, ipaths, opaths, jobs=args.jobs)
 
 
 def train_ibm1(args, namespace):
@@ -205,6 +223,53 @@ def decode_ibm1(corpus, args, namespace):
     ipaths = ['{0}/{1}'.format(input_dir, name) for name in missing]
     opaths = ['{0}/{1}'.format(output_dir, name) for name in missing]
     ibm1_decode_many(namespace.t1, ipaths, opaths, jobs=args.jobs)
+
+
+def train_grid(args, namespace):
+    logging.info('Training an entity grid model with: %s', args.training)
+    ll_path = '{0}/likelihood'.format(namespace.ibm1_model)
+    unigram_path = namespace.role_unigrams
+    bigram_path = namespace.role_bigrams
+    if os.path.exists(unigram_path) and os.path.exists(bigram_path):
+        logging.info("Entity grid model already exists: %s and %s", unigram_path, bigram_path)
+        return 
+    
+    input_prefix = '{0}/{1}'.format(namespace.grids, args.training)
+    output_prefix = '{0}/counts'.format(namespace.grid_model)
+    training_files = glob(input_prefix + '*')
+    logging.info('%d training files matching %s*', len(training_files), input_prefix)
+    istream = itertools.chain(*map(smart_open, training_files))
+    cmd_line = 'python -m discourse.entity_based.grid - {0} --salience {1}'.format(output_prefix, args.salience)
+    logging.info(cmd_line)
+    cmd_args = shlex.split(cmd_line)
+
+    if args.dry_run:
+        return
+
+    proc = sp.Popen(cmd_args, stdin=sp.PIPE)
+    proc.communicate(''.join(istream))
+
+
+def decode_grid(corpus, args, namespace):
+    """
+    Computes entity grids probabilities for a certain corpus.
+    """
+    pass
+    logging.info("Decoding with the Entity Grid model: %s", corpus)
+    input_dir = namespace.grids
+    output_dir = namespace.grid_probs
+
+    todo, done, missing = file_check(corpus, input_dir, output_dir)
+    if not missing:
+        logging.info('all entity grid probabilities are there, nothing to be done')
+        return 
+
+    if args.dry_run:
+        return 
+    
+    ipaths = ['{0}/{1}'.format(input_dir, name) for name in missing]
+    opaths = ['{0}/{1}'.format(output_dir, name) for name in missing]
+    grid_decode_many(namespace.role_unigrams, namespace.role_bigrams, args.salience, ipaths, opaths, jobs=args.jobs)
 
 
 def evaluate(corpus, model, probs_dir, eval_dir, args, namespace):
@@ -322,7 +387,7 @@ def parse_args():
     alouis_group.add_argument('--alouis-config', 
             type=str, default='',
             help='additional options to dicourse.syntax_based.alouis')
-    ibm_group.add_argument('--insertion', '-i',
+    alouis_group.add_argument('--insertion', '-i',
             action='store_true',
             help='models insertion (alignment to null)')
     
@@ -336,11 +401,16 @@ def parse_args():
     graph_group.add_argument('--graph',
             action='store_true',
             help="uses Graph similarity")
+    
     # Grid model
     grid_group = parser.add_argument_group("Grid model")
     grid_group.add_argument('--grid',
             action='store_true',
             help="uses Grid model")
+    grid_group.add_argument('--salience',
+            type=int,
+            default=0,
+            help='ignore at training less salient entities in a document')
     
     # eval
     eval_group = parser.add_argument_group('Evaluation')
@@ -390,6 +460,13 @@ def main(args):
         if args.test:
             decode_alouis(args.test, args, namespace)
             evaluate(args.test, namespace.alouis, namespace.alouis_probs, namespace.alouis_eval, args, namespace)
+    
+    if args.grid:
+        train_grid(args, namespace)
+        if args.test:
+            pass
+            decode_grid(args.test, args, namespace)
+            evaluate(args.test, namespace.grid, namespace.grid_probs, namespace.grid_eval, args, namespace)
 
 
 if __name__ == '__main__':

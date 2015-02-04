@@ -157,6 +157,7 @@ def register_token(t, vocab):
         vocab[t] = i
     return i
 
+
 def find_least_common(T):
     counter = Counter(itertools.chain(*(itertools.chain(*((p for p in S) for S in D )) for D in T)))
     if not counter:

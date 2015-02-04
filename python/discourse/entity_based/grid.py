@@ -33,7 +33,7 @@ def train(corpus, vocab_size, salience):
     B = np.zeros((vocab_size, vocab_size), int)
     for grid in corpus:
         for entity_roles in grid.transpose():
-            if not ( salience is None) and get_number_of_occurrences(entity_roles) >= salience:
+            if get_number_of_occurrences(entity_roles) >= salience:
                 for r in entity_roles:
                     U[r] += 1
                 for ri, rj in pairwise(entity_roles):
@@ -90,14 +90,14 @@ def argparser(parser=None, func=main):
     parser.formatter_class = argparse.ArgumentDefaultsHelpFormatter
     
     parser.add_argument('input', nargs='?', 
-            type=argparse.FileType('r'), default=open(sys.argv[1], 'r'),
+            type=argparse.FileType('r'), default=sys.stdin,
             help='input corpus in doctext format')
     
     parser.add_argument('output', 
             type=str,
             help="prefix for model files")
     
-    parser.add_argument('salience', default=0,
+    parser.add_argument('--salience', default=0,
             type=int,
             help='salience variable for entities')
     
