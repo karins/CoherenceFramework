@@ -11,6 +11,7 @@ import itertools
 import shlex
 import subprocess as sp
 import numpy as np
+from discourse import command
 from glob import glob
 from functools import partial
 from multiprocessing import Pool
@@ -318,14 +319,50 @@ def evaluate(corpus, model, probs_dir, eval_dir, args, namespace):
             print >> fo, ' > '.join(' '.join(names[sysid] for sysid in group) for r, group in ranking)
             #ranking = sorted(enumerate(results[:,i]), key=lambda (_, score): score, reverse=True)
             #print >> fo, ' '.join(names[sysid] for sysid, score in ranking)
+
+
+def main(args):
+
+    # make namespace
+    namespace = make_namespace(args)
+
+    # pipeline
+    extract_dseqs(args.training, args, namespace, backoff='[*]')
+   
+    if args.dev:
+        extract_dseqs(args.dev, args, namespace, backoff=['*'])
+    if args.test:
+        extract_dseqs(args.test, args, namespace, backoff=['*'])
+
+    if args.ibm1:
+        train_ibm1(args, namespace)
         
+        if args.test:
+            decode_ibm1(args.test, args, namespace)
+            evaluate(args.test, namespace.ibm1, namespace.ibm1_probs, namespace.ibm1_eval, args, namespace)
 
-def parse_args():
-    """parse command line arguments"""
+    if args.alouis:
+        train_alouis(args, namespace)
+        if args.test:
+            decode_alouis(args.test, args, namespace)
+            evaluate(args.test, namespace.alouis, namespace.alouis_probs, namespace.alouis_eval, args, namespace)
+    
+    if args.grid:
+        train_grid(args, namespace)
+        if args.test:
+            pass
+            decode_grid(args.test, args, namespace)
+            evaluate(args.test, namespace.grid, namespace.grid_probs, namespace.grid_eval, args, namespace)
 
-    parser = argparse.ArgumentParser(description='Pipeline',
-            formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
+@command('pipeline', 'scripts')
+def argparser(parser=None, func=main):
+    if parser is None:
+        parser = argparse.ArgumentParser(prog='pipeline')
+    
+    parser.description = 'Training and decoding with several models'
+    parser.formatter_class = argparse.ArgumentDefaultsHelpFormatter
+    
     parser.add_argument('workspace', 
             type=str, 
             help='where everything happens')
@@ -425,6 +462,7 @@ def parse_args():
             choices=['plain', 'pipes', 'latex', 'simple', 'grid'],
             help='add an output tabulate format')
 
+    """
     args = parser.parse_args()
 
     logging.basicConfig(
@@ -432,42 +470,13 @@ def parse_args():
             format='%(asctime)s %(levelname)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S')
 
     return args
+    """
 
-
-
-def main(args):
-
-    # make namespace
-    namespace = make_namespace(args)
-
-    # pipeline
-    extract_dseqs(args.training, args, namespace, backoff='[*]')
-   
-    if args.dev:
-        extract_dseqs(args.dev, args, namespace, backoff=['*'])
-    if args.test:
-        extract_dseqs(args.test, args, namespace, backoff=['*'])
-
-    if args.ibm1:
-        train_ibm1(args, namespace)
-        
-        if args.test:
-            decode_ibm1(args.test, args, namespace)
-            evaluate(args.test, namespace.ibm1, namespace.ibm1_probs, namespace.ibm1_eval, args, namespace)
-
-    if args.alouis:
-        train_alouis(args, namespace)
-        if args.test:
-            decode_alouis(args.test, args, namespace)
-            evaluate(args.test, namespace.alouis, namespace.alouis_probs, namespace.alouis_eval, args, namespace)
+    if func is not None:
+        parser.set_defaults(func=func)
     
-    if args.grid:
-        train_grid(args, namespace)
-        if args.test:
-            pass
-            decode_grid(args.test, args, namespace)
-            evaluate(args.test, namespace.grid, namespace.grid_probs, namespace.grid_eval, args, namespace)
+    return parser
 
 
 if __name__ == '__main__':
-    main(parse_args())
+    main(argparser().parse_args())

@@ -56,7 +56,7 @@ def count(T, V, insertion=False, null=0):
     getpairs = ibm_pairwise if insertion else pairwise
 
     # counting
-    for D in bar(T, msg='Counting'):
+    for D in bar(T, msg='Counting patterns'):
         if insertion:  # if we have null tokens we count one occurrence for each sentence in the document (that can head a pair of sentences)
             U[null] += len(D) - 1
         for Sa in D:

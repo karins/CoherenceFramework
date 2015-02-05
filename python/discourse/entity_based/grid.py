@@ -14,7 +14,7 @@ import numpy as np
 import sys
 import logging
 import itertools
-from discourse.util import pairwise
+from discourse.util import pairwise, bar
 from discourse.doctext import iterdoctext
 from discourse import command
 import functools
@@ -31,7 +31,7 @@ def read_grids(istream, str2int):
 def train(corpus, vocab_size, salience):
     U = np.zeros(vocab_size, int)
     B = np.zeros((vocab_size, vocab_size), int)
-    for grid in corpus:
+    for grid in bar(corpus, msg='Counting role transitions'):
         for entity_roles in grid.transpose():
             if get_number_of_occurrences(entity_roles) >= salience:
                 for r in entity_roles:

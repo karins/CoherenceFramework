@@ -368,7 +368,7 @@ def main(args):
                     floatfmt='.4f')
 
 
-@command('sigtest', 'eval')
+@command('sigtest', 'scripts')
 def argparser(parser=None, func=main):
     """parse command line arguments"""
 

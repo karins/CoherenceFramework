@@ -22,6 +22,7 @@ def importall():
     import discourse.syntax_based.alouis
     import discourse.syntax_based.alouis_decoder
     import discourse.significance
+    import discourse.pipeline
 
 def configure_commands(cls, parser):
     subparsers = parser.add_subparsers(title='subcommands',

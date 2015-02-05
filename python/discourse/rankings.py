@@ -50,7 +50,7 @@ def main(args):
         #print ' '.join(names[sysid] for sysid, score in ranking)
 
 
-@command('rankings', 'eval')
+@command('rankings', 'scripts')
 def argparser(parser=None, func=main):
     """parse command line arguments"""
 
