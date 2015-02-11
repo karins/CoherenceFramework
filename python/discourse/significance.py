@@ -322,7 +322,7 @@ def main(args):
         A1 = modelcmp(rankers, args, 'refgt', 'refgt', metric=partial(modeleval.ranks_higher, sysid=refsysid, strictly=True))
         A2 = modelcmp(rankers, args, 'refge', 'refge', metric=partial(modeleval.ranks_higher, sysid=refsysid, strictly=False))
         A3 = modelcmp(rankers, args, 'firstx', 'firstx', metric=partial(modeleval.top1, sysid=refsysid, exclusive=True))
-        A4 = modelcmp(rankers, args, 'first', 'first', metric=partial(modeleval.top1, sysid=refsysid, exclusive=True))
+        A4 = modelcmp(rankers, args, 'first', 'first', metric=partial(modeleval.top1, sysid=refsysid, exclusive=False))
         A5 = modelcmp(rankers, args, 'EW', 'EW', metric=partial(modeleval.expected_win, sysid=refsysid))
         H = ['refgt', 'refge', 'firstx', 'first', 'EW']
         ALL = [rankers_names, A1, A2, A3, A4, A5]
