@@ -12,8 +12,11 @@ import java.nio.CharBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.CharsetDecoder;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 import java.util.Map;
 import java.util.zip.GZIPOutputStream;
+
+import edu.stanford.nlp.ling.HasWord;
 
 public class FileOutputUtils {
 	
@@ -29,6 +32,44 @@ public class FileOutputUtils {
 		writeGridToFile(filename.substring(idx+1),filename.substring(0, idx), grid, false, null, false);
 	}
 	
+	public static void writeDocToFile(String directory,String filename, List<List<HasWord>> sentences, boolean append, String docid, boolean compress){
+		OutputStream output = null;
+		try{
+			CharsetDecoder decoder = StandardCharsets.UTF_8.newDecoder();
+			File newFile = new File(directory);
+			if(!newFile.exists()){
+				newFile.mkdirs();				
+			}
+			String outputFile = directory+File.separator+filename;
+			if(compress){
+				GZIPOutputStream zip = new GZIPOutputStream(new FileOutputStream(new File(outputFile+".gz"), append));
+				//output = new BufferedWriter(new OutputStreamWriter(zip, "UTF-8"));
+				output = new BufferedOutputStream(zip);
+			}else{
+				output = new BufferedOutputStream(new FileOutputStream(new File(outputFile), append));
+			}
+			if(docid != null){
+				char [] id = docid.toCharArray();
+				for(int i = 0; i<id.length; i++){ 
+					output.write(id[i]);
+				}output.write('\n');
+			}
+			//for (String sentence: sentences){
+			for(List<HasWord> sentence: sentences){
+				for (HasWord word: sentence){
+					output.write(word.word().getBytes());
+					output.write(' ');
+				}output.write('\n');
+				//output.write(sentence.getBytes());
+			}output.write('\n');
+		}catch(IOException e) {
+			e.printStackTrace();
+			System.exit(1);	
+		}
+		finally{
+			 try {  output.close();  }  catch (Exception e) { /* log it ?*/ }
+		}
+	}
 	
 	/**
 	 * Prints the grid to the file of filename
@@ -239,4 +280,40 @@ public class FileOutputUtils {
 			try {  output.close();  }  catch (Exception e) { /* log it ?*/ }
 		}
 	}
+	
+	public static String getDirectory(String outputdirectory, String folder1) {
+		
+		StringBuffer path = new StringBuffer();
+		path.append(outputdirectory.toString());
+		path.append(File.separator);
+		path.append(folder1);
+		path.append(File.separator);
+		return path.toString();
+	}
+	
+	public static String getDirectory(String outputdirectory, String folder1, String folder2) {
+		
+		StringBuffer path = new StringBuffer();
+		path.append(outputdirectory.toString());
+		path.append(File.separator);
+		path.append(folder1);
+		path.append(File.separator);
+		path.append(folder2);
+		path.append(File.separator);
+		
+		return path.toString();
+	}
+
+	public static String getFilenameWithoutExtensions(String filename) {
+		
+		if(filename != null && filename.contains(".")){
+			int idx = filename.lastIndexOf('.');
+			return filename.substring(0, idx);
+		}
+		return filename;
+	}
+	public static boolean isCompressed(String filename) {
+		return filename.endsWith("gz");
+	}
+
 }

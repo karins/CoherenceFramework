@@ -63,43 +63,18 @@ public class EntityExperiments {
 		EntityGridFramework framework = new EntityGridFactory().getEntityGridFramework(language, "");
 		for(String docid : docs.keySet()){
 			
-			//Map<String, ArrayList<Map <Integer, String>>> entities = framework.identifyEntitiesFromSentences(docs.get(docid));
 			List<CoreMap> sentences = framework.getAnnotatedDocument(docs.get(docid));
 			Map<String, ArrayList<Map <Integer, String>>> entities = framework.identifyEntities(sentences);
 			
-			//FileOutputUtils.writeGridToFile(getPath(filename, path), framework.constructGrid(entities), true, docid);
-			FileOutputUtils.writeGridToFile(getDirectory(path),getFilenameWithoutExtensions(filename)+"_grids", 
-								framework.constructGrid(entities, sentences.size()), true, docid, isCompressed(filename));
+			FileOutputUtils.writeGridToFile(FileOutputUtils.getDirectory(path, "output", "grid"),
+											FileOutputUtils.getFilenameWithoutExtensions(filename)+"_grids", 
+											framework.constructGrid(entities, sentences.size()), true, docid, 
+											FileOutputUtils.isCompressed(filename));
 		}
 	}
 	
-	public static boolean isCompressed(String filename) {
-		return filename.endsWith("gz");
-	}
-
-	/*public static void main(String[] args) {			
-		
-		String directory = args[0];
-		String language = args[1];
-		int projection = new Integer(args[2]); 
-		boolean isXML = new Boolean(args[3]);
-		
-		EntityExperiments experiments = new EntityExperiments();
-		System.out.println("dir = "+directory);
-		File[] files = new File(directory).listFiles();
-		for (File file : files) {
-			if (file.isFile()){
-				System.out.println("file = "+directory+"\\"+file.getName());
-				
-				experiments.getGridAndGraph(directory, file.getName(), language, projection, isXML);				
-			}
-		}
-	}*/
-
 	private void getGridAndGraph(String path, String filename, String language, int projection, boolean isXML){
 		
-		//List<List<String>> docs = new CorpusReader().readSGML(path+"\\"+filename);
-		//List<String> docs;
 		Map<String,String> docs;
 		if(isXML){
 			docs = new CorpusReader().readXMLwithDocIds(path+"\\"+filename);
@@ -121,8 +96,6 @@ public class EntityExperiments {
 		
 		for(int fileidx = 0; fileidx< docs.size(); fileidx++){
 		
-			//Map<String, ArrayList<Map <Integer, String>>> entities = framework.identifyEntitiesForGraph(docs.get(fileidx));		
-			//Map<String, ArrayList<Map <Integer, String>>> entities = framework.identifyEntitiesFromSentences(docs.get(fileidx));
 			List<CoreMap> sentences = framework.getAnnotatedDocument(docs.get(fileidx));
 			Map<String, ArrayList<Map <Integer, String>>> entities = framework.identifyEntities(sentences);
 			
@@ -161,26 +134,7 @@ public class EntityExperiments {
 		//path.append(getFilenameWithoutExtensions(filename)+"_grids");
 		return path;
 	}
-	public static String getDirectory(String outputdirectory) {
-		StringBuffer path = new StringBuffer();
-		path.append(outputdirectory.toString());
-		path.append(File.separator);
-		path.append("output");
-		path.append(File.separator);
-		path.append("grid");
-		path.append(File.separator);
-		
-		return path.toString();
-	}
-
-	public static String getFilenameWithoutExtensions(String filename) {
-		
-		if(filename != null && filename.contains(".")){
-			int idx = filename.lastIndexOf('.');
-			return filename.substring(0, idx);
-		}
-		return filename;
-	}
+	
 
 	private static void streamCoherenceScore(int projection, int fileidx,
 			StringBuffer stringbuffer, double coherence,

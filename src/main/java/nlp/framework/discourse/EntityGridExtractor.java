@@ -101,14 +101,14 @@ public class EntityGridExtractor extends EntityGridFramework {
 		if(files == null)throw new FileNotFoundException();
 		for (File file : files) {
 			if (file.isFile()){
-				if(debug)System.out.println("file = "+directory+File.separator+file.getName());
+				 System.out.println("file = "+directory+File.separator+file.getName());
 				
 				//get all docs from that file:	
 				Map<String, List<Tree>> docs = new CorpusReader().readPtbDataAsDocs(directory+File.separator+file.getName());
 				
 				for(String docid : docs.keySet()){
 					Map<String, ArrayList<Map <Integer, String>>> entities = new HashMap<String, ArrayList<Map <Integer, String>>>();
-					if(debug)System.out.println("doc="+docid);
+					System.out.println("doc="+docid);
 					
 					//read in ptb trees for each sub tree in each doc, 
 					List<Tree> treesInDoc = docs.get(docid);
@@ -119,9 +119,9 @@ public class EntityGridExtractor extends EntityGridFramework {
 						idx++;
 					}
 					//construct grid
-					FileOutputUtils.writeGridToFile(EntityExperiments.getDirectory(directory),
-												EntityExperiments.getFilenameWithoutExtensions(file.getName())+"_grids", 
-												constructGrid(entities, treesInDoc.size()), true, docid, EntityExperiments.isCompressed(file.getName()));
+					FileOutputUtils.writeGridToFile(FileOutputUtils.getDirectory(directory, "output", "grid"),
+												FileOutputUtils.getFilenameWithoutExtensions(file.getName())+"_grids", 
+												constructGrid(entities, treesInDoc.size()), true, docid, FileOutputUtils.isCompressed(file.getName()));
 				}
 			}
 		}
