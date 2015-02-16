@@ -77,9 +77,9 @@ public class EntityExperiments {
 		
 		Map<String,String> docs;
 		if(isXML){
-			docs = new CorpusReader().readXMLwithDocIds(path+"\\"+filename);
+			docs = new CorpusReader().readXMLwithDocIds(path+File.separator+filename);
 		}else{
-			docs = new CorpusReader().readDataAsDocs(path+"\\"+filename);
+			docs = new CorpusReader().readDataAsDocs(path+File.separator+filename);
 		}
 		
 		StringBuffer stringbuffer = new StringBuffer();
