@@ -18,6 +18,9 @@ from scipy.stats import spearmanr
 from discourse.util import make_total_ordering
 from discourse import command
 
+import warnings
+warnings.simplefilter('error')
+np.seterr(all='raise')
 
 RankerData = namedtuple('RankerData', 'alias systems rankings first intervals comparisons confidence')
 
@@ -326,11 +329,11 @@ def main(args):
         A5 = modelcmp(rankers, args, 'EW', 'EW', metric=partial(modeleval.expected_win, sysid=refsysid))
         H = ['refgt', 'refge', 'firstx', 'first', 'EW']
         ALL = [rankers_names, A1, A2, A3, A4, A5]
-        if args.pair in wmtgold.WMT14_RANKINGS:
-            gold=np.array([wmtgold.WMT14_RANKINGS[args.pair][sysname] for sysname in system_names], float)
-            A6 = modelcmp(rankers, args, 'gold', 'gold', scale=1.0, metric=partial(modeleval.rho, sysid=refsysid, gold_rankings=gold))
-            ALL.append(A6)
-            H.append('gold')
+        #if args.pair in wmtgold.WMT14_RANKINGS:
+        #    gold=np.array([wmtgold.WMT14_RANKINGS[args.pair][sysname] for sysname in system_names], float)
+        #    A6 = modelcmp(rankers, args, 'gold', 'gold', scale=1.0, metric=partial(modeleval.rho, sysid=refsysid, gold_rankings=gold))
+        #    ALL.append(A6)
+        #    H.append('gold')
         
         model_table = sorted(np.column_stack(ALL),
                 key=lambda row: float(row[1]), 
@@ -346,6 +349,7 @@ def main(args):
 
 
         # spearman rho
+        """
         f_rho = np.zeros((len(rankers), len(rankers)))
         f_pvalue = np.zeros((len(rankers), len(rankers)))
         r_rho = np.zeros((len(rankers), len(rankers)))
@@ -366,6 +370,7 @@ def main(args):
                     headers=rankers_names + rankers_names,
                     tablefmt=fmt,
                     floatfmt='.4f')
+        """
 
 
 @command('sigtest', 'scripts')

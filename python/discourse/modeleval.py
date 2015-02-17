@@ -21,10 +21,23 @@ def ranks_higher(R, sysid, strictly=True):
     #   for each document
     #       computes the rate at which the references scores higher than other systems (the denominator S-1 excludes the ref)
     #   and returns the average across documents for that given model
-    if strictly:
-        return np.array([np.array([float(sum(rankings[sysid] < r for r in rankings))/(S-1) for rankings in docs]).mean() for docs in R])
-    else:
-        return np.array([np.array([float(sum(rankings[sysid] <= r for r in rankings))/(S-1) for rankings in docs]).mean() for docs in R])
+
+    with_ties = np.zeros(M, float)
+    no_ties = np.zeros(M, float)
+    for m in xrange(M):
+        for d in xrange(D):
+            for s in xrange(S):
+                if s == sysid:  # we must exclude the reference
+                    continue
+                if R[m,d,sysid] < R[m,d,s]:
+                    no_ties[m] += 1
+                if R[m,d,sysid] <= R[m,d,s]:
+                    with_ties[m] += 1
+    # we must exclude the reference
+    with_ties /= (S-1) * D 
+    no_ties /= (S-1) * D  
+    return no_ties if strictly else with_ties
+
 
 
 def expected_win(R, sysid):
