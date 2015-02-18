@@ -18,10 +18,6 @@ from scipy.stats import spearmanr
 from discourse.util import make_total_ordering
 from discourse import command
 
-import warnings
-warnings.simplefilter('error')
-np.seterr(all='raise')
-
 RankerData = namedtuple('RankerData', 'alias systems rankings first intervals comparisons confidence')
 
 
@@ -241,6 +237,11 @@ def modelcmp(rankers, args, alias, header, metric, scale=100):
 
 def main(args):
     
+    if args.throw:
+        import warnings
+        warnings.simplefilter('error')
+        np.seterr(all='raise')
+
     logging.basicConfig(
             level=(logging.DEBUG if args.verbose else logging.INFO), 
             format='%(asctime)s %(levelname)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S')
@@ -409,6 +410,9 @@ def argparser(parser=None, func=main):
     parser.add_argument('--metric',
             default=['ranks_higher'], action='append',
             choices=['top1', 'top1x', 'no_worse', 'EW'])
+    parser.add_argument('--throw',
+            action='store_true',
+            help='convert warnings into exceptions')
     parser.add_argument('--verbose', '-v',
             action='store_true',
             help='increase the verbosity level')
