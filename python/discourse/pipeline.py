@@ -28,7 +28,7 @@ def make_namespace(args):
     # the folder is a function of the hyperparameters of the experiment
     ibm1_experiment = '{0}.d{1}.m{2}'.format(args.training, args.depth, args.m1)
     alouis_experiment = '{0}.d{1}.c{2}'.format(args.training, args.depth, args.smoothing)
-    grid_experiment = '{0}.d{1}.s{2}'.format(args.training, args.depth, args.salience)
+    grid_experiment = '{0}.s{1}'.format(args.training, args.salience)
 
     # additional hyperparameters affect some models
     if args.unk:
@@ -137,7 +137,8 @@ def train_alouis(args, namespace):
     output_prefix = '{0}/counts'.format(namespace.alouis_model)
     unigram_path = namespace.dseq_unigrams
     bigram_path = namespace.dseq_bigrams
-    if os.path.exists(unigram_path) and os.path.exists(bigram_path):
+    
+    if not args.retrain and os.path.exists(unigram_path) and os.path.exists(bigram_path):
         logging.info("A. Louis's model already exists: %s and %s", unigram_path, bigram_path)
         return 
     
@@ -167,7 +168,11 @@ def decode_alouis(corpus, args, namespace):
     input_dir = namespace.dseqs
     output_dir = namespace.alouis_probs
 
-    todo, done, missing = file_check(corpus, input_dir, output_dir)
+    alljobs, done, missing = file_check(corpus, input_dir, output_dir)
+
+    if args.retest:
+        missing = alljobs
+
     if not missing:
         logging.info('all alouis probabilities are there, nothing to be done')
         return 
@@ -184,7 +189,7 @@ def train_ibm1(args, namespace):
     logging.info('Training IBM model 1 with: %s', args.training)
     ll_path = '{0}/likelihood'.format(namespace.ibm1_model)
     output_path = namespace.t1  #'{0}/t1'.format(namespace.ibm1_model)
-    if os.path.exists(output_path):
+    if not args.retrain and os.path.exists(output_path):
         logging.info('IBM model 1 already exists: %s', output_path)
         return 
     
@@ -213,7 +218,10 @@ def decode_ibm1(corpus, args, namespace):
     input_dir = namespace.dseqs
     output_dir = namespace.ibm1_probs
 
-    todo, done, missing = file_check(corpus, input_dir, output_dir)
+    alljobs, done, missing = file_check(corpus, input_dir, output_dir)
+    if args.retest:
+        missing = alljobs
+
     if not missing:
         logging.info('all IBM1 probabilities are there, nothing to be done')
         return 
@@ -231,7 +239,7 @@ def train_grid(args, namespace):
     ll_path = '{0}/likelihood'.format(namespace.ibm1_model)
     unigram_path = namespace.role_unigrams
     bigram_path = namespace.role_bigrams
-    if os.path.exists(unigram_path) and os.path.exists(bigram_path):
+    if not args.retrain and os.path.exists(unigram_path) and os.path.exists(bigram_path):
         logging.info("Entity grid model already exists: %s and %s", unigram_path, bigram_path)
         return 
     
@@ -260,7 +268,10 @@ def decode_grid(corpus, args, namespace):
     input_dir = namespace.grids
     output_dir = namespace.grid_probs
 
-    todo, done, missing = file_check(corpus, input_dir, output_dir)
+    alljobs, done, missing = file_check(corpus, input_dir, output_dir)
+    if args.retest:
+        missing = alljobs
+
     if not missing:
         logging.info('all entity grid probabilities are there, nothing to be done')
         return 
@@ -393,6 +404,12 @@ def argparser(parser=None, func=main):
     parser.add_argument('--verbose', '-v',
             action='store_true',
             help='increase the verbosity level')
+    parser.add_argument('--retrain',
+            action='store_true',
+            help='overwrites existing models')
+    parser.add_argument('--retest',
+            action='store_true',
+            help='overwrites existing results')
 
 
     # d-sequences
