@@ -6,23 +6,18 @@ Created on 27 Feb 2015
 
 @author: Karin Sim
 '''
-import sys
-import math
 import argparse
-import traceback
-import logging
 import collections
-#from discourse.doctext import iterdoctext, writedoctext
-import os, os.path
-
-
+import logging
+import math
+import os.path
 
 
 def output_score(HT_label, HT, HT_output):
     for key, value in HT.iteritems():
         HT_output.write(HT_label + ' ')
         for key, value in value.iteritems():
-            #print >> HT_output, key,':',value
+            
             HT_output.write(str(key))
             HT_output.write(':')
             HT_output.write(value + ' ')
@@ -36,8 +31,8 @@ def main(args):
     """
     input: for each model:
             directory containing documents with probability scores for each system (eg ref, edin, online)
-            C:\SMT\datasets\wmt2012\wmt12-data\wmt12-data\sgm\system-outputs\newstest2012\fr-en\redone\output\graph, 
-            C:\SMT\datasets\wmt2012\wmt12-data\wmt12-data\sgm\system-outputs\newstest2012\fr-en\redone\output\gridprobabilities
+            C:\..\..\graph, 
+            C:\..\..\gridprobabilities
             
     output: 50% from ref 50% from mixed MT system output
     
@@ -93,9 +88,6 @@ def get_ref_scores(directory, HT, model_idx):
 def get_scores(directory, num_docs, output, MT, model_idx):    
     """ Extract scores, even distribution per system """
     
-    #print  [name for name in os.listdir(directory)if os.path.isfile(os.path.join(directory, name))] 
-    #num_files = len([name for name in os.listdir(directory) if os.path.isfile(os.path.join(directory, name))])
-    
     systems = [name for name in os.listdir(directory) if os.path.isfile(os.path.join(directory, name)) and not name.endswith('ref')]
     logging.debug('systems= '+str(systems))
     num_systems = len(systems)
@@ -104,12 +96,9 @@ def get_scores(directory, num_docs, output, MT, model_idx):
     
     logging.debug('number of docs= '+str(num_docs)+' number of systems= '+str(num_systems))   
     logging.debug('number of lines per system='+str(math.ceil(num_docs/float(num_systems))))
+    
     #read defined number of lines, then move onto next system and extract the same
     index = 0
-    combined = []
-    
-    #with open( output,'w') as fo:
-        #for filename in os.listdir(directory) if os.path.isfile(name):
     for filename in systems:
         logging.debug('file='+filename)
         file = os.path.join(directory, filename)
@@ -120,9 +109,10 @@ def get_scores(directory, num_docs, output, MT, model_idx):
             logging.debug('index='+str(index))
             logging.debug('end='+str(int(lines_per_system)+index))
             lines_to_include = lines[index:int(lines_per_system)+index]
+            
             #read from index, up to lines_per_system:
             for line in lines_to_include: 
-                #print line.split()
+                
                 items = line.split()
                 logging.debug('adding '+items[1])
                 
@@ -131,30 +121,10 @@ def get_scores(directory, num_docs, output, MT, model_idx):
                 if [model_idx] not in [items[0]]:
                     MT[items[0]][model_idx] = {} 
                 MT[items[0]][model_idx]= items[1]
-                #extract logprob:
-                #combined.append(items[1])
-                #MT[items[0]] = items[1]
                 index +=1
                 if index == lines_per_system:
                     logging.debug('break index='+str(index))
                     break
-        #for line in combined:
-        #    print >> fo, line 
-            
-        
-        #logging.info('done: %s', output)
-    #except:
-        #raise Exception(''.join(traceback.format_exception(*sys.exc_info())))       
-
-def iterscores(file):
-    doc = []
-    #logging.debug('doc= '+istream)
-    for line in file:
-        line = line.strip()
-        doc.append(line)
-        
-        yield doc
-        #return [[line.split() for line in wrap_doc(lines)] for lines, attrs in iterdoctext(istream)]
 
 def parse_args():
     """parse command line arguments"""
@@ -162,14 +132,10 @@ def parse_args():
     parser = argparse.ArgumentParser(description='extracts and combines system scores, each representing a document',
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     
-    #parser.add_argument('directory', nargs='?',
-     #                   type=str, 
-      #                  help='input directory of document id and score')
-    
     parser.add_argument('--model', 
                         default=[],
                         action='append',
-                        help='models')
+                        help='models to be included')
     
     parser.add_argument('--output', nargs='?',
                         type=str, 
