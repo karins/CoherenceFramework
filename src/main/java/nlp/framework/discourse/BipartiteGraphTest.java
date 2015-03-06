@@ -9,6 +9,7 @@ public class BipartiteGraphTest extends TestCase {
 	public static final String teststring1 = "I am going to travel to Berlin. Berlin is a very cosmopolitan city in Germany. The city is just buzzing.";
 	public static final String teststring2 = "The atom is a basic unit of matter, it consists of a dense central nucleus surrounded by a cloud of negatively charged electrons.";
 	public static final String incoherentString1 = "The atom is a basic unit of matter, it consists of a dense central nucleus surrounded by a cloud of negatively charged electrons. The capital of France is Paris. Bananas are a type of fruit.";
+	public static final String teststring3 = "I am going to travel to Berlin. Berlin is a very cosmopolitan city in Germany. I plan to do lots of site seeing. The city is just buzzing.";
 	public static final String message = "Entity incorrectly extracted.";
 	public static final String message2 = "Coherence incorrectly computed.";
 	public static final String messageXml = "Wrong number of docs extracted from xml.";
@@ -125,10 +126,89 @@ public class BipartiteGraphTest extends TestCase {
 		assertEquals(message, true, bipartiteGraph.containsEntityNode(("Berlin")));
 		
 		//3 sentences, 2 shared entities :1.0/3.0 * 2.0
-		assertEquals(message, Math.round(1.0/3.0 * 2.0) , Math.round(bipartiteGraph.getLocalCoherence(BipartiteGraph.UNWEIGHTED_PROJECTION)));
+		assertEquals(message2, Math.round(1.0/3.0 * 2.0) , Math.round(bipartiteGraph.getLocalCoherence(BipartiteGraph.UNWEIGHTED_PROJECTION)));
 		
  	}
 	
+	
+	/**
+	 * Tests whether graph is correctly computing local coherence value
+	 */
+	public void testCoherenceValueWithDistance(){
+		EntityGraph graph = new EntityGraph("default", new EntityGridFramework());
+		//String doc = CorpusReader.readDataAsString(filename);
+		BipartiteGraph bipartiteGraph  = graph.identifyEntitiesAndConstructGraph(teststring1);
+		assertEquals(message, 3, bipartiteGraph.getSentenceNodes().size());
+		assertEquals(message, 3, bipartiteGraph.getEntities().size());
+		SentenceNode sentence = bipartiteGraph.getSentenceNodes().iterator().next();
+		assertEquals(message, true, sentence.hasEntityNode("Berlin"));
+		assertEquals(message, true,bipartiteGraph.containsSentenceNode(new Integer(2)) != null);
+		
+		assertEquals(message, true, bipartiteGraph.containsEntityNode(("Berlin")));
+		
+		//3 sentences, 2 shared entities, distance between them is 1 (adjacent sentences) :1.0/3.0 * ((1/1)+(1/1))
+		assertEquals(message2, Math.round(1.0/3.0 * 2.0) , Math.round(bipartiteGraph.getLocalCoherence(BipartiteGraph.UNWEIGHTED_PROJECTION)));
+		
+ 	}
+	/**
+	 * Tests whether graph is correctly computing local coherence value
+	 */
+	public void testCoherenceValueWithDistance2(){
+		EntityGraph graph = new EntityGraph("default", new EntityGridFramework());
+		//String doc = CorpusReader.readDataAsString(filename);
+		BipartiteGraph bipartiteGraph  = graph.identifyEntitiesAndConstructGraph(teststring3);
+		assertEquals(message, 4, bipartiteGraph.getSentenceNodes().size());
+		assertEquals(message, 5, bipartiteGraph.getEntities().size());
+		SentenceNode sentence = bipartiteGraph.getSentenceNodes().iterator().next();
+		assertEquals(message, true, sentence.hasEntityNode("Berlin"));
+		assertEquals(message, true, bipartiteGraph.containsSentenceNode(new Integer(2)) != null);
+		
+		assertEquals(message, true, bipartiteGraph.containsEntityNode(("Berlin")));
+		
+		//4 sentences, 2 shared entities, distance between them is 1 (for 'Berlin' in adjacent sentences) and 2 (for 'city') : 1.0/3.0 * ((1/1)+(1/2))
+		//normalisation (1/N) = 0.25   sumOfEdgeWeights = 1.5 averageOutDegree
+		assertEquals(message2, Math.round(1.0/4.0 * 1.5) , Math.round(bipartiteGraph.getLocalCoherence(BipartiteGraph.UNWEIGHTED_PROJECTION)));
+	}
+	
+	/**
+	 * Tests whether graph is correctly computing local coherence value
+	 */
+	public void testCoherenceValueWithDistance3(){
+		EntityGraph graph = new EntityGraph("default", new EntityGridFramework());
+		//String doc = CorpusReader.readDataAsString(filename);
+		BipartiteGraph bipartiteGraph  = graph.identifyEntitiesAndConstructGraph(teststring3);
+		assertEquals(message, 4, bipartiteGraph.getSentenceNodes().size());
+		assertEquals(message, 5, bipartiteGraph.getEntities().size());
+		SentenceNode sentence = bipartiteGraph.getSentenceNodes().iterator().next();
+		assertEquals(message, true, sentence.hasEntityNode("Berlin"));
+		assertEquals(message2, true,bipartiteGraph.containsSentenceNode(new Integer(2)) != null);
+		
+		assertEquals(message, true, bipartiteGraph.containsEntityNode(("Berlin")));
+		
+		//4 sentences, 2 shared entities, distance between them is 1 (for 'Berlin' in adjacent sentences) and 2 (for 'city') : 1.0/3.0 * ((5/1)+(5/2))
+		assertEquals(message, Math.round(1.0/4.0 * 7.5) , Math.round(bipartiteGraph.getLocalCoherence(BipartiteGraph.SYNTACTIC_PROJECTION)));
+	}
+	
+	/**
+	 * Tests whether graph is correctly computing local coherence value
+	 */
+	public void testCoherenceValueWithSyntacticProjection(){
+		EntityGraph graph = new EntityGraph("default", new EntityGridFramework());
+		//String doc = CorpusReader.readDataAsString(filename);
+		BipartiteGraph bipartiteGraph  = graph.identifyEntitiesAndConstructGraph(teststring1);
+		assertEquals(message, 3, bipartiteGraph.getSentenceNodes().size());
+		assertEquals(message, 3, bipartiteGraph.getEntities().size());
+		SentenceNode sentence = bipartiteGraph.getSentenceNodes().iterator().next();
+		assertEquals(message, true, sentence.hasEntityNode("Berlin"));
+		assertEquals(message, true,bipartiteGraph.containsSentenceNode(new Integer(2)) != null);
+		
+		assertEquals(message, true, bipartiteGraph.containsEntityNode(("Berlin")));
+		
+		//3 sentences, 2 shared entities :1.0/3.0 * ((5/1)+(4/1))
+		//normalisation (1/N) = 0.3   sumOfEdgeWeights= 9.0 ->  AverageOutDegree= 3.0
+		assertEquals(message2, Math.round(1.0/3.0 * 9.0) , Math.round(bipartiteGraph.getLocalCoherence(BipartiteGraph.SYNTACTIC_PROJECTION)));
+		
+ 	}
 	/**
 	 * Tests whether graph is correctly computing local coherence value
 	 */

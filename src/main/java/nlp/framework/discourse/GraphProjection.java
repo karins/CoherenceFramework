@@ -37,7 +37,6 @@ public class GraphProjection implements Projection {
 		double sumOfEdgeWeights = 0;
 		
 		//iterate through all sentence nodes determining edges
-		//for(SentenceNode sentenceNode : graph.getSentenceNodes()){
 		Iterator sentences = graph.getSentenceNodes().iterator();
 		while(sentences.hasNext()){
 			SentenceNode sentenceNode = (SentenceNode) sentences.next();
@@ -59,7 +58,8 @@ public class GraphProjection implements Projection {
 					System.out.println("$$$ shared sets "+intersectingSets.size());
 					if(intersectingSets.size() > 0){
 						buffer.append("\n S"+sentenceNode.getId()+" n "+" S"+nextSentence.getId()+" = "+intersectingSets.size());
-						sumOfEdgeWeights = calculateEdgeWeight(sumOfEdgeWeights, intersectingSets, sentenceNode.getAllEdges(), nextSentence.getAllEdges());
+						int distance = nextSentence.getId() - sentenceNode.getId();
+						sumOfEdgeWeights = calculateEdgeWeight(sumOfEdgeWeights, intersectingSets, sentenceNode.getAllEdges(), nextSentence.getAllEdges(), distance);
 					}
 				}
 				
@@ -69,10 +69,12 @@ public class GraphProjection implements Projection {
 	}
 	
 	
-	protected double calculateEdgeWeight(double sumOfEdgeWeights, SetView<String> intersectingSets, Map<String, Integer> S1, Map<String, Integer> S2) {
+	protected double calculateEdgeWeight(double sumOfEdgeWeights, SetView<String> intersectingSets, Map<String, Integer> S1, Map<String, Integer> S2, double distance) {
 		if(intersectingSets!= null){
 			buffer.append("\n  $$$$ UNWEIGHTED: .. incrementing edge weights..");
-			sumOfEdgeWeights++;
+			//sumOfEdgeWeights++;
+			
+			sumOfEdgeWeights+=  1/distance;
 			//sumOfEdgeWeights+= (double)intersectingSets.size();
 		}
 		return sumOfEdgeWeights;

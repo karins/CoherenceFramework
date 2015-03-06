@@ -92,13 +92,20 @@ public class FileOutputUtils {
 				output = new BufferedOutputStream(zip);
 			}else{
 				output = new BufferedOutputStream(new FileOutputStream(new File(outputFile), append));
-			}
+			} 
 			
 			
 
 			if(docid != null){
 				char [] id = docid.toCharArray();
+
+				output.write('#');
+				output.write(' ');
+				output.write('i');
+				output.write('d');
+				output.write('=');
 				for(int i = 0; i<id.length; i++){ 
+					
 					output.write(id[i]);
 				}output.write('\n');
 			}

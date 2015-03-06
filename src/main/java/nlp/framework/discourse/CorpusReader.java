@@ -229,6 +229,7 @@ public class CorpusReader {
 			for(String line = input.readLine(); line != null; line = input.readLine()) {
 			 
 				contents.append(line);
+				contents.append("\n");
 			}
 			return contents.toString(); 
 		} catch(IOException e) {
@@ -313,7 +314,7 @@ public class CorpusReader {
 	 */
 	public Map<String, String> readXMLfromConsole(){
 		
-		Map<String, String> docIds = new HashMap<String, String>();
+		Map<String, String> docIds = new LinkedHashMap<String, String>();
 		try {
 			SAXParserFactory spf = SAXParserFactory.newInstance();
 			spf.setNamespaceAware(true);
@@ -340,7 +341,7 @@ public class CorpusReader {
 	
 	public Map<String, String> readXMLwithDocIds(String filename){
 		
-		Map<String, String> docs = new HashMap<String, String>();
+		Map<String, String> docs = new LinkedHashMap<String, String>();
 		try {
 			SAXParserFactory spf = SAXParserFactory.newInstance();
 			spf.setNamespaceAware(true);
@@ -463,7 +464,13 @@ public class CorpusReader {
 				content = new StringBuffer();
 				inElement =  true;
 				if(attributes != null){
-					this.id = attributes.getValue(0);
+					//this.id = attributes.getValue(1);
+					//this.id = attributes.getValue("docid");
+					if(attributes.getValue("docid") != null){
+						this.id = attributes.getValue("docid");
+					}else{
+						this.id = attributes.getValue("id");
+					}
 				}
 			}
 		}

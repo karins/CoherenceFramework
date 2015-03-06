@@ -68,8 +68,8 @@ public class EntityGridFramework {
 		Properties properties = new Properties();	
 		properties.put("-parseInside", "HEADLINE|P");
 		properties.put("annotators", "tokenize, ssplit, pos, lemma, parse");
-		properties.setProperty("tokenize.whitespace", "true");//for annotator tokenize
-		//properties.setProperty("ssplit.eolonly", "true");//for annotator ssplit
+		//properties.setProperty("tokenize.whitespace", "true");//for annotator tokenize
+		// properties.setProperty("ssplit.eolonly", "true");//for annotator ssplit
 
 		this.pipeline = new StanfordCoreNLP(properties);	
 	}
@@ -83,7 +83,7 @@ public class EntityGridFramework {
 		Properties properties = new Properties();	
 		properties.put("-parseInside", "HEADLINE|P");
 		properties.put("annotators", "tokenize, ssplit, pos, lemma, parse");
-		properties.setProperty("tokenize.whitespace", "true");//for annotator tokenize
+		// properties.setProperty("tokenize.whitespace", "true");//for annotator tokenize
 		//properties.setProperty("ssplit.eolonly", "true");//for annotator ssplit
 		//properties.put("parse.model", "edu/stanford/nlp/models/lexparser/frenchFactored.ser.gz");
 		properties.put("parse.model",urlForParseModel);

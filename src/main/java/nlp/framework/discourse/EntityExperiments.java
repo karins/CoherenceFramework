@@ -94,18 +94,26 @@ public class EntityExperiments {
 		graphdirectory.append(File.separator);
 		graphdirectory.append(filename+"_graph_scores");
 		
-		for(int fileidx = 0; fileidx< docs.size(); fileidx++){
+		//for(int fileidx = 0; fileidx< docs.size(); fileidx++){
+		int fileidx = 0;
+		for(String docid : docs.keySet()){
 		
-			List<CoreMap> sentences = framework.getAnnotatedDocument(docs.get(fileidx));
+			List<CoreMap> sentences = framework.getAnnotatedDocument(docs.get(docid));
 			Map<String, ArrayList<Map <Integer, String>>> entities = framework.identifyEntities(sentences);
 			
 			BipartiteGraph bipartitegraph = new BipartiteGraph(entities);			
 			////bipartitegraph.setDocId(filename+fileidx+"_debug_");		
 			//docs.get(fileidx),
-			streamCoherenceScore(projection, fileidx, stringbuffer, 
+			//streamCoherenceScore(projection, docid, stringbuffer, 
+			streamCoherenceScore(projection, String.valueOf(fileidx), stringbuffer,
 					bipartitegraph.getLocalCoherence( projection), bipartitegraph);
 			System.out.println("entities"+entities.size());
-			FileOutputUtils.writeGridToFile(getPath(filename, path, fileidx), framework.constructGrid(entities, sentences.size()));
+			
+			FileOutputUtils.writeGridToFile(FileOutputUtils.getDirectory(path, "output", "grid"),
+					FileOutputUtils.getFilenameWithoutExtensions(filename)+"_grids", 
+					framework.constructGrid(entities, sentences.size()), true, docid, 
+					FileOutputUtils.isCompressed(filename));
+			fileidx++;
 		}
 		
 		FileOutputUtils.streamToFile(graphdirectory.toString(), stringbuffer);
@@ -136,7 +144,7 @@ public class EntityExperiments {
 	}
 	
 
-	private static void streamCoherenceScore(int projection, int fileidx,
+	private static void streamCoherenceScore(int projection, String fileidx,
 			StringBuffer stringbuffer, double coherence,
 			BipartiteGraph bipartitegraph) {
 		
