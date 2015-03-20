@@ -72,8 +72,8 @@ def main(args):
         
 def get_ref_scores(directory, HT, model_idx):
     ref = [name for name in os.listdir(directory) if os.path.isfile(os.path.join(directory, name)) and name.endswith('ref')]
-    if ref is None:
-        raise Exception('No reference system')
+    if None is ref or len(ref)==0:
+        raise Exception('No reference system for '+directory)
     with open(os.path.join(directory, ref[0])) as fi:
         lines = [line.strip() for line in fi if not line.startswith('#')]
         for line in lines: 
@@ -91,7 +91,8 @@ def get_scores(directory, num_docs, output, MT, model_idx):
     systems = [name for name in os.listdir(directory) if os.path.isfile(os.path.join(directory, name)) and not name.endswith('ref')]
     logging.debug('systems= '+str(systems))
     num_systems = len(systems)
-    
+    if None is num_systems or num_systems==0:
+        raise Exception('No systems to compare: '+directory)
     lines_per_system = math.ceil(num_docs/float(num_systems))
     
     logging.debug('number of docs= '+str(num_docs)+' number of systems= '+str(num_systems))   
