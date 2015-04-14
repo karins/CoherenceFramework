@@ -12,8 +12,92 @@ import logging
 import os
 import re
 
-
+LANGUAGE = "LANGUAGE"
+CHAPTER = "CHAPTER"
+SPEAKER = "<SPEAKER"
+ID = "ID"
+TAG = "<"
+NUMBER_PATTERN = re.compile("\d+")
+    
 def main(args):
+    
+    if args.target:
+        extract_target(args)
+    else:
+        extract_source(args)
+
+def extract_target(args):
+    """
+    find matching exerpts for the files in the 'filtered_source' directory, from those in the 'directory' list:
+    this presumes that the 'filtered_source' directory has the original language source eg \..\..\europarl\FR, and the 'directory' contains the target language eg
+    \..\..\europarl\EN
+    NB presumes that these are the original source excerpts and 
+        presumes that the param 'filtered_source' points to the original source, in desired language
+        from each matched file: find the parallel excerpt via info in <SPEAKER tag
+                                extract and store under \DE_to_EN\en_target or whatever
+                                --target --filtered_source=C:\Users\Karin\Desktop\europarl\FI_to_EN\fi_source
+    --output C:\Users\Karin\Desktop\europarl\FI_to_EN\en_target 
+    """
+    
+    files = [name for name in os.listdir(args.directory) if os.path.isfile(os.path.join(args.directory, name)) ]
+    files_to_match = [name for name in os.listdir(args.filtered_source) if os.path.isfile(os.path.join(args.filtered_source, name)) ]
+    for matchingfile in files_to_match:
+        with open(os.path.join(args.filtered_source, matchingfile)) as match:
+            output = []
+            for filename in files:
+                logging.debug(filename)
+                with open(os.path.join(args.directory, filename)) as fi:
+                    if filename == matchingfile:
+                        logging.debug( filename +' '+matchingfile)
+                        #match excerpts:
+                        for line in match:
+                            if line.startswith(SPEAKER):
+                                #extract the id and match with translation
+                                for tuple in line.split() :
+                                    if tuple.startswith(ID):
+                                        id_to_find = re.search(NUMBER_PATTERN,tuple)
+                                        if id_to_find:
+                                            logging.debug('id_to_find'+id_to_find.group(0))
+                                            output = extract_segment(id_to_find.group(0), fi, output, ID )
+        if output:
+            if not os.path.exists(args.output):
+                os.makedirs(args.output)
+            with open(os.path.join(args.output, matchingfile ), 'w') as fo:
+                for line in output:
+                    fo.write(line)
+
+
+def extract_segment(args,  fi, output, criteria ):
+    store = False
+    #check for match:
+    for line in fi:
+        if line.startswith(SPEAKER):
+            store = False
+            for tuple in line.split():
+                if matches_criteria(criteria, tuple, args):
+                    logging.debug('extract ' + tuple)
+                    store = True
+                    output.append(line)
+        #concatenate all the speaker's output
+        elif store and not line.startswith(CHAPTER):
+            if not line.startswith(TAG): #strip tags
+                output.append(line)
+        elif line.startswith(CHAPTER):
+            store = False
+    fi.seek(0)
+    return output
+
+def matches_criteria(criteria, tuple, args):
+    
+    if criteria == LANGUAGE:
+        return tuple.startswith(LANGUAGE) and args.language in tuple
+    elif criteria == ID:
+        if tuple.startswith(ID):
+            id_to_match = re.search(NUMBER_PATTERN, tuple)
+            if id_to_match:
+                return args == id_to_match.group(0)
+
+def extract_source(args):
     """
     input: directory to search. Presumes this is text in desired source language.
     predetermined language abbreviation, to specify which language to extract [eg 'FI' will en sure matches for LANGUAGE="FI"]
@@ -21,45 +105,23 @@ def main(args):
     <SPEAKER ID=142 LANGUAGE="SV"  NAME="Sjöstedt">
     concatenates all data until next SPEAKER tag.
     File is saved in relevant directory (eg europarl\DE_to_EN\de_source where language filtered on is German). 
-    Output directory is a parameter determined by user (directory will be created if doesnt exist). 
+    Output directory is a parameter determined by user (directory will be created if doesnt exist).
+    
 """
-    output = []
-    LANGUAGE = "LANGUAGE"
-    CHAPTER = "CHAPTER"
-    SPEAKER = "<SPEAKER"
-    TAG = "<"
     
     files = [name for name in os.listdir(args.directory) if os.path.isfile(os.path.join(args.directory, name)) ]
     
     for filename in files:
         with open(os.path.join(args.directory, filename)) as fi:
-            
-            store = False
-            #check for language match:
-            for line in fi:
-                if line.startswith(SPEAKER):
-                    store = False
-                    tuples =line.split()
-                    
-                    for tuple in tuples:
-                        if tuple.startswith(LANGUAGE) and args.language in tuple:
-                            logging.debug('language '+ tuple)
-                            store = True
-                            output.append(line)
-                            
-                #concatenate all the speaker's output
-                elif store and not line.startswith(CHAPTER):
-                    #strip tags
-                    if not line.startswith(TAG):
-                        output.append(line)
-                elif line.startswith(CHAPTER):
-                    store = False
+            output = []
+            extract_segment(args, fi, output, LANGUAGE)
             logging.debug(' filename: '+ filename) 
-            if not os.path.exists(args.output):
-                os.makedirs(args.output)
-            with open(os.path.join(args.output, filename), 'w') as fo:
-                for line in output:
-                    fo.write(line)
+            if output:
+                if not os.path.exists(args.output):
+                    os.makedirs(args.output)
+                with open(os.path.join(args.output, filename), 'w') as fo:
+                    for line in output:
+                        fo.write(line)
 
 
 def parse_args():
@@ -81,7 +143,17 @@ def parse_args():
     parser.add_argument('--output', nargs='?',
                         type=str, 
                         help='output file for combined extracts')
-      
+    
+    parser.add_argument('--target', dest='target', default ='store_false',
+                        action='store_true',
+                        help='flag to indicate if extraction is of target language. Defaults to false and extracts source as original language (determined by param). If set to true it will extract matching target.')
+    parser.set_defaults(target=False)
+    
+    parser.add_argument('--filtered_source', nargs='?', 
+                        type=str, 
+                        help='source for matching')
+    
+    
     parser.add_argument('--verbose', '-v',
             action='store_true',
             help='increase the verbosity level')
