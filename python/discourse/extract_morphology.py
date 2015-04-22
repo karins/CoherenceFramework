@@ -20,9 +20,10 @@ def main(args):
     """
     #we won't track nominative case, as there is no need for a replacement in target 
     cases = ('CASE_Ela', 'CASE_Gen', 'CASE_Com', 'CASE_Ins', 'CASE_All', 'CASE_Ade', 'CASE_Ess', 'CASE_Ill', 'CASE_Abe', 'CASE_Par', 'CASE_Tra', 'CASE_Ine', 'CASE_Abl')
-    nouns = {}
+    
     files = [name for name in os.listdir(args.directory) if os.path.isfile(os.path.join(args.directory, name)) ]
     for filename in files:
+        nouns = {}
         logging.info(filename)
         with open(os.path.join(args.directory, filename)) as fi:
             for line in fi:
@@ -30,15 +31,15 @@ def main(args):
                 tuples =  line.split()
                 if len(tuples) > 3 and 'N' == tuples[4]: 
                     logging.debug('noun: '+ tuples[1]+' -> '+ tuples[2])
-                    if tuples[1] !=  tuples[2]:
+                    if tuples[1] != tuples[2]:
                         if args.caseinformation and len(tuples) >7:
                             idx = tuples[7].find('CASE')
-                            logging.debug('noun: '+ tuples[1]+' -> '+ tuples[2]+' '+tuples[7][idx:(idx+8)])
+                            logging.debug('noun case: '+ tuples[1]+' -> '+ tuples[2]+' '+tuples[7][idx:(idx+8)])
                             if tuples[7][idx:(idx+8)] in cases:
                                 nouns[tuples[1]]= tuples[2]+' '+tuples[7][idx:(idx+8)]
                             else:
                                 nouns[tuples[1]]= tuples[2]
-                            #cases.add(tuples[7][idx:(idx+8)])
+                            
                         else:
                             nouns[tuples[1]]= tuples[2]
         #print nouns
