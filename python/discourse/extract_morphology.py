@@ -30,16 +30,17 @@ def main(args):
                 tuples =  line.split()
                 if len(tuples) > 3 and 'N' == tuples[4]: 
                     logging.debug('noun: '+ tuples[1]+' -> '+ tuples[2])
-                    if args.caseinformation and len(tuples) >7:
-                        idx = tuples[7].find('CASE')
-                        logging.debug('noun: '+ tuples[1]+' -> '+ tuples[2]+' '+tuples[7][idx:(idx+8)])
-                        if tuples[7][idx:(idx+8)] in cases:
-                            nouns[tuples[1]]= tuples[2]+' '+tuples[7][idx:(idx+8)]
+                    if tuples[1] !=  tuples[2]:
+                        if args.caseinformation and len(tuples) >7:
+                            idx = tuples[7].find('CASE')
+                            logging.debug('noun: '+ tuples[1]+' -> '+ tuples[2]+' '+tuples[7][idx:(idx+8)])
+                            if tuples[7][idx:(idx+8)] in cases:
+                                nouns[tuples[1]]= tuples[2]+' '+tuples[7][idx:(idx+8)]
+                            else:
+                                nouns[tuples[1]]= tuples[2]
+                            #cases.add(tuples[7][idx:(idx+8)])
                         else:
                             nouns[tuples[1]]= tuples[2]
-                        #cases.add(tuples[7][idx:(idx+8)])
-                    else:
-                        nouns[tuples[1]]= tuples[2]
         #print nouns
         if nouns:
             if not os.path.exists(args.output):
