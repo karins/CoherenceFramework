@@ -58,26 +58,30 @@ def extract_target(args):
                                         id_to_find = re.search(NUMBER_PATTERN,tuple)
                                         if id_to_find:
                                             logging.debug('id_to_find'+id_to_find.group(0))
-                                            output = extract_segment(id_to_find.group(0), fi, output, ID )
+                                            output = extract_segment(args, fi, output, ID ,id_to_find.group(0))
         if output:
             if not os.path.exists(args.output):
                 os.makedirs(args.output)
             with open(os.path.join(args.output, matchingfile ), 'w') as fo:
                 for line in output:
-                    fo.write(line)
+                   fo.write(line)
 
-
-def extract_segment(args,  fi, output, criteria ):
+    
+def extract_segment(args,  fi, output, criteria, id_match ): 
     store = False
     #check for match:
     for line in fi:
         if line.startswith(SPEAKER):
             store = False
-            for tuple in line.split():
-                if matches_criteria(criteria, tuple, args):
-                    logging.debug('extract ' + tuple)
-                    store = True
-                    output.append(line)
+            if criteria == ID:
+                matches_both_criteria(criteria, line, args, id_match)
+                store = True
+                output.append(line)
+            else:
+                for tuple in line.split():
+                    if matches_criteria(criteria, tuple, args):
+                        store = True
+                        output.append(line)
         #concatenate all the speaker's output
         elif store and not line.startswith(CHAPTER):
             if not line.startswith(TAG): #strip tags
@@ -94,8 +98,20 @@ def matches_criteria(criteria, tuple, args):
     elif criteria == ID:
         if tuple.startswith(ID):
             id_to_match = re.search(NUMBER_PATTERN, tuple)
-            if id_to_match:
+            if id_to_match: 
                 return args == id_to_match.group(0)
+
+def matches_both_criteria(criteria, line, args, id_match):
+    languagematch = False
+    idmatch = False
+    for tuple in line.split():
+        if tuple.startswith(LANGUAGE) and args.language in tuple:
+            languagematch = True
+        if tuple.startswith(ID):
+            id_to_match = re.search(NUMBER_PATTERN, tuple)
+            if id_to_match and id_match == id_to_match.group(0):
+                idmatch = True 
+    return languagematch and idmatch
 
 def extract_source(args):
     """
@@ -108,13 +124,15 @@ def extract_source(args):
     Output directory is a parameter determined by user (directory will be created if doesnt exist).
     
 """
-    
+    if args.language is None:
+            raise ValueError('No language parameter given')
+        
     files = [name for name in os.listdir(args.directory) if os.path.isfile(os.path.join(args.directory, name)) ]
     
     for filename in files:
         with open(os.path.join(args.directory, filename)) as fi:
             output = []
-            extract_segment(args, fi, output, LANGUAGE)
+            extract_segment(args, fi, output, LANGUAGE, None)
             logging.debug(' filename: '+ filename) 
             if output:
                 if not os.path.exists(args.output):
@@ -127,9 +145,8 @@ def extract_source(args):
 def parse_args():
     """parse command line arguments"""
     
-    parser = argparse.ArgumentParser(description='extracts and combines system scores, each representing a document',
+    parser = argparse.ArgumentParser(description='extracts and filters according to language parameter',
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    
     
     parser.add_argument('directory', nargs='?',
                         type=str, 
