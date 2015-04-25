@@ -22,6 +22,7 @@ NUMBER_PATTERN = re.compile("\d+")
 def main(args):
     
     if args.target:
+        print 'target'
         extract_target(args)
     else:
         extract_source(args)
@@ -48,7 +49,7 @@ def extract_target(args):
                 logging.debug(filename)
                 with open(os.path.join(args.directory, filename)) as fi:
                     if filename == matchingfile:
-                        logging.debug( filename +' '+matchingfile)
+                        logging.debug( filename +' found match: '+matchingfile)
                         #match excerpts:
                         for line in match:
                             if line.startswith(SPEAKER):
@@ -64,9 +65,8 @@ def extract_target(args):
                 os.makedirs(args.output)
             with open(os.path.join(args.output, matchingfile ), 'w') as fo:
                 for line in output:
-                   fo.write(line)
+                    fo.write(line)
 
-    
 def extract_segment(args,  fi, output, criteria, id_match ): 
     store = False
     #check for match:
@@ -74,9 +74,9 @@ def extract_segment(args,  fi, output, criteria, id_match ):
         if line.startswith(SPEAKER):
             store = False
             if criteria == ID:
-                matches_both_criteria(criteria, line, args, id_match)
-                store = True
-                output.append(line)
+                if matches_both_criteria(criteria, line, args, id_match):
+                    store = True
+                    output.append(line)
             else:
                 for tuple in line.split():
                     if matches_criteria(criteria, tuple, args):
@@ -102,6 +102,7 @@ def matches_criteria(criteria, tuple, args):
                 return args == id_to_match.group(0)
 
 def matches_both_criteria(criteria, line, args, id_match):
+    
     languagematch = False
     idmatch = False
     for tuple in line.split():
@@ -111,6 +112,9 @@ def matches_both_criteria(criteria, line, args, id_match):
             id_to_match = re.search(NUMBER_PATTERN, tuple)
             if id_to_match and id_match == id_to_match.group(0):
                 idmatch = True 
+    if languagematch and idmatch:
+        logging.debug( 'matches_both_criteria; in '+line+' to '+id_match+' & '+args.language)
+    logging.debug( 'RETURNING '+str(languagematch)+' '+str(idmatch))
     return languagematch and idmatch
 
 def extract_source(args):
