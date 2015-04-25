@@ -15,6 +15,8 @@ import re
 LANGUAGE = "LANGUAGE"
 CHAPTER = "CHAPTER"
 SPEAKER = "<SPEAKER"
+NAME = "NAME"
+NAME_PATTERN = "NAME=\"(.+?)\""
 ID = "ID"
 TAG = "<"
 NUMBER_PATTERN = re.compile("\d+")
@@ -22,7 +24,6 @@ NUMBER_PATTERN = re.compile("\d+")
 def main(args):
     
     if args.target:
-        print 'target'
         extract_target(args)
     else:
         extract_source(args)
@@ -59,7 +60,13 @@ def extract_target(args):
                                         id_to_find = re.search(NUMBER_PATTERN,tuple)
                                         if id_to_find:
                                             logging.debug('id_to_find'+id_to_find.group(0))
-                                            output = extract_segment(args, fi, output, ID ,id_to_find.group(0))
+                                            logging.debug('line ='+line )
+                                            name_to_match = re.search(NAME_PATTERN, line)
+                                            if name_to_match:
+                                                logging.debug('name_to_match: '+name_to_match.group(1))
+                                                output = extract_segment( name_to_match.group(1), fi, output, ID ,id_to_find.group(0))
+                                            else:
+                                                logging.error("failed to match segment: "+id_to_find+' in '+filename)
         if output:
             if not os.path.exists(args.output):
                 os.makedirs(args.output)
@@ -106,15 +113,14 @@ def matches_both_criteria(criteria, line, args, id_match):
     languagematch = False
     idmatch = False
     for tuple in line.split():
-        if tuple.startswith(LANGUAGE) and args.language in tuple:
+        #if tuple.startswith(LANGUAGE) and args.language in tuple:
+        if tuple.startswith(NAME) and args in tuple:
             languagematch = True
         if tuple.startswith(ID):
             id_to_match = re.search(NUMBER_PATTERN, tuple)
             if id_to_match and id_match == id_to_match.group(0):
                 idmatch = True 
-    if languagematch and idmatch:
-        logging.debug( 'matches_both_criteria; in '+line+' to '+id_match+' & '+args.language)
-    logging.debug( 'RETURNING '+str(languagematch)+' '+str(idmatch))
+    
     return languagematch and idmatch
 
 def extract_source(args):
