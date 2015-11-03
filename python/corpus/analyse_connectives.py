@@ -3,7 +3,8 @@ Created on 5 Oct 2015
 
 @author: Karin
 
-Compare 2 sets of files, representing the MT and PE output of particular documents from the LIG corpus.
+Compare 2 sets of files, representing the MT and PE parsed output of particular documents which have been marked up with discourse
+connectives by Pitler Nenkova tagger (http://www.cis.upenn.edu/~nlp/software/discourse.html).
 -Count the connectives in each.
 -count the types of connectives in MT vs PE 
 
@@ -47,7 +48,8 @@ def extract_connectives(args, connectives):
                         for item in items:
                             if '#' in item:
                                 tokens = item.split('#')
-                                if tokens[2][0] != '0':
+                                print tokens
+                                if tokens[0].isalnum() and tokens[2][0] != '0':
                                     print str(line_no)+' \t '+item.rstrip(')')
                                     output.write(str(line_no)+' \t '+item.rstrip(')'))
                                     output.write(' \n')

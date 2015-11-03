@@ -1,4 +1,7 @@
 '''
+Takes as input a list of connectives, as output by discourse tagger (Pitler and Nenkova, http://www.cis.upenn.edu/~nlp/software/discourse.html)
+ and previously extracted by script (analyse_connectives.py)
+
 Created on 6 Oct 2015
 
 @author: Karin
