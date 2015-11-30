@@ -15,71 +15,128 @@ import json
 r2i = {'SHI':4,'INS': 3, 'DEL': 2, 'SUB': 1, 'NONE': 0}
 i2r = {v: k for k, v in r2i.iteritems()}
 
-
-
-def read_alignments(istream, threshold, output):
+def get_doc_alignments(istream):
+    
     """ format of file: 1-0 2-1 3-2 4-3 5-4 6-5 representing MT:PE for each word of each line in doc """
-    #map: line -> error_type
-    errors = defaultdict(list)
+    doc_alignments = defaultdict(list)
+    
     MT = [[]]#np.zeros(3, )
     PE = [[]]#np.zeros(3, )
-    
+    doc_tag='<doc'
+    end_tag='</'
+    start_tag = '<srcset'
     """ store as 2 vectors representing MT alignments and PE alignments 
         log structural errors as reorderings exceeding magnitude of threshold variable
     """
     line_no = 0
+    docid=0
     lines = istream.readlines()
     MT = [0 for i in range(len(lines))]
     PE = [0 for i in range(len(lines))]
     for line in lines:
-        
-        items = line.split()
-        print 'line_no='+str(line_no) 
-        num_items =len(items)
-        print 'num_items='+str(num_items)
-        
-        MT[line_no] = [0 for i in range(num_items)]
-        PE[line_no] = [0 for i in range(num_items)]
-        #print MT
-        
-        #print PE
-        prev_state = r2i.get('NONE')
-        for i in range(num_items):
-            print items[i]
-            #num = items[i].split('-')
-            num = [int(n) for n in items[i].split('-')]
-            MT[line_no][i] = num[0]
-            PE[line_no][i] = num[1]
-            if num[0] !=  num[1]:
-                
-                """CURRENTLY THIS ONLY LOGS ERRORS WHERE EDIT DISTANCE EXCEEDS THRESHOLD EG DIFFERENCE OF MORE THAN 4 IN ALIGNMENTS"""
-                if num[0] > num[1]:
-                    if prev_state == r2i.get('DEL'):
-                        print "delete"
-                        state = r2i.get('DEL')
-                if num[0] < num[1]:
-                    print "insert"
-                    state = r2i.get('INS')
+        if doc_tag in line:
+            #extract id from <doc id=1>
+            idx = line.find('=')
+            docid= line[idx+1:-2]
+            logging.debug( 'DOCTAG: %s' %(docid))
+            line_no = -1
+            doc_alignments[docid] = defaultdict(list)
+        elif end_tag not in line and start_tag not in line:
+            line_number = line_no+1
+            items = line.split()
+            doc_alignments[docid][line_number] = line
+            return doc_alignments            
+
+def read_alignments(istream,  output,threshold):
+    """ format of file: 1-0 2-1 3-2 4-3 5-4 6-5 representing MT:PE for each word of each line in doc """
+    doc_alignments = defaultdict(list)
+    errors = defaultdict(list)
+    doc_errors = defaultdict(list)
+    
+    MT = [[]]#np.zeros(3, )
+    PE = [[]]#np.zeros(3, )
+    doc_tag='<doc'
+    end_tag='</'
+    start_tag = '<srcset'
+    """ store as 2 vectors representing MT alignments and PE alignments 
+        log structural errors as reorderings exceeding magnitude of threshold variable
+    """
+    line_no = 0
+    docid=0
+    lines = istream.readlines()
+    MT = [0 for i in range(len(lines))]
+    PE = [0 for i in range(len(lines))]
+    for line in lines:
+        if doc_tag in line:
+            #extract id from <doc id=1>
+            idx = line.find('=')
+            docid= line[idx+1:-2]
+            logging.debug( 'DOCTAG: %s' %(docid))
+            line_no = -1
+            doc_errors[docid] = defaultdict(list)
+            doc_alignments[docid] = defaultdict(list)
+        elif end_tag not in line and start_tag not in line:
+            
+            items = line.split()
+            logging.debug( 'line_no='+str(line_no)) 
+            num_items =len(items)
+            #logging.debug( 'num_items='+str(num_items))
+            
+            MT[line_no] = [0 for i in range(num_items)]
+            PE[line_no] = [0 for i in range(num_items)]
+            #print MT
             line_number = line_no+1#start from 1 to keep in line with alignments..
-            if num[0] >  num[1] and ((num[0] - num[1]) > int(threshold)):
-                print line.rstrip('\n\r ')
-                #errors[line_number].append(line.rstrip('\n\r '))
-                errors[line_number] =[line.rstrip('\n\r ')]
-            elif num[0] < num[1] and (num[1] - num[0] > threshold):
-                line.rstrip('\n\r ')
-                #errors[line_number].append(line.rstrip('\n\r '))
-                errors[line_number] =[line.rstrip('\n\r ')]
-        line_no +=1
+            doc_alignments[docid][line_number] = line
+            #print PE
+            prev_state = r2i.get('NONE')
+            for i in range(num_items):
+                #print items[i]
+                #num = items[i].split('-')
+                num = [int(n) for n in items[i].split('-')]
+                MT[line_no][i] = num[0]
+                PE[line_no][i] = num[1]
+                """if num[0] !=  num[1]:
+                    
+                    #CURRENTLY THIS ONLY LOGS ERRORS WHERE EDIT DISTANCE EXCEEDS THRESHOLD EG DIFFERENCE OF MORE THAN 4 IN ALIGNMENTS
+                    
+                    if num[0] > num[1]:
+                        if prev_state == r2i.get('DEL'):
+                            #print "delete"
+                            state = r2i.get('DEL')
+                    if num[0] < num[1]:
+                        #print "insert"
+                        state = r2i.get('INS')
+                        """
+                #line_number = line_no+1#start from 1 to keep in line with alignments..
+                if num[0] >  num[1] and ((num[0] - num[1]) > int(threshold)):
+                    logging.debug( line.rstrip('\n\r '))
+                    #errors[line_number].append(line.rstrip('\n\r '))
+                    errors[line_number] =[line.rstrip('\n\r ')]
+                    doc_errors[docid][line_number] =[line.rstrip('\n\r ')]
+                    break
+                elif num[0] < num[1] and (num[1] - num[0] > int(threshold)):
+                    logging.debug(line.rstrip('\n\r '))
+                    errors[line_number].append(line.rstrip('\n\r '))
+                    doc_errors[docid][line_number] =[line.rstrip('\n\r ')]
+                    break
+            line_no +=1
     #print MT
-    print "-- "
+    #print "-- "
     #print PE
-    print 'Potential structural errors:'+str(len(errors))
+    logging.debug( 'Potential structural errors:'+str(len(doc_errors)))
     #print errors
-    for k,v in errors.items():
-        print '%s : %s' %(k,v)
-    print 'Potential structural errors:'+str(len(errors))  
-    f = open( output+'_t'+threshold+'_json', 'w')
-    f.write( json.dumps(errors) )
+    
+    for docid, lines in doc_errors.items():
+        for k,v in lines.items():
+            logging.debug( '%s -> %s : %s' %(docid,k,v))
+            
+    logging.debug( 'Potential structural errors:'+str(len(errors)))   
+    f = open( output+'_t'+str(threshold)+'_json', 'w')
+    f.write( json.dumps(doc_errors) )
+    #print 'doc_alignments'
+    #print doc_alignments
+    f = open( output+'_doc_alignments_json', 'w')
+    f.write( json.dumps(doc_alignments) )
     
     return PE    
 
@@ -91,7 +148,7 @@ def analyse():
     
         
 def main(args):
-    """load data and compute the coherence"""
+    """load data and read in alignments"""
     logging.basicConfig(
             level=(logging.DEBUG if args.verbose else logging.INFO), 
             format='%(levelname)s %(message)s')

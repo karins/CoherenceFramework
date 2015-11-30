@@ -6,11 +6,17 @@ Created on 8 Oct 2015
 '''
 import argparse, logging, os
 from collections import defaultdict
-import pickle
+import cPickle as pickle
+#import pickle
 import json
+import re
 
 NOUNS = set(['NNP','NNPS', 'NNS', 'NN', 'N', 'NE'])
-                
+error2int= {"removed_in_PE" : 0, "inserted_in_PE" : 1} 
+int2error= {0 :"removed_in_PE", 1:"inserted_in_PE"}
+removed_in_PE = 0
+inserted_in_PE = 1
+
 def main(args):
     """ Extract nouns out of parsed file. Presumption is that if Noun is edited out of MT then it is an error, not mere lexical whim. 
     input format: (S1 (S (NP (DT The) (NN public)) (VP (MD will) (ADVP (RB soon)) (VP (AUX have) (NP (DT the) (NN opportunity) ...
@@ -42,17 +48,24 @@ def derive_errors(PE_nouns_dict, MT_nouns_dict, output):
         0 = removed holds nouns in MT but not in PE, so need added to reverse error
         1 = inserted holds nouns in PE which are absent in MT, so should be removed to reverse error 
         """
-    removed_in_PE = 0
-    inserted_in_PE = 1 
+    
     errors = defaultdict(defaultdict)
     
     for doc_id, PE_nouns_lines in PE_nouns_dict.items():
+        #doc_ids = map(int, re.findall("\d+",doc))
+        #doc_id = doc_ids[0]
+        #print 'ID=%s ' %doc_id
+        print 'DOC=%s'%doc_id
+        #doc_id = [int(s) for s in doc.split, re.findall("\d+",doc))
         errors[doc_id] = defaultdict(list)
+        print MT_nouns_dict
         MT_nouns_lines = MT_nouns_dict.get(doc_id)
-        
+        print PE_nouns_lines
         if not MT_nouns_lines:
             #errors[doc_id]={inserted_for_PE, PE_nouns_lines}
-            errors[doc_id][PE_nouns_lines][inserted_in_PE]= PE_nouns_lines
+            #errors[doc_id][PE_nouns_lines][inserted_in_PE]= PE_nouns_lines
+            #errors[doc_id] = [PE_nouns_lines][inserted_in_PE]
+            #errors[doc_id] = [PE_line_no]={inserted_in_PE: inserted_PE_nouns
             print 'FIX THIS'
         else:
         
@@ -60,7 +73,7 @@ def derive_errors(PE_nouns_dict, MT_nouns_dict, output):
                 
                 matched = False
                 for MT_line_no, MT_nouns in MT_nouns_lines.items():
-                    print 'MT_line '+str(MT_line_no)
+                    #print 'MT_line '+str(MT_line_no)
                     
                     if MT_line_no == PE_line_no:
                         #errors[doc_id][PE_line_no]=[inserted_for_PE,removed_for_PE]
@@ -84,6 +97,13 @@ def derive_errors(PE_nouns_dict, MT_nouns_dict, output):
     f = open( output+'_json', 'w')
     f.write( json.dumps(errors) )
     
+    
+    with open(output+'_pickle', 'wb') as file:
+        pickle.dump(errors, file,pickle.HIGHEST_PROTOCOL)
+        file.flush()
+        file.close()
+        
+    
     print errors
     with open( output, 'w') as fo:
         for docid, lines in errors.items():
@@ -95,7 +115,7 @@ def derive_errors(PE_nouns_dict, MT_nouns_dict, output):
                     fo.write(str(docid)+'\t'+str(line)+'\t'+str(type)+'\t')
                     #for error_type,items in type.items():
                     for word in words:
-                        fo.write(word+',')
+                        fo.write(word+' \t')
                     fo.write('\n')
                
 def printit(errors):
@@ -115,13 +135,15 @@ def extract_nouns(directory, output):
     files = [name for name in os.listdir(directory) if os.path.isfile(os.path.join(directory, name)) ]
     for filename in files:
         logging.info(filename) 
-        doc = filename.split('.')[0]
+        #doc = filename.split('.')[0]
+        doc = map(int, re.findall("\d+",filename))[0]
+        #doc = docid[0]
         nouns[doc]= defaultdict(list)
         with open(os.path.join(directory, filename)) as fi:
             if not os.path.exists(output):
                 os.makedirs(output)
             with open(os.path.join(output, filename ), 'w') as fo:
-                line_no = 0
+                line_no = 0#1 #because the ptb files in this instance have subsumed heading and first line into one
                 nouns[doc][line_no] = []
                 for line in fi:
                     

@@ -44,6 +44,15 @@ def match_alignments_to_doc(documents, file, output):
             for alignment in alignments:
                 outputfile.write(alignment)
             outputfile.write('</doc>\n')
+            
+    with open( output+'.doctext', 'w') as outputfile:
+        #outputfile.write('<srcset setid=\"LIG\" srclang=\"any\">\n')
+        for doc,alignments in doc_alignments.items():
+            print doc
+            outputfile.write('# doc id='+str(doc)+'\n')
+            for alignment in alignments:
+                outputfile.write(alignment)
+            outputfile.write('\n')            
 
 def extract_docs(file):
     
