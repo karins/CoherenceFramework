@@ -3,8 +3,8 @@ Created on 18 Nov 2015
 
 @author: Karin
 '''
+from discourse import command
 
-#from discourse.syntax_based.ibm1_decoder import decode_many as ibm1_decode_many
 from corpus.extract_lexical_cohesion_errors import extract_nouns, derive_errors
 from corpus.extract_connectives import extract_connectives
 from corpus.compare_connectives import extract_connective_errors as connective_errors
@@ -84,10 +84,12 @@ def main(args):
 def get_doctext_dir(args, subdir):
     return args.workspace +os.sep+ 'doctext'+os.sep+subdir+os.sep+args.corpus+'_'+subdir+'.doctext'
 
-def parse_args():
+@command('pipeline', 'corpus')
+def argparser(parser=None, func=main):
+#def parse_args():
     """parse command line arguments"""
 
-    parser = argparse.ArgumentParser(description='Pipeline',
+    parser = argparse.ArgumentParser(prog='pipeline',description='Pipeline',
             formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
     parser.add_argument('--workspace', 
@@ -120,4 +122,5 @@ def parse_args():
     return args
 
 if __name__ == '__main__':
-    main(parse_args())
+    #main(parse_args())
+    main(argparser().parse_args())

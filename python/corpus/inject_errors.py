@@ -361,7 +361,7 @@ def inject_lexical_errors(pe_docs, mt_docs, error_file, alignments, structural_e
     #doc_alignments_ = json.load(open(alignments))
     doc_alignments = yaml.safe_load(open(alignments))
     errors = yaml.safe_load(open(error_file+'_json'))
-    
+    #lines = istream.readlines()
     for docid, lines in errors.items():
         print 'DOCID=%s' %docid
         for line, error_type in lines.items():
