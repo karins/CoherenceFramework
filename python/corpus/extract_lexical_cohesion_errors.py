@@ -55,12 +55,12 @@ def derive_errors(PE_nouns_dict, MT_nouns_dict, output):
         #doc_ids = map(int, re.findall("\d+",doc))
         #doc_id = doc_ids[0]
         #print 'ID=%s ' %doc_id
-        print 'DOC=%s'%doc_id
+        logging.debug( 'DOC=%s'%doc_id)
         #doc_id = [int(s) for s in doc.split, re.findall("\d+",doc))
         errors[doc_id] = defaultdict(list)
-        print MT_nouns_dict
+        #print MT_nouns_dict
         MT_nouns_lines = MT_nouns_dict.get(doc_id)
-        print PE_nouns_lines
+        #print PE_nouns_lines
         if not MT_nouns_lines:
             #errors[doc_id]={inserted_for_PE, PE_nouns_lines}
             #errors[doc_id][PE_nouns_lines][inserted_in_PE]= PE_nouns_lines
@@ -161,7 +161,7 @@ def extract_nouns(directory, output):
                                     fo.write(items[i+1].rstrip(')')+' ')
                     fo.write(' \n')
                     line_no +=1 
-                print nouns
+                
     return nouns
                             
 def argparser():

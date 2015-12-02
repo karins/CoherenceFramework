@@ -19,12 +19,15 @@ error_type_lexical = 1
 error_type_connectives = 2
 error_type_structural = 3
 
-def make_workspace(workspace, output_directory):
+def make_workspace(workspace, corpus):
     if not os.path.exists(workspace + error_path):
         os.makedirs(workspace + error_path)
     if not os.path.exists(workspace + injected_corpus_path):
         os.makedirs(workspace + injected_corpus_path)
-    return workspace + error_path , workspace + injected_corpus_path
+    #if not os.path.exists( output_directory):
+     #   os.makedirs( output_directory)
+    
+    return workspace + error_path , workspace + injected_corpus_path+os.sep+corpus
 
 def main(args):
 
@@ -47,7 +50,7 @@ def main(args):
     if not os.path.exists(args.workspace):
         raise Exception("workspace path does not exist")  
     """ paths for errors and newly created corpus: """ 
-    errors, corpus = make_workspace(args.workspace, args.output)
+    errors, output = make_workspace(args.workspace, args.corpus)
     
     if not os.path.exists(args.workspace +os.sep+ 'tagged'):
         raise Exception("tagged files are not present at "+args.workspace+os.sep+'tagged')
@@ -61,13 +64,14 @@ def main(args):
 
     #process_alignments(  ,error_path+os.sep+'lexical_errors')
     threshold = args.threshold
-    read_alignments(args.alignments,  errors+os.sep+'structural_errors',threshold=4)
+    structural_errors_file = read_alignments(args.alignments,  errors+os.sep+'structural_errors',threshold=4)
+    structural_errors = 'structural_errors_t'+str(threshold)
     #logging("error type for corpus= %s" %(args.error_type))
-    print "error type="+str(args.error_type)
-    print int(args.error_type) == error_type_lexical
+    logging.debug( "error type="+str(args.error_type))
+    #print int(args.error_type) == error_type_lexical
     
     if int(args.error_type) == error_type_lexical:
-        print "lexical"
+        logging.debug( "lexical")
         PE_nouns_per_doc = extract_nouns(args.workspace+os.sep+'tagged'+os.sep+'pe', args.output)
         MT_nouns_per_doc = extract_nouns(args.workspace+os.sep+'tagged'+os.sep+'mt',args.output)
         derive_errors(PE_nouns_per_doc, MT_nouns_per_doc, errors+os.sep+'lexical_errors')
@@ -79,7 +83,8 @@ def main(args):
     
     logging.debug( "INJECTING ERRORS")
     """inject_errors(pe, mt, lexical_errors, alignments, structural, discourse_errors, output):"""
-    inject_errors(get_doctext_dir(args,'pe'), get_doctext_dir(args,'mt'), errors, args.alignments, args.error_type, args.output)
+    #inject_errors(get_doctext_dir(args,'pe'), get_doctext_dir(args,'mt'), errors, structural_errors, alignments_dict, args.error_type, args.output)
+    inject_errors(get_doctext_dir(args,'pe'), get_doctext_dir(args,'mt'), errors, structural_errors_file, args.alignments, args.error_type, output)
 
 def get_doctext_dir(args, subdir):
     return args.workspace +os.sep+ 'doctext'+os.sep+subdir+os.sep+args.corpus+'_'+subdir+'.doctext'
@@ -122,5 +127,5 @@ def argparser(parser=None, func=main):
     return args
 
 if __name__ == '__main__':
-    #main(parse_args())
-    main(argparser().parse_args())
+    main(argparser())
+    #main(argparser().parse_args())
