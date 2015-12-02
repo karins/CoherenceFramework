@@ -138,7 +138,7 @@ def read_alignments(istream,  output,threshold):
     f = open( output+'_doc_alignments_json', 'w')
     f.write( json.dumps(doc_alignments) )
     
-    return PE    
+    return output+'_t'+str(threshold)+'_json',output+'_doc_alignments_json'    
 
 #def log_errors(line, prev_state, MT, PE):
   #  if prev_state == 

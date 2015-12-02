@@ -64,7 +64,7 @@ def main(args):
 
     #process_alignments(  ,error_path+os.sep+'lexical_errors')
     threshold = args.threshold
-    structural_errors_file = read_alignments(args.alignments,  errors+os.sep+'structural_errors',threshold=4)
+    structural_errors_file, alignments_file = read_alignments(args.alignments,  errors+os.sep+'structural_errors',threshold=4)
     structural_errors = 'structural_errors_t'+str(threshold)
     #logging("error type for corpus= %s" %(args.error_type))
     logging.debug( "error type="+str(args.error_type))
@@ -84,7 +84,7 @@ def main(args):
     logging.debug( "INJECTING ERRORS")
     """inject_errors(pe, mt, lexical_errors, alignments, structural, discourse_errors, output):"""
     #inject_errors(get_doctext_dir(args,'pe'), get_doctext_dir(args,'mt'), errors, structural_errors, alignments_dict, args.error_type, args.output)
-    inject_errors(get_doctext_dir(args,'pe'), get_doctext_dir(args,'mt'), errors, structural_errors_file, args.alignments, args.error_type, output)
+    inject_errors(get_doctext_dir(args,'pe'), get_doctext_dir(args,'mt'), errors, structural_errors_file, alignments_file, args.error_type, output)
 
 def get_doctext_dir(args, subdir):
     return args.workspace +os.sep+ 'doctext'+os.sep+subdir+os.sep+args.corpus+'_'+subdir+'.doctext'
