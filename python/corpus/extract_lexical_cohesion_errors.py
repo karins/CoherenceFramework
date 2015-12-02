@@ -91,8 +91,8 @@ def derive_errors(PE_nouns_dict, MT_nouns_dict, output):
                     errors[doc_id][PE_line_no]={inserted_in_PE: PE_nouns_lines, removed_in_PE:[]}
                 if len(set(MT_nouns_lines) - set(PE_nouns_lines)) >0:
                     """ in MT only, so removed_for_PE  """
-                    noun_list = set(MT_nouns_lines) - set(PE_nouns_lines)
-                    errors[doc_id][MT_line_no]={inserted_in_PE:[], removed_in_PE:(noun_list)}
+                    noun_list = list(set(MT_nouns_lines) - set(PE_nouns_lines))
+                    errors[doc_id][MT_line_no]={inserted_in_PE:[], removed_in_PE:noun_list}
 
     f = open( output+'_json', 'w')
     f.write( json.dumps(errors) )
