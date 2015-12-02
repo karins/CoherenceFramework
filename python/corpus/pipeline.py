@@ -70,13 +70,13 @@ def main(args):
     logging.debug( "error type="+str(args.error_type))
     #print int(args.error_type) == error_type_lexical
     
-    if int(args.error_type) == error_type_lexical:
+    if int(args.error_type) == error_type_lexical or int(args.error_type)== error_type_all :
         logging.debug( "lexical")
         PE_nouns_per_doc = extract_nouns(args.workspace+os.sep+'tagged'+os.sep+'pe', args.output)
         MT_nouns_per_doc = extract_nouns(args.workspace+os.sep+'tagged'+os.sep+'mt',args.output)
         derive_errors(PE_nouns_per_doc, MT_nouns_per_doc, errors+os.sep+'lexical_errors')
     
-    if int(args.error_type) == error_type_connectives:
+    if int(args.error_type) == error_type_connectives or int(args.error_type)== error_type_all :
         extract_connectives(args.workspace+os.sep+'tagged'+os.sep+'pe', errors,'connectives.pe')
         extract_connectives(args.workspace+os.sep+'tagged'+os.sep+'mt', errors,'connectives.mt')
         connective_errors(errors+os.sep+'connectives.pe',errors+os.sep+'connectives.mt' ,errors+os.sep+'connective_errors')        

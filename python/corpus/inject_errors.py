@@ -67,6 +67,8 @@ def inject_errors(pe_txt, mt_txt, errors_dir, structural_error_file, alignments,
     
     markedup_corpus = defaultdict(list)
     pe,mt = get_corpora_doctext(pe_txt,mt_txt)
+    for docid, lines in pe.iteritems():
+        markedup_corpus[docid] = [line.rstrip('\n') for line in pe.get(docid)]
     #structural_errors  = inject_clausal_errors(pe, mt, get_errors(errors_dir,structural_error_file), markedup_corpus, output)    
     structural_errors  = inject_clausal_errors(pe, mt, structural_error_file, markedup_corpus, output)
     alignments_per_doc = inject_lexical_errors(pe, mt, get_errors(errors_dir,'lexical_errors'), alignments, structural_errors, markedup_corpus, output)
@@ -295,7 +297,7 @@ def inject_clausal_errors(pe, mt, structural_errors, markedup_corpus, output):
         #docid = re.findall("\d+",doc)
         print 'structural error at '+docid
         print lines
-        markedup_corpus[docid] = [line.rstrip('\n') for line in pe.get(docid)]
+        #markedup_corpus[docid] = [line.rstrip('\n') for line in pe.get(docid)]
         #markedup_corpus[docid] = pe.get(docid)
         print pe[docid]
         print mt[docid]
@@ -322,13 +324,14 @@ def print_markedup_corpus(markedup_corpus, output):
     with codecs.open(output, 'w', encoding="utf-8") as fo:
         ##import json
         ##od=json.loads(json.dumps(d,sort_keys=True))
-        #for docid in sorted(markedup_corpus)
+        for docid in sorted(markedup_corpus):
         #print 's% s%'( docid, markedup_corpus[docid])
-        for docid, lines in markedup_corpus.items():
+        #for docid, lines in markedup_corpus.items():
             fo.write("# id="+docid+'\n')
             #output.writelines(lines)
             print "tofile: "
-            for line in lines:
+            #for line in lines:
+            for line in markedup_corpus[docid]:
                 print line
                 fo.write(line+'\n')
      
