@@ -68,7 +68,7 @@ def inject_errors(pe_txt, mt_txt, errors_dir, structural_error_file, alignments,
     markedup_corpus = defaultdict(list)
     pe,mt = get_corpora_doctext(pe_txt,mt_txt)
     for docid, lines in pe.iteritems():
-        markedup_corpus[docid] = [line.rstrip('\n') for line in pe.get(docid)]
+        markedup_corpus[int(docid)] = [line.rstrip('\n') for line in pe.get(docid)]
     #structural_errors  = inject_clausal_errors(pe, mt, get_errors(errors_dir,structural_error_file), markedup_corpus, output)    
     structural_errors  = inject_clausal_errors(pe, mt, structural_error_file, markedup_corpus, output)
     alignments_per_doc = inject_lexical_errors(pe, mt, get_errors(errors_dir,'lexical_errors'), alignments, structural_errors, markedup_corpus, output)
@@ -183,7 +183,7 @@ def inject_discourse_errors(pe_docs, mt_docs, discourse_errors, doc_alignments, 
                                     #print a[pe_idx+1:]
                                     print 'aligned to: '+pe_words[int(a[pe_idx+1:])]
                                     
-                                    logging.debug('from:%s'%(markedup_corpus[docid][line_no]))
+                                    logging.debug('from:%s'%(markedup_corpus[int(docid)][line_no]))
                                     logging.debug('now:%s'%(tag_error_attributes(connective_tag, word, removed_in_PE, pe_words[int(a[pe_idx+1:])])))
                                     pe_words[int(a[pe_idx+1:])] = tag_error_attributes(connective_tag, word, removed_in_PE, pe_words[int(a[pe_idx+1:])])
                                     logging.debug(' '.join(pe_words))
@@ -191,15 +191,15 @@ def inject_discourse_errors(pe_docs, mt_docs, discourse_errors, doc_alignments, 
                                         print 'in inserted list: %s' %word #(tagged[int(a[pe_idx+1:])][1]) 
                                         to_remove.remove(word) #tagged[int(a[pe_idx+1:])][1])
                                     
-                                    markedup_corpus[docid][line_no] =(' '.join(pe_words))
+                                    markedup_corpus[int(docid)][line_no] =(' '.join(pe_words))
                             if not found:
                                 print 'not found %s' %mt_pos
                                 if mt_pos == 0:#null at start
                                     
-                                    logging.debug('from:%s'%(markedup_corpus[docid][line_no]))
+                                    logging.debug('from:%s'%(markedup_corpus[int(docid)][line_no]))
                                     logging.debug('now:%s'%(tag_error_attributes(connective_tag, word, removed_in_PE, "")))
                                     pe_words[0] = tag_error_attributes(connective_tag, word, removed_in_PE, "")
-                                    markedup_corpus[docid][line_no] =(' '.join(pe_words))
+                                    markedup_corpus[int(docid)][line_no] =(' '.join(pe_words))
                                    
                 for word in to_remove:
                     #elif int(error_type) == inserted_in_PE:
@@ -211,7 +211,7 @@ def inject_discourse_errors(pe_docs, mt_docs, discourse_errors, doc_alignments, 
                     if word in pe_words:
                         pe_words.remove(word)
                     temp = [tag_error_attributes(connective_tag," ","del",word) if word in to_remove else word for word in pe_words]
-                    markedup_corpus[docid][line_no] = (' '.join(temp))
+                    markedup_corpus[int(docid)][line_no] = (' '.join(temp))
     print_markedup_corpus(markedup_corpus, output)
     
 def get_corpora_doctext(pe_text, mt_text):
@@ -297,8 +297,8 @@ def inject_clausal_errors(pe, mt, structural_errors, markedup_corpus, output):
         #docid = re.findall("\d+",doc)
         print 'structural error at '+docid
         print lines
-        #markedup_corpus[docid] = [line.rstrip('\n') for line in pe.get(docid)]
-        #markedup_corpus[docid] = pe.get(docid)
+        #markedup_corpus[int(docid)] = [line.rstrip('\n') for line in pe.get(docid)]
+        #markedup_corpus[int(docid)] = pe.get(docid)
         print pe[docid]
         print mt[docid]
         print mt
@@ -311,7 +311,7 @@ def inject_clausal_errors(pe, mt, structural_errors, markedup_corpus, output):
             print mt[docid][line_no].rstrip()
             pe[docid][line_no]= mt[docid][line_no]
             
-            markedup_corpus[docid][line_no]= tag_error(structural_tag, mt[docid][line_no].rstrip())
+            markedup_corpus[int(docid)][line_no]= tag_error(structural_tag, mt[docid][line_no].rstrip())
             
     print markedup_corpus
     print_markedup_corpus(markedup_corpus, output)
@@ -324,14 +324,15 @@ def print_markedup_corpus(markedup_corpus, output):
     with codecs.open(output, 'w', encoding="utf-8") as fo:
         ##import json
         ##od=json.loads(json.dumps(d,sort_keys=True))
-        for docid in sorted(markedup_corpus):
-        #print 's% s%'( docid, markedup_corpus[docid])
+        #for docid in sorted(markedup_corpus):
+        for docid in sorted(markedup_corpus.keys()):#   , cmp=numeric_compare)
+        #print 's% s%'( docid, markedup_corpus[int(docid)])
         #for docid, lines in markedup_corpus.items():
-            fo.write("# id="+docid+'\n')
+            fo.write("# id="+str(docid)+'\n')
             #output.writelines(lines)
             print "tofile: "
             #for line in lines:
-            for line in markedup_corpus[docid]:
+            for line in  markedup_corpus[int(docid)]:
                 print line
                 fo.write(line+'\n')
      
@@ -390,8 +391,6 @@ def inject_lexical_errors(pe_docs, mt_docs, error_file, alignments, structural_e
                 print to_remove 
                 
                 line_no = int(line)
-                #print  pe_docs[docid]
-                #print pe_docs[docid][29] 
                 pe_sentence = pe_docs[docid][line_no]
                 mt_sentence = mt_docs[docid][line_no]
                 print mt_sentence
@@ -415,6 +414,7 @@ def inject_lexical_errors(pe_docs, mt_docs, error_file, alignments, structural_e
                     """ find position via alignments and check if straight reversion is feasible 
                     get index in mt. get alignment for that index. check aligned word in indexed pe array """
                     for mt_pos, w in enumerate( mt_words):
+                        print word +' and '+w
                         if w == word:
                             word_alignments = doc_alignments[docid][str(line_no)].split()  
                             for idx, a in enumerate(word_alignments):
@@ -422,41 +422,42 @@ def inject_lexical_errors(pe_docs, mt_docs, error_file, alignments, structural_e
                                 if str(mt_pos)+'-' in a:
                                     print 'found alignment %s at idx %s' %(a,idx)
                                     pe_idx = a.find('-')
-                                    #print a[pe_idx+1:]
-                                    print 'aligned to: '+pe_words[int(a[pe_idx+1:])]
-                                    """ if not noun, find nearest noun for replacing """
-                                    #tagged = nltk.pos_tag(pe_words)
-                                    tagged = nltk.pos_tag(nltk.word_tokenize(pe_sentence))
-                                    print tagged[int(a[pe_idx+1:])]
-                                    print tagged[int(a[pe_idx+1:])][1]
-                                    print tagged[int(a[pe_idx+1:])][1] in  NOUNS
-                                    if tagged[int(a[pe_idx+1:])][1] in  NOUNS:
-                                        #markedup_corpus[docid][line_no][idx]=tag_error_attributes(error_tag, content, error_type, item)
-                                        print 'replacing noun directly:'
-                                        #print tag_error_attributes(lexical_tag, word, int2error[int(error_type)], pe_words[int(a[pe_idx+1:])])
-                                        logging.debug('from:%s'%(markedup_corpus[docid][line_no]))
-                                        logging.debug('now:%s'%(tag_error_attributes(lexical_tag, word, removed_in_PE, pe_words[int(a[pe_idx+1:])])))
-                                        pe_words[int(a[pe_idx+1:])] = tag_error_attributes(lexical_tag, word, removed_in_PE, pe_words[int(a[pe_idx+1:])])
-                                        logging.debug(' '.join(pe_words))
-                                        if replace and tagged[int(a[pe_idx+1:])][1] in to_remove:#remove from there while we are at it
-                                            print 'in inserted list: %s' %(tagged[int(a[pe_idx+1:])][1]) 
-                                            to_remove.remove(tagged[int(a[pe_idx+1:])][1])
-                                        #markedup_corpus[docid][line_no][int(a[pe_idx+1:])] = tag_error_attributes(lexical_tag, word, int2error[int(error_type)], pe_words[int(a[pe_idx+1:])])
-                                        markedup_corpus[docid][line_no] =(' '.join(pe_words))
-                                    else:
-                                        print "nearest noun to replace = "
-                                        nearest_noun, nn_idx =  get_nearest_noun(tagged, pe_words, a[pe_idx+1:], w)
-                                        print nearest_noun
-                                        print tag_error_attributes(lexical_tag, nearest_noun, 'ins', word)
-                                        logging.debug('from:%s'%(markedup_corpus[docid][line_no]))
-                                        logging.debug( 'replacing with %s'%(tag_error_attributes(lexical_tag, word,"ins" , nearest_noun)))
-                                        pe_words[nn_idx] = tag_error_attributes(lexical_tag, word,"ins" , nearest_noun)
-                                        logging.debug(' '.join(pe_words)) 
-                                        if replace and nearest_noun in to_remove:#remove from there while we are at it
-                                            print 'in inserted list: %s' %nearest_noun 
-                                            to_remove.remove(nearest_noun)
-                                        markedup_corpus[docid][line_no] = (' '.join(pe_words))
-                                        #markedup_corpus[docid][line_no][nn_idx] = tag_error_attributes(lexical_tag, word, "ins"  , nearest_noun)
+                                    print str(int(a[pe_idx+1:]) )+'#'
+                                    if a[pe_idx+1:]:
+                                        #print 'aligned to: '+pe_words[int(a[pe_idx+1:])]
+                                        """ if not noun, find nearest noun for replacing """
+                                        #tagged = nltk.pos_tag(pe_words)
+                                        tagged = nltk.pos_tag(nltk.word_tokenize(pe_sentence))
+                                        print tagged[int(a[pe_idx+1:])]
+                                        print tagged[int(a[pe_idx+1:])][1]
+                                        print tagged[int(a[pe_idx+1:])][1] in  NOUNS
+                                        if tagged[int(a[pe_idx+1:])][1] in  NOUNS:
+                                            #markedup_corpus[int(docid)][line_no][idx]=tag_error_attributes(error_tag, content, error_type, item)
+                                            print 'replacing noun directly:'
+                                            #print tag_error_attributes(lexical_tag, word, int2error[int(error_type)], pe_words[int(a[pe_idx+1:])])
+                                            logging.debug('from:%s'%(markedup_corpus[int(docid)][line_no]))
+                                            logging.debug('now:%s'%(tag_error_attributes(lexical_tag, word, removed_in_PE, pe_words[int(a[pe_idx+1:])])))
+                                            pe_words[int(a[pe_idx+1:])] = tag_error_attributes(lexical_tag, word, removed_in_PE, pe_words[int(a[pe_idx+1:])])
+                                            logging.debug(' '.join(pe_words))
+                                            if replace and tagged[int(a[pe_idx+1:])][1] in to_remove:#remove from there while we are at it
+                                                print 'in inserted list: %s' %(tagged[int(a[pe_idx+1:])][1]) 
+                                                to_remove.remove(tagged[int(a[pe_idx+1:])][1])
+                                            #markedup_corpus[int(docid)][line_no][int(a[pe_idx+1:])] = tag_error_attributes(lexical_tag, word, int2error[int(error_type)], pe_words[int(a[pe_idx+1:])])
+                                            markedup_corpus[int(docid)][line_no] =(' '.join(pe_words))
+                                        else:
+                                            print "nearest noun to replace = "
+                                            nearest_noun, nn_idx =  get_nearest_noun(tagged, pe_words, a[pe_idx+1:], w)
+                                            print nearest_noun
+                                            print tag_error_attributes(lexical_tag, nearest_noun, 'ins', word)
+                                            logging.debug('from:%s'%(markedup_corpus[int(docid)][line_no]))
+                                            logging.debug( 'replacing with %s'%(tag_error_attributes(lexical_tag, word,"ins" , nearest_noun)))
+                                            pe_words[nn_idx] = tag_error_attributes(lexical_tag, word,"ins" , nearest_noun)
+                                            logging.debug(' '.join(pe_words)) 
+                                            if replace and nearest_noun in to_remove:#remove from there while we are at it
+                                                print 'in inserted list: %s' %nearest_noun 
+                                                to_remove.remove(nearest_noun)
+                                            markedup_corpus[int(docid)][line_no] = (' '.join(pe_words))
+                                            #markedup_corpus[int(docid)][line_no][nn_idx] = tag_error_attributes(lexical_tag, word, "ins"  , nearest_noun)
                                     
                             #markedup_corpus[doc][line_no]= ]
                 for word in to_remove:
@@ -469,7 +470,7 @@ def inject_lexical_errors(pe_docs, mt_docs, error_file, alignments, structural_e
                     if word in pe_words:
                         pe_words.remove(word)
                     temp = [tag_error_attributes(lexical_tag,"","del",word) if word in to_remove else word for word in pe_words]
-                    markedup_corpus[docid][line_no] = (' '.join(temp))
+                    markedup_corpus[int(docid)][line_no] = (' '.join(temp))
                 
     print_markedup_corpus(markedup_corpus, output)
     return doc_alignments

@@ -62,6 +62,7 @@ def derive_errors(PE_nouns_dict, MT_nouns_dict, output):
         MT_nouns_lines = MT_nouns_dict.get(doc_id)
         #print PE_nouns_lines
         if not MT_nouns_lines:
+            """ no lexical errors in that doc??- unlikely?"""
             #errors[doc_id]={inserted_for_PE, PE_nouns_lines}
             #errors[doc_id][PE_nouns_lines][inserted_in_PE]= PE_nouns_lines
             #errors[doc_id] = [PE_nouns_lines][inserted_in_PE]
@@ -92,7 +93,9 @@ def derive_errors(PE_nouns_dict, MT_nouns_dict, output):
                 if len(set(MT_nouns_lines) - set(PE_nouns_lines)) >0:
                     """ in MT only, so removed_for_PE  """
                     noun_list = list(set(MT_nouns_lines) - set(PE_nouns_lines))
-                    errors[doc_id][MT_line_no]={inserted_in_PE:[], removed_in_PE:noun_list}
+                    print noun_list
+                    for MT_line_no, MT_nouns in noun_list.items():
+                        errors[doc_id][MT_line_no]={inserted_in_PE:[], removed_in_PE:MT_nouns}
 
     f = open( output+'_json', 'w')
     f.write( json.dumps(errors) )
@@ -105,7 +108,7 @@ def derive_errors(PE_nouns_dict, MT_nouns_dict, output):
         
     
     print errors
-    with open( output, 'w') as fo:
+    with open( output, 'wb') as fo:
         for docid, lines in errors.items():
             for line, error_types in lines.items():
             #for type, words in lines.items():
@@ -143,7 +146,7 @@ def extract_nouns(directory, output):
             if not os.path.exists(output):
                 os.makedirs(output)
             with open(os.path.join(output, filename ), 'w') as fo:
-                line_no = 0#1 #because the ptb files in this instance have subsumed heading and first line into one
+                line_no = 0
                 nouns[doc][line_no] = []
                 for line in fi:
                     
