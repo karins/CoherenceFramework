@@ -6,6 +6,8 @@ Created on 6 Oct 2015
 
 @author: Karin
 '''  
+#! /usr/bin/python
+#-*-coding:utf-8-*-
 import logging, argparse, os, re
 import json, yaml
 from collections import defaultdict
@@ -19,21 +21,21 @@ def main(args):
      Log errors: if for that line, PE inserted connective where MT has none, or different sense
      """
     
-    MT_connectives_per_doc = defaultdict(list)
-    PE_connectives_per_doc  = defaultdict(list)
+    #MT_connectives_per_doc = defaultdict(list)
+    #PE_connectives_per_doc  = defaultdict(list)
     
-    extract_connectives(args.directory+os.sep+'pe',  PE_connectives_per_doc)
-    extract_connectives(args.directory+os.sep+'mt',  MT_connectives_per_doc)
+    PE_connectives_per_doc = extract_connectives(args.directory+os.sep+'pe',  defaultdict(list))
+    MT_connectives_per_doc = extract_connectives(args.directory+os.sep+'mt',  defaultdict(list))
     print PE_connectives_per_doc
     print MT_connectives_per_doc
     derive_errors(PE_connectives_per_doc, MT_connectives_per_doc, args.output)
     
 def  extract_connective_errors(input_directory_pe, input_directory_mt, output):    
-    MT_connectives_per_doc = defaultdict(list)
-    PE_connectives_per_doc  = defaultdict(list)
+    #MT_connectives_per_doc = defaultdict(list)
+    #PE_connectives_per_doc  = defaultdict(list)
     
-    extract_connectives(input_directory_pe,  PE_connectives_per_doc)
-    extract_connectives(input_directory_mt,  MT_connectives_per_doc)
+    PE_connectives_per_doc = extract_connectives(input_directory_pe,  defaultdict(list))
+    MT_connectives_per_doc = extract_connectives(input_directory_mt,  defaultdict(list))
     derive_errors(PE_connectives_per_doc, MT_connectives_per_doc, output)
     
 def derive_errors(PE_connectives_per_doc, MT_connectives_per_doc, output):
@@ -58,7 +60,7 @@ def derive_errors(PE_connectives_per_doc, MT_connectives_per_doc, output):
     1 Temporal:after 
     5 Temporal:as
     """ 
-    
+    logging.debug('deriving connective errors...')
     errors_per_doc = defaultdict(list)
     #errors_missing = defaultdict(list)
     #errors_sense = defaultdict(list)
@@ -66,6 +68,7 @@ def derive_errors(PE_connectives_per_doc, MT_connectives_per_doc, output):
     """presume that the errors for PE_files will include all docs under consideration - check if that is case"""
     for doc,lines in PE_connectives_per_doc.items():
         #PE_connectives = lines
+        logging.debug('DOCID=%s' %doc)
         errors_per_doc[doc]=defaultdict(list)
         print 'compare '
         print lines 
@@ -101,7 +104,7 @@ def derive_errors(PE_connectives_per_doc, MT_connectives_per_doc, output):
                 #if lineno > 0:
                 #    lineno+1
                 errors_per_doc[doc][lineno]= {inserted_in_PE: inserted_PE_connectives,  removed_in_PE: deleted_MT_connectives}
-                
+        """        
         #ones that have been deleted in the post edit, to be added back in
         for line, MT_connectives in MT_connectives_per_doc[doc].items(): 
             #items = MT_connectives[line]
@@ -114,6 +117,7 @@ def derive_errors(PE_connectives_per_doc, MT_connectives_per_doc, output):
                  print MT_connectives
         #errors_per_doc[doc][lineno] = [line for line in in MT_connectives_per_doc[doc]  if line not in PE_connectives_per_doc[doc][lineno] ] 
                  errors_per_doc[doc][int(line)] = {inserted_in_PE: [],removed_in_PE: MT_connectives}
+                 """  
     print errors_per_doc
     if not os.path.exists(output): 
         os.makedirs(output)
@@ -145,16 +149,20 @@ def extract_connectives(outputfile, connectives_per_doc):
 #def extract_connectives(directory, connectives_per_doc):   
     #files = [name for name in os.listdir(directory) if os.path.isfile(os.path.join(directory, name)) ]
     #for filename in files:
-     
-     allconnectives = yaml.safe_load(open(outputfile+'_json'))
-     logging.info(outputfile)
+    
+    allconnectives = yaml.safe_load(open(outputfile+'_json'))
+    logging.info('extracting connectives from: '+outputfile)
      
         #doc = map(int, re.findall("\d+",filename))[0]
 #     connectives = defaultdict(list)
-     for doc, lines in allconnectives.items():
+    for doc, lines in allconnectives.items():
         print 'DOCID=%s' %doc
+        docid = int(doc)
+        connectives = defaultdict(list)
         for line, connectivelist in lines.items():
-            connectives = defaultdict(list)
+            #connectives = defaultdict(list)
+            line_no = int(line)
+            connectives[line_no]=[]  
         #with open(os.path.join(directory, filename)) as fi:
             prev = ''
             #for line in fi:
@@ -162,7 +170,7 @@ def extract_connectives(outputfile, connectives_per_doc):
                 #items = line.split()
                 #for item in items:
                 #line_no = items[0]
-                line_no = int(line)
+                
                 #item = items[1]
                 #tokens = item.split('#')
                 tokens = connective.split('#')
@@ -179,8 +187,12 @@ def extract_connectives(outputfile, connectives_per_doc):
                     connectives[line_no].append(tokens[0])#+':'+tokens[0])
                 prev = tokens[1]
                 
-            print connectives
-            connectives_per_doc[doc] = connectives
+            
+            connectives_per_doc[docid] = connectives
+    print 'from extract_connectives, returning:'
+    print connectives_per_doc
+    return connectives_per_doc
+
 def argparser():
     """parse command line arguments"""
     

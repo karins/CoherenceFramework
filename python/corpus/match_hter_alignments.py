@@ -8,34 +8,29 @@ import argparse,logging
 from collections import defaultdict
 
 def match_alignments_to_doc(documents, file, output):
-    #docs = set()
+    
     """ for each document in documents, get lines 
         format in documents: docs[doc_id] = [doc_start,doc_end,lines_in_doc]"""
     doc_alignments = defaultdict(list)
     alignments = file.readlines()
     prevDocFinish = -1
-    print 'no. docs='+str(len(documents))
+    logging.DEBUG( 'no. docs='+str(len(documents)))
     for doc in documents:
-    #for id, doc in documents.items():
-        print '<doc id='+str(doc)+'>'
+    
+        logging.DEBUG( '<doc id='+str(doc)+'>')
         doc_alignments[doc] = []
         lines = documents[doc] 
         
         alignment = prevDocFinish+ lines[0]
-        
-        #print 'alignment='+str(alignment)
-        #print 'for %s'% lines[2]
         while alignment <=  prevDocFinish+ lines[2]:                             # while loop iteration
-            print alignments[alignment]
-            #print doc_alignments[doc]
+            logging.debug(alignments[alignment])
+            
             doc_alignments[doc].append(alignments[alignment])
             alignment+=1
-            #docs.add(doc )
-            #docIdPerHter[doc]= sumOfHter/lines[2]
         prevDocFinish += lines[1]
         print doc_alignments[doc]
         print '</doc>'
-    #with open(os.path.join(output, filename+'_errors'), 'w') as output:
+
     with open( output, 'w') as outputfile:
         outputfile.write('<srcset setid=\"LIG\" srclang=\"any\">\n')
         for doc,alignments in doc_alignments.items():
@@ -46,7 +41,7 @@ def match_alignments_to_doc(documents, file, output):
             outputfile.write('</doc>\n')
             
     with open( output+'.doctext', 'w') as outputfile:
-        #outputfile.write('<srcset setid=\"LIG\" srclang=\"any\">\n')
+
         for doc,alignments in doc_alignments.items():
             print doc
             outputfile.write('# doc id='+str(doc)+'\n')
@@ -76,12 +71,12 @@ def extract_docs(file):
             in_doc = False;
             #store doc end as previous line
             doc_end = lines_in_doc;
-            #print 'storing '+str(docId)+' -> '+str(docStart)+"-"+str(docEnd)+'-'+str(linesInDoc)
+            #logging.DEBUG('storing '+str(docId)+' -> '+str(docStart)+"-"+str(docEnd)+'-'+str(linesInDoc))
             #store doc lines against doc id
-            #docScores[docId] = str(docStart)+"-"+str(docEnd) +'-'+str(linesInDoc)
+            
             docs[doc_id] = [doc_start,doc_end,lines_in_doc]
         elif in_doc:
-            #print 'incrementing '+str(linesInDoc) 
+            #logging.DEBUG('incrementing '+str(lines_in_doc)) 
             lines_in_doc+=1
 
     return docs            
@@ -92,7 +87,7 @@ def main(args):
 def argparser():
     """parse command line arguments"""
     
-    parser = argparse.ArgumentParser(description='Remove the leading alphanumeric from each line.',
+    parser = argparse.ArgumentParser(description='match with hter scores.',
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     
     parser.add_argument('input', nargs='?',

@@ -4,6 +4,8 @@ Created on 8 Oct 2015
 
 @author: Karin
 '''
+#! /usr/bin/python
+#-*-coding:utf-8-*-
 import argparse, logging, os
 from collections import defaultdict
 import cPickle as pickle
@@ -52,71 +54,61 @@ def derive_errors(PE_nouns_dict, MT_nouns_dict, output):
     errors = defaultdict(defaultdict)
     
     for doc_id, PE_nouns_lines in PE_nouns_dict.items():
-        #doc_ids = map(int, re.findall("\d+",doc))
-        #doc_id = doc_ids[0]
-        #print 'ID=%s ' %doc_id
         logging.debug( 'DOC=%s'%doc_id)
-        #doc_id = [int(s) for s in doc.split, re.findall("\d+",doc))
+        
         errors[doc_id] = defaultdict(list)
-        #print MT_nouns_dict
+        
         MT_nouns_lines = MT_nouns_dict.get(doc_id)
-        #print PE_nouns_lines
+        
         if not MT_nouns_lines:
             """ no lexical errors in that doc??- unlikely?"""
             #errors[doc_id]={inserted_for_PE, PE_nouns_lines}
             #errors[doc_id][PE_nouns_lines][inserted_in_PE]= PE_nouns_lines
             #errors[doc_id] = [PE_nouns_lines][inserted_in_PE]
             #errors[doc_id] = [PE_line_no]={inserted_in_PE: inserted_PE_nouns
-            print 'FIX THIS'
+            print 'no lexical errors in that doc??- unlikely?'
         else:
         
             for PE_line_no, PE_nouns in PE_nouns_lines.items():
                 
                 matched = False
                 for MT_line_no, MT_nouns in MT_nouns_lines.items():
-                    #print 'MT_line '+str(MT_line_no)
                     
                     if MT_line_no == PE_line_no:
-                        #errors[doc_id][PE_line_no]=[inserted_for_PE,removed_for_PE]
-                        
                         deleted_MT_nouns =[noun for noun in MT_nouns if noun not in PE_nouns] 
                         inserted_PE_nouns =[noun for noun in PE_nouns if noun not in MT_nouns]
                         
                         if deleted_MT_nouns or inserted_PE_nouns:
                             errors[doc_id][PE_line_no]= {inserted_in_PE: inserted_PE_nouns,  removed_in_PE: deleted_MT_nouns}
-                        
+                            
                         matched = True
                         break
                 if not matched:
                     """  not in MT, only in PE, so inserted_for_PE"""
-                    errors[doc_id][PE_line_no]={inserted_in_PE: PE_nouns_lines, removed_in_PE:[]}
-                if len(set(MT_nouns_lines) - set(PE_nouns_lines)) >0:
-                    """ in MT only, so removed_for_PE  """
-                    noun_list = list(set(MT_nouns_lines) - set(PE_nouns_lines))
-                    print noun_list
-                    for MT_line_no, MT_nouns in noun_list.items():
-                        errors[doc_id][MT_line_no]={inserted_in_PE:[], removed_in_PE:MT_nouns}
+                    errors[doc_id][PE_line_no]={inserted_in_PE: PE_nouns, removed_in_PE:[]}
+            if len(set(MT_nouns_lines) - set(PE_nouns_lines)) >0:
+                """ in MT only, so removed_for_PE  """
+                noun_list = list(set(MT_nouns_lines) - set(PE_nouns_lines))
+                #logging.debug( noun_list)
+                for MT_line_no, MT_nouns in noun_list.iteritems():
+                    errors[doc_id][MT_line_no]={inserted_in_PE:[], removed_in_PE:MT_nouns}
 
     f = open( output+'_json', 'w')
     f.write( json.dumps(errors) )
     
-    
-    with open(output+'_pickle', 'wb') as file:
+    """ pickle not handling foreign chars- not sure if unicode issue""" 
+    """with open(output+'_pickle', 'wb') as file:
         pickle.dump(errors, file,pickle.HIGHEST_PROTOCOL)
         file.flush()
         file.close()
-        
+       """ 
     
-    print errors
+    #print errors
     with open( output, 'wb') as fo:
         for docid, lines in errors.items():
             for line, error_types in lines.items():
-            #for type, words in lines.items():
-                #"doc_1": {"32": {"0": ["tant"], "1": []}
                 for type, words in error_types.items():
-                #for error_type,items in type.items():
                     fo.write(str(docid)+'\t'+str(line)+'\t'+str(type)+'\t')
-                    #for error_type,items in type.items():
                     for word in words:
                         fo.write(word+' \t')
                     fo.write('\n')
@@ -125,8 +117,7 @@ def printit(errors):
     for docid, lines in errors.items():
         #print 'no lines %s'%len(lines) 
         for line in lines.items():
-            print 'line :'
-            print line
+            logging.debug('line :'+ line)
             """for error_type,items in type.items():
            #print str(docid)+'\t'+str(lines[0]) +error_type
            print '%s \t %s \t %s' %(docid, lines[0],error_type)
@@ -137,15 +128,14 @@ def extract_nouns(directory, output):
     nouns = defaultdict(list)
     files = [name for name in os.listdir(directory) if os.path.isfile(os.path.join(directory, name)) ]
     for filename in files:
-        logging.info(filename) 
-        #doc = filename.split('.')[0]
+        logging.info('extracting nouns for filename'+filename) 
+        
         doc = map(int, re.findall("\d+",filename))[0]
-        #doc = docid[0]
         nouns[doc]= defaultdict(list)
-        with open(os.path.join(directory, filename)) as fi:
-            if not os.path.exists(output):
-                os.makedirs(output)
-            with open(os.path.join(output, filename ), 'w') as fo:
+        with open(os.path.join(output, filename ), 'w') as fo:
+            with open(os.path.join(directory, filename)) as fi:
+                if not os.path.exists(output):
+                    os.makedirs(output)
                 line_no = 0
                 nouns[doc][line_no] = []
                 for line in fi:
@@ -156,7 +146,6 @@ def extract_nouns(directory, output):
                         item = items[i]
                         #(S1 (S (NP (DT The) (NN public))
                         for NOUN in NOUNS:
-                        #    print NOUN
                             if NOUN == item.lstrip('('):
                                 logging.debug(items[i+1].rstrip(')'))
                                 if '#' not in items[i+1]:

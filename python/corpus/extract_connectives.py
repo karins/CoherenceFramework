@@ -9,7 +9,8 @@ connectives by Pitler Nenkova tagger (http://www.cis.upenn.edu/~nlp/software/dis
 -count the types of connectives in MT vs PE 
 
 '''
-
+#! /usr/bin/python
+#-*-coding:utf-8-*-
 
 """
 For the excerpt below, which has been marked up using the Pitler tagger
@@ -33,7 +34,7 @@ def main(args):
     #extract_connectives(args, connectives)
     #analyse
     
-def extract_connectives(directory, outputdir, outputfile):
+def  extract_connectives(directory, outputdir, outputfile):
     connectives = {}
     if not os.path.exists(outputdir):
         os.makedirs(outputdir)
@@ -56,10 +57,10 @@ def extract_connectives(directory, outputdir, outputfile):
                                 print tokens
                                 if tokens[0].isalnum() and tokens[2][0] != '0':
                                     print str(line_no)+' \t '+item.rstrip(')')
-                                    output.write(str(line_no)+' \t '+item.rstrip(')'))
+                                    output.write(str(doc) +' \t ' +str(line_no)+' \t '+item.rstrip(')'))
                                     output.write(' \n')
                                     connectives[doc][line_no].append(item.rstrip(')'))
-                        line_no+=1
+                    line_no+=1
                         #connectives[ ] = 
     f = open( outputdir+os.sep+ outputfile+'_json', 'w')
     f.write( json.dumps(connectives) )
