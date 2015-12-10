@@ -21,7 +21,7 @@ def importall():
     import discourse.syntax_based.ibm1_decoder
     import discourse.syntax_based.alouis
     import discourse.syntax_based.alouis_decoder
-    import corpus.pipeline
+    import corpus.corpus_pipeline
     
 
 def configure_commands(cls, parser):
