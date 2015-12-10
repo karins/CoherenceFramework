@@ -86,12 +86,12 @@ def main(args):
 def get_doctext_dir(args, subdir):
     return args.workspace +os.sep+ 'doctext'+os.sep+subdir+os.sep+args.corpus+'_'+subdir+'.doctext'
 
-@command('pipeline', 'corpus')
+@command('corpus_pipeline', 'corpus')
 def argparser(parser=None, func=main):
 
     """parse command line arguments"""
 
-    parser = argparse.ArgumentParser(prog='pipeline',description='Pipeline',
+    parser = argparse.ArgumentParser(prog='corpus_pipeline',description='Corpus Pipeline',
             formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
     parser.add_argument('--workspace', 
