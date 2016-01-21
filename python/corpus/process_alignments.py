@@ -20,8 +20,8 @@ def get_doc_alignments(istream):
     """ format of file: 1-0 2-1 3-2 4-3 5-4 6-5 representing MT:PE for each word of each line in doc """
     doc_alignments = defaultdict(list)
     
-    MT = [[]]#np.zeros(3, )
-    PE = [[]]#np.zeros(3, )
+    MT = [[]]
+    PE = [[]]
     doc_tag='<doc'
     end_tag='</'
     start_tag = '<srcset'
@@ -49,12 +49,13 @@ def get_doc_alignments(istream):
 
 def read_alignments(istream,  output,threshold):
     """ format of file: 1-0 2-1 3-2 4-3 5-4 6-5 representing MT:PE for each word of each line in doc """
+    logging.debug('using threshold=%s',threshold)
     doc_alignments = defaultdict(list)
     errors = defaultdict(list)
     doc_errors = defaultdict(list)
     
-    MT = [[]]#np.zeros(3, )
-    PE = [[]]#np.zeros(3, )
+    MT = [[]]
+    PE = [[]]
     doc_tag='<doc'
     end_tag='</'
     start_tag = '<srcset'
@@ -68,7 +69,7 @@ def read_alignments(istream,  output,threshold):
     PE = [0 for i in range(len(lines))]
     for line in lines:
         if doc_tag in line:
-            #extract id from <doc id=1>
+            
             idx = line.find('=')
             docid= line[idx+1:-2]
             logging.debug( 'DOCTAG: %s' %(docid))
@@ -80,14 +81,14 @@ def read_alignments(istream,  output,threshold):
             items = line.split()
             logging.debug( 'line_no='+str(line_no)) 
             num_items =len(items)
-            #logging.debug( 'num_items='+str(num_items))
+            
             
             MT[line_no] = [0 for i in range(num_items)]
             PE[line_no] = [0 for i in range(num_items)]
-            #print MT
-            line_number = line_no+1#start from 1 to keep in line with alignments..
+            """ start from 1 to keep in line with alignments.."""
+            line_number = line_no+1 
             doc_alignments[docid][line_number] = line
-            #print PE
+            
             prev_state = r2i.get('NONE')
             for i in range(num_items):
                 #print items[i]
@@ -123,21 +124,22 @@ def read_alignments(istream,  output,threshold):
     #print MT
     #print "-- "
     #print PE
-    logging.debug( 'Potential structural errors:'+str(len(doc_errors)))
-    #print errors
+    logging.debug( 'Potential structural errors in '+str(len(doc_errors))+' docs')
     
+    #print errors
+    num = 0
     for docid, lines in doc_errors.items():
         for k,v in lines.items():
             logging.debug( '%s -> %s : %s' %(docid,k,v))
-            
-    logging.debug( 'Potential structural errors:'+str(len(errors)))   
+            num += len(lines)
+       
     f = open( output+'_t'+str(threshold)+'_json', 'w')
     f.write( json.dumps(doc_errors) )
     #print 'doc_alignments'
     #print doc_alignments
     f = open( output+'_doc_alignments_json', 'w')
     f.write( json.dumps(doc_alignments) )
-    
+    logging.debug( 'Potential structural errors:%s',num)
     return output+'_t'+str(threshold)+'_json',output+'_doc_alignments_json'    
 
 #def log_errors(line, prev_state, MT, PE):
