@@ -71,8 +71,14 @@ def read_alignments(istream,  output,threshold):
         if doc_tag in line:
             
             idx = line.find('=')
-            docid= line[idx+1:-2]
+            from sys import platform as _platform
+            if _platform == "linux" or _platform == "linux2":
+                docid= line[idx+1:-3]
+            else:
+                docid= line[idx+1:-2]
+            
             logging.debug( 'DOCTAG: %s' %(docid))
+            print 'DOCTAG: %s' %(docid)
             line_no = -1
             doc_errors[docid] = defaultdict(list)
             doc_alignments[docid] = defaultdict(list)

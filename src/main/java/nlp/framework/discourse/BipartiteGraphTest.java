@@ -1,6 +1,7 @@
 package nlp.framework.discourse;
 
 import java.util.List;
+import java.util.Map;
 
 import junit.framework.TestCase;
 
@@ -21,14 +22,14 @@ public class BipartiteGraphTest extends TestCase {
 			"<doc><p><seg id=\"15\"> In comparison, only 55 percent said it would definitely vote in parliamentary elections if they were to be held this Sunday while another 15 percent said it most likely would cast a ballot. "
 			+"Given current determination to vote, the referendum is certain to be valid. </seg></p></doc></refset>";
 
-	public static final String xmlFrench = "<refset setid=\"newsdev2009\"><doc docid=\"napi.hu/2007/12/12/0\" genre=\"news\"><hl><seg id=\"1\"> L'inflation, en Europe, a d�rap� sur l'alimentation. </seg>"+
-			"</hl><p><seg id=\"2\">  L'inflation acc�l�r�e, mesur�e dans la zone euro, est due principalement � l'augmentation rapide des prix de l'alimentation. </seg></p></doc></refset>";
-	  
-	public static final String xmlFrench2 ="<refset setid=\"newsdev2009\"><doc docid=\"napi.hu/2007\"><hl><seg id=\"1\">Gallup indique une crise du gouvernement. </seg></hl><p><seg id=\"2\">"+
-			"Apr�s une longue stagnation, le nombre des partisans du Fidesz (Alliance des jeunes d�mocrates) a augment� significativement d�but d�cembre. "+
-			"Ainsi depuis 2002, il dispose actuellement du plus grand nombre de partisans, alors que Gallup (Institut de sondage) n'a jamais constat� auparavant un aussi faible soutien socialiste, � savoir 13 pour cent. </seg></p></doc>"+
-			"<doc><p><seg id=\"15\"> Pour faire la comparaison, pour une �lection l�gislative organiser dimanche prochain, seulement 55 pour cent des sond�s participeraient certainement et 15 pour cent compl�mentaires participeraient probablement. "
-			+"Suivant les intentions actuelles, le r�sultat du r�f�rendum ne ferait aucun doute. </seg></p></doc></refset>";
+	public static final String xmlFrench = "<refset setid=\"newsdev2009\"><doc docid=\"napi.hu/2007/12/12/0\" genre=\"news\"><hl><seg id=\"1\"> L'inflation, en Europe, a dérapé sur l'alimentation. </seg>"+
+			"</hl><p><seg id=\"2\">  L'inflation accélérée, mesurée dans la zone euro, est due principalement à l'augmentation rapide des prix de l'alimentation. </seg></p></doc></refset>";
+	
+	public static final String xmlFrench2 ="<refset setid=\"newsdev2009\"><doc docid=\"napi.hu/2007\"><hl><seg id=\"1\">Gallup indique une crise du gouvernement </seg></hl><p><seg id=\"2\">"+
+			"Après une longue stagnation, le nombre des partisans du Fidesz (Alliance des jeunes démocrates) a augmenté significativement début décembre. "+
+			"Ainsi depuis 2002, il dispose actuellement du plus grand nombre de partisans, alors que Gallup (Institut de sondage) n'a jamais constaté auparavant un aussi faible soutien socialiste, à savoir 13 pour cent. </seg></p></doc>"+
+			"<doc><p><seg id=\"15\"> Pour faire la comparaison, pour une élection législative organiser dimanche prochain, seulement 55 pour cent des sondés participeraient certainement et 15 pour cent complémentaires participeraient probablement. "
+			+"Suivant les intentions actuelles, le résultat du référendum ne ferait aucun doute. </seg></p></doc></refset>";
 
 	
 	@Override
@@ -56,7 +57,7 @@ public class BipartiteGraphTest extends TestCase {
 		assertEquals(message, true, bipartiteGraph.containsSentenceNode(new Integer(1)).hasEdge("Berlin",  BipartiteGraph.SUBJECT));
 		assertEquals(message, true, bipartiteGraph.containsSentenceNode(new Integer(1)).hasEdge("city",  BipartiteGraph.OTHER_GRAMMATICAL));
 		
-		assertEquals(message, true, bipartiteGraph.containsSentenceNode(new Integer(0)).hasEdge("Berlin",  BipartiteGraph.OBJECT));
+		assertEquals(message, true, bipartiteGraph.containsSentenceNode(new Integer(0)).hasEdge("Berlin",  BipartiteGraph.OTHER_GRAMMATICAL));
 		
 		assertEquals(message, true, bipartiteGraph.containsSentenceNode(new Integer(2)).hasEdge("city",  BipartiteGraph.SUBJECT));
 		
@@ -85,8 +86,8 @@ public class BipartiteGraphTest extends TestCase {
 	public void testFrenchGraphCorrectStructure(){
 		
 		EntityGraph graph = new EntityGraph("French",  new EntityGridFactory().getEntityGridFramework( "French", EntityGridFramework.FRENCH_TAGGER));
-		List<String> docs = new CorpusReader().readXMLString(xmlFrench);
-		BipartiteGraph bipartiteGraph  = graph.identifyEntitiesAndConstructGraph(docs.get(0));
+		Map<String, String> docs = new CorpusReader().readXMLString(xmlFrench);
+		BipartiteGraph bipartiteGraph  = graph.identifyEntitiesAndConstructGraph(docs.values().iterator().next());
 		/*int fileidx = 0;
 		for(String docAsString: docs){
 			
@@ -97,7 +98,8 @@ public class BipartiteGraphTest extends TestCase {
 		assertEquals(messageXml, 1, fileidx);*/
 
 		assertEquals(message, 2, bipartiteGraph.getSentenceNodes().size());
-		assertEquals(message, 8, bipartiteGraph.getEntities().size());
+		//8 entity occurrances, but 6 distinct entities
+		assertEquals(message, 6, bipartiteGraph.getEntities().size());
 		
 		assertEquals(message, bipartiteGraph.containsSentenceNode(new Integer(2)), true);
 		
@@ -185,7 +187,9 @@ public class BipartiteGraphTest extends TestCase {
 		
 		assertEquals(message, true, bipartiteGraph.containsEntityNode(("Berlin")));
 		
-		//4 sentences, 2 shared entities, distance between them is 1 (for 'Berlin' in adjacent sentences) and 2 (for 'city') : 1.0/3.0 * ((5/1)+(5/2))
+		//4 sentences, 2 shared entities, distance between them is 1 (for 'Berlin' in adjacent sentences) 
+		//and 2 (for 'city', skips a sentence) : 1.0/4.0 * ((5/1)+(5/2))
+		//5 entities total ->  1.0/4.0 * (((3+1)/1)+((3+3)/2))=0.25 * (4+3)= rounds to 2
 		assertEquals(message, Math.round(1.0/4.0 * 7.5) , Math.round(bipartiteGraph.getLocalCoherence(BipartiteGraph.SYNTACTIC_PROJECTION)));
 	}
 	

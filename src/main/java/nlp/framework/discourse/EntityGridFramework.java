@@ -1,5 +1,6 @@
 package nlp.framework.discourse;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -16,6 +17,7 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations.BasicDependenciesAnnotation;
 import edu.stanford.nlp.semgraph.SemanticGraphEdge;
+import edu.stanford.nlp.trees.EnglishGrammaticalRelations;
 import edu.stanford.nlp.trees.GrammaticalRelation;
 import edu.stanford.nlp.util.CoreMap;
 
@@ -41,11 +43,19 @@ public class EntityGridFramework {
 	private static final String NN = "NN";
 	private static final String N = "N";
 	private static final String NE = "NE";
+	private static final String NC = "NC";
+	private static final String NPP = "NPP";
+	
 	
 	//private Set<String> POS_TAGS = new HashSet<String>(){NNP, NP, NNS, NN, N, NE};
 	
-	public static final String GERMAN_TAGGER = "\\stanford-postagger-full-2013-11-12\\stanford-postagger-full-2013-11-12\\models\\german-fast.tagger";
-	public static final String FRENCH_TAGGER = "\\StanfordNLP\\stanford-postagger-full-2013-11-12\\stanford-postagger-full-2013-11-12\\models\\french.tagger";
+	//public static final String GERMAN_TAGGER = "\\stanford-postagger-full-2013-11-12\\stanford-postagger-full-2013-11-12\\models\\german-fast.tagger";
+	//public static final String GERMAN_TAGGER = File.separator+"stanford-corenlp-3.5.2-models-german"+File.separator+"stanford-corenlp-3.5.2-models-german"+File.separator+"models"+File.separator+"german-fast.tagger";
+	public static final String GERMAN_TAGGER = "/stanford-corenlp-3.5.2-models-german/stanford-corenlp-3.5.2-models-german/models/german-fast.tagger";
+	//public static final String GERMAN_TAGGER = File.pathSeparator+"edu"+File.pathSeparator+"stanford"+File.pathSeparator+"nlp"+File.pathSeparator+"models"+File.pathSeparator+"pos-tagger"+File.pathSeparator+"german"+File.pathSeparator+"german-fast.tagger";
+	//public static final String GERMAN_TAGGER = "stanford-corenlp-3.5.2-models-german"+File.pathSeparator+"models"+File.pathSeparator+"pos-tagger"+File.pathSeparator+"german"+File.pathSeparator+"german-fast.tagger";
+	//public static final String FRENCH_TAGGER = "stanford-corenlp-3.6.0-models-french"+File.pathSeparator+"models"+File.pathSeparator+"pos-tagger"+File.pathSeparator+"french.tagger";
+	public static final String FRENCH_TAGGER = "/pos-tagger/french.tagger";
 	private static final String FRENCH = "French";
 	private static final String GERMAN = "German";
 	private static final String ENGLISH = "English";
@@ -56,7 +66,7 @@ public class EntityGridFramework {
 	
 	protected StanfordCoreNLP pipeline;
 	private char grid[][];
-	//private int sentences;
+	//private int sentences; 
 	
 	
 	/**
@@ -68,6 +78,7 @@ public class EntityGridFramework {
 		Properties properties = new Properties();	
 		properties.put("-parseInside", "HEADLINE|P");
 		properties.put("annotators", "tokenize, ssplit, pos, lemma, parse");
+		properties.put("parse.originalDependencies", true);
 		//properties.setProperty("tokenize.whitespace", "true");//for annotator tokenize
 		// properties.setProperty("ssplit.eolonly", "true");//for annotator ssplit
 
@@ -111,13 +122,13 @@ public class EntityGridFramework {
 		if(Boolean.valueOf(multiple) == Boolean.TRUE){
 			
 			EntityGridFramework gridframework = new EntityGridFactory().getEntityGridFramework(language, getTagger(language));
-			List<String> docs = new CorpusReader().readXML(filename);
+			Map<String, String> docs = new CorpusReader().readXML(filename);
 			int fileidx = 0;
-			for(String docAsString: docs){
+			for(String docAsString: docs.values()){
 				buffer = new StringBuffer();
 				if(DEBUG)debugFile = outputfile+fileidx+"_debug";
 				char grid [][] = gridframework.identifyEntitiesAndConstructGrid(docAsString);
-				FileOutputUtils.writeGridToFile(outputfile+fileidx, grid);
+				new FileOutputUtils().writeGridToFile(outputfile+fileidx, grid);
 				if(DEBUG)FileOutputUtils.writeDebugToFile(debugFile, buffer.toString());
 				fileidx++;
 			}
@@ -128,7 +139,7 @@ public class EntityGridFramework {
 			String doc = CorpusReader.readDataAsString(filename);
 		
 			char grid [][] = gridframework.identifyEntitiesAndConstructGrid(doc);
-			FileOutputUtils.writeGridToFile(outputfile, grid);
+			new FileOutputUtils().writeGridToFile(outputfile, grid);
 		}
 	} 
 	
@@ -162,13 +173,14 @@ public class EntityGridFramework {
 		return constructGrid(entities, sentences.size());
 	}
 	/**
-	 * Read in source text and invoke coreference resolve to identify entities.
-	 * @param String docContents
+	 * Read in source text and invoke annotations.
+	 * @param List of annotated sentences
 	 */
 	protected List<CoreMap> getAnnotatedDocument(String docAsString){
 		Annotation document = new Annotation(docAsString);
 		this.pipeline.annotate(document);
-		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
+		List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
+ 		//List<CoreMap> sentences = document.get(SentencesAnnotation.class);
 		//Map<String, ArrayList<Map <Integer, String>>> entities = identifyEntities(sentences);
 		
 		return sentences;
@@ -207,9 +219,11 @@ public class EntityGridFramework {
 				String ner = token.ner();
 				String POS = token.get(PartOfSpeechAnnotation.class);
 				System.out.println("POS "+POS+ " for "+token.lemma());
-				
+
+				//In French: "NC","NPP" = NOUN
 				if(POS.equalsIgnoreCase(NNP)|| POS.equalsIgnoreCase(NP)|| POS.equalsIgnoreCase(NNS)
-						|| POS.equalsIgnoreCase(NN) || POS.equalsIgnoreCase(N)|| POS.equalsIgnoreCase(NE)){
+						|| POS.equalsIgnoreCase(NN) || POS.equalsIgnoreCase(N)|| POS.equalsIgnoreCase(NE)
+						|| POS.equalsIgnoreCase(NC)|| POS.equalsIgnoreCase(NPP)){
 					
 					//get the Stanford dependency graph of the current sentence
 					SemanticGraph dependencies = sentence.get(BasicDependenciesAnnotation.class);
@@ -220,8 +234,7 @@ public class EntityGridFramework {
 							if(token.get(CoreAnnotations.ValueAnnotation.class).equals(edge.getTarget().get(CoreAnnotations.ValueAnnotation.class))){
 								GrammaticalRelation relation = edge.getRelation();
 								
-								isSubjOrObj = determineGrammaticalRelation(	entities, idx, token, isSubjOrObj,
-													relation);	
+								isSubjOrObj = determineGrammaticalRelation(	entities, idx, token, relation);	
 							}
 						}
 					}
@@ -237,30 +250,33 @@ public class EntityGridFramework {
 
 	private boolean determineGrammaticalRelation(
 			Map<String, ArrayList<Map<Integer, String>>> entities, int idx,
-			CoreLabel token, boolean isSubjOrObj, GrammaticalRelation relation) {
+			CoreLabel token, GrammaticalRelation relation) {
 		/**csubj,  csubjpass, {xsubj}: controlling subject}, subj,  nsubj (nominal subject), nsubjpass
 			I should maybe also have tracked nsubjpass (passive nominal subject)
 			and csubj (clausal subject).
 			And instead of just  pobj (object of a preposition) 
 			maybe also dobj ( direct object) and iobj ( indirect object )
 			*/	 
-		if(relation.equals(GrammaticalRelation.valueOf("pobj")) ||
-				relation.equals(GrammaticalRelation.valueOf("dobj"))
-						||relation.equals(GrammaticalRelation.valueOf("iobj"))){
+		boolean isSubjOrObj = false;
+		if(	relation.getShortName() == EnglishGrammaticalRelations.PREPOSITIONAL_OBJECT.getShortName() 
+			|| relation.getShortName() == EnglishGrammaticalRelations.OBJECT.getShortName()
+			|| relation.getShortName() == EnglishGrammaticalRelations.DIRECT_OBJECT.getShortName()
+			|| relation.getShortName() == EnglishGrammaticalRelations.INDIRECT_OBJECT.getShortName()
+			//|| relation.getShortName() == UniversalGrammaticalRelations.NOMINAL_MODIFIER.getShortName()
+			){//pobj: nmod pobj has changed to nmod in Stanford nlp 3.5.2
 			trackEntity(token.lemma(), idx, O, entities);
 			//System.out.println("found: "+token.lemma()+"  as "+relation);
 			isSubjOrObj = true;
-		}else if(relation.equals(GrammaticalRelation.valueOf("subj"))
-				||relation.equals(GrammaticalRelation.valueOf("xsubj"))
-				||relation.equals(GrammaticalRelation.valueOf("csubj"))
-				||relation.equals(GrammaticalRelation.valueOf("csubjpass"))
-				||relation.equals(GrammaticalRelation.valueOf("nsubj"))
-				||relation.equals(GrammaticalRelation.valueOf("nsubjpass"))){
+		}else if(relation.getShortName() == EnglishGrammaticalRelations.SUBJECT.getShortName()
+				||relation.getShortName() == EnglishGrammaticalRelations.CLAUSAL_SUBJECT.getShortName()
+				||relation.getShortName() == EnglishGrammaticalRelations.CLAUSAL_PASSIVE_SUBJECT.getShortName()
+				||relation.getShortName() == EnglishGrammaticalRelations.NOMINAL_SUBJECT.getShortName()
+				||relation.getShortName() == EnglishGrammaticalRelations.NOMINAL_PASSIVE_SUBJECT.getShortName()){
 			
 			trackEntity(token.lemma(), idx, S, entities);
 			//System.out.println("found: "+token.lemma()+"  as "+relation);
 			isSubjOrObj = true;
-		}System.out.println("found: "+token.lemma()+"  as "+relation);
+		}System.out.println("found: "+token.lemma()+"  as "+relation+" returning "+isSubjOrObj);
 		return isSubjOrObj;
 	}
 

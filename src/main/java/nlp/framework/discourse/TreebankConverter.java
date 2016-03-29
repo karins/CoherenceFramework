@@ -168,10 +168,10 @@ public class TreebankConverter {
 		setProperties(language, properties);
 		this.pipeline = new StanfordCoreNLP(properties);
 		
-		List<String> docs = new CorpusReader().readXML(filename);
+		Map<String, String> docs = new CorpusReader().readXML(filename);
 		
 		int fileidx = 0;
-		for(String docAsString: docs){
+		for(String docAsString: docs.values()){
 
 			List<List<Label>> sequences = getTreebankAnnotation(docAsString, depth);
 			extractSequences(sequences);			

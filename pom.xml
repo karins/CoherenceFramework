@@ -16,8 +16,8 @@
       <artifactId>maven-compiler-plugin</artifactId>
       <version>2.5.1</version>
       <configuration>
-        <source>1.7</source>
-        <target>1.7</target>
+        <source>1.8</source>
+        <target>1.8</target>
         <encoding>UTF-8</encoding>
       </configuration>
     </plugin>
@@ -49,10 +49,16 @@
     
   </plugins>
 </build>
-<properties>
+<!-- properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+    </properties-->
 <dependencies>
+	<dependency>
+		<groupId>commons-io</groupId>
+		<artifactId>commons-io</artifactId>
+		<version>2.4</version>
+	</dependency>
+
 		<!-- >dependency>
 			<groupId>de.abelssoft</groupId>
 			<artifactId>jwordsplitter</artifactId>
@@ -62,7 +68,7 @@
  	<dependency>
 			<groupId>de.danielnaber</groupId>
 			<artifactId>jwordsplitter</artifactId>
-			<version>3.5</version>
+			<version>4.1</version>
 		</dependency>
 		
 		<dependency>
@@ -88,14 +94,29 @@
 		<dependency>
 		    <groupId>edu.stanford.nlp</groupId>
 		    <artifactId>stanford-corenlp</artifactId>
-		    <version>3.5.1</version>
+		    <version>3.5.2</version>
 		</dependency>
 		<dependency>
 		    <groupId>edu.stanford.nlp</groupId>
 		    <artifactId>stanford-corenlp</artifactId>
-		    <version>3.5.1</version>
+		    <version>3.5.2</version>
 		    <classifier>models</classifier>
 		</dependency>
+	<!-- NEW: If you want to get a language models jar off of Maven for Chinese, Spanish, or German, add this to your pom.xml: -->
+	
+	<dependency>
+	    <groupId>edu.stanford.nlp</groupId>
+	    <artifactId>stanford-corenlp</artifactId>
+	    <version>3.5.2</version>
+	    <classifier>models-german</classifier>
+	</dependency>
+	
+	<dependency>
+	    <groupId>edu.stanford.nlp</groupId>
+	    <artifactId>stanford-corenlp</artifactId>
+	    <version>3.6.0</version>
+	    <classifier>models-french</classifier>
+	</dependency>
 
 	</dependencies>
 	

@@ -3,6 +3,7 @@ package nlp.framework.discourse;
 import java.io.File;
 import java.nio.CharBuffer;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -56,7 +57,8 @@ public class EntityExperiments {
 	private void getGrid(String path, String filename, String language,  boolean isXML){
 		Map<String,String> docs;
 		if(isXML){
-			docs = new CorpusReader().readXMLwithDocIds(path+File.separator+filename);
+			Map<String,List <String>> docList = new CorpusReader().readXMLwithDocIds(path+File.separator+filename);
+			docs = fitMap(new HashMap<String, String>(), docList);
 		}else{
 			docs = new CorpusReader().readDataAsDocs(path+File.separator+filename);
 		}
@@ -66,18 +68,21 @@ public class EntityExperiments {
 			List<CoreMap> sentences = framework.getAnnotatedDocument(docs.get(docid));
 			Map<String, ArrayList<Map <Integer, String>>> entities = framework.identifyEntities(sentences);
 			
-			FileOutputUtils.writeGridToFile(FileOutputUtils.getDirectory(path, "output", "grid"),
+			new FileOutputUtils().writeGridToFile(FileOutputUtils.getDirectory(path, "output", "grid"),
 											FileOutputUtils.getFilenameWithoutExtensions(filename)+"_grids", 
 											framework.constructGrid(entities, sentences.size()), true, docid, 
 											FileOutputUtils.isCompressed(filename));
 		}
 	}
 	
+	
 	private void getGridAndGraph(String path, String filename, String language, int projection, boolean isXML){
 		
-		Map<String,String> docs;
+		//Map<String, List<String>> docs;
+		Map<String, String> docs;
 		if(isXML){
-			docs = new CorpusReader().readXMLwithDocIds(path+File.separator+filename);
+			Map<String, List<String>> docList = new CorpusReader().readXMLwithDocIds(path+File.separator+filename);
+			docs = fitMap(new HashMap<String, String>(), docList);
 		}else{
 			docs = new CorpusReader().readDataAsDocs(path+File.separator+filename);
 		}
@@ -92,7 +97,7 @@ public class EntityExperiments {
 		graphdirectory.append(File.separator);
 		graphdirectory.append("graph"); 
 		graphdirectory.append(File.separator);
-		graphdirectory.append(filename+"_graph_scores");
+		graphdirectory.append(filename);
 		
 		//for(int fileidx = 0; fileidx< docs.size(); fileidx++){
 		int fileidx = 0;
@@ -109,14 +114,25 @@ public class EntityExperiments {
 					bipartitegraph.getLocalCoherence( projection), bipartitegraph);
 			System.out.println("entities"+entities.size());
 			
-			FileOutputUtils.writeGridToFile(FileOutputUtils.getDirectory(path, "output", "grid"),
-					FileOutputUtils.getFilenameWithoutExtensions(filename)+"_grids", 
+			new FileOutputUtils().writeGridToFile(FileOutputUtils.getDirectory(path, "output", "grid"),
+					//FileOutputUtils.getFilenameWithoutExtensions(filename),
+					filename, 
 					framework.constructGrid(entities, sentences.size()), true, docid, 
 					FileOutputUtils.isCompressed(filename));
 			fileidx++;
 		}
 		
-		FileOutputUtils.streamToFile(graphdirectory.toString(), stringbuffer);
+		new FileOutputUtils().streamToFile(graphdirectory.toString(), stringbuffer);
+	}
+
+	private Map<String, String> fitMap(Map<String, String> docs,
+			Map<String, List<String>> docList) {
+		//TODO:backwards compatiblility: sort it
+		for(String docid : docList.keySet()){
+			docs = new HashMap<String, String>();
+			docs.put(docid, String.join(";", docList.get(docid)));
+		}
+		return docs;
 	}
 
 	private String getPath(String filename, String outputdirectory, int fileidx) {

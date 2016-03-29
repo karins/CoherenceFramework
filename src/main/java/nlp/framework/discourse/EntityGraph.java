@@ -86,7 +86,7 @@ public class EntityGraph{
 		String tagger = args[5];
 		
 			
-		List<String> docs = new CorpusReader().readXML(filename);
+		Map<String, String> docs = new CorpusReader().readXML(filename);
 		
 		StringBuffer stringbuffer = new StringBuffer();
 		

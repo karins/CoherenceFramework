@@ -35,7 +35,7 @@ public class EntityTransitionExtractorTest extends TestCase {
 	
 	public void testExtractEntityTransitions(){
 		
-		EntityTransitionExtractor transitionExtractor = new EntityTransitionExtractor("C:\\SMT\\grid-mini-test", 2, 2);
+		EntityTransitionExtractor transitionExtractor = new EntityTransitionExtractor("grid-mini-test", 2, 2);
 		Map transitions = transitionExtractor.extractTransitions();
 		//[O, -]
 		assertEquals(message,7, transitions.get("[X, X]"));
@@ -49,7 +49,7 @@ public class EntityTransitionExtractorTest extends TestCase {
 	
 	public void testExtractEntityTransitions2(){
 		
-		EntityTransitionExtractor transitionExtractor = new EntityTransitionExtractor("C:\\SMT\\grid-mini-test", 2, 3);
+		EntityTransitionExtractor transitionExtractor = new EntityTransitionExtractor("grid-mini-test", 2, 3);
 		Map transitions = transitionExtractor.extractTransitions();
 		//[O, -]
 		assertEquals(message,35, transitions.get("[X, -, -]"));
@@ -60,7 +60,7 @@ public class EntityTransitionExtractorTest extends TestCase {
 
 	public void testComputeProbabilities(){
 		
-		EntityTransitionExtractor transitionExtractor = new EntityTransitionExtractor("C:\\SMT\\grid-mini-test", 2, 2);
+		EntityTransitionExtractor transitionExtractor = new EntityTransitionExtractor("grid-mini-test", 2, 2);
 		Map transitions = transitionExtractor.extractTransitions();
 		Map probabilities = transitionExtractor.computeProbabilities();
 		assertEquals(message, 0.004419191919191919, probabilities.get("[X, X]"));
@@ -74,7 +74,7 @@ public class EntityTransitionExtractorTest extends TestCase {
 	
 	public void testComputeProbabilities2(){
 		
-		EntityTransitionExtractor transitionExtractor = new EntityTransitionExtractor("C:\\SMT\\grid-mini-test", 2, 3);
+		EntityTransitionExtractor transitionExtractor = new EntityTransitionExtractor("grid-mini-test", 2, 3);
 		Map transitions = transitionExtractor.extractTransitions();
 		Map probabilities = transitionExtractor.computeProbabilities();
 		assertEquals(message,0.0013175230566534915, probabilities.get("[X, X, X]"));

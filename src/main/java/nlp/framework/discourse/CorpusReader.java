@@ -36,6 +36,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 import edu.stanford.nlp.dcoref.Document;
+import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.trees.PennTreeReader;
 import edu.stanford.nlp.trees.Tree;
 
@@ -139,7 +140,7 @@ public class CorpusReader {
 //			PennTreeReader treeReader = new PennTreeReader(new InputStreamReader(new FileInputStream(file)));
 			
 			for(String line = input.readLine(); line != null; line = input.readLine()) {
-				//System.out.println(line);
+				System.out.println(line);
 				if(line.startsWith(START)){	
 					docId = line;
 					
@@ -154,6 +155,54 @@ public class CorpusReader {
 			}docs.put(docId, docTrees);
 			
 			return docs;
+		} catch(IOException e) {
+			e.printStackTrace();
+			System.exit(1);
+			return null;
+		}
+		finally{
+			try {  input.close();  }  catch (Exception e) { /* log it ?*/ }
+		}
+	}
+
+	/**
+	 * Reads in contents of a file and returns as List of Trees
+	 * @param filename name of the file to read from
+	 * @return
+	 */
+	public List<Tree> outputDocAsPtbs(String filename){
+		//String START = new String("#");
+		//String docId = null;
+		//Map<String, List<Tree>> docs = new LinkedHashMap<String, List<Tree>>();
+		//List<Tree> docs = new ArrayList<Tree>();
+		List<Tree> docTrees = new ArrayList<Tree>();
+		BufferedReader input =  null;
+		try{
+			
+			//List<Tree> docTrees = new ArrayList<Tree>();
+			
+			CharsetDecoder decoder = StandardCharsets.UTF_8.newDecoder();
+			
+			InputStream inputStream =  new FileInputStream(new File(filename));
+			input = new BufferedReader(new InputStreamReader(decompressStream(inputStream)));//, decoder));
+			//PennTreeReader treeReader = new PennTreeReader(new InputStreamReader(new FileInputStream(new File(filename))));//, factory);
+//			PennTreeReader treeReader = new PennTreeReader(new InputStreamReader(new FileInputStream(file)));
+			
+			for(String line = input.readLine(); line != null; line = input.readLine()) {
+				if(!line.isEmpty()){//end of doc					
+					
+					if(line.startsWith("<doc")){
+						
+					}else if(line.endsWith("</doc>")){
+						
+					}
+					PennTreeReader treeReader = new PennTreeReader(new StringReader(line));
+					Tree tree = treeReader.readTree();
+					docTrees.add(tree);	
+				}
+			}//docs.put(docId, docTrees);
+			
+			return docTrees;
 		} catch(IOException e) {
 			e.printStackTrace();
 			System.exit(1);
@@ -199,6 +248,54 @@ public class CorpusReader {
 					contents.append("\n");
 				}
 			}
+			if(contents.length() >0){
+				docs.put(docId,contents.toString());
+				contents = new StringBuilder();
+			}
+			return docs;
+		} catch(IOException e) {
+			e.printStackTrace();
+			System.exit(1);
+			return null;
+		}
+		finally{
+			try {  input.close();  }  catch (Exception e) { System.out.print(e.toString()); }
+		}
+	}
+	
+	/**
+	 * Reads in contents of a file and returns as List of strings
+	 * @param filename name of the file to read from
+	 * @return
+	 */
+	public Map<String, List<String>> readDataAsDocsToList(String filename){
+		
+		String START = new String("#");
+		String docId = null;
+		Map<String, List<String>> docs = new LinkedHashMap<String, List<String>>();
+		BufferedReader input =  null;
+		try{
+			
+			List <String> contents = new ArrayList<String>();
+			CharsetDecoder decoder = StandardCharsets.UTF_8.newDecoder();
+			//input =  new BufferedReader(new InputStreamReader(new FileInputStream(new File(filename)), decoder));
+			InputStream inputStream =  new FileInputStream(new File(filename));
+			input = new BufferedReader(new InputStreamReader(decompressStream(inputStream), decoder));
+			
+			for(String line = input.readLine(); line != null; line = input.readLine()) {
+				
+				if(line.startsWith(START)){					
+					docId = line;					
+				}else if(line.isEmpty()){//end of doc
+					
+					docs.put(docId,contents);
+					contents = new ArrayList<String>();	
+					
+				}else{
+					contents.add(line);
+					//contents.append("\n");
+				}
+			}
 			
 			return docs;
 		} catch(IOException e) {
@@ -210,7 +307,6 @@ public class CorpusReader {
 			try {  input.close();  }  catch (Exception e) { /* log it ?*/ }
 		}
 	}
-	
 
 	
 	/**
@@ -283,21 +379,58 @@ public class CorpusReader {
 		return grid;
 	}
 	
-	
 	/**
 	 * Reads xml and extracts the documents, identified by <doc> tag.
 	 * @param xmlString
 	 * @return
 	 */
-	public List<String> readXMLString(String xmlString){
-		List<String> docs = new ArrayList<String>();
+	public Map<String, String> readMultilingualXMLString(String xmlString){
+		Map<String, String> docs = new HashMap<String, String>();
 		try {
 			SAXParserFactory spf = SAXParserFactory.newInstance();
 			spf.setNamespaceAware(true);
 			
 			SAXParser saxParser = spf.newSAXParser();
-			CharsetDecoder decoder = StandardCharsets.UTF_8.newDecoder();
-			saxParser.parse(new StringBufferInputStream(xmlString), this.new DocumentSaxParser(docs));
+			//CharsetDecoder decoder = StandardCharsets.ISO_8859_1.newDecoder();
+			
+			Reader isr = new java.io.StringReader(xmlString);
+			InputSource is = new InputSource();
+			is.setCharacterStream(isr);
+			saxParser.parse(is, this.new DocumentSaxParser(docs,false));
+			//InputStream is = org.apache.commons.io.IOUtils.toInputStream(xmlString, StandardCharsets.ISO_8859_1);
+			
+			//saxParser.parse(new StringBufferInputStream(xmlString), this.new DocumentSaxParser(docs,false));
+			
+			//saxParser.parse(new InputSource(new java.io.StringReader(xmlString, decoder)), this.new DocumentSaxParser(docs,false));
+			//s/axParser.parse(new InputStream(xmlString, decoder)), this.new DocumentSaxParser(docs,false));
+			
+		} catch (SAXException | IOException | ParserConfigurationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return docs;
+	}
+	/**
+	 * Reads xml and extracts the documents, identified by <doc> tag.
+	 * @param xmlString
+	 * @return
+	 */
+	public Map<String, String> readXMLString(String xmlString){
+		Map<String, String> docs = new HashMap<String, String>();
+		try {
+			SAXParserFactory spf = SAXParserFactory.newInstance();
+			spf.setNamespaceAware(true);		
+			SAXParser saxParser = spf.newSAXParser();
+			
+			//CharsetDecoder decoder = StandardCharsets.UTF_8.newDecoder();
+			//saxParser.parse(new StringBufferInputStream(xmlString), this.new DocumentSaxParser(docs,false));
+			
+			
+			Reader isr = new java.io.StringReader(xmlString);
+			InputSource is = new InputSource();
+			is.setCharacterStream(isr);
+			saxParser.parse(is, this.new DocumentSaxParser(docs,false));
 			
 		} catch (SAXException | IOException | ParserConfigurationException e) {
 			// TODO Auto-generated catch block
@@ -314,6 +447,7 @@ public class CorpusReader {
 	 */
 	public Map<String, String> readXMLfromConsole(){
 		
+		//Map<String, List<String>> docIds = new LinkedHashMap<String,List<String>>();
 		Map<String, String> docIds = new LinkedHashMap<String, String>();
 		try {
 			SAXParserFactory spf = SAXParserFactory.newInstance();
@@ -328,7 +462,7 @@ public class CorpusReader {
 			InputSource inputsource = new InputSource(reader);
 			inputsource.setEncoding("UTF-8");
 			
-			saxParser.parse(inputsource, this.new DocumentSaxParser( docIds));
+			saxParser.parse(inputsource, this.new DocumentSaxParser( docIds, true));
 			
 		} catch (SAXException | IOException | ParserConfigurationException e) {
 			
@@ -339,9 +473,9 @@ public class CorpusReader {
 		return docIds;
 	}
 	
-	public Map<String, String> readXMLwithDocIds(String filename){
+	public Map<String, List<String>> readXMLwithDocIds(String filename){
 		
-		Map<String, String> docs = new LinkedHashMap<String, String>();
+		Map<String, List<String>> docs = new LinkedHashMap<String, List<String>>();
 		try {
 			SAXParserFactory spf = SAXParserFactory.newInstance();
 			spf.setNamespaceAware(true);
@@ -367,9 +501,9 @@ public class CorpusReader {
 	 * @param xmlString
 	 * @return
 	 */
-	public List<String> readXML(String filename){
+	public Map<String,String> readXML(String filename){
 		
-		List<String> docs = new ArrayList<String>();
+		Map<String, String> docs = new HashMap<String,String>();
 		try {
 			SAXParserFactory spf = SAXParserFactory.newInstance();
 			spf.setNamespaceAware(true);
@@ -383,10 +517,9 @@ public class CorpusReader {
 			inputsource.setEncoding("UTF-8");
 			
 			//if(isMultipleDocs){
-				saxParser.parse(inputsource, this.new DocumentSaxParser(docs));
+			saxParser.parse(inputsource, this.new DocumentSaxParser(docs, true));
 			//}else {
 				//saxParser.parse(inputsource, this.new SentenceSaxParser(docs));
-				
 			//}
 			
 			
@@ -403,10 +536,11 @@ public class CorpusReader {
 	 * @param xmlString
 	 * @return
 	 */
-	public List<List<String>> readSGML(String filename){
+	//public List<List<String>> readSGML(String filename){
+	public List <String> readSGML(String filename){
 		
-		//List<String> docs = new ArrayList<String>();
-		List <List<String>> docs  = new ArrayList<List<String>>();
+		List<String> docs = new ArrayList<String>();
+		//List <List<String>> docs  = new ArrayList<List<String>>();
 		try {
 			SAXParserFactory spf = SAXParserFactory.newInstance();
 			spf.setNamespaceAware(true);
@@ -436,32 +570,39 @@ public class CorpusReader {
 	 *
 	 */
 	private class DocumentSaxParser extends DefaultHandler{
-		
-		private List <String> docs;
-		private Map<String, String> docIds;
+		private Map<String, String> docs;
+		//private List <String> sentences;
+		//private List <String> docAsString;
+		private Map<String, List<String>> docSentences;
 		private StringBuffer content;// = new StringBuffer();
+		private List<String> contents;
 		private boolean inElement;
 		private String id;
+		private int dummy_id = 0;
 		
 		/**
 		 * simply tracks doc content, no attributes
 		 * @param docs
 		 */
-		public DocumentSaxParser(List<String> docs) {
-			this.docs = docs;
+		/*public DocumentSaxParser(List<String> sentences) {
+			this.docAsString = sentences;
+		}*/
+		public DocumentSaxParser(Map<String, String> docs, boolean multiple) {
+			this.docs= docs;
 		}
 		
 		/** 
 		 * this constructor will track doc ids with relevant doc
 		 * @param docIds
 		 */
-		public DocumentSaxParser(Map<String, String> docIds) {
-			this.docIds = docIds;
+		public DocumentSaxParser(Map<String, List<String>> docSentences) {
+			this.docSentences = docSentences;
 		}
 		
 		public void startElement(String s, String s1, String elementName, Attributes attributes) throws SAXException {
 			if (elementName.equalsIgnoreCase("doc")) { 
 				content = new StringBuffer();
+				contents = new ArrayList<String>();
 				inElement =  true;
 				if(attributes != null){
 					//this.id = attributes.getValue(1);
@@ -472,19 +613,35 @@ public class CorpusReader {
 						this.id = attributes.getValue("id");
 					}
 				}
-			}
+			}dummy_id++;
 		}
 		public void characters (char characters[], int start, int length){
-			if(content != null && inElement)content.append(characters, start, length);
+			if(content != null && inElement){
+				content.append(characters, start, length);
+				contents.add(String.valueOf(characters));
+			}
 		}
 		
 		public void endElement(String s, String s1, String element) throws SAXException {
 			if (element.equalsIgnoreCase("doc")) {
-				if(docs != null){
-					docs.add(content.toString());
-				}else if(docIds != null){
-					docIds.put(id, content.toString());
+				if(docSentences != null){
+					if (id != null){
+						docSentences.put(id, contents);
+						//sentences.add(contents);
+						//String.join(";", contents)
+						//docAsString.add(content.toString());
+					}else{
+						docSentences.put(String.valueOf(dummy_id),contents);
+					}
+				}else if(docs != null){
+					//docIds.put(id, content.toString());
+					if (id != null){
+						docs.put(id, content.toString());
+					}else{
+						docs.put(String.valueOf(dummy_id), content.toString());
+					}
 				}
+				
 				inElement = false;
 			}
 		}
@@ -497,13 +654,18 @@ public class CorpusReader {
 	 */
 	private class SentenceSaxParser extends DefaultHandler{
 		
-		private List <List<String>> docs;
+		//private List <List<String>> docs;
+		private List <String> docs;
 		private List <String> sentences;
 		private StringBuffer content;// = new StringBuffer();
 		private boolean inElement;
 		private boolean inSentence;
 		
-		public SentenceSaxParser(List<List<String>> docs) {
+		
+		public SentenceSaxParser(List<String> docs) {
+		//	this.docs = docs;
+		//}
+		//public SentenceSaxParser(List<List<String>> docs) {
 			//this.sentences = sentences;
 			this.docs = docs;
 			sentences = new ArrayList<String>();
@@ -530,7 +692,7 @@ public class CorpusReader {
 			if (element.equalsIgnoreCase("doc")) {
 				
 				if(docs != null){
-					docs.add(sentences );
+					docs.addAll(sentences );
 				}
 				inElement = false;
 			}

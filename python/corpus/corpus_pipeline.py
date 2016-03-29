@@ -14,7 +14,7 @@ from corpus.extract_lexical_cohesion_errors import extract_nouns, derive_errors
 from corpus.extract_connectives import extract_connectives
 from corpus.compare_connectives import extract_connective_errors as connective_errors
 from corpus.inject_errors import inject_errors 
-from process_alignments import read_alignments
+from corpus.process_alignments import read_alignments
 import os, argparse,logging, sys
 from corpus.inject_errors import error_type_all, error_type_lexical, error_type_structural, error_type_connectives
 

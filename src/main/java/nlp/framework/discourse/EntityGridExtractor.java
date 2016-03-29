@@ -136,7 +136,9 @@ public class EntityGridExtractor extends EntityGridFramework {
 	 */
 	public char[][] convertPtbsStringToGrids(String ptbtree)  {
 		PennTreebankLanguagePack tlp = new PennTreebankLanguagePack();
+		tlp.setGenerateOriginalDependencies(true);
 		GrammaticalStructureFactory gsf = tlp.grammaticalStructureFactory();
+		
 		Map<String, ArrayList<Map <Integer, String>>> entities = new HashMap<String, ArrayList<Map <Integer, String>>>();
 		PennTreeReader treeReader = new PennTreeReader(new StringReader(ptbtree));
 		try{
@@ -156,7 +158,7 @@ public class EntityGridExtractor extends EntityGridFramework {
 
 	
 	
-	private void getDependenciesForNouns(Tree tree, Map<String, ArrayList<Map <Integer, String>>> entities, int idx, GrammaticalStructureFactory gsf ) {
+private void getDependenciesForNouns(Tree tree, Map<String, ArrayList<Map <Integer, String>>> entities, int idx, GrammaticalStructureFactory gsf ) {
 			
 		//only get dependencies for the nouns..
 		List <TaggedWord> words = tree.taggedYield();
@@ -171,7 +173,8 @@ public class EntityGridExtractor extends EntityGridFramework {
 				for(TypedDependency dependency : tdl){
 					
 					//find the dependency for the noun in question
-					if(word.value().equals(dependency.dep().nodeString())){
+					//if(word.value().equals(dependency.dep().nodeString())){
+					if(word.value().equals(dependency.dep().word())){
 						
 						if(SUBJECT.contains(dependency.reln())){
 							

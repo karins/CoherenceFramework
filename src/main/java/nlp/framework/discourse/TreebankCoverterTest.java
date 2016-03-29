@@ -25,14 +25,13 @@ public class TreebankCoverterTest extends TestCase {
 			"common theme of aversion to immigrants and promotion of simplistic policies to control them. ";
 	
 	public static final String string1 ="That's good news, Dr Leak said.";
-	
-	public static final String xmlFrench = "<refset setid=\"newsdev2009\"><doc docid=\"napi.hu/2007/12/12/0\" genre=\"news\"><hl><seg id=\"1\"> L'inflation, en Europe, a d�rap� sur l'alimentation. </seg>"+
-			"</hl><p><seg id=\"2\">  L'inflation acc�l�r�e, mesur�e dans la zone euro, est due principalement � l'augmentation rapide des prix de l'alimentation. </seg></p></doc></refset>";
+	public static final String xmlFrench = "<refset setid=\"newsdev2009\"><doc docid=\"napi.hu/2007/12/12/0\" genre=\"news\"><hl><seg id=\"1\"> L'inflation, en Europe, a dérapé sur l'alimentation </seg>"+
+			"</hl><p><seg id=\"2\">  L'inflation accélérée, mesurée dans la zone euro, est due principalement à l'augmentation rapide des prix de l'alimentation. </seg></p></doc></refset>";
 	
 	public static final String string3 ="Still, European governments typically complain about the lack of fiscal resources to support R&D (a far fetched argument given the miniscule share of research spending in the oversized European budgets) and, whenever the European Commission allows them, they subsidize innovative firms, or those that they think are more likely to invest in R&D.";
 	public static final String string4 = "France and Italy, for example, demanded that the limits imposed by the budget deficits of euro zone members by the Stability and Growth Pact exclude public spending for research.";
 	public static final String string5 = "However, if we distinguish between the industries that produce information and communications technologies (ICT) and those that are simply users of such technologies, we can see that the productivity growth gap stems almost entirely from the weakness of Europe's ICT producing sector.";
-	public static final String string6 = "The coup de gr�ce was delivered by the government's decision (when the crisis came) to keep bank deposits fixed in dollars and to change debts owed to banks into pesos, thereby bankrupting the country's financial system with a single stroke of the pen.";
+	public static final String string6 = "The coup de grâce was delivered by the government's decision (when the crisis came) to keep bank deposits fixed in dollars and to change debts owed to banks into pesos, thereby bankrupting the country's financial system with a single stroke of the pen.";
 	public static final String string7 ="Yet during the boom years of 1993-1998, public spending outran taxes enough to push Argentina's debt-to-GDP ratio from 29 to 44%.";
 	public static final String string8 ="When the dollar appreciated and recession came, politicians with too little statesmanship to balance the budget in good times turned out to have too little courage to balance the budget when times turned hard.";
 	public static final String fourSentences = "The establishment view--say, in US Treasury Undersecretary John Taylor's office--is that Argentina's collapse is the fault of its politicians."+
@@ -55,7 +54,7 @@ public class TreebankCoverterTest extends TestCase {
 	
 		//TreebankConverter converter = new TreebankConverter();
 		
-		List<String> docs = new CorpusReader().readXMLString(xml);
+		Map<String, String> docs = new CorpusReader().readXMLString(xml);
 		StringBuffer buffer = converter.parseString(docs.get(0),  TreebankConverter.ENGLISH, 2);
 		//tree: (ROOT (X (NP (NNP Food)) (: :) (FRAG (SBAR (WHADVP (WRB Where)) (S (NP (JJ European) (NN inflation)) (VP (VBD slipped) (PRT (RP up)))))) (. .)))
 		//label :  NP : FRAG .
@@ -107,7 +106,7 @@ public class TreebankCoverterTest extends TestCase {
 		
 		//TreebankConverter converter = new TreebankConverter();
 		
-		List<String> docs = new CorpusReader().readXMLString(xml2);
+		Map<String, String> docs = new CorpusReader().readXMLString(xml2);
 		StringBuffer buffer = converter.parseString(docs.get(0),  TreebankConverter.ENGLISH, 2);
 		//NP*np , VP*vbz . NP*nnp VP*vbd . NP*dt VP*vbz .;
 		assertEquals(message, "NP , VP . NP VP . NP VP .", buffer.toString().trim());
@@ -211,7 +210,7 @@ public class TreebankCoverterTest extends TestCase {
 		Map< String, Integer> counts = converter.getProductionCounts();
 		//String production1 = new String("NP NP .");
 		String production = new String("NP VP .");
-		
+		//{NP*np VP*vbz=1, NP*prp VP*vbp=1, NP*jj VP*vbd=2}
 		assertEquals(message, 4, counts.get(production).intValue());
  		
 	}

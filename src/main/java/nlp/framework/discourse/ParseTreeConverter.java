@@ -1,5 +1,6 @@
 package nlp.framework.discourse;
 
+import java.io.File;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -35,7 +36,8 @@ public class ParseTreeConverter {
 		//converter.parse();
 		String filename = args[0];
 		String outputfile = args[1];
-		converter.parse(filename, outputfile);
+		boolean isXML = new Boolean(args[2]);
+		converter.parse(filename, outputfile, isXML);
 	}
 	
 	/**
@@ -96,14 +98,33 @@ public class ParseTreeConverter {
 	 */
 	public void parse(String filename, String outputfile){
 		
-		this.pipeline = new StanfordCoreNLP(new Properties());
+		parse(filename, outputfile, true);
+	}
+	/**
+	 * Parses documents into parse trees.
+	 * @param filename of file to be parsed. this contains documents with doc tag boundaries
+	 * @param  outputfile, filename of output file for parse trees to be written to. 
+	 * This will write to one outputfile with parse trees for each document separated by doc tags 
+	 */
+	public void parse(String filename, String outputfile, boolean isXML){
 		
-		List<String> docs = new CorpusReader().readXML(filename);
+		Properties properties = new Properties();	
+		properties.put("-parseInside", "HEADLINE|P");
+		properties.put("annotators", "tokenize, ssplit, pos, lemma, parse");
+		properties.put("parse.originalDependencies", true);
+		this.pipeline = new StanfordCoreNLP(properties);
 		
-		StringBuffer trees = new StringBuffer();
+		Map<String, String> docs = null;
+		if(isXML){
+			new CorpusReader().readXML(filename);
+		}else{		
+			docs = new CorpusReader().readDataAsDocs(filename);
+		}
+		
+		//StringBuffer trees = new StringBuffer();
 		int index = 0;	
-		for(String docAsString: docs){
-			
+		for(String docAsString: docs.values()){
+			StringBuffer trees = new StringBuffer();
 			getParseTree(docAsString, trees);
 			FileOutputUtils.streamToFile(outputfile+index, trees);
 			index++;

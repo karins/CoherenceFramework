@@ -1,4 +1,7 @@
 '''
+
+Takes as input a document with <doc> tags and outputs in doctext format.
+
 Created on 19 Nov 2015
 
 @author: Karin

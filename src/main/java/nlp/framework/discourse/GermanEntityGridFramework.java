@@ -1,5 +1,6 @@
 package nlp.framework.discourse;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -18,19 +19,22 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
  */
 public class GermanEntityGridFramework extends EntityGridFramework {
 
-	//private Set<String> POS_TAGS = new HashSet<String>(){ NN, N};
+	public static final String GERMAN_PARSER = "edu/stanford/nlp/models/lexparser/germanPCFG.ser.gz";
+	public static final String GERMAN_TAGGER = "edu/stanford/nlp/models/pos-tagger/german/german.tagger";
 	
-	public GermanEntityGridFramework(String url) {
+	public GermanEntityGridFramework() {
 		super();		
 		Properties properties = new Properties();	
 		properties.put("-parseInside", "HEADLINE|P");
 		properties.put("annotators", "tokenize, ssplit, pos, lemma, parse");
-		properties.put("pos.model", url);		
-		properties.put("parse.flags", "");
+		properties.put("pos.model", GERMAN_TAGGER);		
+		//properties.put("parse.flags", "");
 		//props.put("parse.model", url);
-		properties.put("parse.model", "edu/stanford/nlp/models/lexparser/germanPCFG.ser.gz");
+		properties.put("parse.model", GERMAN_PARSER);
+		//properties.put("parse.originalDependencies", true);
+		//properties.put("parse.model", GERMAN_PARSER);
 		this.pipeline = new StanfordCoreNLP(properties);	
-		System.out.println("GermanEntityGrid- setting to "+url);
+		System.out.println("GermanEntityGrid- PARSER= "+GERMAN_PARSER+ " POS TAGGER="+GERMAN_TAGGER);
 	}
 	/**
 	 * In addition to the functionality of the base class, this method applies a compound splitter to the entities. This is because
