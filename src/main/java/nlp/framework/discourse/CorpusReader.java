@@ -503,7 +503,7 @@ public class CorpusReader {
 	 */
 	public Map<String,String> readXML(String filename){
 		
-		Map<String, String> docs = new HashMap<String,String>();
+		Map<String, String> docs = new LinkedHashMap<String,String>();
 		try {
 			SAXParserFactory spf = SAXParserFactory.newInstance();
 			spf.setNamespaceAware(true);

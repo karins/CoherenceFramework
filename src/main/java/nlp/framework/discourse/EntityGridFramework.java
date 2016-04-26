@@ -45,19 +45,21 @@ public class EntityGridFramework {
 	private static final String NE = "NE";
 	private static final String NC = "NC";
 	private static final String NPP = "NPP";
+	//Spanish tags:
+	private static final String nc00000 = "nc00000";
+	private static final String nc0n000 = "nc0n000";
+	private static final String nc0p000 = "nc0p000";	
+	private static final String nc0s000 = "nc0s000";
+	private static final String np00000 = "np00000";
 	
 	
 	//private Set<String> POS_TAGS = new HashSet<String>(){NNP, NP, NNS, NN, N, NE};
 	
-	//public static final String GERMAN_TAGGER = "\\stanford-postagger-full-2013-11-12\\stanford-postagger-full-2013-11-12\\models\\german-fast.tagger";
-	//public static final String GERMAN_TAGGER = File.separator+"stanford-corenlp-3.5.2-models-german"+File.separator+"stanford-corenlp-3.5.2-models-german"+File.separator+"models"+File.separator+"german-fast.tagger";
-	public static final String GERMAN_TAGGER = "/stanford-corenlp-3.5.2-models-german/stanford-corenlp-3.5.2-models-german/models/german-fast.tagger";
-	//public static final String GERMAN_TAGGER = File.pathSeparator+"edu"+File.pathSeparator+"stanford"+File.pathSeparator+"nlp"+File.pathSeparator+"models"+File.pathSeparator+"pos-tagger"+File.pathSeparator+"german"+File.pathSeparator+"german-fast.tagger";
-	//public static final String GERMAN_TAGGER = "stanford-corenlp-3.5.2-models-german"+File.pathSeparator+"models"+File.pathSeparator+"pos-tagger"+File.pathSeparator+"german"+File.pathSeparator+"german-fast.tagger";
-	//public static final String FRENCH_TAGGER = "stanford-corenlp-3.6.0-models-french"+File.pathSeparator+"models"+File.pathSeparator+"pos-tagger"+File.pathSeparator+"french.tagger";
-	public static final String FRENCH_TAGGER = "/pos-tagger/french.tagger";
+	//public static final String GERMAN_TAGGER = "/stanford-corenlp-3.5.2-models-german/stanford-corenlp-3.5.2-models-german/models/german-fast.tagger";
+	//public static final String FRENCH_TAGGER = "/pos-tagger/french.tagger";
 	private static final String FRENCH = "French";
 	private static final String GERMAN = "German";
+	private static final String SPANISH = "Spanish";
 	private static final String ENGLISH = "English";
 	private static final int SALIENCE = 2;
 	protected static final boolean DEBUG = true;
@@ -65,6 +67,7 @@ public class EntityGridFramework {
 	protected static StringBuffer buffer = new StringBuffer();
 	
 	protected StanfordCoreNLP pipeline;
+	protected Properties properties;
 	private char grid[][];
 	//private int sentences; 
 	
@@ -75,12 +78,13 @@ public class EntityGridFramework {
 	 */
 	public EntityGridFramework() {
 	
-		Properties properties = new Properties();	
+		properties = new Properties();	
 		properties.put("-parseInside", "HEADLINE|P");
 		properties.put("annotators", "tokenize, ssplit, pos, lemma, parse");
 		properties.put("parse.originalDependencies", true);
 		//properties.setProperty("tokenize.whitespace", "true");//for annotator tokenize
-		// properties.setProperty("ssplit.eolonly", "true");//for annotator ssplit
+		//properties.setProperty("ssplit.eolonly", "true");//for annotator ssplit
+		properties.put("ssplit.eolonly", "true");//for annotator ssplit
 
 		this.pipeline = new StanfordCoreNLP(properties);	
 	}
@@ -99,6 +103,7 @@ public class EntityGridFramework {
 		//properties.put("parse.model", "edu/stanford/nlp/models/lexparser/frenchFactored.ser.gz");
 		properties.put("parse.model",urlForParseModel);
 		properties.put("pos.model",urlForPOStagger);
+		properties.put("ssplit.eolonly", "true");//for annotator ssplit
 		this.pipeline = new StanfordCoreNLP(properties);	
 	}
 	/**
@@ -121,7 +126,8 @@ public class EntityGridFramework {
 		
 		if(Boolean.valueOf(multiple) == Boolean.TRUE){
 			
-			EntityGridFramework gridframework = new EntityGridFactory().getEntityGridFramework(language, getTagger(language));
+			EntityGridFramework gridframework = new EntityGridFactory().getEntityGridFramework(language, 
+							LanguageConfiguration.getTagger(language));
 			Map<String, String> docs = new CorpusReader().readXML(filename);
 			int fileidx = 0;
 			for(String docAsString: docs.values()){
@@ -143,14 +149,23 @@ public class EntityGridFramework {
 		}
 	} 
 	
-	
+	/*
 	private static String getTagger(String language) {
 		switch(language){
-			case FRENCH: return FRENCH_TAGGER;
-			case GERMAN: return GERMAN_TAGGER;
+			case FRENCH: return FrenchEntityGridFramework.FRENCH_TAGGER;
+			case GERMAN: return GermanEntityGridFramework.GERMAN_TAGGER;
+			case SPANISH: return SpanishEntityGridFramework.SPANISH_TAGGER;
 		}
 		return null;
 	}
+	private static String getParser(String language) {
+		switch(language){
+			case FRENCH: return FrenchEntityGridFramework.FRENCH_PARSER;
+			case GERMAN: return GermanEntityGridFramework.GERMAN_PARSER;
+			case SPANISH: return SpanishEntityGridFramework.SPANISH_PARSER;
+		}
+		return null;
+	}*/
 
 	
 	/**
@@ -221,9 +236,10 @@ public class EntityGridFramework {
 				System.out.println("POS "+POS+ " for "+token.lemma());
 
 				//In French: "NC","NPP" = NOUN
-				if(POS.equalsIgnoreCase(NNP)|| POS.equalsIgnoreCase(NP)|| POS.equalsIgnoreCase(NNS)
+				/*if(POS.equalsIgnoreCase(NNP)|| POS.equalsIgnoreCase(NP)|| POS.equalsIgnoreCase(NNS)
 						|| POS.equalsIgnoreCase(NN) || POS.equalsIgnoreCase(N)|| POS.equalsIgnoreCase(NE)
-						|| POS.equalsIgnoreCase(NC)|| POS.equalsIgnoreCase(NPP)){
+						|| POS.equalsIgnoreCase(NC)|| POS.equalsIgnoreCase(NPP)){*/
+				if(isNoun(POS)){
 					
 					//get the Stanford dependency graph of the current sentence
 					SemanticGraph dependencies = sentence.get(BasicDependenciesAnnotation.class);
@@ -247,6 +263,25 @@ public class EntityGridFramework {
 		}return entities;
 	}
 
+	private boolean isNoun(String POS_tag){
+		
+		if(POS_tag.equalsIgnoreCase(NNP)|| POS_tag.equalsIgnoreCase(NP)|| POS_tag.equalsIgnoreCase(NNS)
+		|| POS_tag.equalsIgnoreCase(NN) || POS_tag.equalsIgnoreCase(N)|| POS_tag.equalsIgnoreCase(NE)
+		|| POS_tag.equalsIgnoreCase(NC)|| POS_tag.equalsIgnoreCase(NPP)){
+			return true;
+		}else if(POS_tag.equalsIgnoreCase(nc00000) ||  POS_tag.equalsIgnoreCase(nc0n000)  || POS_tag.equalsIgnoreCase(nc0p000)
+				|| POS_tag.equalsIgnoreCase(nc0s000) || POS_tag.equalsIgnoreCase(np00000)){
+			/* Spanish noun tags:
+			nc00000	Unknown common noun (neologism, loanword)	minidisc, hooligans, re-flotamiento
+			nc0n000	Common noun (invariant number)	hipÃ³tesis, campus, golf
+			nc0p000	Common noun (plural)	aÃ±os, elecciones
+			nc0s000	Common noun (singular)	lista, hotel, partido
+			np00000	Proper noun	MÃ¡laga, Parlamento, UFINSA */
+			return true;
+		}
+		
+		return false;
+	}
 
 	private boolean determineGrammaticalRelation(
 			Map<String, ArrayList<Map<Integer, String>>> entities, int idx,

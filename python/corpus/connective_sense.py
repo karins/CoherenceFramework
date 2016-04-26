@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Mar 30 07:59:21 2016
+
+@author: karin
+"""
+
 '''
 Takes as input a list of connectives, as output by discourse tagger (Pitler and Nenkova, http://www.cis.upenn.edu/~nlp/software/discourse.html)
  and previously extracted by script (analyse_connectives.py)
@@ -24,21 +31,16 @@ def main(args):
     #MT_connectives_per_doc = defaultdict(list)
     #PE_connectives_per_doc  = defaultdict(list)
     
-    PE_connectives_per_doc = extract_connectives(args.directory+os.sep+'pe',  defaultdict(list))
-    MT_connectives_per_doc = extract_connectives(args.directory+os.sep+'mt',  defaultdict(list))
-    print PE_connectives_per_doc
-    print MT_connectives_per_doc
-    derive_errors(PE_connectives_per_doc, MT_connectives_per_doc, args.output)
     
-def  extract_connective_errors(input_directory_pe, input_directory_mt, output):    
+#def  extract_connective_errors(input_directory_pe, input_directory_mt, output):    
     #MT_connectives_per_doc = defaultdict(list)
     #PE_connectives_per_doc  = defaultdict(list)
     
-    PE_connectives_per_doc = extract_connectives(input_directory_pe,  defaultdict(list))
-    MT_connectives_per_doc = extract_connectives(input_directory_mt,  defaultdict(list))
-    derive_errors(PE_connectives_per_doc, MT_connectives_per_doc, output)
+    PE_connectives_per_doc = extract_connectives(args.pe,  defaultdict(list))
+    MT_connectives_per_doc = extract_connectives(args.mt,  defaultdict(list))
+    compare_sense(PE_connectives_per_doc, MT_connectives_per_doc, args.output)
     
-def derive_errors(PE_connectives_per_doc, MT_connectives_per_doc, output):
+def compare_sense(PE_connectives_per_doc, MT_connectives_per_doc, output):
     """
     from:
     1      after#9#Temporal 
@@ -87,16 +89,20 @@ def derive_errors(PE_connectives_per_doc, MT_connectives_per_doc, output):
             #deleted_MT_connectives =[connective for connective in MT_connectives[lineno] if connective not in line] 
 #            deleted_MT_connectives =[connective for connective in MT_connectives_per_doc[doc][lineno] if connective not in line]
             for connective in MT_connectives_per_doc[doc][line]:
-                
-                if connective not in PE_connectives:
-                    deleted_MT_connectives.append(connective)
+                print 'comparing %s', connective
+                print 'to %s ',[con for con in PE_connectives]
+                if connective.lower() not in [con.lower() for con in PE_connectives]:#PE_connectives:
+                    #deleted_MT_connectives.append(connective)
+                    deleted_MT_connectives.append(connective+':'+MT_connectives_per_doc[doc][line][connective])
             #inserted_PE_connectives =[connective for connective in PE_connectives if connective not in MT_connectives_per_doc[doc][lineno]]
                 
             for connective in PE_connectives:
                 print 'checking %s against' %connective
                 print MT_connectives_per_doc[doc][line]
-                if connective not in MT_connectives_per_doc[doc][line]:
-                    inserted_PE_connectives.append(connective)
+                #if connective not in MT_connectives_per_doc[doc][line]:
+                if connective.lower() not in [mt.lower for mt in MT_connectives_per_doc[doc][line]]:#MT_connectives_per_doc[doc][line]:
+                    #inserted_PE_connectives.append(connective)
+                    inserted_PE_connectives.append(connective+':'+MT_connectives_per_doc[doc][line][connective])
             print 'deleted_MT_connectives: inserted_PE_connectives'
             print deleted_MT_connectives
             print inserted_PE_connectives
@@ -119,30 +125,46 @@ def derive_errors(PE_connectives_per_doc, MT_connectives_per_doc, output):
                  errors_per_doc[doc][int(line)] = {inserted_in_PE: [],removed_in_PE: MT_connectives}
                  """  
     print errors_per_doc
-    if not os.path.exists(output): 
-        os.makedirs(output)
+    #if not os.path.exists(output): 
+    #    os.makedirs(output)
     #with open(os.path.join(output+'connective_errors'), 'w') as output: 
     f = open( output+'_json', 'w')
     f.write( json.dumps(errors_per_doc ) )
     #f = open( output+'_t'+threshold+'_json', 'w')
-    #with open(output, 'w') as output:
-        #output.write(errors)
-        #print 'ERRORS:'
-        #print errors_missing
-        #print errors_sense
-        #errors = errors_missing.copy()
-        #errors.update(errors_sense)
-    """       for doc,lines in errors_per_doc.items():
-    #for k,values in errors.items():
-        output.write(str(doc)+' \t')
-        #for v in values:
-        #    output.write(v+' ')
-        for line, connectives in lines.items():
-        for line in lines:
-            output.write(line)
-        output.write('\n')
-        """
-        
+    with open(output+'_anal', 'w') as output_anal:
+        with open(output+'_txt', 'w') as output:
+            for doc,lines in errors_per_doc.items():
+        #for k,values in errors.items():
+                output.write('doc='+str(doc)+' \t')
+                for line, connective_lists in lines.items():
+                    #print(line)
+                    if connective_lists:
+                        output.write('\n\t \t line:'+str(line))
+                    #errors_per_doc[doc][lineno]= {inserted_in_PE                        
+                    
+                    if connective_lists[removed_in_PE]:
+                        output.write('\n\t\t\t\t removed:')# +str(removed_in_PE))
+                        #if connective_lists[removed_in_PE]:
+                        output_anal.write('\n'+str(doc)+'\t \t line:'+str(line)+' replaced ')
+                    
+                    for connective in connective_lists[removed_in_PE]:
+                        #for connective in connectives:
+                        output.write('\t' +connective+'\t')
+                        output_anal.write('\t' +connective+'\t'+connective_lists[removed_in_PE][connective])
+                        
+                    if connective_lists[inserted_in_PE]:
+                        if connective_lists[removed_in_PE]:
+                            output_anal.write('with \t')
+                            for connective in connective_lists[inserted_in_PE]:
+                                output_anal.write('\t' +connective+'\t')
+                        output.write('\t inserted:')# +str(inserted_in_PE))
+                    for connective in connective_lists[inserted_in_PE]:
+                    #for ind,connectives in connective_lists.items():
+                        #print 'type:%s', ind
+                        output.write('\t' +connective+'\t')
+                        
+                output.write('\n')
+                
     #print errors_per_doc
     
 def extract_connectives(outputfile, connectives_per_doc):
@@ -159,10 +181,12 @@ def extract_connectives(outputfile, connectives_per_doc):
         print 'DOCID=%s' %doc
         docid = int(doc)
         connectives = defaultdict(list)
+        connective_sense = defaultdict(list)
         for line, connectivelist in lines.items():
             #connectives = defaultdict(list)
             line_no = int(line)
             connectives[line_no]=[]  
+            connective_sense[line_no]= {}#defaultdict()  
         #with open(os.path.join(directory, filename)) as fi:
             prev = ''
             #for line in fi:
@@ -180,15 +204,24 @@ def extract_connectives(outputfile, connectives_per_doc):
                     temp = connectives[line_no][-1]
                     print 'was '+temp
                     print 'now='+temp+' '+tokens[0]
-                    connectives[line_no][-1] = temp+' '+tokens[0]
+                    #connectives[line_no][-1] = temp+' '+tokens[0]
+                    #connectives[line_no][-1] = {}#temp+' '+tokens[0]
+                    connectives[line_no][-1] = temp+' '+tokens[0]                    
+                    #connective_sense[line_no][temp+' '+tokens[0]] = tokens[2]
+                    #connective_sense[line_no][temp] = None #+' '+tokens[0]] = tokens[2]
+                    connective_sense[line_no][temp+' '+tokens[0]] = tokens[2]
+                    #tidyup prev
+                    connective_sense[line_no].pop(temp)
                     #connectives[line_no][tokens[2]] = connectives[line_no][tokens[2]]+tokens[0]
                 else:
                     #connectives[line_no].append(tokens[2]+':'+tokens[0])
-                    connectives[line_no].append(tokens[0])#+':'+tokens[0])
+                    connectives[line_no].append(tokens[0])
+                    connective_sense[line_no][tokens[0]]=tokens[2]
                 prev = tokens[1]
                 
             
-            connectives_per_doc[docid] = connectives
+            #connectives_per_doc[docid] = connectives
+            connectives_per_doc[docid] = connective_sense
     print 'from extract_connectives, returning:'
     print connectives_per_doc
     return connectives_per_doc
@@ -199,10 +232,14 @@ def argparser():
     parser = argparse.ArgumentParser(description='Remove the leading alphanumeric from each line.',
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     
-    parser.add_argument('directory', nargs='?',
+    parser.add_argument('--pe', nargs='?',
                         type=str, 
                         help='input directory')
     
+    parser.add_argument('--mt', nargs='?',
+                        type=str, 
+                        help='input directory')
+        
     parser.add_argument('--output', nargs='?',
                         type=str, 
                         help='output directory')

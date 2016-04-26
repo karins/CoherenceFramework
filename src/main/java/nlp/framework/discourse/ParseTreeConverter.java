@@ -34,10 +34,23 @@ public class ParseTreeConverter {
 		ParseTreeConverter converter = new ParseTreeConverter(); 
 		
 		//converter.parse();
-		String filename = args[0];
+		String input = args[0];
 		String outputfile = args[1];
 		boolean isXML = new Boolean(args[2]);
-		converter.parse(filename, outputfile, isXML);
+		boolean isDir = new Boolean(args[3]);
+		
+		if(!isDir){
+			converter.setProperties( args[4]);
+			converter.parse(input, outputfile, isXML);
+		}
+		File[] files = new File(input).listFiles();
+		for (File file : files) {
+			if (file.isFile()){
+				converter.setProperties( args[4]);
+				converter.parse(input+File.separator+file.getName(), outputfile+File.separator+file.getName(), isXML);
+			}
+		}	
+		
 	}
 	
 	/**
@@ -106,29 +119,51 @@ public class ParseTreeConverter {
 	 * @param  outputfile, filename of output file for parse trees to be written to. 
 	 * This will write to one outputfile with parse trees for each document separated by doc tags 
 	 */
-	public void parse(String filename, String outputfile, boolean isXML){
+	public void setProperties(String language){
 		
 		Properties properties = new Properties();	
 		properties.put("-parseInside", "HEADLINE|P");
 		properties.put("annotators", "tokenize, ssplit, pos, lemma, parse");
 		properties.put("parse.originalDependencies", true);
+		//properties.setProperty("ssplit.eolonly", "true");//for annotator ssplit
+		//properties.put("ssplit.eolonly", "true");//for annotator ssplit
+		if(language != null){
+			//EntityGridFramework framework = new EntityGridFactory().getEntityGridFramework(language, "");
+			//framework.
+			properties.put("pos.model", LanguageConfiguration.getTagger(language));		
+			
+			properties.put("parse.model",LanguageConfiguration.getParser(language));
+		}
 		this.pipeline = new StanfordCoreNLP(properties);
-		
+	}
+	
+	public void parse(String filename, String outputfile, boolean isXML){
+				
 		Map<String, String> docs = null;
 		if(isXML){
-			new CorpusReader().readXML(filename);
+			docs = new CorpusReader().readXML(filename);
 		}else{		
 			docs = new CorpusReader().readDataAsDocs(filename);
 		}
+		int index = 0;
+		for(String id : docs.keySet()){
+			
+			//printParseTree(docs.get(id), id);
+			StringBuffer trees = new StringBuffer();
+			getParseTree(docs.get(id), trees);
+			//FileOutputUtils.streamToFile(outputfile+index, trees);
+			FileOutputUtils.streamToFile(outputfile, trees);
+			index++;
+		}
 		
 		//StringBuffer trees = new StringBuffer();
-		int index = 0;	
+		/*	
 		for(String docAsString: docs.values()){
 			StringBuffer trees = new StringBuffer();
 			getParseTree(docAsString, trees);
 			FileOutputUtils.streamToFile(outputfile+index, trees);
 			index++;
-		}
+		}*/
 		
 		//FileOutputUtils.streamToFile(outputfile, trees);
 	}
@@ -143,6 +178,7 @@ public class ParseTreeConverter {
 	public StringBuffer getParseTree(String docAsString, StringBuffer trees){
 		
 		Annotation document = new Annotation(docAsString);
+		System.out.println("tagger="+this.pipeline.getProperties().getProperty("pos.model"));
 		this.pipeline.annotate(document);
 		List<CoreMap> sentences = document.get(SentencesAnnotation.class);		
 		
