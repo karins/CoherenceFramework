@@ -1,26 +1,26 @@
 CoherenceFramework
-===============
+==================
 This codebase now includes several basic coherence models:
 
 
-##Entity-based coherence models: 
+## Entity-based coherence models: 
 Code for:
--- 1) entity grid experiment and 
--- 2) entity graph experiment.
+ 1. entity grid experiment
+ 2. entity graph experiment
+ 
 Both are multilingual. They currently work for French, German and Spanish.
-For English, syntactic roles can be derived. This is currently not the case for French, German and Spanish.
-Therefore the grid/graph will only derive the entity occurances, not their syntactic roles. In the case of the graph, in particular, 
-the best option then is to run with the weighted projection. 
+For English, syntactic roles can be derived. This is not the case for French, German and Spanish.
+Therefore the grid/graph will only derive the entity occurances, not their syntactic roles. In the case of the graph, in particular, the best option then is to run with the weighted projection. 
 
-##Syntax-based coherence models: 
+## Syntax-based coherence models: 
 Code for a syntax-based model:
---1) implementation of local coherence model of A.Louis(Louis and Nenkova, 2012) based on syntactic patterns ,
---2) our own adaptation of it, which is a fully generative model based on IBM1. We learn a
+1. implementation of local coherence model based on syntactic patterns from A.Louis(Louis and Nenkova, 2012)  
+2. our own adaptation of it, which is a fully generative model based on IBM1. We learn a
 probability distribution over the alignments to better learn the patterns, instead of a uniform distribution.
 
 =====================================================
-##Our objective:
-to test existing models on an Machine Translation output, an entirely different, more challenging context than the one they are generally used in.
+## Our objective:
+To test existing models on an Machine Translation output, an entirely different, more challenging context than the one they are generally used in.
 Previously they have been used to assess coherence monolingually, in a clear-cut task (eg selecting best order from
 shuffled sentences of a coherent text) whereas lack of coherence can be caused in other more subtle ways. 
 
@@ -67,8 +67,54 @@ We initially work with parse tree productions, investigating pairs of syntactic 
  
  
   
-===================================================================================================
-##Running the code:
+=====================================================================================================================
+## Data format:
+<b>Training data (for syntax model and entity grid) and test data</b>:
+
+This needs to have document breaks, either xml tags or other for plaintext.
+The wmt data often contains incorrect xml, so breaks when run (check for & chars etc
+first before running EntityExperiments with xml flag. might take few runs).
+EntityExperiments can output grids in doctext format, i.e. separated with “# docid”. 
+
+You can also the use python scripts: see
+https://github.com/karins/CoherenceFramework/blob/master/python/discourse/README.md
+and eg to get doctext from multiple docs:
+cat list_of_files.txt | python -m discourse.doctext > corpus.doctext
+
+To get ptb trees for training syntax models, can use eg:
+python -m discotools analysis parsedocs --jobs 30 docs/newstest2012.cs-en.ref
+trees/newstest2012.cs-en.ref
+
+### Entity Grids 
+are derived in java code- using Stanford Parser. These can be derived from an
+entire directory containing texts of concatenated documents.They can be output in
+one file concatanating all grids, by using EntityExperiments as entrypoint.
+These can be in xml format (with <doc> tags), or plain text separated via ‘#docid’ style
+breaks.
+Once grids have been constructed, the transition probabilities need to be derived. This was
+done in java too (The original, discriminative version of the grid is in java. It derives the relative
+probabilities), but can now run now in Python- this is faster option for the generative grid.
+The derived probabilities can be used to test the coherence of new documents
+(grid_decoder.py).
+	
+### Entity Graph
+- does not require training- this metric can be computed directly.
+
+Can be run with various options, notably to determine the projection (one of syntactic, weighted,
+unweighted), and the language.
+
+### Syntax Models
+- Uses ptb trees as input. These can be derived via java (ParseTreeConverter) or python code
+
+To summarize:
+To construct grids and run graph code (gets scores directly, no training), use EntityExperiments.
+Ensure correctly formatted data is now in:
+● data/docs (doctext format of files)
+● data/trees (which used the above and now contains ptb trees representations)
+● data/grids (grid representations of these documents)
+These all have to be present before running the pipeline script.
+
+## Running the code:
 
 EntityGridExtractor:
 creates grid from ptb input files.
@@ -94,9 +140,9 @@ java -classpath  DiscourseFramework.jar nlp/framework/discourse/EntityGridFramew
 
 NB you can toggle the property in EntityGridFramework ("ssplit.eolonly" on line 87) in order to work with parallel documents. It is not set to true for build so that unit tests correctly sentence split.
 
-Entity Graph
 
-===============================================================================================
+=============================================================================================
+
 If you use this code and find it helpful, please cite:
 
 @article{
