@@ -62,7 +62,7 @@ public class EntityExperiments {
 		}else{
 			docs = new CorpusReader().readDataAsDocs(path+File.separator+filename);
 		}
-		EntityGridFramework framework = new EntityGridFactory().getEntityGridFramework(language, "");
+		EntityGridFramework framework = new EntityGridFactory().getEntityGridFramework(language);
 		for(String docid : docs.keySet()){
 			
 			List<CoreMap> sentences = framework.getAnnotatedDocument(docs.get(docid));
@@ -89,7 +89,7 @@ public class EntityExperiments {
 		
 		StringBuffer stringbuffer = new StringBuffer();
 		
-		EntityGridFramework framework = new EntityGridFactory().getEntityGridFramework(language, "");		
+		EntityGridFramework framework = new EntityGridFactory().getEntityGridFramework(language);		
 		
 		StringBuffer graphdirectory = new StringBuffer(path);
 		graphdirectory.append(File.separator);

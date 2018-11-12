@@ -85,7 +85,7 @@ public class BipartiteGraphTest extends TestCase {
 	 */
 	public void testFrenchGraphCorrectStructure(){
 		
-		EntityGraph graph = new EntityGraph("French",  new EntityGridFactory().getEntityGridFramework( "French", EntityGridFramework.FRENCH_TAGGER));
+		EntityGraph graph = new EntityGraph("French",  new EntityGridFactory().getEntityGridFramework( "French"));
 		Map<String, String> docs = new CorpusReader().readXMLString(xmlFrench);
 		BipartiteGraph bipartiteGraph  = graph.identifyEntitiesAndConstructGraph(docs.values().iterator().next());
 		/*int fileidx = 0;

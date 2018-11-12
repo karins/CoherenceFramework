@@ -3,21 +3,24 @@ CoherenceFramework
 This codebase now includes several basic coherence models:
 
 
-<h2>Entity-based coherence models: </h2> Code for 1) entity grid experiment and 2) entity graph experiment.
-Both are multilingual. They currently work for French and German.
-For English, syntactic roles can be derived. This is currently not the case for French or German.
+##Entity-based coherence models: 
+Code for:
+-- 1) entity grid experiment and 
+-- 2) entity graph experiment.
+Both are multilingual. They currently work for French, German and Spanish.
+For English, syntactic roles can be derived. This is currently not the case for French, German and Spanish.
 Therefore the grid/graph will only derive the entity occurances, not their syntactic roles. In the case of the graph, in particular, 
 the best option then is to run with the weighted projection. 
 
-(Although The EntityGridExtractor will not run with French/German for that reason, ie it works from ptb trees and then derives 
-the dependencies. Entry point for EntityGridFramework should still be fine.)
-
-<h2>Syntax-based coherence models: </h2>Code for a syntax-based model, similar to the 1) local coherence model of A.Louis(Louis and Nenkova, 2012) based on syntactic patterns ,
-in addition to 2) our own adaptation of it, which is a fully generative model based on IBM1. We learn a
+##Syntax-based coherence models: 
+Code for a syntax-based model:
+--1) implementation of local coherence model of A.Louis(Louis and Nenkova, 2012) based on syntactic patterns ,
+--2) our own adaptation of it, which is a fully generative model based on IBM1. We learn a
 probability distribution over the alignments to better learn the patterns, instead of a uniform distribution.
 
 =====================================================
-<b>Our objective</b> was to test existing models on an Machine Translation output, an entirely different, more challenging context than the one they are generally used in.
+##Our objective:
+to test existing models on an Machine Translation output, an entirely different, more challenging context than the one they are generally used in.
 Previously they have been used to assess coherence monolingually, in a clear-cut task (eg selecting best order from
 shuffled sentences of a coherent text) whereas lack of coherence can be caused in other more subtle ways. 
 
@@ -64,8 +67,8 @@ We initially work with parse tree productions, investigating pairs of syntactic 
  
  
   
-===========================
-Running the code:
+===================================================================================================
+##Running the code:
 
 EntityGridExtractor:
 creates grid from ptb input files.
@@ -81,11 +84,24 @@ java -classpath  DiscourseFramework-1.0.jar:. nlp/framework/discourse/EntityExpe
 
 
 
-stanford-corenlp-3.3.0.jar  
-stanford-corenlp-3.3.0-models.jar
+stanford-corenlp-3.7.0.jar 
+stanford-corenlp-3.7.0-models.jar
 Entity Grid
 
 java -classpath  DiscourseFramework.jar nlp/framework/discourse/EntityGridFramework inputfile 
 "C:\\inputfilelocation\\" "English" "false" "false" 
 
+
+NB you can toggle the property in EntityGridFramework ("ssplit.eolonly" on line 87) in order to work with parallel documents. It is not set to true for build so that unit tests correctly sentence split.
+
 Entity Graph
+
+===============================================================================================
+If you use this code and find it helpful, please cite:
+
+@article{
+	author  = {Sim Smith,Karin and Aziz, Wilker and Specia, Lucia},
+	title = {{Cohere: A Toolkit for Local Coherence}},
+	booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
+	year = {2016},
+}

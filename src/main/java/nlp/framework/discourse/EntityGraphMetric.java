@@ -77,7 +77,7 @@ public class EntityGraphMetric {
 		
 		//StringBuffer stringbuffer = new StringBuffer();
 		
-		EntityGridFramework framework = new EntityGridFactory().getEntityGridFramework(language, "");		
+		EntityGridFramework framework = new EntityGridFactory().getEntityGridFramework(language);		
 
 		//char grid [][] = framework.identifyEntitiesAndConstructGrid(teststring1);
 		

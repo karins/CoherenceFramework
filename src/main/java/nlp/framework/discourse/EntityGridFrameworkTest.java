@@ -173,7 +173,7 @@ public class EntityGridFrameworkTest extends TestCase {
 	public void testFrenchXmlExtractDocs1(){
 		//EntityGridFramework gridframework = getEntityGridFramework();
 		Map<String, String> docs = new CorpusReader().readMultilingualXMLString(xmlFrench);
-		EntityGridFramework gridframework = new EntityGridFactory().getEntityGridFramework( "French", EntityGridFramework.FRENCH_TAGGER);
+		EntityGridFramework gridframework = new EntityGridFactory().getEntityGridFramework( "French");
 		int fileidx = 0;
 		for(String docAsString: docs.values()){
 			
@@ -189,7 +189,7 @@ public class EntityGridFrameworkTest extends TestCase {
 	 */
 	public void testFrenchXmlExtractDocs2(){
 		Map<String, String> docs = new CorpusReader().readMultilingualXMLString(xmlFrench2);
-		 EntityGridFramework gridframework =  new EntityGridFactory().getEntityGridFramework( "French", EntityGridFramework.FRENCH_TAGGER);
+		 EntityGridFramework gridframework =  new EntityGridFactory().getEntityGridFramework( "French");
 		int fileidx = 0;
 		for(String docAsString: docs.values()){
 			

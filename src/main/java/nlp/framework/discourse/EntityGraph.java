@@ -92,7 +92,7 @@ public class EntityGraph{
 		
 		if(Boolean.valueOf(rawtext) == Boolean.TRUE){
 			
-			EntityGraph graph = new EntityGraph(language, new EntityGridFactory().getEntityGridFramework(language, tagger));			
+			EntityGraph graph = new EntityGraph(language, new EntityGridFactory().getEntityGridFramework(language));			
 			
 			for(int fileidx = 0; fileidx< docs.size(); fileidx++){
 			

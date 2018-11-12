@@ -54,7 +54,8 @@ public class EntityGridFramework {
 	
 	
 	//private Set<String> POS_TAGS = new HashSet<String>(){NNP, NP, NNS, NN, N, NE};
-	
+	public static final String ENGLISH_PARSER = "edu/stanford/nlp/models/parser/nndep/english_SD.gz";
+	public static final String ENGLISH_TAGGER = "models/english-left3words-distsim.tagger";
 	//public static final String GERMAN_TAGGER = "/stanford-corenlp-3.5.2-models-german/stanford-corenlp-3.5.2-models-german/models/german-fast.tagger";
 	//public static final String FRENCH_TAGGER = "/pos-tagger/french.tagger";
 	private static final String FRENCH = "French";
@@ -126,8 +127,7 @@ public class EntityGridFramework {
 		
 		if(Boolean.valueOf(multiple) == Boolean.TRUE){
 			
-			EntityGridFramework gridframework = new EntityGridFactory().getEntityGridFramework(language, 
-							LanguageConfiguration.getTagger(language));
+			EntityGridFramework gridframework = new EntityGridFactory().getEntityGridFramework(language);
 			Map<String, String> docs = new CorpusReader().readXML(filename);
 			int fileidx = 0;
 			for(String docAsString: docs.values()){
@@ -277,6 +277,8 @@ public class EntityGridFramework {
 			nc0p000	Common noun (plural)	aÃ±os, elecciones
 			nc0s000	Common noun (singular)	lista, hotel, partido
 			np00000	Proper noun	MÃ¡laga, Parlamento, UFINSA */
+			return true;
+		}else if (POS_tag.equalsIgnoreCase("ADJ")){//TODO: sort this hack for French!!!
 			return true;
 		}
 		
